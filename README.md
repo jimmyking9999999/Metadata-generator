@@ -7,6 +7,15 @@
   This repository contains the metadata used by <a href="https://github.com/CasualtiesManageable/CasualtiesManageable">Casualties Manageable</a> to discover and display mods for <a href="https://store.steampowered.com/app/4576490/Casualties_Unknown/">Casualties: Unknown</a> game.
 </p>
 
+<p align="center">
+  <a href="https://discord.gg/qWqdKg9cdC">
+    <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+  </a>
+  <a href="https://ko-fi.com/nomodev">
+    <img src="https://img.shields.io/badge/Ko--fi-%23F16061.svg?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi">
+  </a>
+</p>
+
 ---
 
 ## Adding Your Mod

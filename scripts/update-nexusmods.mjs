@@ -49,8 +49,6 @@ const OWNED_FIELDS = new Set([
   "dllVersion",
   "dllVersions",
   "Statistics",
-  "MirrorLinks",
-  "Changelog",
   "Images",
 ]);
 const TRACKED_LOG_FIELDS = [
@@ -71,8 +69,6 @@ const TRACKED_LOG_FIELDS = [
   "Statistics.UniqueDownloads",
   "Statistics.TotalDownloads",
   "Statistics.TotalViews",
-  "MirrorLinks",
-  "Changelog",
   "Images",
 ];
 const DOWNLOADABLE_EXTENSIONS = new Set([".zip", ".7z", ".rar"]);
@@ -136,11 +132,6 @@ async function main() {
         logStep(`Refreshing mod ${modId}`);
         const modInfo = await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}`, apiKey, appVersion);
         const modFiles = await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}/files`, apiKey, appVersion);
-        const changelogMap = await safeRequest(
-          `changelogs for mod ${modId}`,
-          () => nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}/changelogs`, apiKey, appVersion),
-        );
-
         const selectedFile = selectBestFile(modFiles);
         if (!selectedFile) {
           throw new Error(`No downloadable file found for mod ${modId}.`);
@@ -160,7 +151,6 @@ async function main() {
           modInfo,
           fileInfo: selectedFile,
           archiveContext,
-          changelogMap,
         });
 
         mergedEntries.push(mergedEntry);
@@ -508,7 +498,7 @@ function normalizeDownloadUrl(entry) {
   return null;
 }
 
-function mergeEntry({ existingEntry, modInfo, fileInfo, archiveContext, changelogMap }) {
+function mergeEntry({ existingEntry, modInfo, fileInfo, archiveContext }) {
   const preserved = { ...(existingEntry ?? {}) };
   for (const key of OWNED_FIELDS) {
     delete preserved[key];
@@ -548,8 +538,6 @@ function mergeEntry({ existingEntry, modInfo, fileInfo, archiveContext, changelo
       TotalDownloads: modInfo.mod_downloads ?? existingEntry?.Statistics?.TotalDownloads ?? null,
       TotalViews: existingEntry?.Statistics?.TotalViews ?? null,
     },
-    MirrorLinks: archiveContext?.mirrorLinks?.length ? archiveContext.mirrorLinks : (existingEntry?.MirrorLinks ?? []),
-    Changelog: latestChangelog(changelogMap) ?? existingEntry?.Changelog ?? null,
     Images: collectImages(modInfo, existingEntry?.Images),
   };
 }
@@ -565,20 +553,6 @@ function collectImages(modInfo, fallbackImages) {
     }
   }
   return [...images];
-}
-
-function latestChangelog(changelogMap) {
-  if (!changelogMap || typeof changelogMap !== "object") {
-    return null;
-  }
-
-  const entries = Object.entries(changelogMap).filter(([, value]) => typeof value === "string" && value.trim().length > 0);
-  if (entries.length === 0) {
-    return null;
-  }
-
-  entries.sort((left, right) => compareVersions(right[0], left[0]));
-  return entries[0][1];
 }
 
 function highestVersion(versions) {
@@ -610,15 +584,6 @@ function normalizeVersion(value) {
     parts.push("0");
   }
   return parts.slice(0, 4).join(".");
-}
-
-async function safeRequest(label, callback) {
-  try {
-    return await callback();
-  } catch (error) {
-    logWarn("BEST_EFFORT", `Failed to fetch ${label}. ${error.message}`);
-    return null;
-  }
 }
 
 async function discoverModsForGame(apiKey, appVersion, gameDomain) {

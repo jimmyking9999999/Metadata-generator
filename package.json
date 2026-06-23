@@ -5,5 +5,11 @@
   "description": "Automation scripts for Metadata repository maintenance.",
   "scripts": {
     "update:nexusmods": "node scripts/update-nexusmods.mjs"
+  },
+  "dependencies": {
+    "7zip-bin": "^5.2.0",
+    "node-7z": "^3.0.0",
+    "node-unrar-js": "^2.0.2",
+    "yauzl": "^3.2.0"
   }
 }

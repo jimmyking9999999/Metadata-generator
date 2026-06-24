@@ -38,6 +38,7 @@ const OWNED_FIELDS = new Set([
   "Id",
   "Name",
   "Version",
+  "bepinexVersion",
   "Description",
   "Author",
   "Links",
@@ -55,6 +56,7 @@ const TRACKED_LOG_FIELDS = [
   "Id",
   "Name",
   "Version",
+  "bepinexVersion",
   "Description",
   "Author",
   "Links.Icon",
@@ -229,14 +231,14 @@ async function processArchive({ apiKey, appVersion, gameDomain, modId, fileInfo 
     const dllVersions = {};
     for (const dllFile of dllFiles) {
       const parsed = await readDllMetadata(dllFile);
-      if (parsed.version) {
-        dllVersions[path.basename(dllFile)] = parsed.version;
+      if (parsed.bepinexVersion) {
+        dllVersions[path.basename(dllFile)] = parsed.bepinexVersion;
       } else {
-        logWarn("DLL_PARSE", `No usable version metadata found for ${path.basename(dllFile)}.`);
+        logDim(`   ${path.basename(dllFile)}: no BepInEx plugin version found`);
       }
     }
 
-    logInfo(`DLL versions found: ${Object.keys(dllVersions).length}`);
+    logInfo(`BepInEx plugin versions found: ${Object.keys(dllVersions).length}`);
     if (Object.keys(dllVersions).length > 0) {
       for (const [dllName, version] of Object.entries(dllVersions)) {
         logDim(`   ${dllName}: ${version}`);
@@ -247,6 +249,7 @@ async function processArchive({ apiKey, appVersion, gameDomain, modId, fileInfo 
       dllNames: dllFiles.map((entry) => path.basename(entry)).sort((a, b) => a.localeCompare(b)),
       dllVersions,
       dllVersion: highestVersion(Object.values(dllVersions)),
+      bepinexVersion: highestVersion(Object.values(dllVersions)),
       mirrorLinks,
     };
   } finally {
@@ -425,43 +428,39 @@ async function listDllFiles(rootDir) {
 }
 
 async function readDllMetadata(dllPath) {
+  const monoCecilDllPath = process.env.MONO_CECIL_DLL_PATH;
+  if (!monoCecilDllPath) {
+    throw new Error("Missing MONO_CECIL_DLL_PATH environment variable.");
+  }
+
   const escapedPath = dllPath.replace(/'/g, "''");
+  const escapedMonoCecilPath = monoCecilDllPath.replace(/'/g, "''");
   const script = [
     `$path = '${escapedPath}'`,
-    "$json = @{ version = $null }",
+    `$monoCecilPath = '${escapedMonoCecilPath}'`,
+    "$json = @{ bepinexVersion = $null }",
     "try {",
-    "  $asmName = [System.Reflection.AssemblyName]::GetAssemblyName($path)",
-    "  $assemblyVersion = $asmName.Version.ToString()",
-    "} catch {",
-    "  $assemblyVersion = $null",
-    "}",
-    "$fileVersion = $null",
-    "$productVersion = $null",
-    "try {",
-    "  $info = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($path)",
-    "  $fileVersion = $info.FileVersion",
-    "  $productVersion = $info.ProductVersion",
-    "} catch {}",
-    "$pluginVersion = $null",
-    "try {",
-    "  $asm = [System.Reflection.Assembly]::ReflectionOnlyLoadFrom($path)",
-    "  foreach ($attr in $asm.CustomAttributes) {",
-    "    if ($attr.AttributeType.FullName -eq 'BepInEx.BepInPlugin') {",
-    "      if ($attr.ConstructorArguments.Count -ge 3) {",
-    "        $pluginVersion = [string]$attr.ConstructorArguments[2].Value",
+    "  Add-Type -Path $monoCecilPath",
+    "  $module = [Mono.Cecil.ModuleDefinition]::ReadModule($path)",
+    "  try {",
+    "    foreach ($type in $module.Types) {",
+    "      foreach ($attr in $type.CustomAttributes) {",
+    "        if ($attr.AttributeType.FullName -eq 'BepInEx.BepInPlugin' -and $attr.ConstructorArguments.Count -ge 3) {",
+    "          $value = [string]$attr.ConstructorArguments[2].Value",
+    "          if (-not [string]::IsNullOrWhiteSpace($value)) {",
+    "            $json.bepinexVersion = $value",
+    "            break",
+    "          }",
+    "        }",
     "      }",
+    "      if ($json.bepinexVersion) { break }",
     "    }",
+    "  } finally {",
+    "    $module.Dispose()",
     "  }",
-    "} catch {}",
-    "function Normalize-Version([string]$value) {",
-    "  $clean = ($value -replace '[^0-9\\.]', '')",
-    "  if ([string]::IsNullOrWhiteSpace($clean)) { return '0.0.0.0' }",
-    "  $parts = $clean.Split('.') | Where-Object { $_ -ne '' }",
-    "  while ($parts.Count -lt 4) { $parts += '0' }",
-    "  return ($parts[0..3] -join '.')",
+    "} catch {",
+    "  throw $_",
     "}",
-    "$candidates = @($pluginVersion, $productVersion, $fileVersion, $assemblyVersion) | Where-Object { $_ -and $_.Trim().Length -gt 0 }",
-    "$json.version = if ($candidates.Count -gt 0) { $candidates | Sort-Object { [version](Normalize-Version $_) } -Descending | Select-Object -First 1 } else { $null }",
     "$json | ConvertTo-Json -Compress",
   ].join("; ");
 
@@ -473,7 +472,7 @@ async function readDllMetadata(dllPath) {
   );
   const payload = JSON.parse(result.trim() || "{}");
   return {
-    version: payload.version || null,
+    bepinexVersion: payload.bepinexVersion || null,
   };
 }
 
@@ -516,12 +515,14 @@ function mergeEntry({ existingEntry, modInfo, fileInfo, archiveContext }) {
     ? archiveContext.dllVersions
     : (existingEntry?.dllVersions ?? {});
   const nextDllVersion = archiveContext?.dllVersion ?? existingEntry?.dllVersion ?? highestVersion(Object.values(nextDllVersions));
+  const nextBepinexVersion = archiveContext?.bepinexVersion ?? existingEntry?.bepinexVersion ?? highestVersion(Object.values(nextDllVersions));
 
   return {
     ...preserved,
     Id: `nexus-${modInfo.mod_id}`,
     Name: modInfo.name ?? existingEntry?.Name ?? `Mod ${modInfo.mod_id}`,
     Version: modInfo.version ?? existingEntry?.Version ?? "",
+    bepinexVersion: nextBepinexVersion ?? null,
     Description: modInfo.description ?? existingEntry?.Description ?? "",
     Author: modInfo.author ?? existingEntry?.Author ?? "",
     Links: links,

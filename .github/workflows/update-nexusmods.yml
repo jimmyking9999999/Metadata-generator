@@ -35,10 +35,11 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          if git diff --quiet -- nexusmods.json; then
-            echo "No nexusmods.json changes detected."
+          git diff --quiet -- nexusmods.json
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host "No nexusmods.json changes detected."
             exit 0
-          fi
+          }
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

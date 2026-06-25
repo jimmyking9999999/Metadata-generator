@@ -53,6 +53,7 @@ jobs:
         env:
           NEXUS_API_KEY: ${{ secrets.NEXUS_API_KEY }}
           MONO_CECIL_DLL_PATH: ${{ env.MONO_CECIL_DLL_PATH }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: npm run update:nexusmods
 
       - name: Commit and push changes

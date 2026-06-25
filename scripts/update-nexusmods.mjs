@@ -74,6 +74,14 @@ const TRACKED_LOG_FIELDS = [
   "Images",
 ];
 const DOWNLOADABLE_EXTENSIONS = new Set([".zip", ".7z", ".rar"]);
+const DISCORD_EMBED_BATCH_SIZE = 10;
+const DISCORD_COLORS = {
+  created: 0x57f287,
+  updated: 0x5865f2,
+};
+const DISCORD_USERNAME = "Nexus Mod Updates";
+const DISCORD_AVATAR_URL = "https://media.discordapp.net/attachments/1360921920530546971/1519722372012310640/favicon.png?ex=6a3e9740&is=6a3d45c0&hm=ced53232a41abfd5ed21c3d32c3df5eac5a76a457399ba19e35f452059195ce3&=&format=webp&quality=lossless";
+let cachedMonoCecilPath = null;
 
 async function main() {
   const apiKey = process.env.NEXUS_API_KEY;
@@ -157,6 +165,11 @@ async function main() {
 
         mergedEntries.push(mergedEntry);
         logModChanges(existingEntry, mergedEntry, modId, modInfo.name);
+
+        const notification = buildNotification(existingEntry, mergedEntry);
+        if (notification) {
+          await sendDiscordNotification(notification);
+        }
       } catch (error) {
         if (isUnavailableModError(error)) {
           if (existingEntry) {
@@ -434,7 +447,7 @@ async function readDllMetadata(dllPath) {
   }
 
   const escapedPath = dllPath.replace(/'/g, "''");
-  const escapedMonoCecilPath = monoCecilDllPath.replace(/'/g, "''");
+  const escapedMonoCecilPath = (await getReadyMonoCecilPath(monoCecilDllPath)).replace(/'/g, "''");
   const script = [
     `$path = '${escapedPath}'`,
     `$monoCecilPath = '${escapedMonoCecilPath}'`,
@@ -474,6 +487,35 @@ async function readDllMetadata(dllPath) {
   return {
     bepinexVersion: payload.bepinexVersion || null,
   };
+}
+
+async function getReadyMonoCecilPath(sourcePath) {
+  if (cachedMonoCecilPath) {
+    return cachedMonoCecilPath;
+  }
+
+  const sourceInfo = await stat(sourcePath);
+  const stagedPath = path.join(TEMP_ROOT, `Mono.Cecil-${sourceInfo.mtimeMs}-${sourceInfo.size}.dll`);
+  await mkdir(path.dirname(stagedPath), { recursive: true });
+  await writeFile(stagedPath, await readFile(sourcePath));
+
+  try {
+    const { execFile } = await import("node:child_process");
+    await new Promise((resolve, reject) => {
+      execFile("powershell.exe", ["-NoLogo", "-NoProfile", "-Command", `Unblock-File -LiteralPath '${stagedPath.replace(/'/g, "''")}'`], (error) => {
+        if (error) {
+          reject(error);
+          return;
+        }
+        resolve();
+      });
+    });
+  } catch {
+    // Some environments do not support zone metadata; the copy still works there.
+  }
+
+  cachedMonoCecilPath = stagedPath;
+  return stagedPath;
 }
 
 async function getDownloadLinks({ apiKey, appVersion, gameDomain, modId, fileId }) {
@@ -678,6 +720,143 @@ function isUnavailableModError(error) {
   return message.includes("403 Forbidden") && message.includes("Mod not available");
 }
 
+function buildNotification(previousEntry, nextEntry) {
+  if (!nextEntry?.Links?.NexusMods) {
+    return null;
+  }
+
+  if (previousEntry === undefined) {
+    return {
+      kind: "created",
+      embed: createDiscordEmbed({
+        type: "created",
+        currentEntry: nextEntry,
+      }),
+    };
+  }
+
+  const hasNexusVersionChange = !areEqual(previousEntry?.Version, nextEntry?.Version);
+  const hasBepinexVersionChange = !areEqual(previousEntry?.bepinexVersion, nextEntry?.bepinexVersion);
+  const hasDllVersionChange = !areEqual(previousEntry?.dllVersion, nextEntry?.dllVersion);
+
+  if (hasNexusVersionChange || hasBepinexVersionChange || hasDllVersionChange) {
+    return {
+      kind: "updated",
+      embed: createDiscordEmbed({
+        type: "updated",
+        previousEntry,
+        currentEntry: nextEntry,
+      }),
+    };
+  }
+
+  return null;
+}
+
+function createDiscordEmbed({ type, previousEntry, currentEntry }) {
+  const modUrl = currentEntry.Links?.NexusMods;
+  const imageUrl = firstNonEmptyString(
+    currentEntry.Links?.Icon,
+    Array.isArray(currentEntry.Images) ? currentEntry.Images[0] : null,
+  );
+  const endorsements = currentEntry.Statistics?.Endorsements;
+  const uniqueDownloads = currentEntry.Statistics?.UniqueDownloads;
+  const fields = [
+    {
+      name: "Endorsements",
+      value: formatInlineStat(endorsements),
+      inline: true,
+    },
+    {
+      name: "Unique Downloads",
+      value: formatInlineStat(uniqueDownloads),
+      inline: true,
+    },
+  ];
+
+  if (type === "updated") {
+    if (!areEqual(previousEntry?.Version, currentEntry.Version)) {
+      fields.unshift({
+        name: "Nexus Version",
+        value: `${formatInlineText(previousEntry?.Version)} -> ${formatInlineText(currentEntry.Version)}`,
+        inline: true,
+      });
+    }
+
+    if (!areEqual(previousEntry?.bepinexVersion, currentEntry.bepinexVersion) && currentEntry.bepinexVersion) {
+      fields.push({
+        name: "BepInEx Version",
+        value: `${formatInlineText(previousEntry?.bepinexVersion)} -> ${formatInlineText(currentEntry.bepinexVersion)}`,
+        inline: true,
+      });
+    } else if (!areEqual(previousEntry?.dllVersion, currentEntry.dllVersion) && currentEntry.dllVersion) {
+      fields.push({
+        name: "DLL Version",
+        value: `${formatInlineText(previousEntry?.dllVersion)} -> ${formatInlineText(currentEntry.dllVersion)}`,
+        inline: true,
+      });
+    }
+  }
+
+  return {
+    title: currentEntry.Name ?? `Mod ${currentEntry.NexusModId}`,
+    url: modUrl,
+    description: type === "created"
+      ? "New mod release!."
+      : "New mod update!.",
+    color: type === "created" ? DISCORD_COLORS.created : DISCORD_COLORS.updated,
+    author: currentEntry.Author
+      ? {
+          name: currentEntry.Author,
+          url: modUrl,
+        }
+      : undefined,
+    fields,
+    image: imageUrl ? { url: imageUrl } : undefined,
+    footer: {
+      text: `Nexus mod ${currentEntry.NexusModId}`,
+    },
+    timestamp: new Date().toISOString(),
+  };
+}
+
+async function sendDiscordNotification(notification) {
+  const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
+  if (!webhookUrl) {
+    logWarn("DISCORD", "DISCORD_WEBHOOK_URL is not set... skipping Discord notifications :o");
+    return;
+  }
+
+  await postDiscordWebhook(webhookUrl, {
+    username: DISCORD_USERNAME,
+    avatar_url: DISCORD_AVATAR_URL,
+    content: buildDiscordMessage(notification.kind),
+    embeds: [notification.embed],
+  });
+
+  logSuccess("Sent Discord notification.");
+}
+
+function buildDiscordMessage(kind) {
+  return kind === "created"
+    ? ""
+    : "";
+}
+
+async function postDiscordWebhook(webhookUrl, payload) {
+  const response = await fetchWithTimeout(webhookUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
+
+  if (!response.ok) {
+    throw await buildHttpError("Discord webhook request failed", response);
+  }
+}
+
 function logModChanges(previousEntry, nextEntry, modId, modName) {
   const label = `mod ${modId}${modName ? ` (${modName})` : ""}`;
   const changedFields = [];
@@ -736,6 +915,32 @@ function formatValue(value) {
   }
 
   return JSON.stringify(value);
+}
+
+function formatInlineStat(value) {
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return value.toLocaleString("en-US");
+  }
+  return "Unknown";
+}
+
+function formatInlineText(value) {
+  if (value === undefined || value === null) {
+    return "Unknown";
+  }
+
+  const text = String(value).trim();
+  return text.length > 0 ? text : "Unknown";
+}
+
+function firstNonEmptyString(...values) {
+  for (const value of values) {
+    if (typeof value === "string" && value.trim().length > 0) {
+      return value;
+    }
+  }
+
+  return null;
 }
 
 async function validateApiKey(apiKey, appVersion) {

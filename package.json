@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "description": "Automation scripts for Metadata repository maintenance.",
   "scripts": {
-    "update:nexusmods": "node scripts/update-nexusmods.mjs"
+    "update:nexusmods": "node scripts/update-nexusmods.mjs --mode quick",
+    "update:nexusmods:quick": "node scripts/update-nexusmods.mjs --mode quick",
+    "update:nexusmods:full": "node scripts/update-nexusmods.mjs --mode full"
   },
   "dependencies": {
     "7zip-bin": "^5.2.0",

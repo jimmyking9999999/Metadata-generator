@@ -20,20 +20,20 @@ const TEMP_ROOT = path.join(os.tmpdir(), "metadata-nexusmods");
 const API_BASE_URL = "https://api.nexusmods.com/v1";
 const APP_NAME = "Metadata Nexus Sync";
 const REQUEST_TIMEOUT_MS = 60_000;
-const DISCOVERY_LIMIT = 64;
-const RECENT_PERIODS = ["1d", "1w", "1m"];
+const FULL_DISCOVERY_LIMIT = 64;
+const FULL_RECENT_PERIODS = ["1d", "1w", "1m"];
+const QUICK_DISCOVERY_ROUTES = [
+  "/mods/latest_added",
+  "/mods/latest_updated",
+];
 const MAX_MOD_LOG_DESCRIPTION = 120;
-const COLORS = {
-  reset: "\x1b[0m",
-  dim: "\x1b[2m",
-  red: "\x1b[31m",
-  green: "\x1b[32m",
-  yellow: "\x1b[33m",
-  blue: "\x1b[34m",
-  magenta: "\x1b[35m",
-  cyan: "\x1b[36m",
-  white: "\x1b[97m",
+const DOWNLOADABLE_EXTENSIONS = new Set([".zip", ".7z", ".rar"]);
+const DISCORD_COLORS = {
+  created: 0x57f287,
+  updated: 0x5865f2,
 };
+const DISCORD_USERNAME = "Nexus Mod Updates";
+const DISCORD_AVATAR_URL = "https://media.discordapp.net/attachments/1360921920530546971/1519722372012310640/favicon.png?ex=6a3e9740&is=6a3d45c0&hm=ced53232a41abfd5ed21c3d32c3df5eac5a76a457399ba19e35f452059195ce3&=&format=webp&quality=lossless";
 const OWNED_FIELDS = new Set([
   "Id",
   "Name",
@@ -73,14 +73,18 @@ const TRACKED_LOG_FIELDS = [
   "Statistics.TotalViews",
   "Images",
 ];
-const DOWNLOADABLE_EXTENSIONS = new Set([".zip", ".7z", ".rar"]);
-const DISCORD_EMBED_BATCH_SIZE = 10;
-const DISCORD_COLORS = {
-  created: 0x57f287,
-  updated: 0x5865f2,
+const COLORS = {
+  reset: "\x1b[0m",
+  dim: "\x1b[2m",
+  red: "\x1b[31m",
+  green: "\x1b[32m",
+  yellow: "\x1b[33m",
+  blue: "\x1b[34m",
+  magenta: "\x1b[35m",
+  cyan: "\x1b[36m",
+  white: "\x1b[97m",
 };
-const DISCORD_USERNAME = "Nexus Mod Updates";
-const DISCORD_AVATAR_URL = "https://media.discordapp.net/attachments/1360921920530546971/1519722372012310640/favicon.png?ex=6a3e9740&is=6a3d45c0&hm=ced53232a41abfd5ed21c3d32c3df5eac5a76a457399ba19e35f452059195ce3&=&format=webp&quality=lossless";
+
 let cachedMonoCecilPath = null;
 
 async function main() {
@@ -89,6 +93,7 @@ async function main() {
     throw new Error("Missing NEXUS_API_KEY environment variable.");
   }
 
+  const runMode = getRunMode(process.argv.slice(2));
   await mkdir(TEMP_ROOT, { recursive: true });
 
   const packageJson = JSON.parse(await readFile(PACKAGE_PATH, "utf8"));
@@ -104,96 +109,42 @@ async function main() {
     throw new Error("No NexusGameDomain values were found in nexusmods.json.");
   }
 
-  logBanner("Nexus Mods Archive Sync");
+  logBanner(`Nexus Mods Archive Sync (${runMode})`);
   logInfo(`Loaded ${entries.length} existing entries.`);
   logInfo(`Refreshing game domains: ${gameDomains.join(", ")}`);
 
   await validateApiKey(apiKey, appVersion);
   logSuccess("Nexus API key validated.");
 
-  const mergedEntries = [];
+  const nonNexusEntries = entries.filter((entry) => !(Number.isInteger(entry?.NexusModId) && entry?.NexusGameDomain));
   const entryByKey = new Map();
   for (const entry of entries) {
     if (Number.isInteger(entry?.NexusModId) && entry?.NexusGameDomain) {
       entryByKey.set(getEntryKey(entry.NexusGameDomain, entry.NexusModId), entry);
-    } else {
-      mergedEntries.push(entry);
     }
   }
 
-  for (const gameDomain of gameDomains) {
-    logSection(`Refreshing ${gameDomain}`);
-
-    const discoveredMods = await discoverModsForGame(apiKey, appVersion, gameDomain);
-    const modIds = [...new Set([
-      ...entries
-        .filter((entry) => entry?.NexusGameDomain === gameDomain && Number.isInteger(entry?.NexusModId))
-        .map((entry) => entry.NexusModId),
-      ...discoveredMods.map((mod) => mod.mod_id),
-    ])].sort((a, b) => b - a);
-
-    logInfo(`Candidate mods: ${modIds.length}`);
-
-    for (const modId of modIds) {
-      const entryKey = getEntryKey(gameDomain, modId);
-      const existingEntry = entryByKey.get(entryKey);
-
-      try {
-        logStep(`Refreshing mod ${modId}`);
-        const modInfo = await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}`, apiKey, appVersion);
-        const modFiles = await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}/files`, apiKey, appVersion);
-        const selectedFile = selectBestFile(modFiles);
-        if (!selectedFile) {
-          throw new Error(`No downloadable file found for mod ${modId}.`);
-        }
-
-        logSubstep(`Selected file ${selectedFile.file_id}: ${selectedFile.file_name}`);
-        const archiveContext = await processArchive({
-          apiKey,
-          appVersion,
-          gameDomain,
-          modId,
-          fileInfo: selectedFile,
-        });
-
-        const mergedEntry = mergeEntry({
-          existingEntry,
-          modInfo,
-          fileInfo: selectedFile,
-          archiveContext,
-        });
-
-        mergedEntries.push(mergedEntry);
-        logModChanges(existingEntry, mergedEntry, modId, modInfo.name);
-
-        const notification = buildNotification(existingEntry, mergedEntry);
-        if (notification) {
-          await sendDiscordNotification(notification);
-        }
-      } catch (error) {
-        if (isUnavailableModError(error)) {
-          if (existingEntry) {
-            logWarn("UNAVAILABLE", `Mod ${modId} is no longer available; keeping existing entry.`);
-            mergedEntries.push(existingEntry);
-          } else {
-            logWarn("UNAVAILABLE", `Skipping unavailable mod ${modId}.`);
-          }
-          continue;
-        }
-
-        if (existingEntry) {
-          logWarn("MOD_FAIL", `Failed to refresh mod ${modId}; keeping existing entry. ${error.message}`);
-          mergedEntries.push(existingEntry);
-          continue;
-        }
-
-        logWarn("MOD_FAIL", `Failed to refresh mod ${modId}; skipping new entry. ${error.message}`);
-      }
-    }
+  if (runMode === "full") {
+    await runFullSync({
+      apiKey,
+      appVersion,
+      gameDomains,
+      entryByKey,
+    });
+  } else {
+    await runQuickSync({
+      apiKey,
+      appVersion,
+      gameDomains,
+      entryByKey,
+    });
   }
 
-  const sortedEntries = mergedEntries.sort(compareEntries);
-  const nextJson = `${JSON.stringify(sortedEntries, null, 4)}\n`;
+  const nextEntries = [
+    ...nonNexusEntries,
+    ...[...entryByKey.values()].sort(compareEntries),
+  ];
+  const nextJson = `${JSON.stringify(nextEntries, null, 4)}\n`;
   const currentJson = await readFile(NEXUSMODS_PATH, "utf8");
 
   if (nextJson === currentJson) {
@@ -203,6 +154,215 @@ async function main() {
 
   await writeFile(NEXUSMODS_PATH, nextJson, "utf8");
   logSuccess("Updated nexusmods.json");
+}
+
+function getRunMode(args) {
+  for (let index = 0; index < args.length; index += 1) {
+    const arg = args[index];
+    if (arg === "--mode" && index + 1 < args.length) {
+      return normalizeRunMode(args[index + 1]);
+    }
+    if (arg.startsWith("--mode=")) {
+      return normalizeRunMode(arg.slice("--mode=".length));
+    }
+  }
+  return "quick";
+}
+
+function normalizeRunMode(value) {
+  return String(value).trim().toLowerCase() === "full" ? "full" : "quick";
+}
+
+async function runQuickSync({ apiKey, appVersion, gameDomains, entryByKey }) {
+  for (const gameDomain of gameDomains) {
+    logSection(`Quick Check ${gameDomain}`);
+    const candidateMods = await discoverRecentModsForGame(apiKey, appVersion, gameDomain);
+    logInfo(`Recent candidate mods: ${candidateMods.length}`);
+
+    for (const item of candidateMods) {
+      const modId = item.mod_id;
+      const entryKey = getEntryKey(gameDomain, modId);
+      const existingEntry = entryByKey.get(entryKey);
+
+      try {
+        logStep(`Checking mod ${modId}`);
+        const modInfo = await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}`, apiKey, appVersion);
+        const nextVersion = modInfo.version ?? existingEntry?.Version ?? "";
+        const isNewRelease = existingEntry === undefined;
+        const hasNexusVersionChange = !isNewRelease && !areEqual(existingEntry?.Version, nextVersion);
+
+        if (!isNewRelease && !hasNexusVersionChange) {
+          logDim(`   No Nexus version change for mod ${modId}.`);
+          continue;
+        }
+
+        await refreshModAndNotify({
+          apiKey,
+          appVersion,
+          gameDomain,
+          modId,
+          modInfo,
+          existingEntry,
+          entryByKey,
+        });
+      } catch (error) {
+        if (isUnavailableModError(error)) {
+          logWarn("UNAVAILABLE", `Skipping unavailable recent mod ${modId}.`);
+          continue;
+        }
+
+        if (existingEntry) {
+          logWarn("MOD_FAIL", `Quick check failed for mod ${modId}; keeping existing entry. ${error.message}`);
+        } else {
+          logWarn("MOD_FAIL", `Quick check failed for new mod ${modId}; skipping entry. ${error.message}`);
+        }
+      }
+    }
+  }
+}
+
+async function runFullSync({ apiKey, appVersion, gameDomains, entryByKey }) {
+  for (const gameDomain of gameDomains) {
+    logSection(`Full Refresh ${gameDomain}`);
+    const discoveredMods = await discoverModsForGame(apiKey, appVersion, gameDomain);
+    const existingModIds = [...entryByKey.values()]
+      .filter((entry) => entry?.NexusGameDomain === gameDomain && Number.isInteger(entry?.NexusModId))
+      .map((entry) => entry.NexusModId);
+    const modIds = [...new Set([...existingModIds, ...discoveredMods.map((item) => item.mod_id)])].sort((a, b) => b - a);
+    logInfo(`Candidate mods: ${modIds.length}`);
+
+    for (const modId of modIds) {
+      const entryKey = getEntryKey(gameDomain, modId);
+      const existingEntry = entryByKey.get(entryKey);
+
+      try {
+        await refreshModAndNotify({
+          apiKey,
+          appVersion,
+          gameDomain,
+          modId,
+          existingEntry,
+          entryByKey,
+        });
+      } catch (error) {
+        if (isUnavailableModError(error)) {
+          if (existingEntry) {
+            logWarn("UNAVAILABLE", `Mod ${modId} is no longer available; keeping existing entry.`);
+          } else {
+            logWarn("UNAVAILABLE", `Skipping unavailable mod ${modId}.`);
+          }
+          continue;
+        }
+
+        if (existingEntry) {
+          logWarn("MOD_FAIL", `Failed to refresh mod ${modId}; keeping existing entry. ${error.message}`);
+        } else {
+          logWarn("MOD_FAIL", `Failed to refresh mod ${modId}; skipping new entry. ${error.message}`);
+        }
+      }
+    }
+  }
+}
+
+async function refreshModAndNotify({
+  apiKey,
+  appVersion,
+  gameDomain,
+  modId,
+  modInfo,
+  existingEntry,
+  entryByKey,
+}) {
+  logStep(`Refreshing mod ${modId}`);
+  const resolvedModInfo = modInfo ?? await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}`, apiKey, appVersion);
+  const modFiles = await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}/files`, apiKey, appVersion);
+  const selectedFile = selectBestFile(modFiles);
+  if (!selectedFile) {
+    throw new Error(`No downloadable file found for mod ${modId}.`);
+  }
+
+  logSubstep(`Selected file ${selectedFile.file_id}: ${selectedFile.file_name}`);
+  const archiveContext = await processArchive({
+    apiKey,
+    appVersion,
+    gameDomain,
+    modId,
+    fileInfo: selectedFile,
+  });
+
+  const mergedEntry = mergeEntry({
+    existingEntry,
+    modInfo: resolvedModInfo,
+    fileInfo: selectedFile,
+    archiveContext,
+  });
+
+  entryByKey.set(getEntryKey(gameDomain, modId), mergedEntry);
+  logModChanges(existingEntry, mergedEntry, modId, resolvedModInfo.name);
+
+  const notification = buildNotification(existingEntry, mergedEntry);
+  if (notification) {
+    await sendDiscordNotification(notification);
+  }
+}
+
+async function discoverRecentModsForGame(apiKey, appVersion, gameDomain) {
+  const discovered = new Map();
+  for (const routeSuffix of QUICK_DISCOVERY_ROUTES) {
+    const route = `/games/${encodeURIComponent(gameDomain)}${routeSuffix}`;
+    try {
+      logSubstep(`Quick feed ${route}`);
+      const response = await nexusRest(route, apiKey, appVersion);
+      for (const item of normalizeDiscoveredMods(response)) {
+        if (Number.isInteger(item.mod_id)) {
+          discovered.set(item.mod_id, item);
+        }
+      }
+    } catch (error) {
+      logWarn("DISCOVERY", `Quick feed failed for ${route}. ${error.message}`);
+    }
+  }
+
+  return [...discovered.values()].sort((left, right) => (right.mod_id ?? 0) - (left.mod_id ?? 0));
+}
+
+async function discoverModsForGame(apiKey, appVersion, gameDomain) {
+  const discovered = new Map();
+  const routes = [
+    `/games/${encodeURIComponent(gameDomain)}/mods/latest_added`,
+    `/games/${encodeURIComponent(gameDomain)}/mods/latest_updated`,
+    `/games/${encodeURIComponent(gameDomain)}/mods/trending`,
+    ...FULL_RECENT_PERIODS.map((period) => `/games/${encodeURIComponent(gameDomain)}/mods/updated?period=${period}`),
+  ];
+
+  for (const route of routes) {
+    try {
+      logSubstep(`Discovery feed ${route}`);
+      const response = await nexusRest(route, apiKey, appVersion);
+      const countBefore = discovered.size;
+      for (const item of normalizeDiscoveredMods(response)) {
+        if (Number.isInteger(item.mod_id)) {
+          discovered.set(item.mod_id, item);
+        }
+      }
+      logInfo(`Discovery feed added ${discovered.size - countBefore} mod(s).`);
+    } catch (error) {
+      logWarn("DISCOVERY", `Feed failed for ${route}. ${error.message}`);
+    }
+  }
+
+  logInfo(`Discovery complete for ${gameDomain}: ${discovered.size} unique mod(s).`);
+  return [...discovered.values()].slice(0, FULL_DISCOVERY_LIMIT * 4);
+}
+
+function normalizeDiscoveredMods(response) {
+  if (!Array.isArray(response)) {
+    return [];
+  }
+
+  return response
+    .map((item) => item?.mod ? item.mod : item)
+    .filter((item) => Number.isInteger(item?.mod_id));
 }
 
 async function processArchive({ apiKey, appVersion, gameDomain, modId, fileInfo }) {
@@ -598,6 +758,53 @@ function collectImages(modInfo, fallbackImages) {
   return [...images];
 }
 
+function selectBestFile(modFiles) {
+  const files = Array.isArray(modFiles?.files) ? modFiles.files : [];
+  return [...files]
+    .filter((file) => DOWNLOADABLE_EXTENSIONS.has(path.extname(file.file_name || "").toLowerCase()))
+    .sort((left, right) => scoreFile(right) - scoreFile(left))[0] ?? null;
+}
+
+function scoreFile(file) {
+  const primary = file?.is_primary ? 1_000_000_000 : 0;
+  const mainCategory = file?.category_name === "MAIN" ? 100_000_000 : 0;
+  const uploaded = Number(file?.uploaded_timestamp) || 0;
+  return primary + mainCategory + uploaded;
+}
+
+function buildModUrl(gameDomain, modId) {
+  return `https://www.nexusmods.com/${gameDomain}/mods/${modId}`;
+}
+
+function buildDownloadUrl(gameDomain, modId, fileId, fallback) {
+  if (Number.isInteger(fileId)) {
+    return `nexus://${gameDomain}/${modId}/${fileId}`;
+  }
+
+  return fallback ?? `nexus://${gameDomain}/${modId}`;
+}
+
+function compareEntries(left, right) {
+  const leftId = Number.isInteger(left?.NexusModId) ? left.NexusModId : Number.MIN_SAFE_INTEGER;
+  const rightId = Number.isInteger(right?.NexusModId) ? right.NexusModId : Number.MIN_SAFE_INTEGER;
+  return rightId - leftId;
+}
+
+function getEntryKey(gameDomain, modId) {
+  return `${gameDomain}:${modId}`;
+}
+
+function normalizeDllArray(value) {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  return value
+    .filter((item) => typeof item === "string")
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
 function highestVersion(versions) {
   const filtered = versions.filter((value) => typeof value === "string" && value.trim().length > 0);
   if (filtered.length === 0) {
@@ -629,92 +836,6 @@ function normalizeVersion(value) {
   return parts.slice(0, 4).join(".");
 }
 
-async function discoverModsForGame(apiKey, appVersion, gameDomain) {
-  const discovered = new Map();
-  const feeds = [
-    `/games/${encodeURIComponent(gameDomain)}/mods/latest_added`,
-    `/games/${encodeURIComponent(gameDomain)}/mods/latest_updated`,
-    `/games/${encodeURIComponent(gameDomain)}/mods/trending`,
-    ...RECENT_PERIODS.map((period) => `/games/${encodeURIComponent(gameDomain)}/mods/updated?period=${period}`),
-  ];
-
-  for (const route of feeds) {
-    try {
-      logSubstep(`Discovery feed ${route}`);
-      const response = await nexusRest(route, apiKey, appVersion);
-      const countBefore = discovered.size;
-      for (const item of normalizeDiscoveredMods(response)) {
-        if (Number.isInteger(item.mod_id)) {
-          discovered.set(item.mod_id, item);
-        }
-      }
-      logInfo(`Discovery feed added ${discovered.size - countBefore} mod(s).`);
-    } catch (error) {
-      logWarn("DISCOVERY", `Feed failed for ${route}. ${error.message}`);
-    }
-  }
-
-  logInfo(`Discovery complete for ${gameDomain}: ${discovered.size} unique mod(s).`);
-  return [...discovered.values()].slice(0, DISCOVERY_LIMIT * 4);
-}
-
-function normalizeDiscoveredMods(response) {
-  if (!Array.isArray(response)) {
-    return [];
-  }
-
-  return response
-    .map((item) => item?.mod ? item.mod : item)
-    .filter((item) => Number.isInteger(item?.mod_id));
-}
-
-function selectBestFile(modFiles) {
-  const files = Array.isArray(modFiles?.files) ? modFiles.files : [];
-  return [...files]
-    .filter((file) => DOWNLOADABLE_EXTENSIONS.has(path.extname(file.file_name || "").toLowerCase()))
-    .sort((left, right) => scoreFile(right) - scoreFile(left))[0] ?? null;
-}
-
-function scoreFile(file) {
-  const primary = file?.is_primary ? 1_000_000_000 : 0;
-  const mainCategory = file?.category_name === "MAIN" ? 100_000_000 : 0;
-  const uploaded = Number(file?.uploaded_timestamp) || 0;
-  return primary + mainCategory + uploaded;
-}
-
-function buildModUrl(gameDomain, modId) {
-  return `https://www.nexusmods.com/${gameDomain}/mods/${modId}`;
-}
-
-function buildDownloadUrl(gameDomain, modId, fileId, fallback) {
-  if (Number.isInteger(fileId)) {
-    return `nexus://${gameDomain}/${modId}/${fileId}`;
-  }
-
-  return fallback ?? `nexus://${gameDomain}/${modId}`;
-}
-
-function normalizeDllArray(value) {
-  if (!Array.isArray(value)) {
-    return [];
-  }
-
-  return value
-    .filter((item) => typeof item === "string")
-    .map((item) => item.trim())
-    .filter(Boolean);
-}
-
-function compareEntries(left, right) {
-  const leftId = Number.isInteger(left?.NexusModId) ? left.NexusModId : Number.MIN_SAFE_INTEGER;
-  const rightId = Number.isInteger(right?.NexusModId) ? right.NexusModId : Number.MIN_SAFE_INTEGER;
-  return rightId - leftId;
-}
-
-function getEntryKey(gameDomain, modId) {
-  return `${gameDomain}:${modId}`;
-}
-
 function isUnavailableModError(error) {
   const message = String(error?.message ?? "");
   return message.includes("403 Forbidden") && message.includes("Mod not available");
@@ -735,11 +856,7 @@ function buildNotification(previousEntry, nextEntry) {
     };
   }
 
-  const hasNexusVersionChange = !areEqual(previousEntry?.Version, nextEntry?.Version);
-  const hasBepinexVersionChange = !areEqual(previousEntry?.bepinexVersion, nextEntry?.bepinexVersion);
-  const hasDllVersionChange = !areEqual(previousEntry?.dllVersion, nextEntry?.dllVersion);
-
-  if (hasNexusVersionChange || hasBepinexVersionChange || hasDllVersionChange) {
+  if (!areEqual(previousEntry?.Version, nextEntry?.Version)) {
     return {
       kind: "updated",
       embed: createDiscordEmbed({
@@ -775,24 +892,16 @@ function createDiscordEmbed({ type, previousEntry, currentEntry }) {
   ];
 
   if (type === "updated") {
-    if (!areEqual(previousEntry?.Version, currentEntry.Version)) {
-      fields.unshift({
-        name: "Nexus Version",
-        value: `${formatInlineText(previousEntry?.Version)} -> ${formatInlineText(currentEntry.Version)}`,
-        inline: true,
-      });
-    }
+    fields.unshift({
+      name: "Nexus Version",
+      value: `${formatInlineText(previousEntry?.Version)} -> ${formatInlineText(currentEntry.Version)}`,
+      inline: true,
+    });
 
-    if (!areEqual(previousEntry?.bepinexVersion, currentEntry.bepinexVersion) && currentEntry.bepinexVersion) {
+    if (currentEntry.bepinexVersion) {
       fields.push({
         name: "BepInEx Version",
-        value: `${formatInlineText(previousEntry?.bepinexVersion)} -> ${formatInlineText(currentEntry.bepinexVersion)}`,
-        inline: true,
-      });
-    } else if (!areEqual(previousEntry?.dllVersion, currentEntry.dllVersion) && currentEntry.dllVersion) {
-      fields.push({
-        name: "DLL Version",
-        value: `${formatInlineText(previousEntry?.dllVersion)} -> ${formatInlineText(currentEntry.dllVersion)}`,
+        value: String(currentEntry.bepinexVersion),
         inline: true,
       });
     }
@@ -801,9 +910,7 @@ function createDiscordEmbed({ type, previousEntry, currentEntry }) {
   return {
     title: currentEntry.Name ?? `Mod ${currentEntry.NexusModId}`,
     url: modUrl,
-    description: type === "created"
-      ? "New mod release!."
-      : "New mod update!.",
+    description: type === "created" ? "New NexusMods release detected." : "NexusMods version update detected.",
     color: type === "created" ? DISCORD_COLORS.created : DISCORD_COLORS.updated,
     author: currentEntry.Author
       ? {
@@ -821,9 +928,12 @@ function createDiscordEmbed({ type, previousEntry, currentEntry }) {
 }
 
 async function sendDiscordNotification(notification) {
-  const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
+  const webhookUrl = notification.kind === "created"
+    ? process.env.DISCORD_WEBHOOK_URL_RELEASES
+    : process.env.DISCORD_WEBHOOK_URL;
+
   if (!webhookUrl) {
-    logWarn("DISCORD", "DISCORD_WEBHOOK_URL is not set... skipping Discord notifications :o");
+    logWarn("DISCORD", `Missing webhook for ${notification.kind}; skipping Discord notification.`);
     return;
   }
 
@@ -834,13 +944,13 @@ async function sendDiscordNotification(notification) {
     embeds: [notification.embed],
   });
 
-  logSuccess("Sent Discord notification.");
+  logSuccess(`Sent ${notification.kind} Discord notification.`);
 }
 
 function buildDiscordMessage(kind) {
   return kind === "created"
-    ? ""
-    : "";
+    ? "NexusMods sync detected a new mod release."
+    : "NexusMods sync detected a mod update.";
 }
 
 async function postDiscordWebhook(webhookUrl, payload) {

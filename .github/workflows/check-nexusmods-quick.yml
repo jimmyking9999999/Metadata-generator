@@ -1,7 +1,9 @@
-name: Update Nexus Mods Metadata
+name: Check Nexus Mods Metadata Quick
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
 
 permissions:
   contents: write
@@ -47,13 +49,13 @@ jobs:
 
           "MONO_CECIL_DLL_PATH=$cecilDll" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
-      - name: Full refresh nexusmods.json
+      - name: Quick refresh nexusmods.json
         env:
           NEXUS_API_KEY: ${{ secrets.NEXUS_API_KEY }}
           MONO_CECIL_DLL_PATH: ${{ env.MONO_CECIL_DLL_PATH }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_WEBHOOK_URL_RELEASES: ${{ secrets.DISCORD_WEBHOOK_URL_RELEASES }}
-        run: npm run update:nexusmods:full
+        run: npm run update:nexusmods:quick
 
       - name: Commit and push changes
         run: |

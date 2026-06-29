@@ -949,8 +949,8 @@ async function sendDiscordNotification(notification) {
 
 function buildDiscordMessage(kind) {
   return kind === "created"
-    ? "NexusMods sync detected a new mod release."
-    : "NexusMods sync detected a mod update.";
+    ? ""
+    : "";
 }
 
 async function postDiscordWebhook(webhookUrl, payload) {

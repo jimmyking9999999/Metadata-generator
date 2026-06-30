@@ -12,7 +12,8 @@ const { extractFull } = sevenZip;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const REPO_ROOT = path.resolve(__dirname, "..");
+const SCRIPT_ROOT = path.resolve(__dirname, "..");
+const REPO_ROOT = await resolveRepoRoot();
 const NEXUSMODS_PATH = path.join(REPO_ROOT, "nexusmods.json");
 const PACKAGE_PATH = path.join(REPO_ROOT, "package.json");
 const TEMP_ROOT = path.join(os.tmpdir(), "metadata-nexusmods");
@@ -86,6 +87,50 @@ const COLORS = {
 };
 
 let cachedMonoCecilPath = null;
+
+async function resolveRepoRoot() {
+  const candidates = await collectRepoRootCandidates();
+  for (const candidate of candidates) {
+    if (await fileExists(path.join(candidate, "nexusmods.json")) && await fileExists(path.join(candidate, "package.json"))) {
+      return candidate;
+    }
+  }
+
+  throw new Error(`Could not locate repo root containing nexusmods.json and package.json. Tried: ${candidates.join(", ")}`);
+}
+
+async function collectRepoRootCandidates() {
+  const starts = [SCRIPT_ROOT, process.cwd()];
+  const seen = new Set();
+  const results = [];
+
+  for (const start of starts) {
+    let current = path.resolve(start);
+    while (true) {
+      if (!seen.has(current)) {
+        seen.add(current);
+        results.push(current);
+      }
+
+      const parent = path.dirname(current);
+      if (parent === current) {
+        break;
+      }
+      current = parent;
+    }
+  }
+
+  return results;
+}
+
+async function fileExists(targetPath) {
+  try {
+    await stat(targetPath);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 async function main() {
   const apiKey = process.env.NEXUS_API_KEY;

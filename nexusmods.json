@@ -1,5 +1,37 @@
 [
     {
+        "Id": "nexus-390",
+        "Name": "CasualtiesTogether - AutoLoadRunSettings",
+        "Version": "1",
+        "bepinexVersion": "1.0.0",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />[color=#d4d4d8]This is a small extension mod for  [url=https://www.nexusmods.com/scavprototype/mods/67]Casualties: Together[/url], adding simple control over your run settings that are then sent to other clients when the server starts. Works for both dedicated servers and regular servers.[/color]\n<br />\n<br />[color=#d4d4d8]GitHub [url=https://github.com/DarkDibblez/casualtiestogether-autoloadrunsettings]here[/url].[/color]\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[list=1]\n<br />[*][color=#d4d4d8]Install [b]BepInEx[/b][/color][/*]\n<br />[*][color=#d4d4d8]Install [b]Casualties: Together (aka KrokMP)[/b][/color][/*]\n<br />[*][color=#d4d4d8]Install [b]AutoLoadRunSettings[/b][/color][/*]\n<br />[*][color=#d4d4d8]Update runsettings.txt with your own run settings (copy from in-game after tweaking your settings to your liking)[/color][/*]\n<br />[/list]\n<br />[size=4][b]Main features[/b][/size]\n<br />[color=#d4d4d8]Whenever the host starts the run, the mod will attempt to load runsettings.txt and apply it to the game. The file is reloaded at the start of every run so feel free to replace the settings between runs if you wish.[/color]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[list]\n<br />[*][url=https://www.nexusmods.com/scavprototype/mods/67]Casualties: Together[/url][/*]\n<br />[/list][size=4][b]Shout outs[/b][/size]\n<br />[color=#D4D4D8]Thanks to [url=https://github.com/OzzySpaghettiTeam]OzzySpaghettiTeam[/url] for the ScavTemplate repo and [url=https://github.com/Krokosha666]Krokosha666[/url] &amp; [url=https://github.com/creaturefeaturelarry]CreatureFeatureLarry[/url] for their work on the Cas:T mod.[/color]",
+        "Author": "Dibs Razell",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/390/390-1783017994-194332866.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/390"
+        },
+        "DownloadUrl": "nexus://scavprototype/390/1085",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 390,
+        "SourceName": "Nexus",
+        "dllNames": [
+            "CasualtiesTogetherAutoLoadRunSettings.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "CasualtiesTogetherAutoLoadRunSettings.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 1,
+            "TotalDownloads": 1,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/390/390-1783017994-194332866.png"
+        ]
+    },
+    {
         "Id": "nexus-388",
         "Name": "Casualty Vitals",
         "Version": "1.0.1",
@@ -284,29 +316,29 @@
     {
         "Id": "nexus-376",
         "Name": "ExpSneeze",
-        "Version": "1.1.1",
-        "bepinexVersion": "1.1.1",
-        "Description": "Adds a sneezing mechanic to Casualties: Unknown.\n<br />\n<br />Sneezes build up slowly over the course of 5 minutes on their own, but are accelerated by digging (getting dust in your nose!). When you're ready to sneeze, you'll start sneezing a random number of times, briefly losing consciousness, receiving mild knockback, and losing 1% of your stamina for each sneeze. There is also a 1 in 10 chance for you to drop whatever you're holding in your mouth each sneeze. You will never sneeze if you're wearing a dust mask!\n<br />\n<br />[size=5][b]Requires BepInEx and CUCoreLib![/b][/size]\n<br />\n<br />Banner art by me :3",
+        "Version": "1.2.0",
+        "bepinexVersion": "1.2.1",
+        "Description": "Adds a sneezing mechanic to Casualties: Unknown.\n<br />\n<br />Sneezes build up slowly over the course of 7.5 minutes on their own, but are accelerated by digging (getting dust in your nose!). When you're ready to sneeze, you'll start sneezing a random number of times, briefly losing consciousness, receiving mild knockback, and losing 1% of your stamina for each sneeze. There is also a 1 in 10 chance for you to drop whatever you're holding in your mouth each sneeze. You will never sneeze if you're wearing a dust mask!\n<br />\n<br />All values are configurable in the game settings, tweak to your heart's content!\n<br />\n<br />[size=5][b]Requires BepInEx and CUCoreLib![/b][/size]\n<br />\n<br />Banner art by me :3",
         "Author": "IAmLeftie",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/376/376-1782852095-361435448.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/376"
         },
-        "DownloadUrl": "nexus://scavprototype/376/1052",
+        "DownloadUrl": "nexus://scavprototype/376/1088",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 376,
         "SourceName": "Nexus",
         "dllNames": [
             "ExpSneeze.dll"
         ],
-        "dllVersion": "1.1.1",
+        "dllVersion": "1.2.1",
         "dllVersions": {
-            "ExpSneeze.dll": "1.1.1"
+            "ExpSneeze.dll": "1.2.1"
         },
         "Statistics": {
-            "Endorsements": 0,
-            "UniqueDownloads": 16,
-            "TotalDownloads": 19,
+            "Endorsements": 1,
+            "UniqueDownloads": 57,
+            "TotalDownloads": 66,
             "TotalViews": null
         },
         "Images": [
@@ -590,29 +622,29 @@
     {
         "Id": "nexus-366",
         "Name": "Lefty Expies",
-        "Version": "2.0.1",
-        "bepinexVersion": "2.0.1",
+        "Version": "2.0.2",
+        "bepinexVersion": "2.0.2",
         "Description": "Make your Expies lefties! This mod makes it so that there's a chance that your Experiment will be left handed or ambidextrous when you start a new run. Left handed Expies prefer to use and default to their left hand instead of their right, and ambidextrous Expies can use both equally, but at a 10% damage penalty across the board as a trade off. Everything is configurable in the game settings!\n<br />\n<br />I haven't tested this mod with multiplayer, use at your own risk.\n<br />\n<br />A known issue is that if you load a save file, all future runs until you close the game will always have the same handedness. Not sure why, but a quick restart fixes it!\n<br />\n<br />Currently has support for the following languages:\n<br />- English (Courtesy of myself)\n<br />- Spanish (Machine translated)\n<br />- Italian (Machine translated)\n<br />- Russian (Machine translated)\n<br />- Ukrainian (Machine translated)\n<br />- Vietnamese (Courtesy of InklessBrush)\n<br />- Simplified Chinese (Machine translated)\n<br />- Romanian (Machine translated)\n<br />- Korean (Machine Translated)\n<br />\n<br />Please let me know if you find any errors or would like to contribute!\n<br />\n<br />[size=5][b]Requires BepInEx and CUCoreLib![/b][/size]\n<br />\n<br />[b]If the mod does not work:[/b]\n<br />1.  Open the BepInEx config at\n<br />[code]C:&#92;Program Files (x86)&#92;Steam&#92;steamapps&#92;common&#92;Casualties Unknown Demo&#92;BepInEx&#92;config&#92;BepInEx.cfg[/code]2. Change HideManagerGameObject to true:[img]https://files.catbox.moe/y9wzou.png[/img]\n<br />\n<br />Future ideas:\n<br />- Explicit multiplayer mod support\n<br />",
         "Author": "IAmLeftie",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/366/366-1782582137-1051220565.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/366"
         },
-        "DownloadUrl": "nexus://scavprototype/366/1059",
+        "DownloadUrl": "nexus://scavprototype/366/1087",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 366,
         "SourceName": "Nexus",
         "dllNames": [
             "LeftyExpie.dll"
         ],
-        "dllVersion": "2.0.1",
+        "dllVersion": "2.0.2",
         "dllVersions": {
-            "LeftyExpie.dll": "2.0.1"
+            "LeftyExpie.dll": "2.0.2"
         },
         "Statistics": {
             "Endorsements": 1,
-            "UniqueDownloads": 35,
-            "TotalDownloads": 52,
+            "UniqueDownloads": 40,
+            "TotalDownloads": 63,
             "TotalViews": null
         },
         "Images": [

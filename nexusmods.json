@@ -2977,29 +2977,29 @@
     {
         "Id": "nexus-194",
         "Name": "Wearable Array",
-        "Version": "1.0.1",
-        "bepinexVersion": "1.0.1",
-        "Description": "[size=4][b]Description[/b][/size]\n<br />[color=#D4D4D8]Prevents wearable from going out of screen[/color]\n<br />[color=#D4D4D8]They would instead look verticaly[/color]\n<br />\n<br />[b][size=4]\n<br />Installation instructions[/size][/b]\n<br />If you mod your game for first time (dont have BepInEx):\n<br />[spoiler]Go to BepInEx download page\n<br />https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5\n<br />And download BepInEx_win_x64_5.4.23.5\n<br />Open steam, choose browse local file\n<br />Extract BepInEx contents into game folder's root (winhttp.dll should be in same folder as executable)\n<br />Open game once and close\n<br />Now folder BepInEx/plugins should be created\n<br />\n<br />Additional instruction for Linux users:\n<br />  - Add  `WINEDLLOVERRIDES=\"winhttp=n,b\"  %command%` into launch arguments[/spoiler]\n<br />\n<br />\n<br />Download `WearableArray` and extract into BepInEx/plugins\n<br />",
+        "Version": "1.2.0",
+        "bepinexVersion": "1.1.0",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />[color=#D4D4D8]Prevents wearable from going out of screen[/color]\n<br />[color=#D4D4D8]They would instead stack verticaly[/color]\n<br />[color=#D4D4D8]You can configure offset and rows in settings[/color]\n<br />\n<br />[b][size=4]\n<br />Installation instructions[/size][/b]\n<br />If you mod your game for first time (dont have BepInEx):\n<br />[spoiler]Go to BepInEx download page\n<br />https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5\n<br />And download BepInEx_win_x64_5.4.23.5\n<br />Open steam, choose browse local file\n<br />Extract BepInEx contents into game folder's root (winhttp.dll should be in same folder as executable)\n<br />Open game once and close\n<br />Now folder BepInEx/plugins should be created\n<br />\n<br />Additional instruction for Linux users:\n<br />  - Add  `WINEDLLOVERRIDES=\"winhttp=n,b\"  %command%` into launch arguments[/spoiler]\n<br />\n<br />\n<br />Download `WearableArray` and extract into BepInEx/plugins\n<br />",
         "Author": "RushellXYZ",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/194/194-1780896592-646519212.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/194"
         },
-        "DownloadUrl": "nexus://scavprototype/194/672",
+        "DownloadUrl": "nexus://scavprototype/194/1096",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 194,
         "SourceName": "Nexus",
         "dllNames": [
             "WearableArray.dll"
         ],
-        "dllVersion": "1.0.1",
+        "dllVersion": "1.1.0",
         "dllVersions": {
-            "WearableArray.dll": "1.0.1"
+            "WearableArray.dll": "1.1.0"
         },
         "Statistics": {
-            "Endorsements": 20,
-            "UniqueDownloads": 728,
-            "TotalDownloads": 955,
+            "Endorsements": 23,
+            "UniqueDownloads": 799,
+            "TotalDownloads": 1038,
             "TotalViews": null
         },
         "Images": [

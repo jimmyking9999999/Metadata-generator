@@ -1,5 +1,33 @@
 [
     {
+        "Id": "nexus-395",
+        "Name": "ShatteredPrism",
+        "Version": "1.0.0",
+        "bepinexVersion": null,
+        "Description": "[size=4]No Description Yet...[/size]\n<br />\n<br />[size=4][b]Version 0.10.0 of the ScavLib API has not yet been released on Nexus Mods, so this loader is currently unavailable...[/b][/size]",
+        "Author": "QinShenYu and Kanisuko",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/395/395-1783092518-1838252192.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/395"
+        },
+        "DownloadUrl": "nexus://scavprototype/395/1100",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 395,
+        "SourceName": "Nexus",
+        "dllNames": [],
+        "dllVersion": null,
+        "dllVersions": {},
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 1,
+            "TotalDownloads": 1,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/395/395-1783092518-1838252192.png"
+        ]
+    },
+    {
         "Id": "nexus-394",
         "Name": "Casualties Unknown Resprite",
         "Version": "1.1",
@@ -4894,29 +4922,32 @@
     {
         "Id": "nexus-83",
         "Name": "ScavLib API",
-        "Version": "0.7.5",
-        "bepinexVersion": "0.7.3",
+        "Version": "0.10.0",
+        "bepinexVersion": "0.9.0",
         "Description": "[b][size=6]ScavLib — Casualties Unknown Mod API Library[/size][/b]\n<br />\n<br />[b]Authors:[/b] Kanisuko / QinShenYu \n<br />[b]Required by:[/b] Any mod built on ScavLib \n<br />[b]Source (DLL repository): [url=https://github.com/Kanisuko/ScavLib-API-DLL-Repository]github.com/Kanisuko/ScavLib-API-DLL-Repository[/url] [/b]\n<br />[b][color=#ffffff]Source Code:  [url=https://github.com/Kanisuko/ScavLib-API]github.com/Kanisuko/ScavLib-API[/url][/color][/b]\n<br />[b]Wiki: [url=https://github.com/Kanisuko/ScavLib-API-DLL-Repository/wiki]github.com/Kanisuko/ScavLib-API-DLL-Repository/wiki[/url][/b]\n<br />[line]\n<br />[b][size=5]Description[/size][/b]\n<br />\n<br />ScavLib is a foundational developer-focused API and utility library designed to simplify mod development for [b]Scav Prototype (a.k.a. Casualties Unknown)[/b]. It streamlines common tasks such as building in-game menus, managing configurations, registering console commands, handling custom events, interacting safely with the game state, and working with player vitals, skills, and items.\n<br />\n<br />[quote][b]Note for players:[/b] This is a core dependency library. It does not add any content on its own, but is required by other mods to function.[/quote][line]\n<br />[b][size=5]Installation[/size][/b]\n<br />[list=1]\n<br />[*]Ensure you have [b]BepInEx 5[/b] installed for Scav Prototype.[/*]\n<br />[*]Download [font=Courier New]ScavLib.dll[/font].[/*]\n<br />[*]Place [font=Courier New]ScavLib.dll[/font] into your game directory under [font=Courier New]BepInEx/plugins/[/font].[/*]\n<br />[*]Launch the game. To verify it loaded correctly, open the developer console and type:\n<br />[code]scavlib status[/code]You should see ScavLib's version, authors, and all registered mods printed to the console.[/*]\n<br />[/list][line]\n<br />[b][size=5]Regarding multiplayer support[/size][/b]\n<br />[b]Multiplayer games are theoretically supported, both the client and server need to have ScavLib installed.[/b]\n<br />[line]\n<br />[b][size=5][b]Requirements[/b][/size][/b]\n<br />[list]\n<br />[*][b][b]BepInEx 5.x[/b] (64-bit version recommended)[/b][/*]\n<br />[*][b]Scav Prototype game client (Steam)[/b][/*]\n<br />[/list][line]\n<br />[b][size=5]For Developers[/size]\n<br />\n<br />You can see wiki on [url=https://github.com/Kanisuko/ScavLib-API-DLL-Repository/wiki]Github wiki page[/url] or you can see source code on [url=https://github.com/Kanisuko/ScavLib-API]ScavLib API[/url], thanks.[/b]\n<br />\n<br />[b]Of course, if you discover any new issues, we recommend that you submit an issue report to the DLL repository on GitHub.[/b]\n<br />\n<br />[b](I sincerely apologize for the bugs that appeared, as I was the only tester and was unable to conduct comprehensive testing.)[/b]\n<br />[line]\n<br />[b][size=5][b]Shout-outs[/b][/size]\n<br />\n<br />Developed by [b]Kanisuko[/b] and [b]QinShenYu[/b].[/b]\n<br />",
         "Author": "QinShenYu and Kanisuko",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/83/83-1779439232-1463014514.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/83"
         },
-        "DownloadUrl": "nexus://scavprototype/83/895",
+        "DownloadUrl": "nexus://scavprototype/83/1101",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 83,
         "SourceName": "Nexus",
         "dllNames": [
-            "ScavLib API.dll"
+            "ScavLib API.dll",
+            "ScavLib API.Shader.dll",
+            "ScavLib API.Traps.dll",
+            "ScavLib API.UI.dll"
         ],
-        "dllVersion": "0.7.3",
+        "dllVersion": "0.9.0",
         "dllVersions": {
-            "ScavLib API.dll": "0.7.3"
+            "ScavLib API.dll": "0.9.0"
         },
         "Statistics": {
-            "Endorsements": 31,
-            "UniqueDownloads": 655,
-            "TotalDownloads": 1124,
+            "Endorsements": 35,
+            "UniqueDownloads": 667,
+            "TotalDownloads": 1144,
             "TotalViews": null
         },
         "Images": [

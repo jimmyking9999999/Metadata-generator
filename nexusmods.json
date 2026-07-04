@@ -1,5 +1,37 @@
 [
     {
+        "Id": "nexus-402",
+        "Name": "Just Unknown Characters",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.0.0",
+        "Description": "[quote][b]⚠️ Note: This mod is designed for Chinese-speaking players. It adds Pinyin-based search so you can find Chinese-named recipes by typing their romanization (e.g., xianweisheng → 纤维绳). If you don't read Chinese and aren't playing a Chinese-locale version of the game, this mod probably isn't useful for you.[/b][/quote][line]\n<br />[quote]源代码：[url=https://github.com/XeronOwO/Just-Unknown-Characters]https://github.com/XeronOwO/Just-Unknown-Characters[/url]\n<br />如果遇到任何问题，建议优先在 Github 反馈[/quote]Casualties Unknown（未知伤亡）的拼音搜索模组 — 在合成界面搜索框中支持使用拼音筛选中文配方。\n<br />[list]\n<br />[*][b]全拼[/b]: xianweisheng → 纤维绳[/*]\n<br />[*][b]首字母[/b]: xws → 纤维绳[/*]\n<br />[*][b]单字拼音[/b]: sheng → 纤维绳（匹配“绳”）[/*]\n<br />[*][b]混合输入[/b]: 纤wei、xian维[/*]\n<br />[/list][url=https://github.com/XeronOwO/Just-Unknown-Characters/blob/master/docs/pinyin-search-demo.png][img]https://github.com/XeronOwO/Just-Unknown-Characters/raw/master/docs/pinyin-search-demo.png[/img][/url]\n<br />\n<br />[heading]前置依赖[/heading]\n<br />[list]\n<br />[*][url=https://bepinex.org/]BepInEx[/url] 5.x（需预先安装在游戏目录）[/*]\n<br />[/list]\n<br />[heading]安装[/heading]\n<br />[list=1]\n<br />[*]从 [url=https://github.com/XeronOwO/Just-Unknown-Characters/releases]Releases[/url] 下载 JustUnknownCharacters.dll[/*]\n<br />[*]放入 Casualties Unknown Demo&#92;BepInEx&#92;plugins&#92;[/*]\n<br />[/list]\n<br />[heading]构建[/heading]\n<br />[url=https://github.com/XeronOwO/Just-Unknown-Characters#%E6%9E%84%E5%BB%BA][/url]\n<br />构建前需在 lib/ 目录放置游戏 DLL（详见 lib/README.txt）：\n<br />[list]\n<br />[*]Assembly-CSharp.dll、UnityEngine.dll、UnityEngine.CoreModule.dll（来自 CasualtiesUnknown_Data&#92;Managed&#92;）[/*]\n<br />[*]0Harmony.dll（来自 BepInEx&#92;core&#92;）[/*]\n<br />[*]netstandard.dll（来自 CasualtiesUnknown_Data&#92;Managed&#92;，Unity Mono 兼容层）[/*]\n<br />[/list]dotnet restore\n<br />dotnet build -c Release\n<br />\n<br />输出：\n<br />src/bin/Release/net452/JustUnknownCharacters.dll\n<br />\n<br />[heading]致谢[/heading]\n<br />[url=https://github.com/XeronOwO/Just-Unknown-Characters#%E8%87%B4%E8%B0%A2][/url]\n<br />本模组的拼音搜索算法和字典数据基于 [url=https://github.com/Towdium/JustEnoughCharacters]Just Enough Characters[/url] 及其核心库 [url=https://github.com/Towdium/PinIn]PinIn[/url]，由 [url=https://github.com/Towdium]Towdium[/url] 开发。\n<br />Resources/pinyin_data.txt 直接取自 PinIn 项目，匹配逻辑为 PinIn 的 NFA 音素回溯算法的 C# 移植。感谢 Towdium 的开源贡献。\n<br />\n<br />[heading]许可[/heading]\n<br />[url=https://github.com/XeronOwO/Just-Unknown-Characters#%E8%AE%B8%E5%8F%AF][/url]\n<br />[url=https://github.com/XeronOwO/Just-Unknown-Characters/blob/master/LICENSE]MIT[/url]",
+        "Author": "XeronOwO",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/402/402-1783164905-1176580663.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/402"
+        },
+        "DownloadUrl": "nexus://scavprototype/402/1103",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 402,
+        "SourceName": "Nexus",
+        "dllNames": [
+            "JustUnknownCharacters.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "JustUnknownCharacters.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 2,
+            "TotalDownloads": 2,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/402/402-1783164905-1176580663.png"
+        ]
+    },
+    {
         "Id": "nexus-401",
         "Name": "Knot Recipe Mod",
         "Version": "1",

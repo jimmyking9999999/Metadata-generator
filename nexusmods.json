@@ -1,5 +1,37 @@
 [
     {
+        "Id": "nexus-403",
+        "Name": "RshCCL",
+        "Version": "1.0.0",
+        "bepinexVersion": "3.1.0",
+        "Description": "[img]https://github.com/CNCUMC/RshCCL/blob/master/Logo.png[/img]\n<br />[url=https://github.com/CNCUMC/RshCCL/blob/main/README_ZH.md]中文指南[/url]\n<br />\n<br />[quote][b]⚠️ RshCCL is a compatibility bridge only.[/b]\n<br />\n<br />Developers should always prefer using [url=https://github.com/jimmyking9999999/CUCoreLib]CUCoreLib[/url] directly.\n<br />\n<br />Players should ask mod authors to migrate to CUCoreLib as their API dependency.[/quote]\n<br />[url=https://github.com/CNCUMC/RshCCL]GitHub[/url] | [url=https://www.nexusmods.com/games/scavprototype/mods/403]NexusMods[/url] | [url=https://github.com/jimmyking9999999/CUCoreLib]CUCoreLib[/url]\n<br />\n<br />[i]A compatibility bridge that forwards legacy RshLib API calls to [url=https://github.com/jimmyking9999999/CUCoreLib]CUCoreLib[/url] (CCL).[/i]\n<br />\n<br />[line]\n<br />\n<br />[size=4][b]Overview[/b][/size]\n<br />\n<br />[b]RshCCL[/b] is a drop-in replacement for RshLib [i](in most cases)[/i]. It keeps the [i]Plugin.RegisterItem(string, RshItem)[/i] API surface so older mods work unchanged, while internally routing all registrations through CUCoreLib.\n<br />\n<br />[b]Key features:[/b]\n<br />\n<br />[b]RegisterItem[/b] – Converts [i]RshItem[/i] → [i]CustomItemInfo[/i], then calls [i]ItemRegistry.Register[/i]\n<br />\n<br />[b]onSpawn callback[/b] – Injected via CCL [i]SpawnComponents[/i] + [i]RshSpawnCallback[/i] MonoBehaviour\n<br />\n<br />[b]krokMpEnabled / togetherMpEnabled[/b] – Provided as backwards‑compatible fields\n<br />\n<br />[b]Conflict avoidance[/b] – Removes self from [i]Chainloader.PluginInfos[/i] so mods like NewClothing use their native CCL path\n<br />\n<br />[b]Console autofill[/b] – Patches [i]spawn[/i] command to include every CCL‑registered item\n<br />\n<br />[b]Recipe‑list crash guard[/b] – Harmony finalizer catches NRE in [i]RefreshRecipeList[/i]\n<br />\n<br />[line]\n<br />\n<br />[size=4][b]Installation[/b][/size]\n<br />\n<br />Install [url=https://github.com/BepInEx/BepInEx]BepInEx 5.x[/url] for Casualties Unknown.\n<br />\n<br />Install [url=https://github.com/jimmyking9999999/CUCoreLib]CUCoreLib[/url] ≥ 1.0.1 — place [i]CUCoreLib.dll[/i] in [i]BepInEx/plugins/[/i].\n<br />\n<br />Download the latest [i]RshCCL.dll[/i] from [url=https://github.com/CNCUMC/RshCCL/releases]Releases[/url].\n<br />\n<br />Place [i]RshCCL.dll[/i] in [i]BepInEx/plugins/[/i].\n<br />\n<br />[b]Remove[/b] the old [i]RshLib.dll[/i] if it exists.\n<br />\n<br />[quote][b]⚠️ Important:[/b] RshCCL uses the same BepInEx GUID as old RshLib ([i]com.rushellxyz.rshlib[/i]).\n<br />\n<br />Only [b]one[/b] [i]RshLib.dll[/i] should be present in your plugins folder.[/quote]\n<br />[line]\n<br />\n<br />[size=4][b]Notes[/b][/size]\n<br />\n<br />RshLib itself never provided path or resource‑loading APIs. Older mods that hard‑code paths like [i]\"BepInEx/plugins/MyMod/image.png\"[/i] must update their own resource‑loading code.\n<br />\n<br />Consider migrating to CCL's [url=https://github.com/jimmyking9999999/CUCoreLib]AssetLoader[/url] which resolves paths relative to the calling DLL.\n<br />\n<br />[line]\n<br />\n<br />[size=4][b]Project Structure[/b][/size]\n<br />[code]\n<br />RshCCL/\n<br />├── Plugin.cs # Entry point: compatibility API + conflict avoidance\n<br />├── RshItem.cs # Legacy RshItem type (backwards compat)\n<br />├── RshItemAdapter.cs # RshItem → CustomItemInfo converter + onSpawn callback\n<br />├── Patches.cs # ConsoleScript, GlobalDark, RefreshRecipeList guard\n<br />├── RshLib.csproj # Project file (depends on CUCoreLib)\n<br />├── CHANGELOG.md # English changelog\n<br />├── CHANGELOG_ZH.md # Chinese changelog\n<br />├── README.md\n<br />└── README_ZH.md[/code]",
+        "Author": "CNCUMC",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/403/403-1783194836-1653366416.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/403"
+        },
+        "DownloadUrl": "nexus://scavprototype/403/1112",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 403,
+        "SourceName": "Nexus",
+        "dllNames": [
+            "RshCCL.dll"
+        ],
+        "dllVersion": "3.1.0",
+        "dllVersions": {
+            "RshCCL.dll": "3.1.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 2,
+            "TotalDownloads": 2,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/403/403-1783194836-1653366416.png"
+        ]
+    },
+    {
         "Id": "nexus-402",
         "Name": "Just Unknown Characters",
         "Version": "1.0.0",
@@ -472,29 +504,29 @@
     {
         "Id": "nexus-376",
         "Name": "ExpSneeze",
-        "Version": "1.2.0",
-        "bepinexVersion": "1.2.1",
+        "Version": "1.3.0",
+        "bepinexVersion": "1.3.0",
         "Description": "Adds a sneezing mechanic to Casualties: Unknown.\n<br />\n<br />Sneezes build up slowly over the course of 7.5 minutes on their own, but are accelerated by digging (getting dust in your nose!). When you're ready to sneeze, you'll start sneezing a random number of times, briefly losing consciousness, receiving mild knockback, and losing 1% of your stamina for each sneeze. There is also a 1 in 10 chance for you to drop whatever you're holding in your mouth each sneeze. You will never sneeze if you're wearing a dust mask!\n<br />\n<br />All values are configurable in the game settings, tweak to your heart's content!\n<br />\n<br />[size=5][b]Requires BepInEx and CUCoreLib![/b][/size]\n<br />\n<br />Banner art by me :3",
         "Author": "IAmLeftie",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/376/376-1782852095-361435448.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/376"
         },
-        "DownloadUrl": "nexus://scavprototype/376/1088",
+        "DownloadUrl": "nexus://scavprototype/376/1114",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 376,
         "SourceName": "Nexus",
         "dllNames": [
             "ExpSneeze.dll"
         ],
-        "dllVersion": "1.2.1",
+        "dllVersion": "1.3.0",
         "dllVersions": {
-            "ExpSneeze.dll": "1.2.1"
+            "ExpSneeze.dll": "1.3.0"
         },
         "Statistics": {
-            "Endorsements": 1,
-            "UniqueDownloads": 57,
-            "TotalDownloads": 66,
+            "Endorsements": 3,
+            "UniqueDownloads": 84,
+            "TotalDownloads": 107,
             "TotalViews": null
         },
         "Images": [
@@ -778,29 +810,29 @@
     {
         "Id": "nexus-366",
         "Name": "Lefty Expies",
-        "Version": "2.0.2",
-        "bepinexVersion": "2.0.2",
+        "Version": "2.1.0",
+        "bepinexVersion": "2.1.0",
         "Description": "Make your Expies lefties! This mod makes it so that there's a chance that your Experiment will be left handed or ambidextrous when you start a new run. Left handed Expies prefer to use and default to their left hand instead of their right, and ambidextrous Expies can use both equally, but at a 10% damage penalty across the board as a trade off. Everything is configurable in the game settings!\n<br />\n<br />I haven't tested this mod with multiplayer, use at your own risk.\n<br />\n<br />A known issue is that if you load a save file, all future runs until you close the game will always have the same handedness. Not sure why, but a quick restart fixes it!\n<br />\n<br />Currently has support for the following languages:\n<br />- English (Courtesy of myself)\n<br />- Spanish (Machine translated)\n<br />- Italian (Machine translated)\n<br />- Russian (Machine translated)\n<br />- Ukrainian (Machine translated)\n<br />- Vietnamese (Courtesy of InklessBrush)\n<br />- Simplified Chinese (Machine translated)\n<br />- Romanian (Machine translated)\n<br />- Korean (Machine Translated)\n<br />\n<br />Please let me know if you find any errors or would like to contribute!\n<br />\n<br />[size=5][b]Requires BepInEx and CUCoreLib![/b][/size]\n<br />\n<br />[b]If the mod does not work:[/b]\n<br />1.  Open the BepInEx config at\n<br />[code]C:&#92;Program Files (x86)&#92;Steam&#92;steamapps&#92;common&#92;Casualties Unknown Demo&#92;BepInEx&#92;config&#92;BepInEx.cfg[/code]2. Change HideManagerGameObject to true:[img]https://files.catbox.moe/y9wzou.png[/img]\n<br />\n<br />Future ideas:\n<br />- Explicit multiplayer mod support\n<br />",
         "Author": "IAmLeftie",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/366/366-1782582137-1051220565.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/366"
         },
-        "DownloadUrl": "nexus://scavprototype/366/1087",
+        "DownloadUrl": "nexus://scavprototype/366/1113",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 366,
         "SourceName": "Nexus",
         "dllNames": [
             "LeftyExpie.dll"
         ],
-        "dllVersion": "2.0.2",
+        "dllVersion": "2.1.0",
         "dllVersions": {
-            "LeftyExpie.dll": "2.0.2"
+            "LeftyExpie.dll": "2.1.0"
         },
         "Statistics": {
             "Endorsements": 1,
-            "UniqueDownloads": 40,
-            "TotalDownloads": 63,
+            "UniqueDownloads": 51,
+            "TotalDownloads": 90,
             "TotalViews": null
         },
         "Images": [

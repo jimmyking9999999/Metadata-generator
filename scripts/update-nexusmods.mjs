@@ -222,10 +222,20 @@ async function runQuickSync({ apiKey, appVersion, gameDomains, entryByKey }) {
   for (const gameDomain of gameDomains) {
     logSection(`Quick Check ${gameDomain}`);
     const candidateMods = await discoverRecentModsForGame(apiKey, appVersion, gameDomain);
-    logInfo(`Recent candidate mods: ${candidateMods.length}`);
+    const existingModIds = getExistingModIdsForGame(entryByKey, gameDomain);
+    const candidateModIds = new Set(existingModIds);
 
     for (const item of candidateMods) {
-      const modId = item.mod_id;
+      if (Number.isInteger(item?.mod_id)) {
+        candidateModIds.add(item.mod_id);
+      }
+    }
+
+    logInfo(`Tracked mods to scan: ${existingModIds.length}`);
+    logInfo(`Recent candidate mods: ${candidateMods.length}`);
+    logInfo(`Quick scan set: ${candidateModIds.size}`);
+
+    for (const modId of [...candidateModIds].sort((a, b) => b - a)) {
       const entryKey = getEntryKey(gameDomain, modId);
       const existingEntry = entryByKey.get(entryKey);
 
@@ -270,9 +280,7 @@ async function runFullSync({ apiKey, appVersion, gameDomains, entryByKey }) {
   for (const gameDomain of gameDomains) {
     logSection(`Full Refresh ${gameDomain}`);
     const discoveredMods = await discoverModsForGame(apiKey, appVersion, gameDomain);
-    const existingModIds = [...entryByKey.values()]
-      .filter((entry) => entry?.NexusGameDomain === gameDomain && Number.isInteger(entry?.NexusModId))
-      .map((entry) => entry.NexusModId);
+    const existingModIds = getExistingModIdsForGame(entryByKey, gameDomain);
     const modIds = [...new Set([...existingModIds, ...discoveredMods.map((item) => item.mod_id)])].sort((a, b) => b - a);
     logInfo(`Candidate mods: ${modIds.length}`);
 
@@ -307,6 +315,12 @@ async function runFullSync({ apiKey, appVersion, gameDomains, entryByKey }) {
       }
     }
   }
+}
+
+function getExistingModIdsForGame(entryByKey, gameDomain) {
+  return [...entryByKey.values()]
+    .filter((entry) => entry?.NexusGameDomain === gameDomain && Number.isInteger(entry?.NexusModId))
+    .map((entry) => entry.NexusModId);
 }
 
 async function refreshModAndNotify({

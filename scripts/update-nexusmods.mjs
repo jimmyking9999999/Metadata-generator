@@ -21,7 +21,6 @@ const TEMP_ROOT = path.join(os.tmpdir(), "metadata-nexusmods");
 const API_BASE_URL = "https://api.nexusmods.com/v1";
 const APP_NAME = "Metadata Nexus Sync";
 const REQUEST_TIMEOUT_MS = 60_000;
-const FULL_DISCOVERY_LIMIT = 64;
 const FULL_RECENT_PERIODS = ["1d", "1w", "1m"];
 const QUICK_DISCOVERY_ROUTES = [
   "/mods/latest_added",
@@ -411,7 +410,7 @@ async function discoverModsForGame(apiKey, appVersion, gameDomain) {
   }
 
   logInfo(`Discovery complete for ${gameDomain}: ${discovered.size} unique mod(s).`);
-  return [...discovered.values()].slice(0, FULL_DISCOVERY_LIMIT * 4);
+  return [...discovered.values()];
 }
 
 function normalizeDiscoveredMods(response) {

@@ -1,5 +1,37 @@
 [
     {
+        "Id": "nexus-463",
+        "Name": "Iza's War Food",
+        "Version": "1.0.0",
+        "bepinexVersion": "0.1.0",
+        "Description": "[size=5]Iza's War Food[/size]\n<br />\n<br />Iza's War Food is a BepInEx 5 content plugin for Casualties Unknown that adds extra drink mix packets, mixed drinks, and military-style K-, C-, and D-rations.\n<br />\n<br />The mod is meant as small variety-of-life content: more food crate finds, more trader variety and flavour choices to keep your expie happy.\n<br />\n<br />[line]\n<br />\n<br />[size=4]Requirements[/size]\n<br />\n<br />Casualties Unknown Demo\n<br />BepInEx 5 for Unity Mono\n<br />[url=https://www.nexusmods.com/scavprototype/mods/341]CUCoreLib[/url]\n<br />Windows x64 game install\n<br />\n<br />[line]\n<br />\n<br />[size=4]Installation[/size]\n<br />\n<br />[list=1]\n<br />[*]Install BepInEx 5 into the Casualties Unknown game folder.[/*]\n<br />[*]Install CUCoreLib if you do not already have it.[/*]\n<br />[*]Launch the game once so BepInEx creates its folders.[/*]\n<br />[*]Place IzasWarFood.dll into a folder inside:[/*]\n<br />[/list][code]&lt;Game Folder&gt;&#92;BepInEx&#92;plugins&#92;[/code]\n<br />For example:\n<br />[code]&lt;Game Folder&gt;&#92;BepInEx&#92;plugins&#92;IzasWarFood&#92;IzasWarFood.dll[/code]Launch the game once to generate the config file:\n<br />[code]&lt;Game Folder&gt;&#92;BepInEx&#92;config&#92;com.carlo.casualtiesunknown.izaswarfood.cfg[/code]\n<br />[line]\n<br />\n<br />[size=4]What It Adds[/size]\n<br />\n<br />[size=4]Drink mix packets:[/size]\n<br />Instant coffee\n<br />Fruit punch\n<br />Grape\n<br />Lemon-lime\n<br />Orange\n<br />Lemonade\n<br />Orange-pineapple\n<br />Berry\n<br />Cocoa\n<br />Chocolate milk\n<br />Irish cream cappuccino\n<br />French vanilla cappuccino\n<br />Mocha cappuccino\n<br />\n<br />[size=4]Rations:[/size]\n<br />K-ration cheese tortellini with marbled pound cake\n<br />K-ration beef ravioli with crackers and cheese spread\n<br />K-ration chili with beans and jalapeno cheese spread\n<br />K-ration mozzarella and spinach ravioli with corn chowder\n<br />C-ration hard biscuits\n<br />C-ration cookies\n<br />C-ration preserved beef\n<br />C-ration spaghetti (Meat and Tomato variants)\n<br />C-ration veggie hash\n<br />C-ration hashbrowns\n<br />D-ration compressed chocolate\n<br />\n<br />[line]\n<br />\n<br />[size=4]Gameplay Notes[/size]\n<br />\n<br />Drink mix packets can be mixed with liquids that have water quality. One full packet can flavor up to 1000 ml worth of water quality, and partial mixing uses only part of the packet condition (at a rate of 10% = 100Ml).\n<br />\n<br />The mixer prioritizes a valid liquid container in the player's main hand, so a full 1 L of water in your inventory is not automatically all turned into powder drink unless that is the container you are actively using.\n<br />\n<br />Some packets can also be eaten dry. This is usually not a good idea, but it can give a small effect at the cost of thirst and other side effects.\n<br />\n<br />Lemonade mix and chocolate milk mix can be made by boiling down the existing lemonade or chocolate milk liquids. Partial amounts work in 100 ml chunks.\n<br />\n<br />Rations have multiple uses instead of being consumed all at once.\n<br />\n<br />Rations are not craftable. They are found as loot, trader food, and scattered around during worldgen.\n<br />\n<br />[line]\n<br />\n<br />[size=4]Configuration[/size]\n<br />\n<br />The generated config is intentionally small:\n<br />\n<br />[code]General.Enabled\n<br />General.RegisterRecipes\n<br />General.RegisterRations[/code]\n<br />If you delete the config file, BepInEx will regenerate it on next launch with the current defaults.\n<br />\n<br />[line]\n<br />\n<br />[size=4]Console Testing[/size]\n<br />\n<br />A spawn category is included for quick testing:\n<br />[code]spawncategory izaswarfood[/code]This spawns the current drink mix packets and ration items in zero gravity.\n<br />\n<br />[line]\n<br />\n<br />[size=4]Compatibility[/size]\n<br />\n<br />This mod is additive. It registers new items, liquids, recipes, locale entries, and a small spawncategory helper.\n<br />It may conflict with other mods that heavily replace item registration, recipe crafting, liquid behavior, or console spawn categories.\n<br />Mods that only add unrelated items, UI, audio, or quality-of-life behavior are more likely to be fine.\n<br />\n<br />[line]\n<br />\n<br />[size=4]Save and Uninstall Notes[/size]\n<br />\n<br />The plugin does not intentionally write custom persistent save data.\n<br />Because this mod adds custom item and liquid IDs, removing it during a run may leave missing references if your current save contains its items or liquids.\n<br />For safest uninstalling, finish or abandon the current run first, then remove:\n<br />[code]&lt;Game Folder&gt;&#92;BepInEx&#92;plugins&#92;IzasWarFood&#92;[/code]Optional:\n<br />[code]&lt;Game Folder&gt;&#92;BepInEx&#92;config&#92;com.carlo.casualtiesunknown.izaswarfood.cfg[/code]\n<br />[line]\n<br />\n<br />[size=4]Troubleshooting[/size]\n<br />\n<br />If the items do not appear:\n<br />[list]\n<br />[*]Confirm BepInEx 5 loads.[/*]\n<br />[*]Confirm CUCoreLib is installed and loading.[/*]\n<br />[*]Confirm IzasWarFood.dll is inside BepInEx&#92;plugins.[/*]\n<br />[*]Launch once and check that the config file was generated.[/*]\n<br />[*]Check that General.Enabled is true.[/*]\n<br />[*]Use spawncategory izaswarfood to confirm the plugin is active.[/*]\n<br />[/list]\n<br />If recipes do not appear:\n<br />[list]\n<br />[*]Check that General.RegisterRecipes is true.[/*]\n<br />[*]Check the Food crafting category.[/*]\n<br />[/list]\n<br />If rations do not appear:\n<br />[list]\n<br />[*]Check that General.RegisterRations is true.[/*]\n<br />[*]Use spawncategory izaswarfood to confirm they registered.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=4]Credits[/size]\n<br />[list]\n<br />[*]Built with BepInEx 5.[/*]\n<br />[*]jimmyking9999999 for CUCoreLib.[/*]\n<br />[*]TheTeaChugger for the idea[/*]\n<br />[/list][line]\n<br />\n<br />[size=4]Version[/size]\n<br />\n<br />Current workspace version: 1.0.0\n<br />\n<br />This build is experimental and may change as the underlying game and mod hooks are better understood.\n<br />",
+        "Author": "yzaCarlos",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/463/463-1784488675-43170052.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/463"
+        },
+        "DownloadUrl": "nexus://scavprototype/463/1356",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 463,
+        "SourceName": "Nexus",
+        "dllNames": [
+            "IzasWarFood.dll"
+        ],
+        "dllVersion": "0.1.0",
+        "dllVersions": {
+            "IzasWarFood.dll": "0.1.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 1,
+            "TotalDownloads": 1,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/463/463-1784488675-43170052.png"
+        ]
+    },
+    {
         "Id": "nexus-462",
         "Name": "Wearable Crystals",
         "Version": "1.0.0",

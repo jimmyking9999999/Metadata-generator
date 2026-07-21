@@ -1,30 +1,62 @@
 [
     {
+        "Id": "nexus-476",
+        "Name": "Anti Grav bag",
+        "Version": "1",
+        "bepinexVersion": "0.1.0",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />[color=#D4D4D8]Just an idea for a new custom container. Shout out to the Big Gs' that made this mod exist= \"Iza Carlos and JimmyKing\".\n<br />There is an annoying thing called \"lack of space\" for players that want to loot anything and everything. So why not have a container that could hold all of that?.[/color]\n<br />\n<br />[b][color=#d4d4d8][size=4]How to install and play?=[/size][/color][/b]\n<br />[color=#D4D4D8]\n<br />1-Download the file and extract them somewhere.\n<br />2-there is an assets file and antigravbag.dll inside the extracted files. put these two in the plugin folder of the BepInEx. and enjoy.[/color]\n<br />\n<br />[b][color=#d4d4d8][size=4]What's the real feature?=[/size][/color][/b]\n<br />[color=#D4D4D8]\n<br />Anti-Grav bag: A container with infinite capacity, but with drawbacks. (Should be balanced ofc).\n<br />1-Holds infinite items, even the heavy ones; but the encumbrance reduction is 100%.(basically all items inside the container weight double.\n<br />2-like the Grav bag, can use battery. This one can use large batteries. Using batteries sets the encumbrance reduction to 0%. (All items now weight normally). Obviously the container would violently explode without a charged battery.\n<br />3-It's craftable.[/color]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[size=3][color=#D4D4D8]BepInEx and CUCoreLib.[/color][/size]\n<br />\n<br />[color=#D4D4D8][size=4][b]How to configure?=[/b][/size]\n<br />\n<br />There are some configurations that can be made.(there are also notes on top of each config setting).\n<br />1-After installing the mod and running it once, config file is created in the &#92;BepInEx&#92;Config&#92; folder.\n<br />2-The name of the config file should be \"com.carlo.casualtiesunknown.antigravbag.cfg\".\n<br />3-You can open the file with notepad++ or even notepad if you want.\n<br />\n<br />[size=4][b]Want a different color/style for the Anti-Grav Bag?=[/b][/size]\n<br />\n<br />1-There is \"antigravbag.png\" in the assets folder that the mod uses. I made it myself but the original one that the creators made are in the \"antigravbagoriginal\" folder. you can replace the file if you want.\n<br />2-If you just want a completely different one or another one that you created yourself, just replace the \"antigravbag.png\" with the one you have (names MUST match).[/color]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[color=#D4D4D8]Special thanks again to Iza Carlos for the coding the mod and JimmyKing for helping them and creating the Original anti grav bag asset and CUCoreLib that mad everything work. This mod belongs to them, I only published it with their permission, and will remove it if they desire.[/color]",
+        "Author": "Iza Carlos",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/476/476-1784638002-401210808.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/476"
+        },
+        "DownloadUrl": "nexus://scavprototype/476/1391",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 476,
+        "SourceName": "Nexus",
+        "dllNames": [
+            "AntiGravBag.dll"
+        ],
+        "dllVersion": "0.1.0",
+        "dllVersions": {
+            "AntiGravBag.dll": "0.1.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 3,
+            "TotalDownloads": 3,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/476/476-1784638002-401210808.png"
+        ]
+    },
+    {
         "Id": "nexus-466",
         "Name": "Ceiling turrets",
-        "Version": "1",
-        "bepinexVersion": "1.0.0",
+        "Version": "2",
+        "bepinexVersion": "1.0.1",
         "Description": "[size=4][b]Description[/b][/size]\n<br />If the turrets in the game ever felt boring for you or.. you want to just experience more suffering (just like i did while trying to get this mod working), then this is the right mod i suppose... Adds automatic ceiling turrets that shoot after you constantly and any other living being (except traders somehow).\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[color=#d4d4d8]Bepinex plugins folder. not that hard[/color]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />Adds an aditional trap... the Ceiling turret from People Playground which spawns nearby ends of layer 4 and mostly in layer 5\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[url=https://www.nexusmods.com/scavprototype/mods/341]CUcoreLib[/url] is mandatory else this thang just gonna sit spitting errors and will not work. (also i kinda recommend also using the QoL too, has mod enabling/disabling options)\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />Again huge huge thanks to [url=https://www.nexusmods.com/profile/Jimmyking9999999]JimmyKing[/url] once again for... being so kind to help me out on trying to get this mod running [color=#ff0000]❤[/color]\n<br />\n<br />[b][color=#ff0000]BE AWARE:[/color][/b][color=#ff0000] this is a rather unfair mod so expect getting turned to swiss cheese by these.[/color]\n<br />\n<br />[color=#ffff00]NOTICE: This mod is very unfinished!![/color]\n<br />\n<br />[list]\n<br />ToDoList:[*][color=#fff2cc]Fix smooth aiming;[/color][/*]\n<br />[*][color=#fff2cc]Fix the damn targetting;[/color][/*]\n<br />[*][color=#fff2cc]Rework blinking lights to be only one;[/color][/*]\n<br />[*][color=#fff2cc]Main menu settings (nerf or buff the turrets at ur will to an extent[/color][color=#fff2cc]);[/color][/*]\n<br />[*][color=#fff2cc]Check for mp compatibility (i guess);[/color][/*]\n<br />[*][color=#fff2cc]Add WorldGeneration.totalTrapRarity so its based off of the run trap sliders.[/color][/*]\n<br />[*][color=#fff2cc]Add FX[/color][/*]\n<br />[/list]Oh well and Uh.... Have fun lmao!\n<br />\n<br />I FUCKING LOVE TURRETS IN GAMES!!!!!!!!!!!!!!!",
         "Author": "KhyDidntWantedAnAccount",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/466/466-1784591087-914229174.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/466"
         },
-        "DownloadUrl": "nexus://scavprototype/466/1375",
+        "DownloadUrl": "nexus://scavprototype/466/1393",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 466,
         "SourceName": "Nexus",
         "dllNames": [
             "CeilingTurret.dll"
         ],
-        "dllVersion": "1.0.0",
+        "dllVersion": "1.0.1",
         "dllVersions": {
-            "CeilingTurret.dll": "1.0.0"
+            "CeilingTurret.dll": "1.0.1"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 3,
-            "TotalDownloads": 3,
+            "UniqueDownloads": 14,
+            "TotalDownloads": 17,
             "TotalViews": null
         },
         "Images": [

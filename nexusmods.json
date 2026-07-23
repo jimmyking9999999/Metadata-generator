@@ -1,5 +1,37 @@
 [
     {
+        "Id": "nexus-482",
+        "Name": "ConsolePlus",
+        "Version": "1",
+        "bepinexVersion": "0.5.0",
+        "Description": "\n<br />\n<br />basic mod, place the dll file into the bepinEx plugins\n<br />Mod commisioned by: [b][color=#ff0000][font=Arial Black]reaper.9200[/font][/color] [/b]\n<br />\n<br />\n<br />[heading]Console+ commands[/heading]\n<br />[b]Skills / XP[/b]\n<br />[list]\n<br />[*][code]+setxp &lt;str|res|int&gt; &lt;value&gt;[/code] — set skill XP directly[/*]\n<br />[*][code]+subxp &lt;str|res|int&gt; &lt;value&gt;[/code] — subtract skill XP (floors at 0)[/*]\n<br />[*][code]+setlevel &lt;str|res|int&gt; &lt;level&gt;[/code] — set skill level (max 250)[/*]\n<br />[*][code]+addlevel &lt;str|res|int&gt; &lt;delta&gt;[/code] — add to skill level (negative to subtract)[/*]\n<br />[*][code]+sublevel &lt;str|res|int&gt; &lt;amount&gt;[/code] — subtract skill levels[/*]\n<br />[/list][b]Body stats[/b] (cap-bypass — value holds against regen)\n<br />[list]\n<br />[*][code]+setbrain &lt;value&gt;[/code] — set brain health[/*]\n<br />[*][code]+setoxygen &lt;value&gt;[/code] — set blood oxygen[/*]\n<br />[*][code]+setradiation &lt;value&gt;[/code] — set radiation sickness[/*]\n<br />[*][code]+clearstats[/code] — drop every pinned stat/limb override; regen resumes[/*]\n<br />[/list][b]Limbs[/b]\n<br />[list]\n<br />[*][code]+setmuscle &lt;value&gt;[/code] — set muscle on every limb[/*]\n<br />[*][code]+setmuscle &lt;limb&gt; &lt;value&gt;[/code] — set muscle on one limb (aliases OK)[/*]\n<br />[*][code]+setskin &lt;value&gt;[/code] — set skin on every limb[/*]\n<br />[*][code]+setskin &lt;limb&gt; &lt;value&gt;[/code] — set skin on one limb[/*]\n<br />[*][code]+noheal[/code][code]+noheal &lt;limb&gt;[/code] — toggle: block regen on all limbs / one limb[/*]\n<br />[*][code]+noheal_status[/code] — list currently no-heal limbs[/*]\n<br />[*][code]+decay[/code] / \n<br />[code]+decay &lt;limb&gt;[/code] — toggle: drain muscle+skin at 0.1/s[/*]\n<br />[*][code]+decay_status[/code] — list currently decaying limbs[/*]\n<br />[*][code]+amputate[/code] — dismember every non-vital limb[/*]\n<br />[*][code]+amputate &lt;limb&gt;[/code] — dismember one named limb[/*]\n<br />[*][code]+regrow[/code] — regrow every missing limb[/*]\n<br />[/list][b]Run shaping (main menu)[/b]\n<br />[list]\n<br />[*][code]+startlayer[/code] — show configured starting layer[/*]\n<br />[*][code]+startlayer &lt;1-5&gt;[/code] — pick the starting layer for next run (works only for the host obv)[/*]\n<br />[*][code]+startitem &lt;id&gt;[/code] — toggle an extra starting item[/*]\n<br />[*][code]+startitem_list[/code] — list configured extras[/*]\n<br />[*][code]+startitem_clear[/code] — clear the extras list[/*]\n<br />[/list][b]World / cursor[/b]\n<br />[list]\n<br />[*][code]+addliquid &lt;liquid&gt; &lt;mL&gt;[/code] — pour liquid into the WaterContainer under your cursor (closed bags ignored)[/*]\n<br />[*][code]+chaos &lt;minutes&gt;[/code] — enable CHAOS mode at that cooldown; bare \n<br />[code]+chaos[/code] toggles off[/*]\n<br />[/list][b]extra[/b]\n<br />[list]\n<br />[*][code]+credits[/code][/*]\n<br />[/list][b]MP note:[/b] most commands accept a player selector \n<br />[code]@a  @m   @r  @c  @o [/code][code]+setbrain 200 dummy123[/code][code]+regrow @a[/code][code]+startitem*[/code]",
+        "Author": "YOU1ARE0IC",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/482/482-1784791063-1718920778.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/482"
+        },
+        "DownloadUrl": "nexus://scavprototype/482/1416",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 482,
+        "SourceName": "Nexus",
+        "dllNames": [
+            "ConsolePlus.dll"
+        ],
+        "dllVersion": "0.5.0",
+        "dllVersions": {
+            "ConsolePlus.dll": "0.5.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 1,
+            "TotalDownloads": 1,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/482/482-1784791063-1718920778.png"
+        ]
+    },
+    {
         "Id": "nexus-481",
         "Name": "Aggresive Dunes",
         "Version": "1.1",

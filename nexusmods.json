@@ -920,29 +920,29 @@
     {
         "Id": "nexus-435",
         "Name": "MultyModik",
-        "Version": "1.3.0",
-        "bepinexVersion": "1.3.0",
+        "Version": "1.4.0",
+        "bepinexVersion": "1.4.0",
         "Description": "[center][b]MultyModik[/b]\n<br />[size=2][i]Multiplayer gameplay expansion for Casualties Unknown[/i][/size][/center]\n<br />[line]\n<br />\n<br />[b]Description[/b]\n<br />[size=2]A BepInEx plugin by [b]Staili[/b] — add-on for [b]KrokoshaCasualtiesMP (KrokMP)[/b] in [b]Casualties Unknown[/b]. One DLL, no game file edits, drop into [i]BepInEx&#92;plugins&#92;[/i].\n<br />\n<br />Extends the KrokMP run-rules menu with team respawns, mob scaling, a spider mini-boss, hugs, extra weapons per layer, sleep mood bonus, and more. Host configures everything in the lobby rules — settings sync to all clients.[/size]\n<br />[line]\n<br />\n<br />[b]Main features[/b]\n<br />[list]\n<br />[*][size=2][b]Team respawns[/b] — shared team pool (configurable). Spectator self-respawn near a living ally (cooldown). Code-based ally revive: dead player gets a code, any living player can type it to bring them back. Honors [i]keep inventory[/i] / [i]keep stats[/i] rules.[/size][/*]\n<br />[*][size=2][b]Mob scaling[/b] — hostile spawn multiplier 100% (vanilla) up to 1000%. Floor scales with respawn limit (4+ → 200%, 40+ → 600%, 50 → 1000%). Separate [i]mission time[/i] slider (1–300%) with spawn penalties.[/size][/*]\n<br />[*][size=2][b]Water physics[/b] — [i]no water knockdown[/i] option. Trade-off: +100% to minimum hostile spawn while enabled.[/size][/*]\n<br />[*][size=2][b]Big Spider boss[/b] — checkbox in rules menu. Spawns on layer 2 at ~60% depth. 1000 HP, aggressive AI, chews through blocks, horrified effect, +40 team mood on kill. Console: [i]bigspider spawn[/i], [i]bigspider spawn force[/i], [i]bigspider spawn cursor[/i], [i]bigspider pos[/i].[/size][/*]\n<br />[*][size=2][b]Hugs[/b] — button below CPR in the wound view. Hugger loses nothing; huggee +1 mood every 4 s. Visual [i]+1[/i] floats and chat barks. Uses KrokMP piggyback attach when allowed.[/size][/*]\n<br />[*][size=2][b]Extra weapons[/b] — per-layer tabs [i]1..6[/i] + 5 sliders (sound cannon, sand turret, electric coil, gun mine, mine). 0% = vanilla untouched, 100% = natural density, up to 1000%. Placed after worldgen, synced via rules preset.[/size][/*]\n<br />[*][size=2][b]Sleep mood[/b] — 2+ players sleeping within ~6 blocks slowly gain mood. Fully server-side, automatic.[/size][/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Installation[/b]\n<br />[list=1]\n<br />[*][size=2]Install [url=https://github.com/BepInEx/BepInEx/releases]BepInEx 5.4.x[/url] — [i]winhttp.dll[/i] next to [i]CasualtiesUnknown.exe[/i][/size][/*]\n<br />[*][size=2]Install [url=https://www.nexusmods.com/scavprototype/mods/67]Casualties Together (KrokMP)[/url][/size][/*]\n<br />[*][size=2]Install CUCoreLib and [url=https://github.com/jimmyking9999999/QoL-Unknown/releases]QoL.Unknown[/url] → [i]BepInEx&#92;plugins&#92;[/i][/size][/*]\n<br />[*][size=2]Copy [i]MultyModikByStaili.dll[/i] to [i]BepInEx&#92;plugins&#92;[/i][/size][/*]\n<br />[*][size=2]Create or join a multiplayer session — new options appear in the **run-rules menu**[/size][/*]\n<br />[*][size=2]All players in the lobby must run the same plugin + KrokMP version[/size][/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Requirements[/b]\n<br />[list]\n<br />[*][size=2][b]Required mods (Nexus):[/b][/size]\n<br />[list]\n<br />[*][size=2][url=https://www.nexusmods.com/scavprototype/mods/67][b]Casualties Together (KrokMP)[/b][/url] — multiplayer, run-rules menu, sync[/size][/*]\n<br />[*][size=2]CUCoreLib— [i]CUCoreLib.dll[/i] in [i]BepInEx&#92;plugins&#92;[/i][/size][/*]\n<br />[*][size=2][url=https://github.com/jimmyking9999999/QoL-Unknown/releases]QoL.Unknown[/url] — [i]QoL Unknown.dll[/i] in [i]BepInEx&#92;plugins&#92;[/i] (GitHub; Mods tab + **GIT** button)[/size][/*]\n<br />[/list][/*]\n<br />[*][size=2][b]Required (non-mod):[/b] Casualties Unknown + BepInEx 5.4.x (Windows x64)[/size][/*]\n<br />[*][size=2][b]Required (non-mod):[/b] Active multiplayer session (host + clients)[/size][/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Notes[/b]\n<br />[list]\n<br />[*][size=2]Settings are in the KrokMP **run-rules menu** before starting a run[/size][/*]\n<br />[*][size=2]May conflict with other mods patching [i]SpiderHandler[/i], mob spawn, or the wound-view UI[/size][/*]\n<br />[*][size=2]Used by ModikStreamer for the [i]big_spider_boss[/i] donation event (optional)[/size][/*]\n<br />[*][size=2]Optional: [url=https://github.com/jimmyking9999999/QoL-Unknown/releases]QoL.Unknown[/url] [/size][/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Support the author[/b]\n<br />[list]\n<br />[*][size=2][b]DonationAlerts[/b] (RUB, USD, EUR…): [url=https://www.donationalerts.com/r/steyferstaili]donationalerts.com/r/steyferstaili[/url][/size][/*]\n<br />[*][size=2][b]TON / USDT:[/b] UQCI4s0ImjWashSanglRuIJuCIsjlJfSPedVR1YSUa45q4yS[/size][/*]\n<br />[*][size=2][b]Telegram:[/b] [url=https://t.me/Stailick]@Stailick[/url][/size][/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Shout outs[/b]\n<br />[size=2]Thanks to the KrokMP team, BepInEx maintainers, and the Casualties Unknown community.\n<br />\n<br />Bug reports — Posts tab or Telegram @Stailick.[/size]",
         "Author": "Stailick",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/435/435-1783734007-665333237.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/435"
         },
-        "DownloadUrl": "nexus://scavprototype/435/1228",
+        "DownloadUrl": "nexus://scavprototype/435/1447",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 435,
         "SourceName": "Nexus",
         "dllNames": [
             "MultyModikByStaili.dll"
         ],
-        "dllVersion": "1.3.0",
+        "dllVersion": "1.4.0",
         "dllVersions": {
-            "MultyModikByStaili.dll": "1.3.0"
+            "MultyModikByStaili.dll": "1.4.0"
         },
         "Statistics": {
-            "Endorsements": 0,
-            "UniqueDownloads": 103,
-            "TotalDownloads": 114,
+            "Endorsements": 3,
+            "UniqueDownloads": 152,
+            "TotalDownloads": 174,
             "TotalViews": null
         },
         "Images": [

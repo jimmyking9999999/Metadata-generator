@@ -1,5 +1,69 @@
 [
     {
+        "Id": "nexus-496",
+        "Name": "Auto Minigame Tools",
+        "Version": "1",
+        "bepinexVersion": "1.0.0",
+        "Description": "Lockpicking, dislocation, and shrapnel minigames will search your inventory and containers for the applicable tool (lockpick, wrench, tweezers) before starting the minigame, and if found will automaticaly place it in your hand when the minigame starts.\n<br />\n<br />[color=#cccccc](If you are of the mind that instantly having access to medical items is a bit too powerful, a version of this mod that only applies to lockpicking is also available.)[/color]\n<br />\n<br />[size=4]Installation  [/size]\n<br />[list=1]\n<br />[*]Download and install [url=https://www.nexusmods.com/scavprototype/mods/341]CuCoreLib[/url] (this time I meant to use it, but found the part I wanted to use was broken and still too lazy to remove)[/*]\n<br />[*]Download the file. (AutoMinigameTools.zip or AutoLockpickingTool.zip) [/*]\n<br />[*]Extract into the BepInEx plugins folder. [/*]\n<br />[/list]The console will show if the mod is installed.\n<br />\n<br />[size=4]Compatability[/size]\n<br />Should be compatible with anything. If not, complain and I might fix it.\n<br />It is multiplayer compatible (client and/or host side).\n<br />\n<br />[size=4]Planned Features[/size]\n<br />[size=3]Configuring what minigames this mod should apply to, currently it is all of them, unless you download the lockpick only version but that's a crude solution.[/size]",
+        "Author": "zsoltzsozso828",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/496/496-1785079325-1127387622.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/496"
+        },
+        "DownloadUrl": "nexus://scavprototype/496/1468",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 496,
+        "SourceName": "Nexus",
+        "dllNames": [
+            "AutoMinigameTools.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "AutoMinigameTools.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 6,
+            "TotalDownloads": 6,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/496/496-1785079325-1127387622.png"
+        ]
+    },
+    {
+        "Id": "nexus-495",
+        "Name": "Mod Manager",
+        "Version": "0.1.1",
+        "bepinexVersion": "0.1.1",
+        "Description": "[b][size=4]Description[/size][/b]\n<br />Mod Manager, allows you to turn mods on and off. In the BepInEx folder in plugins. The mod manager marks disabled mods as dll.disabled, so there shouldn't be any big problems. I can say it's just a convenient thing to turn off and check the many different versions of your downloaded/made mods\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[color=#D4D4D8]You just need to drop one of the dll files into the BepInEx&#92;plugins folder[/color]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[size=3][b]In-game U[/b]I: Adds a seamless \"Mods\" tab directly into the game's Settings menu.[/size] \n<br />[color=#D4D4D8][b]Bilingual:[/b] Available in both [b]English[/b] and [b]Russian[/b] variation[/color]\n<br />[color=#D4D4D8][b]Visual Indicators[/b]: Color-coded text lets you quickly see which mods are active, disabled, or pending changes [/color]\n<br />[size=3][i][u]A little explanation[/u]..[/i][/size]\n<br />[color=#666666]coolmodname  [/color][color=#ffffff]&lt;--- These mods are disabled[/color]\n<br />[color=#e06666]coolmodname[/color][color=#85200c]  [/color][color=#ffffff]&lt;--- These you changed them but did not apply the changes\n<br />coolmodname  &lt;--- These mods are enabled [/color]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[color=#D4D4D8][url=https://github.com/BepInEx/BepInEx]BepInEx[/url] 5.x (installed and configured for the game) [/color]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[color=#D4D4D8]Thanks to my friends who believed in me :&gt;[/color]\n<br />\n<br />[color=#D4D4D8][b][size=4]Author's Note[/size][/b]\n<br />This is my first modding project. It currently does exactly what it needs to do — provides a simple UI to toggle your mods. Since I am actively learning and planning to create new, more complex mods, please don't expect frequent updates or massive new features for this specific manager. I will mostly focus on keeping it working if major game updates break it. Enjoy!\n<br />Maybe I'll do a big remix in the future. But just maybe..[/color]",
+        "Author": "Foxiecub",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/495/495-1785079305-1396700908.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/495"
+        },
+        "DownloadUrl": "nexus://scavprototype/495/1470",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 495,
+        "SourceName": "Nexus",
+        "dllNames": [
+            "CasualtiesModMenuENG.dll"
+        ],
+        "dllVersion": "0.1.1",
+        "dllVersions": {
+            "CasualtiesModMenuENG.dll": "0.1.1"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 3,
+            "TotalDownloads": 4,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/495/495-1785079305-1396700908.png"
+        ]
+    },
+    {
         "Id": "nexus-494",
         "Name": "Custom Start Item MP",
         "Version": "1",

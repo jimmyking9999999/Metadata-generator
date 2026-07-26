@@ -1,5 +1,6 @@
 import { mkdir, mkdtemp, readFile, rm, stat, writeFile } from "node:fs/promises";
-import { createWriteStream } from "node:fs";
+import { createReadStream, createWriteStream } from "node:fs";
+import { createHash } from "node:crypto";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -19,6 +20,7 @@ const PACKAGE_PATH = path.join(REPO_ROOT, "package.json");
 const TEMP_ROOT = path.join(os.tmpdir(), "metadata-nexusmods");
 
 const API_BASE_URL = "https://api.nexusmods.com/v1";
+const GRAPHQL_API_URL = "https://api.nexusmods.com/v2/graphql";
 const APP_NAME = "Metadata Nexus Sync";
 const REQUEST_TIMEOUT_MS = 60_000;
 const FULL_RECENT_PERIODS = ["1d", "1w", "1m"];
@@ -46,6 +48,11 @@ const OWNED_FIELDS = new Set([
   "NexusGameDomain",
   "NexusModId",
   "SourceName",
+  "LastUpdated",
+  "ReleaseDate",
+  "SHA256",
+  "dllSHA256s",
+  "downloadsSinceLatestVersion",
   "dllNames",
   "dllVersion",
   "dllVersions",
@@ -64,6 +71,11 @@ const TRACKED_LOG_FIELDS = [
   "DownloadUrl",
   "NexusGameDomain",
   "NexusModId",
+  "LastUpdated",
+  "ReleaseDate",
+  "SHA256",
+  "dllSHA256s",
+  "downloadsSinceLatestVersion",
   "dllNames",
   "dllVersion",
   "dllVersions",
@@ -246,7 +258,15 @@ async function runQuickSync({ apiKey, appVersion, gameDomains, entryByKey }) {
         const hasNexusVersionChange = !isNewRelease && !areEqual(existingEntry?.Version, nextVersion);
 
         if (!isNewRelease && !hasNexusVersionChange) {
-          logDim(`   No Nexus version change for mod ${modId}.`);
+          await refreshLatestFileDownloads({
+            apiKey,
+            appVersion,
+            gameDomain,
+            modId,
+            modInfo,
+            existingEntry,
+            entryByKey,
+          });
           continue;
         }
 
@@ -328,18 +348,24 @@ async function refreshModAndNotify({
   gameDomain,
   modId,
   modInfo,
+  modFiles,
   existingEntry,
   entryByKey,
 }) {
   logStep(`Refreshing mod ${modId}`);
   const resolvedModInfo = modInfo ?? await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}`, apiKey, appVersion);
-  const modFiles = await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}/files`, apiKey, appVersion);
-  const selectedFile = selectBestFile(modFiles);
+  const resolvedModFiles = modFiles ?? await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}/files`, apiKey, appVersion);
+  const selectedFile = selectBestFile(resolvedModFiles);
   if (!selectedFile) {
     throw new Error(`No downloadable file found for mod ${modId}.`);
   }
 
   logSubstep(`Selected file ${selectedFile.file_id}: ${selectedFile.file_name}`);
+  const downloadsSinceLatestVersion = await getFileDownloadCount({
+    apiKey,
+    appVersion,
+    fileInfo: selectedFile,
+  });
   const archiveContext = await processArchive({
     apiKey,
     appVersion,
@@ -353,6 +379,7 @@ async function refreshModAndNotify({
     modInfo: resolvedModInfo,
     fileInfo: selectedFile,
     archiveContext,
+    downloadsSinceLatestVersion,
   });
 
   entryByKey.set(getEntryKey(gameDomain, modId), mergedEntry);
@@ -362,6 +389,67 @@ async function refreshModAndNotify({
   if (notification) {
     await sendDiscordNotification(notification);
   }
+}
+
+async function refreshLatestFileDownloads({
+  apiKey,
+  appVersion,
+  gameDomain,
+  modId,
+  modInfo,
+  existingEntry,
+  entryByKey,
+}) {
+  const modFiles = await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}/files`, apiKey, appVersion);
+  const selectedFile = selectBestFile(modFiles);
+  if (!selectedFile) {
+    logWarn("FILE_STATS", `No downloadable file found for mod ${modId}; keeping existing download count.`);
+    return;
+  }
+
+  const selectedDownloadUrl = buildDownloadUrl(
+    gameDomain,
+    modId,
+    selectedFile.file_id,
+    existingEntry?.DownloadUrl,
+  );
+  if (!areEqual(existingEntry?.DownloadUrl, selectedDownloadUrl)) {
+    logInfo(`Latest file changed for mod ${modId}; refreshing archive metadata.`);
+    await refreshModAndNotify({
+      apiKey,
+      appVersion,
+      gameDomain,
+      modId,
+      modInfo,
+      modFiles,
+      existingEntry,
+      entryByKey,
+    });
+    return;
+  }
+
+  const downloadsSinceLatestVersion = await getFileDownloadCount({
+    apiKey,
+    appVersion,
+    fileInfo: selectedFile,
+  });
+  if (downloadsSinceLatestVersion === null) {
+    return;
+  }
+
+  if (areEqual(existingEntry?.downloadsSinceLatestVersion, downloadsSinceLatestVersion)) {
+    logDim(`   No Nexus version or latest-file download change for mod ${modId}.`);
+    return;
+  }
+
+  entryByKey.set(getEntryKey(gameDomain, modId), {
+    ...existingEntry,
+    downloadsSinceLatestVersion,
+  });
+  logSuccess(
+    `Updated mod ${modId} downloadsSinceLatestVersion: `
+    + `${formatValue(existingEntry?.downloadsSinceLatestVersion)} -> ${formatValue(downloadsSinceLatestVersion)}`,
+  );
 }
 
 async function discoverRecentModsForGame(apiKey, appVersion, gameDomain) {
@@ -449,6 +537,8 @@ async function processArchive({ apiKey, appVersion, gameDomain, modId, fileInfo 
       fileInfo,
       destinationPath: archivePath,
     });
+    const sha256 = await calculateFileSha256(archivePath);
+    logInfo(`SHA-256: ${sha256}`);
 
     logSubstep(`Extracting ${extension} archive`);
     await extractArchive(archivePath, extractDir, extension);
@@ -460,13 +550,22 @@ async function processArchive({ apiKey, appVersion, gameDomain, modId, fileInfo 
     }
 
     const dllVersions = {};
+    const dllSHA256s = {};
     for (const dllFile of dllFiles) {
+      const dllName = path.basename(dllFile);
+      dllSHA256s[dllName] = await calculateFileSha256(dllFile);
+
       const parsed = await readDllMetadata(dllFile);
       if (parsed.bepinexVersion) {
-        dllVersions[path.basename(dllFile)] = parsed.bepinexVersion;
+        dllVersions[dllName] = parsed.bepinexVersion;
       } else {
-        logDim(`   ${path.basename(dllFile)}: no BepInEx plugin version found`);
+        logDim(`   ${dllName}: no BepInEx plugin version found`);
       }
+    }
+
+    logInfo(`DLL SHA-256 hashes calculated: ${Object.keys(dllSHA256s).length}`);
+    for (const [dllName, dllSHA256] of Object.entries(dllSHA256s)) {
+      logDim(`   ${dllName}: ${dllSHA256}`);
     }
 
     logInfo(`BepInEx plugin versions found: ${Object.keys(dllVersions).length}`);
@@ -478,10 +577,12 @@ async function processArchive({ apiKey, appVersion, gameDomain, modId, fileInfo 
 
     return {
       dllNames: dllFiles.map((entry) => path.basename(entry)).sort((a, b) => a.localeCompare(b)),
+      dllSHA256s,
       dllVersions,
       dllVersion: highestVersion(Object.values(dllVersions)),
       bepinexVersion: highestVersion(Object.values(dllVersions)),
       mirrorLinks,
+      sha256,
     };
   } finally {
     await rm(workDir, { recursive: true, force: true });
@@ -547,6 +648,14 @@ async function downloadArchive({ appVersion, downloadLinks, fileInfo, destinatio
   const downloaded = await stat(destinationPath);
   logInfo(`Downloaded ${(downloaded.size / 1024 / 1024).toFixed(2)} MB`);
   return mirrorLinks;
+}
+
+async function calculateFileSha256(filePath) {
+  const hash = createHash("sha256");
+  for await (const chunk of createReadStream(filePath)) {
+    hash.update(chunk);
+  }
+  return hash.digest("hex");
 }
 
 async function extractArchive(archivePath, extractDir, extension) {
@@ -757,7 +866,13 @@ function normalizeDownloadUrl(entry) {
   return null;
 }
 
-function mergeEntry({ existingEntry, modInfo, fileInfo, archiveContext }) {
+function mergeEntry({
+  existingEntry,
+  modInfo,
+  fileInfo,
+  archiveContext,
+  downloadsSinceLatestVersion,
+}) {
   const preserved = { ...(existingEntry ?? {}) };
   for (const key of OWNED_FIELDS) {
     delete preserved[key];
@@ -774,8 +889,20 @@ function mergeEntry({ existingEntry, modInfo, fileInfo, archiveContext }) {
   const nextDllVersions = archiveContext && Object.keys(archiveContext.dllVersions || {}).length > 0
     ? archiveContext.dllVersions
     : (existingEntry?.dllVersions ?? {});
+  const nextDllSHA256s = archiveContext?.dllSHA256s ?? existingEntry?.dllSHA256s ?? {};
   const nextDllVersion = archiveContext?.dllVersion ?? existingEntry?.dllVersion ?? highestVersion(Object.values(nextDllVersions));
   const nextBepinexVersion = archiveContext?.bepinexVersion ?? existingEntry?.bepinexVersion ?? highestVersion(Object.values(nextDllVersions));
+  const lastUpdated = formatTimestamp(
+    modInfo.updated_timestamp
+    ?? fileInfo?.uploaded_timestamp
+    ?? existingEntry?.LastUpdated,
+  );
+  const releaseDate = formatTimestamp(
+    fileInfo?.uploaded_timestamp
+    ?? modInfo.created_timestamp
+    ?? modInfo.uploaded_timestamp
+    ?? existingEntry?.ReleaseDate,
+  );
 
   return {
     ...preserved,
@@ -790,6 +917,13 @@ function mergeEntry({ existingEntry, modInfo, fileInfo, archiveContext }) {
     NexusGameDomain: modInfo.domain_name,
     NexusModId: modInfo.mod_id,
     SourceName: "Nexus",
+    LastUpdated: lastUpdated,
+    ReleaseDate: releaseDate,
+    SHA256: archiveContext?.sha256 ?? existingEntry?.SHA256 ?? null,
+    dllSHA256s: nextDllSHA256s,
+    downloadsSinceLatestVersion: downloadsSinceLatestVersion
+      ?? existingEntry?.downloadsSinceLatestVersion
+      ?? null,
     dllNames: nextDllNames,
     dllVersion: nextDllVersion ?? null,
     dllVersions: nextDllVersions,
@@ -861,6 +995,27 @@ function normalizeDllArray(value) {
     .filter((item) => typeof item === "string")
     .map((item) => item.trim())
     .filter(Boolean);
+}
+
+function formatTimestamp(value) {
+  if (value === undefined || value === null || value === "") {
+    return null;
+  }
+
+  if (typeof value === "string") {
+    const parsed = Date.parse(value);
+    if (!Number.isNaN(parsed)) {
+      return new Date(parsed).toISOString();
+    }
+
+    return value;
+  }
+
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return new Date(value * 1000).toISOString();
+  }
+
+  return null;
 }
 
 function highestVersion(versions) {
@@ -1115,6 +1270,44 @@ async function validateApiKey(apiKey, appVersion) {
   await nexusRest("/users/validate", apiKey, appVersion);
 }
 
+async function getFileDownloadCount({ apiKey, appVersion, fileInfo }) {
+  if (fileInfo?.uid === undefined || fileInfo?.uid === null) {
+    logWarn("FILE_STATS", `File ${fileInfo?.file_id ?? "<unknown>"} has no UID; download count is unavailable.`);
+    return null;
+  }
+
+  try {
+    const data = await nexusGraphQL(
+      `query FileDownloadCount($uids: [ID!]!) {
+        modFilesByUid(uids: $uids) {
+          nodes {
+            uid
+            count
+            totalDownloads
+          }
+        }
+      }`,
+      { uids: [String(fileInfo.uid)] },
+      apiKey,
+      appVersion,
+    );
+    const file = data?.modFilesByUid?.nodes?.find(
+      (candidate) => String(candidate?.uid) === String(fileInfo.uid),
+    );
+    const downloads = file?.totalDownloads ?? file?.count;
+    if (typeof downloads === "number" && Number.isFinite(downloads)) {
+      logInfo(`Downloads for latest file: ${downloads}`);
+      return downloads;
+    }
+  } catch (error) {
+    logWarn("FILE_STATS", `Could not load download count for file ${fileInfo.file_id}. ${error.message}`);
+    return null;
+  }
+
+  logWarn("FILE_STATS", `No download count was returned for file ${fileInfo.file_id}.`);
+  return null;
+}
+
 async function nexusRest(route, apiKey, appVersion) {
   const response = await fetchWithTimeout(`${API_BASE_URL}${route}`, {
     headers: buildHeaders(apiKey, appVersion),
@@ -1125,6 +1318,29 @@ async function nexusRest(route, apiKey, appVersion) {
   }
 
   return response.json();
+}
+
+async function nexusGraphQL(query, variables, apiKey, appVersion) {
+  const response = await fetchWithTimeout(GRAPHQL_API_URL, {
+    method: "POST",
+    headers: buildHeaders(apiKey, appVersion),
+    body: JSON.stringify({ query, variables }),
+  });
+
+  if (!response.ok) {
+    throw await buildHttpError("Nexus GraphQL request failed", response);
+  }
+
+  const payload = await response.json();
+  if (Array.isArray(payload?.errors) && payload.errors.length > 0) {
+    const messages = payload.errors
+      .map((error) => error?.message)
+      .filter(Boolean)
+      .join("; ");
+    throw new Error(`Nexus GraphQL request failed: ${messages || "Unknown error"}`);
+  }
+
+  return payload?.data;
 }
 
 function buildHeaders(apiKey, appVersion) {

@@ -20,7 +20,7 @@
         "dllSHA256s": {
             "Ender_Pearl.dll": "8bad46ffb1b7db1899d7d9da78bbf418049770cd5059c0d41dc94beda9990e99"
         },
-        "downloadsSinceLatestVersion": 1,
+        "downloadsSinceLatestVersion": 2,
         "dllNames": [
             "Ender_Pearl.dll"
         ],
@@ -98,7 +98,7 @@
         "dllSHA256s": {
             "AutoMinigameTools.dll": "07c13530b5be1da9f30a62aa96e9393bb303dd0c3e98794aff177605e71cec22"
         },
-        "downloadsSinceLatestVersion": 28,
+        "downloadsSinceLatestVersion": 32,
         "dllNames": [
             "AutoMinigameTools.dll"
         ],
@@ -147,7 +147,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/495/495-1785079305-1396700908.png"
         ],
-        "downloadsSinceLatestVersion": 102
+        "downloadsSinceLatestVersion": 103
     },
     {
         "Id": "nexus-494",
@@ -180,40 +180,46 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/494/494-1785057609-170889149.png"
         ],
-        "downloadsSinceLatestVersion": 19
+        "downloadsSinceLatestVersion": 20
     },
     {
         "Id": "nexus-492",
         "Name": "ServerModLoader",
-        "Version": "1.0.0",
-        "bepinexVersion": "1.0.0",
-        "Description": "[center][size=5][b]ServerModLoader by Staili[/b][/size]\n<br />[b]Version:[/b] 1.0.0 · [b]Plugin:[/b] ServerModLoaderByStaili.dll\n<br />[b]Requires:[/b] [url=https://www.nexusmods.com/scavprototype/mods/67]KrokMP[/url]\n<br />[b]GitHub:[/b] [url=https://github.com/naduvaha/ServerModLoader/releases]Releases[/url]\n<br />[/center]\n<br />\n<br />[size=4][b]Русский[/b][/size]\n<br />\n<br />[b]Описание[/b]\n<br />Дополнение к мультиплеер-моду [b]KrokoshaCasualtiesMP (KrokMP)[/b] для [b]Casualties Unknown[/b].\n<br />При Join клиент может получить недостающие моды [b]с хоста[/b] (DLL + Content и прочие файлы).\n<br />[b]Nexus / GitHub CDN нет[/b] — только передача с хоста.\n<br />На сервер [b]всегда пускает[/b], даже если модов не хватает или хост без этого плагина.\n<br />\n<br />[b]Синхронизация при Join[/b]\n<br />[list]\n<br />[*]Если у хоста есть ServerModLoader и моды, которых нет у клиента — хост шлёт [b]папки модов[/b] во время коннекта.[/*]\n<br />[*]Передаётся вся папка: DLL, Content/, resources, аудио, xml, png и т.д.[/*]\n<br />[*]Сохранение: [font=Courier New]BepInEx&#92;plugins&#92;SERVERCACHE&#92;&lt;хост&gt;_&lt;сервер&gt;&#92;[/font][/*]\n<br />[*]После [b]полной[/b] передачи (папки проверены на диске) — рестарт через Steam (+2 сек), затем автозаход в тот же лобби.[/*]\n<br />[*]Если мод уже есть, но версия старше хоста — предупреждение по центру (RU/EN): возможны баги.[/*]\n<br />[*]Если у хоста нет ServerModLoader или передача не удалась — клиент всё равно заходит (без зависания).[/*]\n<br />[/list]\n<br />[b]Очистка кеша[/b]\n<br />[list]\n<br />[*]В браузере серверов KrokMP: [b]Очистить кеш модов / Clear mod cache[/b][/*]\n<br />[*]Можно удалить кеш одного сервера или все сразу[/*]\n<br />[*]UI на русском / английском (язык игры)[/*]\n<br />[/list]\n<br />[b]Защита[/b]\n<br />[list]\n<br />[*]После скачивания: Windows Defender (MpCmdRun) → онлайн hash-lookup (MalwareBazaar + ThreatFox)[/*]\n<br />[*]Для онлайн нужен бесплатный Auth-Key: [url=https://auth.abuse.ch/]auth.abuse.ch[/url] → [font=Courier New]Security.AbuseChAuthKey[/font][/*]\n<br />[*]При угрозе: [b]Довериться моду[/b] или [b]Исключить[/b][/*]\n<br />[*]Таймаут / недоступный скан — шаг пропускается, синк идёт дальше[/*]\n<br />[/list]\n<br />[b]Зависимости[/b]\n<br />[list]\n<br />[*][b]Обязательно:[/b] BepInEx 5.4.x[/*]\n<br />[*][b]Обязательно:[/b] [url=https://www.nexusmods.com/scavprototype/mods/67]KrokMP[/url][/*]\n<br />[/list][i]Для автораздачи плагин нужен и хосту, и клиенту. Без SML на хосте Join работает, но моды сами не приедут.[/i]\n<br />\n<br />[b]Установка[/b]\n<br />[list=1]\n<br />[*]Установите BepInEx и KrokMP[/*]\n<br />[*]Скопируйте [font=Courier New]ServerModLoaderByStaili.dll[/font] в [font=Courier New]Casualties Unknown&#92;BepInEx&#92;plugins&#92;[/font][/*]\n<br />[*]В логе: [font=Courier New]ServerModLoader by Staili loaded.[/font][/*]\n<br />[/list]\n<br />[b]Конфиг[/b]\n<br />[list]\n<br />[*][font=Courier New]Sync.AutoSyncOnJoin[/font] (true) — тянуть моды с хоста при Join[/*]\n<br />[*][font=Courier New]Sync.AutoRelaunch[/font] (true) — рестарт после успешной передачи[/*]\n<br />[*][font=Courier New]Sync.AutoRejoinAfterRelaunch[/font] (true) — автозаход после рестарта[/*]\n<br />[*][font=Courier New]Security.ScanWithWindowsDefender[/font] (true) — скан Defender[/*]\n<br />[*][font=Courier New]Security.ScanOnlineHashLookup[/font] (true) — онлайн SHA256[/*]\n<br />[*][font=Courier New]Security.AbuseChAuthKey[/font] — ключ с auth.abuse.ch[/*]\n<br />[*][font=Courier New]Security.BlockIfScanUnavailable[/font] (false) — блокировать при ошибке скана[/*]\n<br />[*][font=Courier New]Security.ScanTimeoutSeconds[/font] (120) / [font=Courier New]OnlineScanTimeoutSeconds[/font] (10)[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=4][b]English[/b][/size]\n<br />\n<br />[b]About[/b]\n<br />An add-on for [b]KrokoshaCasualtiesMP (KrokMP)[/b] for [b]Casualties Unknown[/b].\n<br />On Join, the client can pull missing mods [b]from the host[/b] (DLL + Content and other files).\n<br />[b]No Nexus / GitHub CDN[/b] — host transfer only.\n<br />[b]Always allows join[/b], even if mods are missing or the host lacks this plugin.\n<br />\n<br />[b]Sync on Join[/b]\n<br />[list]\n<br />[*]If the host has ServerModLoader and mods the client lacks — the host streams [b]full mod folders[/b] during connect.[/*]\n<br />[*]Full folder: DLL, Content/, resources, audio, xml, png, etc.[/*]\n<br />[*]Saved under: [font=Courier New]BepInEx&#92;plugins&#92;SERVERCACHE&#92;&lt;host&gt;_&lt;server&gt;&#92;[/font][/*]\n<br />[*]After a [b]full[/b] transfer (folders verified on disk) — Steam relaunch (+2s), then auto-rejoin.[/*]\n<br />[*]If a mod is already installed but older than the host — centered warning (RU/EN): bugs may occur.[/*]\n<br />[*]If the host has no ServerModLoader or transfer fails — the client still joins (no hang).[/*]\n<br />[/list]\n<br />[b]Clear cache[/b]\n<br />[list]\n<br />[*]KrokMP server browser: [b]Clear mod cache / Очистить кеш модов[/b][/*]\n<br />[*]Delete one server cache or all[/*]\n<br />[*]UI follows game language (RU/EN)[/*]\n<br />[/list]\n<br />[b]Protection[/b]\n<br />[list]\n<br />[*]After host-pull: Windows Defender (MpCmdRun) → online hash lookup (MalwareBazaar + ThreatFox)[/*]\n<br />[*]Online needs a free Auth-Key from [url=https://auth.abuse.ch/]auth.abuse.ch[/url] → [font=Courier New]Security.AbuseChAuthKey[/font][/*]\n<br />[*]On threat: [b]Trust mod[/b] or [b]Exclude[/b][/*]\n<br />[*]Timeout / unavailable scan — step skipped, sync continues[/*]\n<br />[/list]\n<br />[b]Dependencies[/b]\n<br />[list]\n<br />[*][b]Required:[/b] BepInEx 5.4.x[/*]\n<br />[*][b]Required:[/b] [url=https://www.nexusmods.com/scavprototype/mods/67]KrokMP[/url][/*]\n<br />[/list][i]For auto-share, both host and client need this plugin. Without SML on the host, Join still works — mods just won’t be sent.[/i]\n<br />\n<br />[b]Install[/b]\n<br />[list=1]\n<br />[*]Install BepInEx + KrokMP[/*]\n<br />[*]Drop [font=Courier New]ServerModLoaderByStaili.dll[/font] into [font=Courier New]Casualties Unknown&#92;BepInEx&#92;plugins&#92;[/font][/*]\n<br />[*]Log should show: [font=Courier New]ServerModLoader by Staili loaded.[/font][/*]\n<br />[/list]\n<br />[b]Config[/b]\n<br />[list]\n<br />[*][font=Courier New]Sync.AutoSyncOnJoin[/font] (true) — pull mods from host on Join[/*]\n<br />[*][font=Courier New]Sync.AutoRelaunch[/font] (true) — Steam relaunch after successful transfer[/*]\n<br />[*][font=Courier New]Sync.AutoRejoinAfterRelaunch[/font] (true) — auto-rejoin after relaunch[/*]\n<br />[*][font=Courier New]Security.ScanWithWindowsDefender[/font] (true) — Defender scan[/*]\n<br />[*][font=Courier New]Security.ScanOnlineHashLookup[/font] (true) — online SHA256[/*]\n<br />[*][font=Courier New]Security.AbuseChAuthKey[/font] — key from auth.abuse.ch[/*]\n<br />[*][font=Courier New]Security.BlockIfScanUnavailable[/font] (false) — reject on scan error[/*]\n<br />[*][font=Courier New]Security.ScanTimeoutSeconds[/font] (120) / [font=Courier New]OnlineScanTimeoutSeconds[/font] (10)[/*]\n<br />[/list]\n<br />[b]Release contents[/b]\n<br />[list]\n<br />[*][font=Courier New]ServerModLoaderByStaili.dll[/font] — into BepInEx&#92;plugins&#92;[/*]\n<br />[*][font=Courier New]README.md[/font] — this readme[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[center][left][b][size=4]☕ Support / Донат[/size][/b][/left]\n<br />[left]Спасибо за поддержку! / Thanks for the support![/left]\n<br />[left][/left]\n<br />[left][b][b]DonationAlerts:[/b][/b][/left]\n<br />[left][url=https://www.donationalerts.com/r/steyferstaili]https://www.donationalerts.com/r/steyferstaili[/url][url=https://www.donationalerts.com/r/steyferstaili][/url][/left]\n<br />[left][/left]\n<br />[left][b][b]TON / USDT:[/b][/b][/left]\n<br />[left][font=Courier New]UQCI4s0ImjWashSanglRuIJuCIsjlJfSPedVR1YSUa45q4yS[/font][/left]\n<br />[left][/left]\n<br />[left][b][b]Contact:[/b] Telegram @Stailick[/b][/left]\n<br />[left][/left]\n<br />[/center]\n<br />",
+        "Version": "1.2.0",
+        "bepinexVersion": "1.2.0",
+        "Description": "[center][size=5][b]ServerModLoader by Staili[/b][/size]\n<br />[b]Version:[/b] 1.2.0 · [b]Plugin:[/b] ServerModLoaderByStaili.dll\n<br />[b]Requires:[/b] [url=https://www.nexusmods.com/scavprototype/mods/67]KrokMP[/url]\n<br />[b]GitHub:[/b] [url=https://github.com/naduvaha/ServerModLoader/releases]Releases[/url]\n<br />[/center]\n<br />\n<br />[size=4][b]Русский[/b][/size]\n<br />\n<br />[b]Описание[/b]\n<br />Дополнение к мультиплеер-моду [b]KrokoshaCasualtiesMP (KrokMP)[/b] для [b]Casualties Unknown[/b].\n<br />При Join клиент может получить недостающие моды [b]с хоста[/b] (DLL + Content и прочие файлы).\n<br />[b]Nexus / GitHub CDN нет[/b] — только передача с хоста.\n<br />На сервер [b]всегда пускает[/b], даже если модов не хватает или хост без этого плагина.\n<br />\n<br />[b]Синхронизация при Join[/b]\n<br />[list]\n<br />[*]Если у хоста есть ServerModLoader и моды, которых нет у клиента — хост шлёт [b]папки модов[/b] во время коннекта.[/*]\n<br />[*]Передаётся вся папка: DLL, Content/, resources, аудио, xml, png и т.д.[/*]\n<br />[*]Сохранение: [font=Courier New]BepInEx&#92;plugins&#92;SERVERCACHE&#92;&lt;хост&gt;_&lt;сервер&gt;&#92;[/font][/*]\n<br />[*]После [b]полной[/b] передачи (папки проверены на диске) — рестарт через Steam (+2 сек), затем автозаход в тот же лобби.[/*]\n<br />[*]Если мод уже есть, но версия старше хоста — предупреждение по центру (RU/EN): возможны баги.[/*]\n<br />[*]Если у хоста нет ServerModLoader или передача не удалась — клиент всё равно заходит (без зависания).[/*]\n<br />[/list]\n<br />[b]Очистка кеша[/b]\n<br />[list]\n<br />[*]В браузере серверов KrokMP: [b]Очистить кеш модов / Clear mod cache[/b][/*]\n<br />[*]Можно удалить кеш одного сервера или все сразу[/*]\n<br />[*]UI на русском / английском (язык игры)[/*]\n<br />[/list]\n<br />[b]Защита[/b]\n<br />[list]\n<br />[*]После скачивания: Windows Defender (MpCmdRun) → онлайн hash-lookup (MalwareBazaar + ThreatFox)[/*]\n<br />[*]Для онлайн нужен бесплатный Auth-Key: [url=https://auth.abuse.ch/]auth.abuse.ch[/url] → [font=Courier New]Security.AbuseChAuthKey[/font][/*]\n<br />[*]При угрозе: [b]Довериться моду[/b] или [b]Исключить[/b][/*]\n<br />[*]Таймаут / недоступный скан — шаг пропускается, синк идёт дальше[/*]\n<br />[/list]\n<br />[b]Зависимости[/b]\n<br />[list]\n<br />[*][b]Обязательно:[/b] BepInEx 5.4.x[/*]\n<br />[*][b]Обязательно:[/b] [url=https://www.nexusmods.com/scavprototype/mods/67]KrokMP[/url][/*]\n<br />[/list][i]Для автораздачи плагин нужен и хосту, и клиенту. Без SML на хосте Join работает, но моды сами не приедут.[/i]\n<br />\n<br />[b]Установка[/b]\n<br />[list=1]\n<br />[*]Установите BepInEx и KrokMP[/*]\n<br />[*]Скопируйте [font=Courier New]ServerModLoaderByStaili.dll[/font] в [font=Courier New]Casualties Unknown&#92;BepInEx&#92;plugins&#92;[/font][/*]\n<br />[*]В логе: [font=Courier New]ServerModLoader by Staili loaded.[/font][/*]\n<br />[/list]\n<br />[b]Конфиг[/b]\n<br />[list]\n<br />[*][font=Courier New]Sync.AutoSyncOnJoin[/font] (true) — тянуть моды с хоста при Join[/*]\n<br />[*][font=Courier New]Sync.AutoRelaunch[/font] (true) — рестарт после успешной передачи[/*]\n<br />[*][font=Courier New]Sync.AutoRejoinAfterRelaunch[/font] (true) — автозаход после рестарта[/*]\n<br />[*][font=Courier New]Security.ScanWithWindowsDefender[/font] (true) — скан Defender[/*]\n<br />[*][font=Courier New]Security.ScanOnlineHashLookup[/font] (true) — онлайн SHA256[/*]\n<br />[*][font=Courier New]Security.AbuseChAuthKey[/font] — ключ с auth.abuse.ch[/*]\n<br />[*][font=Courier New]Security.BlockIfScanUnavailable[/font] (false) — блокировать при ошибке скана[/*]\n<br />[*][font=Courier New]Security.ScanTimeoutSeconds[/font] (120) / [font=Courier New]OnlineScanTimeoutSeconds[/font] (10)[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=4][b]English[/b][/size]\n<br />\n<br />[b]About[/b]\n<br />An add-on for [b]KrokoshaCasualtiesMP (KrokMP)[/b] for [b]Casualties Unknown[/b].\n<br />On Join, the client can pull missing mods [b]from the host[/b] (DLL + Content and other files).\n<br />[b]No Nexus / GitHub CDN[/b] — host transfer only.\n<br />[b]Always allows join[/b], even if mods are missing or the host lacks this plugin.\n<br />\n<br />[b]Sync on Join[/b]\n<br />[list]\n<br />[*]If the host has ServerModLoader and mods the client lacks — the host streams [b]full mod folders[/b] during connect.[/*]\n<br />[*]Full folder: DLL, Content/, resources, audio, xml, png, etc.[/*]\n<br />[*]Saved under: [font=Courier New]BepInEx&#92;plugins&#92;SERVERCACHE&#92;&lt;host&gt;_&lt;server&gt;&#92;[/font][/*]\n<br />[*]After a [b]full[/b] transfer (folders verified on disk) — Steam relaunch (+2s), then auto-rejoin.[/*]\n<br />[*]If a mod is already installed but older than the host — centered warning (RU/EN): bugs may occur.[/*]\n<br />[*]If the host has no ServerModLoader or transfer fails — the client still joins (no hang).[/*]\n<br />[/list]\n<br />[b]Clear cache[/b]\n<br />[list]\n<br />[*]KrokMP server browser: [b]Clear mod cache / Очистить кеш модов[/b][/*]\n<br />[*]Delete one server cache or all[/*]\n<br />[*]UI follows game language (RU/EN)[/*]\n<br />[/list]\n<br />[b]Protection[/b]\n<br />[list]\n<br />[*]After host-pull: Windows Defender (MpCmdRun) → online hash lookup (MalwareBazaar + ThreatFox)[/*]\n<br />[*]Online needs a free Auth-Key from [url=https://auth.abuse.ch/]auth.abuse.ch[/url] → [font=Courier New]Security.AbuseChAuthKey[/font][/*]\n<br />[*]On threat: [b]Trust mod[/b] or [b]Exclude[/b][/*]\n<br />[*]Timeout / unavailable scan — step skipped, sync continues[/*]\n<br />[/list]\n<br />[b]Dependencies[/b]\n<br />[list]\n<br />[*][b]Required:[/b] BepInEx 5.4.x[/*]\n<br />[*][b]Required:[/b] [url=https://www.nexusmods.com/scavprototype/mods/67]KrokMP[/url][/*]\n<br />[/list][i]For auto-share, both host and client need this plugin. Without SML on the host, Join still works — mods just won’t be sent.[/i]\n<br />\n<br />[b]Install[/b]\n<br />[list=1]\n<br />[*]Install BepInEx + KrokMP[/*]\n<br />[*]Drop [font=Courier New]ServerModLoaderByStaili.dll[/font] into [font=Courier New]Casualties Unknown&#92;BepInEx&#92;plugins&#92;[/font][/*]\n<br />[*]Log should show: [font=Courier New]ServerModLoader by Staili loaded.[/font][/*]\n<br />[/list]\n<br />[b]Config[/b]\n<br />[list]\n<br />[*][font=Courier New]Sync.AutoSyncOnJoin[/font] (true) — pull mods from host on Join[/*]\n<br />[*][font=Courier New]Sync.AutoRelaunch[/font] (true) — Steam relaunch after successful transfer[/*]\n<br />[*][font=Courier New]Sync.AutoRejoinAfterRelaunch[/font] (true) — auto-rejoin after relaunch[/*]\n<br />[*][font=Courier New]Security.ScanWithWindowsDefender[/font] (true) — Defender scan[/*]\n<br />[*][font=Courier New]Security.ScanOnlineHashLookup[/font] (true) — online SHA256[/*]\n<br />[*][font=Courier New]Security.AbuseChAuthKey[/font] — key from auth.abuse.ch[/*]\n<br />[*][font=Courier New]Security.BlockIfScanUnavailable[/font] (false) — reject on scan error[/*]\n<br />[*][font=Courier New]Security.ScanTimeoutSeconds[/font] (120) / [font=Courier New]OnlineScanTimeoutSeconds[/font] (10)[/*]\n<br />[/list]\n<br />[b]Release contents[/b]\n<br />[list]\n<br />[*][font=Courier New]ServerModLoaderByStaili.dll[/font] — into BepInEx&#92;plugins&#92;[/*]\n<br />[*][font=Courier New]README.md[/font] — this readme[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[center][left][b][size=4]☕ Support / Донат[/size][/b][/left]\n<br />[left]Спасибо за поддержку! / Thanks for the support![/left]\n<br />[left][/left]\n<br />[left][b][b]DonationAlerts:[/b][/b][/left]\n<br />[left][url=https://www.donationalerts.com/r/steyferstaili]https://www.donationalerts.com/r/steyferstaili[/url][url=https://www.donationalerts.com/r/steyferstaili][/url][/left]\n<br />[left][/left]\n<br />[left][b][b]TON / USDT:[/b][/b][/left]\n<br />[left][font=Courier New]UQCI4s0ImjWashSanglRuIJuCIsjlJfSPedVR1YSUa45q4yS[/font][/left]\n<br />[left][/left]\n<br />[left][b][b]Contact:[/b] Telegram @Stailick[/b][/left]\n<br />[left][/left]\n<br />[/center]\n<br />",
         "Author": "Staili",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/492/492-1785037892-846015476.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/492"
         },
-        "DownloadUrl": "nexus://scavprototype/492/1460",
+        "DownloadUrl": "nexus://scavprototype/492/1486",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 492,
         "SourceName": "Nexus",
+        "LastUpdated": "2026-07-28T12:05:27.000Z",
+        "ReleaseDate": "2026-07-28T12:05:27.000Z",
+        "SHA256": "91d9e5e043ba45a801b4f3eba097be8dae2c8f36ba5000f5d2e4aa9b0413d4f8",
+        "dllSHA256s": {
+            "ServerModLoaderByStaili.dll": "2d69382878f6e86d3c31803d9eb63daf894634a35c623c50204a3a87f00de05f"
+        },
+        "downloadsSinceLatestVersion": 0,
         "dllNames": [
             "ServerModLoaderByStaili.dll"
         ],
-        "dllVersion": "1.0.0",
+        "dllVersion": "1.2.0",
         "dllVersions": {
-            "ServerModLoaderByStaili.dll": "1.0.0"
+            "ServerModLoaderByStaili.dll": "1.2.0"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 3,
-            "TotalDownloads": 4,
+            "UniqueDownloads": 38,
+            "TotalDownloads": 41,
             "TotalViews": null
         },
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/492/492-1785037892-846015476.png"
-        ],
-        "downloadsSinceLatestVersion": 40
+        ]
     },
     {
         "Id": "nexus-489",
@@ -236,7 +242,7 @@
         "dllSHA256s": {
             "TemporaryBottleCountdown.dll": "031bbf36d68766b1a607f7190f6150aaf055deef32a47111ba18ae2a9124c223"
         },
-        "downloadsSinceLatestVersion": 10,
+        "downloadsSinceLatestVersion": 13,
         "dllNames": [
             "TemporaryBottleCountdown.dll"
         ],
@@ -354,7 +360,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/482/482-1784791063-1718920778.png"
         ],
-        "downloadsSinceLatestVersion": 142
+        "downloadsSinceLatestVersion": 146
     },
     {
         "Id": "nexus-481",
@@ -387,7 +393,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/481/481-1784709266-1900033778.png"
         ],
-        "downloadsSinceLatestVersion": 24
+        "downloadsSinceLatestVersion": 25
     },
     {
         "Id": "nexus-479",
@@ -420,7 +426,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/479/479-1784655502-1107003566.png"
         ],
-        "downloadsSinceLatestVersion": 93
+        "downloadsSinceLatestVersion": 94
     },
     {
         "Id": "nexus-477",
@@ -453,7 +459,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/477/477-1784646164-1389644877.png"
         ],
-        "downloadsSinceLatestVersion": 43
+        "downloadsSinceLatestVersion": 44
     },
     {
         "Id": "nexus-476",
@@ -486,7 +492,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/476/476-1784638002-401210808.png"
         ],
-        "downloadsSinceLatestVersion": 76
+        "downloadsSinceLatestVersion": 77
     },
     {
         "Id": "nexus-466",
@@ -519,7 +525,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/466/466-1784591087-914229174.png"
         ],
-        "downloadsSinceLatestVersion": 72
+        "downloadsSinceLatestVersion": 74
     },
     {
         "Id": "nexus-465",
@@ -552,7 +558,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/465/465-1784548290-79562838.png"
         ],
-        "downloadsSinceLatestVersion": 119
+        "downloadsSinceLatestVersion": 120
     },
     {
         "Id": "nexus-464",
@@ -585,7 +591,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/464/464-1784540188-272177035.png"
         ],
-        "downloadsSinceLatestVersion": 185
+        "downloadsSinceLatestVersion": 186
     },
     {
         "Id": "nexus-463",
@@ -608,7 +614,7 @@
         "dllSHA256s": {
             "IzasWarFood.dll": "0eaf3865b341f4e0af68e61e807f0253e8e9fff03e260fc09d7a195715c7e02b"
         },
-        "downloadsSinceLatestVersion": 96,
+        "downloadsSinceLatestVersion": 97,
         "dllNames": [
             "IzasWarFood.dll"
         ],
@@ -647,7 +653,7 @@
         "dllSHA256s": {
             "Wearable Crystals.dll": "3f3338596ab9e1bc876e6ca57863d0d413a54e0234ba2843fbfa9b0fc2753e33"
         },
-        "downloadsSinceLatestVersion": 209,
+        "downloadsSinceLatestVersion": 211,
         "dllNames": [
             "Wearable Crystals.dll"
         ],
@@ -696,7 +702,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/461/461-1784459422-1914229167.png"
         ],
-        "downloadsSinceLatestVersion": 200
+        "downloadsSinceLatestVersion": 202
     },
     {
         "Id": "nexus-460",
@@ -868,7 +874,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/454/454-1784171754-195789212.png"
         ],
-        "downloadsSinceLatestVersion": 193
+        "downloadsSinceLatestVersion": 195
     },
     {
         "Id": "nexus-453",
@@ -996,7 +1002,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/449/449-1784048812-953204871.png"
         ],
-        "downloadsSinceLatestVersion": 218
+        "downloadsSinceLatestVersion": 223
     },
     {
         "Id": "nexus-448",
@@ -1029,7 +1035,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/448/448-1784118156-867558037.png"
         ],
-        "downloadsSinceLatestVersion": 64
+        "downloadsSinceLatestVersion": 66
     },
     {
         "Id": "nexus-447",
@@ -1124,7 +1130,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/440/440-1783874091-1140507938.png"
         ],
-        "downloadsSinceLatestVersion": 75
+        "downloadsSinceLatestVersion": 77
     },
     {
         "Id": "nexus-439",
@@ -1367,7 +1373,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/432/432-1783734773-139727180.png"
         ],
-        "downloadsSinceLatestVersion": 386
+        "downloadsSinceLatestVersion": 387
     },
     {
         "Id": "nexus-431",
@@ -1472,7 +1478,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/428/428-1783711337-991613117.png"
         ],
-        "downloadsSinceLatestVersion": 1048
+        "downloadsSinceLatestVersion": 1051
     },
     {
         "Id": "nexus-427",
@@ -1505,7 +1511,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/427/427-1783699665-706389161.png"
         ],
-        "downloadsSinceLatestVersion": 238
+        "downloadsSinceLatestVersion": 240
     },
     {
         "Id": "nexus-424",
@@ -1538,7 +1544,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/424/424-1783668913-1707322678.png"
         ],
-        "downloadsSinceLatestVersion": 133
+        "downloadsSinceLatestVersion": 134
     },
     {
         "Id": "nexus-423",
@@ -1600,7 +1606,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/422/422-1783777382-1184045774.png"
         ],
-        "downloadsSinceLatestVersion": 125
+        "downloadsSinceLatestVersion": 129
     },
     {
         "Id": "nexus-421",
@@ -1633,7 +1639,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/421/421-1783625508-24908610.png"
         ],
-        "downloadsSinceLatestVersion": 331
+        "downloadsSinceLatestVersion": 332
     },
     {
         "Id": "nexus-419",
@@ -1666,7 +1672,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/419/419-1783661501-1097719696.png"
         ],
-        "downloadsSinceLatestVersion": 186
+        "downloadsSinceLatestVersion": 189
     },
     {
         "Id": "nexus-418",
@@ -1734,7 +1740,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/417/417-1783540302-1287932209.gif"
         ],
-        "downloadsSinceLatestVersion": 213
+        "downloadsSinceLatestVersion": 214
     },
     {
         "Id": "nexus-415",
@@ -1757,7 +1763,7 @@
         "dllSHA256s": {
             "CUTarkovMedicalMod.dll": "340cc26dedc452feed1aff1b35ffde6fbb9c49c45c45a6c91bb58e933551d071"
         },
-        "downloadsSinceLatestVersion": 99,
+        "downloadsSinceLatestVersion": 104,
         "dllNames": [
             "CUTarkovMedicalMod.dll"
         ],
@@ -1934,7 +1940,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/409/409-1783389381-1513677534.png"
         ],
-        "downloadsSinceLatestVersion": 281
+        "downloadsSinceLatestVersion": 283
     },
     {
         "Id": "nexus-407",
@@ -1967,7 +1973,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/407/407-1783352890-1390968055.png"
         ],
-        "downloadsSinceLatestVersion": 231
+        "downloadsSinceLatestVersion": 238
     },
     {
         "Id": "nexus-406",
@@ -2068,7 +2074,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/403/403-1783194836-1653366416.png"
         ],
-        "downloadsSinceLatestVersion": 418
+        "downloadsSinceLatestVersion": 420
     },
     {
         "Id": "nexus-402",
@@ -2229,7 +2235,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/394/394-1783082828-1585117414.png"
         ],
-        "downloadsSinceLatestVersion": 372
+        "downloadsSinceLatestVersion": 377
     },
     {
         "Id": "nexus-390",
@@ -2328,7 +2334,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/387/387-1782960556-1880036737.png"
         ],
-        "downloadsSinceLatestVersion": 114
+        "downloadsSinceLatestVersion": 115
     },
     {
         "Id": "nexus-386",
@@ -2361,7 +2367,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/386/386-1782955611-1470098728.png"
         ],
-        "downloadsSinceLatestVersion": 957
+        "downloadsSinceLatestVersion": 958
     },
     {
         "Id": "nexus-384",
@@ -2425,7 +2431,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/383/383-1782936924-1213314027.png"
         ],
-        "downloadsSinceLatestVersion": 186
+        "downloadsSinceLatestVersion": 187
     },
     {
         "Id": "nexus-382",
@@ -2557,7 +2563,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/378/378-1782875102-321669885.png"
         ],
-        "downloadsSinceLatestVersion": 58
+        "downloadsSinceLatestVersion": 62
     },
     {
         "Id": "nexus-377",
@@ -2771,7 +2777,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/371/371-1782690867-1246273600.jpg"
         ],
-        "downloadsSinceLatestVersion": 149
+        "downloadsSinceLatestVersion": 150
     },
     {
         "Id": "nexus-370",
@@ -2839,7 +2845,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/369/369-1782659049-2022302119.jpg"
         ],
-        "downloadsSinceLatestVersion": 652
+        "downloadsSinceLatestVersion": 653
     },
     {
         "Id": "nexus-368",
@@ -2872,7 +2878,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/368/368-1782659982-1514105306.png"
         ],
-        "downloadsSinceLatestVersion": 302
+        "downloadsSinceLatestVersion": 304
     },
     {
         "Id": "nexus-367",
@@ -3123,7 +3129,7 @@
         "ReleaseDate": "2026-07-27T23:41:38.000Z",
         "SHA256": "02bd22cc92bc6a882dc349f1166dfa025d04a95bc93a5d5dc59d2a4244483daf",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 6,
+        "downloadsSinceLatestVersion": 7,
         "dllNames": [],
         "dllVersion": null,
         "dllVersions": {},
@@ -3261,7 +3267,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/350/350-1782389193-1354873044.png"
         ],
-        "downloadsSinceLatestVersion": 632
+        "downloadsSinceLatestVersion": 633
     },
     {
         "Id": "nexus-347",
@@ -3284,7 +3290,7 @@
         "dllSHA256s": {
             "Refill_Jetpack_with_Oil.dll": "17312dc4a103965d21d810caba88747f7b8754671324a2bcd40b5b374797e0fd"
         },
-        "downloadsSinceLatestVersion": 44,
+        "downloadsSinceLatestVersion": 45,
         "dllNames": [
             "Refill_Jetpack_with_Oil.dll"
         ],
@@ -3362,7 +3368,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/344/344-1782071908-549744765.png"
         ],
-        "downloadsSinceLatestVersion": 395
+        "downloadsSinceLatestVersion": 396
     },
     {
         "Id": "nexus-343",
@@ -3428,7 +3434,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/342/342-1781953680-834650068.png"
         ],
-        "downloadsSinceLatestVersion": 1773
+        "downloadsSinceLatestVersion": 1776
     },
     {
         "Id": "nexus-341",
@@ -3461,7 +3467,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/341/341-1781955629-789599736.png"
         ],
-        "downloadsSinceLatestVersion": 2603
+        "downloadsSinceLatestVersion": 2632
     },
     {
         "Id": "nexus-340",
@@ -3553,7 +3559,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/338/338-1781889308-891665935.png"
         ],
-        "downloadsSinceLatestVersion": 1317
+        "downloadsSinceLatestVersion": 1319
     },
     {
         "Id": "nexus-337",
@@ -3714,7 +3720,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/333/333-1781826773-1119722687.png"
         ],
-        "downloadsSinceLatestVersion": 447
+        "downloadsSinceLatestVersion": 448
     },
     {
         "Id": "nexus-332",
@@ -3780,7 +3786,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/331/331-1781804704-899005156.png"
         ],
-        "downloadsSinceLatestVersion": 1841
+        "downloadsSinceLatestVersion": 1843
     },
     {
         "Id": "nexus-330",
@@ -3813,7 +3819,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/330/330-1782061596-1490131609.png"
         ],
-        "downloadsSinceLatestVersion": 412
+        "downloadsSinceLatestVersion": 413
     },
     {
         "Id": "nexus-329",
@@ -3935,7 +3941,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 32,
+        "downloadsSinceLatestVersion": 35,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -3993,7 +3999,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/324/324-1784646089-193524787.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/324/324-1781826069-795206863.png"
         ],
-        "downloadsSinceLatestVersion": 495
+        "downloadsSinceLatestVersion": 509
     },
     {
         "Id": "nexus-323",
@@ -4026,7 +4032,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/323/323-1781736577-1858301084.png"
         ],
-        "downloadsSinceLatestVersion": 128
+        "downloadsSinceLatestVersion": 129
     },
     {
         "Id": "nexus-322",
@@ -4095,7 +4101,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/321/321-1784200547-1645500571.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/321/321-1781702038-14501740.png"
         ],
-        "downloadsSinceLatestVersion": 116
+        "downloadsSinceLatestVersion": 117
     },
     {
         "Id": "nexus-320",
@@ -4508,7 +4514,7 @@
         "dllSHA256s": {
             "VforWhiningMPAddon.dll": "940c27c4e5e406b32d3c750111fb950550c016b753f8e002fe2b1166746fa34e"
         },
-        "downloadsSinceLatestVersion": 132,
+        "downloadsSinceLatestVersion": 134,
         "dllNames": [
             "VforWhiningMPAddon.dll"
         ],
@@ -4818,7 +4824,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/217/217-1781195405-2127154004.png"
         ],
-        "downloadsSinceLatestVersion": 409
+        "downloadsSinceLatestVersion": 410
     },
     {
         "Id": "nexus-216",
@@ -4890,7 +4896,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/215/215-1781192247-181239385.png"
         ],
-        "downloadsSinceLatestVersion": 1037
+        "downloadsSinceLatestVersion": 1039
     },
     {
         "Id": "nexus-214",
@@ -5256,7 +5262,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/201/201-1780968454-848871792.png"
         ],
-        "downloadsSinceLatestVersion": 189
+        "downloadsSinceLatestVersion": 190
     },
     {
         "Id": "nexus-198",
@@ -5322,7 +5328,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/197/197-1780926539-1822683445.jpg"
         ],
-        "downloadsSinceLatestVersion": 1687
+        "downloadsSinceLatestVersion": 1689
     },
     {
         "Id": "nexus-196",
@@ -5417,7 +5423,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/194/194-1780896592-646519212.png"
         ],
-        "downloadsSinceLatestVersion": 586
+        "downloadsSinceLatestVersion": 588
     },
     {
         "Id": "nexus-193",
@@ -5446,7 +5452,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/193/193-1780896368-154290010.jpg"
         ],
-        "downloadsSinceLatestVersion": 1139
+        "downloadsSinceLatestVersion": 1140
     },
     {
         "Id": "nexus-192",
@@ -5512,7 +5518,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/191/191-1780839725-1700901288.png"
         ],
-        "downloadsSinceLatestVersion": 585
+        "downloadsSinceLatestVersion": 586
     },
     {
         "Id": "nexus-190",
@@ -5646,7 +5652,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/186/186-1780711480-567000893.png"
         ],
-        "downloadsSinceLatestVersion": 435
+        "downloadsSinceLatestVersion": 436
     },
     {
         "Id": "nexus-183",
@@ -5679,7 +5685,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/183/183-1780664930-1820743226.png"
         ],
-        "downloadsSinceLatestVersion": 407
+        "downloadsSinceLatestVersion": 408
     },
     {
         "Id": "nexus-182",
@@ -5741,7 +5747,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/181/181-1780660786-92642104.png"
         ],
-        "downloadsSinceLatestVersion": 155
+        "downloadsSinceLatestVersion": 156
     },
     {
         "Id": "nexus-179",
@@ -5774,7 +5780,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/179/179-1780650207-1195298539.png"
         ],
-        "downloadsSinceLatestVersion": 781
+        "downloadsSinceLatestVersion": 782
     },
     {
         "Id": "nexus-178",
@@ -5840,7 +5846,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/177/177-1780641085-1724719855.png"
         ],
-        "downloadsSinceLatestVersion": 426
+        "downloadsSinceLatestVersion": 427
     },
     {
         "Id": "nexus-175",
@@ -5935,7 +5941,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/144/144-1780565762-615146688.png"
         ],
-        "downloadsSinceLatestVersion": 1771
+        "downloadsSinceLatestVersion": 1773
     },
     {
         "Id": "nexus-142",
@@ -6024,7 +6030,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 139,
+        "downloadsSinceLatestVersion": 142,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -6139,7 +6145,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/135/135-1780249787-1827646159.png"
         ],
-        "downloadsSinceLatestVersion": 290
+        "downloadsSinceLatestVersion": 291
     },
     {
         "Id": "nexus-134",
@@ -6424,7 +6430,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/125/125-1780128521-2067417973.png"
         ],
-        "downloadsSinceLatestVersion": 892
+        "downloadsSinceLatestVersion": 893
     },
     {
         "Id": "nexus-124",
@@ -6490,7 +6496,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/123/123-1779978388-1548305756.jpg"
         ],
-        "downloadsSinceLatestVersion": 226
+        "downloadsSinceLatestVersion": 227
     },
     {
         "Id": "nexus-122",
@@ -6523,7 +6529,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/122/122-1779962803-1133798693.png"
         ],
-        "downloadsSinceLatestVersion": 631
+        "downloadsSinceLatestVersion": 633
     },
     {
         "Id": "nexus-121",
@@ -6589,7 +6595,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/119/119-1779937346-1764286905.png"
         ],
-        "downloadsSinceLatestVersion": 424
+        "downloadsSinceLatestVersion": 426
     },
     {
         "Id": "nexus-118",
@@ -6623,7 +6629,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/118/118-1779906438-1704485820.jpg"
         ],
-        "downloadsSinceLatestVersion": 3121
+        "downloadsSinceLatestVersion": 3128
     },
     {
         "Id": "nexus-117",
@@ -6916,7 +6922,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/108/108-1779813428-462591877.png"
         ],
-        "downloadsSinceLatestVersion": 183
+        "downloadsSinceLatestVersion": 184
     },
     {
         "Id": "nexus-107",
@@ -7011,7 +7017,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/105/105-1781462136-2089875456.png"
         ],
-        "downloadsSinceLatestVersion": 714
+        "downloadsSinceLatestVersion": 715
     },
     {
         "Id": "nexus-104",
@@ -7098,7 +7104,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/95/95-1779750969-1262857550.png"
         ],
-        "downloadsSinceLatestVersion": 564
+        "downloadsSinceLatestVersion": 565
     },
     {
         "Id": "nexus-93",
@@ -7292,7 +7298,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/85/85-1779443536-1713141104.png"
         ],
-        "downloadsSinceLatestVersion": 916
+        "downloadsSinceLatestVersion": 917
     },
     {
         "Id": "nexus-84",
@@ -7361,7 +7367,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/83/83-1779439232-1463014514.png"
         ],
-        "downloadsSinceLatestVersion": 276
+        "downloadsSinceLatestVersion": 277
     },
     {
         "Id": "nexus-82",
@@ -7394,7 +7400,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/82/82-1779433273-1150387939.png"
         ],
-        "downloadsSinceLatestVersion": 259
+        "downloadsSinceLatestVersion": 260
     },
     {
         "Id": "nexus-81",
@@ -7423,7 +7429,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/81/81-1779461968-364104366.png"
         ],
-        "downloadsSinceLatestVersion": 356
+        "downloadsSinceLatestVersion": 357
     },
     {
         "Id": "nexus-80",
@@ -7551,7 +7557,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/77/77-1779295239-1295049607.png"
         ],
-        "downloadsSinceLatestVersion": 1530
+        "downloadsSinceLatestVersion": 1531
     },
     {
         "Id": "nexus-76",
@@ -7584,7 +7590,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/76/76-1779294909-1029054800.png"
         ],
-        "downloadsSinceLatestVersion": 423
+        "downloadsSinceLatestVersion": 424
     },
     {
         "Id": "nexus-75",
@@ -7617,7 +7623,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/75/75-1779280428-390255713.png"
         ],
-        "downloadsSinceLatestVersion": 3592
+        "downloadsSinceLatestVersion": 3596
     },
     {
         "Id": "nexus-74",
@@ -7650,7 +7656,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/74/74-1779219898-1150268199.png"
         ],
-        "downloadsSinceLatestVersion": 9167
+        "downloadsSinceLatestVersion": 9177
     },
     {
         "Id": "nexus-73",
@@ -7683,7 +7689,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/73/73-1779214039-1207692528.png"
         ],
-        "downloadsSinceLatestVersion": 2317
+        "downloadsSinceLatestVersion": 2318
     },
     {
         "Id": "nexus-72",
@@ -7716,7 +7722,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/72/72-1779371503-521443026.png"
         ],
-        "downloadsSinceLatestVersion": 1565
+        "downloadsSinceLatestVersion": 1566
     },
     {
         "Id": "nexus-71",
@@ -7772,7 +7778,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 69,
+        "downloadsSinceLatestVersion": 70,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -7822,7 +7828,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/69/69-1779806023-1700655876.png"
         ],
-        "downloadsSinceLatestVersion": 1209
+        "downloadsSinceLatestVersion": 1214
     },
     {
         "Id": "nexus-68",
@@ -7896,7 +7902,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 35898
+        "downloadsSinceLatestVersion": 35937
     },
     {
         "Id": "nexus-66",
@@ -7992,7 +7998,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/64/64-1783401278-550500355.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/64/64-1781431558-1252655252.png"
         ],
-        "downloadsSinceLatestVersion": 358
+        "downloadsSinceLatestVersion": 359
     },
     {
         "Id": "nexus-63",
@@ -8058,7 +8064,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/60/60-1778681275-472147762.png"
         ],
-        "downloadsSinceLatestVersion": 595
+        "downloadsSinceLatestVersion": 596
     },
     {
         "Id": "nexus-59",
@@ -8087,7 +8093,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/59/59-1778919861-607954699.png"
         ],
-        "downloadsSinceLatestVersion": 858
+        "downloadsSinceLatestVersion": 860
     },
     {
         "Id": "nexus-57",
@@ -8153,7 +8159,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/55/55-1778394693-1979213792.png"
         ],
-        "downloadsSinceLatestVersion": 947
+        "downloadsSinceLatestVersion": 948
     },
     {
         "Id": "nexus-53",
@@ -8186,7 +8192,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/53/53-1778319171-1022189141.png"
         ],
-        "downloadsSinceLatestVersion": 1953
+        "downloadsSinceLatestVersion": 1955
     },
     {
         "Id": "nexus-52",
@@ -8219,7 +8225,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/52/52-1778256892-1884228375.png"
         ],
-        "downloadsSinceLatestVersion": 533
+        "downloadsSinceLatestVersion": 534
     },
     {
         "Id": "nexus-51",
@@ -8314,7 +8320,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/48/48-1778247213-30024522.png"
         ],
-        "downloadsSinceLatestVersion": 149
+        "downloadsSinceLatestVersion": 150
     },
     {
         "Id": "nexus-47",
@@ -8445,7 +8451,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/43/43-1777981839-1948096663.png"
         ],
-        "downloadsSinceLatestVersion": 49
+        "downloadsSinceLatestVersion": 51
     },
     {
         "Id": "nexus-42",
@@ -8534,7 +8540,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "15f047a0ed401af24d49193439e29bbab2f1a37c64a5a6e22f1cadfa65b17ccd"
         },
-        "downloadsSinceLatestVersion": 446,
+        "downloadsSinceLatestVersion": 453,
         "dllNames": [
             "prosthetics.dll"
         ],
@@ -8584,7 +8590,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/38/38-1777606346-2061007310.png"
         ],
-        "downloadsSinceLatestVersion": 1236
+        "downloadsSinceLatestVersion": 1237
     },
     {
         "Id": "nexus-37",
@@ -8780,7 +8786,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/32/32-1777285860-206331044.png"
         ],
-        "downloadsSinceLatestVersion": 3120
+        "downloadsSinceLatestVersion": 3127
     },
     {
         "Id": "nexus-31",
@@ -8838,7 +8844,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/31/31-1777215394-1750634006.png"
         ],
-        "downloadsSinceLatestVersion": 3165
+        "downloadsSinceLatestVersion": 3167
     },
     {
         "Id": "nexus-30",
@@ -9028,7 +9034,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/26/26-1777030858-1473263070.png"
         ],
-        "downloadsSinceLatestVersion": 545
+        "downloadsSinceLatestVersion": 546
     },
     {
         "Id": "nexus-25",
@@ -9289,7 +9295,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/18/18-1774031472-1359870539.png"
         ],
-        "downloadsSinceLatestVersion": 1187
+        "downloadsSinceLatestVersion": 1188
     },
     {
         "Id": "nexus-17",
@@ -9322,7 +9328,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/17/17-1781188337-2021957930.png"
         ],
-        "downloadsSinceLatestVersion": 161
+        "downloadsSinceLatestVersion": 162
     },
     {
         "Id": "nexus-16",
@@ -9355,7 +9361,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/16/16-1773849358-1960763076.jpg"
         ],
-        "downloadsSinceLatestVersion": 672
+        "downloadsSinceLatestVersion": 673
     },
     {
         "Id": "nexus-15",
@@ -9388,7 +9394,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/15/15-1778431291-964052521.png"
         ],
-        "downloadsSinceLatestVersion": 3721
+        "downloadsSinceLatestVersion": 3724
     },
     {
         "Id": "nexus-14",
@@ -9549,7 +9555,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/9/9-1771572802-484129458.png"
         ],
-        "downloadsSinceLatestVersion": 1340
+        "downloadsSinceLatestVersion": 1341
     },
     {
         "Id": "nexus-8",
@@ -9614,7 +9620,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/7/7-1771267944-357525261.png"
         ],
-        "downloadsSinceLatestVersion": 4539
+        "downloadsSinceLatestVersion": 4544
     },
     {
         "Id": "nexus-6",

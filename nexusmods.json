@@ -369,7 +369,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/488/488-1784950849-1712848768.png"
         ],
-        "downloadsSinceLatestVersion": 54
+        "downloadsSinceLatestVersion": 55
     },
     {
         "Id": "nexus-486",
@@ -438,7 +438,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/482/482-1784791063-1718920778.png"
         ],
-        "downloadsSinceLatestVersion": 156
+        "downloadsSinceLatestVersion": 158
     },
     {
         "Id": "nexus-481",
@@ -494,7 +494,7 @@
         "dllSHA256s": {
             "CUMoreNpcMod.dll": "96577de6df2a36ca9896745bc096114684ff5035eeaa6d1540fecb1f29485f61"
         },
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 17,
         "dllNames": [
             "CUMoreNpcMod.dll"
         ],
@@ -737,7 +737,7 @@
         "dllSHA256s": {
             "Wearable Crystals.dll": "3f3338596ab9e1bc876e6ca57863d0d413a54e0234ba2843fbfa9b0fc2753e33"
         },
-        "downloadsSinceLatestVersion": 216,
+        "downloadsSinceLatestVersion": 217,
         "dllNames": [
             "Wearable Crystals.dll"
         ],
@@ -1457,40 +1457,46 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/432/432-1783734773-139727180.png"
         ],
-        "downloadsSinceLatestVersion": 394
+        "downloadsSinceLatestVersion": 395
     },
     {
         "Id": "nexus-431",
         "Name": "ModikTranslate",
-        "Version": "1.2.0",
-        "bepinexVersion": "1.2.1",
+        "Version": "1.2.2",
+        "bepinexVersion": "1.2.2",
         "Description": "[center][b]ModikTranslate[/b]\n<br />[size=2][i]Two-way multiplayer chat translation for Casualties Unknown[/i][/size][/center]\n<br />[line]\n<br />\n<br />[b]Description[/b]\n<br />[size=2]A BepInEx plugin by [b]Staili[/b] for [b]Casualties Unknown[/b] multiplayer chat. One DLL — no game file edits, drop into [i]BepInEx&#92;plugins&#92;[/i].\n<br />\n<br />Type in your language — others read theirs. Incoming messages are translated for you with the original kept in [i][brackets][/i]. Free translation APIs, no API key.[/size]\n<br />[line]\n<br />\n<br />[b]Main features[/b]\n<br />[list]\n<br />[*][size=2][b]Outgoing[/b] — your messages are sent in the language you pick (default EN). Change via the [b]right[/b] dropdown above chat (EN, ES, DE, ZH, and 20+ more).[/size][/*]\n<br />[*][size=2][b]Incoming[/b] — foreign messages are translated into your language (default RU). Original text stays in [i][brackets][/i]. Change via the [b]left[/b] dropdown above chat.[/size][/*]\n<br />[*][size=2][b]Toggle[/b] — [i]Авто-перевод: ВКЛ / ВЫКЛ[/i] button above chat. Chat commands [i]/…[/i] are never translated.[/size][/*]\n<br />[*][size=2][b]Providers[/b] — MyMemory + Google fallback. Daily rate limits apply; switches provider automatically when one is exhausted.[/size][/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Installation[/b]\n<br />[list=1]\n<br />[*][size=2]Install [url=https://github.com/BepInEx/BepInEx/releases]BepInEx 5.4.x[/url] — [i]winhttp.dll[/i] next to [i]CasualtiesUnknown.exe[/i][/size][/*]\n<br />[*][size=2]Install [url=https://www.nexusmods.com/scavprototype/mods/67]Casualties Together (KrokMP)[/url][/size][/*]\n<br />[*][size=2]Install CUCoreLib and [url=https://github.com/jimmyking9999999/QoL-Unknown/releases]QoL.Unknown[/url] → [i]BepInEx&#92;plugins&#92;[/i][/size][/*]\n<br />[*][size=2]Copy [i]ModikTranslate.dll[/i] to [i]BepInEx&#92;plugins&#92;[/i][/size][/*]\n<br />[*][size=2]Join a multiplayer session — three controls appear above the chat panel[/size][/*]\n<br />[*][size=2]Config is created in [i]BepInEx&#92;config&#92;ModikTranslateByStaili.cfg[/i] on first launch[/size][/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Requirements[/b]\n<br />[list]\n<br />[*][size=2][b]Required mods (Nexus):[/b][/size]\n<br />\n<br />[list]\n<br />[*][size=2][url=https://www.nexusmods.com/scavprototype/mods/67][b]Casualties Together (KrokMP)[/b][/url] — multiplayer chat; active session required[/size][/*]\n<br />[*][size=2]CUCoreLib — [i]CUCoreLib.dll[/i] in [i]BepInEx&#92;plugins&#92;[/i][/size][/*]\n<br />[*][size=2][i][url=https://github.com/jimmyking9999999/QoL-Unknown/releases]QoL.Unknown[/url] [/i][/size][/*]\n<br />[/list][/*]\n<br />[*][size=2][b]Required (non-mod):[/b] Casualties Unknown + BepInEx 5.4.x (Windows x64)[/size][/*]\n<br />[*][size=2][b]Required (non-mod):[/b] Internet — free translators (MyMemory / Google fallback), daily limits, no API key[/size][/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Notes[/b]\n<br />[list]\n<br />[*][size=2]Emoji and messages without letters pass through unchanged[/size][/*]\n<br />[*][size=2]All players in the lobby should run the same plugin version[/size][/*]\n<br />[*][size=2]Optional: [url=https://github.com/jimmyking9999999/QoL-Unknown/releases]QoL.Unknown[/url] — Mods tab, **GIT** button, correct version in the list (GitHub only, not on Nexus)[/size][/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Support the author[/b]\n<br />[list]\n<br />[*][size=2][b]DonationAlerts[/b] (RUB, USD, EUR…): [url=https://www.donationalerts.com/r/steyferstaili]donationalerts.com/r/steyferstaili[/url][/size][/*]\n<br />[*][size=2][b]TON / USDT:[/b] UQCI4s0ImjWashSanglRuIJuCIsjlJfSPedVR1YSUa45q4yS[/size][/*]\n<br />[*][size=2][b]Telegram:[/b] [url=https://t.me/Stailick]@Stailick[/url][/size][/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Shout outs[/b]\n<br />[size=2]Thanks to the KrokMP team, BepInEx maintainers, and the Casualties Unknown community.\n<br />\n<br />Bug reports — Posts tab or Telegram @Stailick.[/size]",
         "Author": "Stailick",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/431/431-1783731958-649845822.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/431"
         },
-        "DownloadUrl": "nexus://scavprototype/431/1259",
+        "DownloadUrl": "nexus://scavprototype/431/1491",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 431,
         "SourceName": "Nexus",
+        "LastUpdated": "2026-07-28T23:02:38.000Z",
+        "ReleaseDate": "2026-07-28T23:02:38.000Z",
+        "SHA256": "464f2a46fd7e044729a1d94857e249eac9c1b14ff30c02dceb0989767ba43e8b",
+        "dllSHA256s": {
+            "ModikTranslate.dll": "3a298e112479fac12ac60940f629fdb45b98ccb484ad6ccad263551f8170b34f"
+        },
+        "downloadsSinceLatestVersion": 1,
         "dllNames": [
             "ModikTranslate.dll"
         ],
-        "dllVersion": "1.2.1",
+        "dllVersion": "1.2.2",
         "dllVersions": {
-            "ModikTranslate.dll": "1.2.1"
+            "ModikTranslate.dll": "1.2.2"
         },
         "Statistics": {
             "Endorsements": 2,
-            "UniqueDownloads": 25,
-            "TotalDownloads": 30,
+            "UniqueDownloads": 41,
+            "TotalDownloads": 53,
             "TotalViews": null
         },
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/431/431-1783731958-649845822.png"
-        ],
-        "downloadsSinceLatestVersion": 44
+        ]
     },
     {
         "Id": "nexus-429",
@@ -1562,7 +1568,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/428/428-1783711337-991613117.png"
         ],
-        "downloadsSinceLatestVersion": 1075
+        "downloadsSinceLatestVersion": 1079
     },
     {
         "Id": "nexus-427",
@@ -1723,7 +1729,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/421/421-1783625508-24908610.png"
         ],
-        "downloadsSinceLatestVersion": 335
+        "downloadsSinceLatestVersion": 336
     },
     {
         "Id": "nexus-419",
@@ -2024,7 +2030,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/409/409-1783389381-1513677534.png"
         ],
-        "downloadsSinceLatestVersion": 290
+        "downloadsSinceLatestVersion": 291
     },
     {
         "Id": "nexus-407",
@@ -2057,7 +2063,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/407/407-1783352890-1390968055.png"
         ],
-        "downloadsSinceLatestVersion": 256
+        "downloadsSinceLatestVersion": 257
     },
     {
         "Id": "nexus-406",
@@ -2385,7 +2391,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/388/388-1782971746-2037319602.png"
         ],
-        "downloadsSinceLatestVersion": 66
+        "downloadsSinceLatestVersion": 67
     },
     {
         "Id": "nexus-387",
@@ -2451,7 +2457,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/386/386-1782955611-1470098728.png"
         ],
-        "downloadsSinceLatestVersion": 976
+        "downloadsSinceLatestVersion": 977
     },
     {
         "Id": "nexus-384",
@@ -2548,7 +2554,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/382/382-1782927980-1598388311.png"
         ],
-        "downloadsSinceLatestVersion": 498
+        "downloadsSinceLatestVersion": 499
     },
     {
         "Id": "nexus-381",
@@ -2803,7 +2809,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/373/373-1782760977-2052849447.png"
         ],
-        "downloadsSinceLatestVersion": 351
+        "downloadsSinceLatestVersion": 352
     },
     {
         "Id": "nexus-372",
@@ -2929,7 +2935,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/369/369-1782659049-2022302119.jpg"
         ],
-        "downloadsSinceLatestVersion": 657
+        "downloadsSinceLatestVersion": 658
     },
     {
         "Id": "nexus-368",
@@ -3213,7 +3219,7 @@
         "ReleaseDate": "2026-07-28T21:22:22.000Z",
         "SHA256": "c6519d8fbaf9b34a2679a3175c79aeece0a38f93b34e0ebe3141e03f5561486a",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 2,
+        "downloadsSinceLatestVersion": 3,
         "dllNames": [],
         "dllVersion": null,
         "dllVersions": {},
@@ -3518,7 +3524,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/342/342-1781953680-834650068.png"
         ],
-        "downloadsSinceLatestVersion": 1790
+        "downloadsSinceLatestVersion": 1793
     },
     {
         "Id": "nexus-341",
@@ -3551,7 +3557,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/341/341-1781955629-789599736.png"
         ],
-        "downloadsSinceLatestVersion": 2711
+        "downloadsSinceLatestVersion": 2716
     },
     {
         "Id": "nexus-340",
@@ -3643,7 +3649,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/338/338-1781889308-891665935.png"
         ],
-        "downloadsSinceLatestVersion": 1328
+        "downloadsSinceLatestVersion": 1331
     },
     {
         "Id": "nexus-337",
@@ -3870,7 +3876,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/331/331-1781804704-899005156.png"
         ],
-        "downloadsSinceLatestVersion": 1849
+        "downloadsSinceLatestVersion": 1850
     },
     {
         "Id": "nexus-330",
@@ -4083,7 +4089,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/324/324-1784646089-193524787.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/324/324-1781826069-795206863.png"
         ],
-        "downloadsSinceLatestVersion": 572
+        "downloadsSinceLatestVersion": 580
     },
     {
         "Id": "nexus-323",
@@ -4185,7 +4191,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/321/321-1784200547-1645500571.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/321/321-1781702038-14501740.png"
         ],
-        "downloadsSinceLatestVersion": 117
+        "downloadsSinceLatestVersion": 118
     },
     {
         "Id": "nexus-320",
@@ -5346,7 +5352,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/201/201-1780968454-848871792.png"
         ],
-        "downloadsSinceLatestVersion": 191
+        "downloadsSinceLatestVersion": 192
     },
     {
         "Id": "nexus-198",
@@ -5507,7 +5513,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/194/194-1780896592-646519212.png"
         ],
-        "downloadsSinceLatestVersion": 592
+        "downloadsSinceLatestVersion": 593
     },
     {
         "Id": "nexus-193",
@@ -6163,7 +6169,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/139/139-1780396981-504852775.png"
         ],
-        "downloadsSinceLatestVersion": 1375
+        "downloadsSinceLatestVersion": 1376
     },
     {
         "Id": "nexus-136",
@@ -6390,7 +6396,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/130/130-1780136517-211162896.jpg"
         ],
-        "downloadsSinceLatestVersion": 445
+        "downloadsSinceLatestVersion": 446
     },
     {
         "Id": "nexus-129",
@@ -6613,7 +6619,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/122/122-1779962803-1133798693.png"
         ],
-        "downloadsSinceLatestVersion": 642
+        "downloadsSinceLatestVersion": 645
     },
     {
         "Id": "nexus-121",
@@ -6713,7 +6719,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/118/118-1779906438-1704485820.jpg"
         ],
-        "downloadsSinceLatestVersion": 3155
+        "downloadsSinceLatestVersion": 3158
     },
     {
         "Id": "nexus-117",
@@ -7674,7 +7680,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/76/76-1779294909-1029054800.png"
         ],
-        "downloadsSinceLatestVersion": 424
+        "downloadsSinceLatestVersion": 426
     },
     {
         "Id": "nexus-75",
@@ -7740,7 +7746,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/74/74-1779219898-1150268199.png"
         ],
-        "downloadsSinceLatestVersion": 9259
+        "downloadsSinceLatestVersion": 9262
     },
     {
         "Id": "nexus-73",
@@ -7773,7 +7779,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/73/73-1779214039-1207692528.png"
         ],
-        "downloadsSinceLatestVersion": 2326
+        "downloadsSinceLatestVersion": 2327
     },
     {
         "Id": "nexus-72",
@@ -7912,7 +7918,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/69/69-1779806023-1700655876.png"
         ],
-        "downloadsSinceLatestVersion": 1258
+        "downloadsSinceLatestVersion": 1259
     },
     {
         "Id": "nexus-68",
@@ -7986,7 +7992,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 36233
+        "downloadsSinceLatestVersion": 36247
     },
     {
         "Id": "nexus-66",
@@ -8837,7 +8843,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/33/33-1781962520-833987967.png"
         ],
-        "downloadsSinceLatestVersion": 480
+        "downloadsSinceLatestVersion": 483
     },
     {
         "Id": "nexus-32",
@@ -8870,7 +8876,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/32/32-1777285860-206331044.png"
         ],
-        "downloadsSinceLatestVersion": 3149
+        "downloadsSinceLatestVersion": 3152
     },
     {
         "Id": "nexus-31",
@@ -9379,7 +9385,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/18/18-1774031472-1359870539.png"
         ],
-        "downloadsSinceLatestVersion": 1191
+        "downloadsSinceLatestVersion": 1192
     },
     {
         "Id": "nexus-17",
@@ -9412,7 +9418,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/17/17-1781188337-2021957930.png"
         ],
-        "downloadsSinceLatestVersion": 163
+        "downloadsSinceLatestVersion": 164
     },
     {
         "Id": "nexus-16",
@@ -9704,7 +9710,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/7/7-1771267944-357525261.png"
         ],
-        "downloadsSinceLatestVersion": 4602
+        "downloadsSinceLatestVersion": 4603
     },
     {
         "Id": "nexus-6",

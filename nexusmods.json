@@ -1,5 +1,44 @@
 [
     {
+        "Id": "nexus-505",
+        "Name": "Cave Diver",
+        "Version": "1.0",
+        "bepinexVersion": "0.0.2",
+        "Description": "[b][size=5]Description[/size][/b]\n<br />Cave Diver adds new aquatic items and gameplay mechanics to Casualties: Unknown (AKA Scav Prototype). As of version 1.0 the mod is still WIP and has a few minor bugs. It has NOT been tested with multiplayer, so I have no idea if it works.\n<br />\n<br />[b][size=5]Installation instructions[/size][/b]\n<br />Unpack the contents of the mod into Game/BepInEx/plugins\n<br />\n<br />Your plugins folder should look like this:\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785338932-505471934.png[/img]\n<br />\n<br />[size=5][b]Main features[/b][/size]\n<br />[color=#d4d4d8]Cave Diver adds new items that split the functionality of the vanilla game's Advanced Scuba Gear, adding new items with multiple tiers. It also add a special \"Force Flooded Modifier\" setting, which will force every layer to generate with a flooded modifier. The strength of the flooded modifier can be adjusted (up to 10x), and can even be set to increase with each subsequent layer. This setting can be disabled if you just want the new items and mechanics.[/color]\n<br />\n<br />[b][size=4]ITEMS:[/size][/b]\n<br />[b]\n<br />[img width=97]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785339271-1241301393.png[/img] [/b]\n<br />[b][size=4]Swim Goggles[/size][/b]\n<br />The Swim goggles are a new wearable item that allows for clear vision underwater. Be careful though! They will start to leak when below 50% integrity, and you'll have to take them off to drain the water from them. They can also be knocked off your face if you take a strong blow too the head.\n<br />\n<br />\n<br />[img width=97]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785339473-559925466.png[/img] \n<br />[b][size=4]Diving Mask[/size][/b]\n<br />The Diving Mask functions similarly to the Swim Goggles, allowing for clear vision while underwater. They have a higher durability than the Swim Goggles, and have a special feature. Because the Diving Mask covers your nose, water can be cleared from them with a strong exhale through the nose. This can be done while submerged, allowing you to restore clear vision ever while underwater. Just like the Swim Goggles, the Diving Mask will start to leak below 50% integrity, and can also be knocked off your face.\n<br />\n<br />\n<br />[img width=95]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785339818-621864159.png[/img]\n<br />[b][size=4]Wetsuit[/size][/b]\n<br />The Wetsuit is a bodysuit designed specifically to increase heat retention while in the water. It does this by trapping a layer of water between itself and the wearer, which is then heated by the wearer's body heat, keeping them warm. This means that then Wetsuit provides little insulation while dry, but provides significant insulation when wet. The Wetsuit is essential to preventing hypothermia while diving.\n<br />\n<br />\n<br />[img width=89]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785340019-414031892.png[/img]\n<br />[b][size=4]Life Vest[/size][/b]\n<br />The Life Vest is a type 2 Personal Flotation Device. When worn it drastically increased the wearer's buoyancy, causing them to float to the water's surface. The Life Vest will even keep the wearer's head above the water while they are unconscious. It can save your life if you unexpectedly tumble into the water, or is you are too exhausted to swim.\n<br />\n<br />\n<br />\n<br />[img width=82]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785340215-1327148363.png[/img]\n<br />[b][size=4]Weighted Harness[/size][/b]\n<br />The Weighted Harness functions opposite of the Life Vest, drastically decreasing buoyancy when worn, making swimming virtually impossible. While dangerous it does have it's uses, as it will make the wearer sink in dense liquids like Lumalgae. The Weighted Harness is essential for navigating layers with high amounts of Lumalgae.\n<br />\n<br />\n<br />\n<br />[img width=80]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785340495-1813605471.png[/img]\n<br />[b][size=4]Buoyance Control Device[/size][/b]\n<br />The Buoyancy Control Device (AKA BCD) does what the name suggests. When worn it manages the user's buoyancy for them automatically, keeping it as close to neutral as possible. It also allows the wearer to freely float or sink at will, allowing for fully freeform underwater movement with no stamina cost. Take note that due to input mapping, you cannot drink any fluids you are standing in while wearing it.\n<br />\n<br />\n<br />\n<br />[img width=48]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785340768-795254350.png[/img]\n<br />[b][size=4]Air Tank[/size][/b]\n<br />The lifeline of every diver. The Air Tank holds pressurized air that can be breathed through the attached mouthpiece, called a Regulator. The Air Tank holds enough air for 30 minutes when submerged, and only decays when the user is breathing from it directly. Make sure that you have the Regulator in your mouth before you dive, or you won't be able to breathe! You can't use the Regulator if you're disfigured, and can't hold anything in your mouth while the Regulator is there. Additionally, a strong blow to the head will knock the Regulator out of your mouth so be careful! When crafted, the Air Tank will be empty, but can be refilled using the pumps sometimes found  in Lifepods, though this will break the pump since they were designed to pump liquid, not air.\n<br />\n<br />\n<br />\n<br />[b]\n<br />[img width=89]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785341196-1993171521.png[/img][/b]\n<br />[b][size=4]Rebreather[/size][/b]\n<br />The Rebreather is another respiration device. It works by taking the air you exhale and re-oxygenizes it, allowing it to be breathed again. It runs on a large battery and supplies air for a whopping 80 minutes on a single charge. It also has a Regulator, just like the Air Tank, and all of it's specific interactions also apply here. It can be knocked out of your mouth by a strong blow to the head, and has to be in your mouth in order for you to breathe.\n<br />\n<br />\n<br />\n<br />[img width=83]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785341609-107077360.png[/img]\n<br />[b][size=4]Makeshift Fins[/size][/b]\n<br />The Makeshift fins provide faster lateral movement while in the water. They have decent durability and are reletively easy to craft.\n<br />\n<br />\n<br />\n<br />[img width=102]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785341705-185630707.png[/img]\n<br />[b][size=4]Fins[/size][/b]\n<br />The Fins are much more effective than the Makeshift Fins, and have higher durability. They also prevent you from getting washed away by water currents.\n<br />\n<br />\n<br />[b][size=5]ASPIRATION:[/size][/b]\n<br />[img width=110]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785341865-1040089944.png[/img]\n<br />Aspiration is a new status that makes drowning more dangerous and distinct from suffocation. Aspiration is when fluid is accidentally inhaled into the lungs, usually triggered by a gasp reflex. \n<br />\n<br />When Spo2 reaches below 45%, and the player has been holding their breath for at least 5 seconds, their gasp reflex will trigger, causing them to inhale. They'll swallow the liquid in an attempt to prevent it from entering the lungs but to no avail. Aspiration is very painful and causes rapid damage to the thorax while the lungs are filled with liquid. Luckily the player will automatically cough up the liquid once they are exposed back to air, but only if they are conscious and their thorax isn't too damaged.\n<br />\n<br />\n<br />[b][size=5]Requirements[/size][/b]\n<br />BepinEx 5.4 and CUCoreLIb https://www.nexusmods.com/scavprototype/mods/341?tab=files\n<br />\n<br />[size=5][b]Shout outs[/b][/size]\n<br />MASSIVE thanks to JimmyKing, who lead me be the hand through the entire development process. This mod would not have been possible if not for their constant help and work on CUCoreLib.\n<br />\n<br />Also thanks to Corells for playtesting and feedback.",
+        "Author": "O2xymoron",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785343136-239597951.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/505"
+        },
+        "DownloadUrl": "nexus://scavprototype/505/1500",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 505,
+        "SourceName": "Nexus",
+        "LastUpdated": "2026-07-29T16:50:24.000Z",
+        "ReleaseDate": "2026-07-29T16:41:55.000Z",
+        "SHA256": "593bbd24c570cae4d0bfcd732dfde34773db25b471f37568cdedc6f0dbe8d50c",
+        "dllSHA256s": {
+            "CaveDiver.dll": "a5aab2b2014f3aa2a6f368e96d87ad89e13b27e659b4fa8b3195ddb4a2ff7ddf"
+        },
+        "downloadsSinceLatestVersion": 6,
+        "dllNames": [
+            "CaveDiver.dll"
+        ],
+        "dllVersion": "0.0.2",
+        "dllVersions": {
+            "CaveDiver.dll": "0.0.2"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 11,
+            "TotalDownloads": 13,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785343136-239597951.png"
+        ]
+    },
+    {
         "Id": "nexus-504",
         "Name": "Configurable Flashlights",
         "Version": "1.0",
@@ -20,7 +59,7 @@
         "dllSHA256s": {
             "ConfigurableFlashlights.dll": "4058df5efa9c95a21c43084ffa3d9beab32f659d503ca7b13afe43e089f45c40"
         },
-        "downloadsSinceLatestVersion": 7,
+        "downloadsSinceLatestVersion": 9,
         "dllNames": [
             "ConfigurableFlashlights.dll"
         ],
@@ -60,7 +99,7 @@
             "CUCoreLib.dll": "b448af7b6c9c8d7767df0bbb13e465551ef6b0f2a35dda209b5f78035ab4e659",
             "gouxismoreattachments.dll": "785b03245c4dbe7f418342e09172a8aaf3d6374b90839d4e72a21d45ea6f6061"
         },
-        "downloadsSinceLatestVersion": 2,
+        "downloadsSinceLatestVersion": 5,
         "dllNames": [
             "CUCoreLib.dll",
             "gouxismoreattachments.dll"
@@ -140,7 +179,7 @@
         "dllSHA256s": {
             "EMI.dll": "5012ff779b1ee253b3265640c76bd6123e5cd2b8af1f01f00d3aa634e634de71"
         },
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 19,
         "dllNames": [
             "EMI.dll"
         ],
@@ -384,7 +423,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/495/495-1785079305-1396700908.png"
         ],
-        "downloadsSinceLatestVersion": 147
+        "downloadsSinceLatestVersion": 150
     },
     {
         "Id": "nexus-494",
@@ -407,7 +446,7 @@
         "dllSHA256s": {
             "MultiplayerStartItems.dll": "bbf3b923e78b33219c1f4f875f26f31fb5b9f2e4a737693f20485e4eb06534d3"
         },
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 1,
         "dllNames": [
             "MultiplayerStartItems.dll"
         ],
@@ -446,7 +485,7 @@
         "dllSHA256s": {
             "ServerModLoaderByStaili.dll": "2d69382878f6e86d3c31803d9eb63daf894634a35c623c50204a3a87f00de05f"
         },
-        "downloadsSinceLatestVersion": 12,
+        "downloadsSinceLatestVersion": 13,
         "dllNames": [
             "ServerModLoaderByStaili.dll"
         ],
@@ -659,7 +698,7 @@
         "dllSHA256s": {
             "CUMoreNpcMod.dll": "a124ae9e67866b04b413aef62a657d69c0f9099f56f1cb66cd466a7158b30a6d"
         },
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 5,
         "dllNames": [
             "CUMoreNpcMod.dll"
         ],
@@ -774,7 +813,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/466/466-1784591087-914229174.png"
         ],
-        "downloadsSinceLatestVersion": 75
+        "downloadsSinceLatestVersion": 76
     },
     {
         "Id": "nexus-465",
@@ -902,7 +941,7 @@
         "dllSHA256s": {
             "Wearable Crystals.dll": "3f3338596ab9e1bc876e6ca57863d0d413a54e0234ba2843fbfa9b0fc2753e33"
         },
-        "downloadsSinceLatestVersion": 230,
+        "downloadsSinceLatestVersion": 231,
         "dllNames": [
             "Wearable Crystals.dll"
         ],
@@ -984,7 +1023,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/460/460-1784914103-349835418.png"
         ],
-        "downloadsSinceLatestVersion": 132
+        "downloadsSinceLatestVersion": 134
     },
     {
         "Id": "nexus-458",
@@ -1017,7 +1056,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/458/458-1784329836-1949988328.png"
         ],
-        "downloadsSinceLatestVersion": 63
+        "downloadsSinceLatestVersion": 64
     },
     {
         "Id": "nexus-456",
@@ -1123,7 +1162,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/454/454-1784171754-195789212.png"
         ],
-        "downloadsSinceLatestVersion": 212
+        "downloadsSinceLatestVersion": 213
     },
     {
         "Id": "nexus-453",
@@ -1317,7 +1356,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/447/447-1784132516-1476663441.png"
         ],
-        "downloadsSinceLatestVersion": 108
+        "downloadsSinceLatestVersion": 109
     },
     {
         "Id": "nexus-441",
@@ -1379,7 +1418,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/440/440-1783874091-1140507938.png"
         ],
-        "downloadsSinceLatestVersion": 95
+        "downloadsSinceLatestVersion": 96
     },
     {
         "Id": "nexus-439",
@@ -1667,35 +1706,35 @@
         "Id": "nexus-429",
         "Name": "CasualtiesUnknown-Tarkov-Style Weapon Mod",
         "Version": "1.1.0.0",
-        "bepinexVersion": "1.1.2.0",
+        "bepinexVersion": "1.2.0.0",
         "Description": "\n<br />Casualties: Unknown - Tarkov-Style Weapon Mod\n<br />Version: 1.0.3.0\n<br />A BepInEx mod for Casualties: Unknown Demo that brings Escape from Tarkov-inspired weapons into the game - 13 custom firearms, 2 melee weapons, 9 ammo types, and 9 magazines with a fully integrated caliber isolation system, weighted world spawns, melee weapon drops, and KrokMP multiplayer compatibility.\n<br />&gt; **Requires:** CUTarkovMedicalMod and CUCoreLib must be installed first. This mod has a hard dependency on both.\n<br />---\n<br />REQUIREMENTS\n<br />- Game: Casualties: Unknown Demo (Steam)\n<br />- Mod Loader: BepInEx 5.x\n<br />- Required Mods: CUCoreLib + CUTarkovMedicalMod (install in this order)\n<br />Installing BepInEx:\n<br />1. Download BepInEx 5.x stable (x64) from https://github.com/BepInEx/BepInEx/releases\n<br />2. Extract into your game root folder (Steam/steamapps/common/Casualties Unknown Demo/)\n<br />3. Launch the game once to generate the BepInEx/ folder, then close it\n<br />---\n<br />INSTALLATION\n<br />1. Install CUCoreLib first\n<br />2. Install CUTarkovMedicalMod\n<br />3. Download CUTarkovWeaponMod_v1.0.3.0.zip\n<br />4. Extract the contents into your game root folder\n<br />  - After extraction:\n<br />    [Game Root]/BepInEx/plugins/CUTarkovWeaponMod/\n<br />      - CUTarkovWeaponMod.dll\n<br />      - Framework/Assets/  (weapon icons + gun sound effects)\n<br />      - Lang/              (EN.json, zh_CN.json)\n<br />5. Launch the game\n<br />Verify: check BepInEx/LogOutput.log for \"Casualties: Unknown - Tarkov-Style Weapon Mod loaded.\"\n<br />---\n<br />WHAT'S NEW IN v1.0.3\n<br />- CUCoreLib hard dependency: migrated from soft dependency to hard dependency, removed Legacy mode and factory pattern\n<br />- KrokMP multiplayer compatibility:\n<br />  - World generation (supply crates/corpses/airdrops) only runs on host, clients receive items via KrokMP sync\n<br />  - Ammo/magazine unloading changed to world drop (FreshItemDrop) in multiplayer to prevent items going to host inventory\n<br />  - Synced weapons/mags/ammo display correct custom sprites (template pre-creation calls ConfigureCustomItem)\n<br />  - Inventory thumbnails show correct magazine/no-magazine state\n<br />- Console autocomplete fix: Command.argAutofill type corrected to Dictionary&lt;int, List&lt;string&gt;&gt;\n<br />- Melee weapon qualities:\n<br />  - Red Rebel ice axe: cutting 12 / hammering 18 / backflip / cangetwet / tool\n<br />  - M-2 tactical sword: cutting 30 / hammering 12 / backflip / cangetwet / tool\n<br />  - Hover description fix: no longer overwrites native detail page\n<br />- Magazine adjustments: all magazine values set to 2; UMP45 magazine icon resolution fixed (48x120 -&gt; 13x32)\n<br />---\n<br />FEATURES\n<br />- 13 custom firearms: bolt-action snipers, semi-auto carbines, full-auto rifles, pump/semi-auto shotguns, pistols, SMG, PDW, LMG\n<br />- 2 melee weapons: Red Rebel ice axe (climbing + cutting + hammering) and M-2 tactical sword (cutting + hammering), with backflip tag for vertical back display\n<br />- 9 custom ammo types with dedicated calibers\n<br />- 9 custom magazines with correct capacity and crafting recipes\n<br />- Caliber isolation system: three-layer Harmony patches prevent cross-caliber loading\n<br />- Weighted world spawns: 35% pistol / 20% SKS+shotgun / 17% SMG / 13% rifle / 10% sniper / 5% LMG\n<br />- Melee weapon drops: 13% chance in supply crates (40% ice axe / 60% M-2 sword)\n<br />- Container drops: supply crates (6.6% gun + 10% mag), corpses (3% gun + 3% mag), airdrops (3% gun)\n<br />- Gun sound effects: unique fire/bolt/close/mag-in/mag-out sounds per weapon\n<br />- Preloaded melee swing sounds for instant playback without I/O lag\n<br />- Crafting system: magazines and ammo craftable via recipes\n<br />- Vanilla weapon replacement: original weapons/ammo/magazines blocked\n<br />- AXMC scope zoom: extended field of view when equipped\n<br />- UMP45 built-in suppressor: noise 0.2, muzzle flash disabled\n<br />- Console spawn support for all custom items\n<br />- Auto-update checker with download, progress bar, and one-click update\n<br />- Bilingual: English and Simplified Chinese\n<br />- KrokMP multiplayer compatible: host-only world generation, world drop for unloaded items, proper sprite sync\n<br />---\n<br />13 FIREARMS\n<br />1. AXMC (axmc) - Bolt-action sniper | .338 LM | 10-round mag | 310 bio dmg | Scope zoom\n<br />2. DVL-10 (dvl10) - Bolt-action sniper | 7.62x51 | 10-round mag | 205 bio dmg\n<br />3. SKS (sks) - Semi-auto carbine | 7.62x39 | 10-round internal | 150 bio dmg\n<br />4. AKM (akm) - Full-auto rifle | 7.62x39 | 30-round mag | 120 bio dmg\n<br />5. Desert Eagle (deagle) - Semi-auto pistol | .50 AE | 7-round mag | 110 bio dmg\n<br />6. M4A1 (m4a1) - Full-auto rifle | 5.56x45 | 30-round mag | 90 bio dmg\n<br />7. RPD (rpd) - Full-auto LMG | 7.62x39 | 100-round belt | 87 bio dmg\n<br />8. Glock 17 (glock17) - Semi-auto pistol | 9x19 | 17-round mag | 50 bio dmg\n<br />9. P90 (p90) - Full-auto PDW | 5.7x28 | 50-round mag | 45 bio dmg\n<br />10. UMP45 (ump45) - Full-auto SMG | .45 ACP | 25-round mag | 44 bio dmg | Built-in suppressor\n<br />11. MP-153 (mp153) - Semi-auto shotgun | 12 gauge | 8-round internal | 41 bio dmg | 8 pellets\n<br />12. MP-133 (mp133) - Pump shotgun | 12 gauge | 4-round internal | 40 bio dmg | 8 pellets\n<br />13. HK USP (usp) - Semi-auto pistol | .45 ACP | 12-round mag | 40 bio dmg\n<br />---\n<br />2 MELEE WEAPONS\n<br />1. Red Rebel Ice Axe (redrebel) - 37 bio dmg / 35 block dmg | Range 4 | Knockback 270 | INT 5 | Cutting 12 | Hammering 18 | Special: wall-climb when held in main hand, backflip\n<br />2. M-2 Tactical Sword (m2sword) - 87 bio dmg / 31 block dmg | Range 7 | Knockback 320 | INT 5 | Cutting 30 | Hammering 12 | backflip\n<br />---\n<br />9 AMMO TYPES\n<br />1. .338 LM UCW (338ucw) - For AXMC\n<br />2. 7.62x51 BPZ (76251bpz) - For DVL-10\n<br />3. 7.62x39 SP (76239sp) - For SKS / AKM / RPD\n<br />4. 12/70 8.5mm (12g85) - For MP-133 / MP-153\n<br />5. .50 AE Copper (50copper) - For Desert Eagle\n<br />6. .45 ACP FMJ (45fmj) - For UMP45 / USP\n<br />7. 9x19 PSO (919pso) - For Glock 17\n<br />8. 5.56x45 FMJ (55645fmj) - For M4A1\n<br />9. 5.7x28 SB193 (5728sb193) - For P90\n<br />---\n<br />9 MAGAZINES\n<br />1. AXMC Magazine (axmc_mag) - 10 rounds | Value 2\n<br />2. DVL-10 Magazine (dvl10_mag) - 10 rounds | Value 2\n<br />3. AKM Magazine (akm_mag) - 30 rounds | Value 2\n<br />4. Desert Eagle Magazine (deagle_mag) - 7 rounds | Value 2\n<br />5. Glock 17 Magazine (glock17_mag) - 17 rounds | Value 2\n<br />6. M4A1 Magazine (m4a1_mag) - 30 rounds | Value 2\n<br />7. P90 Magazine (p90_mag) - 50 rounds | Value 2\n<br />8. UMP45 Magazine (ump45_mag) - 25 rounds | Value 2\n<br />9. USP Magazine (usp_mag) - 12 rounds | Value 2\n<br />---\n<br />CALIBER ISOLATION SYSTEM\n<br />Three-layer Harmony patches ensure each firearm only accepts its designated ammo caliber:\n<br />- GunScript.LoadMag - magazine-to-gun caliber check\n<br />- AmmoScript.LoadRound - ammo-to-magazine caliber check\n<br />- AmmoScript.UnloadRound - prevents incorrect ammo unloading\n<br />Shared calibers:\n<br />- 7.62x39: SKS / AKM / RPD\n<br />- 12 gauge: MP-133 / MP-153\n<br />- .45 ACP: UMP45 / USP\n<br />---\n<br />CONSOLE SPAWN\n<br />All items spawnable via: spawn [itemkey]\n<br />Examples: spawn axmc, spawn akm, spawn 338ucw, spawn akm_mag, spawn redrebel, spawn m2sword, spawn usp\n<br />Toggle vanilla weapons: spawn vanilla_on / spawn vanilla_off\n<br />---\n<br />AUTO-UPDATE\n<br />The mod includes a built-in update checker:\n<br />- Automatically checks for new versions on startup\n<br />- Two update options: Auto Update (download + install + restart) or Release Page\n<br />- Download progress bar with speed indicator\n<br />- Cancel download at any time\n<br />- Auto-timeout on stalled downloads\n<br />- One-click restart after update\n<br />---\n<br />COMPATIBILITY\n<br />- Requires CUCoreLib + CUTarkovMedicalMod (hard dependency)\n<br />- KrokMP: compatible (host-only world generation, world drop for unloaded items, sprite sync)\n<br />- Other BepInEx mods: should be compatible (unique GUID, independent Harmony patches)\n<br />---\n<br />UNINSTALL\n<br />Delete BepInEx/plugins/CUTarkovWeaponMod/ folder.\n<br />---\n<br />SOURCE CODE\n<br />Open source on GitHub: https://github.com/hmm1313133/CUTarkovWeaponMod\n<br />---\n<br />BUG REPORTS &amp; FEEDBACK\n<br />Report bugs and suggestions on GitHub Issues: https://github.com/hmm1313133/CUTarkovWeaponMod/issues\n<br />Please include:\n<br />1. Mod version (1.0.3.0)\n<br />2. Game version\n<br />3. BepInEx version\n<br />4. Other installed mods\n<br />5. Steps to reproduce\n<br />6. Log file (BepInEx/LogOutput.log)\n<br />7. Screenshots if applicable\n<br />Please check existing issues before posting to avoid duplicates.\n<br />---\n<br />CREDITS\n<br />- Escape from Tarkov by Battlestate Games - original weapon designs and mechanics inspiration\n<br />- Casualties: Unknown - the base game\n<br />- BepInEx - modding framework\n<br />- Harmony - runtime patching library\n<br />- CUCoreLib - custom item infrastructure\n<br />---\n<br />This mod is not affiliated with or endorsed by Battlestate Games or the developers of Casualties: Unknown. All trademarks belong to their respective owners.",
         "Author": "JZLuwu",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/429/429-1783709178-712001459.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/429"
         },
-        "DownloadUrl": "nexus://scavprototype/429/1413",
+        "DownloadUrl": "nexus://scavprototype/429/1502",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 429,
         "SourceName": "Nexus",
-        "LastUpdated": "2026-07-23T01:51:33.000Z",
-        "ReleaseDate": "2026-07-23T01:51:33.000Z",
-        "SHA256": "348ccd037ebe7eca52cad47f01c98df50b75360210d2a8ae3759978772b6aa19",
+        "LastUpdated": "2026-07-29T17:57:30.000Z",
+        "ReleaseDate": "2026-07-29T17:57:30.000Z",
+        "SHA256": "b6a5a07ae951cbc62d64a2900ddb3c953573b97f768af0235675dcf31480fc90",
         "dllSHA256s": {
-            "CUTarkovWeaponMod.dll": "692a04549643ff8189565b6892b0c54eb2553554f20f9edf474ca32b90178473"
+            "CUTarkovWeaponMod.dll": "4019849c3df02ecc3d41bf0f126507ba06cf234ade9949a58157683147e9120b"
         },
-        "downloadsSinceLatestVersion": 68,
+        "downloadsSinceLatestVersion": 0,
         "dllNames": [
             "CUTarkovWeaponMod.dll"
         ],
-        "dllVersion": "1.1.2.0",
+        "dllVersion": "1.2.0.0",
         "dllVersions": {
-            "CUTarkovWeaponMod.dll": "1.1.2.0"
+            "CUTarkovWeaponMod.dll": "1.2.0.0"
         },
         "Statistics": {
             "Endorsements": 7,
-            "UniqueDownloads": 142,
-            "TotalDownloads": 217,
+            "UniqueDownloads": 166,
+            "TotalDownloads": 247,
             "TotalViews": null
         },
         "Images": [
@@ -1733,7 +1772,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/428/428-1783711337-991613117.png"
         ],
-        "downloadsSinceLatestVersion": 1123
+        "downloadsSinceLatestVersion": 1125
     },
     {
         "Id": "nexus-427",
@@ -1894,7 +1933,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/421/421-1783625508-24908610.png"
         ],
-        "downloadsSinceLatestVersion": 345
+        "downloadsSinceLatestVersion": 347
     },
     {
         "Id": "nexus-419",
@@ -1995,7 +2034,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/417/417-1783540302-1287932209.gif"
         ],
-        "downloadsSinceLatestVersion": 227
+        "downloadsSinceLatestVersion": 228
     },
     {
         "Id": "nexus-415",
@@ -2067,7 +2106,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/413/413-1783704056-1667091104.jpg"
         ],
-        "downloadsSinceLatestVersion": 179
+        "downloadsSinceLatestVersion": 180
     },
     {
         "Id": "nexus-412",
@@ -2228,7 +2267,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/407/407-1783352890-1390968055.png"
         ],
-        "downloadsSinceLatestVersion": 275
+        "downloadsSinceLatestVersion": 279
     },
     {
         "Id": "nexus-406",
@@ -2428,7 +2467,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/400/400-1783307655-1303799286.png"
         ],
-        "downloadsSinceLatestVersion": 207
+        "downloadsSinceLatestVersion": 209
     },
     {
         "Id": "nexus-395",
@@ -2490,7 +2529,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/394/394-1783082828-1585117414.png"
         ],
-        "downloadsSinceLatestVersion": 399
+        "downloadsSinceLatestVersion": 400
     },
     {
         "Id": "nexus-390",
@@ -2556,7 +2595,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/388/388-1782971746-2037319602.png"
         ],
-        "downloadsSinceLatestVersion": 85
+        "downloadsSinceLatestVersion": 86
     },
     {
         "Id": "nexus-387",
@@ -2880,7 +2919,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/376/376-1782852095-361435448.png"
         ],
-        "downloadsSinceLatestVersion": 88
+        "downloadsSinceLatestVersion": 89
     },
     {
         "Id": "nexus-375",
@@ -3067,7 +3106,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/370/370-1782695782-902283936.png"
         ],
-        "downloadsSinceLatestVersion": 554
+        "downloadsSinceLatestVersion": 555
     },
     {
         "Id": "nexus-369",
@@ -3689,7 +3728,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/342/342-1781953680-834650068.png"
         ],
-        "downloadsSinceLatestVersion": 1815
+        "downloadsSinceLatestVersion": 1816
     },
     {
         "Id": "nexus-341",
@@ -3722,7 +3761,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/341/341-1781955629-789599736.png"
         ],
-        "downloadsSinceLatestVersion": 2835
+        "downloadsSinceLatestVersion": 2847
     },
     {
         "Id": "nexus-340",
@@ -4041,7 +4080,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/331/331-1781804704-899005156.png"
         ],
-        "downloadsSinceLatestVersion": 1858
+        "downloadsSinceLatestVersion": 1860
     },
     {
         "Id": "nexus-330",
@@ -4196,7 +4235,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 51,
+        "downloadsSinceLatestVersion": 52,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -4320,7 +4359,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/322/322-1781726188-939338563.png"
         ],
-        "downloadsSinceLatestVersion": 164
+        "downloadsSinceLatestVersion": 165
     },
     {
         "Id": "nexus-321",
@@ -4356,7 +4395,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/321/321-1784200547-1645500571.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/321/321-1781702038-14501740.png"
         ],
-        "downloadsSinceLatestVersion": 121
+        "downloadsSinceLatestVersion": 122
     },
     {
         "Id": "nexus-320",
@@ -4684,7 +4723,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/231/231-1781443812-468251665.png"
         ],
-        "downloadsSinceLatestVersion": 488
+        "downloadsSinceLatestVersion": 489
     },
     {
         "Id": "nexus-230",
@@ -4947,7 +4986,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/221/221-1781242157-1312002311.jpg"
         ],
-        "downloadsSinceLatestVersion": 362
+        "downloadsSinceLatestVersion": 363
     },
     {
         "Id": "nexus-220",
@@ -5079,7 +5118,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/217/217-1781195405-2127154004.png"
         ],
-        "downloadsSinceLatestVersion": 412
+        "downloadsSinceLatestVersion": 413
     },
     {
         "Id": "nexus-216",
@@ -5184,7 +5223,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/214/214-1781123241-1496234025.png"
         ],
-        "downloadsSinceLatestVersion": 496
+        "downloadsSinceLatestVersion": 497
     },
     {
         "Id": "nexus-212",
@@ -5678,7 +5717,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/194/194-1780896592-646519212.png"
         ],
-        "downloadsSinceLatestVersion": 605
+        "downloadsSinceLatestVersion": 606
     },
     {
         "Id": "nexus-193",
@@ -5707,7 +5746,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/193/193-1780896368-154290010.jpg"
         ],
-        "downloadsSinceLatestVersion": 1149
+        "downloadsSinceLatestVersion": 1150
     },
     {
         "Id": "nexus-192",
@@ -6068,7 +6107,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/178/178-1780648400-583645774.png"
         ],
-        "downloadsSinceLatestVersion": 908
+        "downloadsSinceLatestVersion": 909
     },
     {
         "Id": "nexus-177",
@@ -6101,7 +6140,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/177/177-1780641085-1724719855.png"
         ],
-        "downloadsSinceLatestVersion": 436
+        "downloadsSinceLatestVersion": 437
     },
     {
         "Id": "nexus-175",
@@ -6196,7 +6235,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/144/144-1780565762-615146688.png"
         ],
-        "downloadsSinceLatestVersion": 1785
+        "downloadsSinceLatestVersion": 1786
     },
     {
         "Id": "nexus-142",
@@ -6229,7 +6268,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/142/142-1780600683-1432498920.png"
         ],
-        "downloadsSinceLatestVersion": 72
+        "downloadsSinceLatestVersion": 73
     },
     {
         "Id": "nexus-141",
@@ -6285,7 +6324,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 163,
+        "downloadsSinceLatestVersion": 165,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -6334,7 +6373,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/139/139-1780396981-504852775.png"
         ],
-        "downloadsSinceLatestVersion": 1382
+        "downloadsSinceLatestVersion": 1383
     },
     {
         "Id": "nexus-136",
@@ -6561,7 +6600,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/130/130-1780136517-211162896.jpg"
         ],
-        "downloadsSinceLatestVersion": 461
+        "downloadsSinceLatestVersion": 462
     },
     {
         "Id": "nexus-129",
@@ -6619,7 +6658,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/127/127-1780053823-1433053049.png"
         ],
-        "downloadsSinceLatestVersion": 239
+        "downloadsSinceLatestVersion": 240
     },
     {
         "Id": "nexus-126",
@@ -6685,7 +6724,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/125/125-1780128521-2067417973.png"
         ],
-        "downloadsSinceLatestVersion": 910
+        "downloadsSinceLatestVersion": 911
     },
     {
         "Id": "nexus-124",
@@ -6784,7 +6823,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/122/122-1779962803-1133798693.png"
         ],
-        "downloadsSinceLatestVersion": 662
+        "downloadsSinceLatestVersion": 663
     },
     {
         "Id": "nexus-121",
@@ -6884,7 +6923,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/118/118-1779906438-1704485820.jpg"
         ],
-        "downloadsSinceLatestVersion": 3197
+        "downloadsSinceLatestVersion": 3199
     },
     {
         "Id": "nexus-117",
@@ -6983,7 +7022,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/114/114-1779876895-1343923425.png"
         ],
-        "downloadsSinceLatestVersion": 193
+        "downloadsSinceLatestVersion": 194
     },
     {
         "Id": "nexus-113",
@@ -7878,7 +7917,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/75/75-1779280428-390255713.png"
         ],
-        "downloadsSinceLatestVersion": 3634
+        "downloadsSinceLatestVersion": 3635
     },
     {
         "Id": "nexus-74",
@@ -7911,7 +7950,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/74/74-1779219898-1150268199.png"
         ],
-        "downloadsSinceLatestVersion": 9374
+        "downloadsSinceLatestVersion": 9383
     },
     {
         "Id": "nexus-73",
@@ -7944,7 +7983,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/73/73-1779214039-1207692528.png"
         ],
-        "downloadsSinceLatestVersion": 2347
+        "downloadsSinceLatestVersion": 2349
     },
     {
         "Id": "nexus-72",
@@ -8083,7 +8122,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/69/69-1779806023-1700655876.png"
         ],
-        "downloadsSinceLatestVersion": 1333
+        "downloadsSinceLatestVersion": 1339
     },
     {
         "Id": "nexus-68",
@@ -8157,7 +8196,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 36647
+        "downloadsSinceLatestVersion": 36674
     },
     {
         "Id": "nexus-66",
@@ -8223,7 +8262,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/65/65-1778857359-1815570581.png"
         ],
-        "downloadsSinceLatestVersion": 304
+        "downloadsSinceLatestVersion": 306
     },
     {
         "Id": "nexus-64",
@@ -8348,7 +8387,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/59/59-1778919861-607954699.png"
         ],
-        "downloadsSinceLatestVersion": 866
+        "downloadsSinceLatestVersion": 867
     },
     {
         "Id": "nexus-57",
@@ -8447,7 +8486,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/53/53-1778319171-1022189141.png"
         ],
-        "downloadsSinceLatestVersion": 1968
+        "downloadsSinceLatestVersion": 1969
     },
     {
         "Id": "nexus-52",
@@ -8739,7 +8778,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/42/42-1777878290-2130569810.png"
         ],
-        "downloadsSinceLatestVersion": 940
+        "downloadsSinceLatestVersion": 941
     },
     {
         "Id": "nexus-41",
@@ -9041,7 +9080,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/32/32-1777285860-206331044.png"
         ],
-        "downloadsSinceLatestVersion": 3184
+        "downloadsSinceLatestVersion": 3187
     },
     {
         "Id": "nexus-31",
@@ -9099,7 +9138,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/31/31-1777215394-1750634006.png"
         ],
-        "downloadsSinceLatestVersion": 3190
+        "downloadsSinceLatestVersion": 3191
     },
     {
         "Id": "nexus-30",
@@ -9132,7 +9171,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/30/30-1777206636-1608729297.png"
         ],
-        "downloadsSinceLatestVersion": 1286
+        "downloadsSinceLatestVersion": 1288
     },
     {
         "Id": "nexus-29",
@@ -9649,7 +9688,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/15/15-1778431291-964052521.png"
         ],
-        "downloadsSinceLatestVersion": 3755
+        "downloadsSinceLatestVersion": 3758
     },
     {
         "Id": "nexus-14",
@@ -9810,7 +9849,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/9/9-1771572802-484129458.png"
         ],
-        "downloadsSinceLatestVersion": 1358
+        "downloadsSinceLatestVersion": 1360
     },
     {
         "Id": "nexus-8",
@@ -9875,7 +9914,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/7/7-1771267944-357525261.png"
         ],
-        "downloadsSinceLatestVersion": 4683
+        "downloadsSinceLatestVersion": 4692
     },
     {
         "Id": "nexus-6",

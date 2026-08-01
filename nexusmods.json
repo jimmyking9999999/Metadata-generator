@@ -59,7 +59,7 @@
         "dllSHA256s": {
             "CUCoreLib.KrokMP.SaveHotfix.dll": "dfa437f4496255e3053c7ea16345690b58716fc514847e9cb63f14ff1ad830de"
         },
-        "downloadsSinceLatestVersion": 31,
+        "downloadsSinceLatestVersion": 33,
         "dllNames": [
             "CUCoreLib.KrokMP.SaveHotfix.dll"
         ],
@@ -269,36 +269,39 @@
     {
         "Id": "nexus-505",
         "Name": "Cave Diver",
-        "Version": "1.0",
-        "bepinexVersion": "0.0.2",
-        "Description": "[b][size=5]Description[/size][/b]\n<br />Cave Diver adds new aquatic items and gameplay mechanics to Casualties: Unknown (AKA Scav Prototype). As of version 1.0 the mod is still WIP and has a few minor bugs. It has NOT been tested with multiplayer, so I have no idea if it works.\n<br />\n<br />[b][size=5]Installation instructions[/size][/b]\n<br />Unpack the contents of the mod into Game/BepInEx/plugins\n<br />\n<br />Your plugins folder should look like this:\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785338932-505471934.png[/img]\n<br />\n<br />[size=5][b]Main features[/b][/size]\n<br />[color=#d4d4d8]Cave Diver adds new items that split the functionality of the vanilla game's Advanced Scuba Gear, adding new items with multiple tiers. It also add a special \"Force Flooded Modifier\" setting, which will force every layer to generate with a flooded modifier. The strength of the flooded modifier can be adjusted (up to 10x), and can even be set to increase with each subsequent layer. This setting can be disabled if you just want the new items and mechanics.[/color]\n<br />\n<br />[b][size=4]ITEMS:[/size][/b]\n<br />[b]\n<br />[img width=97]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785339271-1241301393.png[/img] [/b]\n<br />[b][size=4]Swim Goggles[/size][/b]\n<br />The Swim goggles are a new wearable item that allows for clear vision underwater. Be careful though! They will start to leak when below 50% integrity, and you'll have to take them off to drain the water from them. They can also be knocked off your face if you take a strong blow too the head.\n<br />\n<br />\n<br />[img width=97]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785339473-559925466.png[/img] \n<br />[b][size=4]Diving Mask[/size][/b]\n<br />The Diving Mask functions similarly to the Swim Goggles, allowing for clear vision while underwater. They have a higher durability than the Swim Goggles, and have a special feature. Because the Diving Mask covers your nose, water can be cleared from them with a strong exhale through the nose. This can be done while submerged, allowing you to restore clear vision ever while underwater. Just like the Swim Goggles, the Diving Mask will start to leak below 50% integrity, and can also be knocked off your face.\n<br />\n<br />\n<br />[img width=95]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785339818-621864159.png[/img]\n<br />[b][size=4]Wetsuit[/size][/b]\n<br />The Wetsuit is a bodysuit designed specifically to increase heat retention while in the water. It does this by trapping a layer of water between itself and the wearer, which is then heated by the wearer's body heat, keeping them warm. This means that then Wetsuit provides little insulation while dry, but provides significant insulation when wet. The Wetsuit is essential to preventing hypothermia while diving.\n<br />\n<br />\n<br />[img width=89]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785340019-414031892.png[/img]\n<br />[b][size=4]Life Vest[/size][/b]\n<br />The Life Vest is a type 2 Personal Flotation Device. When worn it drastically increased the wearer's buoyancy, causing them to float to the water's surface. The Life Vest will even keep the wearer's head above the water while they are unconscious. It can save your life if you unexpectedly tumble into the water, or is you are too exhausted to swim.\n<br />\n<br />\n<br />\n<br />[img width=82]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785340215-1327148363.png[/img]\n<br />[b][size=4]Weighted Harness[/size][/b]\n<br />The Weighted Harness functions opposite of the Life Vest, drastically decreasing buoyancy when worn, making swimming virtually impossible. While dangerous it does have it's uses, as it will make the wearer sink in dense liquids like Lumalgae. The Weighted Harness is essential for navigating layers with high amounts of Lumalgae.\n<br />\n<br />\n<br />\n<br />[img width=80]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785340495-1813605471.png[/img]\n<br />[b][size=4]Buoyance Control Device[/size][/b]\n<br />The Buoyancy Control Device (AKA BCD) does what the name suggests. When worn it manages the user's buoyancy for them automatically, keeping it as close to neutral as possible. It also allows the wearer to freely float or sink at will, allowing for fully freeform underwater movement with no stamina cost. Take note that due to input mapping, you cannot drink any fluids you are standing in while wearing it.\n<br />\n<br />\n<br />\n<br />[img width=48]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785340768-795254350.png[/img]\n<br />[b][size=4]Air Tank[/size][/b]\n<br />The lifeline of every diver. The Air Tank holds pressurized air that can be breathed through the attached mouthpiece, called a Regulator. The Air Tank holds enough air for 30 minutes when submerged, and only decays when the user is breathing from it directly. Make sure that you have the Regulator in your mouth before you dive, or you won't be able to breathe! You can't use the Regulator if you're disfigured, and can't hold anything in your mouth while the Regulator is there. Additionally, a strong blow to the head will knock the Regulator out of your mouth so be careful! When crafted, the Air Tank will be empty, but can be refilled using the pumps sometimes found  in Lifepods, though this will break the pump since they were designed to pump liquid, not air.\n<br />\n<br />\n<br />\n<br />[b]\n<br />[img width=89]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785341196-1993171521.png[/img][/b]\n<br />[b][size=4]Rebreather[/size][/b]\n<br />The Rebreather is another respiration device. It works by taking the air you exhale and re-oxygenizes it, allowing it to be breathed again. It runs on a large battery and supplies air for a whopping 80 minutes on a single charge. It also has a Regulator, just like the Air Tank, and all of it's specific interactions also apply here. It can be knocked out of your mouth by a strong blow to the head, and has to be in your mouth in order for you to breathe.\n<br />\n<br />\n<br />\n<br />[img width=83]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785341609-107077360.png[/img]\n<br />[b][size=4]Makeshift Fins[/size][/b]\n<br />The Makeshift fins provide faster lateral movement while in the water. They have decent durability and are reletively easy to craft.\n<br />\n<br />\n<br />\n<br />[img width=102]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785341705-185630707.png[/img]\n<br />[b][size=4]Fins[/size][/b]\n<br />The Fins are much more effective than the Makeshift Fins, and have higher durability. They also prevent you from getting washed away by water currents.\n<br />\n<br />\n<br />[b][size=5]ASPIRATION:[/size][/b]\n<br />[img width=110]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785341865-1040089944.png[/img]\n<br />Aspiration is a new status that makes drowning more dangerous and distinct from suffocation. Aspiration is when fluid is accidentally inhaled into the lungs, usually triggered by a gasp reflex. \n<br />\n<br />When Spo2 reaches below 45%, and the player has been holding their breath for at least 5 seconds, their gasp reflex will trigger, causing them to inhale. They'll swallow the liquid in an attempt to prevent it from entering the lungs but to no avail. Aspiration is very painful and causes rapid damage to the thorax while the lungs are filled with liquid. Luckily the player will automatically cough up the liquid once they are exposed back to air, but only if they are conscious and their thorax isn't too damaged.\n<br />\n<br />\n<br />[b][size=5]Requirements[/size][/b]\n<br />BepinEx 5.4 and CUCoreLIb https://www.nexusmods.com/scavprototype/mods/341?tab=files\n<br />\n<br />[size=5][b]Shout outs[/b][/size]\n<br />MASSIVE thanks to JimmyKing, who lead me be the hand through the entire development process. This mod would not have been possible if not for their constant help and work on CUCoreLib.\n<br />\n<br />Also thanks to Corells for playtesting and feedback.",
+        "Version": "1.01",
+        "bepinexVersion": "1.0.4",
+        "Description": "[b][size=5]Description[/size][/b]\n<br />Cave Diver adds new aquatic items and gameplay mechanics to Casualties: Unknown (AKA Scav Prototype). As of version 1.01 the mod is still WIP and has a few minor bugs. It has NOT been tested with multiplayer, so I have no idea if it works.\n<br />\n<br />*** NOTE ***\n<br />As of version 1.01 the Advanced Scuba Gear still spawns naturally and appears in the crafting menu. IT HAS NO FUNCTIONALITY because this mod's items are meant to replace it. I am doing what I can to try and fix this so the item no longer spawns or appears in the crafting menu. Please be patient.\n<br />\n<br />[b][size=5]Installation instructions[/size][/b]\n<br />Unpack the contents of the mod into Game/BepInEx/plugins\n<br />\n<br />Your plugins folder should look like this:\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785338932-505471934.png[/img]\n<br />\n<br />[size=5][b]Main features[/b][/size]\n<br />[color=#d4d4d8]Cave Diver adds new items that split the functionality of the vanilla game's Advanced Scuba Gear, adding new items with multiple tiers. It also add a special \"Force Flooded Modifier\" setting, which will force every layer to generate with a flooded modifier. The strength of the flooded modifier can be adjusted (up to 10x), and can even be set to increase with each subsequent layer. This setting can be disabled if you just want the new items and mechanics. [b]THESE NEW SETTINGS ARE IN GAME SETTINGS NOT RUN SETTINGS!!![/b][/color]\n<br />\n<br />[b][size=4]ITEMS:[/size][/b]\n<br />[b]\n<br />[img width=97]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785339271-1241301393.png[/img] [/b]\n<br />[b][size=4]Swim Goggles[/size][/b]\n<br />The Swim goggles are a new wearable item that allows for clear vision underwater. Be careful though! They will start to leak when below 50% integrity, and you'll have to take them off to drain the water from them. They can also be knocked off your face if you take a strong blow too the head.\n<br />\n<br />\n<br />[img width=97]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785339473-559925466.png[/img] \n<br />[b][size=4]Diving Mask[/size][/b]\n<br />The Diving Mask functions similarly to the Swim Goggles, allowing for clear vision while underwater. They have a higher durability than the Swim Goggles, and have a special feature. Because the Diving Mask covers your nose, water can be cleared from them with a strong exhale through the nose. This can be done while submerged, allowing you to restore clear vision ever while underwater. Just like the Swim Goggles, the Diving Mask will start to leak below 50% integrity, and can also be knocked off your face.\n<br />\n<br />\n<br />[img width=95]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785339818-621864159.png[/img]\n<br />[b][size=4]Wetsuit[/size][/b]\n<br />The Wetsuit is a bodysuit designed specifically to increase heat retention while in the water. It does this by trapping a layer of water between itself and the wearer, which is then heated by the wearer's body heat, keeping them warm. This means that then Wetsuit provides little insulation while dry, but provides significant insulation when wet. The Wetsuit is essential to preventing hypothermia while diving.\n<br />\n<br />\n<br />[img width=89]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785340019-414031892.png[/img]\n<br />[b][size=4]Life Vest[/size][/b]\n<br />The Life Vest is a type 2 Personal Flotation Device. When worn it drastically increased the wearer's buoyancy, causing them to float to the water's surface. The Life Vest will even keep the wearer's head above the water while they are unconscious. It can save your life if you unexpectedly tumble into the water, or is you are too exhausted to swim.\n<br />\n<br />\n<br />\n<br />[img width=82]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785340215-1327148363.png[/img]\n<br />[b][size=4]Weighted Harness[/size][/b]\n<br />The Weighted Harness functions opposite of the Life Vest, drastically decreasing buoyancy when worn, making swimming virtually impossible. While dangerous it does have it's uses, as it will make the wearer sink in dense liquids like Lumalgae. The Weighted Harness is essential for navigating layers with high amounts of Lumalgae.\n<br />\n<br />\n<br />\n<br />[img width=80]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785340495-1813605471.png[/img]\n<br />[b][size=4]Buoyance Control Device[/size][/b]\n<br />The Buoyancy Control Device (AKA BCD) does what the name suggests. When worn it manages the user's buoyancy for them automatically, keeping it as close to neutral as possible. It also allows the wearer to freely float or sink at will, allowing for fully freeform underwater movement with no stamina cost. Take note that due to input mapping, you cannot drink any fluids you are standing in while wearing it.\n<br />\n<br />\n<br />\n<br />[img width=48]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785340768-795254350.png[/img]\n<br />[b][size=4]Air Tank[/size][/b]\n<br />The lifeline of every diver. The Air Tank holds pressurized air that can be breathed through the attached mouthpiece, called a Regulator. The Air Tank holds enough air for 30 minutes when submerged, and only decays when the user is breathing from it directly. Make sure that you have the Regulator in your mouth before you dive, or you won't be able to breathe! You can't use the Regulator if you're disfigured, and can't hold anything in your mouth while the Regulator is there. Additionally, a strong blow to the head will knock the Regulator out of your mouth so be careful! When crafted, the Air Tank will be empty, but can be refilled using the pumps sometimes found  in Lifepods, though this will break the pump since they were designed to pump liquid, not air.\n<br />\n<br />\n<br />\n<br />[b]\n<br />[img width=89]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785341196-1993171521.png[/img][/b]\n<br />[b][size=4]Rebreather[/size][/b]\n<br />The Rebreather is another respiration device. It works by taking the air you exhale and re-oxygenizes it, allowing it to be breathed again. It runs on a large battery and supplies air for a whopping 80 minutes on a single charge. It also has a Regulator, just like the Air Tank, and all of it's specific interactions also apply here. It can be knocked out of your mouth by a strong blow to the head, and has to be in your mouth in order for you to breathe.\n<br />\n<br />\n<br />\n<br />[img width=83]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785341609-107077360.png[/img]\n<br />[b][size=4]Makeshift Fins[/size][/b]\n<br />The Makeshift fins provide faster lateral movement while in the water. They have decent durability and are reletively easy to craft.\n<br />\n<br />\n<br />\n<br />[img width=102]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785341705-185630707.png[/img]\n<br />[b][size=4]Fins[/size][/b]\n<br />The Fins are much more effective than the Makeshift Fins, and have higher durability. They also prevent you from getting washed away by water currents.\n<br />\n<br />\n<br />[b][size=5]ASPIRATION:[/size][/b]\n<br />[img width=110]https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785341865-1040089944.png[/img]\n<br />Aspiration is a new status that makes drowning more dangerous and distinct from suffocation. Aspiration is when fluid is accidentally inhaled into the lungs, usually triggered by a gasp reflex. \n<br />\n<br />When Spo2 reaches below 45%, and the player has been holding their breath for at least 5 seconds, their gasp reflex will trigger, causing them to inhale. They'll swallow the liquid in an attempt to prevent it from entering the lungs but to no avail. Aspiration is very painful and causes rapid damage to the thorax while the lungs are filled with liquid. Luckily the player will automatically cough up the liquid once they are exposed back to air, but only if they are conscious and their thorax isn't too damaged.\n<br />\n<br />\n<br />[b][size=5]Requirements[/size][/b]\n<br />BepinEx 5.4 and CUCoreLIb https://www.nexusmods.com/scavprototype/mods/341?tab=files\n<br />\n<br />[size=5][b]Shout outs[/b][/size]\n<br />MASSIVE thanks to JimmyKing, who lead me be the hand through the entire development process. This mod would not have been possible if not for their constant help and work on CUCoreLib.\n<br />\n<br />Also thanks to Corells for playtesting and feedback.",
         "Author": "O2xymoron",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/505/505-1785343136-239597951.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/505"
         },
-        "DownloadUrl": "nexus://scavprototype/505/1500",
+        "DownloadUrl": "nexus://scavprototype/505/1548",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 505,
         "SourceName": "Nexus",
-        "LastUpdated": "2026-07-29T16:50:24.000Z",
-        "ReleaseDate": "2026-07-29T16:41:55.000Z",
-        "SHA256": "593bbd24c570cae4d0bfcd732dfde34773db25b471f37568cdedc6f0dbe8d50c",
+        "LastUpdated": "2026-08-01T17:06:38.000Z",
+        "ReleaseDate": "2026-08-01T17:05:11.000Z",
+        "SHA256": "6fc3e019e0ecfdb7e56c1f2f7506db33d115894133a3eda574cf3c5cf93e7c74",
         "dllSHA256s": {
-            "CaveDiver.dll": "a5aab2b2014f3aa2a6f368e96d87ad89e13b27e659b4fa8b3195ddb4a2ff7ddf"
+            "CUCoreLib.dll": "ebc96311ec65f9053e557cd1837c0ee8823a85e05f4d2900d3132fa1f451e052",
+            "CaveDiver.dll": "72713c7d572cb6b98afcd34ed885c13a6e3c3fa94b04ad5ddac79c3129a08f7c"
         },
-        "downloadsSinceLatestVersion": 102,
+        "downloadsSinceLatestVersion": 0,
         "dllNames": [
-            "CaveDiver.dll"
+            "CaveDiver.dll",
+            "CUCoreLib.dll"
         ],
-        "dllVersion": "0.0.2",
+        "dllVersion": "1.0.4",
         "dllVersions": {
+            "CUCoreLib.dll": "1.0.4",
             "CaveDiver.dll": "0.0.2"
         },
         "Statistics": {
-            "Endorsements": 0,
-            "UniqueDownloads": 11,
-            "TotalDownloads": 13,
+            "Endorsements": 2,
+            "UniqueDownloads": 160,
+            "TotalDownloads": 195,
             "TotalViews": null
         },
         "Images": [
@@ -366,7 +369,7 @@
             "CUCoreLib.dll": "b448af7b6c9c8d7767df0bbb13e465551ef6b0f2a35dda209b5f78035ab4e659",
             "gouxismoreattachments.dll": "fb1d18db6f992714390e85de91921c4558ee6c445f083b29f51ab8621ef2d92d"
         },
-        "downloadsSinceLatestVersion": 25,
+        "downloadsSinceLatestVersion": 26,
         "dllNames": [
             "CUCoreLib.dll",
             "gouxismoreattachments.dll"
@@ -753,7 +756,7 @@
         "dllSHA256s": {
             "ColorfulInsides.dll": "137ff6d5956965e38795934e2c1acdc099732a46b9ae27802df3caf9a4b22c90"
         },
-        "downloadsSinceLatestVersion": 20,
+        "downloadsSinceLatestVersion": 21,
         "dllNames": [
             "ColorfulInsides.dll"
         ],
@@ -831,7 +834,7 @@
         "dllSHA256s": {
             "TemporaryBottleCountdown.dll": "7fb2ee7d4e2828153e6db4621b93c02b580797e68f34866cacedddf0760fd910"
         },
-        "downloadsSinceLatestVersion": 29,
+        "downloadsSinceLatestVersion": 30,
         "dllNames": [
             "TemporaryBottleCountdown.dll"
         ],
@@ -949,7 +952,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/482/482-1784791063-1718920778.png"
         ],
-        "downloadsSinceLatestVersion": 206
+        "downloadsSinceLatestVersion": 207
     },
     {
         "Id": "nexus-481",
@@ -1005,7 +1008,7 @@
         "dllSHA256s": {
             "CUMoreNpcMod.dll": "a124ae9e67866b04b413aef62a657d69c0f9099f56f1cb66cd466a7158b30a6d"
         },
-        "downloadsSinceLatestVersion": 84,
+        "downloadsSinceLatestVersion": 85,
         "dllNames": [
             "CUMoreNpcMod.dll"
         ],
@@ -1186,7 +1189,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/464/464-1784540188-272177035.png"
         ],
-        "downloadsSinceLatestVersion": 235
+        "downloadsSinceLatestVersion": 236
     },
     {
         "Id": "nexus-463",
@@ -1597,7 +1600,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/449/449-1784048812-953204871.png"
         ],
-        "downloadsSinceLatestVersion": 268
+        "downloadsSinceLatestVersion": 269
     },
     {
         "Id": "nexus-448",
@@ -1630,7 +1633,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/448/448-1784118156-867558037.png"
         ],
-        "downloadsSinceLatestVersion": 104
+        "downloadsSinceLatestVersion": 105
     },
     {
         "Id": "nexus-447",
@@ -1787,7 +1790,7 @@
         "dllSHA256s": {
             "Upgradable Storage Packs.dll": "3550de663fa70a75322bde43454d349dc5dbe976e06a644e2b54f022b5ab3b0e"
         },
-        "downloadsSinceLatestVersion": 166,
+        "downloadsSinceLatestVersion": 167,
         "dllNames": [
             "Upgradable Storage Packs.dll"
         ],
@@ -1869,7 +1872,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/436/436-1784739092-804073088.png"
         ],
-        "downloadsSinceLatestVersion": 49
+        "downloadsSinceLatestVersion": 50
     },
     {
         "Id": "nexus-435",
@@ -1968,7 +1971,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/432/432-1783734773-139727180.png"
         ],
-        "downloadsSinceLatestVersion": 464
+        "downloadsSinceLatestVersion": 465
     },
     {
         "Id": "nexus-431",
@@ -2069,7 +2072,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "9e42a415530d6e056164d7c1139c91ba1d846860bc31085685544d026275355d"
         },
-        "downloadsSinceLatestVersion": 137,
+        "downloadsSinceLatestVersion": 146,
         "dllNames": [
             "CasualtiesConsumed.dll"
         ],
@@ -2118,7 +2121,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/427/427-1783699665-706389161.png"
         ],
-        "downloadsSinceLatestVersion": 278
+        "downloadsSinceLatestVersion": 279
     },
     {
         "Id": "nexus-424",
@@ -2151,7 +2154,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/424/424-1783668913-1707322678.png"
         ],
-        "downloadsSinceLatestVersion": 163
+        "downloadsSinceLatestVersion": 164
     },
     {
         "Id": "nexus-423",
@@ -2246,7 +2249,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/421/421-1783625508-24908610.png"
         ],
-        "downloadsSinceLatestVersion": 382
+        "downloadsSinceLatestVersion": 384
     },
     {
         "Id": "nexus-419",
@@ -2279,7 +2282,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/419/419-1783661501-1097719696.png"
         ],
-        "downloadsSinceLatestVersion": 211
+        "downloadsSinceLatestVersion": 212
     },
     {
         "Id": "nexus-418",
@@ -2347,7 +2350,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/417/417-1783540302-1287932209.gif"
         ],
-        "downloadsSinceLatestVersion": 255
+        "downloadsSinceLatestVersion": 256
     },
     {
         "Id": "nexus-415",
@@ -2547,7 +2550,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/409/409-1783389381-1513677534.png"
         ],
-        "downloadsSinceLatestVersion": 316
+        "downloadsSinceLatestVersion": 317
     },
     {
         "Id": "nexus-407",
@@ -2613,7 +2616,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/406/406-1783240432-2020844491.png"
         ],
-        "downloadsSinceLatestVersion": 247
+        "downloadsSinceLatestVersion": 250
     },
     {
         "Id": "nexus-404",
@@ -2681,7 +2684,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/403/403-1783194836-1653366416.png"
         ],
-        "downloadsSinceLatestVersion": 494
+        "downloadsSinceLatestVersion": 495
     },
     {
         "Id": "nexus-402",
@@ -2780,7 +2783,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/400/400-1783307655-1303799286.png"
         ],
-        "downloadsSinceLatestVersion": 227
+        "downloadsSinceLatestVersion": 228
     },
     {
         "Id": "nexus-395",
@@ -2908,7 +2911,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/388/388-1782971746-2037319602.png"
         ],
-        "downloadsSinceLatestVersion": 121
+        "downloadsSinceLatestVersion": 123
     },
     {
         "Id": "nexus-387",
@@ -3071,7 +3074,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/382/382-1782927980-1598388311.png"
         ],
-        "downloadsSinceLatestVersion": 555
+        "downloadsSinceLatestVersion": 556
     },
     {
         "Id": "nexus-381",
@@ -3384,7 +3387,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/371/371-1782690867-1246273600.jpg"
         ],
-        "downloadsSinceLatestVersion": 163
+        "downloadsSinceLatestVersion": 165
     },
     {
         "Id": "nexus-370",
@@ -3715,7 +3718,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/360/360-1782531052-1291317646.png"
         ],
-        "downloadsSinceLatestVersion": 230
+        "downloadsSinceLatestVersion": 231
     },
     {
         "Id": "nexus-358",
@@ -3736,7 +3739,7 @@
         "ReleaseDate": "2026-07-28T21:22:22.000Z",
         "SHA256": "c6519d8fbaf9b34a2679a3175c79aeece0a38f93b34e0ebe3141e03f5561486a",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 53,
+        "downloadsSinceLatestVersion": 54,
         "dllNames": [],
         "dllVersion": null,
         "dllVersions": {},
@@ -4041,7 +4044,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/342/342-1781953680-834650068.png"
         ],
-        "downloadsSinceLatestVersion": 1914
+        "downloadsSinceLatestVersion": 1915
     },
     {
         "Id": "nexus-341",
@@ -4074,7 +4077,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/341/341-1781955629-789599736.png"
         ],
-        "downloadsSinceLatestVersion": 3287
+        "downloadsSinceLatestVersion": 3302
     },
     {
         "Id": "nexus-340",
@@ -4166,7 +4169,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/338/338-1781889308-891665935.png"
         ],
-        "downloadsSinceLatestVersion": 1420
+        "downloadsSinceLatestVersion": 1422
     },
     {
         "Id": "nexus-337",
@@ -4327,7 +4330,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/333/333-1781826773-1119722687.png"
         ],
-        "downloadsSinceLatestVersion": 482
+        "downloadsSinceLatestVersion": 483
     },
     {
         "Id": "nexus-332",
@@ -4393,7 +4396,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/331/331-1781804704-899005156.png"
         ],
-        "downloadsSinceLatestVersion": 1928
+        "downloadsSinceLatestVersion": 1930
     },
     {
         "Id": "nexus-330",
@@ -4548,7 +4551,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 38,
+        "downloadsSinceLatestVersion": 39,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -4594,7 +4597,7 @@
             "GunsawGenetics.dll": "5c155a3985c6bdbbfa7ac1eca73695b8a3d3b3bb2c360825a29b3b329a822c54",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 144,
+        "downloadsSinceLatestVersion": 151,
         "dllNames": [
             "body_sprite_replacer.dll",
             "GunsawGenetics.dll",
@@ -5130,7 +5133,7 @@
         "dllSHA256s": {
             "VforWhiningMPAddon.dll": "89bbc172d2d6ffa8f94fb6a3319797d6078e80901654c6c33874d4a5add9be2f"
         },
-        "downloadsSinceLatestVersion": 74,
+        "downloadsSinceLatestVersion": 76,
         "dllNames": [
             "VforWhiningMPAddon.dll"
         ],
@@ -5768,7 +5771,7 @@
         "dllSHA256s": {
             "Magazine Merge.dll": "ea7e268b97c6f18d451ea3e96626b838f1d61fbb890bb76e927b2559019d9882"
         },
-        "downloadsSinceLatestVersion": 85,
+        "downloadsSinceLatestVersion": 86,
         "dllNames": [
             "Magazine Merge.dll"
         ],
@@ -5944,7 +5947,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/197/197-1780926539-1822683445.jpg"
         ],
-        "downloadsSinceLatestVersion": 1776
+        "downloadsSinceLatestVersion": 1779
     },
     {
         "Id": "nexus-196",
@@ -6039,7 +6042,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/194/194-1780896592-646519212.png"
         ],
-        "downloadsSinceLatestVersion": 663
+        "downloadsSinceLatestVersion": 664
     },
     {
         "Id": "nexus-193",
@@ -6134,7 +6137,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/191/191-1780839725-1700901288.png"
         ],
-        "downloadsSinceLatestVersion": 600
+        "downloadsSinceLatestVersion": 601
     },
     {
         "Id": "nexus-190",
@@ -6429,7 +6432,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/178/178-1780648400-583645774.png"
         ],
-        "downloadsSinceLatestVersion": 994
+        "downloadsSinceLatestVersion": 996
     },
     {
         "Id": "nexus-177",
@@ -6518,7 +6521,7 @@
         "dllSHA256s": {
             "MoreDialogues.dll": "940ace94c1b036ebd6b4230b4a3bad95386a7888b18674854e177bd1f268f390"
         },
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 17,
         "dllNames": [
             "MoreDialogues.dll"
         ],
@@ -6656,7 +6659,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 217,
+        "downloadsSinceLatestVersion": 219,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -6738,7 +6741,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/136/136-1780253545-1114046049.png"
         ],
-        "downloadsSinceLatestVersion": 57
+        "downloadsSinceLatestVersion": 58
     },
     {
         "Id": "nexus-135",
@@ -6932,7 +6935,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/130/130-1780136517-211162896.jpg"
         ],
-        "downloadsSinceLatestVersion": 516
+        "downloadsSinceLatestVersion": 517
     },
     {
         "Id": "nexus-129",
@@ -7056,7 +7059,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/125/125-1780128521-2067417973.png"
         ],
-        "downloadsSinceLatestVersion": 946
+        "downloadsSinceLatestVersion": 948
     },
     {
         "Id": "nexus-124",
@@ -7155,7 +7158,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/122/122-1779962803-1133798693.png"
         ],
-        "downloadsSinceLatestVersion": 729
+        "downloadsSinceLatestVersion": 732
     },
     {
         "Id": "nexus-121",
@@ -7288,7 +7291,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/117/117-1779944984-827042402.png"
         ],
-        "downloadsSinceLatestVersion": 662
+        "downloadsSinceLatestVersion": 663
     },
     {
         "Id": "nexus-115",
@@ -7763,7 +7766,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/93/93-1779698412-1480978348.png"
         ],
-        "downloadsSinceLatestVersion": 346
+        "downloadsSinceLatestVersion": 347
     },
     {
         "Id": "nexus-92",
@@ -8084,7 +8087,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/80/80-1779382104-1178025538.png"
         ],
-        "downloadsSinceLatestVersion": 439
+        "downloadsSinceLatestVersion": 440
     },
     {
         "Id": "nexus-79",
@@ -8183,7 +8186,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/77/77-1779295239-1295049607.png"
         ],
-        "downloadsSinceLatestVersion": 1578
+        "downloadsSinceLatestVersion": 1579
     },
     {
         "Id": "nexus-76",
@@ -8249,7 +8252,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/75/75-1779280428-390255713.png"
         ],
-        "downloadsSinceLatestVersion": 3746
+        "downloadsSinceLatestVersion": 3750
     },
     {
         "Id": "nexus-74",
@@ -8282,7 +8285,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/74/74-1779219898-1150268199.png"
         ],
-        "downloadsSinceLatestVersion": 9829
+        "downloadsSinceLatestVersion": 9836
     },
     {
         "Id": "nexus-73",
@@ -8315,7 +8318,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/73/73-1779214039-1207692528.png"
         ],
-        "downloadsSinceLatestVersion": 2425
+        "downloadsSinceLatestVersion": 2427
     },
     {
         "Id": "nexus-72",
@@ -8381,7 +8384,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/71/71-1779163807-1592403264.jpg"
         ],
-        "downloadsSinceLatestVersion": 601
+        "downloadsSinceLatestVersion": 602
     },
     {
         "Id": "nexus-70",
@@ -8404,7 +8407,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 100,
+        "downloadsSinceLatestVersion": 101,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -8454,7 +8457,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/69/69-1779806023-1700655876.png"
         ],
-        "downloadsSinceLatestVersion": 1638
+        "downloadsSinceLatestVersion": 1648
     },
     {
         "Id": "nexus-68",
@@ -8528,7 +8531,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 38239
+        "downloadsSinceLatestVersion": 38269
     },
     {
         "Id": "nexus-66",
@@ -8719,7 +8722,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/59/59-1778919861-607954699.png"
         ],
-        "downloadsSinceLatestVersion": 887
+        "downloadsSinceLatestVersion": 888
     },
     {
         "Id": "nexus-57",
@@ -8752,7 +8755,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/57/57-1778473543-867346252.gif"
         ],
-        "downloadsSinceLatestVersion": 537
+        "downloadsSinceLatestVersion": 539
     },
     {
         "Id": "nexus-55",
@@ -8818,7 +8821,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/53/53-1778319171-1022189141.png"
         ],
-        "downloadsSinceLatestVersion": 1992
+        "downloadsSinceLatestVersion": 1995
     },
     {
         "Id": "nexus-52",
@@ -9166,7 +9169,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "15f047a0ed401af24d49193439e29bbab2f1a37c64a5a6e22f1cadfa65b17ccd"
         },
-        "downloadsSinceLatestVersion": 700,
+        "downloadsSinceLatestVersion": 702,
         "dllNames": [
             "prosthetics.dll"
         ],
@@ -9206,7 +9209,7 @@
         "dllSHA256s": {
             "ReGrowthSerums.dll": "3f3bf622dde35344485b7e989c7792bec12840df1bdd3b9001ab4f51403d7c5a"
         },
-        "downloadsSinceLatestVersion": 72,
+        "downloadsSinceLatestVersion": 73,
         "dllNames": [
             "ReGrowthSerums.dll"
         ],
@@ -9385,7 +9388,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/33/33-1781962520-833987967.png"
         ],
-        "downloadsSinceLatestVersion": 519
+        "downloadsSinceLatestVersion": 521
     },
     {
         "Id": "nexus-32",
@@ -9418,7 +9421,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/32/32-1777285860-206331044.png"
         ],
-        "downloadsSinceLatestVersion": 3325
+        "downloadsSinceLatestVersion": 3331
     },
     {
         "Id": "nexus-31",
@@ -9476,7 +9479,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/31/31-1777215394-1750634006.png"
         ],
-        "downloadsSinceLatestVersion": 3244
+        "downloadsSinceLatestVersion": 3245
     },
     {
         "Id": "nexus-30",
@@ -9950,7 +9953,7 @@
         "dllSHA256s": {
             "LastStandCMD.dll": "95ecc28a3078ea619e8f54f50fb1136f23ec16226545299e68ec00756cec4ad0"
         },
-        "downloadsSinceLatestVersion": 5,
+        "downloadsSinceLatestVersion": 6,
         "dllNames": [
             "LastStandCMD.dll"
         ],
@@ -10033,7 +10036,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/15/15-1778431291-964052521.png"
         ],
-        "downloadsSinceLatestVersion": 3865
+        "downloadsSinceLatestVersion": 3866
     },
     {
         "Id": "nexus-14",
@@ -10259,7 +10262,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/7/7-1771267944-357525261.png"
         ],
-        "downloadsSinceLatestVersion": 4978
+        "downloadsSinceLatestVersion": 4983
     },
     {
         "Id": "nexus-6",

@@ -20,7 +20,7 @@
         "dllSHA256s": {
             "WCUButt_1.0.dll": "a2c473ce4bfd455c98736435409cfd0f64e3328217876227f8cde1efdb8c2a71"
         },
-        "downloadsSinceLatestVersion": 5,
+        "downloadsSinceLatestVersion": 6,
         "dllNames": [
             "WCUButt_1.0.dll"
         ],
@@ -59,7 +59,7 @@
         "dllSHA256s": {
             "CasualtiesUnderTheInfluence.dll": "4df516da3e74eff75e6ba67cf8019e2fd30671225cd3eba560e8178958fe6fcc"
         },
-        "downloadsSinceLatestVersion": 45,
+        "downloadsSinceLatestVersion": 48,
         "dllNames": [
             "CasualtiesUnderTheInfluence.dll"
         ],
@@ -98,7 +98,7 @@
         "dllSHA256s": {
             "a.chs.mod.dll": "99838a90d01ad36b8276d5ff9c2dfc08bb79f9455afa5d37200bf6dc7140cfcc"
         },
-        "downloadsSinceLatestVersion": 15,
+        "downloadsSinceLatestVersion": 17,
         "dllNames": [
             "a.chs.mod.dll"
         ],
@@ -137,7 +137,7 @@
         "dllSHA256s": {
             "CUCoreLib.KrokMP.SaveHotfix.dll": "dfa437f4496255e3053c7ea16345690b58716fc514847e9cb63f14ff1ad830de"
         },
-        "downloadsSinceLatestVersion": 20,
+        "downloadsSinceLatestVersion": 23,
         "dllNames": [
             "CUCoreLib.KrokMP.SaveHotfix.dll"
         ],
@@ -159,38 +159,39 @@
         "Id": "nexus-514",
         "Name": "Variant Organisms",
         "Version": "1.0.0",
-        "bepinexVersion": "1.0.0",
+        "bepinexVersion": "1.0.1",
         "Description": "[heading]Description[/heading]\n<br />[b]English:[/b]\n<br />VariantOrganisms adds 10 brand-new variant creatures to [i]Casualties Unknown[/i], each with unique stats, behaviors, and ecological niches. All creatures are seamlessly integrated into the game's vanilla world generation, appearing in specific layers at appropriate densities. The mod is built on top of [b]CreatureKit[/b], a powerful enemy registration and spawning API that makes creature creation as simple as filling out a form — no complex prefab assembly required. All creature names and descriptions automatically switch between English and Chinese based on the game's current language setting, with full support for community Chinese translations (WC.json).\n<br />[b]中文:[/b]\n<br />VariantOrganisms 为《Casualties Unknown》新增了 10 种全新的变种生物，每种生物都拥有独特的属性、行为与生态位。所有生物均无缝融入原版世界生成，在特定的层级以合适的密度出现。本 Mod 基于 [b]CreatureKit[/b] 构建，这是一个强大的敌人注册与生成 API，让制作生物变得像填表一样简单——无需手动组装复杂的预制体。所有生物的名称与描述都会根据游戏当前语言设置自动切换中英文，并完整支持社区中文翻译包（WC.json）。\n<br />[line]\n<br />[heading]Installation instructions[/heading]\n<br />[b]English:[/b]\n<br />[list=1]\n<br />[*]Install BepInEx (5.x) for [i]Casualties Unknown[/i].[/*]\n<br />[*]Download and install [b]CreatureKit[/b] (required dependency).[/*]\n<br />[*]Download VariantOrganisms and place the \n<br />[code]VariantOrganisms.dll[/code] file into \n<br />[code]BepInEx/plugins/[/code].[/*]\n<br />[*]Launch the game and start a new run or continue an existing one. The variant creatures will spawn automatically in the appropriate layers.[/*]\n<br />[/list][b]中文:[/b]\n<br />[list=1]\n<br />[*]为《Casualties Unknown》安装 BepInEx (5.x)。[/*]\n<br />[*]下载并安装 [b]CreatureKit[/b]（必需前置）。[/*]\n<br />[*]下载 VariantOrganisms，将 \n<br />[code]VariantOrganisms.dll[/code] 放入 \n<br />[code]BepInEx/plugins/[/code] 文件夹。[/*]\n<br />[*]启动游戏，开始新游戏或继续已有的存档。变种生物会在对应的层级自动生成。[/*]\n<br />[/list][line]\n<br />[heading]Main features[/heading]\n<br />[b]English:[/b]\n<br />[list]\n<br />[*][b]10 new variant creatures[/b] with custom stats, AI, and visual effects.[/*]\n<br />[*][b]Seamless world generation integration[/b] — each creature appears in specific layers at balanced densities, using the same spawning mechanism as vanilla enemies.[/*]\n<br />[*][b]Full bilingual support[/b] — names and descriptions automatically adapt to the game language (English / Chinese, including WC.json).[/*]\n<br />[*][b]Built with CreatureKit[/b] — serving as a showcase of how easy it is to create custom enemies using the API.[/*]\n<br />[/list]Creature list\n<br />[b]1. Scavenger (清道夫)[/b]\n<br />A near-harmless creature that feeds on detritus and leftovers.\n<br />一种近乎无害的生物，以腐殖质和残渣为食。\n<br />[b]2. Peeker (窥视者)[/b]\n<br />A wary creature that maintains a fixed distance and never gets too close.\n<br />一种天性警觉的生物，保持固定距离，永远不会靠得太近。\n<br />[b]3. Herbivore Tick (食草蜱)[/b]\n<br />A rare variant of the overgrown tick, docile in nature, with plump and nutritious flesh.\n<br />一种巨型蜱虫的罕见变种，性情温驯，其肉质肥美且富含营养。\n<br />[b]4. Bloodcrawler (嗜血爬行者)[/b]\n<br />A special variant of the shadecrawler, having forsaken venom for heightened aggression and bloodsucking.\n<br />暗影爬行者的一个特殊变种，因舍弃了毒液而进化出更强的攻击性和吸血能力。\n<br />[b]5. Tyrant Biter (暴君噬咬兽)[/b]\n<br />A special variant of the wallbiter, the strongest of its kind — larger, fiercer, and more aggressive.\n<br />巨噬沙行兽的一种特殊变种，族群的最强者，体型更大、更凶猛、更具侵略性。\n<br />[b]6. Rad Tick (辐射蜱虫)[/b]\n<br />A variant of cave ticks that has been exposed to high radiation. Its body glows faintly and is attracted to the heat of living things.\n<br />一种长期暴露在高浓度辐射环境中的洞穴蜱虫变种，它的身体发出微弱的荧光，会被活物的热量吸引。\n<br />[b]7. Broodmother (巨蜱母虫)[/b]\n<br />An extremely rare overgrown tick variant, bloated and slow, its abdomen heavy with gestating larvae. On death, it releases a swarm of cave ticks.\n<br />一种极其罕见的巨型蜱虫变种，体型臃肿膨大，行动迟缓，腹部因孕育大量幼虫而显得异常沉重。死亡时会爆出一群洞穴蜱虫。\n<br />[b]8. Thornback Hatchling (棘背兽幼体)[/b]\n<br />A juvenile thornback, with a thinner carapace and smaller build, making it more agile and active than its adult counterpart.\n<br />棘背兽的幼年个体，它的甲壳更薄、体格更小，但正因如此，它比成年个体更加敏捷和活跃。\n<br />[b]9. Froststrider (冰原行者)[/b]\n<br />A special variant of the snowstrider, adapted to extreme cold. Its thicker and heavier fur makes it move slowly.\n<br />雪行者中适应极端寒冷环境的特殊变种，它的皮毛比普通雪行者更厚实、更沉重，使其移动缓慢。\n<br />[b]10. Sideslash Crystal (横斩晶体)[/b]\n<br />A horizontal variant of the crystal enemy, sweeping energy from left to right with a wider attack angle.\n<br />显现体的横向变种，凝聚能量从左向右横扫，攻击范围更宽、覆盖角度更大。\n<br />[line]\n<br />[heading]Requirements[/heading]\n<br />[b]English:[/b]\n<br />[list]\n<br />[*][b]Casualties Unknown[/b] (any recent version)[/*]\n<br />[*][b]BepInEx[/b] (5.x)[/*]\n<br />[*][b]CreatureKit[/b] (available on its own Nexus Mods page)[/*]\n<br />[/list][b]中文:[/b]\n<br />[list]\n<br />[*]《Casualties Unknown》（较新版本即可）[/*]\n<br />[*]BepInEx (5.x)[/*]\n<br />[*]CreatureKit（可在其单独的 Nexus Mods 页面获取）[/*]\n<br />[/list][line]\n<br />[heading]Shout outs[/heading]\n<br />[b]English:[/b]\n<br />This mod is developed by [b]CIXIN[/b], who is also the creator of the [b]CreatureKit[/b] API. CreatureKit was designed to lower the barrier for enemy creation in [i]Casualties Unknown[/i] — turning a complex, multi-component assembly process into a simple configuration object. VariantOrganisms serves as both a standalone creature pack and a demonstration of what modders can achieve using the API. If you're interested in making your own custom enemies, check out the CreatureKit documentation and give it a try!\n<br />The BepInEx team for the powerful plugin framework.\n<br />Special thanks to the [i]Casualties Unknown[/i] modding community for continuous inspiration and support.\n<br />[b]中文:[/b]\n<br />本 Mod 由 [b]CIXIN[/b] 开发，同时也是 [b]CreatureKit[/b] API 的创作者。CreatureKit 旨在降低《Casualties Unknown》中敌人制作的门槛——将原本复杂繁琐的组件组装过程简化为了一个配置对象。VariantOrganisms 既是一个独立的生物包，也是使用该 API 能达成何种效果的一次展示。如果你有兴趣制作自己的自定义生物，欢迎查阅 CreatureKit 的文档并亲自尝试！\n<br />感谢BepInEx 团队，感谢他们提供的强大插件框架。\n<br />特别感谢《Casualties Unknown》Mod 社区的持续启发与支持。",
         "Author": "CIXINLIN",
         "Links": {
-            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/514/514-1785554935-955273398.png",
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/514/514-1785638989-1547641188.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/514"
         },
-        "DownloadUrl": "nexus://scavprototype/514/1540",
+        "DownloadUrl": "nexus://scavprototype/514/1558",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 514,
         "SourceName": "Nexus",
-        "LastUpdated": "2026-08-01T03:59:37.000Z",
-        "ReleaseDate": "2026-08-01T03:29:54.000Z",
-        "SHA256": "167ef16e7201c618d55b1a3da7cb9ff1eed45d967e84b4291b44cbe60edcdfe3",
+        "LastUpdated": "2026-08-02T10:57:38.000Z",
+        "ReleaseDate": "2026-08-02T10:57:38.000Z",
+        "SHA256": "5e45005599968b41be76bff542117a9664928e4848a290b74c91633030f83581",
         "dllSHA256s": {
-            "VariantOrganisms V1.0.0.dll": "8e2cc4e0e4fc64f3604260030c3383fc1767b4e55ab79f07e77b01b866b87c52"
+            "VariantOrganisms.dll": "479eb2fb88618d237bc88cd569a186d796ebd2d6b346baffe9db03d1ead4011b"
         },
-        "downloadsSinceLatestVersion": 36,
+        "downloadsSinceLatestVersion": 0,
         "dllNames": [
-            "VariantOrganisms V1.0.0.dll"
+            "VariantOrganisms.dll"
         ],
-        "dllVersion": "1.0.0",
+        "dllVersion": "1.0.1",
         "dllVersions": {
-            "VariantOrganisms V1.0.0.dll": "1.0.0"
+            "VariantOrganisms.dll": "1.0.1"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 4,
-            "TotalDownloads": 4,
+            "UniqueDownloads": 20,
+            "TotalDownloads": 21,
             "TotalViews": null
         },
         "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/514/514-1785638989-1547641188.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/514/514-1785554935-955273398.png"
         ]
     },
@@ -254,7 +255,7 @@
         "dllSHA256s": {
             "PlayerListPatch.dll": "176a602a2f52a69d1bba7252ea06cfcd7b7d121b75d82b1910b60d0fcd8d4bdf"
         },
-        "downloadsSinceLatestVersion": 25,
+        "downloadsSinceLatestVersion": 26,
         "dllNames": [
             "PlayerListPatch.dll"
         ],
@@ -447,7 +448,7 @@
             "CUCoreLib.dll": "b448af7b6c9c8d7767df0bbb13e465551ef6b0f2a35dda209b5f78035ab4e659",
             "gouxismoreattachments.dll": "fb1d18db6f992714390e85de91921c4558ee6c445f083b29f51ab8621ef2d92d"
         },
-        "downloadsSinceLatestVersion": 29,
+        "downloadsSinceLatestVersion": 31,
         "dllNames": [
             "CUCoreLib.dll",
             "gouxismoreattachments.dll"
@@ -488,7 +489,7 @@
         "dllSHA256s": {
             "CreatureKit.dll": "d3f68571eba12847389f6493317765649129b00f3f202b7e50e13fd6cd4de9f7"
         },
-        "downloadsSinceLatestVersion": 19,
+        "downloadsSinceLatestVersion": 20,
         "dllNames": [
             "CreatureKit.dll"
         ],
@@ -528,7 +529,7 @@
         "dllSHA256s": {
             "EMI.dll": "ff29a0d66322265135a984896715ce7e13d5f310f5f6e27aa7b665081b7bece6"
         },
-        "downloadsSinceLatestVersion": 75,
+        "downloadsSinceLatestVersion": 77,
         "dllNames": [
             "EMI.dll"
         ],
@@ -723,7 +724,7 @@
         "dllSHA256s": {
             "AutoMinigameTools.dll": "07c13530b5be1da9f30a62aa96e9393bb303dd0c3e98794aff177605e71cec22"
         },
-        "downloadsSinceLatestVersion": 130,
+        "downloadsSinceLatestVersion": 133,
         "dllNames": [
             "AutoMinigameTools.dll"
         ],
@@ -772,7 +773,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/495/495-1785079305-1396700908.png"
         ],
-        "downloadsSinceLatestVersion": 246
+        "downloadsSinceLatestVersion": 247
     },
     {
         "Id": "nexus-494",
@@ -834,7 +835,7 @@
         "dllSHA256s": {
             "ColorfulInsides.dll": "137ff6d5956965e38795934e2c1acdc099732a46b9ae27802df3caf9a4b22c90"
         },
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 18,
         "dllNames": [
             "ColorfulInsides.dll"
         ],
@@ -873,7 +874,7 @@
         "dllSHA256s": {
             "ServerModLoaderByStaili.dll": "2d69382878f6e86d3c31803d9eb63daf894634a35c623c50204a3a87f00de05f"
         },
-        "downloadsSinceLatestVersion": 65,
+        "downloadsSinceLatestVersion": 66,
         "dllNames": [
             "ServerModLoaderByStaili.dll"
         ],
@@ -961,7 +962,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/488/488-1784950849-1712848768.png"
         ],
-        "downloadsSinceLatestVersion": 71
+        "downloadsSinceLatestVersion": 72
     },
     {
         "Id": "nexus-486",
@@ -1086,7 +1087,7 @@
         "dllSHA256s": {
             "CUMoreNpcMod.dll": "fe5ceef08239cfc1d56c52feaa1976fa6d107f079584add57931ed3469f349a3"
         },
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 6,
         "dllNames": [
             "CUMoreNpcMod.dll"
         ],
@@ -1234,7 +1235,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/465/465-1784548290-79562838.png"
         ],
-        "downloadsSinceLatestVersion": 145
+        "downloadsSinceLatestVersion": 146
     },
     {
         "Id": "nexus-464",
@@ -1267,7 +1268,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/464/464-1784540188-272177035.png"
         ],
-        "downloadsSinceLatestVersion": 238
+        "downloadsSinceLatestVersion": 241
     },
     {
         "Id": "nexus-463",
@@ -1329,7 +1330,7 @@
         "dllSHA256s": {
             "Wearable Crystals.dll": "3f3338596ab9e1bc876e6ca57863d0d413a54e0234ba2843fbfa9b0fc2753e33"
         },
-        "downloadsSinceLatestVersion": 275,
+        "downloadsSinceLatestVersion": 277,
         "dllNames": [
             "Wearable Crystals.dll"
         ],
@@ -1378,7 +1379,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/461/461-1784459422-1914229167.png"
         ],
-        "downloadsSinceLatestVersion": 254
+        "downloadsSinceLatestVersion": 255
     },
     {
         "Id": "nexus-460",
@@ -1411,7 +1412,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/460/460-1784914103-349835418.png"
         ],
-        "downloadsSinceLatestVersion": 193
+        "downloadsSinceLatestVersion": 194
     },
     {
         "Id": "nexus-458",
@@ -1444,7 +1445,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/458/458-1784329836-1949988328.png"
         ],
-        "downloadsSinceLatestVersion": 84
+        "downloadsSinceLatestVersion": 85
     },
     {
         "Id": "nexus-456",
@@ -1550,7 +1551,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/454/454-1784171754-195789212.png"
         ],
-        "downloadsSinceLatestVersion": 240
+        "downloadsSinceLatestVersion": 241
     },
     {
         "Id": "nexus-453",
@@ -1711,7 +1712,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/448/448-1784118156-867558037.png"
         ],
-        "downloadsSinceLatestVersion": 100
+        "downloadsSinceLatestVersion": 101
     },
     {
         "Id": "nexus-447",
@@ -1744,7 +1745,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/447/447-1784132516-1476663441.png"
         ],
-        "downloadsSinceLatestVersion": 117
+        "downloadsSinceLatestVersion": 118
     },
     {
         "Id": "nexus-441",
@@ -1806,7 +1807,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/440/440-1783874091-1140507938.png"
         ],
-        "downloadsSinceLatestVersion": 144
+        "downloadsSinceLatestVersion": 145
     },
     {
         "Id": "nexus-439",
@@ -1868,7 +1869,7 @@
         "dllSHA256s": {
             "Upgradable Storage Packs.dll": "3550de663fa70a75322bde43454d349dc5dbe976e06a644e2b54f022b5ab3b0e"
         },
-        "downloadsSinceLatestVersion": 164,
+        "downloadsSinceLatestVersion": 165,
         "dllNames": [
             "Upgradable Storage Packs.dll"
         ],
@@ -2049,7 +2050,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/432/432-1783734773-139727180.png"
         ],
-        "downloadsSinceLatestVersion": 461
+        "downloadsSinceLatestVersion": 462
     },
     {
         "Id": "nexus-431",
@@ -2111,7 +2112,7 @@
         "dllSHA256s": {
             "CUTarkovWeaponMod.dll": "4019849c3df02ecc3d41bf0f126507ba06cf234ade9949a58157683147e9120b"
         },
-        "downloadsSinceLatestVersion": 15,
+        "downloadsSinceLatestVersion": 16,
         "dllNames": [
             "CUTarkovWeaponMod.dll"
         ],
@@ -2150,7 +2151,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "9e42a415530d6e056164d7c1139c91ba1d846860bc31085685544d026275355d"
         },
-        "downloadsSinceLatestVersion": 104,
+        "downloadsSinceLatestVersion": 114,
         "dllNames": [
             "CasualtiesConsumed.dll"
         ],
@@ -2199,7 +2200,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/427/427-1783699665-706389161.png"
         ],
-        "downloadsSinceLatestVersion": 277
+        "downloadsSinceLatestVersion": 278
     },
     {
         "Id": "nexus-424",
@@ -2294,7 +2295,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/422/422-1783777382-1184045774.png"
         ],
-        "downloadsSinceLatestVersion": 141
+        "downloadsSinceLatestVersion": 144
     },
     {
         "Id": "nexus-421",
@@ -2327,7 +2328,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/421/421-1783625508-24908610.png"
         ],
-        "downloadsSinceLatestVersion": 385
+        "downloadsSinceLatestVersion": 388
     },
     {
         "Id": "nexus-419",
@@ -2360,7 +2361,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/419/419-1783661501-1097719696.png"
         ],
-        "downloadsSinceLatestVersion": 212
+        "downloadsSinceLatestVersion": 213
     },
     {
         "Id": "nexus-418",
@@ -2395,7 +2396,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/418/418-1783559237-370760640.png"
         ],
-        "downloadsSinceLatestVersion": 56
+        "downloadsSinceLatestVersion": 57
     },
     {
         "Id": "nexus-417",
@@ -2451,7 +2452,7 @@
         "dllSHA256s": {
             "CUTarkovMedicalMod.dll": "1f5dc1eb0f65206850b8e837edf0ebd1e58280e542669a5c4738e5d61fa0fd04"
         },
-        "downloadsSinceLatestVersion": 36,
+        "downloadsSinceLatestVersion": 37,
         "dllNames": [
             "CUTarkovMedicalMod.dll"
         ],
@@ -2500,7 +2501,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/413/413-1783704056-1667091104.jpg"
         ],
-        "downloadsSinceLatestVersion": 197
+        "downloadsSinceLatestVersion": 199
     },
     {
         "Id": "nexus-412",
@@ -2628,7 +2629,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/409/409-1783389381-1513677534.png"
         ],
-        "downloadsSinceLatestVersion": 315
+        "downloadsSinceLatestVersion": 316
     },
     {
         "Id": "nexus-407",
@@ -2661,7 +2662,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/407/407-1783352890-1390968055.png"
         ],
-        "downloadsSinceLatestVersion": 370
+        "downloadsSinceLatestVersion": 374
     },
     {
         "Id": "nexus-406",
@@ -2923,7 +2924,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/394/394-1783082828-1585117414.png"
         ],
-        "downloadsSinceLatestVersion": 460
+        "downloadsSinceLatestVersion": 461
     },
     {
         "Id": "nexus-390",
@@ -2989,7 +2990,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/388/388-1782971746-2037319602.png"
         ],
-        "downloadsSinceLatestVersion": 119
+        "downloadsSinceLatestVersion": 120
     },
     {
         "Id": "nexus-387",
@@ -3119,7 +3120,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/383/383-1782936924-1213314027.png"
         ],
-        "downloadsSinceLatestVersion": 200
+        "downloadsSinceLatestVersion": 201
     },
     {
         "Id": "nexus-382",
@@ -3152,7 +3153,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/382/382-1782927980-1598388311.png"
         ],
-        "downloadsSinceLatestVersion": 555
+        "downloadsSinceLatestVersion": 556
     },
     {
         "Id": "nexus-381",
@@ -3407,7 +3408,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/373/373-1782760977-2052849447.png"
         ],
-        "downloadsSinceLatestVersion": 379
+        "downloadsSinceLatestVersion": 381
     },
     {
         "Id": "nexus-372",
@@ -3533,7 +3534,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/369/369-1782659049-2022302119.jpg"
         ],
-        "downloadsSinceLatestVersion": 704
+        "downloadsSinceLatestVersion": 706
     },
     {
         "Id": "nexus-368",
@@ -3566,7 +3567,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/368/368-1782659982-1514105306.png"
         ],
-        "downloadsSinceLatestVersion": 326
+        "downloadsSinceLatestVersion": 331
     },
     {
         "Id": "nexus-367",
@@ -3730,7 +3731,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/363/363-1782569252-846108014.png"
         ],
-        "downloadsSinceLatestVersion": 77
+        "downloadsSinceLatestVersion": 79
     },
     {
         "Id": "nexus-362",
@@ -3796,7 +3797,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/360/360-1782531052-1291317646.png"
         ],
-        "downloadsSinceLatestVersion": 230
+        "downloadsSinceLatestVersion": 232
     },
     {
         "Id": "nexus-358",
@@ -3817,7 +3818,7 @@
         "ReleaseDate": "2026-07-28T21:22:22.000Z",
         "SHA256": "c6519d8fbaf9b34a2679a3175c79aeece0a38f93b34e0ebe3141e03f5561486a",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 52,
+        "downloadsSinceLatestVersion": 55,
         "dllNames": [],
         "dllVersion": null,
         "dllVersions": {},
@@ -3955,7 +3956,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/350/350-1782389193-1354873044.png"
         ],
-        "downloadsSinceLatestVersion": 684
+        "downloadsSinceLatestVersion": 686
     },
     {
         "Id": "nexus-347",
@@ -3978,7 +3979,7 @@
         "dllSHA256s": {
             "Refill_Jetpack_with_Oil.dll": "17312dc4a103965d21d810caba88747f7b8754671324a2bcd40b5b374797e0fd"
         },
-        "downloadsSinceLatestVersion": 87,
+        "downloadsSinceLatestVersion": 88,
         "dllNames": [
             "Refill_Jetpack_with_Oil.dll"
         ],
@@ -4056,7 +4057,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/344/344-1782071908-549744765.png"
         ],
-        "downloadsSinceLatestVersion": 419
+        "downloadsSinceLatestVersion": 421
     },
     {
         "Id": "nexus-343",
@@ -4122,7 +4123,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/342/342-1781953680-834650068.png"
         ],
-        "downloadsSinceLatestVersion": 1924
+        "downloadsSinceLatestVersion": 1925
     },
     {
         "Id": "nexus-341",
@@ -4155,7 +4156,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/341/341-1781955629-789599736.png"
         ],
-        "downloadsSinceLatestVersion": 3296
+        "downloadsSinceLatestVersion": 3313
     },
     {
         "Id": "nexus-340",
@@ -4474,7 +4475,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/331/331-1781804704-899005156.png"
         ],
-        "downloadsSinceLatestVersion": 1934
+        "downloadsSinceLatestVersion": 1936
     },
     {
         "Id": "nexus-330",
@@ -4507,7 +4508,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/330/330-1782061596-1490131609.png"
         ],
-        "downloadsSinceLatestVersion": 433
+        "downloadsSinceLatestVersion": 434
     },
     {
         "Id": "nexus-329",
@@ -4540,7 +4541,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/329/329-1781804013-1288802471.png"
         ],
-        "downloadsSinceLatestVersion": 85
+        "downloadsSinceLatestVersion": 86
     },
     {
         "Id": "nexus-328",
@@ -4629,7 +4630,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 45,
+        "downloadsSinceLatestVersion": 48,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -4675,7 +4676,7 @@
             "GunsawGenetics.dll": "5c155a3985c6bdbbfa7ac1eca73695b8a3d3b3bb2c360825a29b3b329a822c54",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 171,
+        "downloadsSinceLatestVersion": 178,
         "dllNames": [
             "body_sprite_replacer.dll",
             "GunsawGenetics.dll",
@@ -4798,7 +4799,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/321/321-1784200547-1645500571.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/321/321-1781702038-14501740.png"
         ],
-        "downloadsSinceLatestVersion": 134
+        "downloadsSinceLatestVersion": 135
     },
     {
         "Id": "nexus-320",
@@ -5058,7 +5059,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/311/311-1781486996-379673312.png"
         ],
-        "downloadsSinceLatestVersion": 161
+        "downloadsSinceLatestVersion": 163
     },
     {
         "Id": "nexus-310",
@@ -5091,7 +5092,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/310/310-1781453999-571659305.png"
         ],
-        "downloadsSinceLatestVersion": 175
+        "downloadsSinceLatestVersion": 176
     },
     {
         "Id": "nexus-231",
@@ -5211,7 +5212,7 @@
         "dllSHA256s": {
             "VforWhiningMPAddon.dll": "89bbc172d2d6ffa8f94fb6a3319797d6078e80901654c6c33874d4a5add9be2f"
         },
-        "downloadsSinceLatestVersion": 69,
+        "downloadsSinceLatestVersion": 70,
         "dllNames": [
             "VforWhiningMPAddon.dll"
         ],
@@ -5261,7 +5262,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/227/227-1781415375-1632721617.png"
         ],
-        "downloadsSinceLatestVersion": 112
+        "downloadsSinceLatestVersion": 113
     },
     {
         "Id": "nexus-226",
@@ -5521,7 +5522,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/217/217-1781195405-2127154004.png"
         ],
-        "downloadsSinceLatestVersion": 425
+        "downloadsSinceLatestVersion": 426
     },
     {
         "Id": "nexus-216",
@@ -5593,7 +5594,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/215/215-1781192247-181239385.png"
         ],
-        "downloadsSinceLatestVersion": 1089
+        "downloadsSinceLatestVersion": 1091
     },
     {
         "Id": "nexus-214",
@@ -5826,7 +5827,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/206/206-1781022550-1666538465.png"
         ],
-        "downloadsSinceLatestVersion": 304
+        "downloadsSinceLatestVersion": 305
     },
     {
         "Id": "nexus-205",
@@ -5992,7 +5993,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/198/198-1780962693-1967035822.png"
         ],
-        "downloadsSinceLatestVersion": 349
+        "downloadsSinceLatestVersion": 350
     },
     {
         "Id": "nexus-197",
@@ -6025,7 +6026,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/197/197-1780926539-1822683445.jpg"
         ],
-        "downloadsSinceLatestVersion": 1777
+        "downloadsSinceLatestVersion": 1778
     },
     {
         "Id": "nexus-196",
@@ -6087,7 +6088,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/195/195-1780935925-1709438152.png"
         ],
-        "downloadsSinceLatestVersion": 918
+        "downloadsSinceLatestVersion": 919
     },
     {
         "Id": "nexus-194",
@@ -6120,7 +6121,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/194/194-1780896592-646519212.png"
         ],
-        "downloadsSinceLatestVersion": 665
+        "downloadsSinceLatestVersion": 666
     },
     {
         "Id": "nexus-193",
@@ -6182,7 +6183,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/192/192-1780870909-1739319218.png"
         ],
-        "downloadsSinceLatestVersion": 273
+        "downloadsSinceLatestVersion": 274
     },
     {
         "Id": "nexus-191",
@@ -6382,7 +6383,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/183/183-1780664930-1820743226.png"
         ],
-        "downloadsSinceLatestVersion": 433
+        "downloadsSinceLatestVersion": 434
     },
     {
         "Id": "nexus-182",
@@ -6477,7 +6478,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/179/179-1780650207-1195298539.png"
         ],
-        "downloadsSinceLatestVersion": 822
+        "downloadsSinceLatestVersion": 824
     },
     {
         "Id": "nexus-178",
@@ -6510,7 +6511,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/178/178-1780648400-583645774.png"
         ],
-        "downloadsSinceLatestVersion": 993
+        "downloadsSinceLatestVersion": 998
     },
     {
         "Id": "nexus-177",
@@ -6543,7 +6544,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/177/177-1780641085-1724719855.png"
         ],
-        "downloadsSinceLatestVersion": 459
+        "downloadsSinceLatestVersion": 461
     },
     {
         "Id": "nexus-175",
@@ -6576,7 +6577,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/175/175-1780656965-274018606.png"
         ],
-        "downloadsSinceLatestVersion": 467
+        "downloadsSinceLatestVersion": 468
     },
     {
         "Id": "nexus-161",
@@ -6648,7 +6649,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/144/144-1780565762-615146688.png"
         ],
-        "downloadsSinceLatestVersion": 1832
+        "downloadsSinceLatestVersion": 1834
     },
     {
         "Id": "nexus-142",
@@ -6737,7 +6738,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 224,
+        "downloadsSinceLatestVersion": 226,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -7104,7 +7105,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/126/126-1780040161-1936556560.png"
         ],
-        "downloadsSinceLatestVersion": 79
+        "downloadsSinceLatestVersion": 80
     },
     {
         "Id": "nexus-125",
@@ -7137,7 +7138,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/125/125-1780128521-2067417973.png"
         ],
-        "downloadsSinceLatestVersion": 948
+        "downloadsSinceLatestVersion": 952
     },
     {
         "Id": "nexus-124",
@@ -7236,7 +7237,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/122/122-1779962803-1133798693.png"
         ],
-        "downloadsSinceLatestVersion": 729
+        "downloadsSinceLatestVersion": 730
     },
     {
         "Id": "nexus-121",
@@ -7336,7 +7337,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/118/118-1779906438-1704485820.jpg"
         ],
-        "downloadsSinceLatestVersion": 3351
+        "downloadsSinceLatestVersion": 3354
     },
     {
         "Id": "nexus-117",
@@ -7369,7 +7370,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/117/117-1779944984-827042402.png"
         ],
-        "downloadsSinceLatestVersion": 662
+        "downloadsSinceLatestVersion": 664
     },
     {
         "Id": "nexus-115",
@@ -7534,7 +7535,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/111/111-1779862654-1212118459.png"
         ],
-        "downloadsSinceLatestVersion": 618
+        "downloadsSinceLatestVersion": 619
     },
     {
         "Id": "nexus-110",
@@ -8107,7 +8108,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/82/82-1779433273-1150387939.png"
         ],
-        "downloadsSinceLatestVersion": 307
+        "downloadsSinceLatestVersion": 309
     },
     {
         "Id": "nexus-81",
@@ -8330,7 +8331,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/75/75-1779280428-390255713.png"
         ],
-        "downloadsSinceLatestVersion": 3751
+        "downloadsSinceLatestVersion": 3753
     },
     {
         "Id": "nexus-74",
@@ -8363,7 +8364,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/74/74-1779219898-1150268199.png"
         ],
-        "downloadsSinceLatestVersion": 9846
+        "downloadsSinceLatestVersion": 9860
     },
     {
         "Id": "nexus-73",
@@ -8396,7 +8397,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/73/73-1779214039-1207692528.png"
         ],
-        "downloadsSinceLatestVersion": 2426
+        "downloadsSinceLatestVersion": 2428
     },
     {
         "Id": "nexus-72",
@@ -8429,7 +8430,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/72/72-1779371503-521443026.png"
         ],
-        "downloadsSinceLatestVersion": 1612
+        "downloadsSinceLatestVersion": 1614
     },
     {
         "Id": "nexus-71",
@@ -8462,7 +8463,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/71/71-1779163807-1592403264.jpg"
         ],
-        "downloadsSinceLatestVersion": 601
+        "downloadsSinceLatestVersion": 602
     },
     {
         "Id": "nexus-70",
@@ -8485,7 +8486,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 96,
+        "downloadsSinceLatestVersion": 97,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -8535,7 +8536,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/69/69-1779806023-1700655876.png"
         ],
-        "downloadsSinceLatestVersion": 1654
+        "downloadsSinceLatestVersion": 1659
     },
     {
         "Id": "nexus-68",
@@ -8609,7 +8610,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 38274
+        "downloadsSinceLatestVersion": 38308
     },
     {
         "Id": "nexus-66",
@@ -8705,7 +8706,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/64/64-1783401278-550500355.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/64/64-1781431558-1252655252.png"
         ],
-        "downloadsSinceLatestVersion": 417
+        "downloadsSinceLatestVersion": 418
     },
     {
         "Id": "nexus-63",
@@ -8771,7 +8772,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/60/60-1778681275-472147762.png"
         ],
-        "downloadsSinceLatestVersion": 634
+        "downloadsSinceLatestVersion": 636
     },
     {
         "Id": "nexus-59",
@@ -8899,7 +8900,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/53/53-1778319171-1022189141.png"
         ],
-        "downloadsSinceLatestVersion": 1991
+        "downloadsSinceLatestVersion": 1993
     },
     {
         "Id": "nexus-52",
@@ -9269,36 +9270,36 @@
     {
         "Id": "nexus-38",
         "Name": "Re-Growth Serums",
-        "Version": "1.7.1",
-        "bepinexVersion": "1.7.1",
+        "Version": "1.7.2",
+        "bepinexVersion": "1.7.2",
         "Description": "[size=4][b]Description[/b][/size]\n<br />[color=#D4D4D8]Tested and made on Steam version 7.0\n<br />\n<br />Adds 3 Craftable and Findable Serums to regrow lost Eyes, Disfigurement/Jaw or Limbs!\n<br />\n<br />It hurts regenerating eyes, and quite violent to your body for limbs though, so make sure you are prepared.\n<br />\n<br />Should Fully work in Steam MP with latest CUCore\n<br />Also basically compatible out of the box with [url=https://next.nexusmods.com/profile/YOU1ARE0IC][/url][url=https://www.nexusmods.com/profile/YOU1ARE0IC]YOU1ARE0IC[/url]'s wonderful [url=https://www.nexusmods.com/scavprototype/mods/40]Prosthetics[/url] mod[/color]\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[color=#D4D4D8]Just install like other Item mods that use CUCore, right into your \"/BepInEx/plugins\" folder\n<br />Should have ReGrowthSerums.dll next to the CUCoreLib.dll[/color]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[color=#D4D4D8][b][u][i]Eye Growth Serum:[/i][/u][/b]\n<br />- Regrows one eye per use[/color]\n<br />[color=#D4D4D8]- Used like a Neural Booster\n<br />- Similar side effects as if using a second NeuralBooster (Much much lighter though, mostly just some pain, minor head tissue damage, drop in hunger, and jump in body temp)\n<br />\n<br />- Can even use after losing both eyes from the NeuralBooster! (Weakens the boosters effects though, and causes new and stronger side effects, you got a bigger brain so...)\n<br />- Rough effects If used after having used any Neural Booster: \n<br />50 sickness\n<br />10 brain damage\n<br />Vomit\n<br />Undo part of the effect of the booster by 10% (Boosters Increase by 25%, so getting one eye back would result in the booster only boosting stats by 15%, and both eyes would be only a 5% boost.)\n<br />\n<br />-Also, same mindwipe and hollow effect if used under the effects of brain grow sickness.[/color]\n<br />[color=#D4D4D8]\n<br />[b][i][u]Limb Re-Growth Serum:[/u][/i][/b][/color]\n<br />- Used like an L.R.D. on the health panel. (But Sir, how can I apply to the missing limb?)\n<br />- Use on an existing limb! Regrows an adjacent limb! (If you got no arms, use on your chest and a new stubby bicep will grow, just the bicep though, need multiple usages to regrow a whole arm or leg)\n<br />- Very violent, so does a bunch of pain and tissue damage to the host limb, breaks their bones, and leaves open and internal wounds on both limbs. (so be prepared to patch it up)\n<br />- Fresh new limb starts with 0 usability, you need to let it heal/regrow after.\n<br />- Some strong disinfectant is also applied with the usage, but not enough to fully prevent infection if you have low immunity\n<br />\n<br />- Restrictions: Cannot use on a very damaged limb, you need to have at least 80 skin and muscle health on the donor limb. (Broken bones are fine!)\n<br />\n<br />[b][u][i]Disfigurement Growth Serum:[/i][/u][/b]\n<br />- Regrows Disfigurement/Jaw\n<br />- Used like a Eyegrowth Serum\n<br />\n<br />- Much safer to use then the other, just causes a bit of sickness and minor negative effects of the eye growth serum.\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[color=#D4D4D8]CUCoreLib and its requirements[/color]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[color=#D4D4D8]RushellXYZ for their RshLib and their other mods with their source code so I could see how it was done for the first version.\n<br />CUCoreLib and their team for a very nice and easy to work with framework.[/color]",
         "Author": "Dragoon_103",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/38/38-1777606346-2061007310.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/38"
         },
-        "DownloadUrl": "nexus://scavprototype/38/1526",
+        "DownloadUrl": "nexus://scavprototype/38/1556",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 38,
         "SourceName": "Nexus",
-        "LastUpdated": "2026-07-31T21:33:12.000Z",
-        "ReleaseDate": "2026-07-31T02:40:44.000Z",
-        "SHA256": "0cdecc290746f7ad9150e5fb9775b41a43cc583a2963cc15d4902b257d825445",
+        "LastUpdated": "2026-08-02T09:46:54.000Z",
+        "ReleaseDate": "2026-08-02T09:46:38.000Z",
+        "SHA256": "164180297aa7d29841c7dc68048dfc521ba9a4b9298d764e3143136013fee33c",
         "dllSHA256s": {
-            "ReGrowthSerums.dll": "3f3bf622dde35344485b7e989c7792bec12840df1bdd3b9001ab4f51403d7c5a"
+            "ReGrowthSerums.dll": "af97bbd0388171313fbb991e0b4b5c7f0a3e375035e8be8a3a5cf9e73e09b9a0"
         },
-        "downloadsSinceLatestVersion": 68,
+        "downloadsSinceLatestVersion": 1,
         "dllNames": [
             "ReGrowthSerums.dll"
         ],
-        "dllVersion": "1.7.1",
+        "dllVersion": "1.7.2",
         "dllVersions": {
-            "ReGrowthSerums.dll": "1.7.1"
+            "ReGrowthSerums.dll": "1.7.2"
         },
         "Statistics": {
-            "Endorsements": 37,
-            "UniqueDownloads": 1014,
-            "TotalDownloads": 1282,
+            "Endorsements": 39,
+            "UniqueDownloads": 1041,
+            "TotalDownloads": 1341,
             "TotalViews": null
         },
         "Images": [
@@ -9499,7 +9500,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/32/32-1777285860-206331044.png"
         ],
-        "downloadsSinceLatestVersion": 3335
+        "downloadsSinceLatestVersion": 3338
     },
     {
         "Id": "nexus-31",
@@ -9747,7 +9748,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/26/26-1777030858-1473263070.png"
         ],
-        "downloadsSinceLatestVersion": 557
+        "downloadsSinceLatestVersion": 558
     },
     {
         "Id": "nexus-25",
@@ -9909,7 +9910,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/21/21-1776048067-1190830739.png"
         ],
-        "downloadsSinceLatestVersion": 290
+        "downloadsSinceLatestVersion": 291
     },
     {
         "Id": "nexus-20",
@@ -10008,7 +10009,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/18/18-1774031472-1359870539.png"
         ],
-        "downloadsSinceLatestVersion": 1236
+        "downloadsSinceLatestVersion": 1237
     },
     {
         "Id": "nexus-17",
@@ -10114,7 +10115,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/15/15-1778431291-964052521.png"
         ],
-        "downloadsSinceLatestVersion": 3864
+        "downloadsSinceLatestVersion": 3865
     },
     {
         "Id": "nexus-14",
@@ -10340,7 +10341,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/7/7-1771267944-357525261.png"
         ],
-        "downloadsSinceLatestVersion": 4976
+        "downloadsSinceLatestVersion": 4982
     },
     {
         "Id": "nexus-6",

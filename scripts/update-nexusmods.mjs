@@ -48,6 +48,7 @@ const OWNED_FIELDS = new Set([
   "NexusGameDomain",
   "NexusModId",
   "SourceName",
+  "ContainsAdultContent",
   "LastUpdated",
   "ReleaseDate",
   "SHA256",
@@ -71,6 +72,7 @@ const TRACKED_LOG_FIELDS = [
   "DownloadUrl",
   "NexusGameDomain",
   "NexusModId",
+  "ContainsAdultContent",
   "LastUpdated",
   "ReleaseDate",
   "SHA256",
@@ -433,23 +435,33 @@ async function refreshLatestFileDownloads({
     appVersion,
     fileInfo: selectedFile,
   });
-  if (downloadsSinceLatestVersion === null) {
-    return;
-  }
+  const containsAdultContent = modInfo.contains_adult_content ?? existingEntry?.ContainsAdultContent ?? false;
+  const downloadsChanged = downloadsSinceLatestVersion !== null
+    && !areEqual(existingEntry?.downloadsSinceLatestVersion, downloadsSinceLatestVersion);
+  const adultFlagChanged = !areEqual(existingEntry?.ContainsAdultContent, containsAdultContent);
 
-  if (areEqual(existingEntry?.downloadsSinceLatestVersion, downloadsSinceLatestVersion)) {
+  if (!downloadsChanged && !adultFlagChanged) {
     logDim(`   No Nexus version or latest-file download change for mod ${modId}.`);
     return;
   }
 
   entryByKey.set(getEntryKey(gameDomain, modId), {
     ...existingEntry,
-    downloadsSinceLatestVersion,
+    ...(downloadsChanged ? { downloadsSinceLatestVersion } : {}),
+    ContainsAdultContent: containsAdultContent,
   });
-  logSuccess(
-    `Updated mod ${modId} downloadsSinceLatestVersion: `
-    + `${formatValue(existingEntry?.downloadsSinceLatestVersion)} -> ${formatValue(downloadsSinceLatestVersion)}`,
-  );
+  if (downloadsChanged) {
+    logSuccess(
+      `Updated mod ${modId} downloadsSinceLatestVersion: `
+      + `${formatValue(existingEntry?.downloadsSinceLatestVersion)} -> ${formatValue(downloadsSinceLatestVersion)}`,
+    );
+  }
+  if (adultFlagChanged) {
+    logSuccess(
+      `Updated mod ${modId} ContainsAdultContent: `
+      + `${formatValue(existingEntry?.ContainsAdultContent)} -> ${formatValue(containsAdultContent)}`,
+    );
+  }
 }
 
 async function discoverRecentModsForGame(apiKey, appVersion, gameDomain) {
@@ -917,6 +929,7 @@ function mergeEntry({
     NexusGameDomain: modInfo.domain_name,
     NexusModId: modInfo.mod_id,
     SourceName: "Nexus",
+    ContainsAdultContent: modInfo.contains_adult_content ?? existingEntry?.ContainsAdultContent ?? false,
     LastUpdated: lastUpdated,
     ReleaseDate: releaseDate,
     SHA256: archiveContext?.sha256 ?? existingEntry?.SHA256 ?? null,

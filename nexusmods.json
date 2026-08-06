@@ -1,5 +1,45 @@
 [
     {
+        "Id": "nexus-527",
+        "Name": "Second Thoughts",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.0.0",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />In vanilla C:U, the moment you touch the bottom of a layer, the game opens the descend/save panel and puts you into a forced-walk state. Nothing ever takes it back except descending or quitting to the menu.\n<br />\n<br />This mod patches this behavior:\n<br />[list]\n<br />[*]Movement and jumping are released as soon as the save/descend panel appears, so you can leave.[/*]\n<br />[*]The panel dismisses itself once you've climbed clear of the trigger.[/*]\n<br />[*]Walking back down re-opens it exactly as before. Descending is unchanged.[/*]\n<br />[/list][size=4][b]Installation[/b][/size]\n<br />[list]\n<br />[*]Install [url=https://github.com/BepInEx/BepInEx]BepInEx 5[/url].[/*]\n<br />[*]Extract the archive into [i]BepInEx/plugins/[/i] inside your game folder, so the DLL lands at [i]BepInEx/plugins/SecondThoughts.dll[/i].[/*]\n<br />[*]Launch the game.[/*]\n<br />[/list]To uninstall, simply delete [i]BepInEx/plugins/SecondThoughts.dll[/i].\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[list]\n<br />[*][color=#D4D4D8]BepInEx 5.4.23.x[/color][/*]\n<br />[*][color=#D4D4D8]C:U 7.0.x[/color][/*]\n<br />[/list]",
+        "Author": "asserto",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/527/527-1786004051-1107691857.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/527"
+        },
+        "DownloadUrl": "nexus://scavprototype/527/1614",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 527,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-08-06T08:45:27.000Z",
+        "ReleaseDate": "2026-08-06T08:45:02.000Z",
+        "SHA256": "6d85e97d97f9dfe189b05c1d57e50fbf82c7597d2be3f9471bb2ff62150b84e0",
+        "dllSHA256s": {
+            "SecondThoughts.dll": "22069022ae20c535255d851a51705252bc2b4802e807d38d75f35d41b31456eb"
+        },
+        "downloadsSinceLatestVersion": 1,
+        "dllNames": [
+            "SecondThoughts.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "SecondThoughts.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 2,
+            "TotalDownloads": 3,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/527/527-1786004051-1107691857.png"
+        ]
+    },
+    {
         "Id": "nexus-525",
         "Name": "If grey star have only food box",
         "Version": "1.0.0",
@@ -135,7 +175,7 @@
         "dllSHA256s": {
             "UnchippedSkillsPanel.dll": "394940e3a59fad4f31b4e333539c608c1c9fb0d69310e1faa16ff0b4dc0627cb"
         },
-        "downloadsSinceLatestVersion": 6,
+        "downloadsSinceLatestVersion": 7,
         "dllNames": [
             "UnchippedSkillsPanel.dll"
         ],
@@ -173,7 +213,7 @@
         "ReleaseDate": "2026-08-03T19:52:16.000Z",
         "SHA256": "9afab5f2118f0be8fc196f537e33144971e73ee7bdf3dfa8718f7dd82303e135",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 62,
+        "downloadsSinceLatestVersion": 63,
         "dllNames": [],
         "dllVersion": null,
         "dllVersions": {},
@@ -208,7 +248,7 @@
         "dllSHA256s": {
             "RoryCannon.dll": "f4492bd3c2d1e52a9af4fbe57bb42f015384110954a98e3f0d9eb9d10bfe948b"
         },
-        "downloadsSinceLatestVersion": 32,
+        "downloadsSinceLatestVersion": 22,
         "dllNames": [
             "RoryCannon.dll"
         ],
@@ -248,7 +288,7 @@
         "dllSHA256s": {
             "WCUButt_1.0.dll": "a2c473ce4bfd455c98736435409cfd0f64e3328217876227f8cde1efdb8c2a71"
         },
-        "downloadsSinceLatestVersion": 19,
+        "downloadsSinceLatestVersion": 16,
         "dllNames": [
             "WCUButt_1.0.dll"
         ],
@@ -289,7 +329,7 @@
         "dllSHA256s": {
             "CasualtiesUnderTheInfluence.dll": "7ce9b3d466f1d6444405cf3f0f948e3bbaa561986c68809d4d772e0fcbc77d07"
         },
-        "downloadsSinceLatestVersion": 106,
+        "downloadsSinceLatestVersion": 107,
         "dllNames": [
             "CasualtiesUnderTheInfluence.dll"
         ],
@@ -328,7 +368,7 @@
         "dllSHA256s": {
             "a.chs.mod.dll": "99838a90d01ad36b8276d5ff9c2dfc08bb79f9455afa5d37200bf6dc7140cfcc"
         },
-        "downloadsSinceLatestVersion": 82,
+        "downloadsSinceLatestVersion": 64,
         "dllNames": [
             "a.chs.mod.dll"
         ],
@@ -369,7 +409,7 @@
         "dllSHA256s": {
             "CUCoreLib.KrokMP.SaveHotfix.dll": "8f100d5b0afefcd7e0045afc86eb7bfd2dbc2bc52f7de9edc8cee8c7ae3e5d77"
         },
-        "downloadsSinceLatestVersion": 22,
+        "downloadsSinceLatestVersion": 27,
         "dllNames": [
             "CUCoreLib.KrokMP.SaveHotfix.dll"
         ],
@@ -409,7 +449,7 @@
         "dllSHA256s": {
             "VariantOrganisms.dll": "bafee46e6c79fca882467a4201a847ba23f564072322987ec1fb1ce98332191a"
         },
-        "downloadsSinceLatestVersion": 49,
+        "downloadsSinceLatestVersion": 50,
         "dllNames": [
             "VariantOrganisms.dll"
         ],
@@ -490,7 +530,7 @@
         "dllSHA256s": {
             "PlayerListPatch.dll": "176a602a2f52a69d1bba7252ea06cfcd7b7d121b75d82b1910b60d0fcd8d4bdf"
         },
-        "downloadsSinceLatestVersion": 52,
+        "downloadsSinceLatestVersion": 48,
         "dllNames": [
             "PlayerListPatch.dll"
         ],
@@ -530,7 +570,7 @@
         "dllSHA256s": {
             "CUButt.dll": "b4f29de5a233588ad26c024f5f6556a4631a1a801f9144e479f674be80bfd96c"
         },
-        "downloadsSinceLatestVersion": 41,
+        "downloadsSinceLatestVersion": 39,
         "dllNames": [
             "CUButt.dll"
         ],
@@ -687,7 +727,7 @@
             "CUCoreLib.dll": "b448af7b6c9c8d7767df0bbb13e465551ef6b0f2a35dda209b5f78035ab4e659",
             "gouxismoreattachments.dll": "fb1d18db6f992714390e85de91921c4558ee6c445f083b29f51ab8621ef2d92d"
         },
-        "downloadsSinceLatestVersion": 66,
+        "downloadsSinceLatestVersion": 60,
         "dllNames": [
             "CUCoreLib.dll",
             "gouxismoreattachments.dll"
@@ -730,7 +770,7 @@
         "dllSHA256s": {
             "CreatureKit.dll": "df2106b0ec8f50943814372b2f378d943d298ba8ffbf5924c7b550d593068efd"
         },
-        "downloadsSinceLatestVersion": 42,
+        "downloadsSinceLatestVersion": 43,
         "dllNames": [
             "CreatureKit.dll"
         ],
@@ -773,7 +813,7 @@
         "dllSHA256s": {
             "EMI.dll": "ff29a0d66322265135a984896715ce7e13d5f310f5f6e27aa7b665081b7bece6"
         },
-        "downloadsSinceLatestVersion": 121,
+        "downloadsSinceLatestVersion": 110,
         "dllNames": [
             "EMI.dll"
         ],
@@ -812,7 +852,7 @@
         "dllSHA256s": {
             "All modifiers.dll": "35f553e2cd0f1f1c079eaddb9b723d1a6cc4e56e0e79fe4660f1ed0874b32d4d"
         },
-        "downloadsSinceLatestVersion": 12,
+        "downloadsSinceLatestVersion": 11,
         "dllNames": [
             "All modifiers.dll"
         ],
@@ -853,7 +893,7 @@
         "dllSHA256s": {
             "Gigasalad.dll": "05a81413d2fe019f1f761bc69fcc7fa76e813fb58269fa25005b440662ac14e5"
         },
-        "downloadsSinceLatestVersion": 2,
+        "downloadsSinceLatestVersion": 3,
         "dllNames": [
             "Gigasalad.dll"
         ],
@@ -932,7 +972,7 @@
         "dllSHA256s": {
             "SimonSays.dll": "8887cbcc10709996ca3e2476b879c170573fd0221538cf06ac5e653010874e4f"
         },
-        "downloadsSinceLatestVersion": 17,
+        "downloadsSinceLatestVersion": 16,
         "dllNames": [
             "SimonSays.dll"
         ],
@@ -972,7 +1012,7 @@
         "dllSHA256s": {
             "AutoMinigameTools.dll": "07c13530b5be1da9f30a62aa96e9393bb303dd0c3e98794aff177605e71cec22"
         },
-        "downloadsSinceLatestVersion": 168,
+        "downloadsSinceLatestVersion": 155,
         "dllNames": [
             "AutoMinigameTools.dll"
         ],
@@ -1022,7 +1062,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/495/495-1785079305-1396700908.png"
         ],
-        "downloadsSinceLatestVersion": 317,
+        "downloadsSinceLatestVersion": 302,
         "ContainsAdultContent": false
     },
     {
@@ -1086,7 +1126,7 @@
         "dllSHA256s": {
             "ColorfulInsides.dll": "137ff6d5956965e38795934e2c1acdc099732a46b9ae27802df3caf9a4b22c90"
         },
-        "downloadsSinceLatestVersion": 70,
+        "downloadsSinceLatestVersion": 60,
         "dllNames": [
             "ColorfulInsides.dll"
         ],
@@ -1126,7 +1166,7 @@
         "dllSHA256s": {
             "ServerModLoaderByStaili.dll": "2d69382878f6e86d3c31803d9eb63daf894634a35c623c50204a3a87f00de05f"
         },
-        "downloadsSinceLatestVersion": 91,
+        "downloadsSinceLatestVersion": 86,
         "dllNames": [
             "ServerModLoaderByStaili.dll"
         ],
@@ -1166,7 +1206,7 @@
         "dllSHA256s": {
             "TemporaryBottleCountdown.dll": "7fb2ee7d4e2828153e6db4621b93c02b580797e68f34866cacedddf0760fd910"
         },
-        "downloadsSinceLatestVersion": 45,
+        "downloadsSinceLatestVersion": 43,
         "dllNames": [
             "TemporaryBottleCountdown.dll"
         ],
@@ -1283,7 +1323,7 @@
         "dllSHA256s": {
             "ConsolePlus.dll": "8c1b2f35c70f1e3bd7528cf63d0306f37bad9b7a0966b0f459cfd25b7577759e"
         },
-        "downloadsSinceLatestVersion": 27,
+        "downloadsSinceLatestVersion": 20,
         "dllNames": [
             "ConsolePlus.dll"
         ],
@@ -1333,7 +1373,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/481/481-1784709266-1900033778.png"
         ],
-        "downloadsSinceLatestVersion": 33,
+        "downloadsSinceLatestVersion": 32,
         "ContainsAdultContent": false
     },
     {
@@ -1358,7 +1398,7 @@
         "dllSHA256s": {
             "CUMoreNpcMod.dll": "9e673946067046f387588954c3e039a4438f9a3fa9360be19ab84114742c3188"
         },
-        "downloadsSinceLatestVersion": 34,
+        "downloadsSinceLatestVersion": 39,
         "dllNames": [
             "CUMoreNpcMod.dll"
         ],
@@ -1397,7 +1437,7 @@
         "dllSHA256s": {
             "MilkyHateYou.dll": "d178c6aa87d390b24adcf082d579ab64ff284d7a57ceba8ea7323291ac8df564"
         },
-        "downloadsSinceLatestVersion": 12,
+        "downloadsSinceLatestVersion": 6,
         "dllNames": [
             "MilkyHateYou.dll"
         ],
@@ -1481,7 +1521,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/466/466-1784591087-914229174.png"
         ],
-        "downloadsSinceLatestVersion": 95,
+        "downloadsSinceLatestVersion": 92,
         "ContainsAdultContent": false
     },
     {
@@ -1515,7 +1555,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/465/465-1784548290-79562838.png"
         ],
-        "downloadsSinceLatestVersion": 158,
+        "downloadsSinceLatestVersion": 154,
         "ContainsAdultContent": false
     },
     {
@@ -1549,7 +1589,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/464/464-1784540188-272177035.png"
         ],
-        "downloadsSinceLatestVersion": 333,
+        "downloadsSinceLatestVersion": 315,
         "ContainsAdultContent": false
     },
     {
@@ -1573,7 +1613,7 @@
         "dllSHA256s": {
             "IzasWarFood.dll": "0eaf3865b341f4e0af68e61e807f0253e8e9fff03e260fc09d7a195715c7e02b"
         },
-        "downloadsSinceLatestVersion": 127,
+        "downloadsSinceLatestVersion": 122,
         "dllNames": [
             "IzasWarFood.dll"
         ],
@@ -1613,7 +1653,7 @@
         "dllSHA256s": {
             "Wearable Crystals.dll": "3f3338596ab9e1bc876e6ca57863d0d413a54e0234ba2843fbfa9b0fc2753e33"
         },
-        "downloadsSinceLatestVersion": 314,
+        "downloadsSinceLatestVersion": 304,
         "dllNames": [
             "Wearable Crystals.dll"
         ],
@@ -1663,7 +1703,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/461/461-1784459422-1914229167.png"
         ],
-        "downloadsSinceLatestVersion": 268,
+        "downloadsSinceLatestVersion": 264,
         "ContainsAdultContent": false
     },
     {
@@ -1697,7 +1737,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/460/460-1784914103-349835418.png"
         ],
-        "downloadsSinceLatestVersion": 229,
+        "downloadsSinceLatestVersion": 221,
         "ContainsAdultContent": false
     },
     {
@@ -1731,7 +1771,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/458/458-1784329836-1949988328.png"
         ],
-        "downloadsSinceLatestVersion": 93,
+        "downloadsSinceLatestVersion": 90,
         "ContainsAdultContent": false
     },
     {
@@ -1765,7 +1805,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/456/456-1784275424-262547735.png"
         ],
-        "downloadsSinceLatestVersion": 100,
+        "downloadsSinceLatestVersion": 97,
         "ContainsAdultContent": false
     },
     {
@@ -1789,7 +1829,7 @@
         "dllSHA256s": {
             "Deltarune_Cool_Items.dll": "e06aec2f3f63593595029a2c89003b10f78184c7a20c011c97f76c8f0e40e8e7"
         },
-        "downloadsSinceLatestVersion": 19,
+        "downloadsSinceLatestVersion": 17,
         "dllNames": [
             "Deltarune_Cool_Items.dll"
         ],
@@ -1840,7 +1880,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/454/454-1784171754-195789212.png"
         ],
-        "downloadsSinceLatestVersion": 260,
+        "downloadsSinceLatestVersion": 259,
         "ContainsAdultContent": false
     },
     {
@@ -1874,7 +1914,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/453/453-1784150442-1586085824.png"
         ],
-        "downloadsSinceLatestVersion": 34,
+        "downloadsSinceLatestVersion": 33,
         "ContainsAdultContent": false
     },
     {
@@ -1938,7 +1978,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/450/450-1784054018-935400366.png"
         ],
-        "downloadsSinceLatestVersion": 128,
+        "downloadsSinceLatestVersion": 126,
         "ContainsAdultContent": false
     },
     {
@@ -1972,7 +2012,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/449/449-1784048812-953204871.png"
         ],
-        "downloadsSinceLatestVersion": 296,
+        "downloadsSinceLatestVersion": 286,
         "ContainsAdultContent": false
     },
     {
@@ -2006,7 +2046,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/448/448-1784118156-867558037.png"
         ],
-        "downloadsSinceLatestVersion": 118,
+        "downloadsSinceLatestVersion": 116,
         "ContainsAdultContent": false
     },
     {
@@ -2040,7 +2080,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/447/447-1784132516-1476663441.png"
         ],
-        "downloadsSinceLatestVersion": 128,
+        "downloadsSinceLatestVersion": 122,
         "ContainsAdultContent": false
     },
     {
@@ -2070,7 +2110,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/441/441-1783880779-1716513858.png"
         ],
-        "downloadsSinceLatestVersion": 76,
+        "downloadsSinceLatestVersion": 75,
         "ContainsAdultContent": false
     },
     {
@@ -2104,7 +2144,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/440/440-1783874091-1140507938.png"
         ],
-        "downloadsSinceLatestVersion": 172,
+        "downloadsSinceLatestVersion": 168,
         "ContainsAdultContent": false
     },
     {
@@ -2128,7 +2168,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 76,
+        "downloadsSinceLatestVersion": 75,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -2168,7 +2208,7 @@
         "dllSHA256s": {
             "Upgradable Storage Packs.dll": "3550de663fa70a75322bde43454d349dc5dbe976e06a644e2b54f022b5ab3b0e"
         },
-        "downloadsSinceLatestVersion": 204,
+        "downloadsSinceLatestVersion": 200,
         "dllNames": [
             "Upgradable Storage Packs.dll"
         ],
@@ -2218,7 +2258,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/437/437-1783795004-722122926.jpg"
         ],
-        "downloadsSinceLatestVersion": 42,
+        "downloadsSinceLatestVersion": 41,
         "ContainsAdultContent": true
     },
     {
@@ -2243,7 +2283,7 @@
         "dllSHA256s": {
             "CustomMap.dll": "448ace7d95208a49b205c574ace5624495e46437516906606ae0fb76c646d52f"
         },
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 1,
         "dllNames": [
             "CustomMap.dll"
         ],
@@ -2292,7 +2332,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/435/435-1783734007-665333237.png"
         ],
-        "downloadsSinceLatestVersion": 82,
+        "downloadsSinceLatestVersion": 80,
         "ContainsAdultContent": false
     },
     {
@@ -2326,7 +2366,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/433/433-1783732773-801917686.png"
         ],
-        "downloadsSinceLatestVersion": 48,
+        "downloadsSinceLatestVersion": 46,
         "ContainsAdultContent": false
     },
     {
@@ -2360,7 +2400,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/432/432-1783734773-139727180.png"
         ],
-        "downloadsSinceLatestVersion": 512,
+        "downloadsSinceLatestVersion": 498,
         "ContainsAdultContent": false
     },
     {
@@ -2384,7 +2424,7 @@
         "dllSHA256s": {
             "ModikTranslate.dll": "3a298e112479fac12ac60940f629fdb45b98ccb484ad6ccad263551f8170b34f"
         },
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 15,
         "dllNames": [
             "ModikTranslate.dll"
         ],
@@ -2424,7 +2464,7 @@
         "dllSHA256s": {
             "CUTarkovWeaponMod.dll": "4019849c3df02ecc3d41bf0f126507ba06cf234ade9949a58157683147e9120b"
         },
-        "downloadsSinceLatestVersion": 28,
+        "downloadsSinceLatestVersion": 23,
         "dllNames": [
             "CUTarkovWeaponMod.dll"
         ],
@@ -2465,7 +2505,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "2b189c3285703f51d31b26942f3656c066cc10603f53bb06e47dbe0a9dd404ea"
         },
-        "downloadsSinceLatestVersion": 326,
+        "downloadsSinceLatestVersion": 332,
         "dllNames": [
             "CasualtiesConsumed.dll"
         ],
@@ -2514,7 +2554,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/427/427-1783699665-706389161.png"
         ],
-        "downloadsSinceLatestVersion": 305,
+        "downloadsSinceLatestVersion": 293,
         "ContainsAdultContent": false
     },
     {
@@ -2548,7 +2588,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/424/424-1783668913-1707322678.png"
         ],
-        "downloadsSinceLatestVersion": 176,
+        "downloadsSinceLatestVersion": 172,
         "ContainsAdultContent": false
     },
     {
@@ -2612,7 +2652,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/422/422-1783777382-1184045774.png"
         ],
-        "downloadsSinceLatestVersion": 151,
+        "downloadsSinceLatestVersion": 147,
         "ContainsAdultContent": false
     },
     {
@@ -2646,7 +2686,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/421/421-1783625508-24908610.png"
         ],
-        "downloadsSinceLatestVersion": 419,
+        "downloadsSinceLatestVersion": 412,
         "ContainsAdultContent": false
     },
     {
@@ -2680,7 +2720,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/419/419-1783661501-1097719696.png"
         ],
-        "downloadsSinceLatestVersion": 234,
+        "downloadsSinceLatestVersion": 230,
         "ContainsAdultContent": false
     },
     {
@@ -2716,7 +2756,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/418/418-1783559237-370760640.png"
         ],
-        "downloadsSinceLatestVersion": 59,
+        "downloadsSinceLatestVersion": 58,
         "ContainsAdultContent": false
     },
     {
@@ -2750,7 +2790,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/417/417-1783540302-1287932209.gif"
         ],
-        "downloadsSinceLatestVersion": 278,
+        "downloadsSinceLatestVersion": 275,
         "ContainsAdultContent": true
     },
     {
@@ -2774,7 +2814,7 @@
         "dllSHA256s": {
             "CUTarkovMedicalMod.dll": "1f5dc1eb0f65206850b8e837edf0ebd1e58280e542669a5c4738e5d61fa0fd04"
         },
-        "downloadsSinceLatestVersion": 60,
+        "downloadsSinceLatestVersion": 55,
         "dllNames": [
             "CUTarkovMedicalMod.dll"
         ],
@@ -2815,7 +2855,7 @@
         "dllSHA256s": {
             "ImmersiveTraps.dll": "de795274d079b0bc18313f7675bf283f669550804caa20e4486961a3de12f35b"
         },
-        "downloadsSinceLatestVersion": 211,
+        "downloadsSinceLatestVersion": 206,
         "dllNames": [
             "ImmersiveTraps.dll"
         ],
@@ -2864,7 +2904,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/412/412-1783440925-608596001.png"
         ],
-        "downloadsSinceLatestVersion": 142,
+        "downloadsSinceLatestVersion": 140,
         "ContainsAdultContent": false
     },
     {
@@ -2898,7 +2938,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/411/411-1783425246-1114276963.png"
         ],
-        "downloadsSinceLatestVersion": 266,
+        "downloadsSinceLatestVersion": 265,
         "ContainsAdultContent": false
     },
     {
@@ -2962,7 +3002,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/409/409-1783389381-1513677534.png"
         ],
-        "downloadsSinceLatestVersion": 338,
+        "downloadsSinceLatestVersion": 337,
         "ContainsAdultContent": false
     },
     {
@@ -2996,7 +3036,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/407/407-1783352890-1390968055.png"
         ],
-        "downloadsSinceLatestVersion": 449,
+        "downloadsSinceLatestVersion": 431,
         "ContainsAdultContent": false
     },
     {
@@ -3030,7 +3070,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/406/406-1783240432-2020844491.png"
         ],
-        "downloadsSinceLatestVersion": 261,
+        "downloadsSinceLatestVersion": 260,
         "ContainsAdultContent": false
     },
     {
@@ -3066,7 +3106,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/404/404-1783208584-318446813.png"
         ],
-        "downloadsSinceLatestVersion": 153,
+        "downloadsSinceLatestVersion": 152,
         "ContainsAdultContent": false
     },
     {
@@ -3100,7 +3140,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/403/403-1783194836-1653366416.png"
         ],
-        "downloadsSinceLatestVersion": 530,
+        "downloadsSinceLatestVersion": 519,
         "ContainsAdultContent": false
     },
     {
@@ -3168,7 +3208,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/401/401-1783147790-375425716.png"
         ],
-        "downloadsSinceLatestVersion": 133,
+        "downloadsSinceLatestVersion": 123,
         "ContainsAdultContent": true
     },
     {
@@ -3202,7 +3242,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/400/400-1783307655-1303799286.png"
         ],
-        "downloadsSinceLatestVersion": 243,
+        "downloadsSinceLatestVersion": 240,
         "ContainsAdultContent": false
     },
     {
@@ -3266,7 +3306,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/394/394-1783082828-1585117414.png"
         ],
-        "downloadsSinceLatestVersion": 498,
+        "downloadsSinceLatestVersion": 489,
         "ContainsAdultContent": false
     },
     {
@@ -3324,7 +3364,7 @@
         "dllSHA256s": {
             "CasualtyVitals.dll": "ca431c2db6cfe00beca35061e834005e64e10816390c23d927100ec21a40b6a8"
         },
-        "downloadsSinceLatestVersion": 30,
+        "downloadsSinceLatestVersion": 16,
         "dllNames": [
             "CasualtyVitals.dll"
         ],
@@ -3374,7 +3414,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/387/387-1782960556-1880036737.png"
         ],
-        "downloadsSinceLatestVersion": 128,
+        "downloadsSinceLatestVersion": 127,
         "ContainsAdultContent": false
     },
     {
@@ -3408,7 +3448,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/386/386-1782955611-1470098728.png"
         ],
-        "downloadsSinceLatestVersion": 1111,
+        "downloadsSinceLatestVersion": 1104,
         "ContainsAdultContent": false
     },
     {
@@ -3474,7 +3514,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/383/383-1782936924-1213314027.png"
         ],
-        "downloadsSinceLatestVersion": 208,
+        "downloadsSinceLatestVersion": 207,
         "ContainsAdultContent": false
     },
     {
@@ -3508,7 +3548,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/382/382-1782927980-1598388311.png"
         ],
-        "downloadsSinceLatestVersion": 592,
+        "downloadsSinceLatestVersion": 582,
         "ContainsAdultContent": false
     },
     {
@@ -3576,7 +3616,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/380/380-1782878648-1662495861.png"
         ],
-        "downloadsSinceLatestVersion": 62,
+        "downloadsSinceLatestVersion": 61,
         "ContainsAdultContent": false
     },
     {
@@ -3601,7 +3641,7 @@
         "dllSHA256s": {
             "RuScavMods.dll": "1c30de48985d2035838fcafdadd4ef57c4bccd79115380e99b270fda96bbc33a"
         },
-        "downloadsSinceLatestVersion": 9,
+        "downloadsSinceLatestVersion": 10,
         "dllNames": [
             "RuScavMods.dll"
         ],
@@ -3646,7 +3686,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/377/377-1782871480-2133003082.png"
         ],
-        "downloadsSinceLatestVersion": 19,
+        "downloadsSinceLatestVersion": 18,
         "ContainsAdultContent": false
     },
     {
@@ -3680,7 +3720,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/376/376-1782852095-361435448.png"
         ],
-        "downloadsSinceLatestVersion": 124,
+        "downloadsSinceLatestVersion": 120,
         "ContainsAdultContent": false
     },
     {
@@ -3714,7 +3754,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/375/375-1782850108-1530567531.png"
         ],
-        "downloadsSinceLatestVersion": 133,
+        "downloadsSinceLatestVersion": 132,
         "ContainsAdultContent": false
     },
     {
@@ -3776,7 +3816,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/373/373-1782760977-2052849447.png"
         ],
-        "downloadsSinceLatestVersion": 393,
+        "downloadsSinceLatestVersion": 390,
         "ContainsAdultContent": false
     },
     {
@@ -3872,7 +3912,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/370/370-1782695782-902283936.png"
         ],
-        "downloadsSinceLatestVersion": 597,
+        "downloadsSinceLatestVersion": 594,
         "ContainsAdultContent": false
     },
     {
@@ -3906,7 +3946,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/369/369-1782659049-2022302119.jpg"
         ],
-        "downloadsSinceLatestVersion": 730,
+        "downloadsSinceLatestVersion": 722,
         "ContainsAdultContent": false
     },
     {
@@ -3929,7 +3969,7 @@
         "ReleaseDate": "2026-08-05T08:12:28.000Z",
         "SHA256": "e088c7ec1b0fb47f1541b2ab5cbc8dce8f4f51a6984ae8ca4eb0128e2005e133",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 22,
+        "downloadsSinceLatestVersion": 23,
         "dllNames": [
             "AiserOmniMod_CCL_public.dll"
         ],
@@ -4008,7 +4048,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/366/366-1782582137-1051220565.png"
         ],
-        "downloadsSinceLatestVersion": 75,
+        "downloadsSinceLatestVersion": 74,
         "ContainsAdultContent": false
     },
     {
@@ -4043,7 +4083,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/365/365-1783615377-1905207937.png"
         ],
-        "downloadsSinceLatestVersion": 62,
+        "downloadsSinceLatestVersion": 61,
         "ContainsAdultContent": false
     },
     {
@@ -4113,7 +4153,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/363/363-1782569252-846108014.png"
         ],
-        "downloadsSinceLatestVersion": 88,
+        "downloadsSinceLatestVersion": 87,
         "ContainsAdultContent": true
     },
     {
@@ -4202,7 +4242,7 @@
         "ReleaseDate": "2026-07-28T21:22:22.000Z",
         "SHA256": "c6519d8fbaf9b34a2679a3175c79aeece0a38f93b34e0ebe3141e03f5561486a",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 85,
+        "downloadsSinceLatestVersion": 81,
         "dllNames": [],
         "dllVersion": null,
         "dllVersions": {},
@@ -4249,7 +4289,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/353/353-1782425629-522987243.png"
         ],
-        "downloadsSinceLatestVersion": 148,
+        "downloadsSinceLatestVersion": 147,
         "ContainsAdultContent": false
     },
     {
@@ -4310,7 +4350,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/351/351-1782575541-1925819519.png"
         ],
-        "downloadsSinceLatestVersion": 254,
+        "downloadsSinceLatestVersion": 256,
         "ContainsAdultContent": false
     },
     {
@@ -4344,7 +4384,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/350/350-1782389193-1354873044.png"
         ],
-        "downloadsSinceLatestVersion": 712,
+        "downloadsSinceLatestVersion": 705,
         "ContainsAdultContent": false
     },
     {
@@ -4368,7 +4408,7 @@
         "dllSHA256s": {
             "Refill_Jetpack_with_Oil.dll": "17312dc4a103965d21d810caba88747f7b8754671324a2bcd40b5b374797e0fd"
         },
-        "downloadsSinceLatestVersion": 97,
+        "downloadsSinceLatestVersion": 96,
         "dllNames": [
             "Refill_Jetpack_with_Oil.dll"
         ],
@@ -4414,7 +4454,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/345/345-1782126793-1058793770.png"
         ],
-        "downloadsSinceLatestVersion": 120,
+        "downloadsSinceLatestVersion": 119,
         "ContainsAdultContent": false
     },
     {
@@ -4482,7 +4522,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/343/343-1782094326-847648231.png"
         ],
-        "downloadsSinceLatestVersion": 21,
+        "downloadsSinceLatestVersion": 22,
         "ContainsAdultContent": false
     },
     {
@@ -4516,7 +4556,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/342/342-1781953680-834650068.png"
         ],
-        "downloadsSinceLatestVersion": 2005,
+        "downloadsSinceLatestVersion": 1988,
         "ContainsAdultContent": false
     },
     {
@@ -4550,7 +4590,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/341/341-1781955629-789599736.png"
         ],
-        "downloadsSinceLatestVersion": 3887,
+        "downloadsSinceLatestVersion": 3735,
         "ContainsAdultContent": false
     },
     {
@@ -4580,7 +4620,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/340/340-1781943419-712108323.png"
         ],
-        "downloadsSinceLatestVersion": 334,
+        "downloadsSinceLatestVersion": 333,
         "ContainsAdultContent": false
     },
     {
@@ -4588,31 +4628,36 @@
         "Name": "Potato's Funny Thing",
         "Version": "1",
         "bepinexVersion": null,
-        "Description": "[b][size=4]Description[/size][/b]\n<br />[color=#d4d4d8]风格非常独特!不是CU风格(画风不一致)[/color]\n<br />[color=#d4d4d8]乐趣无穷![/color]\n<br />[color=#d4d4d8]Mod会越做越好! 请看更新.[/color]\n<br />[color=#d4d4d8]然后四月会更有趣!(四月一号)[/color]\n<br />万圣节会推出一个黄色玩意(Verity或者我的世界的恐怖模组的生物)\n<br />铜制物品!\n<br />PS:Casualties: Unknown=CU=铜\n<br />下个更新:食与石\n<br />警告:过于早期的版本!\n<br />[color=#d4d4d8]ENG[/color]\n<br />[color=#d4d4d8]Not Scav Prototype Style[/color]\n<br />Delight infinity!\n<br />Mod Will Make Better! Please See The Update.\n<br />And April Will Be Fun!(4/1)\n<br />Halloween Will Go On Yellow Things(Verity Or Minecraft Horror Mods Mob)\n<br />Copper Item!\n<br />PS:Casualties: Unknown=CU=Copper\n<br />Next Update:Food And Stone\n<br />Warning:Early Version!\n<br />[b][size=4]Installation instructions[/size][/b]\n<br />\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />假翡翠背包(只是个类似未知伤亡的背包,后续版本改名和材质重做)\n<br />铜背包(假翡翠背包升级版,但是已经不是锈铜了,因为我制作了不锈铜)\n<br />铜稿(打破只有金属工具和钛工具的问题.)\n<br />铜砍刀(打破只有金属工具和钛工具的问题.)\n<br />矿工头盔(来自[url=https://www.nexusmods.com/scavprototype/mods/142?tab=posts]一个Mod[/url]的评论的灵感,不是很亮,因为没有功能)\n<br />战斗头盔原型(来自饥荒头盔的灵感,木甲特有的防御)\n<br />减重石(灵感:[url=https://www.nexusmods.com/scavprototype/mods/136]Weight metal[/url] 不要扔出去!后续版本可能会削弱,但是不会削弱太多,会改成无限耐久但是缺点特多的近战工具.)\n<br />机器宝宝(以撒的结合彩蛋,低伤害)\n<br />黑刀(三角符文彩蛋武器)\n<br />减重砍刀(强度可能是长老杀手,类似饥荒的玻璃刀或者暗夜剑)\n<br />等其他各种有趣的东西!(有些是彩蛋方式)\n<br />计划物品\n<br />电脑(虽然没实装但是少数会让你卡顿的彩蛋 Oh My Pcccccccccccccccc)\n<br />铜刺背包(可以用攻击的工具类背包,但是方块伤害极低,和手部伤害一致,但是消耗体力少,计划制作,不过在某些东西做完后)\n<br />减重稿(要是更新这个东西之后减重石存在感就降低了,工具反而是代替者,因为-15的重量扔一下就飞起来了,可能需要以后的物品,减重玻璃钢)\n<br />钛背包(铜背包的后续升级版,但是部分功能和背包还没那么快实装.)\n<br />Gun M249(双关笑话彩蛋武器)\n<br />ENG\n<br />Fake jadeite pack(0.2.5 Will Rename And Texture Remake)\n<br />Copper Pack(A Copper Pack)\n<br />Copper Knife(Break The Only Metal Tools And Titanium Tools Problems)\n<br />Copper Pickaxe(Break The Only Metal Tools And Titanium Tools Problems)\n<br />Mining Helmet(Not Too Light. Because no feature the light.)\n<br />Combat Helmet Prototype(Just a Pig Skin And Rope. Because Can Crafting The Football Helmet.)\n<br />Weight Stone(Don't throw out!)\n<br />Robo-Baby(The Binding of Isaac: Rebirth Bonus Low Dmg!)\n<br />Weight Pickaxe\n<br />Black Knife(Deltarune Bonus)\n<br />Other Fun Thing!\n<br />Project\n<br />Titanium Pack(No Copper Pack. And Not Done Yet.)\n<br />Pc(Not Yet But Will Make You Game Stuck Just A Bonus. Oh My Pcccccccccccccccc)\n<br />Weight Machete\n<br />Gun M249(Pun Bonus)\n<br />[size=4][b]Requirements[/b][/size]\n<br />[size=3][color=#D4D4D8][url=https://www.nexusmods.com/scavprototype/mods/140]ICEneco's Custom Item API[/url][/color][/size]\n<br />[size=3][url=https://www.nexusmods.com/site/mods/115?tab=files]BepInEx[/url][/size]\n<br />[url=https://www.nexusmods.com/scavprototype/mods/32?tab=files]RshLib[/url]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />感谢给减重石的帮助:[url=https://www.nexusmods.com/profile/Elysian0166]Elysian0166[/url]\n<br />Thanks For Weight Stone Help:[url=https://www.nexusmods.com/profile/Elysian0166]Elysian0166[/url]\n<br />",
-        "Author": "Abutilon Potato",
+        "Description": "[b][size=4]Description[/size][/b]\n<br />[color=#d4d4d8]风格非常独特!不是CU风格(画风不一致)[/color]\n<br />[color=#d4d4d8]乐趣无穷![/color]\n<br />[color=#d4d4d8]Mod会越做越好! 请看更新.[/color]\n<br />[color=#d4d4d8]然后四月会更有趣!(四月一号)[/color]\n<br />万圣节会推出一个黄色玩意(Verity或者我的世界的恐怖模组的生物)\n<br />铜制物品!\n<br />PS:Casualties: Unknown=CU=铜\n<br />下个更新:食与石\n<br />警告:过于早期的版本!\n<br />[color=#d4d4d8]ENG[/color]\n<br />[color=#d4d4d8]Not Scav Prototype Style[/color]\n<br />Delight infinity!\n<br />Mod Will Make Better! Please See The Update.\n<br />And April Will Be Fun!(4/1)\n<br />Halloween Will Go On Yellow Things(Verity Or Minecraft Horror Mods Mob)\n<br />Copper Item!\n<br />PS:Casualties: Unknown=CU=Copper\n<br />Next Update:Food And Stone\n<br />Warning:Early Version!\n<br />[b][size=4]Installation instructions[/size][/b]\n<br />\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />假翡翠背包(只是个类似未知伤亡的背包,后续版本改名和材质重做)\n<br />铜背包(假翡翠背包升级版,但是已经不是锈铜了,因为我制作了不锈铜)\n<br />铜稿(打破只有金属工具和钛工具的问题.)\n<br />铜砍刀(打破只有金属工具和钛工具的问题.)\n<br />矿工头盔(来自[url=https://www.nexusmods.com/scavprototype/mods/142?tab=posts]一个Mod[/url]的评论的灵感,不是很亮,因为没有功能)\n<br />战斗头盔原型(来自饥荒头盔的灵感,木甲特有的防御)\n<br />减重石(灵感:[url=https://www.nexusmods.com/scavprototype/mods/136]Weight metal[/url] 不要扔出去!后续版本可能会削弱,但是不会削弱太多,会改成无限耐久但是缺点特多的近战工具.)\n<br />机器宝宝(以撒的结合彩蛋,低伤害)\n<br />黑刀(三角符文彩蛋武器)\n<br />减重砍刀(强度可能是长老杀手,类似饥荒的玻璃刀或者暗夜剑)\n<br />刺背包(可以攻击的工具类物品) \n<br />还有更多其他各种有趣的东西!(有些是彩蛋方式) \n<br />计划物品\n<br />电脑(虽然没实装但是少数会让你卡顿的彩蛋 Oh My Pcccccccccccccccc)\n<br />减重稿(要是更新这个东西之后减重石存在感就降低了,工具反而是代替者,因为-15的重量扔一下就飞起来了,可能需要以后的物品,减重玻璃钢) \n<br />钛背包(铜背包的后续升级版,但是背包还没那么快实装.)\n<br />Gun M249(双关笑话彩蛋武器)\n<br />ENG\n<br />Fake jadeite pack(0.2.5 Will Rename And Texture Remake)\n<br />Copper Pack(A Copper Pack)\n<br />Copper Knife(Break The Only Metal Tools And Titanium Tools Problems)\n<br />Copper Pickaxe(Break The Only Metal Tools And Titanium Tools Problems)\n<br />Mining Helmet(Not Too Light. Because no feature the light.)\n<br />Combat Helmet Prototype(Just a Pig Skin And Rope. Because Can Crafting The Football Helmet.)\n<br />Weight Stone(Don't throw out!)\n<br />Robo-Baby(The Binding of Isaac: Rebirth Bonus Low Dmg!)\n<br />Black Knife(Deltarune Bonus)\n<br />Weight Machete\n<br />And More Other Fun Thing!\n<br />Project\n<br />Titanium Pack(No Copper Pack. And Not Done Yet.)\n<br />Pc(Not Yet But Will Make You Game Stuck Just A Bonus. Oh My Pcccccccccccccccc)\n<br />Gun M249(Pun Bonus)\n<br />Weight Pickaxe\n<br />[size=4][b]Requirements[/b][/size]\n<br />[size=3][color=#D4D4D8][url=https://www.nexusmods.com/scavprototype/mods/140]ICEneco's Custom Item API[/url][/color][/size]\n<br />[size=3][url=https://www.nexusmods.com/site/mods/115?tab=files]BepInEx[/url][/size]\n<br />[url=https://www.nexusmods.com/scavprototype/mods/32?tab=files]RshLib[/url]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />感谢给减重石的帮助:[url=https://www.nexusmods.com/profile/Elysian0166]Elysian0166[/url]\n<br />Thanks For Weight Stone Help:[url=https://www.nexusmods.com/profile/Elysian0166]Elysian0166[/url]\n<br />",
+        "Author": "Abutil0nP0tat0",
         "Links": {
-            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/339/339-1782383165-2084993420.png",
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/339/339-1786011039-1783218598.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/339"
         },
-        "DownloadUrl": "nexus://scavprototype/339/1156",
+        "DownloadUrl": "nexus://scavprototype/339/1615",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 339,
         "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-08-06T08:47:30.000Z",
+        "ReleaseDate": "2026-08-06T08:47:30.000Z",
+        "SHA256": "6c1a69a337c5e62691d806541c71b9d3a9902344b2030dd4225a7c8714f6d652",
+        "dllSHA256s": {},
+        "downloadsSinceLatestVersion": 0,
         "dllNames": [],
         "dllVersion": null,
         "dllVersions": {},
         "Statistics": {
-            "Endorsements": 0,
-            "UniqueDownloads": 25,
-            "TotalDownloads": 57,
+            "Endorsements": 1,
+            "UniqueDownloads": 26,
+            "TotalDownloads": 60,
             "TotalViews": null
         },
         "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/339/339-1786011039-1783218598.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/339/339-1782383165-2084993420.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/339/339-1782213111-1696319904.png"
-        ],
-        "downloadsSinceLatestVersion": 16,
-        "ContainsAdultContent": false
+        ]
     },
     {
         "Id": "nexus-338",
@@ -4645,7 +4690,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/338/338-1781889308-891665935.png"
         ],
-        "downloadsSinceLatestVersion": 1489,
+        "downloadsSinceLatestVersion": 1477,
         "ContainsAdultContent": false
     },
     {
@@ -4742,7 +4787,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/335/335-1781836162-1391051987.png"
         ],
-        "downloadsSinceLatestVersion": 92,
+        "downloadsSinceLatestVersion": 91,
         "ContainsAdultContent": false
     },
     {
@@ -4810,7 +4855,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/333/333-1781826773-1119722687.png"
         ],
-        "downloadsSinceLatestVersion": 501,
+        "downloadsSinceLatestVersion": 499,
         "ContainsAdultContent": false
     },
     {
@@ -4844,7 +4889,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/332/332-1781807041-50793540.png"
         ],
-        "downloadsSinceLatestVersion": 262,
+        "downloadsSinceLatestVersion": 260,
         "ContainsAdultContent": false
     },
     {
@@ -4878,7 +4923,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/331/331-1781804704-899005156.png"
         ],
-        "downloadsSinceLatestVersion": 1985,
+        "downloadsSinceLatestVersion": 1980,
         "ContainsAdultContent": false
     },
     {
@@ -4912,7 +4957,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/330/330-1782061596-1490131609.png"
         ],
-        "downloadsSinceLatestVersion": 440,
+        "downloadsSinceLatestVersion": 437,
         "ContainsAdultContent": false
     },
     {
@@ -4946,7 +4991,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/329/329-1781804013-1288802471.png"
         ],
-        "downloadsSinceLatestVersion": 89,
+        "downloadsSinceLatestVersion": 87,
         "ContainsAdultContent": false
     },
     {
@@ -5038,7 +5083,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 87,
+        "downloadsSinceLatestVersion": 79,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -5086,7 +5131,7 @@
             "GunsawGenetics.dll": "5c1014320b4faec7967332c1b3b4fc404b856ee1b9faf135ecc34faf36d352dc",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 591,
+        "downloadsSinceLatestVersion": 597,
         "dllNames": [
             "body_sprite_replacer.dll",
             "GunsawGenetics.dll",
@@ -5140,7 +5185,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/323/323-1781736577-1858301084.png"
         ],
-        "downloadsSinceLatestVersion": 154,
+        "downloadsSinceLatestVersion": 153,
         "ContainsAdultContent": false
     },
     {
@@ -5211,7 +5256,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/321/321-1784200547-1645500571.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/321/321-1781702038-14501740.png"
         ],
-        "downloadsSinceLatestVersion": 141,
+        "downloadsSinceLatestVersion": 140,
         "ContainsAdultContent": false
     },
     {
@@ -5236,7 +5281,7 @@
         "dllSHA256s": {
             "SimpleQoL.dll": "19619aaaa14fdb421bc912408af47aff9951b3b19660ad64db9d264ccf4521ef"
         },
-        "downloadsSinceLatestVersion": 12,
+        "downloadsSinceLatestVersion": 13,
         "dllNames": [
             "SimpleQoL.dll"
         ],
@@ -5287,7 +5332,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/319/319-1781651073-1401202522.png"
         ],
-        "downloadsSinceLatestVersion": 133,
+        "downloadsSinceLatestVersion": 134,
         "ContainsAdultContent": false
     },
     {
@@ -5385,7 +5430,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/315/315-1781604116-2000774647.png"
         ],
-        "downloadsSinceLatestVersion": 96,
+        "downloadsSinceLatestVersion": 95,
         "ContainsAdultContent": false
     },
     {
@@ -5557,7 +5602,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/231/231-1781443812-468251665.png"
         ],
-        "downloadsSinceLatestVersion": 515,
+        "downloadsSinceLatestVersion": 514,
         "ContainsAdultContent": false
     },
     {
@@ -5621,7 +5666,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/229/229-1781437531-1671543590.png"
         ],
-        "downloadsSinceLatestVersion": 368,
+        "downloadsSinceLatestVersion": 365,
         "ContainsAdultContent": false
     },
     {
@@ -5645,7 +5690,7 @@
         "dllSHA256s": {
             "VforWhiningMPAddon.dll": "443dadc0d76759dfd0aa809d5c29587dfdc26f8864e78e0743cc2c37a14764e4"
         },
-        "downloadsSinceLatestVersion": 25,
+        "downloadsSinceLatestVersion": 19,
         "dllNames": [
             "VforWhiningMPAddon.dll"
         ],
@@ -5764,7 +5809,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/225/225-1781367309-52196103.png"
         ],
-        "downloadsSinceLatestVersion": 71,
+        "downloadsSinceLatestVersion": 70,
         "ContainsAdultContent": false
     },
     {
@@ -5794,7 +5839,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/222/222-1781243648-125887009.png"
         ],
-        "downloadsSinceLatestVersion": 292,
+        "downloadsSinceLatestVersion": 291,
         "ContainsAdultContent": false
     },
     {
@@ -5828,7 +5873,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/221/221-1781242157-1312002311.jpg"
         ],
-        "downloadsSinceLatestVersion": 386,
+        "downloadsSinceLatestVersion": 383,
         "ContainsAdultContent": false
     },
     {
@@ -5930,7 +5975,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/218/218-1781197587-1609608551.png"
         ],
-        "downloadsSinceLatestVersion": 175,
+        "downloadsSinceLatestVersion": 173,
         "ContainsAdultContent": false
     },
     {
@@ -5964,7 +6009,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/217/217-1781195405-2127154004.png"
         ],
-        "downloadsSinceLatestVersion": 436,
+        "downloadsSinceLatestVersion": 433,
         "ContainsAdultContent": false
     },
     {
@@ -6038,7 +6083,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/215/215-1781192247-181239385.png"
         ],
-        "downloadsSinceLatestVersion": 1129,
+        "downloadsSinceLatestVersion": 1120,
         "ContainsAdultContent": false
     },
     {
@@ -6072,7 +6117,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/214/214-1781123241-1496234025.png"
         ],
-        "downloadsSinceLatestVersion": 520,
+        "downloadsSinceLatestVersion": 518,
         "ContainsAdultContent": false
     },
     {
@@ -6106,7 +6151,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/212/212-1781112885-272250664.png"
         ],
-        "downloadsSinceLatestVersion": 457,
+        "downloadsSinceLatestVersion": 452,
         "ContainsAdultContent": false
     },
     {
@@ -6142,7 +6187,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/211/211-1781100376-1436307017.png"
         ],
-        "downloadsSinceLatestVersion": 106,
+        "downloadsSinceLatestVersion": 104,
         "ContainsAdultContent": false
     },
     {
@@ -6176,7 +6221,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/210/210-1781095853-2050324122.png"
         ],
-        "downloadsSinceLatestVersion": 309,
+        "downloadsSinceLatestVersion": 308,
         "ContainsAdultContent": false
     },
     {
@@ -6278,7 +6323,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/206/206-1781022550-1666538465.png"
         ],
-        "downloadsSinceLatestVersion": 311,
+        "downloadsSinceLatestVersion": 308,
         "ContainsAdultContent": false
     },
     {
@@ -6302,7 +6347,7 @@
         "dllSHA256s": {
             "Magazine Merge.dll": "ea7e268b97c6f18d451ea3e96626b838f1d61fbb890bb76e927b2559019d9882"
         },
-        "downloadsSinceLatestVersion": 98,
+        "downloadsSinceLatestVersion": 94,
         "dllNames": [
             "Magazine Merge.dll"
         ],
@@ -6414,7 +6459,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/201/201-1780968454-848871792.png"
         ],
-        "downloadsSinceLatestVersion": 200,
+        "downloadsSinceLatestVersion": 199,
         "ContainsAdultContent": true
     },
     {
@@ -6482,7 +6527,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/197/197-1780926539-1822683445.jpg"
         ],
-        "downloadsSinceLatestVersion": 1833,
+        "downloadsSinceLatestVersion": 1823,
         "ContainsAdultContent": false
     },
     {
@@ -6580,7 +6625,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/194/194-1780896592-646519212.png"
         ],
-        "downloadsSinceLatestVersion": 714,
+        "downloadsSinceLatestVersion": 706,
         "ContainsAdultContent": false
     },
     {
@@ -6610,7 +6655,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/193/193-1780896368-154290010.jpg"
         ],
-        "downloadsSinceLatestVersion": 1215,
+        "downloadsSinceLatestVersion": 1212,
         "ContainsAdultContent": false
     },
     {
@@ -6644,7 +6689,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/192/192-1780870909-1739319218.png"
         ],
-        "downloadsSinceLatestVersion": 282,
+        "downloadsSinceLatestVersion": 280,
         "ContainsAdultContent": false
     },
     {
@@ -6699,7 +6744,7 @@
         "ReleaseDate": "2026-07-27T15:23:21.000Z",
         "SHA256": "14f39c5ae4ed747c02e697da74f123cd260c158f4ff831f9cc1ca7c2c264e9bf",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 3,
         "dllNames": [],
         "dllVersion": null,
         "dllVersions": {},
@@ -6745,7 +6790,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/189/189-1780819713-1528445657.png"
         ],
-        "downloadsSinceLatestVersion": 166,
+        "downloadsSinceLatestVersion": 167,
         "ContainsAdultContent": false
     },
     {
@@ -6779,7 +6824,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/188/188-1781324957-474273888.png"
         ],
-        "downloadsSinceLatestVersion": 102,
+        "downloadsSinceLatestVersion": 100,
         "ContainsAdultContent": false
     },
     {
@@ -6815,7 +6860,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/186/186-1780711480-567000893.png"
         ],
-        "downloadsSinceLatestVersion": 454,
+        "downloadsSinceLatestVersion": 451,
         "ContainsAdultContent": false
     },
     {
@@ -6849,7 +6894,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/183/183-1780664930-1820743226.png"
         ],
-        "downloadsSinceLatestVersion": 457,
+        "downloadsSinceLatestVersion": 451,
         "ContainsAdultContent": false
     },
     {
@@ -6947,7 +6992,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/179/179-1780650207-1195298539.png"
         ],
-        "downloadsSinceLatestVersion": 843,
+        "downloadsSinceLatestVersion": 836,
         "ContainsAdultContent": false
     },
     {
@@ -6981,7 +7026,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/178/178-1780648400-583645774.png"
         ],
-        "downloadsSinceLatestVersion": 1126,
+        "downloadsSinceLatestVersion": 1098,
         "ContainsAdultContent": true
     },
     {
@@ -7015,7 +7060,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/177/177-1780641085-1724719855.png"
         ],
-        "downloadsSinceLatestVersion": 472,
+        "downloadsSinceLatestVersion": 468,
         "ContainsAdultContent": false
     },
     {
@@ -7049,7 +7094,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/175/175-1780656965-274018606.png"
         ],
-        "downloadsSinceLatestVersion": 473,
+        "downloadsSinceLatestVersion": 471,
         "ContainsAdultContent": false
     },
     {
@@ -7074,7 +7119,7 @@
         "dllSHA256s": {
             "MoreDialogues.dll": "940ace94c1b036ebd6b4230b4a3bad95386a7888b18674854e177bd1f268f390"
         },
-        "downloadsSinceLatestVersion": 13,
+        "downloadsSinceLatestVersion": 14,
         "dllNames": [
             "MoreDialogues.dll"
         ],
@@ -7123,7 +7168,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/144/144-1780565762-615146688.png"
         ],
-        "downloadsSinceLatestVersion": 1863,
+        "downloadsSinceLatestVersion": 1855,
         "ContainsAdultContent": false
     },
     {
@@ -7157,7 +7202,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/142/142-1780600683-1432498920.png"
         ],
-        "downloadsSinceLatestVersion": 79,
+        "downloadsSinceLatestVersion": 77,
         "ContainsAdultContent": false
     },
     {
@@ -7191,7 +7236,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/141/141-1780447180-975560502.png"
         ],
-        "downloadsSinceLatestVersion": 133,
+        "downloadsSinceLatestVersion": 132,
         "ContainsAdultContent": false
     },
     {
@@ -7215,7 +7260,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 256,
+        "downloadsSinceLatestVersion": 251,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -7265,7 +7310,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/139/139-1780396981-504852775.png"
         ],
-        "downloadsSinceLatestVersion": 1479,
+        "downloadsSinceLatestVersion": 1465,
         "ContainsAdultContent": false
     },
     {
@@ -7367,7 +7412,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/134/134-1780587907-248370715.jpg"
         ],
-        "downloadsSinceLatestVersion": 466,
+        "downloadsSinceLatestVersion": 464,
         "ContainsAdultContent": false
     },
     {
@@ -7499,7 +7544,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/130/130-1780136517-211162896.jpg"
         ],
-        "downloadsSinceLatestVersion": 577,
+        "downloadsSinceLatestVersion": 570,
         "ContainsAdultContent": false
     },
     {
@@ -7529,7 +7574,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/129/129-1780116288-122615439.png"
         ],
-        "downloadsSinceLatestVersion": 133,
+        "downloadsSinceLatestVersion": 134,
         "ContainsAdultContent": false
     },
     {
@@ -7559,7 +7604,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/127/127-1780053823-1433053049.png"
         ],
-        "downloadsSinceLatestVersion": 243,
+        "downloadsSinceLatestVersion": 242,
         "ContainsAdultContent": false
     },
     {
@@ -7627,7 +7672,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/125/125-1780128521-2067417973.png"
         ],
-        "downloadsSinceLatestVersion": 986,
+        "downloadsSinceLatestVersion": 979,
         "ContainsAdultContent": false
     },
     {
@@ -7695,7 +7740,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/123/123-1779978388-1548305756.jpg"
         ],
-        "downloadsSinceLatestVersion": 235,
+        "downloadsSinceLatestVersion": 234,
         "ContainsAdultContent": false
     },
     {
@@ -7729,7 +7774,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/122/122-1779962803-1133798693.png"
         ],
-        "downloadsSinceLatestVersion": 778,
+        "downloadsSinceLatestVersion": 765,
         "ContainsAdultContent": false
     },
     {
@@ -7797,7 +7842,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/119/119-1779937346-1764286905.png"
         ],
-        "downloadsSinceLatestVersion": 461,
+        "downloadsSinceLatestVersion": 457,
         "ContainsAdultContent": false
     },
     {
@@ -7832,7 +7877,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/118/118-1779906438-1704485820.jpg"
         ],
-        "downloadsSinceLatestVersion": 3490,
+        "downloadsSinceLatestVersion": 3440,
         "ContainsAdultContent": false
     },
     {
@@ -7866,7 +7911,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/117/117-1779944984-827042402.png"
         ],
-        "downloadsSinceLatestVersion": 670,
+        "downloadsSinceLatestVersion": 671,
         "ContainsAdultContent": false
     },
     {
@@ -8002,7 +8047,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/112/112-1779872103-297540381.jpg"
         ],
-        "downloadsSinceLatestVersion": 268,
+        "downloadsSinceLatestVersion": 266,
         "ContainsAdultContent": false
     },
     {
@@ -8134,7 +8179,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/108/108-1779813428-462591877.png"
         ],
-        "downloadsSinceLatestVersion": 191,
+        "downloadsSinceLatestVersion": 189,
         "ContainsAdultContent": false
     },
     {
@@ -8164,7 +8209,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/107/107-1779805966-1871725782.png"
         ],
-        "downloadsSinceLatestVersion": 124,
+        "downloadsSinceLatestVersion": 123,
         "ContainsAdultContent": false
     },
     {
@@ -8198,7 +8243,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/106/106-1779789815-1678588800.png"
         ],
-        "downloadsSinceLatestVersion": 552,
+        "downloadsSinceLatestVersion": 553,
         "ContainsAdultContent": false
     },
     {
@@ -8232,7 +8277,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/105/105-1781462136-2089875456.png"
         ],
-        "downloadsSinceLatestVersion": 758,
+        "downloadsSinceLatestVersion": 751,
         "ContainsAdultContent": false
     },
     {
@@ -8322,7 +8367,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/95/95-1779750969-1262857550.png"
         ],
-        "downloadsSinceLatestVersion": 581,
+        "downloadsSinceLatestVersion": 580,
         "ContainsAdultContent": false
     },
     {
@@ -8424,7 +8469,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/90/90-1779609472-1510506523.png"
         ],
-        "downloadsSinceLatestVersion": 584,
+        "downloadsSinceLatestVersion": 583,
         "ContainsAdultContent": false
     },
     {
@@ -8522,7 +8567,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/85/85-1779443536-1713141104.png"
         ],
-        "downloadsSinceLatestVersion": 958,
+        "downloadsSinceLatestVersion": 956,
         "ContainsAdultContent": false
     },
     {
@@ -8556,7 +8601,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/84/84-1779440220-1963183003.png"
         ],
-        "downloadsSinceLatestVersion": 309,
+        "downloadsSinceLatestVersion": 308,
         "ContainsAdultContent": false
     },
     {
@@ -8593,7 +8638,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/83/83-1779439232-1463014514.png"
         ],
-        "downloadsSinceLatestVersion": 317,
+        "downloadsSinceLatestVersion": 316,
         "ContainsAdultContent": false
     },
     {
@@ -8618,7 +8663,7 @@
         "dllSHA256s": {
             "CuSaveManager.dll": "c97db5074e41f73e957cd2a56d4b33bf3403ebe93b228a3947a00825d7d06099"
         },
-        "downloadsSinceLatestVersion": 31,
+        "downloadsSinceLatestVersion": 32,
         "dllNames": [
             "CuSaveManager.dll"
         ],
@@ -8663,7 +8708,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/81/81-1779461968-364104366.png"
         ],
-        "downloadsSinceLatestVersion": 379,
+        "downloadsSinceLatestVersion": 377,
         "ContainsAdultContent": false
     },
     {
@@ -8693,7 +8738,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/80/80-1779382104-1178025538.png"
         ],
-        "downloadsSinceLatestVersion": 457,
+        "downloadsSinceLatestVersion": 456,
         "ContainsAdultContent": false
     },
     {
@@ -8727,7 +8772,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/79/79-1779295857-1567053664.png"
         ],
-        "downloadsSinceLatestVersion": 376,
+        "downloadsSinceLatestVersion": 375,
         "ContainsAdultContent": false
     },
     {
@@ -8795,7 +8840,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/77/77-1779295239-1295049607.png"
         ],
-        "downloadsSinceLatestVersion": 1608,
+        "downloadsSinceLatestVersion": 1597,
         "ContainsAdultContent": false
     },
     {
@@ -8829,7 +8874,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/76/76-1779294909-1029054800.png"
         ],
-        "downloadsSinceLatestVersion": 444,
+        "downloadsSinceLatestVersion": 443,
         "ContainsAdultContent": false
     },
     {
@@ -8863,7 +8908,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/75/75-1779280428-390255713.png"
         ],
-        "downloadsSinceLatestVersion": 3835,
+        "downloadsSinceLatestVersion": 3811,
         "ContainsAdultContent": false
     },
     {
@@ -8897,7 +8942,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/74/74-1779219898-1150268199.png"
         ],
-        "downloadsSinceLatestVersion": 10310,
+        "downloadsSinceLatestVersion": 10154,
         "ContainsAdultContent": false
     },
     {
@@ -8931,7 +8976,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/73/73-1779214039-1207692528.png"
         ],
-        "downloadsSinceLatestVersion": 2485,
+        "downloadsSinceLatestVersion": 2474,
         "ContainsAdultContent": false
     },
     {
@@ -8965,7 +9010,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/72/72-1779371503-521443026.png"
         ],
-        "downloadsSinceLatestVersion": 1630,
+        "downloadsSinceLatestVersion": 1624,
         "ContainsAdultContent": false
     },
     {
@@ -8999,7 +9044,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/71/71-1779163807-1592403264.jpg"
         ],
-        "downloadsSinceLatestVersion": 611,
+        "downloadsSinceLatestVersion": 608,
         "ContainsAdultContent": false
     },
     {
@@ -9023,7 +9068,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 129,
+        "downloadsSinceLatestVersion": 120,
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
         ],
@@ -9074,7 +9119,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/69/69-1779806023-1700655876.png"
         ],
-        "downloadsSinceLatestVersion": 1936,
+        "downloadsSinceLatestVersion": 1878,
         "ContainsAdultContent": false
     },
     {
@@ -9104,7 +9149,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/68/68-1779084698-2042217806.png"
         ],
-        "downloadsSinceLatestVersion": 556,
+        "downloadsSinceLatestVersion": 555,
         "ContainsAdultContent": false
     },
     {
@@ -9150,7 +9195,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 39810,
+        "downloadsSinceLatestVersion": 39382,
         "ContainsAdultContent": false
     },
     {
@@ -9184,7 +9229,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/66/66-1778936124-997772655.png"
         ],
-        "downloadsSinceLatestVersion": 164,
+        "downloadsSinceLatestVersion": 165,
         "ContainsAdultContent": true
     },
     {
@@ -9249,7 +9294,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/64/64-1783401278-550500355.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/64/64-1781431558-1252655252.png"
         ],
-        "downloadsSinceLatestVersion": 436,
+        "downloadsSinceLatestVersion": 430,
         "ContainsAdultContent": false
     },
     {
@@ -9283,7 +9328,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/63/63-1778756179-120613990.jpg"
         ],
-        "downloadsSinceLatestVersion": 502,
+        "downloadsSinceLatestVersion": 501,
         "ContainsAdultContent": false
     },
     {
@@ -9317,7 +9362,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/60/60-1778681275-472147762.png"
         ],
-        "downloadsSinceLatestVersion": 661,
+        "downloadsSinceLatestVersion": 652,
         "ContainsAdultContent": false
     },
     {
@@ -9347,7 +9392,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/59/59-1778919861-607954699.png"
         ],
-        "downloadsSinceLatestVersion": 901,
+        "downloadsSinceLatestVersion": 894,
         "ContainsAdultContent": false
     },
     {
@@ -9381,7 +9426,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/57/57-1778473543-867346252.gif"
         ],
-        "downloadsSinceLatestVersion": 561,
+        "downloadsSinceLatestVersion": 559,
         "ContainsAdultContent": false
     },
     {
@@ -9415,7 +9460,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/55/55-1778394693-1979213792.png"
         ],
-        "downloadsSinceLatestVersion": 983,
+        "downloadsSinceLatestVersion": 978,
         "ContainsAdultContent": false
     },
     {
@@ -9449,7 +9494,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/53/53-1778319171-1022189141.png"
         ],
-        "downloadsSinceLatestVersion": 2027,
+        "downloadsSinceLatestVersion": 2015,
         "ContainsAdultContent": false
     },
     {
@@ -9483,7 +9528,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/52/52-1778256892-1884228375.png"
         ],
-        "downloadsSinceLatestVersion": 563,
+        "downloadsSinceLatestVersion": 561,
         "ContainsAdultContent": true
     },
     {
@@ -9513,7 +9558,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/51/51-1778255821-1909469810.png"
         ],
-        "downloadsSinceLatestVersion": 330,
+        "downloadsSinceLatestVersion": 329,
         "ContainsAdultContent": false
     },
     {
@@ -9650,7 +9695,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/45/45-1778110420-212852018.png"
         ],
-        "downloadsSinceLatestVersion": 471,
+        "downloadsSinceLatestVersion": 470,
         "ContainsAdultContent": false
     },
     {
@@ -9715,7 +9760,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/43/43-1777981839-1948096663.png"
         ],
-        "downloadsSinceLatestVersion": 70,
+        "downloadsSinceLatestVersion": 67,
         "ContainsAdultContent": false
     },
     {
@@ -9749,7 +9794,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/42/42-1777878290-2130569810.png"
         ],
-        "downloadsSinceLatestVersion": 993,
+        "downloadsSinceLatestVersion": 991,
         "ContainsAdultContent": false
     },
     {
@@ -9807,7 +9852,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "15f047a0ed401af24d49193439e29bbab2f1a37c64a5a6e22f1cadfa65b17ccd"
         },
-        "downloadsSinceLatestVersion": 854,
+        "downloadsSinceLatestVersion": 815,
         "dllNames": [
             "prosthetics.dll"
         ],
@@ -9848,7 +9893,7 @@
         "dllSHA256s": {
             "ReGrowthSerums.dll": "af97bbd0388171313fbb991e0b4b5c7f0a3e375035e8be8a3a5cf9e73e09b9a0"
         },
-        "downloadsSinceLatestVersion": 53,
+        "downloadsSinceLatestVersion": 39,
         "dllNames": [
             "ReGrowthSerums.dll"
         ],
@@ -9888,7 +9933,7 @@
         "dllSHA256s": {
             "bepinex_soundmod.dll": "d3e2a099cabac465faee24b54f896d32a3f7b7dacc8d712de5866e1eaa194c98"
         },
-        "downloadsSinceLatestVersion": 18,
+        "downloadsSinceLatestVersion": 16,
         "dllNames": [
             "bepinex_soundmod.dll"
         ],
@@ -9997,7 +10042,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/34/34-1777531761-1128577695.png"
         ],
-        "downloadsSinceLatestVersion": 86,
+        "downloadsSinceLatestVersion": 84,
         "ContainsAdultContent": false
     },
     {
@@ -10031,7 +10076,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/33/33-1781962520-833987967.png"
         ],
-        "downloadsSinceLatestVersion": 549,
+        "downloadsSinceLatestVersion": 544,
         "ContainsAdultContent": false
     },
     {
@@ -10065,7 +10110,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/32/32-1777285860-206331044.png"
         ],
-        "downloadsSinceLatestVersion": 3455,
+        "downloadsSinceLatestVersion": 3437,
         "ContainsAdultContent": false
     },
     {
@@ -10124,7 +10169,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/31/31-1777215394-1750634006.png"
         ],
-        "downloadsSinceLatestVersion": 3291,
+        "downloadsSinceLatestVersion": 3275,
         "ContainsAdultContent": false
     },
     {
@@ -10158,7 +10203,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/30/30-1777206636-1608729297.png"
         ],
-        "downloadsSinceLatestVersion": 1318,
+        "downloadsSinceLatestVersion": 1315,
         "ContainsAdultContent": false
     },
     {
@@ -10192,7 +10237,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/29/29-1777200077-916525135.png"
         ],
-        "downloadsSinceLatestVersion": 584,
+        "downloadsSinceLatestVersion": 583,
         "ContainsAdultContent": false
     },
     {
@@ -10319,7 +10364,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/26/26-1777030858-1473263070.png"
         ],
-        "downloadsSinceLatestVersion": 561,
+        "downloadsSinceLatestVersion": 560,
         "ContainsAdultContent": false
     },
     {
@@ -10451,7 +10496,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/22/22-1776403659-1331756269.jpg"
         ],
-        "downloadsSinceLatestVersion": 104,
+        "downloadsSinceLatestVersion": 103,
         "ContainsAdultContent": false
     },
     {
@@ -10485,7 +10530,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/21/21-1776048067-1190830739.png"
         ],
-        "downloadsSinceLatestVersion": 296,
+        "downloadsSinceLatestVersion": 294,
         "ContainsAdultContent": false
     },
     {
@@ -10587,7 +10632,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/18/18-1774031472-1359870539.png"
         ],
-        "downloadsSinceLatestVersion": 1255,
+        "downloadsSinceLatestVersion": 1253,
         "ContainsAdultContent": false
     },
     {
@@ -10611,7 +10656,7 @@
         "dllSHA256s": {
             "LastStandCMD.dll": "95ecc28a3078ea619e8f54f50fb1136f23ec16226545299e68ec00756cec4ad0"
         },
-        "downloadsSinceLatestVersion": 13,
+        "downloadsSinceLatestVersion": 12,
         "dllNames": [
             "LastStandCMD.dll"
         ],
@@ -10662,7 +10707,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/16/16-1773849358-1960763076.jpg"
         ],
-        "downloadsSinceLatestVersion": 704,
+        "downloadsSinceLatestVersion": 701,
         "ContainsAdultContent": false
     },
     {
@@ -10696,7 +10741,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/15/15-1778431291-964052521.png"
         ],
-        "downloadsSinceLatestVersion": 3945,
+        "downloadsSinceLatestVersion": 3926,
         "ContainsAdultContent": false
     },
     {
@@ -10730,7 +10775,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/14/14-1773560042-2041331355.png"
         ],
-        "downloadsSinceLatestVersion": 131,
+        "downloadsSinceLatestVersion": 130,
         "ContainsAdultContent": false
     },
     {
@@ -10828,7 +10873,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/11/11-1772179831-1928073546.png"
         ],
-        "downloadsSinceLatestVersion": 436,
+        "downloadsSinceLatestVersion": 435,
         "ContainsAdultContent": false
     },
     {
@@ -10862,7 +10907,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/9/9-1771572802-484129458.png"
         ],
-        "downloadsSinceLatestVersion": 1461,
+        "downloadsSinceLatestVersion": 1448,
         "ContainsAdultContent": false
     },
     {
@@ -10928,7 +10973,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/7/7-1771267944-357525261.png"
         ],
-        "downloadsSinceLatestVersion": 5279,
+        "downloadsSinceLatestVersion": 5198,
         "ContainsAdultContent": false
     },
     {
@@ -11101,7 +11146,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/1/1-1762314234-97148378.png"
         ],
-        "downloadsSinceLatestVersion": 2179,
+        "downloadsSinceLatestVersion": 2176,
         "ContainsAdultContent": false
     }
 ]

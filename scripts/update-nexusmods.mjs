@@ -1,4 +1,4 @@
-import { mkdir, mkdtemp, readFile, rm, stat, writeFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import { createReadStream, createWriteStream } from "node:fs";
 import { createHash } from "node:crypto";
 import os from "node:os";
@@ -16,6 +16,7 @@ const __dirname = path.dirname(__filename);
 const SCRIPT_ROOT = path.resolve(__dirname, "..");
 const REPO_ROOT = await resolveRepoRoot();
 const NEXUSMODS_PATH = path.join(REPO_ROOT, "nexusmods.json");
+const BADGES_PATH = path.join(REPO_ROOT, "badges");
 const PACKAGE_PATH = path.join(REPO_ROOT, "package.json");
 const TEMP_ROOT = path.join(os.tmpdir(), "metadata-nexusmods");
 
@@ -37,6 +38,7 @@ const DISCORD_COLORS = {
 };
 const DISCORD_USERNAME = "Nexus Mod Updates";
 const DISCORD_AVATAR_URL = "https://media.discordapp.net/attachments/1360921920530546971/1519722372012310640/favicon.png?ex=6a3e9740&is=6a3d45c0&hm=ced53232a41abfd5ed21c3d32c3df5eac5a76a457399ba19e35f452059195ce3&=&format=webp&quality=lossless";
+const NEXUS_MODS_LOGO_SVG = '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M17.376 0c-.993 0-2.18.686-2.907 1.182-1.676-.36-4.036-.545-6.787.635-1.365-.513-2.425-.562-3.32-.488a2.16 2.16 0 0 0-1.27.429c-.33.22-2.788 2.69-3.069 4.652C-.15 7.508.68 8.932 1.218 9.718c-.44 1.76-.2 4.572.517 6.188-.353 1.041-.713 2.089-.664 3.205.01.584.061 1.188.398 1.684C1.72 21.19 4.528 24 6.545 24c.957 0 1.93-.428 3.07-1.24 2.16.383 4.402.348 6.448-.532 2.573 1.001 4.224.625 4.84.162.587-.457 2.826-2.915 3.07-4.622.1-.672-.023-1.638-1.226-3.397a10.983 10.983 0 0 0-.501-6.455c.396-1.069.673-2.188.59-3.337-.015-.68-.221-1.167-.487-1.507-.209-.335-2.415-2.39-4.028-2.91A3.105 3.105 0 0 0 17.376 0m-.03 2.082c.65.015 2.155 1.093 3.01 1.906l.355.34c-.959-.163-2.125.428-3.26 1.55a10.28 10.28 0 0 0-1.358 1.595c-.28.384-.517.768-.753 1.285l1.18.635-3.895 1.477-1.122-4.18 1.033.547c1.358-3.102 2.524-3.973 3.232-4.416h.015a5.12 5.12 0 0 1 1.49-.724zM12 3.065a8.932 8.932 0 0 1 2.22.279 7.67 7.67 0 0 0-.42.488 8.403 8.403 0 0 0-1.8-.196 8.336 8.336 0 0 0-5.897 2.432 7.86 7.86 0 0 1-.37-.433A8.905 8.905 0 0 1 12 3.065m-7.076.305c.71-.002 1.309.127 2.2.466a9.526 9.526 0 0 0-1.713 1.337c-.327-.542-.624-1.156-.488-1.803m-.606.042c-.162.96.428 2.126 1.55 3.264.457.487 1.003.945 1.594 1.358.383.281.767.517 1.283.754l.62-1.182 1.49 3.914-4.176 1.122.546-1.033c-3.099-1.36-3.969-2.526-4.412-3.235v-.015a5.144 5.144 0 0 1-.723-1.491l-.015-.074c.015-.65 1.092-2.156 1.904-3.013Zm16.035 1.483a1.259 1.259 0 0 1 .26.015l.14.023a5.05 5.05 0 0 1-.13 1.137v.015c-.1.383-.228.765-.377 1.148a9.526 9.526 0 0 0-1.346-1.776c.547-.357 1.051-.546 1.453-.562M18.43 5.8a8.903 8.903 0 0 1 2.506 6.2 8.937 8.937 0 0 1-.27 2.183 7.658 7.658 0 0 0-.488-.425A8.407 8.407 0 0 0 20.364 12 8.334 8.334 0 0 0 18 6.173a7.904 7.904 0 0 1 .429-.373M3.315 9.905c.157.148.319.29.488.425A8.417 8.417 0 0 0 3.636 12c0 2.248.887 4.286 2.327 5.788a8.11 8.11 0 0 1-.426.376A8.902 8.902 0 0 1 3.065 12a8.937 8.937 0 0 1 .25-2.095m13.988 1.541-.546 1.034c3.098 1.359 3.969 2.526 4.412 3.235v.014c.34.488.575.99.723 1.492l.014.074c-.014.65-1.092 2.156-1.903 3.013l-.34.354c.163-.96-.427-2.127-1.549-3.264a10.298 10.298 0 0 0-1.594-1.359 7.008 7.008 0 0 0-1.283-.753l-.605 1.152-1.505-3.87zm-6.006 1.684 1.121 4.18-1.033-.547c-1.357 3.102-2.523 3.973-3.231 4.416h-.015c-.487.34-.989.576-1.49.724l-.074.015c-.65-.015-2.154-1.093-3.01-1.906l-.354-.34c.959.163 2.124-.428 3.26-1.55.488-.458.945-1.004 1.358-1.595.28-.384.517-.768.753-1.285l-1.166-.635ZM3.72 16.663A9.526 9.526 0 0 0 5.086 18.5c-.697.47-1.33.665-1.777.59l-.138-.024c0-.367.038-.748.128-1.137v-.015c.11-.417.254-.835.42-1.252m14.131 1.314c.129.14.253.283.372.43A8.904 8.904 0 0 1 12 20.936a8.932 8.932 0 0 1-2.282-.296 7.757 7.757 0 0 0 .417-.487 8.335 8.335 0 0 0 7.716-2.175m.696.889c.43.666.607 1.267.534 1.698l-.023.138a5.034 5.034 0 0 1-1.136-.128h-.014a10.718 10.718 0 0 1-1.114-.366 9.526 9.526 0 0 0 1.753-1.342"/></svg>';
 const OWNED_FIELDS = new Set([
   "Id",
   "Name",
@@ -206,15 +208,130 @@ async function main() {
     ...[...entryByKey.values()].sort(compareEntries),
   ];
   const nextJson = `${JSON.stringify(nextEntries, null, 4)}\n`;
-  const currentJson = await readFile(NEXUSMODS_PATH, "utf8");
+  const catalogChanged = await writeFileIfChanged(NEXUSMODS_PATH, nextJson);
+  const badgeChanges = await writeNexusBadges(nextEntries);
 
-  if (nextJson === currentJson) {
-    logInfo("nexusmods.json is already up to date.");
+  if (!catalogChanged && badgeChanges === 0) {
+    logInfo("nexusmods.json and badges are already up to date.");
     return;
   }
 
-  await writeFile(NEXUSMODS_PATH, nextJson, "utf8");
-  logSuccess("Updated nexusmods.json");
+  if (catalogChanged) {
+    logSuccess("Updated nexusmods.json");
+  }
+  if (badgeChanges > 0) {
+    logSuccess(`Updated ${badgeChanges} badge file${badgeChanges === 1 ? "" : "s"}.`);
+  }
+}
+
+async function exportNexusBadges() {
+  const entries = JSON.parse(await readFile(NEXUSMODS_PATH, "utf8"));
+  if (!Array.isArray(entries)) {
+    throw new Error("nexusmods.json must contain a top-level array.");
+  }
+
+  const badgeChanges = await writeNexusBadges(entries);
+  if (badgeChanges > 0) {
+    logSuccess(`Updated ${badgeChanges} badge file${badgeChanges === 1 ? "" : "s"}.`);
+  } else {
+    logInfo("Badges are already up to date.");
+  }
+}
+
+async function writeNexusBadges(entries) {
+  const badges = buildNexusBadges(entries);
+  const expectedNames = new Set(badges.map((badge) => badge.fileName));
+  let changes = 0;
+
+  await mkdir(BADGES_PATH, { recursive: true });
+  for (const badge of badges) {
+    const badgeJson = `${JSON.stringify({
+      schemaVersion: 1,
+      label: "Nexus Downloads",
+      message: formatDownloadCount(badge.downloads),
+      color: "DA8E35",
+      logoSvg: NEXUS_MODS_LOGO_SVG,
+    }, null, 2)}\n`;
+    if (await writeFileIfChanged(path.join(BADGES_PATH, badge.fileName), badgeJson)) {
+      changes += 1;
+    }
+  }
+
+  for (const entry of await readdir(BADGES_PATH, { withFileTypes: true })) {
+    if (entry.isFile() && entry.name.endsWith(".json") && !expectedNames.has(entry.name)) {
+      await rm(path.join(BADGES_PATH, entry.name));
+      changes += 1;
+    }
+  }
+
+  return changes;
+}
+
+function buildNexusBadges(entries) {
+  const badges = entries
+    .filter((entry) => Number.isInteger(entry?.NexusModId) && entry.NexusModId >= 0)
+    .map((entry) => ({
+      modId: entry.NexusModId,
+      name: typeof entry?.Name === "string" && entry.Name.trim() ? entry.Name.trim() : `mod-${entry.NexusModId}`,
+      downloads: typeof entry?.Statistics?.TotalDownloads === "number" && Number.isFinite(entry.Statistics.TotalDownloads)
+        ? entry.Statistics.TotalDownloads
+        : null,
+    }));
+  const countsByBaseName = new Map();
+
+  for (const badge of badges) {
+    badge.baseName = toBadgeFileName(badge.name);
+    countsByBaseName.set(badge.baseName, (countsByBaseName.get(badge.baseName) ?? 0) + 1);
+  }
+
+  return badges
+    .map((badge) => ({
+      ...badge,
+      fileName: `${badge.baseName}${countsByBaseName.get(badge.baseName) > 1 ? `-${badge.modId}` : ""}.json`,
+    }))
+    .sort((left, right) => left.fileName.localeCompare(right.fileName));
+}
+
+function toBadgeFileName(name) {
+  const normalized = name.normalize("NFKD").replace(/\p{Mark}/gu, "");
+  const fileName = normalized.replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "").toLowerCase();
+  return fileName || "unnamed-mod";
+}
+
+function formatDownloadCount(downloads) {
+  if (downloads === null) {
+    return "unknown";
+  }
+  if (downloads < 1000) {
+    return String(downloads);
+  }
+  if (downloads < 1_000_000) {
+    const thousands = Math.round(downloads / 1000);
+    return thousands >= 1000 ? "1M" : `${formatCompactNumber(downloads / 1000)}k`;
+  }
+  return `${formatCompactNumber(downloads / 1_000_000)}M`;
+}
+
+function formatCompactNumber(value) {
+  return value.toFixed(value < 10 ? 1 : 0).replace(/\.0$/, "");
+}
+
+async function writeFileIfChanged(targetPath, contents) {
+  let currentContents = null;
+  try {
+    currentContents = await readFile(targetPath, "utf8");
+  } catch (error) {
+    if (error?.code !== "ENOENT") {
+      throw error;
+    }
+  }
+
+  if (currentContents === contents) {
+    return false;
+  }
+
+  await writeFile(targetPath, contents, "utf8");
+  return true;
 }
 
 function getRunMode(args) {
@@ -1383,7 +1500,43 @@ function runSelfTest() {
   if (!areEqual(dependencies, ["nexus-67", "nexus-341"])) {
     throw new Error("Dependency extraction self-test failed.");
   }
+
+  const badges = buildNexusBadges([
+    {
+      NexusGameDomain: "scavprototype",
+      NexusModId: 341,
+      Name: "CUCoreLib",
+      Statistics: { TotalDownloads: 1234 },
+    },
+    {
+      NexusGameDomain: "scavprototype",
+      NexusModId: 7,
+      Name: "QoL Unknown",
+      Statistics: {},
+    },
+    {
+      NexusGameDomain: "scavprototype",
+      NexusModId: 1,
+      Name: "Item Spawner Menu",
+      Statistics: { TotalDownloads: 5 },
+    },
+    {
+      NexusGameDomain: "scavprototype",
+      NexusModId: 90,
+      Name: "Item Spawner Menu.",
+      Statistics: { TotalDownloads: 10 },
+    },
+  ]);
+  if (!areEqual(badges, [
+    { modId: 341, name: "CUCoreLib", downloads: 1234, baseName: "cucorelib", fileName: "cucorelib.json" },
+    { modId: 1, name: "Item Spawner Menu", downloads: 5, baseName: "item-spawner-menu", fileName: "item-spawner-menu-1.json" },
+    { modId: 90, name: "Item Spawner Menu.", downloads: 10, baseName: "item-spawner-menu", fileName: "item-spawner-menu-90.json" },
+    { modId: 7, name: "QoL Unknown", downloads: null, baseName: "qol-unknown", fileName: "qol-unknown.json" },
+  ])) {
+    throw new Error("Nexus badge export self-test failed.");
+  }
   logSuccess("Dependency extraction self-test passed.");
+  logSuccess("Nexus badge export self-test passed.");
 }
 
 async function nexusRest(route, apiKey, appVersion) {
@@ -1515,6 +1668,11 @@ async function execProcess(command, args, workdir, timeoutMs) {
 
 if (process.argv.includes("--self-test")) {
   runSelfTest();
+} else if (process.argv.includes("--export-badges")) {
+  await exportNexusBadges().catch((error) => {
+    console.error(colorize(COLORS.red, error.message));
+    process.exitCode = 1;
+  });
 } else {
   await main().catch((error) => {
     console.error(colorize(COLORS.red, error.message));

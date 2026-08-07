@@ -6,7 +6,8 @@
   "scripts": {
     "update:nexusmods": "node scripts/update-nexusmods.mjs --mode quick",
     "update:nexusmods:quick": "node scripts/update-nexusmods.mjs --mode quick",
-    "update:nexusmods:full": "node scripts/update-nexusmods.mjs --mode full"
+    "update:nexusmods:full": "node scripts/update-nexusmods.mjs --mode full",
+    "export:nexus-badges": "node scripts/update-nexusmods.mjs --export-badges"
   },
   "dependencies": {
     "7zip-bin": "^5.2.0",

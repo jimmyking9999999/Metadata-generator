@@ -21,6 +21,7 @@ const TEMP_ROOT = path.join(os.tmpdir(), "metadata-nexusmods");
 
 const API_BASE_URL = "https://api.nexusmods.com/v1";
 const GRAPHQL_API_URL = "https://api.nexusmods.com/v2/graphql";
+const V3_API_BASE_URL = "https://api.nexusmods.com/v3";
 const APP_NAME = "Metadata Nexus Sync";
 const REQUEST_TIMEOUT_MS = 60_000;
 const FULL_RECENT_PERIODS = ["1d", "1w", "1m"];
@@ -53,6 +54,7 @@ const OWNED_FIELDS = new Set([
   "SHA256",
   "dllSHA256s",
   "downloadsSinceLatestVersion",
+  "Dependencies",
   "dllNames",
   "dllVersion",
   "dllVersions",
@@ -76,6 +78,7 @@ const TRACKED_LOG_FIELDS = [
   "SHA256",
   "dllSHA256s",
   "downloadsSinceLatestVersion",
+  "Dependencies",
   "dllNames",
   "dllVersion",
   "dllVersions",
@@ -366,6 +369,12 @@ async function refreshModAndNotify({
     appVersion,
     fileInfo: selectedFile,
   });
+  const dependencies = await getFileDependencies({
+    apiKey,
+    appVersion,
+    gameDomain,
+    fileInfo: selectedFile,
+  });
   const archiveContext = await processArchive({
     apiKey,
     appVersion,
@@ -380,6 +389,7 @@ async function refreshModAndNotify({
     fileInfo: selectedFile,
     archiveContext,
     downloadsSinceLatestVersion,
+    dependencies,
   });
 
   entryByKey.set(getEntryKey(gameDomain, modId), mergedEntry);
@@ -872,6 +882,7 @@ function mergeEntry({
   fileInfo,
   archiveContext,
   downloadsSinceLatestVersion,
+  dependencies,
 }) {
   const preserved = { ...(existingEntry ?? {}) };
   for (const key of OWNED_FIELDS) {
@@ -924,6 +935,7 @@ function mergeEntry({
     downloadsSinceLatestVersion: downloadsSinceLatestVersion
       ?? existingEntry?.downloadsSinceLatestVersion
       ?? null,
+    Dependencies: dependencies ?? existingEntry?.Dependencies ?? [],
     dllNames: nextDllNames,
     dllVersion: nextDllVersion ?? null,
     dllVersions: nextDllVersions,
@@ -1308,6 +1320,59 @@ async function getFileDownloadCount({ apiKey, appVersion, fileInfo }) {
   return null;
 }
 
+async function getFileDependencies({ apiKey, appVersion, gameDomain, fileInfo }) {
+  if (!Number.isInteger(fileInfo?.file_id)) {
+    logWarn("DEPENDENCIES", "Selected file has no file ID; dependencies are unavailable.");
+    return null;
+  }
+
+  try {
+    const version = await nexusV3(`/games/${encodeURIComponent(gameDomain)}/mod-file-versions/${fileInfo.file_id}`, apiKey, appVersion);
+    const versionId = version?.id;
+    if (!versionId) {
+      logWarn("DEPENDENCIES", `No v3 version ID was returned for file ${fileInfo.file_id}.`);
+      return null;
+    }
+
+    const response = await nexusV3(`/mod-file-versions/${encodeURIComponent(versionId)}/dependencies`, apiKey, appVersion);
+    const dependencies = extractDependencyIds(response);
+    logInfo(`Declared mod dependencies: ${dependencies.length}`);
+    if (dependencies.length > 0) {
+      logDim(`   ${dependencies.join(", ")}`);
+    }
+    return dependencies;
+  } catch (error) {
+    logWarn("DEPENDENCIES", `Could not load dependencies for file ${fileInfo.file_id}. ${error.message}`);
+    return null;
+  }
+}
+
+function extractDependencyIds(response) {
+  const ids = new Set();
+  for (const definition of response?.dependency_definitions ?? []) {
+    for (const range of definition?.ranges ?? []) {
+      const modId = range?.target_mod_file?.mod?.game_scoped_id;
+      if (/^\d+$/.test(String(modId))) {
+        ids.add(`nexus-${modId}`);
+      }
+    }
+  }
+  return [...ids].sort((left, right) => left.localeCompare(right, undefined, { numeric: true }));
+}
+
+function runSelfTest() {
+  const dependencies = extractDependencyIds({
+    dependency_definitions: [
+      { ranges: [{ target_mod_file: { mod: { game_scoped_id: "341" } } }] },
+      { ranges: [{ target_mod_file: { mod: { game_scoped_id: "67" } } }, { target_mod_file: { mod: { game_scoped_id: "341" } } }] },
+    ],
+  });
+  if (!areEqual(dependencies, ["nexus-67", "nexus-341"])) {
+    throw new Error("Dependency extraction self-test failed.");
+  }
+  logSuccess("Dependency extraction self-test passed.");
+}
+
 async function nexusRest(route, apiKey, appVersion) {
   const response = await fetchWithTimeout(`${API_BASE_URL}${route}`, {
     headers: buildHeaders(apiKey, appVersion),
@@ -1318,6 +1383,19 @@ async function nexusRest(route, apiKey, appVersion) {
   }
 
   return response.json();
+}
+
+async function nexusV3(route, apiKey, appVersion) {
+  const response = await fetchWithTimeout(`${V3_API_BASE_URL}${route}`, {
+    headers: buildHeaders(apiKey, appVersion),
+  });
+
+  if (!response.ok) {
+    throw await buildHttpError("Nexus v3 request failed", response);
+  }
+
+  const payload = await response.json();
+  return payload?.data ?? payload;
 }
 
 async function nexusGraphQL(query, variables, apiKey, appVersion) {
@@ -1422,7 +1500,11 @@ async function execProcess(command, args, workdir, timeoutMs) {
   });
 }
 
-await main().catch((error) => {
-  console.error(colorize(COLORS.red, error.message));
-  process.exitCode = 1;
-});
+if (process.argv.includes("--self-test")) {
+  runSelfTest();
+} else {
+  await main().catch((error) => {
+    console.error(colorize(COLORS.red, error.message));
+    process.exitCode = 1;
+  });
+}

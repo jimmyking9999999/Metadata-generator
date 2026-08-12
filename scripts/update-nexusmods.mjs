@@ -677,6 +677,7 @@ async function processArchive({ apiKey, appVersion, gameDomain, modId, fileInfo 
       fileInfo,
       destinationPath: archivePath,
     });
+    const archiveSizeBytes = (await stat(archivePath)).size;
     const sha256 = await calculateFileSha256(archivePath);
     logInfo(`SHA-256: ${sha256}`);
 
@@ -725,6 +726,7 @@ async function processArchive({ apiKey, appVersion, gameDomain, modId, fileInfo 
       bepinexVersion: highestVersion(Object.values(dllVersions)),
       mirrorLinks,
       sha256,
+      archiveSizeBytes,
       dllSizeBytes,
     };
   } finally {
@@ -1212,6 +1214,7 @@ function buildNotification(previousEntry, nextEntry, archiveContext) {
       embed: createDiscordEmbed({
         type: "created",
         currentEntry: nextEntry,
+        archiveSizeBytes: archiveContext?.archiveSizeBytes,
         dllSizeBytes: archiveContext?.dllSizeBytes,
       }),
     };
@@ -1232,7 +1235,7 @@ function buildNotification(previousEntry, nextEntry, archiveContext) {
   return null;
 }
 
-function createDiscordEmbed({ type, previousEntry, currentEntry, dllSizeBytes }) {
+function createDiscordEmbed({ type, previousEntry, currentEntry, archiveSizeBytes, dllSizeBytes }) {
   const modUrl = currentEntry.Links?.NexusMods;
   const imageUrl = firstNonEmptyString(
     currentEntry.Links?.Icon,
@@ -1240,11 +1243,18 @@ function createDiscordEmbed({ type, previousEntry, currentEntry, dllSizeBytes })
   );
   let fields;
   if (type === "created") {
-    fields = [{
-      name: "File Size",
-      value: formatFileSize(dllSizeBytes),
-      inline: true,
-    }];
+    fields = [
+      {
+        name: "File Size",
+        value: formatFileSize(dllSizeBytes),
+        inline: true,
+      },
+      {
+        name: "Zip Size",
+        value: formatFileSize(archiveSizeBytes),
+        inline: true,
+      },
+    ];
   } else {
     fields = [
       {
@@ -1523,8 +1533,11 @@ function runSelfTest() {
     NexusModId: 1,
     Links: { NexusMods: "https://www.nexusmods.com/scavprototype/mods/1" },
     Statistics: { Endorsements: 0, UniqueDownloads: 3 },
-  }, { dllSizeBytes: 1_572_864 });
-  if (!areEqual(createdNotification?.embed?.fields, [{ name: "File Size", value: "1.5 MB", inline: true }])) {
+  }, { archiveSizeBytes: 3_145_728, dllSizeBytes: 1_572_864 });
+  if (!areEqual(createdNotification?.embed?.fields, [
+    { name: "File Size", value: "1.5 MB", inline: true },
+    { name: "Zip Size", value: "3.0 MB", inline: true },
+  ])) {
     throw new Error("New-mod Discord file-size self-test failed.");
   }
   if (buildDiscordMessage({ ContainsAdultContent: true }) !== ADULT_MOD_MESSAGE || buildDiscordMessage({ ContainsAdultContent: false }) !== "") {

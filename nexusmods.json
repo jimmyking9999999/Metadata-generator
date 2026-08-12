@@ -1,5 +1,48 @@
 [
     {
+        "Id": "nexus-550",
+        "Name": "CatPatchCustomLinesLoader",
+        "Version": "1.0.1",
+        "bepinexVersion": "1.0.1",
+        "Description": "[size=5]An unofficial mod for CatPatch for loading custom dialogue lines[/size]\n<br />\n<br />CatPatch: [url=https://www.nexusmods.com/scavprototype/mods/69]https://www.nexusmods.com/scavprototype/mods/69[/url]\n<br />\n<br />Allows you to replace the default hugging/kissing lines in CatPatch with your own. Simply edit the CatPatchCustomLines.json file to add new lines or remove existing ones. The file is hot reloaded, no need to restart the game.\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[list=1]\n<br />[*]Download CatPatchCustomLinesLoader.zip[/*]\n<br />[*]Unzip it and place the extracted CatPatchCustomLinesLoader folder in \"Casualties Unknown Demo/BepInEx/plugins\"[/*]\n<br />[*]Edit the CatPatchCustomLinesLoader/CatPatchCustomLines.json file as you wish. By default it comes with all of CatPatch's base dialogue.[/*]\n<br />[/list][b][size=4]Main features[/size][/b]\n<br />\n<br />For Hosts, this mod allows them to set up [u]custom dialogue for everyone on the server to see[/u], even if they don't have this mod installed. Simply add or remove any dialogue you want in CatPatchCustomLines.json, the file is hot reloaded - no need to restart the game. \n<br />\n<br />For Clients, they can filter unwanted dialogue by enabling 'Filter Incoming Lines' in CatPatch's in-game settings. Any dialogue lines not present in your CatPatchCustomLines.json will be replaced by lines you do have. [b]This setting is disabled by default[/b].\n<br />\n<br />[size=4][b]Extra dialogue pools\n<br />[/b][/size]Besides the default Vulnerable/Comfort/Cheerful cases, the mod also adds extra dialogue pools for use in specific conditions. Adding dialogue lines for all these cases is [i]not[/i] necessary. If they're empty, that case will simply be skipped.\n<br />I've ordered them here in descending priority. Speaker is the player who initiated the hug and Receiver whoever accepted the hug.\n<br />Hug lines:\n<br />[list=1]\n<br />[*]FinalHugLines - Speaker dying[/*]\n<br />[*]GoodbyeHugLines - Receiver dying[/*]\n<br />[*]GleefulPairHugLines - Speaker &amp; Receiver happiness &gt;= 75[/*]\n<br />[*]VulnerableHugLines - Speaker happiness &lt;= -40[/*]\n<br />[*]ComfortHugLines - Receiver happiness &lt;= -40[/*]\n<br />[*]IrradiatedHugLines - Receiver radiation &gt; 10[/*]\n<br />[*]SickHugLines - Speaker sickness &gt;= 50[/*]\n<br />[*]OpiateOverdoseHugLines - Speaker opiate reception &gt; 5[/*]\n<br />[*]OpiateWithdrawalHugLines - Speaker opiate reception &lt; -5[/*]\n<br />[*]SpeakerMissingArmHugLines - Speaker is missing an arm[/*]\n<br />[*]ReceiverMissingArmHugLines - Receiver is missing an arm[/*]\n<br />[*]HotHugLines - Speaker temperature &gt; 38[/*]\n<br />[*]ColdHugLines - Speaker temperature &lt; 35.5[/*]\n<br />[*]DirtyHugLines - Receiver dirtiness &gt;= 75[/*]\n<br />[*]OverweightHugLines - Receiver weightOffset &gt; 15[/*]\n<br />[*]CheerfulHugLines - Speaker happiness &gt;= 40[/*]\n<br />[*]HostHugLines - Receiver is host[/*]\n<br />[*]NeutralHugLines - Default hug lines[/*]\n<br />[/list]Kiss lines:\n<br />[list=1]\n<br />[*]FinalKissLines - Speaker dying[/*]\n<br />[*]GoodbyeKissLines - Receiver dying[/*]\n<br />[*]VulnerableKissLines - Speaker happiness &lt;= -40[/*]\n<br />[*]ComfortKissLines - Receiver happiness &lt;= -40[/*]\n<br />[*]DisfiguredKissLines - Speaker or Receiver is disfigured[/*]\n<br />[*]DirtyKissLines - Receiver dirtiness &gt;= 75[/*]\n<br />[*]CheerfulKissLines - Speaker happiness &gt;= 40[/*]\n<br />[*]KissLines - Default kiss lines[/*]\n<br />[/list]\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[color=#D4D4D8]vee[/color]",
+        "Author": "HogginLogg",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/550/550-1786540223-1540617526.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/550"
+        },
+        "DownloadUrl": "nexus://scavprototype/550/1702",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 550,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-08-12T13:20:50.000Z",
+        "ReleaseDate": "2026-08-12T13:14:04.000Z",
+        "SHA256": "1b9f493ac3c79092a1a264b1fe5f0a74e273894b23d2dfa683f8b6d77b5e45a8",
+        "dllSHA256s": {
+            "CatPatchCustomLinesLoader.dll": "90bcc8d5dfd0efe063b3f06dd1bd84cbb94585fa62337fc555f8231ce3a6ad5d"
+        },
+        "downloadsSinceLatestVersion": 0,
+        "Dependencies": [
+            "nexus-69"
+        ],
+        "dllNames": [
+            "CatPatchCustomLinesLoader.dll"
+        ],
+        "dllVersion": "1.0.1",
+        "dllVersions": {
+            "CatPatchCustomLinesLoader.dll": "1.0.1"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 1,
+            "TotalDownloads": 1,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/550/550-1786540223-1540617526.png"
+        ]
+    },
+    {
         "Id": "nexus-548",
         "Name": "Casualties Overlevelled",
         "Version": "0.9",
@@ -21,7 +64,7 @@
         "dllSHA256s": {
             "Assembly-CSharp.dll": "70fe5dd5dfbf735da613a1d79ddf59e99694debcec838bba500e33151767a67c"
         },
-        "downloadsSinceLatestVersion": 5,
+        "downloadsSinceLatestVersion": 15,
         "Dependencies": [],
         "dllNames": [
             "Assembly-CSharp.dll"
@@ -43,20 +86,20 @@
         "Name": "Personal OST Collection",
         "Version": "0.1.0",
         "bepinexVersion": "1.0.0",
-        "Description": "[b][size=5]Description[/size][/b]\n<br />[color=#6d9eeb][size=4]Main Menu:[/size][/color][size=4][color=#d8d8d8](This part has a quieter atmosphere — a sense of confusion, a hint of melancholy, and the unknown. It all started with that tear I saw on the main menu from exp)[/color][/size]\n<br />[b][color=#efefef]Main menu music[/color][/b]  [color=#d4d4d8]- 《Ready O[/color][color=#d4d4d8]r Not》[/color]\n<br />[b][color=#efefef]Tears In The Rain [/color][/b][color=#d4d4d8] -《Blade Runner [/color][color=#d4d4d8]2049》 [/color][size=2][color=#d4d4d8](Bro realized he's not Ryan Gosling — but the soundtrack still hits)[/color][/size]\n<br />[color=#efefef][b]Sapper's Tree [/b]-《[/color][color=#cccccc]Blade Runner 2049[/color][color=#efefef]》 [/color]\n<br />[b][color=#efefef]River's End[/color][/b][color=#d4d4d8]  -《Outer Wilds》[/color]\n<br />[b][color=#efefef]Second Chance[/color][/b] [size=2](One of my favorite tracks from when Velonica plays the guitar)[/size]  - 《REPLACED》\n<br />[color=#efefef][b]Ash[/b][/color] -《REPLACED》\n<br />\n<br />[size=4][color=#b6d7a8]GraveLands:[/color][color=#d8d8d8](This part's music is more focused on exploration and the sense of the unknown)[/color][/size]\n<br />[color=#efefef][b]ExplorationAlliedSpace Soholia[/b][/color]  - 《Elite Dangerours》\n<br />i forgot what name but basically it's the one that plays when you first get to the safe zone  - 《REPLACED》\n<br />[b][color=#efefef]Void [/color][/b] - 《REPLACED》(Also play at main menu)\n<br />[b][color=#efefef]Interlude [/color][/b] - 《Hotline Miami 1/2》\n<br />\n<br />[size=4][color=#93c47d][size=4]DeeperGravellands:[/size][/color][/size]\n<br />[b][color=#efefef]Joi [/color][/b] - 《Blade Runner 2049》\n<br />[b][color=#efefef]YoYo[/color][/b]  - 《REPLACED》\n<br />[b][color=#efefef]Remorse[/color][/b]  - 《Hotline Miami 1/2》  [size=2](The vibe of the game really starts to ramp up from this point[b])[/b][/size]\n<br />[b][color=#efefef]Voyager[/color][/b]  - 《Hotline Miami 1/2》\n<br />\n<br />[color=#f9cb9c][size=4]Desert:[/size][/color]\n<br />[b][color=#efefef]Dust[/color][/b]  - 《Hotline Miami 1/2》\n<br />[b][color=#efefef]Black Tar[/color][/b]  - 《Hotline Miami 1/2》\n<br />[b][color=#efefef]Easy Father[/color][/b]  - 《Gomorra La serie Season 1》 [size=2](Also play at main menu)[/size]\n<br />\n<br />[size=4][color=#e69138]Wasteland:[/color][/size]\n<br />[b]Keep Calm  [/b]-《Hotline Miami 1/2》\n<br />[b][color=#efefef]Detection[/color][/b]  -《Hotline Miami 1/2》\n<br />[b][color=#efefef]Delay[/color][/b]  -《Hotline Miami 1/2》\n<br />\n<br />[size=4][color=#6aa84f]Jungle:[/color][/size]\n<br />[b][color=#efefef]Blizzard[/color] [/b] -《Hotline Miami 1/2》\n<br />[b][color=#efefef]Disturbance[/color][/b]  -《Hotline Miami 1/2》(personal think very fit for jungle)\n<br />[color=#efefef][b]ElectricDreams [/b] -《Hotline Miami 1/2》 [/color]\n<br />\n<br />[size=4][color=#dd7e6b]Combat:[/color][color=#d8d8d8](Optional files)[/color][/size]\n<br />[color=#efefef][size=2]Normal[/size]:[b] [/b][b]Paris, Turf, Quixotic, Hydrogen, To The Top  [/b]-《Hotline Miami 1/2》 [/color]\n<br />[size=2]Elder Thornback[/size]: [b]Technoir, Decade Dance, Hotline Theme[/b](last part)   -《Hotline Miami 1/2》\n<br />\n<br />[color=#d5a6bd][size=4]Drones:[/size][/color][size=4][color=#d8d8d8](Optional files)[/color][/size]\n<br />[size=2]Feel pain in game[/size]: [b][color=#efefef]Eerie ambience[/color][/b]  -《i forgot》\n<br />[size=2]Bleeding out, fibrillation progressing and sth[/size]: [color=#efefef][b]Struggle [/b][b]tune  [/b]-《REPLACED》[/color]\n<br />[color=#efefef][size=2]Bio-hazard[/size]: [b]Corridors [/b] - 《Chernobyl》from HBO  (that's right)[/color]\n<br />[color=#efefef][size=2]Despair[/size]: [b]Abandoned forest [/b]-《Hotline Miami 1/2》(Even though it's from Hotline Miami, this track fits perfectly with feelings of despair, isolation, and aimlessness)[/color]\n<br />[color=#efefef][size=2]Rank up in game[/size]: same sound in《REPLACED》[/color]\n<br />[color=#efefef]After a suicide cut or self harm: forgot name  -《REPLACED》[/color]\n<br />[color=#efefef]Earthquake: [b]Crashing Bones [/b] -《REPLACED》[/color]\n<br />[color=#efefef]Trading: [b]She Meditates [/b] -《Hotline Miami 1/2》(With music this relaxing, this game must be pretty chill and healing right?)[/color]\n<br />[color=#efefef]LastStandTriggered: [b]Miami  [/b]-《Hotline Miami 1/2》(This one fits the protagonist's comeback really well. I cut it down to about a minute so it wouldn't drag on too long)[/color]\n<br />[color=#efefef]Nearly dying: [b]2049[/b]  -《Blade Runner 2049》(The opening music from the film — grand in scale, but with an underlying sense of danger and the unknown. I think it fits perfectly)[/color]\n<br />[color=#efefef]On deceased screen: a small part music from《REPLACED》(Just accept it...)[/color]\n<br />\n<br />[b][size=5]Installation instructions[/size][/b]\n<br />[list=1]\n<br />[*][color=#D4D4D8][url=https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5]BepInEx 5.4.23.5[/url][/color][/*]\n<br />[*][color=#D4D4D8][url=https://www.nexusmods.com/scavprototype/mods/140][/url][url=https://github.com/Ol1vver/bepinex-soundmod/releases/tag/v1.0.0]Bepinex_soundmod[/url] (Included)[/color][/*]\n<br />[*][color=#D4D4D8]Download my mod and extract the .zip/.rar file then drag the [b].dll [/b]and [b]sound folder[/b] into the following location:[/color][/*]\n<br />[/list][quote][color=#D4D4D8]Casualties Unknown Demo&#92;BepInEx&#92;plugins[/color][/quote]\n<br />\n<br />[center][b][color=#e06666][size=6]DISCLAIMER:免责声明：[/size][/color]\n<br />[/b][/center]\n<br />[center]Some audio tracks used in this project were obtained through本项目中使用的一些音轨是通过\n<br />legitimate purchases by the author.作者的合法购买行为。\n<br />\n<br />However, ownership and copyright of these works remain with their然而，这些作品的所有权和版权仍归其\n<br />respective copyright holders.相关版权所有者。\n<br />[/center]\n<br />[center]This modification is a fan-made audio replacement project created for此修改版是一个由粉丝制作的音频替换项目，旨在[/center]\n<br />[center]personal enjoyment and to enhance the gameplay experience.仅供个人娱乐并提升游戏体验。[/center]\n<br />[center][/center]\n<br />[center]All music tracks, sound effects, and other third-party audio assets used本修改中使用的所有音乐曲目、音效及其他第三方音频资源[/center]\n<br />[center]in this modification remain the property of their respective copyright仍归其各自著作权人所有[/center]\n<br />[center]holders.权利持有人。[/center]\n<br />[center][/center]\n<br />[center]I do not claim ownership of any third-party audio assets included or我并不声称对所包含的任何第三方音频资源拥有所有权或[/center]\n<br />[center]referenced in this project.在本项目中被引用。[/center]\n<br />[center][/center]\n<br />[center]This modification is provided free of charge and is not affiliated with,本修改版免费提供，且与任何原作者均无关联、[/center]\n<br />[center]endorsed by, sponsored by, or connected to any of the original creators,亦未获得其认可、赞助或任何形式的联系，[/center]\n<br />[center]developers, publishers, or copyright holders.开发者、发行商或版权所有者。[/center]\n<br />[center][/center]\n<br />[center]This project is non-commercial and created solely for fan-made,本项目为非商业用途，仅出于同人创作之目的而制作，[/center]\n<br />[center]transformative purposes.变革性目的。[/center]\n<br />[center][/center]\n<br />[center]If any copyright holder requests the removal of related content, this如果任何版权持有人要求删除相关内容，本\n<br />project will be removed or modified accordingly.项目将相应地被移除或修改。\n<br />[/center]\n<br />[center][/center]\n<br />[center][b][color=#f4cccc][size=5]Credits:鸣谢：[/size][/color][/b][/center]\n<br />[center][/center]\n<br />[center]Blade Runner 2049银翼杀手2049[/center]\n<br />[center]© Warner Bros. Pictures / respective copyright holders© 华纳兄弟影业 / 各版权所有者[/center]\n<br />[center][/center]\n<br />[center]Hotline Miami热线迈阿密[/center]\n<br />[center]© Dennaton Games / Devolver Digital[/center]\n<br />[center][/center]\n<br />[center]Hotline Miami 2: Wrong Number迈阿密热线2：错误号码[/center]\n<br />[center]© Dennaton Games / Devolver Digital[/center]\n<br />[center][/center]\n<br />[center]REPLACED已替换[/center]\n<br />[center]© Sad Cat Studios / Thunderful Publishing[/center]\n<br />[center][/center]\n<br />[center]Chernobyl (HBO Original Series)切尔诺贝利（HBO原创剧集）[/center]\n<br />[center]© HBO / respective copyright holders© HBO / 各版权持有者[/center]\n<br />[center][/center]\n<br />[center]Elite Dangerous精英危险[/center]\n<br />[center]© Frontier Developments plc / respective copyright holders[/center]\n<br />[center]项目将相应地被移除或修改。[/center]\n<br />\n<br />\n<br />[size=4][b]Shout outs鸣谢[/b][/size]\n<br />[color=#D4D4D8]Me and [url=https://www.nexusmods.com/profile/Bookz152/mods]Bookz152[/url]我和[url=https://www.nexusmods.com/profile/Bookz152/mods]Bookz152[/url][/color]\n<br />\n<br />[color=#d4d4d8][b]Since this is my first time putting this together, if you run into any audio playback issues, feel free to leave a comment. And if you think any track doesn't quite fit the game's setting, I'd love to hear that too.由于这是我第一次制作这套内容，如果您在音频播放方面遇到任何问题，欢迎随时留言。另外，如果您觉得某首曲目与游戏的氛围不太契合，也十分期待您的反馈。[/b] \n<br />[/color]",
+        "Description": "[b][size=5]Description[/size][/b]\n<br />[color=#6d9eeb][size=4]Main Menu:[/size][/color][size=4][color=#d8d8d8](This part has a quieter atmosphere — a sense of confusion, a hint of melancholy, and the unknown. It all started with that tear I saw on the main menu from exp)[/color][/size]\n<br />[b][color=#efefef]Main menu music[/color][/b]  [color=#d4d4d8]- 《Ready O[/color][color=#d4d4d8]r Not》[/color]\n<br />[b][color=#efefef]Tears In The Rain [/color][/b][color=#d4d4d8] -《Blade Runner [/color][color=#d4d4d8]2049》 [/color][size=2][color=#d4d4d8](Bro realized he's not Ryan Gosling — but the soundtrack still hits)[/color][/size]\n<br />[color=#efefef][b]Sapper's Tree [/b]-《[/color][color=#cccccc]Blade Runner 2049[/color][color=#efefef]》 [/color]\n<br />[b][color=#efefef]River's End[/color][/b][color=#d4d4d8]  -《Outer Wilds》[/color]\n<br />[b][color=#efefef]Second Chance[/color][/b] [size=2](One of my favorite tracks from when Velonica plays the guitar)[/size]  - 《REPLACED》\n<br />[color=#efefef][b]Ash[/b][/color] -《REPLACED》\n<br />\n<br />[size=4][color=#b6d7a8]GraveLands:[/color][color=#d8d8d8](This part's music is more focused on exploration and the sense of the unknown)[/color][/size]\n<br />[color=#efefef][b]ExplorationAlliedSpace Soholia[/b][/color]  - 《Elite Dangerours》\n<br />i forgot what name but basically it's the one that plays when you first get to the safe zone  - 《REPLACED》\n<br />[b][color=#efefef]Void [/color][/b] - 《REPLACED》(Also play at main menu)\n<br />[b][color=#efefef]Interlude [/color][/b] - 《Hotline Miami 1/2》\n<br />\n<br />[size=4][color=#93c47d][size=4]DeeperGravellands:[/size][/color][/size]\n<br />[b][color=#efefef]Joi [/color][/b] - 《Blade Runner 2049》\n<br />[b][color=#efefef]YoYo[/color][/b]  - 《REPLACED》\n<br />[b][color=#efefef]Remorse[/color][/b]  - 《Hotline Miami 1/2》  [size=2](The vibe of the game really starts to ramp up from this point[b])[/b][/size]\n<br />[b][color=#efefef]Voyager[/color][/b]  - 《Hotline Miami 1/2》\n<br />\n<br />[color=#f9cb9c][size=4]Desert:[/size][/color]\n<br />[b][color=#efefef]Dust[/color][/b]  - 《Hotline Miami 1/2》\n<br />[b][color=#efefef]Black Tar[/color][/b]  - 《Hotline Miami 1/2》\n<br />[b][color=#efefef]Easy Father[/color][/b]  - 《Gomorra La serie Season 1》 [size=2](Also play at main menu)[/size]\n<br />\n<br />[size=4][color=#e69138]Wasteland:[/color][/size]\n<br />[b]Keep Calm  [/b]-《Hotline Miami 1/2》\n<br />[b][color=#efefef]Detection[/color][/b]  -《Hotline Miami 1/2》\n<br />[b][color=#efefef]Delay[/color][/b]  -《Hotline Miami 1/2》\n<br />\n<br />[size=4][color=#6aa84f]Jungle:[/color][/size]\n<br />[b][color=#efefef]Blizzard[/color] [/b] -《Hotline Miami 1/2》\n<br />[b][color=#efefef]Disturbance[/color][/b]  -《Hotline Miami 1/2》(personal think very fit for jungle)\n<br />[color=#efefef][b]ElectricDreams [/b] -《Hotline Miami 1/2》 [/color]\n<br />\n<br />[size=4][color=#dd7e6b]Combat:[/color][color=#d8d8d8](Optional files)[/color][/size]\n<br />[color=#efefef][size=2]Normal[/size]:[b] [/b][b]Paris, Turf, Quixotic, Hydrogen, To The Top  [/b]-《Hotline Miami 1/2》 [/color]\n<br />[size=2]Elder Thornback[/size]: [b]Technoir, Decade Dance, Hotline Theme[/b](last part)   -《Hotline Miami 1/2》\n<br />\n<br />[color=#d5a6bd][size=4]Drones:[/size][/color][size=4][color=#d8d8d8](Optional files)[/color][/size]\n<br />[size=2]Feel pain in game[/size]: [b][color=#efefef]Eerie ambience[/color][/b]  -《i forgot》\n<br />[size=2]Bleeding out, fibrillation progressing and sth[/size]: [color=#efefef][b]Struggle [/b][b]tune  [/b]-《REPLACED》[/color]\n<br />[color=#efefef][size=2]Bio-hazard[/size]: [b]Corridors [/b] - 《Chernobyl》from HBO  (that's right)[/color]\n<br />[color=#efefef][size=2]Despair[/size]: [b]Abandoned forest [/b]-《Hotline Miami 1/2》(Even though it's from Hotline Miami, this track fits perfectly with feelings of despair, isolation, and aimlessness)[/color]\n<br />[color=#efefef][size=2]Rank up in game[/size]: same sound in《REPLACED》[/color]\n<br />[color=#efefef]After a suicide cut or self harm: forgot name  -《REPLACED》[/color]\n<br />[color=#efefef]Earthquake: [b]Crashing Bones [/b] -《REPLACED》[/color]\n<br />[color=#efefef]Trading: [b]She Meditates [/b] -《Hotline Miami 1/2》(With music this relaxing, this game must be pretty chill and healing right?)[/color]\n<br />[color=#efefef]LastStandTriggered: [b]Miami  [/b]-《Hotline Miami 1/2》(This one fits the protagonist's comeback really well. I cut it down to about a minute so it wouldn't drag on too long)[/color]\n<br />[color=#efefef]Nearly dying: [b]2049[/b]  -《Blade Runner 2049》(The opening music from the film — grand in scale, but with an underlying sense of danger and the unknown. I think it fits perfectly)[/color]\n<br />[color=#efefef]On deceased screen: a small part music from《REPLACED》(Just accept it...)[/color]\n<br />\n<br />[b][size=5]Installation instructions[/size][/b]\n<br />[list=1]\n<br />[*][color=#D4D4D8][url=https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5]BepInEx 5.4.23.5[/url][/color][/*]\n<br />[*][color=#D4D4D8][url=https://www.nexusmods.com/scavprototype/mods/140][/url][url=https://github.com/Ol1vver/bepinex-soundmod/releases/tag/v1.0.0]Bepinex_soundmod[/url] (Included)[/color][/*]\n<br />[*][color=#D4D4D8]Download my mod and extract the .zip/.rar file then drag the [b].dll [/b]and [b]sound folder[/b] into the following location:[/color][/*]\n<br />[/list][quote][color=#D4D4D8]Casualties Unknown Demo&#92;BepInEx&#92;plugins[/color][/quote][center][/center]\n<br />[center][b][color=#e06666][size=6]DISCLAIMER:免责声明：[/size][/color][/b][/center]\n<br />[center][/center]\n<br />[center]Some audio tracks used in this project were obtained through[/center]\n<br />[center]legitimate purchases by the author.[/center]\n<br />[center]本项目中使用的一些音轨是通过 [/center]\n<br />[center]作者的合法购买行为。\n<br />\n<br />However, ownership and copyright of these works remain with their[/center]\n<br />[center]respective copyright holders.[/center]\n<br />[center]然而，这些作品的所有权和版权仍归其 [/center]\n<br />[center]相关版权所有者。 \n<br />[/center]\n<br />[center]This modification is a fan-made audio replacement project created for[/center]\n<br />[center]personal enjoyment and to enhance the gameplay experience.[/center]\n<br />[center]此修改版是一个由粉丝制作的音频替换项目，\n<br />旨在仅供个人娱乐并提升游戏体验。[/center]\n<br />[center][/center]\n<br />[center]All music tracks, sound effects, and other third-party audio assets used[/center]\n<br />[center]in this modification remain the property of their respective copyright holders.[/center]\n<br />[center]本修改中使用的所有音乐曲目、音效及其他第三方音频资源 [/center]\n<br />[center]仍归其各自著作权人所有[/center]\n<br />[center]权利持有人。[/center]\n<br />[center][/center]\n<br />[center]I do not claim ownership of any third-party audio assets included or[/center]\n<br />[center]referenced in this project.[/center]\n<br />[center]我并不声称对所包含的任何第三方音频资源拥有所有权或 [/center]\n<br />[center]在本项目中被引用。[/center]\n<br />[center][/center]\n<br />[center]This modification is provided free of charge and is not affiliated with,[/center]\n<br />[center]endorsed by, sponsored by, or connected to any of the original creators,[/center]\n<br />[center]developers, publishers, or copyright holders.[/center]\n<br />[center]本修改版免费提供，且与任何原作者均无关联、 \n<br />亦未获得其认可、赞助或任何形式的联系，[/center]\n<br />[center]开发者、发行商或版权所有者。[/center]\n<br />[center][/center]\n<br />[center]This project is non-commercial and created solely for fan-made,[/center]\n<br />[center]transformative purposes.[/center]\n<br />[center]本项目为非商业用途，仅出于同人创作之目的而制作， [/center]\n<br />[center]变革性目的。[/center]\n<br />[center][/center]\n<br />[center]If any copyright holder requests the removal of related content, this\n<br />project will be removed or modified accordingly.[/center]\n<br />[center]如果任何版权持有人要求删除相关内容，本如果任何版权持有人要求删除相关内容， [/center]\n<br />[center]本项目将相应地被移除或修改。\n<br />[/center]\n<br />[center][/center]\n<br />[center][b][color=#f4cccc][size=5]Credits:鸣谢：[/size][/color][/b][/center]\n<br />[center][/center]\n<br />[center][/center]\n<br />[center] Blade Runner 2049                     银翼杀手2049[/center]\n<br />[center]© Warner Bros. Pictures / respective copyright holders[/center]\n<br />[center][/center]\n<br />[center][/center]\n<br />[center] Hotline Miami                        迈阿密热线[/center]\n<br />[center]© Dennaton Games / Devolver Digital[/center]\n<br />[center][/center]\n<br />[center][/center]\n<br />[center]Hotline Miami 2: Wrong Number          迈阿密热线2：空号[/center]\n<br />[center]© Dennaton Games / Devolver Digital[/center]\n<br />[center][/center]\n<br />[center][/center]\n<br />[center]REPLACED[/center]\n<br />[center]© Sad Cat Studios / Thunderful Publishing[/center]\n<br />[center][/center]\n<br />[center][/center]\n<br />[center]            Chernobyl (HBO Original Series)         切尔诺贝利（HBO原创剧集）[/center]\n<br />[center]© HBO / respective copyright holders[/center]\n<br />[center][/center]\n<br />[center][/center]\n<br />[center]Elite Dangerous                精英危险[/center]\n<br />[center]© Frontier Developments plc / respective copyright holders[/center]\n<br />\n<br />\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[color=#D4D4D8]Me and [url=https://www.nexusmods.com/profile/Bookz152/mods]Bookz152[/url][/color]\n<br />\n<br />[color=#d4d4d8][b]Since this is my first time putting this together, if you run into any audio playback issues, feel free to leave a comment. And if you think any track doesn't quite fit the game's setting, I'd love to hear that too.\n<br />由于这是我第一次制作这套内容，如果您在音频播放方面遇到任何问题，欢迎随时留言。另外，如果您觉得某首曲目与游戏的氛围不太契合，也十分期待您的反馈。[/b][/color]",
         "Author": "jcmamama",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/547/547-1786529937-855493034.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/547"
         },
-        "DownloadUrl": "nexus://scavprototype/547/1698",
+        "DownloadUrl": "nexus://scavprototype/547/1701",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 547,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-08-12T10:46:21.000Z",
-        "ReleaseDate": "2026-08-12T10:25:59.000Z",
-        "SHA256": "fc47cb5512bb189af3cdccafac15d21e042945b9a3bac11e9160cc485d053937",
+        "LastUpdated": "2026-08-12T12:16:28.000Z",
+        "ReleaseDate": "2026-08-12T12:16:28.000Z",
+        "SHA256": "1035f12aee983c704c2ea3b3aba0b66a6241904aa25f44cd99878b6bee77f466",
         "dllSHA256s": {
             "bepinex_soundmod.dll": "d3e2a099cabac465faee24b54f896d32a3f7b7dacc8d712de5866e1eaa194c98"
         },
@@ -71,8 +114,8 @@
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 1,
-            "TotalDownloads": 2,
+            "UniqueDownloads": 3,
+            "TotalDownloads": 6,
             "TotalViews": null
         },
         "Images": [
@@ -101,7 +144,7 @@
         "dllSHA256s": {
             "MorePlastic.dll": "315c1f36609d1208e1a37275979231cdf6ae0001a36473557d752552c669e7f6"
         },
-        "downloadsSinceLatestVersion": 3,
+        "downloadsSinceLatestVersion": 7,
         "Dependencies": [
             "nexus-341"
         ],
@@ -144,7 +187,7 @@
         "dllSHA256s": {
             "Performant Rendering.dll": "864991f51b8890a01e7720c7347c12f3758bac8d9a283092ad4f823643cdf972"
         },
-        "downloadsSinceLatestVersion": 92,
+        "downloadsSinceLatestVersion": 95,
         "Dependencies": [
             "nexus-341"
         ],
@@ -187,7 +230,7 @@
         "dllSHA256s": {
             "HandSpriteR.dll": "ac97f5012b8b2615765340e59f0ce87e24d640ec7b3e8e4b9520ca0cc2b2cf0c"
         },
-        "downloadsSinceLatestVersion": 36,
+        "downloadsSinceLatestVersion": 37,
         "Dependencies": [],
         "dllNames": [
             "HandSpriteR.dll"
@@ -272,7 +315,7 @@
         "dllSHA256s": {
             "ClientMP3Player.dll": "85b5a1e75abcdca28f5ca0de143610bf90d3fd834c44fa4aa959b5a9b11f46d5"
         },
-        "downloadsSinceLatestVersion": 26,
+        "downloadsSinceLatestVersion": 29,
         "Dependencies": [],
         "dllNames": [
             "ClientMP3Player.dll"
@@ -356,7 +399,7 @@
         "dllSHA256s": {
             "MilkiesMilk.dll": "02c13e9bdf5f309269f6ec4c662b7efeb4c67741ca4de17aa2afa34773de7b6b"
         },
-        "downloadsSinceLatestVersion": 259,
+        "downloadsSinceLatestVersion": 268,
         "Dependencies": [
             "nexus-341"
         ],
@@ -440,7 +483,7 @@
         "dllSHA256s": {
             "SayAgain.dll": "8d49cc40eac358b5ebe92f730adba0b5f80707c7949cb3b49ba234e51b70f3a3"
         },
-        "downloadsSinceLatestVersion": 96,
+        "downloadsSinceLatestVersion": 98,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -606,7 +649,7 @@
         "dllSHA256s": {
             "SecondThoughts.dll": "22069022ae20c535255d851a51705252bc2b4802e807d38d75f35d41b31456eb"
         },
-        "downloadsSinceLatestVersion": 61,
+        "downloadsSinceLatestVersion": 62,
         "Dependencies": [],
         "dllNames": [
             "SecondThoughts.dll"
@@ -928,7 +971,7 @@
         "dllSHA256s": {
             "CasualtiesUnderTheInfluence.dll": "ecf1223035c5dca796694989d735f1b3453d96bf3b34fe09cee7d70f7356573b"
         },
-        "downloadsSinceLatestVersion": 144,
+        "downloadsSinceLatestVersion": 146,
         "Dependencies": [
             "nexus-341"
         ],
@@ -971,7 +1014,7 @@
         "dllSHA256s": {
             "a.chs.mod.dll": "99838a90d01ad36b8276d5ff9c2dfc08bb79f9455afa5d37200bf6dc7140cfcc"
         },
-        "downloadsSinceLatestVersion": 63,
+        "downloadsSinceLatestVersion": 65,
         "Dependencies": [],
         "dllNames": [
             "a.chs.mod.dll"
@@ -1053,7 +1096,7 @@
         "dllSHA256s": {
             "VariantOrganisms.dll": "57fda7e95b1541745887d66eaa71c9adc7c79e32ca461f2e79124993761c89b3"
         },
-        "downloadsSinceLatestVersion": 48,
+        "downloadsSinceLatestVersion": 49,
         "Dependencies": [
             "nexus-341",
             "nexus-502"
@@ -1388,7 +1431,7 @@
         "dllSHA256s": {
             "CreatureKit.dll": "563ad5dfd0334e152633338bbb56c031fb7914e4df3b87b5a84ac6f066a128d9"
         },
-        "downloadsSinceLatestVersion": 47,
+        "downloadsSinceLatestVersion": 48,
         "Dependencies": [
             "nexus-341"
         ],
@@ -1519,7 +1562,7 @@
         "dllSHA256s": {
             "Gigasalad.dll": "05a81413d2fe019f1f761bc69fcc7fa76e813fb58269fa25005b440662ac14e5"
         },
-        "downloadsSinceLatestVersion": 34,
+        "downloadsSinceLatestVersion": 35,
         "Dependencies": [],
         "dllNames": [
             "Gigasalad.dll"
@@ -1688,7 +1731,7 @@
         "dllSHA256s": {
             "CasualtiesModMenuENG.dll": "9e8d829495e303db3be9b1f336516c2a7ad2398171b73fae11a98c57abebe0a9"
         },
-        "downloadsSinceLatestVersion": 302,
+        "downloadsSinceLatestVersion": 305,
         "Dependencies": [],
         "dllNames": [
             "CasualtiesModMenuENG.dll"
@@ -1773,7 +1816,7 @@
         "dllSHA256s": {
             "ColorfulInsides.dll": "f16a9638d43e4765ff71ffd3923ab2eb793b66fc15bdd386dbb214e2796292dd"
         },
-        "downloadsSinceLatestVersion": 25,
+        "downloadsSinceLatestVersion": 26,
         "Dependencies": [],
         "dllNames": [
             "ColorfulInsides.dll"
@@ -1987,7 +2030,7 @@
         "dllSHA256s": {
             "ConsolePlus.dll": "8c1b2f35c70f1e3bd7528cf63d0306f37bad9b7a0966b0f459cfd25b7577759e"
         },
-        "downloadsSinceLatestVersion": 21,
+        "downloadsSinceLatestVersion": 22,
         "Dependencies": [],
         "dllNames": [
             "ConsolePlus.dll"
@@ -2071,7 +2114,7 @@
         "dllSHA256s": {
             "CUMoreNpcMod.dll": "db5fa660475424fbb302f5031d25d4eaca4c982cfb539746b0d37e036617de29"
         },
-        "downloadsSinceLatestVersion": 95,
+        "downloadsSinceLatestVersion": 96,
         "Dependencies": [
             "nexus-67",
             "nexus-341"
@@ -2158,7 +2201,7 @@
         "dllSHA256s": {
             "AntiGravBag.dll": "36f504779b54f1eb9cd2de2f3480bd67027668fecc0c210cf57a646b6c0dddb4"
         },
-        "downloadsSinceLatestVersion": 101,
+        "downloadsSinceLatestVersion": 102,
         "Dependencies": [],
         "dllNames": [
             "AntiGravBag.dll"
@@ -2286,7 +2329,7 @@
         "dllSHA256s": {
             "CU'sKitchenV1.3Early.dll": "afce9b964c84d4865aa62e8d48a62580781449cfd8dde79e7670a5f454b6d009"
         },
-        "downloadsSinceLatestVersion": 312,
+        "downloadsSinceLatestVersion": 314,
         "Dependencies": [
             "nexus-341"
         ],
@@ -2371,7 +2414,7 @@
         "dllSHA256s": {
             "Wearable Crystals.dll": "3f3338596ab9e1bc876e6ca57863d0d413a54e0234ba2843fbfa9b0fc2753e33"
         },
-        "downloadsSinceLatestVersion": 305,
+        "downloadsSinceLatestVersion": 307,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -2415,7 +2458,7 @@
         "dllSHA256s": {
             "BurnCare.dll": "0f975927c374f0ee2202b495e048a13dbf0e10008de77303a7c740da2be827a3"
         },
-        "downloadsSinceLatestVersion": 264,
+        "downloadsSinceLatestVersion": 265,
         "Dependencies": [],
         "dllNames": [
             "BurnCare.dll"
@@ -2456,7 +2499,7 @@
         "dllSHA256s": {
             "MakeshiftProsthetics.dll": "bcd80c8d3273c6b6a868e13d525ee86670b83b9e3044b1818ff5c39af702166c"
         },
-        "downloadsSinceLatestVersion": 224,
+        "downloadsSinceLatestVersion": 225,
         "Dependencies": [],
         "dllNames": [
             "MakeshiftProsthetics.dll"
@@ -2625,7 +2668,7 @@
         "dllSHA256s": {
             "SkinDeep.dll": "059f5f0155d35145d98a3804728e4e0bb7b58c55c660286435abc124b879a946"
         },
-        "downloadsSinceLatestVersion": 258,
+        "downloadsSinceLatestVersion": 259,
         "Dependencies": [],
         "dllNames": [
             "SkinDeep.dll"
@@ -2785,7 +2828,7 @@
         "dllSHA256s": {
             "CUSuperArsenal.dll": "28bb065a73af26403c8718130440037dcbae2939486163de9682cffe19ff8b06"
         },
-        "downloadsSinceLatestVersion": 286,
+        "downloadsSinceLatestVersion": 288,
         "Dependencies": [
             "nexus-341"
         ],
@@ -2910,7 +2953,7 @@
         "dllSHA256s": {
             "RedBlood.dll": "3ee240efb8e3c07a09988f6c6f9589e83c76223db15d32b8395eab6a872b4910"
         },
-        "downloadsSinceLatestVersion": 11,
+        "downloadsSinceLatestVersion": 14,
         "Dependencies": [],
         "dllNames": [
             "RedBlood.dll"
@@ -2986,7 +3029,7 @@
         "dllSHA256s": {
             "NeurotraumaModikByStaili.dll": "a3dbaff57923a3017b2b48c6fcce7e2e63b5d271fc75928cbe4c56872df52be0"
         },
-        "downloadsSinceLatestVersion": 166,
+        "downloadsSinceLatestVersion": 167,
         "Dependencies": [
             "nexus-40",
             "nexus-67",
@@ -3291,7 +3334,7 @@
         "dllSHA256s": {
             "extraDialogue.dll": "d775fa44ede3a1175e93c8e2e3f6032e857547c38b749ef13e38212492374cb3"
         },
-        "downloadsSinceLatestVersion": 497,
+        "downloadsSinceLatestVersion": 498,
         "Dependencies": [],
         "dllNames": [
             "extraDialogue.dll"
@@ -3418,7 +3461,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "2b189c3285703f51d31b26942f3656c066cc10603f53bb06e47dbe0a9dd404ea"
         },
-        "downloadsSinceLatestVersion": 713,
+        "downloadsSinceLatestVersion": 717,
         "Dependencies": [],
         "dllNames": [
             "CasualtiesConsumed.dll"
@@ -3459,7 +3502,7 @@
         "dllSHA256s": {
             "CUZoomPlus.dll": "aa4f4ce533818b24c854b3e6796e2a71795e4db2c81b8ea339828c3cc47045b0"
         },
-        "downloadsSinceLatestVersion": 293,
+        "downloadsSinceLatestVersion": 295,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3621,7 +3664,7 @@
         "dllSHA256s": {
             "MoodReimagined.dll": "71ca732d230394c4ce33c698b74fafc74d7a141f3b097021a7024a7dfea1f96e"
         },
-        "downloadsSinceLatestVersion": 412,
+        "downloadsSinceLatestVersion": 413,
         "Dependencies": [],
         "dllNames": [
             "MoodReimagined.dll"
@@ -3751,7 +3794,7 @@
         "dllSHA256s": {
             "ManualGunSuicide.dll": "ed661c435778b8f25633e96e1e5b8a4429667924b74e6aa04dbbdda14ba74823"
         },
-        "downloadsSinceLatestVersion": 276,
+        "downloadsSinceLatestVersion": 277,
         "Dependencies": [
             "nexus-67",
             "nexus-115"
@@ -4041,7 +4084,7 @@
         "dllSHA256s": {
             "CUMoreAmputation.dll": "edfd809af5be12c72878a465a3385999e0d5cf2c1b02737aed83452cda61e28d"
         },
-        "downloadsSinceLatestVersion": 434,
+        "downloadsSinceLatestVersion": 435,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -4249,7 +4292,7 @@
         "dllSHA256s": {
             "JustUnknownCharacters.dll": "24b07fe1c5d6bc6610c09d5c877d0d4d6a037e85c081343c7889b771fc825566"
         },
-        "downloadsSinceLatestVersion": 44,
+        "downloadsSinceLatestVersion": 45,
         "Dependencies": [],
         "dllNames": [
             "JustUnknownCharacters.dll"
@@ -4290,7 +4333,7 @@
         "dllSHA256s": {
             "knotrecipemod.dll": "540ca2574401953c3fdab3e0cd4f4f4c933eba7e33e276b3ff0b72d5e2774779"
         },
-        "downloadsSinceLatestVersion": 255,
+        "downloadsSinceLatestVersion": 261,
         "Dependencies": [],
         "dllNames": [
             "knotrecipemod.dll"
@@ -4411,7 +4454,7 @@
         "dllSHA256s": {
             "CUResprite.dll": "18c2fffe710ce43cb197fd3745ecde8a14bfbd9c8a797825e6125989fe4d05f1"
         },
-        "downloadsSinceLatestVersion": 490,
+        "downloadsSinceLatestVersion": 493,
         "Dependencies": [
             "nexus-115"
         ],
@@ -4580,7 +4623,7 @@
         "dllSHA256s": {
             "AxivornsExpieNPCMod.dll": "ee7694e259fc5f59c748b0bc9e97218bf43773cd44494e54c72b1191e05b914a"
         },
-        "downloadsSinceLatestVersion": 1105,
+        "downloadsSinceLatestVersion": 1109,
         "Dependencies": [],
         "dllNames": [
             "AxivornsExpieNPCMod.dll"
@@ -5015,7 +5058,7 @@
         "dllSHA256s": {
             "WhatDidiPressWrong.dll": "291d4957dbd3d5e21ba0060230144af7b7134c134063089a62d2bbf5d20cf40e"
         },
-        "downloadsSinceLatestVersion": 390,
+        "downloadsSinceLatestVersion": 392,
         "Dependencies": [],
         "dllNames": [
             "WhatDidiPressWrong.dll"
@@ -5170,7 +5213,7 @@
         "dllSHA256s": {
             "AllWearableCanBeHeld.dll": "2807520bc5eca3efe8792122703162d0c8bac45368a1d65668d2c6339713e3c7"
         },
-        "downloadsSinceLatestVersion": 722,
+        "downloadsSinceLatestVersion": 724,
         "Dependencies": [],
         "dllNames": [
             "AllWearableCanBeHeld.dll"
@@ -5209,7 +5252,7 @@
         "ReleaseDate": "2026-08-05T08:12:28.000Z",
         "SHA256": "e088c7ec1b0fb47f1541b2ab5cbc8dce8f4f51a6984ae8ca4eb0128e2005e133",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 63,
+        "downloadsSinceLatestVersion": 64,
         "Dependencies": [],
         "dllNames": [
             "AiserOmniMod_CCL_public.dll"
@@ -5285,7 +5328,7 @@
         "dllSHA256s": {
             "LeftyExpie.dll": "66781c5e0846cb86aa6a2eaaf53e057e8f54a79e59e23460bb0c29458c486c1e"
         },
-        "downloadsSinceLatestVersion": 74,
+        "downloadsSinceLatestVersion": 75,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -5330,7 +5373,7 @@
             "Quantum.dll": "a209997cc8482b0c49fb350a877df1f4338d971da1106c9e5a9508f75e1dd210",
             "TinyPinyin.dll": "d6c9e0507b7503842e46b3e4f9cea974ced29bcce8b470cc76792e19aee8d1f9"
         },
-        "downloadsSinceLatestVersion": 61,
+        "downloadsSinceLatestVersion": 64,
         "Dependencies": [],
         "dllNames": [
             "Quantum.dll",
@@ -5688,7 +5731,7 @@
         "dllSHA256s": {
             "[快速拉栓]GunHotkeys.dll": "fded9a8e94546e8b953fe36f5c61aebd9a2410afdd63e5a7d20a6f6a6d0932b9"
         },
-        "downloadsSinceLatestVersion": 706,
+        "downloadsSinceLatestVersion": 707,
         "Dependencies": [],
         "dllNames": [
             "[快速拉栓]GunHotkeys.dll"
@@ -5729,7 +5772,7 @@
         "dllSHA256s": {
             "Refill_Jetpack_with_Oil.dll": "17312dc4a103965d21d810caba88747f7b8754671324a2bcd40b5b374797e0fd"
         },
-        "downloadsSinceLatestVersion": 96,
+        "downloadsSinceLatestVersion": 97,
         "Dependencies": [],
         "dllNames": [
             "Refill_Jetpack_with_Oil.dll"
@@ -5930,7 +5973,7 @@
         "dllSHA256s": {
             "CUCoreLib.dll": "d44531cc0c8e11db13c622557da359375bfa7cd7660920726a887dc2c4538690"
         },
-        "downloadsSinceLatestVersion": 3757,
+        "downloadsSinceLatestVersion": 3775,
         "Dependencies": [],
         "dllNames": [
             "CUCoreLib.dll"
@@ -6327,7 +6370,7 @@
         "dllSHA256s": {
             "ExpiePettingMod.dll": "189909b97d3d8668d9e26b50bd69dd23887be0648997ecd7ea93b95ac383d835"
         },
-        "downloadsSinceLatestVersion": 1979,
+        "downloadsSinceLatestVersion": 1982,
         "Dependencies": [],
         "dllNames": [
             "ExpiePettingMod.dll"
@@ -6536,7 +6579,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "37bac4a443a878cfcd9cb9bf52a3aebdd35adbdcd67fecc38fa84b4590edae35"
         },
-        "downloadsSinceLatestVersion": 40,
+        "downloadsSinceLatestVersion": 42,
         "Dependencies": [],
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
@@ -6584,7 +6627,7 @@
             "GunsawGenetics.dll": "1adafd127d58e6a46bf5411e428b2442ad23ac7349d43caca6dcd9e77a4019ad",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 458,
+        "downloadsSinceLatestVersion": 468,
         "Dependencies": [],
         "dllNames": [
             "body_sprite_replacer.dll",
@@ -7042,7 +7085,7 @@
         "dllSHA256s": {
             "TemporalPanicButtonV1.0.4.dll": "ef926b44a794c44b551502dff6c74d64b8ebfa81a43b488772fe9d6fc43b2433"
         },
-        "downloadsSinceLatestVersion": 171,
+        "downloadsSinceLatestVersion": 172,
         "Dependencies": [],
         "dllNames": [
             "TemporalPanicButtonV1.0.4.dll"
@@ -8222,7 +8265,7 @@
         "dllSHA256s": {
             "VforWhining.dll": "ad115c465857112756a20204f07883da3087eb4c68f2a977e18cf571b5e7183e"
         },
-        "downloadsSinceLatestVersion": 1823,
+        "downloadsSinceLatestVersion": 1825,
         "Dependencies": [],
         "dllNames": [
             "VforWhining.dll"
@@ -8342,7 +8385,7 @@
         "dllSHA256s": {
             "WearableArray.dll": "792dbc65b7aca784dc7849ea49347c9336b0e7444779abca9c4b32d5a02ce4e5"
         },
-        "downloadsSinceLatestVersion": 710,
+        "downloadsSinceLatestVersion": 711,
         "Dependencies": [],
         "dllNames": [
             "WearableArray.dll"
@@ -8610,7 +8653,7 @@
             "DynamiteTimerCN.dll": "44b13d091880e1810ebb23b5d9274b952f470513437154da06cb4e55316cf0e7",
             "DynamiteTimerEN.dll": "f46491beb3dc0b2eb93ace641a1ea7ec807addfbd296bc0c38ae8ef5b24b0017"
         },
-        "downloadsSinceLatestVersion": 452,
+        "downloadsSinceLatestVersion": 453,
         "Dependencies": [],
         "dllNames": [
             "DynamiteTimerCN.dll",
@@ -8653,7 +8696,7 @@
         "dllSHA256s": {
             "KrokMPChineseSupplement.dll": "1cce24ba649adc547da8c55fe78d22b85f8fb4f45d9d4e5f6a05c43dadaf31b7"
         },
-        "downloadsSinceLatestVersion": 452,
+        "downloadsSinceLatestVersion": 453,
         "Dependencies": [],
         "dllNames": [
             "KrokMPChineseSupplement.dll"
@@ -8772,7 +8815,7 @@
         "dllSHA256s": {
             "ContainerTweaks.dll": "87211a32516c35eb2bfa62efac79c793157635ed050ad368247f678b46760ec6"
         },
-        "downloadsSinceLatestVersion": 835,
+        "downloadsSinceLatestVersion": 836,
         "Dependencies": [],
         "dllNames": [
             "ContainerTweaks.dll"
@@ -8813,7 +8856,7 @@
         "dllSHA256s": {
             "CasualtiesExtra.dll": "35f32d1c42ffb287e84a5c2046a5e9646f46ac731a3c2e7bd6593d28d190d8e9"
         },
-        "downloadsSinceLatestVersion": 330,
+        "downloadsSinceLatestVersion": 334,
         "Dependencies": [
             "nexus-341"
         ],
@@ -8897,7 +8940,7 @@
         "dllSHA256s": {
             "CUQuickPickup.dll": "0dbb13f9bee2c04507420f55bd6a7a03eddc8b2e8b9f51a006f6dd074b67d44b"
         },
-        "downloadsSinceLatestVersion": 471,
+        "downloadsSinceLatestVersion": 472,
         "Dependencies": [
             "nexus-115"
         ],
@@ -8983,7 +9026,7 @@
         "dllSHA256s": {
             "No Self-Destruct on Quit.dll": "7cd4fc48749afee28e1988dddfb2af8262019e8974a4dc6b3657b80f4f6441fe"
         },
-        "downloadsSinceLatestVersion": 1855,
+        "downloadsSinceLatestVersion": 1856,
         "Dependencies": [],
         "dllNames": [
             "No Self-Destruct on Quit.dll"
@@ -9067,7 +9110,7 @@
         "dllSHA256s": {
             "ModifiersRework.dll": "b797505d3325fc0c4bdec2283f186e3a1ca8d6b5f9c75743713cdb8848b642fd"
         },
-        "downloadsSinceLatestVersion": 132,
+        "downloadsSinceLatestVersion": 133,
         "Dependencies": [],
         "dllNames": [
             "ModifiersRework.dll"
@@ -9435,7 +9478,7 @@
         "dllSHA256s": {
             "DevMenuV2.dll": "48ac4310edd308faf82d1ffd177498d89864cfa6d5cace7abb623452b651f8cf"
         },
-        "downloadsSinceLatestVersion": 568,
+        "downloadsSinceLatestVersion": 575,
         "Dependencies": [],
         "dllNames": [
             "DevMenuV2.dll"
@@ -9718,7 +9761,7 @@
         "dllSHA256s": {
             "NewFirearms.dll": "3d2cfaacf29d24224f6e91ccf67a9f53199d77369e6e71953c6ef0370cfb74ab"
         },
-        "downloadsSinceLatestVersion": 764,
+        "downloadsSinceLatestVersion": 766,
         "Dependencies": [
             "nexus-32"
         ],
@@ -10832,7 +10875,7 @@
         "dllSHA256s": {
             "CuSaveManager.dll": "c97db5074e41f73e957cd2a56d4b33bf3403ebe93b228a3947a00825d7d06099"
         },
-        "downloadsSinceLatestVersion": 107,
+        "downloadsSinceLatestVersion": 108,
         "Dependencies": [],
         "dllNames": [
             "CuSaveManager.dll"
@@ -11025,7 +11068,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownAdditionalDescriptions.dll": "e112dbe3fdd14c446f39c824f884096e2d749758f6f4f7851d97fe424a7d8cc9"
         },
-        "downloadsSinceLatestVersion": 1599,
+        "downloadsSinceLatestVersion": 1602,
         "Dependencies": [],
         "dllNames": [
             "CasualtiesUnknownAdditionalDescriptions.dll"
@@ -11107,7 +11150,7 @@
         "dllSHA256s": {
             "ShrapnelVariants.dll": "be7895efb36f5b33e6473ffdf821f768e818c0881064fe30f092fa2e4975e4fb"
         },
-        "downloadsSinceLatestVersion": 3812,
+        "downloadsSinceLatestVersion": 3814,
         "Dependencies": [
             "nexus-115"
         ],
@@ -11150,7 +11193,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6dcbd87171f4a802d8f748a97bb5418b3976ac21b77d7f520e2c4aac97daa049"
         },
-        "downloadsSinceLatestVersion": 10158,
+        "downloadsSinceLatestVersion": 10168,
         "Dependencies": [],
         "dllNames": [
             "MultiplayerSpriteReplacer.dll"
@@ -11191,7 +11234,7 @@
         "dllSHA256s": {
             "SellFromBags.dll": "69293fda8c68ebce9951ae1d276a48f7b8e6a09b73fc8a7e746ab32dda93e146"
         },
-        "downloadsSinceLatestVersion": 2477,
+        "downloadsSinceLatestVersion": 2478,
         "Dependencies": [
             "nexus-115"
         ],
@@ -11234,7 +11277,7 @@
         "dllSHA256s": {
             "ItemSpawner.build.dll": "40d05db299cbbc2f09aee3371b482514383588148997d06742e919848476c09b"
         },
-        "downloadsSinceLatestVersion": 1625,
+        "downloadsSinceLatestVersion": 1626,
         "Dependencies": [],
         "dllNames": [
             "ItemSpawner.build.dll"
@@ -11316,7 +11359,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "37bac4a443a878cfcd9cb9bf52a3aebdd35adbdcd67fecc38fa84b4590edae35"
         },
-        "downloadsSinceLatestVersion": 34,
+        "downloadsSinceLatestVersion": 36,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -11361,7 +11404,7 @@
         "dllSHA256s": {
             "CatPatch.dll": "ed1920f44e76fa4b142a97cf18dff54796d4235349200b8d710f3fc3af280308"
         },
-        "downloadsSinceLatestVersion": 1887,
+        "downloadsSinceLatestVersion": 1891,
         "Dependencies": [],
         "dllNames": [
             "CatPatch.dll"
@@ -11400,7 +11443,7 @@
         "ReleaseDate": "2026-05-18T06:12:59.000Z",
         "SHA256": "3f612b7278c14f1e8e24b31f4313054c44b0aedc6a8263bd3053a15afec70875",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 555,
+        "downloadsSinceLatestVersion": 557,
         "Dependencies": [
             "nexus-32"
         ],
@@ -11460,7 +11503,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 39403,
+        "downloadsSinceLatestVersion": 39437,
         "ContainsAdultContent": false
     },
     {
@@ -11686,7 +11729,7 @@
         "ReleaseDate": "2026-06-11T05:52:33.000Z",
         "SHA256": "8f411312470cc374eed5fb17b2e27c5caf4a2f05e8102d3958c09edec2168259",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 895,
+        "downloadsSinceLatestVersion": 897,
         "Dependencies": [
             "nexus-32",
             "nexus-43",
@@ -11853,7 +11896,7 @@
         "dllSHA256s": {
             "Cigs.dll": "f9160991be0177ef571f8421315ab73c5feb216972e943a100720c1123a81de5"
         },
-        "downloadsSinceLatestVersion": 562,
+        "downloadsSinceLatestVersion": 563,
         "Dependencies": [
             "nexus-32"
         ],
@@ -12166,7 +12209,7 @@
         "dllSHA256s": {
             "VoySoundSwap.dll": "87350304e88337444eb16fdab262addf9f3712f515ef84954960acd6db32f93a"
         },
-        "downloadsSinceLatestVersion": 989,
+        "downloadsSinceLatestVersion": 990,
         "Dependencies": [],
         "dllNames": [
             "VoySoundSwap.dll"
@@ -12207,7 +12250,7 @@
         "dllSHA256s": {
             "LTS.dll": "370773364409e8f280f99c05cbbf838e45191a8b87a2fc73bcd24495e5af67ba"
         },
-        "downloadsSinceLatestVersion": 74,
+        "downloadsSinceLatestVersion": 75,
         "Dependencies": [],
         "dllNames": [
             "LTS.dll"
@@ -12248,7 +12291,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "15f047a0ed401af24d49193439e29bbab2f1a37c64a5a6e22f1cadfa65b17ccd"
         },
-        "downloadsSinceLatestVersion": 818,
+        "downloadsSinceLatestVersion": 820,
         "Dependencies": [
             "nexus-341"
         ],
@@ -12292,7 +12335,7 @@
         "dllSHA256s": {
             "ReGrowthSerums.dll": "af97bbd0388171313fbb991e0b4b5c7f0a3e375035e8be8a3a5cf9e73e09b9a0"
         },
-        "downloadsSinceLatestVersion": 58,
+        "downloadsSinceLatestVersion": 60,
         "Dependencies": [
             "nexus-32"
         ],
@@ -12520,7 +12563,7 @@
         "dllSHA256s": {
             "RshLib.dll": "fb168f3609cb652b4858608947d1f347f44a433b8d4baa65afd297f373f41ddf"
         },
-        "downloadsSinceLatestVersion": 3437,
+        "downloadsSinceLatestVersion": 3441,
         "Dependencies": [],
         "dllNames": [
             "RshLib.dll"
@@ -12595,7 +12638,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/31/31-1777215394-1750634006.png"
         ],
-        "downloadsSinceLatestVersion": 3276,
+        "downloadsSinceLatestVersion": 3278,
         "ContainsAdultContent": false
     },
     {
@@ -13229,7 +13272,7 @@
         "dllSHA256s": {
             "body_sprite_replacer.dll": "dc92eec8e3fcaa62396616050d4bd2315b7648a15ee92a2354885908454c8fb0"
         },
-        "downloadsSinceLatestVersion": 3924,
+        "downloadsSinceLatestVersion": 3927,
         "Dependencies": [],
         "dllNames": [
             "body_sprite_replacer.dll"
@@ -13428,7 +13471,7 @@
         "dllSHA256s": {
             "Custom Structures.dll": "64ba2b7bb8d4c6162721396e0867d1eba30ac682fec8bbe7d087a479bf9a3a4e"
         },
-        "downloadsSinceLatestVersion": 1448,
+        "downloadsSinceLatestVersion": 1450,
         "Dependencies": [],
         "dllNames": [
             "Custom Structures.dll"
@@ -13501,7 +13544,7 @@
         "dllSHA256s": {
             "QoL Unknown.dll": "61415f75fe7843b88da6f86e8758597929ca2d2d72e4bc575923ebfb409f34bc"
         },
-        "downloadsSinceLatestVersion": 5204,
+        "downloadsSinceLatestVersion": 5209,
         "Dependencies": [],
         "dllNames": [
             "QoL Unknown.dll"
@@ -13695,7 +13738,7 @@
         "dllSHA256s": {
             "CU_ItemSpawner_Mod.dll": "67d21848c6e6a398538a51d465f30901d5b0bc9a16b606a4037e4d60b29c14c3"
         },
-        "downloadsSinceLatestVersion": 2179,
+        "downloadsSinceLatestVersion": 2180,
         "Dependencies": [],
         "dllNames": [
             "CU_ItemSpawner_Mod.dll"

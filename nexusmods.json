@@ -22,7 +22,7 @@
             "CUCoreLib.dll": "b448af7b6c9c8d7767df0bbb13e465551ef6b0f2a35dda209b5f78035ab4e659",
             "gouxismorefirearms.dll": "6cc8584fb3ca126dea78650166963b4adcb71dc0681290923eda6871278dab49"
         },
-        "downloadsSinceLatestVersion": 9,
+        "downloadsSinceLatestVersion": 11,
         "Dependencies": [],
         "dllNames": [
             "CUCoreLib.dll",
@@ -85,40 +85,83 @@
         ]
     },
     {
-        "Id": "nexus-551",
-        "Name": "Cu-BloodBank",
-        "Version": "1.2.1",
-        "bepinexVersion": "1.2.1",
-        "Description": "\n<br />[size=4][b]Casualties Unknown - Blood Bank[/b][/size]\n<br />[b]Version:[/b] v1.2.0 | [b]Author:[/b] ouse114514\n<br />\n<br />A BepInEx plugin that adds \"Donate / Draw Blood\" mechanics to the trader system in Casualties Unknown.\n<br />\n<br />[line]\n<br />\n<br />[b]Features[/b]\n<br />[list]\n<br />[*][b]Donate blood[/b]: Click the new \"Donate / Draw Blood\" button in the trade menu to donate your own blood (500ml; 1500ml for Dune) in exchange for trade credit (better price at higher reputation: ≥125 high, ≥75 medium, else low).[/*]\n<br />[*][b]Draw blood[/b]: Drag an [b]empty blood bag[/b] onto the button to draw blood from the trader using trade credit (up to 750ml per bag). The more you draw, the pricier it gets (price doubles every 1000ml drawn cumulatively, up to x16); the less blood the trader has, the higher the price.[/*]\n<br />[*][b]First draw free[/b]: When 0ml drawn in total and reputation ≥200, the first draw is free.[/*]\n<br />[*][b]Credit cap[/b]: If the draw price exceeds the 60 credit cap, the trader refuses (consistent with vanilla credit rules).[/*]\n<br />[*][b]Price label[/b]: Left of the button, showing live price, trader's remaining blood, and total drawn (also shows both blood types when the blood-type mod is installed).[/*]\n<br />[*][b]Trader refuses his own blood[/b]: Blood drawn from a trader cannot be sold back to him (EXP gets awkward / MIKY is speechless); Dune is a simple creature and accepts it. Other traders buy it normally.[/*]\n<br />[*][b]Blood type integration[/b] (optional): If Alexx_'s MedicalBrutalism is also installed, blood drawn from a trader carries the trader's blood type. Hovering a bag shows its type and compatible types. EXP/MIKY refuse incompatible blood bags (Dune excepted), unless the trader's own blood is below 25%, in which case they accept anything.[/*]\n<br />[*][b]Emergency gift[/b]: A non-hostile, non-Dune trader gives you a free 750ml bag of blood when your blood volume drops below 70% (once per trader).[/*]\n<br />[*][b]Localization[/b]: Supports Simplified Chinese, Traditional Chinese, and English.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Installation[/b]\n<br />[list=1]\n<br />[*]Copy\n<br />[code]Cu-BloodBank.dll[/code]to:\n<br />[code]&lt;Steam&gt;&#92;steamapps&#92;common&#92;Casualties Unknown Demo&#92;BepInEx&#92;plugins&#92;[/code][/*]\n<br />[*]Requires [b]BepInEx 5[/b] (same environment as Cu-SaveManager and other mods).[/*]\n<br />[*]Launch the game. To uninstall, just delete the DLL.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Pricing Rules[/b]\n<br />[list]\n<br />[*][b]Base price[/b] (per 750ml bag):\n<br />[list]\n<br />[*]Reputation &gt; 100:\n<br />[code]23.5 - 0.1 × Reputation[/code][/*]\n<br />[*]Reputation ≤ 100:\n<br />[code]28 - 0.14 × Reputation[/code][/*]\n<br />[/list]Rep 50→21, 100→14, 150→9, 200→4.[/*]\n<br />[*][b]Trader blood factor[/b]:\n<br />[code]1.0 ~ 2.0[/code](lower blood = higher price; Dune cap 15000ml, others 5000ml).[/*]\n<br />[*][b]Cumulative tier[/b]: Doubles every 1000ml drawn (\n<br />[code]x1, x2, x4, x8, x16[/code]).[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Log File[/b]\n<br />[code]%LocalLow%&#92;Orsoniks&#92;CasualtiesUnknown&#92;BloodBank.log[/code]",
-        "Author": "ouse114514",
+        "Id": "nexus-552",
+        "Name": "What Mod Is This From (WMITF)",
+        "Version": "1",
+        "bepinexVersion": "1.0.0",
+        "Description": "[size=5][b][color=#ff7700]What Mod Is This From? (WMITF)[/color][/b][/size]\n<br />[color=#38761d][size=2](The expie is pointing at the emerald ore, [/size][/color][color=#38761d][size=2]you see)[/size][/color]\n<br />\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/552/552-1786593363-1779952297.png[/img]\n<br />\n<br />[size=3]WMITF is a simple mod that lets you know what stuff is from, adding a customizable WAILA/Jade-style tooltip and mod-source detector for Casualties Unknown.[/size]\n<br />\n<br />[size=4][color=#ff7700][b]Features:[/b][/color][/size]\n<br />[list]\n<br />[*]Shows the owning mod’s name on custom item tooltips for items[/*]\n<br />[*]Adds a compact top-screen inspector for blocks and building entities. (WAILA)\n<br />^ Displays name, health, condition/mining percentage, icon, and source mod.[/*]\n<br />[*]Shows recipe/result ownership in the crafting pane.[/*]\n<br />[*]Works in multiplayer and works with every other mod.[/*]\n<br />[*]Supports CUCorelib, RshCCL, and RshLib. Want another addition? Ask us in the [url=https://discord.gg/ehCptz9pwU]Discord[/url]![/*]\n<br />[*]Now in Simplified Chinese and Russian! [/*]\n<br />[/list][color=#ffd966]All features can be toggled independently in the [b]Gameplay[/b] settings tab:[/color]\n<br />\n<br />(Inspired by the Minecraft mod WAILA by ProfMobius, and Terraria mod WMITF by HilariousWalnut34. [size=2]Hey, wait a second...[/size])\n<br />\n<br />[size=4]Note: [b][color=#f1c232]CUCoreLib v1.0.4 is required! This mod uses features from the latest release.[/color][/b][/size]\n<br />",
+        "Author": "Jimmyking9999999",
         "Links": {
-            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/551/551-1786545055-16015625.png",
-            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/551"
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/552/552-1786591924-1856400506.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/552"
         },
-        "DownloadUrl": "nexus://scavprototype/551/1703",
+        "DownloadUrl": "nexus://scavprototype/552/1706",
         "NexusGameDomain": "scavprototype",
-        "NexusModId": 551,
+        "NexusModId": 552,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-08-12T15:38:44.000Z",
-        "ReleaseDate": "2026-08-12T14:52:09.000Z",
-        "SHA256": "e420ba00259d0afc957c8e4cd9d672cbf012e046a73a2d6c69daecf08ed864ff",
+        "LastUpdated": "2026-08-13T15:05:26.000Z",
+        "ReleaseDate": "2026-08-13T04:35:28.000Z",
+        "SHA256": "853b590e7dde5a5ce3977db568ab7f7733575999cd72ea8d978e09af07d4d380",
         "dllSHA256s": {
-            "Cu-BloodBank.dll": "10cc5a602550cddb04295702c9bbc030158e4d042b0937c7bf61e99bbf9e4313"
+            "WhatModIsThisFrom.dll": "23cef166eab7419ce1805f641a1f9ac2ac3c802d3738be41251f33934efd9d9b"
         },
-        "downloadsSinceLatestVersion": 16,
-        "Dependencies": [],
-        "dllNames": [
-            "Cu-BloodBank.dll"
+        "downloadsSinceLatestVersion": 3,
+        "Dependencies": [
+            "nexus-341"
         ],
-        "dllVersion": "1.2.1",
+        "dllNames": [
+            "WhatModIsThisFrom.dll"
+        ],
+        "dllVersion": "1.0.0",
         "dllVersions": {
-            "Cu-BloodBank.dll": "1.2.1"
+            "WhatModIsThisFrom.dll": "1.0.0"
         },
         "Statistics": {
             "Endorsements": 0,
             "UniqueDownloads": 1,
             "TotalDownloads": 1,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/552/552-1786591924-1856400506.png"
+        ]
+    },
+    {
+        "Id": "nexus-551",
+        "Name": "Cu-BloodBank",
+        "Version": "1.2.2",
+        "bepinexVersion": "1.2.2",
+        "Description": "\n<br />[size=4][b]Casualties Unknown - Blood Bank[/b][/size]\n<br />[b]Version:[/b] v1.2.0 | [b]Author:[/b] ouse114514\n<br />\n<br />A BepInEx plugin that adds \"Donate / Draw Blood\" mechanics to the trader system in Casualties Unknown.\n<br />\n<br />[line]\n<br />\n<br />[b]Features[/b]\n<br />[list]\n<br />[*][b]Donate blood[/b]: Click the new \"Donate / Draw Blood\" button in the trade menu to donate your own blood (500ml; 1500ml for Dune) in exchange for trade credit (better price at higher reputation: ≥125 high, ≥75 medium, else low).[/*]\n<br />[*][b]Draw blood[/b]: Drag an [b]empty blood bag[/b] onto the button to draw blood from the trader using trade credit (up to 750ml per bag). The more you draw, the pricier it gets (price doubles every 1000ml drawn cumulatively, up to x16); the less blood the trader has, the higher the price.[/*]\n<br />[*][b]First draw free[/b]: When 0ml drawn in total and reputation ≥200, the first draw is free.[/*]\n<br />[*][b]Credit cap[/b]: If the draw price exceeds the 60 credit cap, the trader refuses (consistent with vanilla credit rules).[/*]\n<br />[*][b]Price label[/b]: Left of the button, showing live price, trader's remaining blood, and total drawn (also shows both blood types when the blood-type mod is installed).[/*]\n<br />[*][b]Trader refuses his own blood[/b]: Blood drawn from a trader cannot be sold back to him (EXP gets awkward / MIKY is speechless); Dune is a simple creature and accepts it. Other traders buy it normally.[/*]\n<br />[*][b]Blood type integration[/b] (optional): If Alexx_'s MedicalBrutalism is also installed, blood drawn from a trader carries the trader's blood type. Hovering a bag shows its type and compatible types. EXP/MIKY refuse incompatible blood bags (Dune excepted), unless the trader's own blood is below 25%, in which case they accept anything.[/*]\n<br />[*][b]Emergency gift[/b]: A non-hostile, non-Dune trader gives you a free 750ml bag of blood when your blood volume drops below 70% (once per trader).[/*]\n<br />[*][b]Localization[/b]: Supports Simplified Chinese, Traditional Chinese, and English.[/*]\n<br />[/list][line]\n<br />\n<br />[b]Installation[/b]\n<br />[list=1]\n<br />[*]Copy\n<br />[code]Cu-BloodBank.dll[/code]to:\n<br />[code]&lt;Steam&gt;&#92;steamapps&#92;common&#92;Casualties Unknown Demo&#92;BepInEx&#92;plugins&#92;[/code][/*]\n<br />[*]Requires [b]BepInEx 5[/b] (same environment as Cu-SaveManager and other mods).[/*]\n<br />[*]Launch the game. To uninstall, just delete the DLL.[/*]\n<br />[/list][line]\n<br />\n<br />[b]Pricing Rules[/b]\n<br />[list]\n<br />[*][b]Base price[/b] (per 750ml bag):\n<br />[list]\n<br />[*]Reputation &gt; 100:\n<br />[code]23.5 - 0.1 × Reputation[/code][/*]\n<br />[*]Reputation ≤ 100:\n<br />[code]28 - 0.14 × Reputation[/code][/*]\n<br />[/list]Rep 50→21, 100→14, 150→9, 200→4.[/*]\n<br />[*][b]Trader blood factor[/b]:\n<br />[code]1.0 ~ 2.0[/code](lower blood = higher price; Dune cap 15000ml, others 5000ml).[/*]\n<br />[*][b]Cumulative tier[/b]: Doubles every 1000ml drawn (\n<br />[code]x1, x2, x4, x8, x16[/code]).[/*]\n<br />[/list][line]\n<br />\n<br />[b]Log File[/b]\n<br />[code]%LocalLow%&#92;Orsoniks&#92;CasualtiesUnknown&#92;BloodBank.log[/code]",
+        "Author": "ouse114514",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/551/551-1786545055-16015625.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/551"
+        },
+        "DownloadUrl": "nexus://scavprototype/551/1716",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 551,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-08-13T15:03:42.000Z",
+        "ReleaseDate": "2026-08-13T15:03:42.000Z",
+        "SHA256": "8bdd9ce2bb1977ec4f8397d68a8fc0e196c5228b76b19713b94213dee4a387c6",
+        "dllSHA256s": {
+            "Cu-BloodBank.dll": "d025af8b11dfcbbfe133d271e6e993e3e8c4defaed899a0a924306908be21335"
+        },
+        "downloadsSinceLatestVersion": 0,
+        "Dependencies": [],
+        "dllNames": [
+            "Cu-BloodBank.dll"
+        ],
+        "dllVersion": "1.2.2",
+        "dllVersions": {
+            "Cu-BloodBank.dll": "1.2.2"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 18,
+            "TotalDownloads": 20,
             "TotalViews": null
         },
         "Images": [
@@ -190,7 +233,7 @@
         "dllSHA256s": {
             "Assembly-CSharp.dll": "70fe5dd5dfbf735da613a1d79ddf59e99694debcec838bba500e33151767a67c"
         },
-        "downloadsSinceLatestVersion": 47,
+        "downloadsSinceLatestVersion": 50,
         "Dependencies": [],
         "dllNames": [
             "Assembly-CSharp.dll"
@@ -313,7 +356,7 @@
         "dllSHA256s": {
             "Performant Rendering.dll": "44404ed33c48bc69e571278d773a3139b6a5220ebb5e0f219d038e5038dec9ce"
         },
-        "downloadsSinceLatestVersion": 12,
+        "downloadsSinceLatestVersion": 19,
         "Dependencies": [
             "nexus-341"
         ],
@@ -483,7 +526,7 @@
         "dllSHA256s": {
             "transparentsyringes.dll": "a4b425bbc43f51b3c6ee556ee6e6d0c613e1aab19563161b804a54f8b56b0950"
         },
-        "downloadsSinceLatestVersion": 7,
+        "downloadsSinceLatestVersion": 10,
         "Dependencies": [
             "nexus-341"
         ],
@@ -569,7 +612,7 @@
         "dllSHA256s": {
             "MilkiesMilk.dll": "94ff02d175d7b67dfe7d556739ba8f551caa4041c572b1393e1514c7a139b550"
         },
-        "downloadsSinceLatestVersion": 24,
+        "downloadsSinceLatestVersion": 27,
         "Dependencies": [
             "nexus-341"
         ],
@@ -653,7 +696,7 @@
         "dllSHA256s": {
             "SayAgain.dll": "8d49cc40eac358b5ebe92f730adba0b5f80707c7949cb3b49ba234e51b70f3a3"
         },
-        "downloadsSinceLatestVersion": 106,
+        "downloadsSinceLatestVersion": 107,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -1022,7 +1065,7 @@
         "ReleaseDate": "2026-08-07T17:46:58.000Z",
         "SHA256": "06e1c47a312e2c304636a4da2f1e56d78457e922284e77602560e65c4d49b0b3",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 78,
+        "downloadsSinceLatestVersion": 79,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -1398,7 +1441,7 @@
         "dllSHA256s": {
             "CUButt.dll": "b4f29de5a233588ad26c024f5f6556a4631a1a801f9144e479f674be80bfd96c"
         },
-        "downloadsSinceLatestVersion": 39,
+        "downloadsSinceLatestVersion": 40,
         "Dependencies": [],
         "dllNames": [
             "CUButt.dll"
@@ -1437,7 +1480,7 @@
         "ReleaseDate": "2026-08-13T01:55:21.000Z",
         "SHA256": "59acf81811d0f2c216cf3262447def803a52d7c842b20577c16592d8c4dff991",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 14,
+        "downloadsSinceLatestVersion": 16,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -1603,7 +1646,7 @@
         "dllSHA256s": {
             "CreatureKit.dll": "563ad5dfd0334e152633338bbb56c031fb7914e4df3b87b5a84ac6f066a128d9"
         },
-        "downloadsSinceLatestVersion": 59,
+        "downloadsSinceLatestVersion": 60,
         "Dependencies": [
             "nexus-341"
         ],
@@ -1734,7 +1777,7 @@
         "dllSHA256s": {
             "Gigasalad.dll": "ebe921082dc6c56fb8c2843cece79aa07183c992b9b52bcafd08bae573a9051a"
         },
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 5,
         "Dependencies": [],
         "dllNames": [
             "Gigasalad.dll"
@@ -1860,7 +1903,7 @@
         "dllSHA256s": {
             "AutoMinigameTools.dll": "07c13530b5be1da9f30a62aa96e9393bb303dd0c3e98794aff177605e71cec22"
         },
-        "downloadsSinceLatestVersion": 159,
+        "downloadsSinceLatestVersion": 160,
         "Dependencies": [
             "nexus-341"
         ],
@@ -1903,7 +1946,7 @@
         "dllSHA256s": {
             "CasualtiesModMenuENG.dll": "9e8d829495e303db3be9b1f336516c2a7ad2398171b73fae11a98c57abebe0a9"
         },
-        "downloadsSinceLatestVersion": 308,
+        "downloadsSinceLatestVersion": 310,
         "Dependencies": [],
         "dllNames": [
             "CasualtiesModMenuENG.dll"
@@ -2286,7 +2329,7 @@
         "dllSHA256s": {
             "CUMoreNpcMod.dll": "db5fa660475424fbb302f5031d25d4eaca4c982cfb539746b0d37e036617de29"
         },
-        "downloadsSinceLatestVersion": 132,
+        "downloadsSinceLatestVersion": 133,
         "Dependencies": [
             "nexus-67",
             "nexus-341"
@@ -2586,7 +2629,7 @@
         "dllSHA256s": {
             "Wearable Crystals.dll": "3f3338596ab9e1bc876e6ca57863d0d413a54e0234ba2843fbfa9b0fc2753e33"
         },
-        "downloadsSinceLatestVersion": 310,
+        "downloadsSinceLatestVersion": 312,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -2630,7 +2673,7 @@
         "dllSHA256s": {
             "BurnCare.dll": "0f975927c374f0ee2202b495e048a13dbf0e10008de77303a7c740da2be827a3"
         },
-        "downloadsSinceLatestVersion": 264,
+        "downloadsSinceLatestVersion": 265,
         "Dependencies": [],
         "dllNames": [
             "BurnCare.dll"
@@ -2671,7 +2714,7 @@
         "dllSHA256s": {
             "MakeshiftProsthetics.dll": "bcd80c8d3273c6b6a868e13d525ee86670b83b9e3044b1818ff5c39af702166c"
         },
-        "downloadsSinceLatestVersion": 222,
+        "downloadsSinceLatestVersion": 224,
         "Dependencies": [],
         "dllNames": [
             "MakeshiftProsthetics.dll"
@@ -2712,7 +2755,7 @@
         "dllSHA256s": {
             "HellValley.dll": "a8c459b999900d7a08b9ac0f68a96a7d26045830988e6593e3426b95cbc4aec0"
         },
-        "downloadsSinceLatestVersion": 91,
+        "downloadsSinceLatestVersion": 92,
         "Dependencies": [],
         "dllNames": [
             "HellValley.dll"
@@ -3125,7 +3168,7 @@
         "dllSHA256s": {
             "RedBlood.dll": "3ee240efb8e3c07a09988f6c6f9589e83c76223db15d32b8395eab6a872b4910"
         },
-        "downloadsSinceLatestVersion": 26,
+        "downloadsSinceLatestVersion": 27,
         "Dependencies": [],
         "dllNames": [
             "RedBlood.dll"
@@ -3201,7 +3244,7 @@
         "dllSHA256s": {
             "NeurotraumaModikByStaili.dll": "a3dbaff57923a3017b2b48c6fcce7e2e63b5d271fc75928cbe4c56872df52be0"
         },
-        "downloadsSinceLatestVersion": 166,
+        "downloadsSinceLatestVersion": 167,
         "Dependencies": [
             "nexus-40",
             "nexus-67",
@@ -3288,7 +3331,7 @@
         "dllSHA256s": {
             "Upgradable Storage Packs.dll": "3550de663fa70a75322bde43454d349dc5dbe976e06a644e2b54f022b5ab3b0e"
         },
-        "downloadsSinceLatestVersion": 203,
+        "downloadsSinceLatestVersion": 204,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -3633,7 +3676,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "2b189c3285703f51d31b26942f3656c066cc10603f53bb06e47dbe0a9dd404ea"
         },
-        "downloadsSinceLatestVersion": 767,
+        "downloadsSinceLatestVersion": 768,
         "Dependencies": [],
         "dllNames": [
             "CasualtiesConsumed.dll"
@@ -4010,7 +4053,7 @@
         "dllSHA256s": {
             "CUTarkovMedicalMod.dll": "1f5dc1eb0f65206850b8e837edf0ebd1e58280e542669a5c4738e5d61fa0fd04"
         },
-        "downloadsSinceLatestVersion": 56,
+        "downloadsSinceLatestVersion": 57,
         "Dependencies": [
             "nexus-341"
         ],
@@ -4256,7 +4299,7 @@
         "dllSHA256s": {
             "CUMoreAmputation.dll": "edfd809af5be12c72878a465a3385999e0d5cf2c1b02737aed83452cda61e28d"
         },
-        "downloadsSinceLatestVersion": 433,
+        "downloadsSinceLatestVersion": 434,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -4626,7 +4669,7 @@
         "dllSHA256s": {
             "CUResprite.dll": "18c2fffe710ce43cb197fd3745ecde8a14bfbd9c8a797825e6125989fe4d05f1"
         },
-        "downloadsSinceLatestVersion": 489,
+        "downloadsSinceLatestVersion": 491,
         "Dependencies": [
             "nexus-115"
         ],
@@ -4795,7 +4838,7 @@
         "dllSHA256s": {
             "AxivornsExpieNPCMod.dll": "ee7694e259fc5f59c748b0bc9e97218bf43773cd44494e54c72b1191e05b914a"
         },
-        "downloadsSinceLatestVersion": 1106,
+        "downloadsSinceLatestVersion": 1110,
         "Dependencies": [],
         "dllNames": [
             "AxivornsExpieNPCMod.dll"
@@ -5041,7 +5084,7 @@
         "dllSHA256s": {
             "RuScavMods.dll": "f60c78a6e212f8a302fdcbcc4e2fb0e45a0b2d70deaba9483c81e5eff562c1aa"
         },
-        "downloadsSinceLatestVersion": 37,
+        "downloadsSinceLatestVersion": 38,
         "Dependencies": [],
         "dllNames": [
             "RuScavMods.dll"
@@ -5161,7 +5204,7 @@
         "dllSHA256s": {
             "UniRuPatch.dll": "319cb12583ab14af90f3d5fe34c6a77473907a9391ae7519d7bee680c2e47a54"
         },
-        "downloadsSinceLatestVersion": 133,
+        "downloadsSinceLatestVersion": 135,
         "Dependencies": [],
         "dllNames": [
             "UniRuPatch.dll"
@@ -5424,7 +5467,7 @@
         "ReleaseDate": "2026-08-05T08:12:28.000Z",
         "SHA256": "e088c7ec1b0fb47f1541b2ab5cbc8dce8f4f51a6984ae8ca4eb0128e2005e133",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 66,
+        "downloadsSinceLatestVersion": 68,
         "Dependencies": [],
         "dllNames": [
             "AiserOmniMod_CCL_public.dll"
@@ -5545,7 +5588,7 @@
             "Quantum.dll": "a209997cc8482b0c49fb350a877df1f4338d971da1106c9e5a9508f75e1dd210",
             "TinyPinyin.dll": "d6c9e0507b7503842e46b3e4f9cea974ced29bcce8b470cc76792e19aee8d1f9"
         },
-        "downloadsSinceLatestVersion": 61,
+        "downloadsSinceLatestVersion": 62,
         "Dependencies": [],
         "dllNames": [
             "Quantum.dll",
@@ -6126,38 +6169,38 @@
     {
         "Id": "nexus-341",
         "Name": "CUCoreLib",
-        "Version": "1.0.3-alpha",
-        "bepinexVersion": "1.0.3",
-        "Description": "[center][size=6][color=#f39c12][b]CUCoreLib[/b][/color][/size]\n<br />[size=4][color=#dfe6e9]A definitive open-source modding library for Casualties: Unknown.[/color][/size]\n<br />[img]https://github.com/user-attachments/assets/24e022ba-0af1-4ce9-a66c-6b28b5e941f1[/img]\n<br />\n<br />[url=https://github.com/jimmyking9999999/CUCoreLib/releases][img]https://img.shields.io/github/v/release/jimmyking9999999/CUCoreLib?color=orange&amp;logo=github[/img][/url] [url=https://github.com/jimmyking9999999/CUCoreLib/releases][img]https://img.shields.io/github/downloads/jimmyking9999999/CUCoreLib/total?color=blue&amp;logo=github[/img][/url] [img]https://img.shields.io/badge/Game_version-v7.1.0-green[/img] [url=https://cucorelib.web.app/#welcome][img]https://img.shields.io/badge/Documentation-blue[/img][/url][/center]\n<br />[line]\n<br />[color=#f5cba7][i]\"awwww dang it @jimmy_king im not trusting you with my code again ;;!!!\"[/i][/color]\n<br />[color=#b2bec3]- Moffee, C:U game creator[/color]\n<br />\n<br />[left][color=#55efc4][b]This clearly means you should trust my library with your mod :)[/b][/color][/left]\n<br />[line]\n<br />[b][color=#f39c12][size=5]What Is CUCoreLib?[/size][/color][/b]\n<br />\n<br />CUCoreLib is an [b]exhaustive shared modding library and documentation project[/b] for Casualties: Unknown, built for both [b]beginners[/b] and [b]veteran mod authors[/b].\n<br />\n<br />Instead of every mod reinventing the same systems over and over, CUCoreLib provides a common foundation, with documentation.\n<br />\n<br />[color=#74b9ff][b]We have:[/b][/color]\n<br />[list]\n<br />[*]A human-written shared framework for building mods faster[/*]\n<br />[*]A safer compatibility layer for future modding work and multi-mod compatibility (it works with QoL and Multiplayer off the bat!)[/*]\n<br />[*]A very well documented API surface with examples and videos ([url=https://cucorelib.jimmyking.dev]cucorelib.jimmyking.dev[/url])[/*]\n<br />[*]A open-source project intended to grow with community feedback and contributions[/*]\n<br />[*]Hot loading, so you don't have to close your game every time you want to update your mod (!!)[/*]\n<br />[/list]\n<br />[color=#f39c12][size=5][b]What Does It Provide?[/b][/size][/color]\n<br />\n<br />[color=#ffeaa7][b]Core library features[/b][/color]\n<br />[list]\n<br />[*]Helper functions and shared utility systems[/*]\n<br />[*]Publicized access to useful private game data[/*]\n<br />[*]Mod-compatible patch hooks[/*]\n<br />[*]Documentation through an external webapp with examples, references, and videos[/*]\n<br />[*]Makes modding much faster and streamlined, with hot reloading[/*]\n<br />[/list][color=#ffeaa7][b]In-game modular API support[/b][/color]\n<br />[list]\n<br />[*]Custom items, liquids, containers, weapons, crafting materials, drops, and more[/*]\n<br />[*]Equipment[/*]\n<br />[*]Moodles and custom status effects[/*]\n<br />[*]Crafting and recipes[/*]\n<br />[*]Console commands[/*]\n<br />[*]Automatic locale and translation support[/*]\n<br />[*]Settings menu support[/*]\n<br />[*]Saving and persistent mod data[/*]\n<br />[*]Custom world entities, tiles, traps, and interactables[/*]\n<br />[*]Multiplayer API and helpers[/*]\n<br />[*]Custom minigame and animation support via assetbundle loading[/*]\n<br />[*]XML documentation and normal documentation[/*]\n<br />[*]General utility systems for mod authors[/*]\n<br />[/list]\n<br />[color=#f39c12][size=5][b]Why Use It?[/b][/size][/color]\n<br />\n<br />A lot of mods need the same basic foundation:\n<br />[list]\n<br />[*]Loading custom assets[/*]\n<br />[*]Registering items, liquids, recipes, and world content[/*]\n<br />[*]Saving mod data safely[/*]\n<br />[*]Patching game systems without exploding on updates[/*]\n<br />[*]Staying compatible with other mods[/*]\n<br />[*]Handling multiplayer-related integration[/*]\n<br />[/list]\n<br />Without a shared library, every mod author ends up building their own version of the same systems. That makes mods harder to maintain, harder to update, more likely to conflict, and more annoying to extend later.\n<br />\n<br />[center][color=#55efc4]CUCoreLib aims to become a common framework the modding scene can build on together.[/color][/center]\n<br />\n<br />[center][color=#ff7675][b]! This library is fully open source and open to pull requests! ![/b][/color][/center]\n<br />\n<br />[line]\n<br />[b][color=#f39c12][size=5]Documentation[/size][/color][/b]\n<br />\n<br />[center][img]https://github.com/user-attachments/assets/c836ede6-7aa3-4676-8051-37560beaa419[/img][/center]\n<br />\n<br />The documentation site is designed to help both new and experienced modders get productive quickly.\n<br />\n<br />[list]\n<br />[*]Click to [url=https://cucorelib.web.app/#welcome]open the live documentation website[/url][/*]\n<br />[*]Browse setup steps, examples, and API references[/*]\n<br />[*]Find examples on the right pane[/*]\n<br />[/list][center][img]https://staticdelivery.nexusmods.com/mods/8391/images/341/341-1781948099-1490581757.png[/img][/center]\n<br />[color=#444444][size=1][i](and maybe help contribute to the documentation yourself ;))[/i][/size][/color]\n<br />[color=#74b9ff][b]Useful links[/b][/color]\n<br />[list]\n<br />[*][url=https://cucorelib.web.app/#setup]Setup / Quick Start[/url][/*]\n<br />[*][url=https://github.com/jimmyking9999999/CUCoreLib]GitHub repository[/url][/*]\n<br />[*][url=https://github.com/jimmyking9999999/CUCoreLib/releases]Releases / Downloads[/url][/*]\n<br />[*][url=https://www.youtube.com/watch?v=agmxPgXdQtI]Youtube Beginner's Guide[/url][/*]\n<br />[/list][line]\n<br />[b][color=#f39c12][size=5]Installation / Quick Setup[/size][/color][/b]\n<br />\n<br />[list=1]\n<br />[*]Download the latest release from [url=https://github.com/jimmyking9999999/CUCoreLib/releases]GitHub Releases[/url]. (Or nightly, if you're feeling adventurous)[/*]\n<br />[*]Place [b]CUCoreLib.dll[/b] into your BepInEx plugins folder.[/*]\n<br />[/list][code] C:&#92;Program Files (x86)&#92;Steam&#92;steamapps&#92;common&#92;Casualties Unknown Demo&#92;BepInEx&#92;plugins[/code][list=1]\n<br />[*]Add the DLL as a reference in your Visual Studio project.[/*]\n<br />[*]Also add the game's own [b]Assembly-CSharp.dll[/b] as a reference.[/*]\n<br />[*]Start building your own mod.[/*]\n<br />[/list][code]&lt;Reference Include=\"CUCoreLib\"&gt;\n<br />  &lt;HintPath&gt;..&#92;PATH&#92;TO&#92;YOUR&#92;CUCoreLib.dll&lt;/HintPath&gt;\n<br />&lt;/Reference&gt;[/code]\n<br />[color=#74b9ff][b]Want the full guide?[/b][/color]\n<br />See the documentation setup page here:\n<br />[url=https://cucorelib.web.app/#setup]https://cucorelib.web.app/#setup[/url]\n<br />[line]\n<br />[b][color=#f39c12][size=5]Contributing [/size][/color][/b]\n<br />[center][img]https://media.discordapp.net/attachments/1506616266713202828/1517853324471439460/contributing.png?ex=6a649d90&amp;is=6a634c10&amp;hm=c26c7ff3bfb60ae8bfd7adb928a2c61bcfbb70127a045c3657e0922d30cdb0bc&amp;=&amp;format=webp&amp;quality=lossless[/img][/center]\n<br />\n<br />Contributions are very welcome, provided you do not fully use AI. \n<br />[list]\n<br />[*]Bug fixes are welcome[/*]\n<br />[*]API improvements are also welcome![/*]\n<br />[*]Compatibility improvements are very welcome[/*]\n<br />[*]Documentation improvements are very very welcome[/*]\n<br />[/list]For contribution guidelines and source access: [url=https://github.com/jimmyking9999999/CUCoreLib]https://github.com/jimmyking9999999/CUCoreLib[/url]\n<br />[line]\n<br />[color=#f39c12][size=5][b]Discord / Support [/b][/size][/color]\n<br />\n<br />[center][img]https://media.discordapp.net/attachments/1519387321231737022/1519388045739167844/discord.png?ex=6a644422&amp;is=6a62f2a2&amp;hm=1a4b42f28e843d7292bcaffc93e31a16abe0979ca05cdbe6a6866ac5c0873c82&amp;=&amp;format=webp&amp;quality=lossless[/img][/center]\n<br />\n<br />Have a question? Suggestion? Bug report but you're too shy to make an issue on GitHub? Ask us in the [url=https://discord.gg/ehCptz9pwU]Discord[/url] channel!\n<br />\n<br />[center][color=#ff7700][size=4]Happy modding![/size][/color][/center]\n<br />[line]\n<br />[color=#134f5c]To create a plugin, we must first create the universe...[/color]",
+        "Version": "1.0.4-alpha",
+        "bepinexVersion": "1.0.4",
+        "Description": "[center][size=6][color=#f39c12][b]CUCoreLib[/b][/color][/size]\n<br />[size=4][color=#dfe6e9]A definitive open-source modding library for Casualties: Unknown.[/color][/size]\n<br />[img]https://github.com/user-attachments/assets/24e022ba-0af1-4ce9-a66c-6b28b5e941f1[/img]\n<br />\n<br />[url=https://github.com/jimmyking9999999/CUCoreLib/releases][img]https://img.shields.io/github/v/release/jimmyking9999999/CUCoreLib?color=orange&amp;logo=github[/img][/url] [url=https://github.com/jimmyking9999999/CUCoreLib/releases][img]https://img.shields.io/github/downloads/jimmyking9999999/CUCoreLib/total?color=blue&amp;logo=github[/img][/url] [url=https://www.nexusmods.com/scavprototype/mods/341][img]https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjimmyking9999999%2FMetadata-generator%2Fmain%2Fbadges%2Fcucorelib.json[/img] [/url][img]https://img.shields.io/badge/Game_version-v7.1.0-green[/img] [url=https://cucorelib.jimmyking.dev/docs/welcome/][img]https://img.shields.io/badge/Documentation-blue[/img][/url][/center]\n<br />[line]\n<br />[color=#f5cba7][i]\"awwww dang it @jimmy_king im not trusting you with my code again ;;!!!\"[/i][/color]\n<br />[color=#b2bec3]- Moffee, C:U game creator[/color]\n<br />\n<br />[left][color=#55efc4][b]This clearly means you should trust my library with your mod :)[/b][/color][/left]\n<br />[line]\n<br />[b][color=#f39c12][size=5]What Is CUCoreLib?[/size][/color][/b]\n<br />\n<br />CUCoreLib is an [b]exhaustive shared modding library and documentation project[/b] for Casualties: Unknown, built for both [b]beginners[/b] and [b]veteran mod authors[/b].\n<br />\n<br />Instead of every mod reinventing the same systems over and over, CUCoreLib provides a common foundation, with documentation.\n<br />\n<br />[color=#74b9ff][b]We have:[/b][/color]\n<br />[list]\n<br />[*]A human-written shared framework for building mods faster[/*]\n<br />[*]A safer compatibility layer for future modding work and multi-mod compatibility (it works with QoL and Multiplayer off the bat!)[/*]\n<br />[*]A very well documented API surface with examples and videos ([url=https://cucorelib.jimmyking.dev]cucorelib.jimmyking.dev[/url])[/*]\n<br />[*]A open-source project intended to grow with community feedback and contributions[/*]\n<br />[*]Hot loading, so you don't have to close your game every time you want to update your mod (!!)[/*]\n<br />[/list]\n<br />[color=#f39c12][size=5][b]What Does It Provide?[/b][/size][/color]\n<br />\n<br />[color=#ffeaa7][b]Core library features[/b][/color]\n<br />[list]\n<br />[*]Helper functions and shared utility systems[/*]\n<br />[*]Publicized access to useful private game data[/*]\n<br />[*]Mod-compatible patch hooks[/*]\n<br />[*]Documentation through an external webapp with examples, references, and videos[/*]\n<br />[*]Makes modding much faster and streamlined, with hot reloading[/*]\n<br />[/list][color=#ffeaa7][b]In-game modular API support[/b][/color]\n<br />[list]\n<br />[*]Custom items, liquids, containers, weapons, crafting materials, drops, and more[/*]\n<br />[*]Equipment[/*]\n<br />[*]Moodles and custom status effects[/*]\n<br />[*]Crafting and recipes[/*]\n<br />[*]Console commands[/*]\n<br />[*]Automatic locale and translation support[/*]\n<br />[*]Settings menu support[/*]\n<br />[*]Saving and persistent mod data[/*]\n<br />[*]Custom world entities, tiles, traps, liquids, and interactables[/*]\n<br />[*]Multiplayer API and helpers[/*]\n<br />[*]Custom minigame and animation support via assetbundle loading[/*]\n<br />[*]XML documentation and normal documentation[/*]\n<br />[*]General utility systems for mod authors[/*]\n<br />[/list]\n<br />[color=#f39c12][size=5][b]Why Use It?[/b][/size][/color]\n<br />\n<br />A lot of mods need the same basic foundation:\n<br />[list]\n<br />[*]Loading custom assets[/*]\n<br />[*]Registering items, liquids, recipes, and world content[/*]\n<br />[*]Saving mod data safely[/*]\n<br />[*]Patching game systems without exploding on updates[/*]\n<br />[*]Staying compatible with other mods[/*]\n<br />[*]Handling multiplayer-related integration[/*]\n<br />[/list]\n<br />Without a shared library, every mod author ends up building their own version of the same systems. That makes mods harder to maintain, harder to update, more likely to conflict, and more annoying to extend later.\n<br />\n<br />[center][color=#55efc4]CUCoreLib aims to become a common framework the modding scene can build on together.[/color][/center]\n<br />\n<br />[center][color=#ff7675][b]! This library is fully open source and open to pull requests! ![/b][/color][/center]\n<br />\n<br />[line]\n<br />[b][color=#f39c12][size=5]Documentation[/size][/color][/b]\n<br />\n<br />[center][img]https://github.com/user-attachments/assets/c836ede6-7aa3-4676-8051-37560beaa419[/img][/center]\n<br />\n<br />The documentation site is designed to help both new and experienced modders get productive quickly.\n<br />\n<br />[list]\n<br />[*]Click to [url=https://cucorelib.jimmyking.dev/docs/welcome/]open the live documentation website[/url][/*]\n<br />[*]Browse setup steps, examples, and API references[/*]\n<br />[*]Find examples on the right pane[/*]\n<br />[/list][center][img]https://staticdelivery.nexusmods.com/mods/8391/images/341/341-1781948099-1490581757.png[/img][/center]\n<br />[color=#444444][size=1][i](and maybe help contribute to the documentation yourself ;))[/i][/size][/color]\n<br />[color=#74b9ff][b]Useful links[/b][/color]\n<br />[list]\n<br />[*][url=https://cucorelib.jimmyking.dev/docs/setup/]Setup / Quick Start[/url][/*]\n<br />[*][url=https://github.com/jimmyking9999999/CUCoreLib]GitHub repository[/url][/*]\n<br />[*][url=https://github.com/jimmyking9999999/CUCoreLib/releases]Releases / Downloads[/url][/*]\n<br />[*][url=https://www.youtube.com/watch?v=agmxPgXdQtI]Youtube Beginner's Guide[/url][/*]\n<br />[/list][line]\n<br />[b][color=#f39c12][size=5]Installation / Quick Setup[/size][/color][/b]\n<br />\n<br />[list=1]\n<br />[*]Download the latest release from [url=https://github.com/jimmyking9999999/CUCoreLib/releases]GitHub Releases[/url]. (Or nightly, if you're feeling adventurous)[/*]\n<br />[*]Place [b]CUCoreLib.dll[/b] into your BepInEx plugins folder.[/*]\n<br />[/list][code] C:&#92;Program Files (x86)&#92;Steam&#92;steamapps&#92;common&#92;Casualties Unknown Demo&#92;BepInEx&#92;plugins[/code][list=1]\n<br />[*]Add the DLL as a reference in your Visual Studio project.[/*]\n<br />[*]Also add the game's own [b]Assembly-CSharp.dll[/b] as a reference.[/*]\n<br />[*]Start building your own mod.[/*]\n<br />[/list][code]&lt;Reference Include=\"CUCoreLib\"&gt;\n<br />  &lt;HintPath&gt;..&#92;PATH&#92;TO&#92;YOUR&#92;CUCoreLib.dll&lt;/HintPath&gt;\n<br />&lt;/Reference&gt;[/code]\n<br />[color=#74b9ff][b]Want the full guide?[/b][/color]\n<br />See the documentation setup page here:\n<br />[url=https://cucorelib.jimmyking.dev/docs/setup/]https://cucorelib.jimmyking.dev/docs/setup/[/url]\n<br />[line]\n<br />[b][color=#f39c12][size=5]Contributing [/size][/color][/b]\n<br />[center][img]https://media.discordapp.net/attachments/1506616266713202828/1517853324471439460/contributing.png?ex=6a649d90&amp;is=6a634c10&amp;hm=c26c7ff3bfb60ae8bfd7adb928a2c61bcfbb70127a045c3657e0922d30cdb0bc&amp;=&amp;format=webp&amp;quality=lossless[/img][/center]\n<br />\n<br />Contributions are very welcome, provided you do not fully use AI. \n<br />[list]\n<br />[*]Bug fixes are welcome[/*]\n<br />[*]API improvements are also welcome![/*]\n<br />[*]Compatibility improvements are very welcome[/*]\n<br />[*]Documentation improvements are very very welcome[/*]\n<br />[/list]For contribution guidelines and source access: [url=https://github.com/jimmyking9999999/CUCoreLib]https://github.com/jimmyking9999999/CUCoreLib[/url]\n<br />[line]\n<br />[color=#f39c12][size=5][b]Discord / Support [/b][/size][/color]\n<br />\n<br />[center][img]https://media.discordapp.net/attachments/1519387321231737022/1519388045739167844/discord.png?ex=6a644422&amp;is=6a62f2a2&amp;hm=1a4b42f28e843d7292bcaffc93e31a16abe0979ca05cdbe6a6866ac5c0873c82&amp;=&amp;format=webp&amp;quality=lossless[/img][/center]\n<br />\n<br />Have a question? Suggestion? Bug report but you're too shy to make an issue on GitHub? Ask us in the [url=https://discord.gg/ehCptz9pwU]Discord[/url] channel!\n<br />\n<br />[center][color=#ff7700][size=4]Happy modding![/size][/color][/center]\n<br />[line]\n<br />[color=#134f5c]To create a plugin, we must first create the universe...[/color]",
         "Author": "Jimmyking",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/341/341-1781955629-789599736.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/341"
         },
-        "DownloadUrl": "nexus://scavprototype/341/1313",
+        "DownloadUrl": "nexus://scavprototype/341/1715",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 341,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-07-16T21:26:30.000Z",
-        "ReleaseDate": "2026-07-16T21:26:30.000Z",
-        "SHA256": "b39cb7e82c21415afb7d33b3dba6028b3963bf7b6eed91eae0dbca5b54d09df1",
+        "LastUpdated": "2026-08-13T14:30:03.000Z",
+        "ReleaseDate": "2026-08-13T14:30:03.000Z",
+        "SHA256": "56ff9d70a2a5ad4d81d147cfbc70a5a2314b7b4cf444580ce2d5a67f259a892a",
         "dllSHA256s": {
-            "CUCoreLib.dll": "d44531cc0c8e11db13c622557da359375bfa7cd7660920726a887dc2c4538690"
+            "CUCoreLib.dll": "22efe9fc2a6cbee78cd9b5de952a2d9fe598c1af709d0fa12d2e24f8ce3df2d6"
         },
-        "downloadsSinceLatestVersion": 3765,
+        "downloadsSinceLatestVersion": 24,
         "Dependencies": [],
         "dllNames": [
             "CUCoreLib.dll"
         ],
-        "dllVersion": "1.0.3",
+        "dllVersion": "1.0.4",
         "dllVersions": {
-            "CUCoreLib.dll": "1.0.3"
+            "CUCoreLib.dll": "1.0.4"
         },
         "Statistics": {
-            "Endorsements": 145,
-            "UniqueDownloads": 3970,
-            "TotalDownloads": 5585,
+            "Endorsements": 172,
+            "UniqueDownloads": 4016,
+            "TotalDownloads": 5667,
             "TotalViews": null
         },
         "Images": [
@@ -6751,7 +6794,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "37bac4a443a878cfcd9cb9bf52a3aebdd35adbdcd67fecc38fa84b4590edae35"
         },
-        "downloadsSinceLatestVersion": 64,
+        "downloadsSinceLatestVersion": 65,
         "Dependencies": [],
         "dllNames": [
             "ICEnecoCustomItemAPI.dll"
@@ -6799,7 +6842,7 @@
             "GunsawGenetics.dll": "1adafd127d58e6a46bf5411e428b2442ad23ac7349d43caca6dcd9e77a4019ad",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 595,
+        "downloadsSinceLatestVersion": 606,
         "Dependencies": [],
         "dllNames": [
             "body_sprite_replacer.dll",
@@ -6928,7 +6971,7 @@
             "AdditionalTraps.dll": "9930360188297944605550e6a805e2e3757278b23e1fa4c51d1290d5e9cbc488",
             "TrapLib.dll": "bafaf4cee0d3df5695fe2816f426119cd524311546130f755c84bebcb94cf50f"
         },
-        "downloadsSinceLatestVersion": 142,
+        "downloadsSinceLatestVersion": 143,
         "Dependencies": [],
         "dllNames": [
             "AdditionalTraps.dll",
@@ -7459,7 +7502,7 @@
         "dllSHA256s": {
             "VforWhiningMPAddon.dll": "443dadc0d76759dfd0aa809d5c29587dfdc26f8864e78e0743cc2c37a14764e4"
         },
-        "downloadsSinceLatestVersion": 20,
+        "downloadsSinceLatestVersion": 21,
         "Dependencies": [
             "nexus-67",
             "nexus-115",
@@ -7914,7 +7957,7 @@
         "dllSHA256s": {
             "AutoSort.dll": "d53f5cd40fc6a463af7c3564c8bcec601ce91d763639177c2ac0fbe827a47158"
         },
-        "downloadsSinceLatestVersion": 1121,
+        "downloadsSinceLatestVersion": 1122,
         "Dependencies": [],
         "dllNames": [
             "AutoSort.dll"
@@ -8247,7 +8290,7 @@
         "dllSHA256s": {
             "Magazine Merge.dll": "382e63e7abe679cab8dd612fd3205e4d880a772f75d35b6ce0796d0cb80e491b"
         },
-        "downloadsSinceLatestVersion": 36,
+        "downloadsSinceLatestVersion": 38,
         "Dependencies": [],
         "dllNames": [
             "Magazine Merge.dll"
@@ -8437,7 +8480,7 @@
         "dllSHA256s": {
             "VforWhining.dll": "ad115c465857112756a20204f07883da3087eb4c68f2a977e18cf571b5e7183e"
         },
-        "downloadsSinceLatestVersion": 1826,
+        "downloadsSinceLatestVersion": 1827,
         "Dependencies": [],
         "dllNames": [
             "VforWhining.dll"
@@ -9028,7 +9071,7 @@
         "dllSHA256s": {
             "CasualtiesExtra.dll": "35f32d1c42ffb287e84a5c2046a5e9646f46ac731a3c2e7bd6593d28d190d8e9"
         },
-        "downloadsSinceLatestVersion": 370,
+        "downloadsSinceLatestVersion": 374,
         "Dependencies": [
             "nexus-341"
         ],
@@ -9849,7 +9892,7 @@
         "dllSHA256s": {
             "Replacer.dll": "7de3821262d957a60be9a7d8af90ae3a1862dbd16424e815d34675142e601079"
         },
-        "downloadsSinceLatestVersion": 159,
+        "downloadsSinceLatestVersion": 161,
         "Dependencies": [],
         "dllNames": [
             "Replacer.dll"
@@ -10059,7 +10102,7 @@
             "ChangeSkinMP.dll": "b57fb344a3beb1ad084a898f716b2fe097a479beda84aadbb29054df7e9bd705",
             "CommandLine.dll": "2135b40fa819e58cf1942453e4409bfdea2be631077a354b878de8402be7e026"
         },
-        "downloadsSinceLatestVersion": 3445,
+        "downloadsSinceLatestVersion": 3447,
         "Dependencies": [],
         "dllNames": [
             "ChangeSkinMP.dll",
@@ -10310,7 +10353,7 @@
         "dllSHA256s": {
             "InfiniteBatteries.dll": "eef30dab28e25caf8ab9b6077f9a7e76b33cc2bbb471d6ec93d3b10c2d792a55"
         },
-        "downloadsSinceLatestVersion": 629,
+        "downloadsSinceLatestVersion": 630,
         "Dependencies": [
             "nexus-115"
         ],
@@ -11322,7 +11365,7 @@
         "dllSHA256s": {
             "ShrapnelVariants.dll": "be7895efb36f5b33e6473ffdf821f768e818c0881064fe30f092fa2e4975e4fb"
         },
-        "downloadsSinceLatestVersion": 3816,
+        "downloadsSinceLatestVersion": 3819,
         "Dependencies": [
             "nexus-115"
         ],
@@ -11365,7 +11408,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6dcbd87171f4a802d8f748a97bb5418b3976ac21b77d7f520e2c4aac97daa049"
         },
-        "downloadsSinceLatestVersion": 10161,
+        "downloadsSinceLatestVersion": 10168,
         "Dependencies": [],
         "dllNames": [
             "MultiplayerSpriteReplacer.dll"
@@ -11406,7 +11449,7 @@
         "dllSHA256s": {
             "SellFromBags.dll": "69293fda8c68ebce9951ae1d276a48f7b8e6a09b73fc8a7e746ab32dda93e146"
         },
-        "downloadsSinceLatestVersion": 2478,
+        "downloadsSinceLatestVersion": 2480,
         "Dependencies": [
             "nexus-115"
         ],
@@ -11449,7 +11492,7 @@
         "dllSHA256s": {
             "ItemSpawner.build.dll": "40d05db299cbbc2f09aee3371b482514383588148997d06742e919848476c09b"
         },
-        "downloadsSinceLatestVersion": 1628,
+        "downloadsSinceLatestVersion": 1629,
         "Dependencies": [],
         "dllNames": [
             "ItemSpawner.build.dll"
@@ -11531,7 +11574,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "37bac4a443a878cfcd9cb9bf52a3aebdd35adbdcd67fecc38fa84b4590edae35"
         },
-        "downloadsSinceLatestVersion": 47,
+        "downloadsSinceLatestVersion": 48,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -11576,7 +11619,7 @@
         "dllSHA256s": {
             "CatPatch.dll": "ed1920f44e76fa4b142a97cf18dff54796d4235349200b8d710f3fc3af280308"
         },
-        "downloadsSinceLatestVersion": 1892,
+        "downloadsSinceLatestVersion": 1895,
         "Dependencies": [],
         "dllNames": [
             "CatPatch.dll"
@@ -11615,7 +11658,7 @@
         "ReleaseDate": "2026-05-18T06:12:59.000Z",
         "SHA256": "3f612b7278c14f1e8e24b31f4313054c44b0aedc6a8263bd3053a15afec70875",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 557,
+        "downloadsSinceLatestVersion": 558,
         "Dependencies": [
             "nexus-32"
         ],
@@ -11675,7 +11718,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 39434,
+        "downloadsSinceLatestVersion": 39461,
         "ContainsAdultContent": false
     },
     {
@@ -11943,7 +11986,7 @@
         "dllSHA256s": {
             "New_Gun_Loader.dll": "db221d6b346cf55d22e783a2e7869db066ccdf2dc36e375cbb4428e10c8ce949"
         },
-        "downloadsSinceLatestVersion": 561,
+        "downloadsSinceLatestVersion": 562,
         "Dependencies": [
             "nexus-32"
         ],
@@ -12463,7 +12506,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "15f047a0ed401af24d49193439e29bbab2f1a37c64a5a6e22f1cadfa65b17ccd"
         },
-        "downloadsSinceLatestVersion": 827,
+        "downloadsSinceLatestVersion": 830,
         "Dependencies": [
             "nexus-341"
         ],
@@ -12810,7 +12853,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/31/31-1777215394-1750634006.png"
         ],
-        "downloadsSinceLatestVersion": 3277,
+        "downloadsSinceLatestVersion": 3278,
         "ContainsAdultContent": false
     },
     {
@@ -13444,7 +13487,7 @@
         "dllSHA256s": {
             "body_sprite_replacer.dll": "dc92eec8e3fcaa62396616050d4bd2315b7648a15ee92a2354885908454c8fb0"
         },
-        "downloadsSinceLatestVersion": 3934,
+        "downloadsSinceLatestVersion": 3935,
         "Dependencies": [],
         "dllNames": [
             "body_sprite_replacer.dll"
@@ -13716,7 +13759,7 @@
         "dllSHA256s": {
             "QoL Unknown.dll": "61415f75fe7843b88da6f86e8758597929ca2d2d72e4bc575923ebfb409f34bc"
         },
-        "downloadsSinceLatestVersion": 5213,
+        "downloadsSinceLatestVersion": 5216,
         "Dependencies": [],
         "dllNames": [
             "QoL Unknown.dll"

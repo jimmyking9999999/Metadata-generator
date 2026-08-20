@@ -19,7 +19,7 @@
         "ReleaseDate": "2026-08-20T09:35:25.000Z",
         "SHA256": "7847e6b63d23025f75e9bdcae962ac2d032910ec3fd5f387bac959906487cc94",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 10,
+        "downloadsSinceLatestVersion": 11,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -210,9 +210,9 @@
     {
         "Id": "nexus-576",
         "Name": "Better Liquid Draining",
-        "Version": "1",
+        "Version": "1.1",
         "bepinexVersion": "1.0.0",
-        "Description": "Disables the vanilla drain square and creates a UI when a liquid container is dragged to and released on it.\n<br />In the UI are options to choose how to drain from the given container, and a number input field. In addition there is a scrollable preview to show all liquids present in the container and how many will be left if the currently given settings were used to drain with.\n<br />\n<br />3 Input variables are available:\n<br />[list]\n<br />[*]Mode[/*]\n<br />[*]Liquid (only available for certain modes)[/*]\n<br />[*]Value (the number to calculate from, allows decimals for some modes)[/*]\n<br />[/list]\n<br />Available modes:\n<br />[list]\n<br />[*]Drain mL: simply drain the given number of mLs.[/*]\n<br />[*]Drain %: drain a % of the containers capacity.  (example: draining 50% of a canteen will drain 150mL, as it can hold 300mL)[/*]\n<br />[*]Drain weight: drain an amount of weight in U, also accepts decimal places. (example: draining 2U from a water jug that weighs 5U, to end up with 3U) note: cannot be used for containers that do not change weight based on content, such as canteens.[/*]\n<br />[*]Drain liquid mL: drain a number of mLs from a selected liquid in the container. (example: draining 50mL of dirty water from a container with 200mL clean water and 100mL dirty water: resulting in 100mL clean and 50mL dirty water, or 150mL total drained)[/*]\n<br />[*]Drain to mL: drain until the given number of mL is left in the container.[/*]\n<br />[*]Drain to %: drain until the given % is left in the container.[/*]\n<br />[*]Drain to weight: drain until the given weight in U is left in the container, also accepts decimal places. note: cannot be used for containers that do not change weight based on content, such as canteens.[/*]\n<br />[*]Drain to liquid mL: you guessed it, drain until the given amount in mL is left of the selected liquid. (example: if you find a minibarrel full of random junk but also, say, braingrow, you can drain until there is 80mL of braingrow left and take the remaining for a future neural booster)[/*]\n<br />[/list]Simple controls, left click for most actions, right click to go backwards in the mode or liquid selections, and left click plus typing to enter a number.\n<br />\n<br />\n<br />A usage demonstration gif will be added later...\n<br />\n<br />\n<br />[size=4]Installation[/size]\n<br />[list]\n<br />[*]Download the file. (BetterLiquidDraining.zip)[/*]\n<br />[*]Extract into the BepInEx plugins folder. [/*]\n<br />[/list]The console will show if the mod is installed.\n<br />\n<br />\n<br />[size=4]Compatibility[/size]\n<br />Probably compatible with anything. If not, complain and I might fix it.\n<br />[color=#ffff00]I didn't even bother testing multiplayer compatibility, but I am absolutely certain it is not, therefore the mod will not load if multiplayer mod is active.[/color]\n<br />\n<br />\n<br />\n<br />This is by far my largest mod so far, and while I wasn't planning on making more mods I had this idea one day and decided to take it up as an opportunity to learn some basic UI modding. Indeed, this was mostly just a challenge I set for myself rather than actually a mod I would likely use myself unlike any of my other ones.\n<br />\n<br />\n<br />[size=4]Announcement and rant (feel free to ignore this part)[/size]\n<br />I have run out of mod ideas (for real this time), so I likely wont be making anything else, at least not until the game releases. I will still be maintaining the mods and improving them if I figure out any ways to do so.\n<br />If someone has a suggestion feel free to send it on one of my mods or message me about it or whatever, though I am only going to be taking ideas for quality of life mods like the ones I have already made (and I mean actual quality of life, not making the game easier)\n<br />\n<br />(this genuinely will be my last mod until game releases)\n<br />\n<br />Another thing, content mods. I will not be making any. For one: I don't have any interest in adding new stuff to the game, and for two: I acknowledge and respect Orsoniks's wish for modding to be kept to a minimum until the game is released.\n<br />Obviously I have made a few mods, however these are just tiny tweaks to the game that I find convenient, and the mods I release are simply those but polished up to be released. I don't intend to take the show away from Orson and the vanilla game, instead, my mods are meant to be as unnoticeable as possible, without altering anything related to difficulty or gameplay (closest it gets is auto minigame tools making it slightly faster to deal with dislocations/shrapnel, but neither of those are life or death issues in my opinion, and the configuration exists for a reason). The point being, my mods are tiny tweaks for convenience, nothing more, and this will remain the case at least until the game releases. ",
+        "Description": "Disables the vanilla drain square and creates a UI when a liquid container is dragged to and released on it.\n<br />In the UI are options to choose how to drain from the given container, and a number input field. In addition there is a scrollable preview to show all liquids present in the container and how many will be left if the currently given settings were used to drain with.\n<br />\n<br />3 Input variables are available:\n<br />[list]\n<br />[*]Mode[/*]\n<br />[*]Liquid (only available for certain modes)[/*]\n<br />[*]Value (the number to calculate from, allows decimals for some modes)[/*]\n<br />[/list]\n<br />Available modes:\n<br />[list]\n<br />[*]Drain mL: simply drain the given number of mLs.[/*]\n<br />[*]Drain %: drain a % of the containers capacity.  (example: draining 50% of a canteen will drain 150mL, as it can hold 300mL)[/*]\n<br />[*]Drain weight: drain an amount of weight in U, also accepts decimal places. (example: draining 2U from a water jug that weighs 5U, to end up with 3U) note: cannot be used for containers that do not change weight based on content, such as canteens.[/*]\n<br />[*]Drain liquid mL: drain a number of mLs from a selected liquid in the container. (example: draining 50mL of dirty water from a container with 200mL clean water and 100mL dirty water: resulting in 100mL clean and 50mL dirty water, or 150mL total drained)[/*]\n<br />[*]Drain to mL: drain until the given number of mL is left in the container.[/*]\n<br />[*]Drain to %: drain until the given % is left in the container.[/*]\n<br />[*]Drain to weight: drain until the given weight in U is left in the container, also accepts decimal places. note: cannot be used for containers that do not change weight based on content, such as canteens.[/*]\n<br />[*]Drain to liquid mL: you guessed it, drain until the given amount in mL is left of the selected liquid. (example: if you find a minibarrel full of random junk but also, say, braingrow, you can drain until there is 80mL of braingrow left and take the remaining for a future neural booster)[/*]\n<br />[/list]Simple controls, left click for most actions, right click to go backwards in the mode or liquid selections, and left click plus typing to enter a number.\n<br />\n<br />\n<br />A usage demonstration gif will be added later...\n<br />\n<br />\n<br />[size=4]Installation[/size]\n<br />[list]\n<br />[*]Download the file. (BetterLiquidDraining.zip)[/*]\n<br />[*]Extract into the BepInEx plugins folder. [/*]\n<br />[/list]The console will show if the mod is installed.\n<br />\n<br />\n<br />[size=4]Compatibility[/size]\n<br />Probably compatible with anything. If not, complain and I might fix it.\n<br />[color=#ffff00]Partial multiplayer compatibility: only functional for the host, when playing as a client the mod will deactivate itself. [/color]\n<br />\n<br />\n<br />This is by far my largest mod so far, and while I wasn't planning on making more mods I had this idea one day and decided to take it up as an opportunity to learn some basic UI modding. Indeed, this was mostly just a challenge I set for myself rather than actually a mod I would likely use myself unlike any of my other ones.\n<br />\n<br />\n<br />[size=4]Announcement and rant (feel free to ignore this part)[/size]\n<br />I have run out of mod ideas (for real this time), so I likely wont be making anything else, at least not until the game releases. I will still be maintaining the mods and improving them if I figure out any ways to do so.\n<br />If someone has a suggestion feel free to send it on one of my mods or message me about it or whatever, though I am only going to be taking ideas for quality of life mods like the ones I have already made (and I mean actual quality of life, not making the game easier)\n<br />\n<br />(this genuinely will be my last mod until game releases)\n<br />\n<br />Another thing, content mods. I will not be making any. For one: I don't have any interest in adding new stuff to the game, and for two: I acknowledge and respect Orsoniks's wish for modding to be kept to a minimum until the game is released.\n<br />Obviously I have made a few mods, however these are just tiny tweaks to the game that I find convenient, and the mods I release are simply those but polished up to be released. I don't intend to take the show away from Orson and the vanilla game, instead, my mods are meant to be as unnoticeable as possible, without altering anything related to difficulty or gameplay (closest it gets is auto minigame tools making it slightly faster to deal with dislocations/shrapnel, but neither of those are life or death issues in my opinion, and the configuration exists for a reason). The point being, my mods are tiny tweaks for convenience, nothing more, and this will remain the case at least until the game releases. ",
         "Author": "zsoltzsozso828",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/576/576-1787000652-854198846.png",
@@ -223,7 +223,7 @@
         "NexusModId": 576,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-08-17T21:15:19.000Z",
+        "LastUpdated": "2026-08-20T20:30:29.000Z",
         "ReleaseDate": "2026-08-17T21:15:00.000Z",
         "SHA256": "748ed13d95b3e6dbb607386f7ccd4993941bd14796af5ce13d143e8e06fffe39",
         "dllSHA256s": {
@@ -240,8 +240,8 @@
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 0,
-            "TotalDownloads": 0,
+            "UniqueDownloads": 43,
+            "TotalDownloads": 46,
             "TotalViews": null
         },
         "Images": [
@@ -567,7 +567,7 @@
         "ReleaseDate": "2026-08-15T22:44:47.000Z",
         "SHA256": "5b7c7760f6603ad4a9fa540293557910c059b45c469371b06b3729732e50a788",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 41,
+        "downloadsSinceLatestVersion": 42,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -766,7 +766,7 @@
         "dllSHA256s": {
             "PisFoodOverhaul.dll": "5fe00d1a1c6b38b35c71b90c6920dea9ac22fb7b9abf905c90a3a5967d3e2cba"
         },
-        "downloadsSinceLatestVersion": 110,
+        "downloadsSinceLatestVersion": 111,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -1310,7 +1310,7 @@
         "dllSHA256s": {
             "Performant Rendering.dll": "44404ed33c48bc69e571278d773a3139b6a5220ebb5e0f219d038e5038dec9ce"
         },
-        "downloadsSinceLatestVersion": 340,
+        "downloadsSinceLatestVersion": 341,
         "Dependencies": [
             "nexus-341"
         ],
@@ -1438,7 +1438,7 @@
         "dllSHA256s": {
             "MP3Client.dll": "33facf0000ae00162faff5a237da36210eba5e3d90e6072699047f6c9691fa60"
         },
-        "downloadsSinceLatestVersion": 20,
+        "downloadsSinceLatestVersion": 21,
         "Dependencies": [],
         "dllNames": [
             "MP3Client.dll"
@@ -1650,7 +1650,7 @@
         "dllSHA256s": {
             "SayAgain.dll": "8d49cc40eac358b5ebe92f730adba0b5f80707c7949cb3b49ba234e51b70f3a3"
         },
-        "downloadsSinceLatestVersion": 194,
+        "downloadsSinceLatestVersion": 195,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -2024,7 +2024,7 @@
         "ReleaseDate": "2026-08-07T17:46:58.000Z",
         "SHA256": "06e1c47a312e2c304636a4da2f1e56d78457e922284e77602560e65c4d49b0b3",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 150,
+        "downloadsSinceLatestVersion": 151,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -2061,7 +2061,7 @@
         "dllSHA256s": {
             "RoryCannon.dll": "f4492bd3c2d1e52a9af4fbe57bb42f015384110954a98e3f0d9eb9d10bfe948b"
         },
-        "downloadsSinceLatestVersion": 142,
+        "downloadsSinceLatestVersion": 143,
         "Dependencies": [],
         "dllNames": [
             "RoryCannon.dll"
@@ -2143,7 +2143,7 @@
         "dllSHA256s": {
             "CasualtiesUnderTheInfluence.dll": "ecf1223035c5dca796694989d735f1b3453d96bf3b34fe09cee7d70f7356573b"
         },
-        "downloadsSinceLatestVersion": 335,
+        "downloadsSinceLatestVersion": 336,
         "Dependencies": [
             "nexus-341"
         ],
@@ -2356,7 +2356,7 @@
         "dllSHA256s": {
             "PlayerListPatch.dll": "176a602a2f52a69d1bba7252ea06cfcd7b7d121b75d82b1910b60d0fcd8d4bdf"
         },
-        "downloadsSinceLatestVersion": 106,
+        "downloadsSinceLatestVersion": 107,
         "Dependencies": [
             "nexus-67",
             "nexus-341"
@@ -2477,7 +2477,7 @@
             "CUCoreLib.dll": "ebc96311ec65f9053e557cd1837c0ee8823a85e05f4d2900d3132fa1f451e052",
             "CaveDiver.dll": "09d63521a2731c4088531a7b5988c4ea21f43cfce21b982566f17bf1ef5356d8"
         },
-        "downloadsSinceLatestVersion": 153,
+        "downloadsSinceLatestVersion": 155,
         "Dependencies": [],
         "dllNames": [
             "CaveDiver.dll",
@@ -2905,7 +2905,7 @@
         "dllSHA256s": {
             "CasualtiesModMenuENG.dll": "9e8d829495e303db3be9b1f336516c2a7ad2398171b73fae11a98c57abebe0a9"
         },
-        "downloadsSinceLatestVersion": 748,
+        "downloadsSinceLatestVersion": 750,
         "Dependencies": [],
         "dllNames": [
             "CasualtiesModMenuENG.dll"
@@ -3416,7 +3416,7 @@
         "dllSHA256s": {
             "CeilingTurret.dll": "bd586ff876934b33e79334c14bf101827f895327753d11aace2a1c13cbbb11b6"
         },
-        "downloadsSinceLatestVersion": 132,
+        "downloadsSinceLatestVersion": 133,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3503,7 +3503,7 @@
         "dllSHA256s": {
             "CU'sKitchenV1.3Early.dll": "afce9b964c84d4865aa62e8d48a62580781449cfd8dde79e7670a5f454b6d009"
         },
-        "downloadsSinceLatestVersion": 775,
+        "downloadsSinceLatestVersion": 776,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3674,7 +3674,7 @@
             "CUCoreLib.dll": "d44531cc0c8e11db13c622557da359375bfa7cd7660920726a887dc2c4538690",
             "MakeshiftProsthetics.dll": "cd37e893271eab383068f1b21e133f38e91e7366340cb72d396632503c2ff5b1"
         },
-        "downloadsSinceLatestVersion": 100,
+        "downloadsSinceLatestVersion": 101,
         "Dependencies": [],
         "dllNames": [
             "CUCoreLib.dll",
@@ -3758,7 +3758,7 @@
         "dllSHA256s": {
             "RandomEvents.dll": "fa8184a6bdcc2118d09b1f983a8db3137f1bf311503d475cb47d132bafced6ab"
         },
-        "downloadsSinceLatestVersion": 134,
+        "downloadsSinceLatestVersion": 135,
         "Dependencies": [
             "nexus-67",
             "nexus-115"
@@ -3802,7 +3802,7 @@
         "dllSHA256s": {
             "Deltarune_Cool_Items.dll": "e72e74f0df50ca44a4d36455e5f71508e22de6dc11aaea5552d265e72d8b989c"
         },
-        "downloadsSinceLatestVersion": 19,
+        "downloadsSinceLatestVersion": 20,
         "Dependencies": [],
         "dllNames": [
             "Deltarune_Cool_Items.dll"
@@ -3845,7 +3845,7 @@
         "dllSHA256s": {
             "SkinDeep.dll": "059f5f0155d35145d98a3804728e4e0bb7b58c55c660286435abc124b879a946"
         },
-        "downloadsSinceLatestVersion": 340,
+        "downloadsSinceLatestVersion": 341,
         "Dependencies": [],
         "dllNames": [
             "SkinDeep.dll"
@@ -3927,7 +3927,7 @@
         "ReleaseDate": "2026-07-15T16:42:30.000Z",
         "SHA256": "d343c96ced9a1f3174eed74a891df82f5e3cfa476d23d26895485c5bfe14ed8c",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 23,
+        "downloadsSinceLatestVersion": 24,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -4514,7 +4514,7 @@
         "dllSHA256s": {
             "extraDialogue.dll": "d775fa44ede3a1175e93c8e2e3f6032e857547c38b749ef13e38212492374cb3"
         },
-        "downloadsSinceLatestVersion": 804,
+        "downloadsSinceLatestVersion": 805,
         "Dependencies": [],
         "dllNames": [
             "extraDialogue.dll"
@@ -4641,7 +4641,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "2b189c3285703f51d31b26942f3656c066cc10603f53bb06e47dbe0a9dd404ea"
         },
-        "downloadsSinceLatestVersion": 1088,
+        "downloadsSinceLatestVersion": 1089,
         "Dependencies": [],
         "dllNames": [
             "CasualtiesConsumed.dll"
@@ -4801,7 +4801,7 @@
         "dllSHA256s": {
             "CasUnknown.ChainedTogether.dll": "837a6ad6b6b95bbefcfbf1ce9d3d69e3dbde02680e9458eeab40f29b80da4006"
         },
-        "downloadsSinceLatestVersion": 177,
+        "downloadsSinceLatestVersion": 178,
         "Dependencies": [
             "nexus-67"
         ],
@@ -5145,7 +5145,7 @@
         "dllSHA256s": {
             "CUSimpleHealthBar.dll": "bb65da484abe8dcef7d4e983a0f5d0c18883e76d8fec9320c80e54c63b7dfea4"
         },
-        "downloadsSinceLatestVersion": 318,
+        "downloadsSinceLatestVersion": 319,
         "Dependencies": [
             "nexus-341"
         ],
@@ -5264,7 +5264,7 @@
         "dllSHA256s": {
             "CUMoreAmputation.dll": "edfd809af5be12c72878a465a3385999e0d5cf2c1b02737aed83452cda61e28d"
         },
-        "downloadsSinceLatestVersion": 763,
+        "downloadsSinceLatestVersion": 764,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -5431,7 +5431,7 @@
         "dllSHA256s": {
             "RshLib.dll": "0ae9e29ea7e174d91c1c9183e034ed53da44c385b7b24736fb44a7f98e5b0688"
         },
-        "downloadsSinceLatestVersion": 704,
+        "downloadsSinceLatestVersion": 705,
         "Dependencies": [],
         "dllNames": [
             "RshLib.dll"
@@ -7110,7 +7110,7 @@
         "dllSHA256s": {
             "UnknownPerformance.dll": "bac238d7f9189a92cadac34690b233c22928fed16df01b053ea02c5d0e34ad94"
         },
-        "downloadsSinceLatestVersion": 2413,
+        "downloadsSinceLatestVersion": 2415,
         "Dependencies": [
             "nexus-338"
         ],
@@ -7153,7 +7153,7 @@
         "dllSHA256s": {
             "CUCoreLib.dll": "47275a8cd64cd998537a5f3405f3373aed7b429d2179fcff84844367918e1e41"
         },
-        "downloadsSinceLatestVersion": 1820,
+        "downloadsSinceLatestVersion": 1829,
         "Dependencies": [],
         "dllNames": [
             "CUCoreLib.dll"
@@ -7273,7 +7273,7 @@
         "dllSHA256s": {
             "ScavSetLib.dll": "c5822431086b62fc321f1f462b925d33b6b5424df4869c07b76a6bc0da61149f"
         },
-        "downloadsSinceLatestVersion": 1797,
+        "downloadsSinceLatestVersion": 1799,
         "Dependencies": [],
         "dllNames": [
             "ScavSetLib.dll"
@@ -7314,7 +7314,7 @@
         "dllSHA256s": {
             "net.cjendantix.SpinHat.dll": "32a81517588460fdec4ce46c7d35b67e4d0c8e7850c20c2ab9412a6f5ed8665b"
         },
-        "downloadsSinceLatestVersion": 315,
+        "downloadsSinceLatestVersion": 316,
         "Dependencies": [
             "nexus-32"
         ],
@@ -7466,7 +7466,7 @@
         "dllSHA256s": {
             "CU_ModSettings.dll": "4da647e7971802d6bca1dc5135e682ec9c80e006a4e9d620d5740c9ba30c6722"
         },
-        "downloadsSinceLatestVersion": 583,
+        "downloadsSinceLatestVersion": 584,
         "Dependencies": [
             "nexus-115"
         ],
@@ -7550,7 +7550,7 @@
         "dllSHA256s": {
             "ExpiePettingMod.dll": "189909b97d3d8668d9e26b50bd69dd23887be0648997ecd7ea93b95ac383d835"
         },
-        "downloadsSinceLatestVersion": 2265,
+        "downloadsSinceLatestVersion": 2266,
         "Dependencies": [],
         "dllNames": [
             "ExpiePettingMod.dll"
@@ -7807,7 +7807,7 @@
             "GunsawGenetics.dll": "12adfb0734755e5eadf0eb7b7bf649cc8cba5355e7b1dd8004607b0d8ba0480b",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 817,
+        "downloadsSinceLatestVersion": 826,
         "Dependencies": [],
         "dllNames": [
             "body_sprite_replacer.dll",
@@ -8922,7 +8922,7 @@
         "dllSHA256s": {
             "AutoSort.dll": "d53f5cd40fc6a463af7c3564c8bcec601ce91d763639177c2ac0fbe827a47158"
         },
-        "downloadsSinceLatestVersion": 1333,
+        "downloadsSinceLatestVersion": 1334,
         "Dependencies": [],
         "dllNames": [
             "AutoSort.dll"
@@ -9565,7 +9565,7 @@
         "dllSHA256s": {
             "WearableArray.dll": "792dbc65b7aca784dc7849ea49347c9336b0e7444779abca9c4b32d5a02ce4e5"
         },
-        "downloadsSinceLatestVersion": 945,
+        "downloadsSinceLatestVersion": 946,
         "Dependencies": [],
         "dllNames": [
             "WearableArray.dll"
@@ -10163,7 +10163,7 @@
         "dllSHA256s": {
             "MoreDialogues.dll": "940ace94c1b036ebd6b4230b4a3bad95386a7888b18674854e177bd1f268f390"
         },
-        "downloadsSinceLatestVersion": 29,
+        "downloadsSinceLatestVersion": 30,
         "Dependencies": [
             "nexus-432"
         ],
@@ -10941,7 +10941,7 @@
         "dllSHA256s": {
             "NewFirearms.dll": "3d2cfaacf29d24224f6e91ccf67a9f53199d77369e6e71953c6ef0370cfb74ab"
         },
-        "downloadsSinceLatestVersion": 1088,
+        "downloadsSinceLatestVersion": 1089,
         "Dependencies": [
             "nexus-32"
         ],
@@ -11067,7 +11067,7 @@
             "ChangeSkinMP.dll": "b57fb344a3beb1ad084a898f716b2fe097a479beda84aadbb29054df7e9bd705",
             "CommandLine.dll": "2135b40fa819e58cf1942453e4409bfdea2be631077a354b878de8402be7e026"
         },
-        "downloadsSinceLatestVersion": 4216,
+        "downloadsSinceLatestVersion": 4217,
         "Dependencies": [],
         "dllNames": [
             "ChangeSkinMP.dll",
@@ -12127,7 +12127,7 @@
         "ReleaseDate": "2026-06-16T19:20:20.000Z",
         "SHA256": "a7be4a588783e7dd3cc019b304a503c11c6e117352fa68180333297c31e6f8ff",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 524,
+        "downloadsSinceLatestVersion": 526,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -12328,7 +12328,7 @@
         "dllSHA256s": {
             "ShrapnelVariants.dll": "be7895efb36f5b33e6473ffdf821f768e818c0881064fe30f092fa2e4975e4fb"
         },
-        "downloadsSinceLatestVersion": 4277,
+        "downloadsSinceLatestVersion": 4278,
         "Dependencies": [
             "nexus-115"
         ],
@@ -12371,7 +12371,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6dcbd87171f4a802d8f748a97bb5418b3976ac21b77d7f520e2c4aac97daa049"
         },
-        "downloadsSinceLatestVersion": 12552,
+        "downloadsSinceLatestVersion": 12558,
         "Dependencies": [],
         "dllNames": [
             "MultiplayerSpriteReplacer.dll"
@@ -12681,7 +12681,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 47255,
+        "downloadsSinceLatestVersion": 47271,
         "ContainsAdultContent": false
     },
     {
@@ -12868,7 +12868,7 @@
         "dllSHA256s": {
             "Animalese.dll": "e1a766d35d2f60bb0b6865bf7d1171d70702351da09cdc273ca5f69c4471fad1"
         },
-        "downloadsSinceLatestVersion": 778,
+        "downloadsSinceLatestVersion": 779,
         "Dependencies": [],
         "dllNames": [
             "Animalese.dll"
@@ -12907,7 +12907,7 @@
         "ReleaseDate": "2026-06-11T05:52:33.000Z",
         "SHA256": "8f411312470cc374eed5fb17b2e27c5caf4a2f05e8102d3958c09edec2168259",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 1024,
+        "downloadsSinceLatestVersion": 1025,
         "Dependencies": [
             "nexus-32",
             "nexus-43",
@@ -12949,7 +12949,7 @@
         "dllSHA256s": {
             "New_Gun_Loader.dll": "db221d6b346cf55d22e783a2e7869db066ccdf2dc36e375cbb4428e10c8ce949"
         },
-        "downloadsSinceLatestVersion": 673,
+        "downloadsSinceLatestVersion": 674,
         "Dependencies": [
             "nexus-32"
         ],
@@ -13234,7 +13234,7 @@
         "dllSHA256s": {
             "RemiyamuremodLayerUnlock.dll": "dd66574025d93f6344f42f7b01ca54c45a2937e9cc11d00859dfa8940b77f51c"
         },
-        "downloadsSinceLatestVersion": 1543,
+        "downloadsSinceLatestVersion": 1544,
         "Dependencies": [],
         "dllNames": [
             "RemiyamuremodLayerUnlock.dll"
@@ -13469,7 +13469,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "15f047a0ed401af24d49193439e29bbab2f1a37c64a5a6e22f1cadfa65b17ccd"
         },
-        "downloadsSinceLatestVersion": 1670,
+        "downloadsSinceLatestVersion": 1674,
         "Dependencies": [
             "nexus-341"
         ],
@@ -13697,7 +13697,7 @@
         "dllSHA256s": {
             "ThighHighs.dll": "24d9c929c786575ae3ffffa4767064b33c92dd1d6e8c72d5c7b6e6945ece5ec8"
         },
-        "downloadsSinceLatestVersion": 126,
+        "downloadsSinceLatestVersion": 127,
         "Dependencies": [
             "nexus-32",
             "nexus-341"
@@ -13741,7 +13741,7 @@
         "dllSHA256s": {
             "RshLib.dll": "fb168f3609cb652b4858608947d1f347f44a433b8d4baa65afd297f373f41ddf"
         },
-        "downloadsSinceLatestVersion": 4145,
+        "downloadsSinceLatestVersion": 4147,
         "Dependencies": [],
         "dllNames": [
             "RshLib.dll"
@@ -14411,7 +14411,7 @@
         "dllSHA256s": {
             "LastStandCMD.dll": "95ecc28a3078ea619e8f54f50fb1136f23ec16226545299e68ec00756cec4ad0"
         },
-        "downloadsSinceLatestVersion": 51,
+        "downloadsSinceLatestVersion": 52,
         "Dependencies": [],
         "dllNames": [
             "LastStandCMD.dll"
@@ -14693,7 +14693,7 @@
         "dllSHA256s": {
             "Custom Structures.dll": "64ba2b7bb8d4c6162721396e0867d1eba30ac682fec8bbe7d087a479bf9a3a4e"
         },
-        "downloadsSinceLatestVersion": 1782,
+        "downloadsSinceLatestVersion": 1783,
         "Dependencies": [],
         "dllNames": [
             "Custom Structures.dll"
@@ -14766,7 +14766,7 @@
         "dllSHA256s": {
             "QoL Unknown.dll": "61415f75fe7843b88da6f86e8758597929ca2d2d72e4bc575923ebfb409f34bc"
         },
-        "downloadsSinceLatestVersion": 6769,
+        "downloadsSinceLatestVersion": 6771,
         "Dependencies": [],
         "dllNames": [
             "QoL Unknown.dll"

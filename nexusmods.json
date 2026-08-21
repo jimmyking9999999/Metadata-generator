@@ -21,7 +21,7 @@
         "dllSHA256s": {
             "CasULastStandReplacer.dll": "2e1015f12de5bea61d9ebe1ed8050c8f06762cc38b12cd909b1b48483b6027e8"
         },
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 5,
         "Dependencies": [],
         "dllNames": [
             "CasULastStandReplacer.dll"
@@ -101,7 +101,7 @@
         "ReleaseDate": "2026-08-21T05:57:48.000Z",
         "SHA256": "37d760b8162efac9683fc421c4682dea1ab8953a5b9767a28f63e8ef7f6371e7",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 2,
+        "downloadsSinceLatestVersion": 3,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -161,40 +161,37 @@
         "Id": "nexus-580",
         "Name": "GlassM",
         "Version": "1",
-        "bepinexVersion": "0.1.0",
-        "Description": "[b][size=5]GlassM — Streaming Generation Performance Mod for Casualties Unknown[/size][/b]\n<br />\n<br />[line]\n<br />\n<br />[quote]Note: This mod includes two versions. Please select only ONE to install based on your device. For those prioritizing visuals, please choose GlassM (Standard). For low-end devices, GlassX (Aggressive) provides a massive FPS boost.[/quote]\n<br />This project uses [b]GlassM[/b] as its core identity and provides two versions: [b]GlassM (Standard)[/b] and [b]GlassX (Aggressive)[/b]. You must choose [b]only one[/b] to install. Both versions share the same core goal: replace the vanilla \"full-layer generation\" with [u]player-centered streaming chunk generation[/u], drastically reducing generation overhead and physics costs.\n<br />\n<br />[line]\n<br />\n<br />[b][size=4]Benchmark Results[/size][/b]\n<br />\n<br />The following data was recorded using a Low-End Mobile Device and a Mid-Range PC:\n<br />\n<br />[b]FPS Performance:[/b]\n<br />\n<br />\n<br />\n<br />\n<br />[table][tr][td][b]Device[/b][/td]\n<br />[td][b]Vanilla[/b][/td]\n<br />[td][b]With Mod[/b][/td]\n<br />[td][b]Increase[/b][/td]\n<br />[/tr]\n<br />[tr][td]Low-End (Snapdragon 870)[/td]\n<br />[td]21 FPS[/td]\n<br />[td][b]34 FPS[/b][/td]\n<br />[td][b]+60%[/b][/td]\n<br />[/tr]\n<br />[tr][td]Mid-Range (i5)[/td]\n<br />[td]184 FPS[/td]\n<br />[td][b]237 FPS[/b][/td]\n<br />[td][b]+28%[/b][/td]\n<br />[/tr]\n<br />[/table]\n<br />[b]World Generation Time:[/b]\n<br />\n<br />\n<br />\n<br />\n<br />[table][tr][td][b]Device[/b][/td]\n<br />[td][b]Vanilla[/b][/td]\n<br />[td][b]With Mod[/b][/td]\n<br />[/tr]\n<br />[tr][td]Low-End (Snapdragon 870)[/td]\n<br />[td]13 sec[/td]\n<br />[td][b]7 sec[/b][/td]\n<br />[/tr]\n<br />[tr][td]Mid-Range (i5)[/td]\n<br />[td]5 sec[/td]\n<br />[td][b]&lt; 1 sec[/b][/td]\n<br />[/tr]\n<br />[/table]\n<br />[line]\n<br />\n<br />[b][size=4]Core Features (Shared by Both Versions)[/size][/b]\n<br />\n<br />[list]\n<br />[*][b]Streaming World Generation:[/b] Chunks are generated/unloaded on demand based on the player(s) (including all players in multiplayer). Eliminates the full-layer load, resulting in faster entry and smoother gameplay.[/*]\n<br />[*][b]Dynamic Physics Zone:[/b] Colliders and rigidbody simulations are disabled for distant chunks. The rigidbody load is significantly reduced from vanilla's 256 blocks.[/*]\n<br />[*][b]Instant Spawn-in:[/b] Only requires a 2×2 chunk generation for initial spawn, eliminating the long loading times.[/*]\n<br />[*][b]Vanilla Alignment:[/b] Terrain, ores, and surface decoration density are perfectly aligned with vanilla parameters.[/*]\n<br />[*][b]Thornback Behavior Restoration:[/b] Active creature alert range and encounter distances have been restored to vanilla levels.[/*]\n<br />[*][b]Built-in Diagnostic Tool:[/b] Outputs system timings (WG/Fluid/Rigidbody), FPS, and scene load metrics every 5 seconds.[/*]\n<br />[*][b]Multiplayer Compatibility:[/b] Compatible with [i]KrokoshaCasualtiesMP[/i]. Chunks load/unload around all players. Client players will no longer fall through the world when the host unloads chunks.[/*]\n<br />[*][b]Structural Fixes:[/b] Rendering and collision for large structures across chunk boundaries are now correctly synchronized.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4]Version Differences[/size][/b]\n<br />\n<br />\n<br />[table][tr][td][b]Configuration[/b][/td]\n<br />[td][b]GlassM (Standard)[/b][/td]\n<br />[td][b]GlassX (Aggressive)[/b][/td]\n<br />[/tr]\n<br />[tr][td]Generation Radius[/td]\n<br />[td]7×7[/td]\n<br />[td][b]5×5[/b][/td]\n<br />[/tr]\n<br />[tr][td]Physics Radius[/td]\n<br />[td]7×7[/td]\n<br />[td][b]5×5[/b][/td]\n<br />[/tr]\n<br />[tr][td]Chunks Per Frame[/td]\n<br />[td]4 chunks[/td]\n<br />[td][b]8 chunks[/b] (Faster loading)[/td]\n<br />[/tr]\n<br />[tr][td]Render Radius[/td]\n<br />[td]3×3[/td]\n<br />[td]3×3[/td]\n<br />[/tr]\n<br />[tr][td]Render Cache[/td]\n<br />[td]None[/td]\n<br />[td][b]Enabled[/b] (Reuses cache, avoids redundant construction)[/td]\n<br />[/tr]\n<br />[tr][td]Render Resolution[/td]\n<br />[td]Vanilla[/td]\n<br />[td][b]85%[/b][/td]\n<br />[/tr]\n<br />[tr][td]Graphics Preset[/td]\n<br />[td]Vanilla[/td]\n<br />[td][b]Lowest[/b][/td]\n<br />[/tr]\n<br />[tr][td]View Distance Resolution[/td]\n<br />[td]Vanilla[/td]\n<br />[td][b]Halved[/b][/td]\n<br />[/tr]\n<br />[tr][td]Physics Iterations[/td]\n<br />[td]Vanilla[/td]\n<br />[td][b]Halved[/b] (Velocity 4 / Position 2)[/td]\n<br />[/tr]\n<br />[tr][td]Fluid Simulation[/td]\n<br />[td]Every Physics Frame[/td]\n<br />[td][b]Every Other Frame[/b] (Reduced overhead)[/td]\n<br />[/tr]\n<br />[tr][td]Shaders[/td]\n<br />[td]Vanilla[/td]\n<br />[td][b]Complex Shaders replaced with Unlit[/b] (No dynamic lighting)[/td]\n<br />[/tr]\n<br />[/table]\n<br />[line]\n<br />\n<br />[b][size=4]Visual &amp; Experience Trade-offs (GlassX Only)[/size][/b]\n<br />\n<br />[list]\n<br />[*][u]Vanilla dynamic lighting effects based on Shaders (e.g., flashlights, fire) will no longer function[/u], utilizing Unlit rendering instead.[/*]\n<br />[*]Fluid surface effects are simplified (semi-transparency is still retained).[/*]\n<br />[*]Slight visual blurring due to the 85% render resolution scale.[/*]\n<br />[*]Reduced physics iterations, which may cause minor clipping in extreme edge cases.[/*]\n<br />[*]Thornback activity range reduced to 5×5.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4]Installation[/size][/b]\n<br />\n<br />[list=1]\n<br />[*]Close the game.[/*]\n<br />[*]Choose ONE version (Standard or Aggressive) and place the corresponding [b].dll[/b] into the [u]BepInEx&#92;plugins&#92;[/u] directory.[/*]\n<br />[*]Launch the game. If the log displays [i]GlassM loading[/i], it is successfully installed.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b]Note:[/b] Both DLLs share the same plugin ID ([i]com.cu.glassm[/i]). [b]DO NOT install both at the same time.[/b]\n<br />\n<br />[line]\n<br />\n<br />[b][size=4]Recommendations[/size][/b]\n<br />[list]\n<br />[*]Mid-to-High End PC / Prioritize Visuals → Choose [b]GlassM[/b][/*]\n<br />[*]Low-End PC / Mobile Devices / Prioritize FPS → Choose [b]GlassX[/b][/*]\n<br />[/list]",
+        "bepinexVersion": "0.1.1",
+        "Description": "[b][size=5]GlassM — Streaming Generation Performance Mod for Casualties Unknown[/size][/b]\n<br />\n<br />[line]\n<br />\n<br />This project replaces the vanilla \"full-layer generation\" with [u]player-centered streaming chunk generation[/u], drastically reducing generation overhead and physics costs.\n<br />\n<br />[line]\n<br />\n<br />[b][size=4]Benchmark Results[/size][/b]\n<br />\n<br />[b]FPS Performance:[/b]\n<br />\n<br />[table][tr][td][b]Device[/b][/td]\n<br />[td][b]Scenario[/b][/td]\n<br />[td][b]Vanilla[/b][/td]\n<br />[td][b]GlassM[/b][/td]\n<br />[/tr]\n<br />[tr][td]Low-End (Snapdragon 870 #1)[/td]\n<br />[td]Idle[/td]\n<br />[td]21 FPS[/td]\n<br />[td][b]34 FPS[/b][/td]\n<br />[/tr]\n<br />[tr][td]Low-End (Snapdragon 870 #1)[/td]\n<br />[td]Moving[/td]\n<br />[td]21 FPS[/td]\n<br />[td][b]28 FPS[/b][/td]\n<br />[/tr]\n<br />[tr][td]Snapdragon 870 #2[/td]\n<br />[td]Idle[/td]\n<br />[td]35 FPS[/td]\n<br />[td][b]53 FPS[/b][/td]\n<br />[/tr]\n<br />[tr][td]Snapdragon 870 #2[/td]\n<br />[td]Moving[/td]\n<br />[td]27 FPS[/td]\n<br />[td][b]46 FPS[/b][/td]\n<br />[/tr]\n<br />[tr][td]Mid-Range (i5)[/td]\n<br />[td]Idle[/td]\n<br />[td]184 FPS[/td]\n<br />[td][b]237 FPS[/b][/td]\n<br />[/tr]\n<br />[tr][td]Mid-Range (i5)[/td]\n<br />[td]Moving[/td]\n<br />[td]184 FPS[/td]\n<br />[td][b]227 FPS[/b][/td]\n<br />[/tr]\n<br />[/table]\n<br />[b]World Generation Time:[/b]\n<br />\n<br />[table][tr][td][b]Device[/b][/td]\n<br />[td][b]Vanilla[/b][/td]\n<br />[td][b]GlassM[/b][/td]\n<br />[/tr]\n<br />[tr][td]Low-End (Snapdragon 870 #1)[/td]\n<br />[td]13 sec[/td]\n<br />[td][b]7 sec[/b][/td]\n<br />[/tr]\n<br />[tr][td]Snapdragon 870 #2[/td]\n<br />[td]Unknown[/td]\n<br />[td][b]5.6 sec[/b][/td]\n<br />[/tr]\n<br />[tr][td]Mid-Range (i5) - First Layer[/td]\n<br />[td]5 sec[/td]\n<br />[td][b]3 sec[/b][/td]\n<br />[/tr]\n<br />[tr][td]Mid-Range (i5) - Subsequent Layers[/td]\n<br />[td]N/A[/td]\n<br />[td][b]&lt; 1 sec[/b][/td]\n<br />[/tr]\n<br />[/table][line]\n<br />\n<br />[b][size=4]Core Features[/size][/b]\n<br />\n<br />[list]\n<br />[]Streaming World Generation: Chunks are generated/unloaded on demand based on the player(s) (including all players in multiplayer). Eliminates the full-layer load, resulting in faster entry and smoother gameplay.[/][]Pre-filled Terrain Data &amp; Streaming Rendering: The entire layer's terrain data is pre-filled at load time (a pure array, extremely low overhead). Chunks are then generated/unloaded on demand.[/][]Dynamic Physics Zone: Colliders and rigidbody simulations are dynamically disabled for distant chunks. The rigidbody load is significantly reduced from vanilla's 256 blocks.[/][]Vanilla-Aligned Ore Generation: We use Reflection to invoke the vanilla GenerateOres method. Distribution aligns with vanilla, and mods that patch these ore spawners remain fully compatible.[/][]Precise Spawn-in: The spawn void is synchronized, and the PlaceBody collision scan lands correctly (Depth 0~15m). Only a 2×2 chunk generation is required for initial spawn.[/][]Infinite Rock Protection: Streaming generation will not break the boundary Infinite Rock (ID 14).[/][]Vanilla-Aligned Entities: Thornbacks, stalactites, turret placement parameters and coordinates have been meticulously checked against the vanilla decompiled source. Active creature alert ranges are restored to vanilla levels.[/][]PerfDiag Built-in Diagnostics: Outputs system timings (WG/Fluid/Rigidbody), FPS, and scene load metrics every 5 seconds.[/][]Multiplayer Compatibility: Compatible with KrokoshaCasualtiesMP. Chunks load/unload around all players. Client players will no longer fall through the world when the host unloads chunks.[/][]Structural Fixes: Rendering and collision for large structures across chunk boundaries are now correctly synchronized.[/][/list][line]\n<br />\n<br />[b][size=4]Compatibility Status (v0.1.1)[/size][/b]\n<br />\n<br />[table][tr][td][b]Mod[/b][/td]\n<br />[td][b]Status[/b][/td]\n<br />[/tr]\n<br />[tr][td]Custom Structures[/td]\n<br />[td][b]✅[/b] Structures are written directly into the pre-filled data, not overwritten.[/td]\n<br />[/tr]\n<br />[tr][td]TitaniumRestored[/td]\n<br />[td][b]✅[/b] Hooks after [i]GenerateOres[/i] (Data pre-filled successfully).[/td]\n<br />[/tr]\n<br />[tr][td]CUCoreLib (Custom Ores / Structures / Tiles)[/td]\n<br />[td][b]✅[/b][/td]\n<br />[/tr]\n<br />[tr][td]TrapLib / AdditionalTraps[/td]\n<br />[td][b]✅[/b][/td]\n<br />[/tr]\n<br />[tr][td]NoOilMod[/td]\n<br />[td][b]✅[/b][/td]\n<br />[/tr]\n<br />[tr][td]QoL Unknown Entity Overrides[/td]\n<br />[td][b]❌[/b] Not yet compatible (Entities still go through GlassM's streaming pipeline).[/td]\n<br />[/tr]\n<br />[tr][td]CUCoreLib Buildings (PlaceCrystals)[/td]\n<br />[td][b]❌[/b] Not yet compatible (Requires Terrain-Ready event hook).[/td]\n<br />[/tr]\n<br />[/table][line]\n<br />\n<br />[b][size=4]Installation[/size][/b]\n<br />\n<br />[list=1]\n<br />[]Close the game.[/][]Place the .dll into the BepInEx&#92;plugins directory.[/][]Launch the game. If the log displays GlassM loading, it is successfully installed.[/][/list][line]\n<br />\n<br />",
         "Author": "ouse114514",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/580/580-1787146526-286330319.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/580"
         },
-        "DownloadUrl": "nexus://scavprototype/580/1801",
+        "DownloadUrl": "nexus://scavprototype/580/1818",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 580,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-08-19T15:01:26.000Z",
-        "ReleaseDate": "2026-08-19T14:59:34.000Z",
-        "SHA256": "cba9acbde93ae0c0e9dd9b356b4779dfebd1ac59c6deb7b0072f6e499a393ef3",
+        "LastUpdated": "2026-08-21T09:30:49.000Z",
+        "ReleaseDate": "2026-08-21T09:30:48.000Z",
+        "SHA256": "51749cf0fb6f4c13321abee1f37cd552a17103c769cc53a2979b0e5b2a9702c8",
         "dllSHA256s": {
-            "GlassM.dll": "80a1c68c7ace0225200176274bbd5b3cd165c76cc7e47d5b5da6bccf50a6c15f",
-            "GlassX.dll": "0412c1308a721b163e1a43f1a9be2f7833b08554709dbd6419c1f429f839de3d"
+            "GlassM.dll": "e97e1d61e20c88896ee10c5004a070b5f02be843c99d8d7eb3e0ccf30bda6039"
         },
-        "downloadsSinceLatestVersion": 82,
+        "downloadsSinceLatestVersion": 3,
         "Dependencies": [],
         "dllNames": [
-            "GlassM.dll",
-            "GlassX.dll"
+            "GlassM.dll"
         ],
-        "dllVersion": "0.1.0",
+        "dllVersion": "0.1.1",
         "dllVersions": {
-            "GlassM.dll": "0.1.0",
-            "GlassX.dll": "0.1.0"
+            "GlassM.dll": "0.1.1"
         },
         "Statistics": {
-            "Endorsements": 0,
-            "UniqueDownloads": 0,
-            "TotalDownloads": 0,
+            "Endorsements": 1,
+            "UniqueDownloads": 73,
+            "TotalDownloads": 85,
             "TotalViews": null
         },
         "Images": [
@@ -350,7 +347,7 @@
         "ReleaseDate": "2026-08-17T10:37:04.000Z",
         "SHA256": "b4ea16638fabfc9fdaf199cbdfe3a3b539552a90d80dd9cc4627df040de1bf3d",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 22,
+        "downloadsSinceLatestVersion": 23,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -420,7 +417,7 @@
         "ReleaseDate": "2026-08-17T09:00:16.000Z",
         "SHA256": "df7c03784e772f0459e9fb5977c389897185220aa862f9de3ea49941abc9d662",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 39,
+        "downloadsSinceLatestVersion": 40,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -527,7 +524,7 @@
         "dllSHA256s": {
             "ProjectTelchak.dll": "782b3fe9a30ba601caa68620765607ec9d9c1c55a7feabb19673e55c3196c877"
         },
-        "downloadsSinceLatestVersion": 1,
+        "downloadsSinceLatestVersion": 3,
         "Dependencies": [
             "nexus-9",
             "nexus-341",
@@ -764,7 +761,7 @@
         "dllSHA256s": {
             "HarderEnemies.dll": "ca4572a70df466a20b9cb04d8dcdacf01d6826922a478f11d35ef4a9b736a59b"
         },
-        "downloadsSinceLatestVersion": 27,
+        "downloadsSinceLatestVersion": 28,
         "Dependencies": [],
         "dllNames": [
             "HarderEnemies.dll"
@@ -1185,7 +1182,7 @@
         "dllSHA256s": {
             "Cu-BloodBank.dll": "d025af8b11dfcbbfe133d271e6e993e3e8c4defaed899a0a924306908be21335"
         },
-        "downloadsSinceLatestVersion": 42,
+        "downloadsSinceLatestVersion": 43,
         "Dependencies": [],
         "dllNames": [
             "Cu-BloodBank.dll"
@@ -1226,7 +1223,7 @@
         "dllSHA256s": {
             "CatPatchCustomLinesLoader.dll": "90bcc8d5dfd0efe063b3f06dd1bd84cbb94585fa62337fc555f8231ce3a6ad5d"
         },
-        "downloadsSinceLatestVersion": 58,
+        "downloadsSinceLatestVersion": 59,
         "Dependencies": [
             "nexus-69"
         ],
@@ -1392,7 +1389,7 @@
         "dllSHA256s": {
             "Performant Rendering.dll": "44404ed33c48bc69e571278d773a3139b6a5220ebb5e0f219d038e5038dec9ce"
         },
-        "downloadsSinceLatestVersion": 355,
+        "downloadsSinceLatestVersion": 357,
         "Dependencies": [
             "nexus-341"
         ],
@@ -1520,7 +1517,7 @@
         "dllSHA256s": {
             "MP3Client.dll": "33facf0000ae00162faff5a237da36210eba5e3d90e6072699047f6c9691fa60"
         },
-        "downloadsSinceLatestVersion": 24,
+        "downloadsSinceLatestVersion": 25,
         "Dependencies": [],
         "dllNames": [
             "MP3Client.dll"
@@ -1648,7 +1645,7 @@
         "dllSHA256s": {
             "MilkiesMilk.dll": "94ff02d175d7b67dfe7d556739ba8f551caa4041c572b1393e1514c7a139b550"
         },
-        "downloadsSinceLatestVersion": 508,
+        "downloadsSinceLatestVersion": 509,
         "Dependencies": [
             "nexus-341"
         ],
@@ -1985,7 +1982,7 @@
         "dllSHA256s": {
             "SubstancesExpanded.dll": "c89eee3fb1f7ee2694091c2e5772fb3a5fef5134068c9b97a10b038f50d574f6"
         },
-        "downloadsSinceLatestVersion": 156,
+        "downloadsSinceLatestVersion": 157,
         "Dependencies": [
             "nexus-341"
         ],
@@ -2106,7 +2103,7 @@
         "ReleaseDate": "2026-08-07T17:46:58.000Z",
         "SHA256": "06e1c47a312e2c304636a4da2f1e56d78457e922284e77602560e65c4d49b0b3",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 158,
+        "downloadsSinceLatestVersion": 159,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -2225,7 +2222,7 @@
         "dllSHA256s": {
             "CasualtiesUnderTheInfluence.dll": "ecf1223035c5dca796694989d735f1b3453d96bf3b34fe09cee7d70f7356573b"
         },
-        "downloadsSinceLatestVersion": 351,
+        "downloadsSinceLatestVersion": 352,
         "Dependencies": [
             "nexus-341"
         ],
@@ -2268,7 +2265,7 @@
         "dllSHA256s": {
             "A.Multi_Mod.Chinese.Localization.dll": "94f11d4e824e100732ebb84ce5dcbd3317b372f73ca0e61c40f28a6a0da022d6"
         },
-        "downloadsSinceLatestVersion": 99,
+        "downloadsSinceLatestVersion": 100,
         "Dependencies": [],
         "dllNames": [
             "A.Multi_Mod.Chinese.Localization.dll"
@@ -2350,7 +2347,7 @@
         "dllSHA256s": {
             "VariantOrganisms.dll": "57fda7e95b1541745887d66eaa71c9adc7c79e32ca461f2e79124993761c89b3"
         },
-        "downloadsSinceLatestVersion": 115,
+        "downloadsSinceLatestVersion": 116,
         "Dependencies": [
             "nexus-341",
             "nexus-502"
@@ -2397,7 +2394,7 @@
         "dllSHA256s": {
             "Blast Shower.dll": "a65c7905f7fcfdc5c8094aacca0294a3017c44f85f43e1e63c63475950583bb4"
         },
-        "downloadsSinceLatestVersion": 35,
+        "downloadsSinceLatestVersion": 36,
         "Dependencies": [],
         "dllNames": [
             "Blast Shower.dll"
@@ -2559,7 +2556,7 @@
             "CUCoreLib.dll": "ebc96311ec65f9053e557cd1837c0ee8823a85e05f4d2900d3132fa1f451e052",
             "CaveDiver.dll": "09d63521a2731c4088531a7b5988c4ea21f43cfce21b982566f17bf1ef5356d8"
         },
-        "downloadsSinceLatestVersion": 159,
+        "downloadsSinceLatestVersion": 160,
         "Dependencies": [],
         "dllNames": [
             "CaveDiver.dll",
@@ -2734,7 +2731,7 @@
         "dllSHA256s": {
             "EMI.dll": "ff29a0d66322265135a984896715ce7e13d5f310f5f6e27aa7b665081b7bece6"
         },
-        "downloadsSinceLatestVersion": 304,
+        "downloadsSinceLatestVersion": 305,
         "Dependencies": [
             "nexus-115"
         ],
@@ -2818,7 +2815,7 @@
         "dllSHA256s": {
             "Gigasalad.dll": "00cc47f004d0585cd306372921639ce7097e6689265f01830274a45e91c5aa16"
         },
-        "downloadsSinceLatestVersion": 43,
+        "downloadsSinceLatestVersion": 44,
         "Dependencies": [],
         "dllNames": [
             "Gigasalad.dll"
@@ -3585,7 +3582,7 @@
         "dllSHA256s": {
             "CU'sKitchenV1.3Early.dll": "afce9b964c84d4865aa62e8d48a62580781449cfd8dde79e7670a5f454b6d009"
         },
-        "downloadsSinceLatestVersion": 787,
+        "downloadsSinceLatestVersion": 788,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3670,7 +3667,7 @@
         "dllSHA256s": {
             "Wearable Crystals.dll": "3f3338596ab9e1bc876e6ca57863d0d413a54e0234ba2843fbfa9b0fc2753e33"
         },
-        "downloadsSinceLatestVersion": 477,
+        "downloadsSinceLatestVersion": 478,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -4723,7 +4720,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "2b189c3285703f51d31b26942f3656c066cc10603f53bb06e47dbe0a9dd404ea"
         },
-        "downloadsSinceLatestVersion": 1115,
+        "downloadsSinceLatestVersion": 1117,
         "Dependencies": [],
         "dllNames": [
             "CasualtiesConsumed.dll"
@@ -5432,7 +5429,7 @@
         "ReleaseDate": "2026-07-27T09:43:17.000Z",
         "SHA256": "8c04592e8abbac23cf7cb15f7db1653ef24e181d3fd8cdb58c2f75d36d5e8efd",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 97,
+        "downloadsSinceLatestVersion": 98,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -5716,7 +5713,7 @@
         "dllSHA256s": {
             "CUResprite.dll": "18c2fffe710ce43cb197fd3745ecde8a14bfbd9c8a797825e6125989fe4d05f1"
         },
-        "downloadsSinceLatestVersion": 668,
+        "downloadsSinceLatestVersion": 669,
         "Dependencies": [
             "nexus-115"
         ],
@@ -5802,7 +5799,7 @@
         "dllSHA256s": {
             "CasualtyVitals.dll": "2423ac5135cf35e535bf9063fb4dc2537b9342dc4ace9d3628f432bce13aa301"
         },
-        "downloadsSinceLatestVersion": 125,
+        "downloadsSinceLatestVersion": 126,
         "Dependencies": [],
         "dllNames": [
             "CasualtyVitals.dll"
@@ -5885,7 +5882,7 @@
         "dllSHA256s": {
             "AxivornsExpieNPCMod.dll": "ee7694e259fc5f59c748b0bc9e97218bf43773cd44494e54c72b1191e05b914a"
         },
-        "downloadsSinceLatestVersion": 1377,
+        "downloadsSinceLatestVersion": 1378,
         "Dependencies": [],
         "dllNames": [
             "AxivornsExpieNPCMod.dll"
@@ -6131,7 +6128,7 @@
         "dllSHA256s": {
             "RuScavMods.dll": "deeec7b6f2ac7a0947a5468db935c5aebccb56b920cd27b072ad48fb61ae0140"
         },
-        "downloadsSinceLatestVersion": 31,
+        "downloadsSinceLatestVersion": 33,
         "Dependencies": [],
         "dllNames": [
             "RuScavMods.dll"
@@ -6251,7 +6248,7 @@
         "dllSHA256s": {
             "UniRuPatch.dll": "319cb12583ab14af90f3d5fe34c6a77473907a9391ae7519d7bee680c2e47a54"
         },
-        "downloadsSinceLatestVersion": 197,
+        "downloadsSinceLatestVersion": 199,
         "Dependencies": [],
         "dllNames": [
             "UniRuPatch.dll"
@@ -6836,7 +6833,7 @@
         "ReleaseDate": "2026-07-28T21:22:22.000Z",
         "SHA256": "c6519d8fbaf9b34a2679a3175c79aeece0a38f93b34e0ebe3141e03f5561486a",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 181,
+        "downloadsSinceLatestVersion": 182,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -7192,7 +7189,7 @@
         "dllSHA256s": {
             "UnknownPerformance.dll": "bac238d7f9189a92cadac34690b233c22928fed16df01b053ea02c5d0e34ad94"
         },
-        "downloadsSinceLatestVersion": 2423,
+        "downloadsSinceLatestVersion": 2424,
         "Dependencies": [
             "nexus-338"
         ],
@@ -7235,7 +7232,7 @@
         "dllSHA256s": {
             "CUCoreLib.dll": "47275a8cd64cd998537a5f3405f3373aed7b429d2179fcff84844367918e1e41"
         },
-        "downloadsSinceLatestVersion": 1985,
+        "downloadsSinceLatestVersion": 1991,
         "Dependencies": [],
         "dllNames": [
             "CUCoreLib.dll"
@@ -7632,7 +7629,7 @@
         "dllSHA256s": {
             "ExpiePettingMod.dll": "189909b97d3d8668d9e26b50bd69dd23887be0648997ecd7ea93b95ac383d835"
         },
-        "downloadsSinceLatestVersion": 2276,
+        "downloadsSinceLatestVersion": 2277,
         "Dependencies": [],
         "dllNames": [
             "ExpiePettingMod.dll"
@@ -9171,7 +9168,7 @@
         "dllSHA256s": {
             "NoDecay.dll": "c792354e78d7346e6619bd1d51d9b60f2d4011ab1401cad43c24dd518499191d"
         },
-        "downloadsSinceLatestVersion": 348,
+        "downloadsSinceLatestVersion": 349,
         "Dependencies": [],
         "dllNames": [
             "NoDecay.dll"
@@ -9449,7 +9446,7 @@
         "ReleaseDate": "2026-06-10T07:23:22.000Z",
         "SHA256": "7c23a992e518fa9995bd74f726f78e821024e0212b6d1ce7066c6d381fb5235d",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 216,
+        "downloadsSinceLatestVersion": 217,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -9795,7 +9792,7 @@
         "ReleaseDate": "2026-07-27T15:23:21.000Z",
         "SHA256": "14f39c5ae4ed747c02e697da74f123cd260c158f4ff831f9cc1ca7c2c264e9bf",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 10,
+        "downloadsSinceLatestVersion": 11,
         "Dependencies": [],
         "dllNames": [],
         "dllVersion": null,
@@ -10288,7 +10285,7 @@
         "dllSHA256s": {
             "No Self-Destruct on Quit.dll": "7cd4fc48749afee28e1988dddfb2af8262019e8974a4dc6b3657b80f4f6441fe"
         },
-        "downloadsSinceLatestVersion": 2011,
+        "downloadsSinceLatestVersion": 2012,
         "Dependencies": [],
         "dllNames": [
             "No Self-Destruct on Quit.dll"
@@ -11149,7 +11146,7 @@
             "ChangeSkinMP.dll": "b57fb344a3beb1ad084a898f716b2fe097a479beda84aadbb29054df7e9bd705",
             "CommandLine.dll": "2135b40fa819e58cf1942453e4409bfdea2be631077a354b878de8402be7e026"
         },
-        "downloadsSinceLatestVersion": 4238,
+        "downloadsSinceLatestVersion": 4239,
         "Dependencies": [],
         "dllNames": [
             "ChangeSkinMP.dll",
@@ -11316,7 +11313,7 @@
         "dllSHA256s": {
             "CustomMusicHotReload.dll": "4ba31a587a32f6025b7c75e90b47707278362d160c454ca75caab97de9ec9cdc"
         },
-        "downloadsSinceLatestVersion": 64,
+        "downloadsSinceLatestVersion": 65,
         "Dependencies": [],
         "dllNames": [
             "CustomMusicHotReload.dll"
@@ -11597,7 +11594,7 @@
         "dllSHA256s": {
             "NoCostCraft.dll": "c71355045b55f315fa21c2e067de0cf7cbcc1a6416b0b3f6503ff2fb175cd009"
         },
-        "downloadsSinceLatestVersion": 601,
+        "downloadsSinceLatestVersion": 602,
         "Dependencies": [
             "nexus-115"
         ],
@@ -11880,7 +11877,7 @@
         "dllSHA256s": {
             "ItemSpawnerMenuCN.dll": "b6e2478cdf528e2e6b876746a708c1384db688f9836d6d25b9d297a8c80863d0"
         },
-        "downloadsSinceLatestVersion": 637,
+        "downloadsSinceLatestVersion": 639,
         "Dependencies": [
             "nexus-115"
         ],
@@ -12453,7 +12450,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6dcbd87171f4a802d8f748a97bb5418b3976ac21b77d7f520e2c4aac97daa049"
         },
-        "downloadsSinceLatestVersion": 12633,
+        "downloadsSinceLatestVersion": 12636,
         "Dependencies": [],
         "dllNames": [
             "MultiplayerSpriteReplacer.dll"
@@ -12494,7 +12491,7 @@
         "dllSHA256s": {
             "SellFromBags.dll": "69293fda8c68ebce9951ae1d276a48f7b8e6a09b73fc8a7e746ab32dda93e146"
         },
-        "downloadsSinceLatestVersion": 2830,
+        "downloadsSinceLatestVersion": 2831,
         "Dependencies": [
             "nexus-115"
         ],
@@ -12664,7 +12661,7 @@
         "dllSHA256s": {
             "CatPatch.dll": "ed1920f44e76fa4b142a97cf18dff54796d4235349200b8d710f3fc3af280308"
         },
-        "downloadsSinceLatestVersion": 3442,
+        "downloadsSinceLatestVersion": 3444,
         "Dependencies": [],
         "dllNames": [
             "CatPatch.dll"
@@ -12763,7 +12760,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 47489,
+        "downloadsSinceLatestVersion": 47511,
         "ContainsAdultContent": false
     },
     {
@@ -13031,7 +13028,7 @@
         "dllSHA256s": {
             "New_Gun_Loader.dll": "db221d6b346cf55d22e783a2e7869db066ccdf2dc36e375cbb4428e10c8ce949"
         },
-        "downloadsSinceLatestVersion": 675,
+        "downloadsSinceLatestVersion": 676,
         "Dependencies": [
             "nexus-32"
         ],
@@ -13115,7 +13112,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownRussifier.dll": "a5557014b2cdd9c27911859f80ef38171094ee3fae8a15ccc85422be7e775f1c"
         },
-        "downloadsSinceLatestVersion": 2156,
+        "downloadsSinceLatestVersion": 2157,
         "Dependencies": [],
         "dllNames": [
             "CasualtiesUnknownRussifier.dll"
@@ -13823,7 +13820,7 @@
         "dllSHA256s": {
             "RshLib.dll": "fb168f3609cb652b4858608947d1f347f44a433b8d4baa65afd297f373f41ddf"
         },
-        "downloadsSinceLatestVersion": 4160,
+        "downloadsSinceLatestVersion": 4161,
         "Dependencies": [],
         "dllNames": [
             "RshLib.dll"
@@ -13898,7 +13895,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/31/31-1777215394-1750634006.png"
         ],
-        "downloadsSinceLatestVersion": 3580,
+        "downloadsSinceLatestVersion": 3581,
         "ContainsAdultContent": false
     },
     {
@@ -14775,7 +14772,7 @@
         "dllSHA256s": {
             "Custom Structures.dll": "64ba2b7bb8d4c6162721396e0867d1eba30ac682fec8bbe7d087a479bf9a3a4e"
         },
-        "downloadsSinceLatestVersion": 1791,
+        "downloadsSinceLatestVersion": 1792,
         "Dependencies": [],
         "dllNames": [
             "Custom Structures.dll"
@@ -14848,7 +14845,7 @@
         "dllSHA256s": {
             "QoL Unknown.dll": "61415f75fe7843b88da6f86e8758597929ca2d2d72e4bc575923ebfb409f34bc"
         },
-        "downloadsSinceLatestVersion": 6809,
+        "downloadsSinceLatestVersion": 6810,
         "Dependencies": [],
         "dllNames": [
             "QoL Unknown.dll"

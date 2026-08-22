@@ -45,6 +45,7 @@ const OWNED_FIELDS = new Set([
   "Name",
   "Version",
   "bepinexVersion",
+  "Summary",
   "Description",
   "Author",
   "Links",
@@ -70,6 +71,7 @@ const TRACKED_LOG_FIELDS = [
   "Name",
   "Version",
   "bepinexVersion",
+  "Summary",
   "Description",
   "Author",
   "Links.Icon",
@@ -1056,6 +1058,7 @@ function mergeEntry({
     Name: modInfo.name ?? existingEntry?.Name ?? `Mod ${modInfo.mod_id}`,
     Version: modInfo.version ?? existingEntry?.Version ?? "",
     bepinexVersion: nextBepinexVersion ?? null,
+    Summary: modInfo.summary ?? existingEntry?.Summary ?? "",
     Description: modInfo.description ?? existingEntry?.Description ?? "",
     Author: modInfo.author ?? existingEntry?.Author ?? "",
     Links: links,
@@ -1289,7 +1292,7 @@ function createDiscordEmbed({ type, previousEntry, currentEntry, archiveSizeByte
   return {
     title: currentEntry.Name ?? `Mod ${currentEntry.NexusModId}`,
     url: modUrl,
-    description: type === "created" ? "New NexusMods release detected." : "NexusMods version update detected.",
+    description: currentEntry.Summary || undefined,
     color: type === "created" ? DISCORD_COLORS.created : DISCORD_COLORS.updated,
     author: currentEntry.Author
       ? {
@@ -1531,6 +1534,7 @@ function runSelfTest() {
   const createdNotification = buildNotification(undefined, {
     Name: "Test Mod",
     NexusModId: 1,
+    Summary: "A short mod blurb.",
     Links: { NexusMods: "https://www.nexusmods.com/scavprototype/mods/1" },
     Statistics: { Endorsements: 0, UniqueDownloads: 3 },
   }, { archiveSizeBytes: 3_145_728, dllSizeBytes: 1_572_864 });
@@ -1539,6 +1543,9 @@ function runSelfTest() {
     { name: "Zip Size", value: "3.0 MB", inline: true },
   ])) {
     throw new Error("New-mod Discord file-size self-test failed.");
+  }
+  if (createdNotification?.embed?.description !== "A short mod blurb.") {
+    throw new Error("Discord summary self-test failed.");
   }
   if (buildDiscordMessage({ ContainsAdultContent: true }) !== ADULT_MOD_MESSAGE || buildDiscordMessage({ ContainsAdultContent: false }) !== "") {
     throw new Error("Adult-mod Discord message self-test failed.");
@@ -1591,6 +1598,7 @@ function runSelfTest() {
   logSuccess("Dependency extraction self-test passed.");
   logSuccess("Nexus badge export self-test passed.");
   logSuccess("New-mod Discord file-size self-test passed.");
+  logSuccess("Discord summary self-test passed.");
   logSuccess("Adult-mod Discord message self-test passed.");
 }
 

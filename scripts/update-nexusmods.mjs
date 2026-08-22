@@ -1295,19 +1295,13 @@ function createDiscordEmbed({ type, previousEntry, currentEntry, archiveSizeByte
     }
 
     const changelog = getChangelogForVersion(currentEntry.Changelogs, currentEntry.Version);
-    if (changelog) {
-      fields.push({
-        name: formatInlineText(currentEntry.Version),
-        value: formatDiscordFieldValue(changelog),
-        inline: false,
-      });
-    }
+    currentEntry = { ...currentEntry, Summary: firstNonEmptyString(changelog, currentEntry.Summary) };
   }
 
   return {
     title: currentEntry.Name ?? `Mod ${currentEntry.NexusModId}`,
     url: modUrl,
-    description: currentEntry.Summary || undefined,
+    description: formatDiscordDescription(currentEntry.Summary),
     color: type === "created" ? DISCORD_COLORS.created : DISCORD_COLORS.updated,
     author: currentEntry.Author
       ? {
@@ -1453,9 +1447,12 @@ function formatInlineText(value) {
   return text.length > 0 ? text : "Unknown";
 }
 
-function formatDiscordFieldValue(value) {
+function formatDiscordDescription(value) {
   const text = String(value ?? "").trim();
-  return text.length > 1024 ? `${text.slice(0, 1021)}...` : text;
+  if (!text) {
+    return undefined;
+  }
+  return text.length > 4096 ? `${text.slice(0, 4093)}...` : text;
 }
 
 function firstNonEmptyString(...values) {
@@ -1548,15 +1545,32 @@ async function getModChangelogs({ apiKey, appVersion, gameDomain, modId }) {
 }
 
 function normalizeChangelogs(response) {
-  return (Array.isArray(response) ? response : response?.changelogs ?? [])
+  const entries = Array.isArray(response)
+    ? response
+    : Array.isArray(response?.changelogs)
+      ? response.changelogs
+      : Object.entries(response ?? {}).map(([version, changelog]) => ({ version, changelog }));
+  return entries
     .map((entry) => {
       const version = firstNonEmptyString(entry?.version, entry?.Version);
       return version ? {
         Version: version,
-        Changelog: firstNonEmptyString(entry?.changes, entry?.changelog, entry?.Changelog, entry?.description) ?? "",
+        Changelog: normalizeChangelogText(entry?.changes, entry?.changelog, entry?.Changelog, entry?.description),
       } : null;
     })
     .filter(Boolean);
+}
+
+function normalizeChangelogText(...values) {
+  for (const value of values) {
+    const text = Array.isArray(value)
+      ? value.filter((line) => typeof line === "string" && line.trim()).join("\n")
+      : firstNonEmptyString(value);
+    if (text) {
+      return text;
+    }
+  }
+  return "";
 }
 
 function getChangelogForVersion(changelogs, version) {
@@ -1593,13 +1607,13 @@ function runSelfTest() {
   if (createdNotification?.embed?.description !== "A short mod blurb.") {
     throw new Error("Discord summary self-test failed.");
   }
-  const changelogs = normalizeChangelogs([
-    { version: "1.0.0", changes: "Initial release." },
-    { version: "1.1.0", changes: "Fixed the important thing." },
-  ]);
+  const changelogs = normalizeChangelogs({
+    "1.0.0": ["Initial release."],
+    "1.1.0": ["Fixed the important thing.", "Also fixed another thing."],
+  });
   if (!areEqual(changelogs, [
     { Version: "1.0.0", Changelog: "Initial release." },
-    { Version: "1.1.0", Changelog: "Fixed the important thing." },
+    { Version: "1.1.0", Changelog: "Fixed the important thing.\nAlso fixed another thing." },
   ])) {
     throw new Error("Changelog metadata self-test failed.");
   }
@@ -1610,16 +1624,28 @@ function runSelfTest() {
     Name: "Test Mod",
     NexusModId: 1,
     Version: "1.1.0",
+    Summary: "A short mod blurb.",
     Links: { NexusMods: "https://www.nexusmods.com/scavprototype/mods/1" },
     Statistics: {},
     Changelogs: [{ Version: "1.1.0", Changelog: "Fixed the important thing." }],
   });
-  if (!areEqual(updatedNotification?.embed?.fields.at(-1), {
-    name: "1.1.0",
-    value: "Fixed the important thing.",
-    inline: false,
-  })) {
-    throw new Error("Discord changelog self-test failed.");
+  if (updatedNotification?.embed?.description !== "Fixed the important thing.") {
+    throw new Error("Discord changelog description self-test failed.");
+  }
+  const fallbackNotification = buildNotification({
+    Version: "1.0.0",
+    Links: { NexusMods: "https://www.nexusmods.com/scavprototype/mods/1" },
+  }, {
+    Name: "Test Mod",
+    NexusModId: 1,
+    Version: "1.1.0",
+    Summary: "A short mod blurb.",
+    Links: { NexusMods: "https://www.nexusmods.com/scavprototype/mods/1" },
+    Statistics: {},
+    Changelogs: [{ Version: "1.0.0", Changelog: "Initial release." }],
+  });
+  if (fallbackNotification?.embed?.description !== "A short mod blurb.") {
+    throw new Error("Discord changelog fallback self-test failed.");
   }
   if (buildDiscordMessage({ ContainsAdultContent: true }) !== ADULT_MOD_MESSAGE || buildDiscordMessage({ ContainsAdultContent: false }) !== "") {
     throw new Error("Adult-mod Discord message self-test failed.");
@@ -1674,7 +1700,7 @@ function runSelfTest() {
   logSuccess("New-mod Discord file-size self-test passed.");
   logSuccess("Discord summary self-test passed.");
   logSuccess("Changelog metadata self-test passed.");
-  logSuccess("Discord changelog self-test passed.");
+  logSuccess("Discord changelog description self-test passed.");
   logSuccess("Adult-mod Discord message self-test passed.");
 }
 

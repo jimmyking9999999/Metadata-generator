@@ -72,7 +72,7 @@
         "dllSHA256s": {
             "GlassN.dll": "1db675bf63f941e003450ad060f1e167c477164e9ce1ffead7350f4127319b36"
         },
-        "downloadsSinceLatestVersion": 41,
+        "downloadsSinceLatestVersion": 43,
         "Dependencies": [
             "nexus-67",
             "nexus-580"
@@ -116,7 +116,7 @@
         "ReleaseDate": "2026-08-23T09:37:37.000Z",
         "SHA256": "3635cdd6c2d5cc1923e8890b3dc2d97cca08b3d8f5328d37c12b07fb75604682",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 3,
+        "downloadsSinceLatestVersion": 4,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -211,7 +211,7 @@
         "dllSHA256s": {
             "ClientJoinFix.dll": "8bfc5a4a4bea8d93f1519db86964f6ce6f4cb9516070b73429d93129b7760511"
         },
-        "downloadsSinceLatestVersion": 13,
+        "downloadsSinceLatestVersion": 16,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -277,7 +277,7 @@
     {
         "Id": "nexus-587",
         "Name": "DifferentiatingTraits",
-        "Version": "1.0.1",
+        "Version": "1.0.2",
         "bepinexVersion": "1.0.0",
         "Summary": "Customize your survivor with positive and negative traits before each run. Choose perks like Agility or Iron Will, and flaws like Hemophobia or Hearing Loss, all through a clean in-game UI. Your choices shape your body, skills, mood, and survival — but every advantage has a cost. Build your own specimen.",
         "Description": "[b][size=6]Description[/size][/b]\n<br />\n<br />Differentiating Traits lets you shape your survivor before each run by selecting a set of positive and negative traits in a custom in-game panel.\n<br />差异特质让你在每局游戏开始前，通过游戏内的自定义面板选择一组正面与负面特质，塑造你的实验体。\n<br />Spend points on advantages like Agility, Sturdy Body, Iron Will, or Regeneration, and take flaws like Hemophobia, Hearing Loss, Addiction, or missing limbs to earn more points.\n<br />花费特质点选择敏捷、健硕、意志坚定、自愈等优势，也可以选择恐血症、听力障碍、成瘾者、肢体缺失等缺陷来获得更多点数。\n<br />Your choices directly affect your body, skills, mood, metabolism, immunity, and survival — every advantage has a cost.\n<br />你的选择会直接影响身体、技能、心情、新陈代谢、免疫力和生存能力——每一项优势都有代价。\n<br />All traits are managed through an original-style UI that fits the game's atmosphere and supports both Chinese and English.\n<br />所有特质都通过一个贴合游戏氛围的原版风格界面进行管理，并支持中文与英文。\n<br />[line]\n<br />[b][size=6]Installation instructions[/size][/b]\n<br />[list=1]\n<br />[*]Install BepInEx 5.4.x for Casualties Unknown if you have not already done so.\n<br />如果你还没有为《Casualties Unknown》安装 BepInEx 5.4.x，请先安装它。[/*]\n<br />[*]Download CUCoreLib and place CUCoreLib.dll into your BepInEx/plugins folder.\n<br />下载 CUCoreLib，并将 CUCoreLib.dll 放入 BepInEx/plugins 文件夹。[/*]\n<br />[*]Download Differentiating Traits and place the mod folder containing DifferentiatingTraits.dll into BepInEx/plugins.\n<br />下载差异特质，并将包含 DifferentiatingTraits.dll 的 mod 文件夹放入 BepInEx/plugins。[/*]\n<br />[*]Launch the game. On the main menu, click the \"Configure Traits\" button in the top-left corner to open the trait panel.\n<br />启动游戏。在主菜单点击左上角的“配置特质”按钮即可打开特质面板。[/*]\n<br />[*]Choose your traits, save your preset, and start a new run. Your selected traits will be applied to the new character.\n<br />选择特质，保存预设，然后开始新的一局。你所选择的特质会应用到新角色身上。[/*]\n<br />[*]Your saved preset is stored locally and will be remembered the next time you open the game.\n<br />你的预设会保存在本地，下次打开游戏时依然有效。[/*]\n<br />[/list][line]\n<br />[b][size=6]Main features[/size][/b]\n<br />[list]\n<br />[*]Choose from dozens of positive and negative traits, each with a different cost or reward.\n<br />从数十个正面与负面特质中选择，每个特质都有不同的点数消耗或奖励。[/*]\n<br />[*]Conflict groups prevent incompatible traits from being selected at the same time.\n<br />冲突组会阻止不兼容的特质被同时选择。[/*]\n<br />[*]Selected traits are displayed with clear colors: white for selected, gray for normal, and light red for conflicting traits.\n<br />已选特质显示为白色，普通特质显示为灰色，冲突特质显示为浅红色，状态一目了然。[/*]\n<br />[*]The custom UI uses embedded pixel-art style textures to match the game's visual design.\n<br />自定义界面使用内嵌的像素风格纹理，与游戏的整体视觉风格保持一致。[/*]\n<br />[*]Trait descriptions and UI text support both Chinese and English, switching automatically with the game language.\n<br />特质描述与界面文本均支持中文和英文，并随游戏语言自动切换。[/*]\n<br />[*]Many traits affect core survival systems such as movement speed, skills, stamina, energy, healing, immunity, hearing, mood, and more.\n<br />许多特质会影响核心生存系统，例如移动速度、技能、体力、精力、恢复、免疫力、听力、心情等。[/*]\n<br />[*]Some traits also grant starting items, such as pistols, belts, medical supplies, or special equipment.\n<br />部分特质还会提供初始物品，例如手枪、腰带、医疗用品或特殊装备。[/*]\n<br />[*]The mod is designed for single-player and does not require KrokMP, but it should load safely alongside other mods.\n<br />本 mod 为单人模式设计，不依赖 KrokMP，但可以安全地与其他 mod 一起加载。[/*]\n<br />[/list][line]\n<br />[b][size=6]Requirements[/size][/b]\n<br />[list]\n<br />[*]BepInEx 5.4.x or later.\n<br />BepInEx 5.4.x 或更高版本。[/*]\n<br />[*]CUCoreLib 1.0.4 or later.\n<br />CUCoreLib 1.0.4 或更高版本。[/*]\n<br />[/list][line]\n<br />[b][size=6]Shout outs[/size][/b]\n<br />[list]\n<br />[*]Thanks to the CUCoreLib developers for creating the modding framework and providing detailed documentation.\n<br />感谢 CUCoreLib 的开发者们创建了这个 mod 框架，并提供了详细的文档。[/*]\n<br />[*]Thanks to the Casualties Unknown modding community for inspiration, feedback, and shared knowledge.\n<br />感谢《Casualties Unknown》mod 社区的灵感、反馈和知识分享。[/*]\n<br />[*]Thanks to the BepInEx team for making mod loading possible.\n<br />感谢 BepInEx 团队让 mod 加载成为可能。[/*]\n<br />[/list]",
@@ -286,23 +286,27 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/587/587-1787308354-1352984544.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/587"
         },
-        "DownloadUrl": "nexus://scavprototype/587/1834",
+        "DownloadUrl": "nexus://scavprototype/587/1847",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 587,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-08-23T04:48:52.000Z",
-        "ReleaseDate": "2026-08-23T04:48:52.000Z",
-        "SHA256": "06dec3f4d29d56c64eaa9b2cf4842b300a23e3c6f6791c800e3e44851d5443f9",
+        "LastUpdated": "2026-08-24T02:56:13.000Z",
+        "ReleaseDate": "2026-08-24T02:56:13.000Z",
+        "SHA256": "b588daf6e31ff6d8a344b69fa51f278dcad8959c836cabffc5b57ca7e2aab584",
         "dllSHA256s": {
-            "DifferentiatingTraits.dll": "c68f678e62b243f77b8da226aae08786c7a43d08e34fa22aaf326aba96aed75e"
+            "DifferentiatingTraits.dll": "6f5bb2abcee98d4d5951f3a106c84b23842e934546590161b03009710955d31f"
         },
-        "downloadsSinceLatestVersion": 87,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [],
         "Changelogs": [
             {
                 "Version": "1.0.1",
                 "Changelog": "Fixed the translation errors in the language."
+            },
+            {
+                "Version": "1.0.2",
+                "Changelog": "Fixed a bug where the \"Swift Hands\" trait increased attack speed by about 200% instead of the intended 20%.\nChanged the \"Swift Hands\" trait cost from 9 points to 4 points.\nAdded Russian localization file ru-RU.json. The mod now displays Russian text correctly when the game language is set to Russian."
             }
         ],
         "dllNames": [
@@ -314,8 +318,8 @@
         },
         "Statistics": {
             "Endorsements": 4,
-            "UniqueDownloads": 136,
-            "TotalDownloads": 143,
+            "UniqueDownloads": 193,
+            "TotalDownloads": 233,
             "TotalViews": null
         },
         "Images": [
@@ -529,7 +533,7 @@
         "dllSHA256s": {
             "GlassM.dll": "e97e1d61e20c88896ee10c5004a070b5f02be843c99d8d7eb3e0ccf30bda6039"
         },
-        "downloadsSinceLatestVersion": 102,
+        "downloadsSinceLatestVersion": 104,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -915,7 +919,7 @@
         "dllSHA256s": {
             "ProjectTelchak.dll": "782b3fe9a30ba601caa68620765607ec9d9c1c55a7feabb19673e55c3196c877"
         },
-        "downloadsSinceLatestVersion": 48,
+        "downloadsSinceLatestVersion": 49,
         "Dependencies": [
             "nexus-9",
             "nexus-341",
@@ -1301,7 +1305,7 @@
         "dllSHA256s": {
             "PisFoodOverhaul.dll": "8b8f63a8f0a377e540b9f20771db9c89196e1b857311c391d13ba3ea2ce7e49c"
         },
-        "downloadsSinceLatestVersion": 57,
+        "downloadsSinceLatestVersion": 58,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -1441,7 +1445,7 @@
         "dllSHA256s": {
             "HoldWearableInHand.dll": "94d51f50ab44e60c97b8a37a099e888f95965283c95a30a96f6b78949b6a7488"
         },
-        "downloadsSinceLatestVersion": 63,
+        "downloadsSinceLatestVersion": 64,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1919,7 +1923,7 @@
         "dllSHA256s": {
             "Performant Rendering.dll": "44404ed33c48bc69e571278d773a3139b6a5220ebb5e0f219d038e5038dec9ce"
         },
-        "downloadsSinceLatestVersion": 444,
+        "downloadsSinceLatestVersion": 446,
         "Dependencies": [
             "nexus-341"
         ],
@@ -2062,7 +2066,7 @@
         "dllSHA256s": {
             "MP3Client.dll": "b8da8696c095ab707c734c516782f7feaa4e3e1809ac9787ca0a87ce546a8d00"
         },
-        "downloadsSinceLatestVersion": 23,
+        "downloadsSinceLatestVersion": 24,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2211,7 +2215,7 @@
         "dllSHA256s": {
             "MilkiesMilk.dll": "94ff02d175d7b67dfe7d556739ba8f551caa4041c572b1393e1514c7a139b550"
         },
-        "downloadsSinceLatestVersion": 623,
+        "downloadsSinceLatestVersion": 625,
         "Dependencies": [
             "nexus-341"
         ],
@@ -2317,7 +2321,7 @@
         "dllSHA256s": {
             "SayAgain.dll": "8d49cc40eac358b5ebe92f730adba0b5f80707c7949cb3b49ba234e51b70f3a3"
         },
-        "downloadsSinceLatestVersion": 226,
+        "downloadsSinceLatestVersion": 227,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -2911,7 +2915,7 @@
         "dllSHA256s": {
             "CasualtiesUnderTheInfluence.dll": "ecf1223035c5dca796694989d735f1b3453d96bf3b34fe09cee7d70f7356573b"
         },
-        "downloadsSinceLatestVersion": 423,
+        "downloadsSinceLatestVersion": 424,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3013,7 +3017,7 @@
         "dllSHA256s": {
             "CUCoreLib.KrokMP.SaveHotfix.dll": "8f100d5b0afefcd7e0045afc86eb7bfd2dbc2bc52f7de9edc8cee8c7ae3e5d77"
         },
-        "downloadsSinceLatestVersion": 293,
+        "downloadsSinceLatestVersion": 294,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -3250,7 +3254,7 @@
         "ReleaseDate": "2026-08-13T01:55:21.000Z",
         "SHA256": "59acf81811d0f2c216cf3262447def803a52d7c842b20577c16592d8c4dff991",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 400,
+        "downloadsSinceLatestVersion": 405,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3299,7 +3303,7 @@
             "CUCoreLib.dll": "ebc96311ec65f9053e557cd1837c0ee8823a85e05f4d2900d3132fa1f451e052",
             "CaveDiver.dll": "09d63521a2731c4088531a7b5988c4ea21f43cfce21b982566f17bf1ef5356d8"
         },
-        "downloadsSinceLatestVersion": 179,
+        "downloadsSinceLatestVersion": 180,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4543,7 +4547,7 @@
         "dllSHA256s": {
             "CU'sKitchenV1.3Early.dll": "afce9b964c84d4865aa62e8d48a62580781449cfd8dde79e7670a5f454b6d009"
         },
-        "downloadsSinceLatestVersion": 822,
+        "downloadsSinceLatestVersion": 825,
         "Dependencies": [
             "nexus-341"
         ],
@@ -5297,7 +5301,7 @@
         "dllSHA256s": {
             "RedBlood.dll": "3ee240efb8e3c07a09988f6c6f9589e83c76223db15d32b8395eab6a872b4910"
         },
-        "downloadsSinceLatestVersion": 112,
+        "downloadsSinceLatestVersion": 114,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -5435,7 +5439,7 @@
             "CUCoreLib.dll": "d44531cc0c8e11db13c622557da359375bfa7cd7660920726a887dc2c4538690",
             "ICEnecoCustomItemAPI.dll": "37bac4a443a878cfcd9cb9bf52a3aebdd35adbdcd67fecc38fa84b4590edae35"
         },
-        "downloadsSinceLatestVersion": 34,
+        "downloadsSinceLatestVersion": 35,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5878,7 +5882,7 @@
         "dllSHA256s": {
             "CUTarkovWeaponMod.dll": "4019849c3df02ecc3d41bf0f126507ba06cf234ade9949a58157683147e9120b"
         },
-        "downloadsSinceLatestVersion": 125,
+        "downloadsSinceLatestVersion": 126,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5934,7 +5938,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "2b189c3285703f51d31b26942f3656c066cc10603f53bb06e47dbe0a9dd404ea"
         },
-        "downloadsSinceLatestVersion": 1245,
+        "downloadsSinceLatestVersion": 1248,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6141,7 +6145,7 @@
         "dllSHA256s": {
             "CasUnknown.ChainedTogether.dll": "837a6ad6b6b95bbefcfbf1ce9d3d69e3dbde02680e9458eeab40f29b80da4006"
         },
-        "downloadsSinceLatestVersion": 183,
+        "downloadsSinceLatestVersion": 184,
         "Dependencies": [
             "nexus-67"
         ],
@@ -6373,7 +6377,7 @@
         "dllSHA256s": {
             "CUTarkovMedicalMod.dll": "1f5dc1eb0f65206850b8e837edf0ebd1e58280e542669a5c4738e5d61fa0fd04"
         },
-        "downloadsSinceLatestVersion": 212,
+        "downloadsSinceLatestVersion": 213,
         "Dependencies": [
             "nexus-341"
         ],
@@ -6662,7 +6666,7 @@
         "dllSHA256s": {
             "CUMoreAmputation.dll": "edfd809af5be12c72878a465a3385999e0d5cf2c1b02737aed83452cda61e28d"
         },
-        "downloadsSinceLatestVersion": 828,
+        "downloadsSinceLatestVersion": 829,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -6875,7 +6879,7 @@
         "dllSHA256s": {
             "RshLib.dll": "0ae9e29ea7e174d91c1c9183e034ed53da44c385b7b24736fb44a7f98e5b0688"
         },
-        "downloadsSinceLatestVersion": 736,
+        "downloadsSinceLatestVersion": 737,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -7194,27 +7198,27 @@
     {
         "Id": "nexus-388",
         "Name": "Casualty Vitals",
-        "Version": "1.4.0",
-        "bepinexVersion": "1.4.0",
+        "Version": "1.5.0",
+        "bepinexVersion": "1.5.0",
         "Summary": "Adds a more complex ECG monitor to the game over the vanilla one, alongside other changes",
-        "Description": "[size=5]Casualty Vitals[/size]\n<br />\n<br />Casualty Vitals replaces the vanilla Casualties Unknown ECG panel with a richer patient monitor powered by a BepInEx 5 plugin. It adds multi-channel waveform viewing, progressive clinical-ish complications, alarm tinting, manual defibrillator support, and a few strange but medically flavored edge cases.\n<br />\n<br />This is an experimental gameplay/immersion mod. It is not medical advice, a diagnosis tool, or a realistic clinical simulator.\n<br />\"experimental\" as in some complications (see Gameplay Effects below) may be broken, unbalanced or too small to show.\n<br />\n<br />[size=4]Translations / 翻译 / Переводы / Traducciones[/size]\n<br />\n<br />English: Casualty Vitals includes English, Simplified Chinese, Russian, and\n<br />Spanish text. Auto follows the game's language when it is one of those supported\n<br />locales. To choose one manually or create a translation, see\n<br />BepInEx&#92;plugins&#92;Assets&#92;CasualtyVitals&#92; and set [Localization] Language in\n<br />BepInEx&#92;config&#92;CasualtyVitals.cfg.\n<br />\n<br />简体中文： Casualty Vitals 提供英语、简体中文、俄语和西班牙语文本。Auto\n<br />会在游戏语言受支持时自动使用对应语言。若要手动选择语言或制作翻译，请查看\n<br />BepInEx&#92;plugins&#92;Assets&#92;CasualtyVitals&#92;，并在\n<br />BepInEx&#92;config&#92;CasualtyVitals.cfg 中设置 [Localization] Language。\n<br />\n<br />Русский: Casualty Vitals включает английский, упрощённый китайский, русский\n<br />и испанский тексты. При значении Auto мод использует язык игры, если он\n<br />поддерживается. Чтобы выбрать язык вручную или создать перевод, откройте\n<br />BepInEx&#92;plugins&#92;Assets&#92;CasualtyVitals&#92; и задайте [Localization] Language в\n<br />BepInEx&#92;config&#92;CasualtyVitals.cfg.\n<br />\n<br />Español: Casualty Vitals incluye textos en inglés, chino simplificado, ruso y\n<br />español. Con Auto, el mod usa el idioma del juego cuando está disponible. Para\n<br />elegir un idioma manualmente o crear una traducción, revisa\n<br />BepInEx&#92;plugins&#92;Assets&#92;CasualtyVitals&#92; y configura [Localization] Language\n<br />en BepInEx&#92;config&#92;CasualtyVitals.cfg.\n<br />\n<br />[size=4]Requirements[/size]\n<br />\n<br />- Casualties Unknown Demo\n<br />- [url=https://www.nexusmods.com/scavprototype/mods/341]CUCoreLib[/url]\n<br />- BepInEx 5 for Unity Mono\n<br />- Windows x64 game install\n<br />\n<br />CUCoreLib is required for the custom medical solution items. Casualty Vitals declares it as a hard dependency, so BepInEx will refuse to load this mod if CUCoreLib is missing.\n<br />\n<br />[size=4]Installation[/size]\n<br />\n<br />1. Install BepInEx 5 into the Casualties Unknown game folder.\n<br />2. Launch the game once so BepInEx creates its folders.\n<br />3. Install `CUCoreLib.dll` and\n<br />4. Copy `CasualtyVitals.dll` (and the associated Asset folder) into:\n<br />\n<br />[code]\n<br />&lt;Game Folder&gt;&#92;BepInEx&#92;plugins&#92;[/code]\n<br />5. Launch the game.\n<br />6. Check `BepInEx&#92;LogOutput.log` for:\n<br />\n<br />[code]\n<br />Plugin CasualtyVitals is loaded.[/code]\n<br />\n<br />The mod keeps normal runtime logging quiet. If the log grows rapidly, look for warnings/errors rather than routine status spam.\n<br />\n<br />[size=4]What It Does[/size]\n<br />\n<br />- Replaces the vanilla health-panel ECG display with a custom monitor overlay.\n<br />- Adds selectable waveform channels:\n<br />  - HEART\n<br />  - SPO2\n<br />  - RESP\n<br />  - ABP\n<br />  - ETCO2\n<br />- Lets channels be previewed by hovering and pinned by clicking.\n<br />- Adds fast channel blending to reduce flicker when the vanilla UI changes rapidly.\n<br />- Adds monitor alarm tinting instead of large alarm text covering the trace.\n<br />- Pulses affected channel buttons during alarms.\n<br />- Supports a photosensitive alarm mode with slower, softer flashing.\n<br />- Hides the custom health monitor during unchipped mode so the vanilla behavior can show through.\n<br />- Adds a manual pulse check for unchipped or low-information playthroughs.\n<br />- Adds custom electrolyte treatment items through CUCoreLib.\n<br />- Adds elder thornback dread effects with moodles, heartbeat audio, panic HR, and post-fight adrenaline crash.\n<br />- Adds optional gameplay complications that can push vanilla Body fields when enabled.\n<br />\n<br />[size=4]Manual Defibrillator Support[/size]\n<br />\n<br />The manual defibrillator minigame receives its own limited monitor overlay.\n<br />\n<br />It shows:\n<br />\n<br />- HEART\n<br />- SPO2\n<br />- ABP\n<br />\n<br />It does not show:\n<br />\n<br />- RESP\n<br />- ETCO2\n<br />\n<br />AED/manual defib shocks create a short noisy electrical artifact on the heart trace. Higher manual defib charge, or AED shocks, make the artifact slightly more erratic and last a little longer. In unchipped mode, the manual defib monitor can still show the shock artifact while the normal health monitor stays hidden.\n<br />\n<br />Manual defibrillators can also be made rarer in generic loot/trader pools, or made more fragile after each shock, through config. This does not intentionally nerf AEDs.\n<br />\n<br />[size=4]Physiology Layer[/size]\n<br />\n<br />Casualty Vitals reads the current Body state and turns it into monitor behavior instead of only drawing the raw vanilla ECG.\n<br />\n<br />Supported/estimated complication patterns include:\n<br />\n<br />- Hypovolemia\n<br />- Hypoxia\n<br />- Respiratory failure\n<br />- Shock\n<br />- Angina/chest discomfort\n<br />- Ventricular instability\n<br />- Waterlogging/drowning-like respiratory stress\n<br />- Hyperkalemia from banana overload\n<br />- Hypercalcemia from electrolyte medication overdose\n<br />- Electrolyte medication toxicity\n<br />- Elder thornback panic/adrenaline states\n<br />- EtCO2 changes from ventilation, obstruction, waterlogging, perfusion, shock, and external API modifiers\n<br />\n<br />These conditions are progressive. The monitor should often show deterioration before the raw numbers look completely catastrophic.\n<br />\n<br />[size=4]Waveform Changes[/size]\n<br />\n<br />The monitor can display:\n<br />\n<br />- Sinus rhythm\n<br />- Bradycardia\n<br />- Tachycardia\n<br />- SVT-like fast rhythm\n<br />- VTach (now explicitly organized, monomorphic wide-complex)\n<br />- VFib (now fades in continuously instead of snapping)\n<br />- PEA-like electrical activity with poor/no perfusion\n<br />- Asystole (now decays gradually instead of snapping flat)\n<br />- Defib shock artifacts\n<br />- Hyperkalemia morphology with reduced P waves and tall peaked T waves\n<br />- Respiratory distress, apnea, waterlogged, and agonal-like patterns\n<br />- Pleth quality loss with poor oxygen/perfusion\n<br />- ABP loss with low pressure, low blood volume, arrest, or severe ventricular instability\n<br />- Synthetic/robotic ABP morphology when a charged autopump appears to be actively supporting low pressure\n<br />- EtCO2 plateau changes, including higher/waterlogged patterns\n<br />\n<br />[size=4]Manual Pulse Checks[/size]\n<br />\n<br />Holding left click with an empty cursor on the head, wrist, hand, or forearm in the health panel reveals a faint manual pulse trace after a short hold. This is mainly for unchipped playthroughs, but it can also be used in normal runs if you want a rough second opinion without relying fully on the monitor (for some reason?).\n<br />\n<br />The manual trace is intentionally approximate. Higher intelligence improves interpretation: estimates appear with fewer beats, the BPM number tightens faster, and the trace is a little cleaner. Low intelligence takes longer and produces a rougher read.\n<br />\n<br />During or near fibrillation, the manual pulse check becomes hard to interpret instead of giving a clean diagnostic VFib strip. If the patient is crashing that badly, the pulse check should feel like a warning sign, not a perfect monitor.\n<br />\n<br />[size=4]Mod API[/size]\n<br />\n<br />Casualty Vitals v1.0.0+ exposes `CasualtyVitalsApi` for other BepInEx mods. This allows other mods to safely read `VitalsSnapshot` without touching vanilla fields, inject additive condition burdens (`ExternalConditionSignal`), or apply custom waveform modifiers.\n<br />\n<br />[size=4]Gameplay Effects[/size]\n<br />\n<br />The mod can be used as a mostly visual monitor upgrade, or as a gameplay-affecting complication layer.\n<br />\n<br />When `EnableGameplayEffects` is enabled, developing conditions can nudge vanilla Body fields. This can affect stamina, shock, chest pain, abdomen pain, hemothorax pressure, oxygen, respiratory behavior, blood pressure behavior, and fibrillation risk.\n<br />\n<br />The goal is not instant punishment. The goal is to make subtle monitor deterioration matter.\n<br />\n<br />Major gameplay-facing additions include:\n<br />\n<br />- Hyperkalemia can progress from repeated banana eating and can contribute to chest pain, ECG changes, ventricular instability, and fibrillation risk if ignored.\n<br />- Hypercalcemia can occur from calcium gluconate overdose and can push angina/rhythm burden.\n<br />- Calcium gluconate and calcitonin solution are real custom items, not renamed vanilla saline.\n<br />- Both solutions can be consumed orally from the radial menu or injected through the health panel.\n<br />- Oral use takes about 14 mL and acts slowly with lower overdose risk.\n<br />- Injection uses the syringe minigame and can deliver much more at once, so overdose is easier.\n<br />- Each bottle holds 100 mL; injecting more than about 30 mL of either medication is the danger zone.\n<br />- Electrolyte medication overdose adds its own chipped-only moodle instead of pretending to be opiate overdose.\n<br />- Elder thornbacks can trigger Sense of Impending Doom, Horrified, and Focused moodles, boost heartbeat audio, and push panic heart rate toward a configurable maximum.\n<br />- After a thornback encounter ends, the heartbeat fades down over time and the adrenaline crash can lightly drain stamina.\n<br />- Thornback panic suppresses the monitor's hypertensive crisis reaction so dread HR spikes do not immediately become a hypertensive crisis by themselves.\n<br />\n<br />For multiplayer, host-driven gameplay effects are the safest setup. Client-only monitor display is much safer than multiple clients writing vanilla Body fields at the same time (but it does work in a multiplayer setup, or well shouldn't break anything).\n<br />\n<br />[size=4]Custom Medical Items[/size]\n<br />\n<br />CUCoreLib registers two electrolyte solution items:\n<br />\n<br />- `Calcium Gluconate Solution`\n<br />- `Calcitonin Solution`\n<br />\n<br />Both use embedded sprites, spawn in medical loot pools, and can occasionally appear at traders. They are liquid containers with 100 mL of solution, custom liquid colors, custom locale text, and health-panel injection support.\n<br />\n<br />Calcium gluconate stabilizes dangerous hyperkalemia. Calcitonin counteracts hypercalcemia after electrolyte treatment overdose. They are meant to be dosed carefully: partial oral doses are safer and slower, while health-panel injection is faster but can overdose hard if you dump too much.\n<br />\n<br />[size=4]Banana Hyperkalemia[/size]\n<br />\n<br />Because someone had to make potassium a gameplay mechanic:\n<br />\n<br />- Eating more than about 1.5 bananas inside roughly 3 minutes starts the risk.\n<br />- Each extra half-banana step after that rolls a 50% chance.\n<br />- Each failed roll adds hyperkalemia progress.\n<br />- A very unlucky binge can max out the condition.\n<br />- Hyperkalemia decays by itself, but very slowly.\n<br />- Hyperkalemia contributes to angina burden, chest discomfort, abdomen discomfort, ventricular instability, ECG changes, and fibrillation risk (if enabled).\n<br />\n<br />[size=4]Configuration[/size]\n<br />\n<br />After first launch, BepInEx creates:\n<br />\n<br />[code]\n<br />&lt;Game Folder&gt;&#92;BepInEx&#92;config&#92;CasualtyVitals.cfg[/code]\n<br />Useful settings:\n<br />\n<br />[code]\n<br />[Complications]\n<br />EnableGameplayEffects = false\n<br />EnableAutoPumpDiscomfort = false\n<br />EnableThornbackDread = true\n<br />\n<br />[Accessibility]\n<br />PhotosensitiveAlarmMode = false\n<br />\n<br />[Monitor]\n<br />ProcessingDelayMs = 120\n<br />WaveformTimeScale = 0.85\n<br />\n<br />[Localization]\n<br />Language = Auto\n<br />\n<br />[Thornback Dread]\n<br />AuraDistance = 28\n<br />PanicDistance = 9.5\n<br />MaxHeartRate = 200\n<br />PeakHoldSeconds = 4.5\n<br />CrashStaminaDrain = 0.18\n<br />\n<br />[Manual Pulse ECG]\n<br />EnableManualPulseEcg = true\n<br />HoldSeconds = 3.5\n<br />HistoryScale = 1.4\n<br />HeadOffsetX = 0\n<br />HeadOffsetY = 0\n<br />LeftHandOffsetX = 0\n<br />LeftHandOffsetY = 0\n<br />RightHandOffsetX = 0\n<br />RightHandOffsetY = 0\n<br />\n<br />[Manual Defibrillator]\n<br />LootChanceMultiplier = 1\n<br />ShockConditionLoss = 0\n<br />\n<br />[Debug]\n<br />EnableDebugHotkeys = false[/code]\n<br />EnableGameplayEffects = false keeps the monitor behavior without letting the complication layer push vanilla Body fields.\n<br />\n<br />EnableThornbackDread` is separate from `EnableGameplayEffects; turn it off if you only want the monitor/items/API without thornback panic physiology.\n<br />\n<br />PhotosensitiveAlarmMode = true uses slower, softer alarm pulses.\n<br />\n<br />ProcessingDelayMs tunes visual delay against the game's heartbeat/audio feel.\n<br />\n<br />Localization.Language accepts Auto, EN, zh_CN, zh_TW, ru_RU, es_ES,\n<br />or es-419. Auto reads Casualties Unknown's current locale identifier every time\n<br />it refreshes custom text. zh_TW currently uses the supplied Chinese fallback and\n<br />es-419 uses the supplied Spanish fallback; they are recognized rather than falling\n<br />back to English. Unsupported game languages, missing files, invalid JSON, and\n<br />missing keys use built-in English. The JSON files in\n<br />BepInEx&#92;plugins&#92;Assets&#92;CasualtyVitals are simple key/value text files and may be\n<br />translated or overridden.\n<br />\n<br />The health-panel waveform follows the game's unscaled heartbeat clock and redraws each frame for smooth motion. Physiology still progresses on scaled game time.\n<br />\n<br />Manual pulse ECG offsets are in screen pixels. The config comments include rough presets such as next-to-body, under-limb, and above-limb. The probe also nudges away if it would cover the limb being checked.\n<br />\n<br />LootChanceMultiplier = 0 removes manual defibrillators from generic loot/trader pools. Values above `1` make them more common there. Direct special-case world spawns may still be controlled by the base game.\n<br />\n<br />ShockConditionLoss only applies to the manual defibrillator. The AED is not intentionally affected.\n<br />\n<br />[size=4]Debug Hotkeys[/size]\n<br />\n<br />Debug hotkeys are disabled by default. Enable them in the config if you want to test the monitor quickly.\n<br />\n<br />- F7 - hemorrhage / hypovolemia\n<br />- F8 - hypoxia\n<br />- F9 - ventricular instability\n<br />- F10 - thoracic / respiratory complication\n<br />- F11 - PEA-like state\n<br />[size=1]These hotkeys intentionally alter the current patient.[/size]\n<br />\n<br />This mod also adds console commands for testing internal values:\n<br />\n<br />[code]\n<br />cvlistbodyfields\n<br />cvsetbodyfield &lt;field&gt; &lt;value&gt; [seconds]\n<br />cvgetbodyfield &lt;field&gt;[/code]\n<br />[size=4]Compatibility[/size]\n<br />\n<br />This mod is a BepInEx plugin that overlays and disables specific vanilla ECG UI components while active. It may conflict with mods that replace the same health-panel ECG, wound panel, or manual defibrillator minigame UI.\n<br />\n<br />It should be compatible with unrelated item, world, audio, and quality-of-life mods unless they heavily alter the same UI or Body fields.\n<br />\n<br />(as should be noted that this mod looks for \"WoundView\" so if any mod alters it in ways that CasualtyVitals can't see it properly, it might break, but by itself does not alter this class.)\n<br />\n<br />[size=4]Known Limitations[/size]\n<br />\n<br />- The mod estimates some hidden game states because not every useful Body/device detail is exposed cleanly.\n<br />- Autopump activity is inferred from pressure behavior and wearable/battery state.\n<br />- The monitor is stylized for Casualties Unknown rather than a strict medical simulator.\n<br />- Some severe or nonsensical vanilla states can still produce odd combinations, because Casualties Unknown allows odd physiology.\n<br />- The manual defib monitor is intentionally limited and not perfectly accurate.\n<br />- Manual pulse checks are approximate and intentionally affected by intelligence.\n<br />- Gameplay-affecting complications should generally be host-driven in multiplayer.\n<br />- CUCoreLib must load before the custom solution items can register.\n<br />- Setting the heartRate too high may lead to a game crash (but this is usually in the billions so it's fine in NORMAL gameplay.)\n<br />\n<br />[size=4]Troubleshooting[/size]\n<br />\n<br />If the monitor does not appear:\n<br />\n<br />- Confirm BepInEx 5 loads.\n<br />- Confirm CasualtyVitals.dll is in BepInEx&#92;plugins.\n<br />- Confirm CUCoreLib.dll is in BepInEx&#92;plugins`.\n<br />- Confirm LogOutput.log contains Plugin CasualtyVitals is loaded.\n<br />- Open the health/wound panel; the overlay attaches to the game's ECG UI.\n<br />- If using other UI mods, try disabling anything that changes the health panel or defibrillator UI.\n<br />\n<br />- If all else fails, try to change BepInEx's \"HideManagerGameObject = false\" to true.\n<br />\n<br />If the log file gets noisy:\n<br />\n<br />- Check for repeated warnings or errors from Casualty Vitals.\n<br />- Routine status messages are intentionally suppressed.\n<br />- Debug hotkey messages only appear when debug hotkeys are enabled and pressed.\n<br />\n<br />If alarm flashing is uncomfortable:\n<br />\n<br />- Set PhotosensitiveAlarmMode = true.\n<br />\n<br />[size=4]Uninstall[/size]\n<br />\n<br />Delete:\n<br />\n<br />[code]\n<br />&lt;Game Folder&gt;&#92;BepInEx&#92;plugins&#92;CasualtyVitals.dll[/code]\n<br />Optional:\n<br />\n<br />[code]\n<br />&lt;Game Folder&gt;&#92;BepInEx&#92;config&#92;CasualtyVitals.cfg\n<br />&lt;Game Folder&gt;&#92;BepInEx&#92;plugins&#92;Assets&#92;CasualtyVitals[/code]\n<br />[size=1]If no other mod requires CUCoreLib.dll you can also delete it.[/size]\n<br />\n<br />[size=4]Credits[/size]\n<br />\n<br />- Built with BepInEx 5.\n<br />- Inspired by the [url=https://github.com/ThatOneFBIAgent/VitalSignSimulator]StatPatMon/VitalSign Monitor[/url] simulation work (outside app of mine).\n<br />- Developed for experimental Casualties Unknown medical-monitor modding.\n<br />\n<br />- Nullrot for ingame item sprites.\n<br />- ExonDotExE for the main menu artwork.\n<br />\n<br />[size=4]For the developers[/size]\n<br />[size=3]Please visit [url=https://github.com/ThatOneFBIAgent/CasualtyVitals/blob/main/API.md]the public repo[/url] for documentation on how to interact with the mod.[/size]\n<br />[size=4]\n<br />Version[/size]\n<br />\n<br />Current workspace version: 1.3.0\n<br />\n<br />This build is experimental and may change as the underlying game and mod hooks are better understood.\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />",
+        "Description": "[center]\n<br />[size=6][b][color=#00e676]CASUALTY VITALS[/color][/b][/size]\n<br />[size=4][i]Patient Monitor &amp; Medical Overhaul for Casualties Unknown[/i][/size]\n<br />[size=3][b][color=#ffa726]Version 1.5.0[/color][/b][/size]\n<br />[/center]\n<br />\n<br />[quote][b]Disclaimer:[/b] Casualty Vitals is an experimental gameplay and immersion mod, not a realistic medical simulator. Medical concepts, waveforms, and item effects are simplified and stylized for the game, and liberties were taken for gameplay balance. It is not real medical advice or a diagnostic tool.[/quote]\n<br />[line]\n<br />\n<br />[size=5][b][color=#00e676]Translations / 翻译 / Переводы / Traducciones[/color][/b][/size]\n<br />\n<br />[b]English:[/b] Casualty Vitals includes English, Simplified Chinese, Russian, and Spanish text. `Auto` follows the game's language when supported. See [font=Courier New]BepInEx&#92;plugins&#92;Assets&#92;CasualtyVitals&#92;[/font] and set [font=Courier New][Localization] Language[/font] in [font=Courier New]CasualtyVitals.cfg[/font].\n<br />\n<br />[b]简体中文：[/b] Casualty Vitals 提供英语、简体中文、俄语和西班牙语文本。`Auto` 会自动匹配游戏语言。可以在 [font=Courier New]CasualtyVitals.cfg[/font] 中设置 [font=Courier New][Localization] Language[/font]。\n<br />\n<br />[b]Русский:[/b] Casualty Vitals включает английский, китайский, русский и испанский тексты. `Auto` использует язык игры. Настройки языка доступны в [font=Courier New]CasualtyVitals.cfg[/font].\n<br />\n<br />[b]Español:[/b] Casualty Vitals incluye textos en inglés, chino, ruso y español. `Auto` usa el idioma del juego. Configurable en [font=Courier New]CasualtyVitals.cfg[/font].\n<br />\n<br />[line]\n<br />\n<br />[size=5][b][color=#00e676]Requirements &amp; Installation[/color][/b][/size]\n<br />\n<br />[b]Requirements:[/b]\n<br />[list]\n<br />[*]Casualties Unknown (Demo or Full Game)[/*]\n<br />[*][url=https://www.nexusmods.com/scavprototype/mods/341]CUCoreLib[/url] (Required for custom items and multiplayer helpers)[/*]\n<br />[*][url=https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5]BepInEx 5[/url] (Unity Mono x64)[/*]\n<br />[/list]\n<br />[b]Installation:[/b]\n<br />[list=1]\n<br />[*]Install [b]BepInEx 5[/b] into your game folder.[/*]\n<br />[*]Place [font=Courier New]CUCoreLib.dll[/font] and [font=Courier New]CasualtyVitals.dll[/font] into [font=Courier New]&lt;Game Folder&gt;&#92;BepInEx&#92;plugins&#92;[/font].[/*]\n<br />[*]Copy the included [font=Courier New]Assets&#92;CasualtyVitals&#92;[/font] folder into [font=Courier New]&lt;Game Folder&gt;&#92;BepInEx&#92;plugins&#92;Assets&#92;CasualtyVitals&#92;[/font].[/*]\n<br />[*]Launch the game![/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=5][b][color=#00e676]What It Does[/color][/b][/size]\n<br />[b]Casualty Vitals[/b] replaces the base game's ECG display with a multi-channel patient monitor, new medical items, and an optional complication layer.\n<br />\n<br />[list]\n<br />[*]Replaces the vanilla health panel ECG with a custom multi-channel monitor overlay.[/*]\n<br />[*]Adds selectable waveform channels: [color=#00e676]HRT[/color] (ECG), [color=#00e5ff]SPO2[/color] (Plethysmograph), [color=#ffee58]RESP[/color] (Capnography), [color=#ef5350]ABP[/color] (Arterial Blood Pressure), and [color=#ba68c8]ETCO2[/color] (End-Tidal CO2).[/*]\n<br />[*]Channels can be previewed by hovering and pinned by clicking.[/*]\n<br />[*]Adds monitor alarm tinting and affected-channel button pulsing instead of blocking text.[/*]\n<br />[*]Supports a photosensitive alarm mode with slower, softer pulsing.[/*]\n<br />[*]Hides the custom monitor in unchipped mode so vanilla behavior shows through.[/*]\n<br />[*]Adds manual pulse checks on limbs for unchipped or low-information runs.[/*]\n<br />[*]Manual defibrillator features full multi-channel viewing, torso-placement signal scaling (torso gives a full signal; limbs give faint noise), and optional condition wear per shock.[/*]\n<br />[*]Adds over 20 heart rhythms and irregular patterns (SVT, AFib, A-Flutter, VTach, TdP, Heart Blocks, WPW, and VFib).[/*]\n<br />[*]Unorganized VFib (&gt;= 88%) blanks readouts to [color=#ef5350][b]---[/b][/color] and [color=#ef5350][b]---/---[/b][/color], while recovery (&lt; 78% fib) engages a 1.4-second pulse recalculation sequence.[/*]\n<br />[*]Adds 10 custom medical items through CUCoreLib.[/*]\n<br />[*]Optional complications include electrolyte imbalances (from drug overdoses or banana binges), respiratory collapse, shock, and Elder Thornback dread effects.[/*]\n<br />[*]Includes a guide / wiki ([url=https://github.com/IzaCarlos/CasualtyVitals/blob/main/GUIDE.md]GUIDE.md[/url]) explaining all items, waveforms, and treatment tips if you get lost (also included in the mod download).[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=5][b][color=#00e676]Simulation Modes: Choose Your Depth[/color][/b][/size]\n<br />Configurable in the main menu settings or in [font=Courier New]CasualtyVitals.cfg[/font]:\n<br />\n<br />[list]\n<br />[*][b][color=#00e676]ECG (Tier 0 - Visuals Only)[/color][/b]:\n<br />Visual monitor upgrade only. Keeps vanilla mechanics with zero extra complications or item requirements.\n<br />[/*]\n<br />[*][b][color=#ffee58]Simple (Tier 1 - Light Burdens)[/color][/b]:\n<br />Lightweight condition burdens with hyperkalemia (banana binges) and hypercalcemia.\n<br />[/*]\n<br />[*][b][color=#ffa726]Custom (Tier 2 - Feature Flags)[/color][/b]:\n<br />Toggle individual features (electrolytes, gas exchange, lead projections) on or off.\n<br />[/*]\n<br />[*][b][color=#ef5350]Advanced (Tier 3 - Full Complications)[/color][/b]:\n<br />Deeper simulation with blood gases, electrolyte shifts, heart attacks, and arrhythmia progression.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=5][b][color=#00e676]New Medical Items[/color][/b][/size]\n<br />Casualty Vitals adds 10 items through CUCoreLib:\n<br />\n<br />[spoiler]\n<br />[list]\n<br />[*][b]Albuterol Inhaler (cv_albuterol)[/b]: 10-puff inhaler for bronchospasm and potassium clearance (-0.10 mmol/L per puff). Overdose causes rapid breathing and tachycardia.[/*]\n<br />[*][b]Adrenaline Auto-Injector (cv_epinephrine)[/b]: 120ml pressor solution (Adrenaline + Noradrenaline + Carrier). Ramps over 3–5s for +36 bpm rate and +28/18 mmHg pressure support.[/*]\n<br />[*][b]Atropine Auto-Injector (cv_atropine)[/b]: Dual auto-injector (Atropine + Pralidoxime) for bradycardia, AV blocks, and creature venom (venomCurrent -45).[/*]\n<br />[*][b]Calcium Gluconate Solution (cv_calcium_gluconate)[/b]: Membrane stabilizer for high potassium (K+ &gt; 6.5) and TdP. Prevents sudden arrest without changing blood potassium.[/*]\n<br />[*][b]Calcitonin Solution (cv_calcitonin_solution)[/b]: Lowers high calcium (Ca2+ &gt; 12.0 mg/dL) from medication overdose.[/*]\n<br />[*][b]Sodium Bicarbonate Solution (cv_sodium_bicarbonate)[/b]: Alkalinizing agent for severe acidosis and DKA.[/*]\n<br />[*][b]Dextrose Chewables (cv_dextrose)[/b]: Glucose chewables for hypoglycemia and for safe insulin use.[/*]\n<br />[*][b]Insulin Vial (cv_insulin)[/b]: Fast insulin for high blood sugar and lowering potassium (-0.35 mmol/L per dose).[/*]\n<br />[*][b]Potassium Iodide Solution (cv_potassium_iodide)[/b]: Thyroid protection for acute radiation exposure.[/*]\n<br />[*][b]External Pacemaker (cv_external_pacemaker)[/b]: Paces the heart (60–80 bpm) during severe 2nd/3rd-degree heart blocks.[/*]\n<br />[/list][/spoiler]\n<br />\n<br />[line]\n<br />\n<br />[size=5][b][color=#00e676]Configuration[/color][/b][/size]\n<br />After first launch, settings are saved to [font=Courier New]BepInEx&#92;config&#92;CasualtyVitals.cfg[/font]:\n<br />\n<br />[code]\n<br />[Simulation]\n<br />Mode = Simple\n<br />ActiveEcgLead = Clean\n<br />\n<br />[Complications]\n<br />EnableGameplayEffects = false\n<br />EnableThornbackDread = true\n<br />\n<br />[Accessibility]\n<br />PhotosensitiveAlarmMode = false\n<br />\n<br />[Monitor]\n<br />ProcessingDelayMs = 120\n<br />\n<br />[Localization]\n<br />Language = Auto[/code]\n<br />[line]\n<br />\n<br />[size=5][b][color=#00e676]Developer API (v2.0)[/color][/b][/size]\n<br />Casualty Vitals includes an API for other mods to read live vitals, listen to events, inject modifiers, or require a simulation mode:\n<br />\n<br />[code]\n<br />// Require Advanced mode for a custom pharmacology mod\n<br />CasualtyVitalsApi.RequireSimulationMode(\"my_mod_id\", SimulationMode.Advanced, \"Requires blood gas &amp; electrolyte simulation\");\n<br />\n<br />// Read live patient state\n<br />if (CasualtyVitalsApi.TryGetVitals(body, out VitalsSnapshot snap))\n<br />{\n<br />    Debug.Log($\"Rhythm: {snap.Rhythm}, HR: {snap.HR}, K+: {snap.Potassium} mmol/L\");\n<br />}[/code]\n<br />Full API documentation and code examples are available at [url=https://github.com/IzaCarlos/CasualtyVitals/blob/main/API.md]API.md[/url] (also included in the mod download).\n<br />\n<br />[line]\n<br />\n<br />[size=5][b][color=#00e676]Credits &amp; Acknowledgments[/color][/b][/size]\n<br />[list]\n<br />[*]Built with [b]BepInEx 5[/b] and [b]Harmony[/b].[/*]\n<br />[*]Uses [b]CUCoreLib[/b] for custom items and multiplayer helpers.[/*]\n<br />[*][color=#6e48e8]Nullrot[/color] &amp; [color=#00ff00]ExonDotExe[/color] for their amazing sprite work.[/*]\n<br />[/list]",
         "Author": "yzaCarlos",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/388/388-1786140578-837655343.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/388"
         },
-        "DownloadUrl": "nexus://scavprototype/388/1692",
+        "DownloadUrl": "nexus://scavprototype/388/1848",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 388,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-08-11T18:53:17.000Z",
-        "ReleaseDate": "2026-08-11T18:53:17.000Z",
-        "SHA256": "da7571641af634431995959322955d198edc02d1654b114b0bfd7ab7193bfa35",
+        "LastUpdated": "2026-08-24T03:26:55.000Z",
+        "ReleaseDate": "2026-08-24T03:26:55.000Z",
+        "SHA256": "d15a343391e67f0f27de2305d359abb2a71673c4a160dc7dcf6f6c7143af6168",
         "dllSHA256s": {
-            "CasualtyVitals.dll": "2423ac5135cf35e535bf9063fb4dc2537b9342dc4ace9d3628f432bce13aa301"
+            "CasualtyVitals.dll": "8710298de3dc300635fe92e88489a5358dae81d77c9a0092db453c70efebda69"
         },
-        "downloadsSinceLatestVersion": 157,
+        "downloadsSinceLatestVersion": 1,
         "Dependencies": [
             "nexus-341"
         ],
@@ -7254,19 +7258,23 @@
             {
                 "Version": "1.4.0",
                 "Changelog": "- Main menu settings button! (Art by ExonDotExE) (Do note some stuff is not super faithful, i tried.)\n- New ingame sprites (By Nullrot)\n- Minor fixes to api documentation (avoiding poison, etc.)\n- Compatibility fix with QoL and Custom Structures"
+            },
+            {
+                "Version": "1.5.0",
+                "Changelog": "- 1.5.0 Release!\n- Physiology &amp; Waveforms:\n- Replaced static ECG with a causal rhythm and conduction state machine with over 20 distinct rhythms and defects.\n- Added support for AFib (fine/coarse f-waves), A-Flutter (sawtooth waves), Monomorphic/Polymorphic(ish) VTach, Torsades de Pointes, and Wolff-Parkinson-White.\n- Added 1st-Degree, 2nd-Degree (Mobitz I / Wenckebach &amp; Mobitz II), 3rd-Degree Complete AV Blocks, and Bundle Branch Blocks (RBBB/LBBB).\n- Added dynamic capnography (RESP/ETCO2) with shark-fin obstructive waveforms during bronchospasm.\n- Added dynamic arterial blood pressure (ABP) waveform with systemic vascular resistance and dicrotic notch modulation.\n- Rebuilt VFib waveform with high-energy chaotic motion, readouts now blank to --- and ---/--- at &gt;= 88% fibrillation.\n- Added 4 selectable simulation modes: ECG (Tier 0 Visuals), Simple (Tier 1), Custom (Tier 2), and Advanced (Tier 3 Causal).\n- Items &amp; Equipment:\n- Added Albuterol Inhaler (bronchodilator &amp; cellular potassium shifting).\n- Added Adrenaline Auto-Injector (+36 bpm rate and +28/18 mmHg pressure support).\n- Added Atropine/2-PAM Dual Auto-Injector (bradycardia, AV blocks, and creature venom clearing, similar to Mark I kits).\n- Added Sodium Bicarbonate Solution (systemic alkalinization for severe acidosis and DKA).\n- Added Dextrose Chewables (hypoglycemia and safe insulin co-administration).\n- Added Insulin Vial (hyperglycemia and rapid potassium lowering).\n- Added Potassium Iodide Solution (thyroid radiation protection).\n- Added External Transcutaneous Pacemaker (delivers pacing spikes to maintain rate during high-grade heart blocks).\n- Manual defibrillator ECG amplitude and shock delivery now scale dynamically with anatomical paddle placement (Torso vs Limbs).\n- Added INT based medicine discovery (ergo, higher int for some objects)\n- Fixes &amp; QoL:\n- Fixed a bug present since 1.0.0 where Thornback dread erroneously triggered the Focused moodle.\n- Fixed respiratory rate collapsing (during testing) and locking to 6.1–6.2 BPM during high fibrillation by decoupling cardiac beats from respiration cycles.\n- Fixed remote multiplayer heartbeat audio desync (hopefully).\n- Added full (menu included) multi-language localization for English, Simplified Chinese, Russian, and Spanish (Language = Auto).\n- Bundled a complete reference guide and wiki (GUIDE.md) covering all medications, waveforms, and treatment tips."
             }
         ],
         "dllNames": [
             "CasualtyVitals.dll"
         ],
-        "dllVersion": "1.4.0",
+        "dllVersion": "1.5.0",
         "dllVersions": {
-            "CasualtyVitals.dll": "1.4.0"
+            "CasualtyVitals.dll": "1.5.0"
         },
         "Statistics": {
             "Endorsements": 22,
-            "UniqueDownloads": 565,
-            "TotalDownloads": 1095,
+            "UniqueDownloads": 570,
+            "TotalDownloads": 1103,
             "TotalViews": null
         },
         "Images": [
@@ -7340,7 +7348,7 @@
         "dllSHA256s": {
             "AxivornsExpieNPCMod.dll": "ee7694e259fc5f59c748b0bc9e97218bf43773cd44494e54c72b1191e05b914a"
         },
-        "downloadsSinceLatestVersion": 1413,
+        "downloadsSinceLatestVersion": 1414,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -8062,7 +8070,7 @@
         "dllSHA256s": {
             "AllWearableCanBeHeld.dll": "2807520bc5eca3efe8792122703162d0c8bac45368a1d65668d2c6339713e3c7"
         },
-        "downloadsSinceLatestVersion": 919,
+        "downloadsSinceLatestVersion": 920,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -8103,7 +8111,7 @@
         "ReleaseDate": "2026-08-05T08:12:28.000Z",
         "SHA256": "e088c7ec1b0fb47f1541b2ab5cbc8dce8f4f51a6984ae8ca4eb0128e2005e133",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 111,
+        "downloadsSinceLatestVersion": 112,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -8993,7 +9001,7 @@
         "dllSHA256s": {
             "UnknownPerformance.dll": "bac238d7f9189a92cadac34690b233c22928fed16df01b053ea02c5d0e34ad94"
         },
-        "downloadsSinceLatestVersion": 2480,
+        "downloadsSinceLatestVersion": 2481,
         "Dependencies": [
             "nexus-338"
         ],
@@ -9038,7 +9046,7 @@
         "dllSHA256s": {
             "CUCoreLib.dll": "47275a8cd64cd998537a5f3405f3373aed7b429d2179fcff84844367918e1e41"
         },
-        "downloadsSinceLatestVersion": 2711,
+        "downloadsSinceLatestVersion": 2726,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -9194,7 +9202,7 @@
         "dllSHA256s": {
             "ScavSetLib.dll": "c5822431086b62fc321f1f462b925d33b6b5424df4869c07b76a6bc0da61149f"
         },
-        "downloadsSinceLatestVersion": 1851,
+        "downloadsSinceLatestVersion": 1852,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -9519,7 +9527,7 @@
         "dllSHA256s": {
             "ExpiePettingMod.dll": "189909b97d3d8668d9e26b50bd69dd23887be0648997ecd7ea93b95ac383d835"
         },
-        "downloadsSinceLatestVersion": 2319,
+        "downloadsSinceLatestVersion": 2321,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -9751,7 +9759,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "37bac4a443a878cfcd9cb9bf52a3aebdd35adbdcd67fecc38fa84b4590edae35"
         },
-        "downloadsSinceLatestVersion": 73,
+        "downloadsSinceLatestVersion": 75,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -9878,7 +9886,7 @@
             "GunsawGenetics.dll": "12adfb0734755e5eadf0eb7b7bf649cc8cba5355e7b1dd8004607b0d8ba0480b",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 1442,
+        "downloadsSinceLatestVersion": 1455,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10872,7 +10880,7 @@
         "ReleaseDate": "2026-06-12T05:56:01.000Z",
         "SHA256": "e714725b09f14939cf27cc20e566ef30064eab83e148704f76075f74c54c95dc",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 326,
+        "downloadsSinceLatestVersion": 327,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -11579,7 +11587,7 @@
         "dllSHA256s": {
             "Magazine Merge.dll": "572ffe8a4c0d0788d1724b42aecf2ee2fac0e0d6ae6d1f358031a9ceb9401bce"
         },
-        "downloadsSinceLatestVersion": 60,
+        "downloadsSinceLatestVersion": 61,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -11794,7 +11802,7 @@
         "dllSHA256s": {
             "VforWhining.dll": "ad115c465857112756a20204f07883da3087eb4c68f2a977e18cf571b5e7183e"
         },
-        "downloadsSinceLatestVersion": 2140,
+        "downloadsSinceLatestVersion": 2141,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -11929,7 +11937,7 @@
         "dllSHA256s": {
             "WearableArray.dll": "792dbc65b7aca784dc7849ea49347c9336b0e7444779abca9c4b32d5a02ce4e5"
         },
-        "downloadsSinceLatestVersion": 999,
+        "downloadsSinceLatestVersion": 1002,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -12480,7 +12488,7 @@
         "dllSHA256s": {
             "CasualtiesExtra.dll": "35f32d1c42ffb287e84a5c2046a5e9646f46ac731a3c2e7bd6593d28d190d8e9"
         },
-        "downloadsSinceLatestVersion": 758,
+        "downloadsSinceLatestVersion": 760,
         "Dependencies": [
             "nexus-341"
         ],
@@ -12534,7 +12542,7 @@
         "dllSHA256s": {
             "GracePickupBypass.dll": "317d4e415047bf8801ce579e02e9cedec5d9d6a2d726740287cc2c2733a7b700"
         },
-        "downloadsSinceLatestVersion": 560,
+        "downloadsSinceLatestVersion": 561,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -12830,7 +12838,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "37bac4a443a878cfcd9cb9bf52a3aebdd35adbdcd67fecc38fa84b4590edae35"
         },
-        "downloadsSinceLatestVersion": 365,
+        "downloadsSinceLatestVersion": 366,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -13279,7 +13287,7 @@
         "dllSHA256s": {
             "DevMenuV2.dll": "48ac4310edd308faf82d1ffd177498d89864cfa6d5cace7abb623452b651f8cf"
         },
-        "downloadsSinceLatestVersion": 954,
+        "downloadsSinceLatestVersion": 955,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13602,7 +13610,7 @@
         "dllSHA256s": {
             "NewFirearms.dll": "3d2cfaacf29d24224f6e91ccf67a9f53199d77369e6e71953c6ef0370cfb74ab"
         },
-        "downloadsSinceLatestVersion": 1136,
+        "downloadsSinceLatestVersion": 1138,
         "Dependencies": [
             "nexus-32"
         ],
@@ -13743,7 +13751,7 @@
             "ChangeSkinMP.dll": "b57fb344a3beb1ad084a898f716b2fe097a479beda84aadbb29054df7e9bd705",
             "CommandLine.dll": "2135b40fa819e58cf1942453e4409bfdea2be631077a354b878de8402be7e026"
         },
-        "downloadsSinceLatestVersion": 4352,
+        "downloadsSinceLatestVersion": 4353,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -14860,7 +14868,7 @@
         "dllSHA256s": {
             "CuSaveManager.dll": "c97db5074e41f73e957cd2a56d4b33bf3403ebe93b228a3947a00825d7d06099"
         },
-        "downloadsSinceLatestVersion": 262,
+        "downloadsSinceLatestVersion": 263,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15230,7 +15238,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6dcbd87171f4a802d8f748a97bb5418b3976ac21b77d7f520e2c4aac97daa049"
         },
-        "downloadsSinceLatestVersion": 12973,
+        "downloadsSinceLatestVersion": 12978,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15559,7 +15567,7 @@
         "dllSHA256s": {
             "CatPatch.dll": "ed1920f44e76fa4b142a97cf18dff54796d4235349200b8d710f3fc3af280308"
         },
-        "downloadsSinceLatestVersion": 3645,
+        "downloadsSinceLatestVersion": 3649,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15682,7 +15690,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 48733,
+        "downloadsSinceLatestVersion": 48752,
         "ContainsAdultContent": false
     },
     {
@@ -16185,7 +16193,7 @@
         "ReleaseDate": "2026-05-08T16:08:59.000Z",
         "SHA256": "5e11fae99aa2a7bac6985c4c74c8d245c51f5a6ce7ff5e3d0e2fbe2fe91c4e49",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 356,
+        "downloadsSinceLatestVersion": 357,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -16315,7 +16323,7 @@
         "dllSHA256s": {
             "RemiyamuremodLayerUnlock.dll": "dd66574025d93f6344f42f7b01ca54c45a2937e9cc11d00859dfa8940b77f51c"
         },
-        "downloadsSinceLatestVersion": 1646,
+        "downloadsSinceLatestVersion": 1648,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16619,7 +16627,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "15f047a0ed401af24d49193439e29bbab2f1a37c64a5a6e22f1cadfa65b17ccd"
         },
-        "downloadsSinceLatestVersion": 1869,
+        "downloadsSinceLatestVersion": 1872,
         "Dependencies": [
             "nexus-341"
         ],
@@ -17262,7 +17270,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/31/31-1777215394-1750634006.png"
         ],
-        "downloadsSinceLatestVersion": 3631,
+        "downloadsSinceLatestVersion": 3632,
         "ContainsAdultContent": false
     },
     {
@@ -17288,7 +17296,7 @@
         "dllSHA256s": {
             "HugAnimation.dll": "267b5dac76a677972209bd13604ae95dc2981c312b3788cc1a487f293402ed27"
         },
-        "downloadsSinceLatestVersion": 1481,
+        "downloadsSinceLatestVersion": 1482,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -18017,7 +18025,7 @@
         "dllSHA256s": {
             "body_sprite_replacer.dll": "dc92eec8e3fcaa62396616050d4bd2315b7648a15ee92a2354885908454c8fb0"
         },
-        "downloadsSinceLatestVersion": 4522,
+        "downloadsSinceLatestVersion": 4523,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -18249,7 +18257,7 @@
         "dllSHA256s": {
             "Custom Structures.dll": "64ba2b7bb8d4c6162721396e0867d1eba30ac682fec8bbe7d087a479bf9a3a4e"
         },
-        "downloadsSinceLatestVersion": 1876,
+        "downloadsSinceLatestVersion": 1878,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -18349,7 +18357,7 @@
         "dllSHA256s": {
             "QoL Unknown.dll": "61415f75fe7843b88da6f86e8758597929ca2d2d72e4bc575923ebfb409f34bc"
         },
-        "downloadsSinceLatestVersion": 7017,
+        "downloadsSinceLatestVersion": 7022,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -18605,7 +18613,7 @@
         "dllSHA256s": {
             "CU_ItemSpawner_Mod.dll": "67d21848c6e6a398538a51d465f30901d5b0bc9a16b606a4037e4d60b29c14c3"
         },
-        "downloadsSinceLatestVersion": 2388,
+        "downloadsSinceLatestVersion": 2389,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [

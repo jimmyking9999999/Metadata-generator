@@ -61,7 +61,7 @@
         "dllSHA256s": {
             "RealKeepInventory.dll": "8e9b8ed66ce3fe49dbbbfcfa33b5378577486b9975321434bdd3d541dbf3f226"
         },
-        "downloadsSinceLatestVersion": 21,
+        "downloadsSinceLatestVersion": 22,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -109,7 +109,7 @@
         "dllSHA256s": {
             "KrokMPOptimization.dll": "36c03eb9dc8877a4220315526a97669a602ede09b6f437715658d8be52efb703"
         },
-        "downloadsSinceLatestVersion": 70,
+        "downloadsSinceLatestVersion": 72,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -383,7 +383,7 @@
         "dllSHA256s": {
             "Diabetes.dll": "31bf14cb460985f9c022c20020e880a1efff1d41c11c19faae572ce33f76286e"
         },
-        "downloadsSinceLatestVersion": 10,
+        "downloadsSinceLatestVersion": 11,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -525,7 +525,7 @@
         "dllSHA256s": {
             "DifferentiatingTraits.dll": "c0b09e35ff06b0b4be6004fe3a579b7121a655194c0363223635b259b5f2ed4d"
         },
-        "downloadsSinceLatestVersion": 10,
+        "downloadsSinceLatestVersion": 13,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -604,45 +604,49 @@
     {
         "Id": "nexus-585",
         "Name": "Lazy Minimap - Reactive Field Map",
-        "Version": "1.12.4",
-        "bepinexVersion": "1.12.4",
+        "Version": "1.15.0",
+        "bepinexVersion": "1.15.0",
         "Summary": "Minimap mod for \"Casualties: Unknown\"",
-        "Description": "Adds a Minimap to make exploration a bit more cheesy and fun!\n<br />\n<br />Originally created for a friend of mine, got a little out of hand but it turned into something I was pretty proud of! Thought I'd share it with others! My first genuine mod for a game!\n<br />\n<br />[b][size=5]Features:[/size][/b]\n<br />Pixel Styled Terrain Map\n<br />Compatibility with Casualties Together\n<br />Mode that Reveals the Map as you explore\n<br />Map Markers\n<br />Expandable Map, and other settings!\n<br />Many reactive visual effects\n<br />And more!\n<br />\n<br />[b][size=5]Installation:[/size][/b]\n<br />Download the game:  [url=https://store.steampowered.com/app/4576510]https://store.steampowered.com/app/4576510[/url]\n<br />Download BepInEx:  [url=https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip]https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip[/url]\n<br />Download Lazy Minimap: [url=https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip]https://www.nexusmods.com/scavprototype/mods/585?tab=files[/url]\n<br />(Optional) Download Co-op Mod:  [url=https://www.nexusmods.com/scavprototype/mods/67?tab=files]https://www.nexusmods.com/scavprototype/mods/67?tab=files[/url]\n<br />\n<br />Extract zips in the game folder (In Steam, right click the game, Manage &gt; Browse local files)\n<br />\n<br />[b][size=5]Controls:[/size][/b]\n<br />M | Toggle Minimap\n<br />(Hold) Tab | Temporarily Show Expanded Map\n<br />E button | Lock Expanded Map\n<br />F8 | Open Settings\n<br />J | Open Journal\n<br />Mouse wheel / + / - | Zoom\n<br />Left-drag | Pan\n<br />Middle-click | Focus player\n<br />Right-click explored area | Waypoint\n<br />P | Cycle frames!\n<br />\n<br />[left][size=4][b]Support the developer with a [url=https://ko-fi.com/lazytaidum]coffee[/url]![/b][/size][/left]\n<br />",
+        "Description": "Adds a Minimap to make exploration a bit more cheesy and fun!\n<br />\n<br />Originally created for a friend of mine, got a little out of hand but it turned into something I was pretty proud of! Thought I'd share it with others! My first genuine mod for a game!\n<br />\n<br />[b][size=5]Features:[/size][/b]\n<br />Pixel styled terrain and cartography\n<br />Exploration mode with line-of-sight terrain charting\n<br />Persistent terrain &amp; map journal\n<br />Markers for enemies, dropped items, hazards, containers, survivors &amp; more\n<br />Hoverable markers with object and creature names\n<br />Off map arrows to mark players and dropped items\n<br />Expandable Terraria style map with panning and zoom\n<br />QoL Unknown integration, keeps cartography saved to your save slots!\n<br />Customizable opacity, size, frame shape, effects and controls\n<br />Compatibility with Casualties Together\n<br />Shared exploration, buddy positions, trails and multiplayer pings\n<br />Auto Minimap compacting to fit opened menu's\n<br />Reactive visuals to injuries, oxygen loss, movement, nearby danger, earthquakes and tons of other conditions\n<br />Unique map behavior for different layer modifiers and environments\n<br />Lots of other visuals and surprises!\n<br />\n<br />The map can be kept simple and readable, or allowed to become increasingly unstable with your character and surroundings!\n<br />\n<br />[b][size=5]Installation:[/size][/b]\n<br />Download the game:  [url=https://store.steampowered.com/app/4576510]https://store.steampowered.com/app/4576510[/url]\n<br />Download BepInEx:  [url=https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip]https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip[/url]\n<br />Download Lazy Minimap: [url=https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip]https://www.nexusmods.com/scavprototype/mods/585?tab=files[/url]\n<br />(Optional) Download Co-op Mod:  [url=https://www.nexusmods.com/scavprototype/mods/67?tab=files]https://www.nexusmods.com/scavprototype/mods/67?tab=files[/url]\n<br />(Optional) Download QoL Save file Mod:  [url=https://www.nexusmods.com/scavprototype/mods/7]https://www.nexusmods.com/scavprototype/mods/7[/url]\n<br />\n<br />Extract zips in the game folder (In Steam, right click the game, Manage &gt; Browse local files)\n<br />\n<br />[b][size=5]Controls:[/size][/b]\n<br />M | Toggle Minimap\n<br />(Hold) Tab | Temporarily Show Expanded Map\n<br />E button | Lock Expanded Map\n<br />F8 | Open Settings\n<br />J | Open Journal\n<br />Mouse wheel / + / - | Zoom\n<br />Left-drag | Pan\n<br />Middle-click | Focus player\n<br />Right-click explored area | Waypoint\n<br />P | Cycle frames!\n<br />\n<br />Works standalone, Casualties Together is optional and needed for multiplayer features! :)\n<br />\n<br />QoL Unknown is also optional, needed for saving your cartography! :)\n<br />\n<br />[left][size=4][b]Support the developer with a [url=https://ko-fi.com/lazytaidum]coffee[/url]![/b][/size][/left]\n<br />",
         "Author": "lazyboio",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/585/585-1787267757-1486014217.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/585"
         },
-        "DownloadUrl": "nexus://scavprototype/585/1813",
+        "DownloadUrl": "nexus://scavprototype/585/1871",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 585,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-08-21T00:21:16.000Z",
-        "ReleaseDate": "2026-08-21T00:05:56.000Z",
-        "SHA256": "c6dfb86000e33b802f8e43d322ad05cee331b3bca1757faf11be2fbacdc9b045",
+        "LastUpdated": "2026-08-25T08:08:09.000Z",
+        "ReleaseDate": "2026-08-25T08:08:09.000Z",
+        "SHA256": "f554c7b05305dfc456388eff0c55643bd64bb25100a1fd52b932d19b79e68069",
         "dllSHA256s": {
-            "LazyMinimap.dll": "9847ebb73aff65d56d2cc158f8fe0ff00d5c1201e09207460b70a841ffffc3d3"
+            "LazyMinimap.dll": "5792cd6d6f3fd7d0dae51e839cf01d80ed431df129a93a9c176c68ccca914639"
         },
-        "downloadsSinceLatestVersion": 118,
+        "downloadsSinceLatestVersion": 0,
         "Dependencies": [],
         "Changelogs": [
             {
                 "Version": "1.12.4",
                 "Changelog": "Optimizations :)"
+            },
+            {
+                "Version": "1.15",
+                "Changelog": "Integrated saved cartography with QoL Unknown\nUpdated marker designs\nAdded re-bindable keys menu\nLayer modifiers now add visuals to the minimap\nAdded more visuals for moodles\nAdded reaction profiles\nMany many optimizations\nFixed climbables rendering issues\nMinimap now shows in other menus"
             }
         ],
         "dllNames": [
             "LazyMinimap.dll"
         ],
-        "dllVersion": "1.12.4",
+        "dllVersion": "1.15.0",
         "dllVersions": {
-            "LazyMinimap.dll": "1.12.4"
+            "LazyMinimap.dll": "1.15.0"
         },
         "Statistics": {
             "Endorsements": 2,
-            "UniqueDownloads": 108,
-            "TotalDownloads": 118,
+            "UniqueDownloads": 107,
+            "TotalDownloads": 117,
             "TotalViews": null
         },
         "Images": [
@@ -670,7 +674,7 @@
         "ReleaseDate": "2026-08-23T04:46:30.000Z",
         "SHA256": "b22115c5abf954139c70c94a66005cfeb61e3d769ed5cbd363b4de2a5c07667a",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 17,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1419,7 +1423,7 @@
         "dllSHA256s": {
             "HarderEnemies.dll": "ca4572a70df466a20b9cb04d8dcdacf01d6826922a478f11d35ef4a9b736a59b"
         },
-        "downloadsSinceLatestVersion": 54,
+        "downloadsSinceLatestVersion": 55,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1839,7 +1843,7 @@
         "dllSHA256s": {
             "MechThornback.dll": "245b375833a91b6b48d1fc7a68b88928ce8ac319ff3834861135d3bf75ec52f6"
         },
-        "downloadsSinceLatestVersion": 78,
+        "downloadsSinceLatestVersion": 79,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -2455,7 +2459,7 @@
         "dllSHA256s": {
             "MilkiesMilk.dll": "94ff02d175d7b67dfe7d556739ba8f551caa4041c572b1393e1514c7a139b550"
         },
-        "downloadsSinceLatestVersion": 663,
+        "downloadsSinceLatestVersion": 664,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3780,7 +3784,7 @@
         "dllSHA256s": {
             "EMI.dll": "ff29a0d66322265135a984896715ce7e13d5f310f5f6e27aa7b665081b7bece6"
         },
-        "downloadsSinceLatestVersion": 347,
+        "downloadsSinceLatestVersion": 348,
         "Dependencies": [
             "nexus-115"
         ],
@@ -3877,7 +3881,7 @@
         "dllSHA256s": {
             "Gigasalad.dll": "00cc47f004d0585cd306372921639ce7097e6689265f01830274a45e91c5aa16"
         },
-        "downloadsSinceLatestVersion": 60,
+        "downloadsSinceLatestVersion": 61,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6182,7 +6186,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "2b189c3285703f51d31b26942f3656c066cc10603f53bb06e47dbe0a9dd404ea"
         },
-        "downloadsSinceLatestVersion": 1297,
+        "downloadsSinceLatestVersion": 1298,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -7367,7 +7371,7 @@
         "dllSHA256s": {
             "CUResprite.dll": "18c2fffe710ce43cb197fd3745ecde8a14bfbd9c8a797825e6125989fe4d05f1"
         },
-        "downloadsSinceLatestVersion": 708,
+        "downloadsSinceLatestVersion": 710,
         "Dependencies": [
             "nexus-115"
         ],
@@ -7462,7 +7466,7 @@
         "dllSHA256s": {
             "CasualtyVitals.dll": "2351a409eb5e484475368c40b82c79c59c710bb6883e70e92bb25898a008e0b5"
         },
-        "downloadsSinceLatestVersion": 11,
+        "downloadsSinceLatestVersion": 13,
         "Dependencies": [
             "nexus-341"
         ],
@@ -9294,7 +9298,7 @@
         "dllSHA256s": {
             "CUCoreLib.dll": "47275a8cd64cd998537a5f3405f3373aed7b429d2179fcff84844367918e1e41"
         },
-        "downloadsSinceLatestVersion": 3099,
+        "downloadsSinceLatestVersion": 3106,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -9775,7 +9779,7 @@
         "dllSHA256s": {
             "ExpiePettingMod.dll": "189909b97d3d8668d9e26b50bd69dd23887be0648997ecd7ea93b95ac383d835"
         },
-        "downloadsSinceLatestVersion": 2346,
+        "downloadsSinceLatestVersion": 2347,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -10007,7 +10011,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "37bac4a443a878cfcd9cb9bf52a3aebdd35adbdcd67fecc38fa84b4590edae35"
         },
-        "downloadsSinceLatestVersion": 89,
+        "downloadsSinceLatestVersion": 90,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10134,7 +10138,7 @@
             "GunsawGenetics.dll": "12adfb0734755e5eadf0eb7b7bf649cc8cba5355e7b1dd8004607b0d8ba0480b",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 1627,
+        "downloadsSinceLatestVersion": 1631,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10940,7 +10944,7 @@
         "dllSHA256s": {
             "VforWhiningMPAddon.dll": "443dadc0d76759dfd0aa809d5c29587dfdc26f8864e78e0743cc2c37a14764e4"
         },
-        "downloadsSinceLatestVersion": 261,
+        "downloadsSinceLatestVersion": 262,
         "Dependencies": [
             "nexus-67",
             "nexus-115",
@@ -11167,7 +11171,7 @@
         "dllSHA256s": {
             "UltimateSoundSwap.dll": "865721f181eecb3cec5a291085ed69f5a5e7e1b6e069faeb264f490cc21b62a2"
         },
-        "downloadsSinceLatestVersion": 467,
+        "downloadsSinceLatestVersion": 468,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -11990,7 +11994,7 @@
         "dllSHA256s": {
             "SFHealthPanel.dll": "e45033ab353268fdfffa65425001951fad54889cf13c64bc63f4a994069e6b8d"
         },
-        "downloadsSinceLatestVersion": 398,
+        "downloadsSinceLatestVersion": 399,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -12937,7 +12941,7 @@
         "dllSHA256s": {
             "No Self-Destruct on Quit.dll": "7cd4fc48749afee28e1988dddfb2af8262019e8974a4dc6b3657b80f4f6441fe"
         },
-        "downloadsSinceLatestVersion": 2047,
+        "downloadsSinceLatestVersion": 2048,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -13535,7 +13539,7 @@
         "dllSHA256s": {
             "DevMenuV2.dll": "48ac4310edd308faf82d1ffd177498d89864cfa6d5cace7abb623452b651f8cf"
         },
-        "downloadsSinceLatestVersion": 986,
+        "downloadsSinceLatestVersion": 987,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13813,7 +13817,7 @@
         "dllSHA256s": {
             "LuckyBlocks.dll": "a1c4caef1ebfb99cfd88bee6abc8d7be3616693d7796ee0600053480d911d33b"
         },
-        "downloadsSinceLatestVersion": 261,
+        "downloadsSinceLatestVersion": 262,
         "Dependencies": [
             "nexus-115"
         ],
@@ -13999,7 +14003,7 @@
             "ChangeSkinMP.dll": "b57fb344a3beb1ad084a898f716b2fe097a479beda84aadbb29054df7e9bd705",
             "CommandLine.dll": "2135b40fa819e58cf1942453e4409bfdea2be631077a354b878de8402be7e026"
         },
-        "downloadsSinceLatestVersion": 4387,
+        "downloadsSinceLatestVersion": 4388,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -14769,7 +14773,7 @@
         "dllSHA256s": {
             "EdgeSneak.dll": "3b0436c7f8851e83ce5c285c219ef364656f38867aaa5cd5cdb6564d535f6fd6"
         },
-        "downloadsSinceLatestVersion": 249,
+        "downloadsSinceLatestVersion": 250,
         "Dependencies": [
             "nexus-83",
             "nexus-115"
@@ -15043,7 +15047,7 @@
             "ScavLib API.Traps.dll": "822aa56e78ac5c42189ca5bb1acf05da3956043e7e69956bb2e6f9b063576465",
             "ScavLib API.UI.dll": "a0186eeb56e7cb7735534fd2f917247d5c549b0e365f342feb4ef6a34bbb0458"
         },
-        "downloadsSinceLatestVersion": 394,
+        "downloadsSinceLatestVersion": 395,
         "Dependencies": [
             "nexus-115"
         ],
@@ -15486,7 +15490,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6dcbd87171f4a802d8f748a97bb5418b3976ac21b77d7f520e2c4aac97daa049"
         },
-        "downloadsSinceLatestVersion": 13113,
+        "downloadsSinceLatestVersion": 13116,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15815,7 +15819,7 @@
         "dllSHA256s": {
             "CatPatch.dll": "ed1920f44e76fa4b142a97cf18dff54796d4235349200b8d710f3fc3af280308"
         },
-        "downloadsSinceLatestVersion": 3732,
+        "downloadsSinceLatestVersion": 3734,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15938,7 +15942,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 49213,
+        "downloadsSinceLatestVersion": 49219,
         "ContainsAdultContent": false
     },
     {
@@ -16571,7 +16575,7 @@
         "dllSHA256s": {
             "RemiyamuremodLayerUnlock.dll": "dd66574025d93f6344f42f7b01ca54c45a2937e9cc11d00859dfa8940b77f51c"
         },
-        "downloadsSinceLatestVersion": 1682,
+        "downloadsSinceLatestVersion": 1684,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16764,7 +16768,7 @@
         "dllSHA256s": {
             "VoySoundSwap.dll": "87350304e88337444eb16fdab262addf9f3712f515ef84954960acd6db32f93a"
         },
-        "downloadsSinceLatestVersion": 1111,
+        "downloadsSinceLatestVersion": 1112,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -16875,7 +16879,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "15f047a0ed401af24d49193439e29bbab2f1a37c64a5a6e22f1cadfa65b17ccd"
         },
-        "downloadsSinceLatestVersion": 1924,
+        "downloadsSinceLatestVersion": 1927,
         "Dependencies": [
             "nexus-341"
         ],
@@ -17518,7 +17522,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/31/31-1777215394-1750634006.png"
         ],
-        "downloadsSinceLatestVersion": 3648,
+        "downloadsSinceLatestVersion": 3649,
         "ContainsAdultContent": false
     },
     {
@@ -18605,7 +18609,7 @@
         "dllSHA256s": {
             "QoL Unknown.dll": "61415f75fe7843b88da6f86e8758597929ca2d2d72e4bc575923ebfb409f34bc"
         },
-        "downloadsSinceLatestVersion": 7116,
+        "downloadsSinceLatestVersion": 7118,
         "Dependencies": [],
         "Changelogs": [
             {

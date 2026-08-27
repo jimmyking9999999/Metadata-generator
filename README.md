@@ -16,11 +16,11 @@
 # Stuff!
 
 ### Metadata
-Every hour, this repository checks for any changes to a nexusmod mod with the API. If so, it downloads the file using the premium API key and parses the mod for data otherwise unrevealed by nexus' own api (e.g. SHA hashes, BepInPlugin version, etc..)
+Every hour, this repository checks for any changes to a nexusmod Casualties: Unknown mod with the nexus API. If it finds a change in version or (admin-set) adult flag, it downloads the file using the premium API key and parses the mod for data otherwise unrevealed by nexus' own api (e.g. SHA hashes, BepInPlugin version, etc..)
 
-The data is stored in [nexusmods.json](https://github.com/jimmyking9999999/Metadata-generator/blob/main/nexusmods.json). Note a direct download link cannot be provided, as it is against Nexus' own TOS and Fair Use polices, nor can direct mod files be hosted here due the the independent mod author's licensing.
+The data is stored in [nexusmods.json](https://github.com/jimmyking9999999/Metadata-generator/blob/main/nexusmods.json). Note a direct download link cannot be provided, as it is against Nexus' own TOS and fair use polices, nor can direct mod files be hosted here due to each independent mod author's licensing differing.
 
-See [https://discord.gg/ehCptz9pwU](https://discord.gg/ehCptz9pwU) for an announcement channel for new mod listings and mod updates, using this metadata.
+For an example of how this may be used, see [https://discord.gg/ehCptz9pwU](https://discord.gg/ehCptz9pwU) for an Discord announcement channel with new mod listings and mod updates, or see external projects such as [Casualties Hub](https://github.com/Casualties-Hub/Casualties-Hub-Public-Releases) and [UCU Mod Manager](https://www.nexusmods.com/scavprototype/mods/405).
 
 ---
 ### Badges
@@ -35,7 +35,7 @@ Also automated to update hourly-ish, `badges/` is a complete Shields endpoint re
 ```md
 [url=https://www.nexusmods.com/scavprototype/mods/341][img]https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjimmyking9999999%2FMetadata-generator%2Fmain%2Fbadges%2Fcucorelib.json[/img][/url]
 ```
-To use, simply change the cucorelib.json to your mod's name of choice, then remove or adjust the hyperlink to your mod ID (replace spaces with hyphens -)
+To use, simply change the `cucorelib.json` text above to your mod's name of choice, then remove or adjust the hyperlink to your mod's own ID or link.
 
 Note: Badge files use the normalized Nexus mod name: lowercase, with words separated by hyphens. For example, CUCoreLib is `badges/cucorelib.json`:
 

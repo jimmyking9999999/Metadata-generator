@@ -53,7 +53,7 @@ jobs:
           MONO_CECIL_DLL_PATH: ${{ env.MONO_CECIL_DLL_PATH }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_WEBHOOK_URL_RELEASES: ${{ secrets.DISCORD_WEBHOOK_URL_RELEASES }}
-        run: npm run update:nexusmods:full
+        run: npm run update:nexusmods:full -- --skip-large-archives
 
       - name: Commit and push changes
         run: |

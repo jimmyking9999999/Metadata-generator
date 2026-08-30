@@ -1,5 +1,99 @@
 [
     {
+        "Id": "nexus-630",
+        "Name": "Forced compatibility CCL",
+        "Version": "1.0",
+        "bepinexVersion": null,
+        "Summary": "它唯一的作用就是阻止\"CCL\"所带来的闪退 Its sole function is to prevent crashes caused by \"CCL\" This is probably 这可能是我做过的最没意义的模组了.当然,我并无恶意,只是觉得好玩而已. the most pointless mod I've ever made. Of course, I mean no harm, it's just for fun.",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />[size=3][color=#D4D4D8]Describe the main purpose of your mod[/color][/size]\n<br />它唯一的作用就是阻止\"CCL\"所带来的闪退 Its sole function is to prevent crashes caused by \"CCL\"\n<br />这可能是我做过的最没意义的模组了.当然,我并无恶意,只是觉得好玩而已.\n<br />the most pointless mod I've ever made. Of course, I mean no harm, it's just for fun.\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[size=3][color=#D4D4D8]Describe the core features of your mod[/color][/size]\n<br />通过更改\"CCL\"输出的方式阻止闪退,每次启动都会执行一次修改.不过正如前面说的,他会修改\"CCL\",使其不再输出,所以想要重新运行\"CCL\"就要先删除\"强行兼容CCL\"再重新导入\"CCL\"\n<br />By modifying the output method of \"CCL\", we can prevent crashes. Each time it is launched, a modification will be executed. However, as mentioned earlier, it will modify \"CCL\" so that it no longer outputs. Therefore, if you want to run \"CCL\" again, you must first delete \"Force Compatibility CCL\" and then re-import \"CCL\"\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[size=3][color=#D4D4D8]Provide info on additional required steps, resources, or mods[/color][/size]\n<br />需要下载\"CCL\"\n<br />\"CCL\" needs to be downloaded.\n<br />\n<br />\n<br />这是我第一次发模组,很多东西都不了解,感谢谅解\n<br />",
+        "Author": "banxia",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/630/630-1788102925-243381905.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/630"
+        },
+        "DownloadUrl": "nexus://scavprototype/630/1942",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 630,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-08-30T15:52:49.000Z",
+        "ReleaseDate": "2026-08-30T15:30:10.000Z",
+        "SHA256": "8f6700757010c16313a6cde73589bb40152e2eb20f96517f1703a9ed6d1dab9c",
+        "dllSHA256s": {
+            "CCLCrashFix.dll": "49adb0d246285c1143927492220d9b1817f3add558ed25425c2cd305c1cb026d",
+            "Mono.Cecil.dll": "7ae470288fff4a402899c254d0a76cefef55877f5c54f96e83c797cc5bb6e2f6",
+            "Mono.Cecil.Mdb.dll": "5896d1898f616701fff18f3b2c71e6b844d2390ef9f41e1c5fccce8cb27c698e",
+            "Mono.Cecil.Pdb.dll": "174db44a067f58561510af746f3caeb032037762c57a31c8d9ee32db25174984"
+        },
+        "downloadsSinceLatestVersion": 0,
+        "Dependencies": [
+            "nexus-616"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "CCLCrashFix.dll",
+            "Mono.Cecil.dll",
+            "Mono.Cecil.Mdb.dll",
+            "Mono.Cecil.Pdb.dll"
+        ],
+        "dllVersion": null,
+        "dllVersions": {},
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 1,
+            "TotalDownloads": 1,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/630/630-1788102925-243381905.png"
+        ]
+    },
+    {
+        "Id": "nexus-629",
+        "Name": "Euphoric",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.0.0",
+        "Summary": "Adds cheerful, optimistic, and giddy dialogue lines when your Expie's mood is high. Optionally also adds Hypoxic Euphoria, for some reason.",
+        "Description": "[size=4][b]This mod adds two features:[/b][/size]\n<br />\n<br />[size=4][b]1. Happy dialogue[/b][/size]\n<br />\n<br />The base game has like, 100+ lines for when your Expie's depressed and suicidal, but 0 ones when they're happy. This mod attempts to balance out the misery by adding 90 new dialogue lines in total for your Expies to say when they're happy, across all 4 happiness tiers, all 100% human authored and hand crafted by yours truly. Expect some cringe.\n<br />\n<br />[size=4][b]2. Hypoxic Euphoria / Cerebral-Hypoxia-Induced Euphoria[/b][/size]\n<br />\n<br />Makes your Expie paradoxically, temporarily happy when their blood oxygen goes low. Symptoms start at &lt;85% SpO2 and scale in onset, duration, and peak euphoria level as it goes lower. Inherently risky to do on purpose, and the reward is short lived, so doesn't impact balance much. Based on a real phenomenon.\n<br />\n<br />These two features don't really have anything to do with each other, I just got the idea to do the second one while doing the first and felt like neither justified a separate mod. \n<br />\n<br />Both features can be disabled in the config (in BepInEx/config/com.asserto.euphoric.cfg).\n<br />\n<br />[b]Installation\n<br />1. [/b]Install BepInEx as usual\n<br />2. Extract the Euphoric directory, containing the DLL and EN.json file to[font=Courier New] BepInEx/plugins [/font](so they sit at [font=Courier New]plugins/Euphoric/Euphoric.dll[/font], [font=Courier New]plugins/Euphoric/EN.json[/font]).\n<br />\n<br />Enjoy!\n<br />\n<br />[b]Credits[/b]\n<br />\"Art\" by me. Or, well, the original is just the FeelsGood meme but I made this horrible Expie version. [size=1]What am I doing with my life[/size]\n<br />",
+        "Author": "asserto",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/629/629-1788095229-1218964220.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/629"
+        },
+        "DownloadUrl": "nexus://scavprototype/629/1940",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 629,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-08-30T13:51:12.000Z",
+        "ReleaseDate": "2026-08-30T13:26:19.000Z",
+        "SHA256": "ad22a69f959ef5904be461bcd2ac6f7dcfd98e88d45ae4c1cb72f4952e980932",
+        "dllSHA256s": {
+            "Euphoric.dll": "c10a6da8e8e15a75b09548b98dd758e8bde38b30f728cda6a25fc5064ba17334"
+        },
+        "downloadsSinceLatestVersion": 26,
+        "Dependencies": [
+            "nexus-115"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "Euphoric.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "Euphoric.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 19,
+            "TotalDownloads": 22,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/629/629-1788095229-1218964220.png"
+        ]
+    },
+    {
         "Id": "nexus-627",
         "Name": "CUBetterCrafting",
         "Version": "1.0.1",
@@ -22,7 +116,7 @@
         "dllSHA256s": {
             "CUBetterCrafting.dll": "f33912fcdb7e64bf67590237971a6d0737fc7e595b18b7591479b6988a5e067e"
         },
-        "downloadsSinceLatestVersion": 1,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [
             "nexus-341"
         ],
@@ -72,7 +166,7 @@
         "dllSHA256s": {
             "CasualtiesRandom_0.1.0.dll": "9814c258dabdb71accd269146b07945ec899bfb01002e0bdf7c80a91de3617d2"
         },
-        "downloadsSinceLatestVersion": 10,
+        "downloadsSinceLatestVersion": 15,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -201,7 +295,7 @@
         "dllSHA256s": {
             "recipe rando.dll": "bde01909293651f824634b3fcd240ef06a9edd0e1d077ca3340273ed57fe2098"
         },
-        "downloadsSinceLatestVersion": 9,
+        "downloadsSinceLatestVersion": 10,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -244,7 +338,7 @@
         "dllSHA256s": {
             "ScavPrototypeSexMod.dll": "d3464955d5dc1a01de33ebb7eb21433db1f5f3496c0be017e18fe9d851e268b7"
         },
-        "downloadsSinceLatestVersion": 112,
+        "downloadsSinceLatestVersion": 168,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -292,7 +386,7 @@
         "dllSHA256s": {
             "WholeMeal.dll": "9160285ead2591d2bc5549d7bca867cbd68c200488400f32718f80e724cc4c1c"
         },
-        "downloadsSinceLatestVersion": 91,
+        "downloadsSinceLatestVersion": 112,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -343,7 +437,7 @@
         "dllSHA256s": {
             "LOSDisabler.dll": "2427efd92386d9bc8fdf2b3c317852b5dd336a7592815c5dd419fc175d2baac3"
         },
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 17,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -386,7 +480,7 @@
         "dllSHA256s": {
             "Coordinate.dll": "6857b4e281e765f63661582c2474cf3add6a8b96569f0e13b13ae2ca0929c293"
         },
-        "downloadsSinceLatestVersion": 8,
+        "downloadsSinceLatestVersion": 11,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -474,7 +568,7 @@
         "dllSHA256s": {
             "MPCutContent.dll": "675f023422c4b244f00445776aba22bcc70e3032bc44198a262ab94029de4697"
         },
-        "downloadsSinceLatestVersion": 33,
+        "downloadsSinceLatestVersion": 37,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -517,7 +611,7 @@
         "dllSHA256s": {
             "Gunshot Wound System.dll": "6bf18318fa018980a8598852b1396f431f1d141eea0c5319da9ef8a63764f7bf"
         },
-        "downloadsSinceLatestVersion": 59,
+        "downloadsSinceLatestVersion": 60,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -560,7 +654,7 @@
         "dllSHA256s": {
             "Repair.dll": "fcefb962512609c3a57f86f41bdef6844c1be2aeb6d88071a5866b906749bcc3"
         },
-        "downloadsSinceLatestVersion": 50,
+        "downloadsSinceLatestVersion": 51,
         "Dependencies": [
             "nexus-341"
         ],
@@ -648,7 +742,7 @@
             "AdditionalTraps.dll": "9930360188297944605550e6a805e2e3757278b23e1fa4c51d1290d5e9cbc488",
             "TrapLib.dll": "bafaf4cee0d3df5695fe2816f426119cd524311546130f755c84bebcb94cf50f"
         },
-        "downloadsSinceLatestVersion": 28,
+        "downloadsSinceLatestVersion": 29,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -828,7 +922,7 @@
         "dllSHA256s": {
             "DisableDecay.dll": "25887ba922bebbb0dc434b319794908c31b8ff5497fd5d13b2bb86b4595fe019"
         },
-        "downloadsSinceLatestVersion": 41,
+        "downloadsSinceLatestVersion": 45,
         "Dependencies": [
             "nexus-341"
         ],
@@ -916,7 +1010,7 @@
         "dllSHA256s": {
             "DukesEverythingMod.dll": "c34cd78976267c6149f6d422ca897e7429883ba7a4013a240b4bfad1c48409b3"
         },
-        "downloadsSinceLatestVersion": 164,
+        "downloadsSinceLatestVersion": 168,
         "Dependencies": [
             "nexus-341"
         ],
@@ -959,7 +1053,7 @@
         "ReleaseDate": "2026-08-25T05:55:38.000Z",
         "SHA256": "466e87a2249a3bf8852cfa5ae693f379678ce47adfa5bb785724f53ebda9b09f",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 44,
+        "downloadsSinceLatestVersion": 46,
         "Dependencies": [
             "nexus-221"
         ],
@@ -1000,7 +1094,7 @@
         "dllSHA256s": {
             "RealKeepInventory.dll": "d0e1fdfbb0e66002dd85e8d376e14c2050febb98a9ccbe4256466f93b10841c0"
         },
-        "downloadsSinceLatestVersion": 94,
+        "downloadsSinceLatestVersion": 97,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1052,7 +1146,7 @@
         "dllSHA256s": {
             "KrokMPOptimization.dll": "36c03eb9dc8877a4220315526a97669a602ede09b6f437715658d8be52efb703"
         },
-        "downloadsSinceLatestVersion": 474,
+        "downloadsSinceLatestVersion": 488,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1098,7 +1192,7 @@
         "ReleaseDate": "2026-08-24T17:16:17.000Z",
         "SHA256": "64f03165914a78a7ebc7c66d40599949500cc7f85f44d0925a7808c72cfc3c90",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 69,
+        "downloadsSinceLatestVersion": 70,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -1230,7 +1324,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownPTBR.dll": "ed35deee98dafe47444f46ed10bbf5123fcbf79bcf3e6b1946fc4ff144ff7688"
         },
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [
             "nexus-115"
         ],
@@ -1280,7 +1374,7 @@
         "dllSHA256s": {
             "GlassN.dll": "1db675bf63f941e003450ad060f1e167c477164e9ce1ffead7350f4127319b36"
         },
-        "downloadsSinceLatestVersion": 143,
+        "downloadsSinceLatestVersion": 148,
         "Dependencies": [
             "nexus-67",
             "nexus-580"
@@ -1324,7 +1418,7 @@
         "ReleaseDate": "2026-08-23T09:37:37.000Z",
         "SHA256": "3635cdd6c2d5cc1923e8890b3dc2d97cca08b3d8f5328d37c12b07fb75604682",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 17,
+        "downloadsSinceLatestVersion": 18,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -1363,7 +1457,7 @@
         "dllSHA256s": {
             "Diabetes.dll": "31bf14cb460985f9c022c20020e880a1efff1d41c11c19faae572ce33f76286e"
         },
-        "downloadsSinceLatestVersion": 28,
+        "downloadsSinceLatestVersion": 29,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -1400,39 +1494,44 @@
         "Id": "nexus-590",
         "Name": "New Client Join Fix",
         "Version": "0.2",
-        "bepinexVersion": "0.3.0",
+        "bepinexVersion": "0.3.16",
         "Summary": "A plugin for Client to detect newer Clients in the server",
-        "Description": "[size=5][b]A plugin for Client to detect newer Clients in the server[/b][/size]\n<br />\"As a person who enjoy recruit people with missing leg, this plugin is extremely helpful.\"\n<br />-- probably just me say that\n<br />[b][size=4]\n<br />Core problem[/size][/b]\n<br />Clients failed to register newer Client when they join in, this include problem like:\n<br />- Unable to recruit newer Client because it will show there's no dead player in the server.\n<br />- Unable to track their location when SHIFT.\n<br />- Unable to see their state.\n<br />- Unable to see their skin through Noah Multiplayer Sprites Changer.\n<br />\n<br />[b][size=4]What does this do?[/size][/b]\n<br />Refresh newer Client when they join the server you're in that work for your side.\n<br />[b]\n<br />[size=4]Installation[/size][/b]\n<br />1. Extract .dll file from download file.\n<br />2. Move your .dll file to \"&#92;Casualties Unknown Demo&#92;BepInEx&#92;plugins\"\n<br />\n<br />For step-by-step instruction:\n<br />1. Open MP3Client.zip file\n<br />2. Copy MP3Client.dll, by right click and choose \"Copy\", or by click on it and combo Ctrl+C\n<br />3. Go to Casualities:Unknown Steam libraby page.\n<br />4. Click on Manage, settings icons or gear icon.\n<br />5. Manage &gt; Browse local file\n<br />6. Locate ..&#92;BepInEx&#92;plugins&#92; (You should know this if you have KrokMP, remember it as your default plugin folder)\n<br />7. Right click on empty space and choose \"Paste\", or combo Ctrl+V\n<br />\n<br />\n<br />https://github.com/02huydini/ClientJoinFix",
+        "Description": "[size=5][b]A plugin for Client to detect newer Clients in the server[/b][/size]\n<br />With missing leg, this plugin should come in handy.\n<br />\n<br />Work on the base KrokMP, for Client [u]themsevles[/u] only. CJF takes no effect in game hosting.\n<br />Work along with [url=https://www.nexusmods.com/scavprototype/mods/74]Multiplayer Sprite Replacer[/url].\n<br />Might produce a lot of log because I keep forgetting to remove debug log and I can't bother to update it since it's irrelevant to gameplay mecahnics. They always says if it works, don't touch it. (I only remove them on major or patch update)\n<br />\n<br />[size=4][b]Core problem[/b][/size]\n<br />Clients failed to register newer Client when they join in, this include problem like:\n<br />- Unable to recruit newer Client because it will show there's no dead player in the server.\n<br />- Unable to track their location when SHIFT.\n<br />- Unable to see their state.\n<br />- Unable to see their skin through Noah Multiplayer Sprites Changer.\n<br />\n<br />[b][size=4]What does this do?[/size][/b]\n<br />Refresh newer Client when they join the server you're in that work for your side.\n<br />[b]\n<br />[size=4]Installation[/size][/b]\n<br />1. Extract .dll file from download file.\n<br />2. Move your .dll file to \"&#92;Casualties Unknown Demo&#92;BepInEx&#92;plugins\"\n<br />\n<br />For step-by-step installation:\n<br />1. Open ClientJoinFix.zip file.\n<br />2. Copy ClientJoinFix.dll, by right click on it and choose \"Copy\", or by left click on it and combo Ctrl+C.\n<br />3. Go to Casualities:Unknown Steam libraby page.\n<br />4. Click on Manage (settings or gear icon).\n<br />5. Manage &gt; Browse local file.\n<br />6. Locate ..&#92;BepInEx&#92;plugins&#92; (remember it as your default plugin folder, you should know this if you have KrokMP).\n<br />7. Right click on empty space and choose \"Paste\", or combo Ctrl+V.\n<br />\n<br />\n<br />https://github.com/02huydini/ClientJoinFix",
         "Author": "FirstEnder02",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/590/590-1787400690-819097985.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/590"
         },
-        "DownloadUrl": "nexus://scavprototype/590/1843",
+        "DownloadUrl": "nexus://scavprototype/590/1941",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 590,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-08-23T20:09:14.000Z",
-        "ReleaseDate": "2026-08-23T20:09:14.000Z",
-        "SHA256": "379cabea8a29a9c11627358115881870e1a0a7cd9803fd64d7bdb24bd263c4af",
+        "LastUpdated": "2026-08-30T14:02:06.000Z",
+        "ReleaseDate": "2026-08-30T14:02:06.000Z",
+        "SHA256": "3a635bb52a47d76994be84815413fed2468ca4c774ac1f0c702d09b6f925f61f",
         "dllSHA256s": {
-            "ClientJoinFix.dll": "8bfc5a4a4bea8d93f1519db86964f6ce6f4cb9516070b73429d93129b7760511"
+            "ClientJoinFix.dll": "fc4e22f5ca12d4c384b643920e51d5bca9fe3b9908db45d2ff5550fdbf2c71f3"
         },
-        "downloadsSinceLatestVersion": 174,
+        "downloadsSinceLatestVersion": 9,
         "Dependencies": [],
-        "Changelogs": [],
+        "Changelogs": [
+            {
+                "Version": "0.3.16",
+                "Changelog": "- Remove pink flash when a Client join"
+            }
+        ],
         "dllNames": [
             "ClientJoinFix.dll"
         ],
-        "dllVersion": "0.3.0",
+        "dllVersion": "0.3.16",
         "dllVersions": {
-            "ClientJoinFix.dll": "0.3.0"
+            "ClientJoinFix.dll": "0.3.16"
         },
         "Statistics": {
-            "Endorsements": 1,
-            "UniqueDownloads": 100,
-            "TotalDownloads": 123,
+            "Endorsements": 4,
+            "UniqueDownloads": 203,
+            "TotalDownloads": 255,
             "TotalViews": null
         },
         "Images": [
@@ -1505,7 +1604,7 @@
         "dllSHA256s": {
             "DifferentiatingTraits.dll": "c0b09e35ff06b0b4be6004fe3a579b7121a655194c0363223635b259b5f2ed4d"
         },
-        "downloadsSinceLatestVersion": 184,
+        "downloadsSinceLatestVersion": 185,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1604,7 +1703,7 @@
         "dllSHA256s": {
             "LazyMinimap.dll": "5792cd6d6f3fd7d0dae51e839cf01d80ed431df129a93a9c176c68ccca914639"
         },
-        "downloadsSinceLatestVersion": 83,
+        "downloadsSinceLatestVersion": 85,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1749,7 +1848,7 @@
         "dllSHA256s": {
             "GlassM.dll": "c5cee83413dd2b4ec298edcbc8f121015c5eec65513231cff9731cd147d54f6b"
         },
-        "downloadsSinceLatestVersion": 33,
+        "downloadsSinceLatestVersion": 39,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1846,7 +1945,7 @@
         "dllSHA256s": {
             "GamepadSupport.dll": "e514b1a1a0a96e216956adbd601909a9166989ba7ef8445f5cadcebde10e8c5d"
         },
-        "downloadsSinceLatestVersion": 61,
+        "downloadsSinceLatestVersion": 64,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1948,7 +2047,7 @@
         "ReleaseDate": "2026-08-24T11:51:07.000Z",
         "SHA256": "94b95da4fc3ef23a9255134b0de88d11163a4fc7ff85e1c9fa5ed75cd95205b7",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 18,
+        "downloadsSinceLatestVersion": 19,
         "Dependencies": [
             "nexus-140",
             "nexus-341"
@@ -2030,7 +2129,7 @@
         "ReleaseDate": "2026-08-17T09:00:16.000Z",
         "SHA256": "df7c03784e772f0459e9fb5977c389897185220aa862f9de3ea49941abc9d662",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 88,
+        "downloadsSinceLatestVersion": 89,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -2067,7 +2166,7 @@
         "ReleaseDate": "2026-08-17T08:41:16.000Z",
         "SHA256": "07dd018bbfb84b9c19399242b0f9556ab311db4146280e805c42ae492bd5c1e1",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 77,
+        "downloadsSinceLatestVersion": 78,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -2143,7 +2242,7 @@
         "dllSHA256s": {
             "ProjectTelchak.dll": "782b3fe9a30ba601caa68620765607ec9d9c1c55a7feabb19673e55c3196c877"
         },
-        "downloadsSinceLatestVersion": 97,
+        "downloadsSinceLatestVersion": 98,
         "Dependencies": [
             "nexus-9",
             "nexus-341",
@@ -2323,7 +2422,7 @@
         "dllSHA256s": {
             "MaxTraderRep.dll": "a8f632b0324ca3400be589034b39d998cda0187e4eb3960ac243279331f9b15c"
         },
-        "downloadsSinceLatestVersion": 86,
+        "downloadsSinceLatestVersion": 89,
         "Dependencies": [
             "nexus-115"
         ],
@@ -2403,7 +2502,7 @@
         "dllSHA256s": {
             "HarderEnemies.dll": "ca4572a70df466a20b9cb04d8dcdacf01d6826922a478f11d35ef4a9b736a59b"
         },
-        "downloadsSinceLatestVersion": 75,
+        "downloadsSinceLatestVersion": 77,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2584,7 +2683,7 @@
         "dllSHA256s": {
             "bepinex_soundmod.dll": "d3e2a099cabac465faee24b54f896d32a3f7b7dacc8d712de5866e1eaa194c98"
         },
-        "downloadsSinceLatestVersion": 57,
+        "downloadsSinceLatestVersion": 58,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2673,7 +2772,7 @@
         "dllSHA256s": {
             "HoldWearableInHand.dll": "94d51f50ab44e60c97b8a37a099e888f95965283c95a30a96f6b78949b6a7488"
         },
-        "downloadsSinceLatestVersion": 128,
+        "downloadsSinceLatestVersion": 130,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2769,7 +2868,7 @@
             "CUCoreLib.dll": "47275a8cd64cd998537a5f3405f3373aed7b429d2179fcff84844367918e1e41",
             "gouxismorefirearms.dll": "cf43bbed14537bf598e7a1599e9a150a86e890b90b414408c6117734b5c70896"
         },
-        "downloadsSinceLatestVersion": 62,
+        "downloadsSinceLatestVersion": 63,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2827,7 +2926,7 @@
         "dllSHA256s": {
             "MechThornback.dll": "245b375833a91b6b48d1fc7a68b88928ce8ac319ff3834861135d3bf75ec52f6"
         },
-        "downloadsSinceLatestVersion": 86,
+        "downloadsSinceLatestVersion": 87,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -2871,7 +2970,7 @@
         "dllSHA256s": {
             "WhatModIsThisFrom.dll": "d21cbb8daf443644f59251c8bd230ce3b995e5e8addfa304cd1937f4ff74e978"
         },
-        "downloadsSinceLatestVersion": 221,
+        "downloadsSinceLatestVersion": 224,
         "Dependencies": [
             "nexus-341"
         ],
@@ -2925,7 +3024,7 @@
         "dllSHA256s": {
             "Cu-BloodBank.dll": "d025af8b11dfcbbfe133d271e6e993e3e8c4defaed899a0a924306908be21335"
         },
-        "downloadsSinceLatestVersion": 62,
+        "downloadsSinceLatestVersion": 63,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -3013,7 +3112,7 @@
         "dllSHA256s": {
             "Assembly-CSharp.dll": "70fe5dd5dfbf735da613a1d79ddf59e99694debcec838bba500e33151767a67c"
         },
-        "downloadsSinceLatestVersion": 289,
+        "downloadsSinceLatestVersion": 294,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -3151,7 +3250,7 @@
         "dllSHA256s": {
             "Performant Rendering.dll": "44404ed33c48bc69e571278d773a3139b6a5220ebb5e0f219d038e5038dec9ce"
         },
-        "downloadsSinceLatestVersion": 674,
+        "downloadsSinceLatestVersion": 678,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3248,7 +3347,7 @@
         "dllSHA256s": {
             "PisCondensedCrafting.dll": "4caab1577eed7e05f74ce018d4148965cc443d920a8d1f25f34b1bd67139782a"
         },
-        "downloadsSinceLatestVersion": 129,
+        "downloadsSinceLatestVersion": 130,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -3294,7 +3393,7 @@
         "dllSHA256s": {
             "MP3Client.dll": "b8da8696c095ab707c734c516782f7feaa4e3e1809ac9787ca0a87ce546a8d00"
         },
-        "downloadsSinceLatestVersion": 53,
+        "downloadsSinceLatestVersion": 54,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3343,7 +3442,7 @@
         "dllSHA256s": {
             "transparentsyringes.dll": "a4b425bbc43f51b3c6ee556ee6e6d0c613e1aab19563161b804a54f8b56b0950"
         },
-        "downloadsSinceLatestVersion": 150,
+        "downloadsSinceLatestVersion": 152,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3443,7 +3542,7 @@
         "dllSHA256s": {
             "MilkiesMilk.dll": "bf3741946a4d2d30016cd42f466e238863c399c171defe88a1766b17049a7b53"
         },
-        "downloadsSinceLatestVersion": 191,
+        "downloadsSinceLatestVersion": 202,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3493,7 +3592,7 @@
         "dllSHA256s": {
             "CustomGenerator.dll": "d9753ebd42d9a014149ced88de13e32c270dc695f02e3a90828799c76b705df6"
         },
-        "downloadsSinceLatestVersion": 34,
+        "downloadsSinceLatestVersion": 35,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3638,7 +3737,7 @@
         "dllSHA256s": {
             "CasualtiesCraft.dll": "43eceff6ac400211db5fb9d7931a5caa325630ad8a22012d2a6dd4ce54fea38b"
         },
-        "downloadsSinceLatestVersion": 35,
+        "downloadsSinceLatestVersion": 37,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3690,7 +3789,7 @@
         "dllSHA256s": {
             "Improved Headlamp.dll": "af50d54a20c66c8cd62e8b645b01541e8eb69497c970d99276770b7284d1628c"
         },
-        "downloadsSinceLatestVersion": 120,
+        "downloadsSinceLatestVersion": 122,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -3736,7 +3835,7 @@
         "dllSHA256s": {
             "SecondThoughts.dll": "22069022ae20c535255d851a51705252bc2b4802e807d38d75f35d41b31456eb"
         },
-        "downloadsSinceLatestVersion": 144,
+        "downloadsSinceLatestVersion": 145,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -3867,7 +3966,7 @@
         "dllSHA256s": {
             "SubstancesExpanded.dll": "742ba04cfcc3b025f2b1e316f72b5f626b3504f7c37cf38ef79bc7f49e7d2379"
         },
-        "downloadsSinceLatestVersion": 126,
+        "downloadsSinceLatestVersion": 131,
         "Dependencies": [
             "nexus-341"
         ],
@@ -4018,7 +4117,7 @@
         "ReleaseDate": "2026-08-07T17:46:58.000Z",
         "SHA256": "06e1c47a312e2c304636a4da2f1e56d78457e922284e77602560e65c4d49b0b3",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 238,
+        "downloadsSinceLatestVersion": 239,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4152,7 +4251,7 @@
         "dllSHA256s": {
             "CasualtiesUnderTheInfluence.dll": "ecf1223035c5dca796694989d735f1b3453d96bf3b34fe09cee7d70f7356573b"
         },
-        "downloadsSinceLatestVersion": 567,
+        "downloadsSinceLatestVersion": 568,
         "Dependencies": [
             "nexus-341"
         ],
@@ -4206,7 +4305,7 @@
         "dllSHA256s": {
             "A.Multi_Mod.Chinese.Localization.dll": "94f11d4e824e100732ebb84ce5dcbd3317b372f73ca0e61c40f28a6a0da022d6"
         },
-        "downloadsSinceLatestVersion": 196,
+        "downloadsSinceLatestVersion": 198,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4254,7 +4353,7 @@
         "dllSHA256s": {
             "CUCoreLib.KrokMP.SaveHotfix.dll": "8f100d5b0afefcd7e0045afc86eb7bfd2dbc2bc52f7de9edc8cee8c7ae3e5d77"
         },
-        "downloadsSinceLatestVersion": 330,
+        "downloadsSinceLatestVersion": 332,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -4445,7 +4544,7 @@
         "dllSHA256s": {
             "CUButt_1.1.2.dll": "906b519a3fb2c3826623725b5efcf0cf09ce731dd73b0dc94efb28a911a872cd"
         },
-        "downloadsSinceLatestVersion": 20,
+        "downloadsSinceLatestVersion": 23,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4548,7 +4647,7 @@
             "CUCoreLib.dll": "ebc96311ec65f9053e557cd1837c0ee8823a85e05f4d2900d3132fa1f451e052",
             "CaveDiver.dll": "09d63521a2731c4088531a7b5988c4ea21f43cfce21b982566f17bf1ef5356d8"
         },
-        "downloadsSinceLatestVersion": 221,
+        "downloadsSinceLatestVersion": 223,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4669,7 +4768,7 @@
             "CUCoreLib.dll": "b448af7b6c9c8d7767df0bbb13e465551ef6b0f2a35dda209b5f78035ab4e659",
             "gouxismoreattachments.dll": "fb1d18db6f992714390e85de91921c4558ee6c445f083b29f51ab8621ef2d92d"
         },
-        "downloadsSinceLatestVersion": 298,
+        "downloadsSinceLatestVersion": 299,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4789,7 +4888,7 @@
         "dllSHA256s": {
             "EMI.dll": "ff29a0d66322265135a984896715ce7e13d5f310f5f6e27aa7b665081b7bece6"
         },
-        "downloadsSinceLatestVersion": 389,
+        "downloadsSinceLatestVersion": 390,
         "Dependencies": [
             "nexus-115"
         ],
@@ -5040,7 +5139,7 @@
         "dllSHA256s": {
             "AutoMinigameTools.dll": "07c13530b5be1da9f30a62aa96e9393bb303dd0c3e98794aff177605e71cec22"
         },
-        "downloadsSinceLatestVersion": 436,
+        "downloadsSinceLatestVersion": 439,
         "Dependencies": [
             "nexus-341"
         ],
@@ -5098,7 +5197,7 @@
         "dllSHA256s": {
             "CasualtiesModMenuENG.dll": "9e8d829495e303db3be9b1f336516c2a7ad2398171b73fae11a98c57abebe0a9"
         },
-        "downloadsSinceLatestVersion": 929,
+        "downloadsSinceLatestVersion": 930,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -5187,7 +5286,7 @@
         "dllSHA256s": {
             "ColorfulInsides.dll": "fa754ca1b82c18def0c7b10f2091aa67da2da5c6f74961fc069c71aaa6774be3"
         },
-        "downloadsSinceLatestVersion": 113,
+        "downloadsSinceLatestVersion": 114,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5255,7 +5354,7 @@
         "dllSHA256s": {
             "ServerModLoaderByStaili.dll": "2d69382878f6e86d3c31803d9eb63daf894634a35c623c50204a3a87f00de05f"
         },
-        "downloadsSinceLatestVersion": 248,
+        "downloadsSinceLatestVersion": 249,
         "Dependencies": [
             "nexus-67"
         ],
@@ -5300,7 +5399,7 @@
         "dllSHA256s": {
             "TemporaryBottleCountdown.dll": "7fb2ee7d4e2828153e6db4621b93c02b580797e68f34866cacedddf0760fd910"
         },
-        "downloadsSinceLatestVersion": 148,
+        "downloadsSinceLatestVersion": 149,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5411,7 +5510,7 @@
             "CUCoreLib.dll": "d44531cc0c8e11db13c622557da359375bfa7cd7660920726a887dc2c4538690",
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 168,
+        "downloadsSinceLatestVersion": 169,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5467,7 +5566,7 @@
         "dllSHA256s": {
             "ConsolePlus.dll": "8c1b2f35c70f1e3bd7528cf63d0306f37bad9b7a0966b0f459cfd25b7577759e"
         },
-        "downloadsSinceLatestVersion": 232,
+        "downloadsSinceLatestVersion": 233,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5661,7 +5760,7 @@
         "dllSHA256s": {
             "AntiGravBag.dll": "36f504779b54f1eb9cd2de2f3480bd67027668fecc0c210cf57a646b6c0dddb4"
         },
-        "downloadsSinceLatestVersion": 192,
+        "downloadsSinceLatestVersion": 193,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -5754,7 +5853,7 @@
         "dllSHA256s": {
             "EchoLocation.dll": "9ffab421465895ced0e775f4a33c175ad035b3165875365320b0239930cb11f3"
         },
-        "downloadsSinceLatestVersion": 250,
+        "downloadsSinceLatestVersion": 251,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -5800,7 +5899,7 @@
         "dllSHA256s": {
             "CU'sKitchenV1.3Early.dll": "afce9b964c84d4865aa62e8d48a62580781449cfd8dde79e7670a5f454b6d009"
         },
-        "downloadsSinceLatestVersion": 969,
+        "downloadsSinceLatestVersion": 971,
         "Dependencies": [
             "nexus-341"
         ],
@@ -6142,7 +6241,7 @@
         "dllSHA256s": {
             "Deltarune_Cool_Items.dll": "fb44ebddc3da137c9b35c73a9fbe1dd4264379ec445bdf3ddddfeb3d90f5d77e"
         },
-        "downloadsSinceLatestVersion": 2,
+        "downloadsSinceLatestVersion": 3,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6228,7 +6327,7 @@
         "dllSHA256s": {
             "SkinDeep.dll": "059f5f0155d35145d98a3804728e4e0bb7b58c55c660286435abc124b879a946"
         },
-        "downloadsSinceLatestVersion": 377,
+        "downloadsSinceLatestVersion": 378,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -6456,7 +6555,7 @@
         "dllSHA256s": {
             "Extra Medicaments.dll": "a4b726c6748d05c58840d933d6c1b74c0c9ef7ad8ea03b7465617c5ca3632c8c"
         },
-        "downloadsSinceLatestVersion": 301,
+        "downloadsSinceLatestVersion": 302,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6563,7 +6662,7 @@
         "dllSHA256s": {
             "RedBlood.dll": "3ee240efb8e3c07a09988f6c6f9589e83c76223db15d32b8395eab6a872b4910"
         },
-        "downloadsSinceLatestVersion": 148,
+        "downloadsSinceLatestVersion": 150,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -6643,7 +6742,7 @@
         "dllSHA256s": {
             "NeurotraumaModikByStaili.dll": "a3dbaff57923a3017b2b48c6fcce7e2e63b5d271fc75928cbe4c56872df52be0"
         },
-        "downloadsSinceLatestVersion": 328,
+        "downloadsSinceLatestVersion": 331,
         "Dependencies": [
             "nexus-40",
             "nexus-67",
@@ -6701,7 +6800,7 @@
             "CUCoreLib.dll": "d44531cc0c8e11db13c622557da359375bfa7cd7660920726a887dc2c4538690",
             "ICEnecoCustomItemAPI.dll": "37bac4a443a878cfcd9cb9bf52a3aebdd35adbdcd67fecc38fa84b4590edae35"
         },
-        "downloadsSinceLatestVersion": 54,
+        "downloadsSinceLatestVersion": 55,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6779,7 +6878,7 @@
         "dllSHA256s": {
             "Upgradable Storage Packs.dll": "3550de663fa70a75322bde43454d349dc5dbe976e06a644e2b54f022b5ab3b0e"
         },
-        "downloadsSinceLatestVersion": 397,
+        "downloadsSinceLatestVersion": 398,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -7040,7 +7139,7 @@
         "dllSHA256s": {
             "extraDialogue.dll": "d775fa44ede3a1175e93c8e2e3f6032e857547c38b749ef13e38212492374cb3"
         },
-        "downloadsSinceLatestVersion": 965,
+        "downloadsSinceLatestVersion": 973,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -7200,7 +7299,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "2b189c3285703f51d31b26942f3656c066cc10603f53bb06e47dbe0a9dd404ea"
         },
-        "downloadsSinceLatestVersion": 1549,
+        "downloadsSinceLatestVersion": 1566,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -7260,7 +7359,7 @@
         "dllSHA256s": {
             "CUZoomPlus.dll": "aa4f4ce533818b24c854b3e6796e2a71795e4db2c81b8ea339828c3cc47045b0"
         },
-        "downloadsSinceLatestVersion": 508,
+        "downloadsSinceLatestVersion": 509,
         "Dependencies": [
             "nexus-341"
         ],
@@ -7310,7 +7409,7 @@
         "dllSHA256s": {
             "CUModFixer.dll": "ac44a02c0aa03689ffaa67fa48ee9ebf46c990e6d1c371bc3bdec7ebf0384f54"
         },
-        "downloadsSinceLatestVersion": 245,
+        "downloadsSinceLatestVersion": 246,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -7452,7 +7551,7 @@
         "dllSHA256s": {
             "MoodReimagined.dll": "71ca732d230394c4ce33c698b74fafc74d7a141f3b097021a7024a7dfea1f96e"
         },
-        "downloadsSinceLatestVersion": 635,
+        "downloadsSinceLatestVersion": 640,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -7495,7 +7594,7 @@
         "dllSHA256s": {
             "CUAdvancedBossBar.dll": "5189a2d7b9ddbe29ed8c7e9ee04448c8ec30e2cb8e99cf508f55ee153218d8e2"
         },
-        "downloadsSinceLatestVersion": 363,
+        "downloadsSinceLatestVersion": 366,
         "Dependencies": [
             "nexus-341"
         ],
@@ -7794,7 +7893,7 @@
         "dllSHA256s": {
             "CUSimpleHealthBar.dll": "bb65da484abe8dcef7d4e983a0f5d0c18883e76d8fec9320c80e54c63b7dfea4"
         },
-        "downloadsSinceLatestVersion": 357,
+        "downloadsSinceLatestVersion": 358,
         "Dependencies": [
             "nexus-341"
         ],
@@ -7928,7 +8027,7 @@
         "dllSHA256s": {
             "CUMoreAmputation.dll": "edfd809af5be12c72878a465a3385999e0d5cf2c1b02737aed83452cda61e28d"
         },
-        "downloadsSinceLatestVersion": 932,
+        "downloadsSinceLatestVersion": 933,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -8141,7 +8240,7 @@
         "dllSHA256s": {
             "RshLib.dll": "0ae9e29ea7e174d91c1c9183e034ed53da44c385b7b24736fb44a7f98e5b0688"
         },
-        "downloadsSinceLatestVersion": 805,
+        "downloadsSinceLatestVersion": 807,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -8240,7 +8339,7 @@
         "dllSHA256s": {
             "knotrecipemod.dll": "540ca2574401953c3fdab3e0cd4f4f4c933eba7e33e276b3ff0b72d5e2774779"
         },
-        "downloadsSinceLatestVersion": 996,
+        "downloadsSinceLatestVersion": 1003,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -8480,7 +8579,7 @@
         "dllSHA256s": {
             "CasualtyVitals.dll": "99c9353e4f2abef0a412ebefb1c09854551a3b653472c6d2dae02709920c50dc"
         },
-        "downloadsSinceLatestVersion": 85,
+        "downloadsSinceLatestVersion": 88,
         "Dependencies": [
             "nexus-341"
         ],
@@ -8618,7 +8717,7 @@
         "dllSHA256s": {
             "AxivornsExpieNPCMod.dll": "ee7694e259fc5f59c748b0bc9e97218bf43773cd44494e54c72b1191e05b914a"
         },
-        "downloadsSinceLatestVersion": 1517,
+        "downloadsSinceLatestVersion": 1523,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -8876,7 +8975,7 @@
         "dllSHA256s": {
             "RuScavMods.dll": "e307df74c8b2c2778e20bbac948cacb1d5ddc17f00cded66c9068d875e2982e9"
         },
-        "downloadsSinceLatestVersion": 40,
+        "downloadsSinceLatestVersion": 47,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -9088,7 +9187,7 @@
         "dllSHA256s": {
             "UniRuPatch.dll": "319cb12583ab14af90f3d5fe34c6a77473907a9391ae7519d7bee680c2e47a54"
         },
-        "downloadsSinceLatestVersion": 241,
+        "downloadsSinceLatestVersion": 242,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -9344,7 +9443,7 @@
         "dllSHA256s": {
             "AllWearableCanBeHeld.dll": "2807520bc5eca3efe8792122703162d0c8bac45368a1d65668d2c6339713e3c7"
         },
-        "downloadsSinceLatestVersion": 979,
+        "downloadsSinceLatestVersion": 982,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -9385,7 +9484,7 @@
         "ReleaseDate": "2026-08-05T08:12:28.000Z",
         "SHA256": "e088c7ec1b0fb47f1541b2ab5cbc8dce8f4f51a6984ae8ca4eb0128e2005e133",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 137,
+        "downloadsSinceLatestVersion": 139,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -9478,7 +9577,7 @@
         "dllSHA256s": {
             "LeftyExpie.dll": "66781c5e0846cb86aa6a2eaaf53e057e8f54a79e59e23460bb0c29458c486c1e"
         },
-        "downloadsSinceLatestVersion": 136,
+        "downloadsSinceLatestVersion": 137,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -9662,7 +9761,7 @@
             "CUCoreLib.dll": "d44531cc0c8e11db13c622557da359375bfa7cd7660920726a887dc2c4538690",
             "狗曦的狗屎玩意.dll": "1a78a655b71ea77d177b906eb65f2b7ff16ba4eca6ab15e00b4bb9359a77ccad"
         },
-        "downloadsSinceLatestVersion": 223,
+        "downloadsSinceLatestVersion": 224,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10002,7 +10101,7 @@
         "dllSHA256s": {
             "[快速拉栓]GunHotkeys.dll": "fded9a8e94546e8b953fe36f5c61aebd9a2410afdd63e5a7d20a6f6a6d0932b9"
         },
-        "downloadsSinceLatestVersion": 937,
+        "downloadsSinceLatestVersion": 938,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -10045,7 +10144,7 @@
         "dllSHA256s": {
             "Refill_Jetpack_with_Oil.dll": "7a64777661e1f47ac670bf636cfeb8fc9e808e2539d521f9a1c52646ba2152f1"
         },
-        "downloadsSinceLatestVersion": 17,
+        "downloadsSinceLatestVersion": 20,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10091,7 +10190,7 @@
         "ReleaseDate": "2026-07-13T13:20:36.000Z",
         "SHA256": "a321bee6e6e8406c252014c42bbc09ef0cb68e1583c6f32164afced25e7c7e93",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 304,
+        "downloadsSinceLatestVersion": 306,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10275,7 +10374,7 @@
         "dllSHA256s": {
             "UnknownPerformance.dll": "bac238d7f9189a92cadac34690b233c22928fed16df01b053ea02c5d0e34ad94"
         },
-        "downloadsSinceLatestVersion": 2648,
+        "downloadsSinceLatestVersion": 2652,
         "Dependencies": [
             "nexus-338"
         ],
@@ -10320,7 +10419,7 @@
         "dllSHA256s": {
             "CUCoreLib.dll": "47275a8cd64cd998537a5f3405f3373aed7b429d2179fcff84844367918e1e41"
         },
-        "downloadsSinceLatestVersion": 4421,
+        "downloadsSinceLatestVersion": 4475,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10386,7 +10485,7 @@
         "ReleaseDate": "2026-06-20T08:18:04.000Z",
         "SHA256": "9a1d4a33cc6c2b5c89875291c4bc5800df3563ff352fb507d926d8b00b674fe6",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 396,
+        "downloadsSinceLatestVersion": 398,
         "Dependencies": [
             "nexus-15"
         ],
@@ -10476,7 +10575,7 @@
         "dllSHA256s": {
             "ScavSetLib.dll": "c5822431086b62fc321f1f462b925d33b6b5424df4869c07b76a6bc0da61149f"
         },
-        "downloadsSinceLatestVersion": 1972,
+        "downloadsSinceLatestVersion": 1976,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -10801,7 +10900,7 @@
         "dllSHA256s": {
             "ExpiePettingMod.dll": "189909b97d3d8668d9e26b50bd69dd23887be0648997ecd7ea93b95ac383d835"
         },
-        "downloadsSinceLatestVersion": 2446,
+        "downloadsSinceLatestVersion": 2450,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -11015,110 +11114,114 @@
         "Name": "Enhanced Tools v2.2",
         "Version": "2.2",
         "bepinexVersion": "1.0.0",
-        "Summary": "New items! Adds a selection of new items to upgrade vanilla utilities, wearables, tools, and containers and so on. No vanilla items are changed — these are simply new upgrade options.",
-        "Description": "[size=4]Dependency with CucoreLib v1.0.4/v1.0.5[/size]\n<br />\n<br />[size=3]([color=#a4c2f4] Hey! Just a quick heads-up — if you're traveling between layers and notice your installed batteries have vanished, that's a CCL issue. That's actually why I rewrote everything to test if it is my problem, I mean EVERYTHING from ICEnecoAPI to CCL. So I guess for now, the only workaround is to remove your batteries before transitioning.[/color][color=#8e7cc3] [/color])[/size]\n<br />\n<br />[size=5]Description[b]：[/b][/size]\n<br />[color=#d8d8d8][size=4]New tier of tools based on the originals, each with its own unique crafting recipe.[/size][/color]\n<br />[color=#d8d8d8][size=4]Strictly follows vanilla crafting level and recipe standards.[/size][/color]\n<br />[color=#ffffff]The [/color][color=#d5a6bd]darker[/color][color=#ffffff] the color, the more the data has been modified from the original. Use it as a quick visual reference.[/color]\n<br />\n<br />[line]\n<br />[size=5]Wearables：[/size]\n<br />[size=3]These may have some small changes in the future for balance, i[/size][size=3]f you have better advice plz leave in comments![/size]\n<br />\n<br />[b][size=4][color=#9fc5e8]3 Packs [/color][/size][color=#efefef][size=3](craft at INT 9,11,14)[/size][/color][/b]\n<br />[spoiler][list]\n<br />[*][b][color=#a2c4c9]Medical Fanny Pack[/color] - ( [color=#ead1dc]3.5u[/color] / [color=#b6b6b6]0.6u, [/color][color=#d8d8d8]upgrade by medkit and fanny pack [/color])[/b][/*]\n<br />[*][b][color=#6d9eeb]Reinforced Medical Pack[/color] - ( [color=#d5a6bd]7u[/color] / [color=#ead1dc]0.9u[/color], [color=#cccccc]70%[/color][color=#d8d8d8]protection[/color],  upgrade by [color=#a2c4c9]Medical Fanny Pack[/color] )[/b][/*]\n<br />[*][b][color=#1155cc]Surgical Rig[/color] -  ( [color=#d5a6bd]12u[/color] / [color=#cccccc]1.25u[/color], [color=#ead1dc]90%[/color][color=#d8d8d8]protec[/color][color=#d8d8d8]tion with Torso and [/color][color=#c27ba0]Chest[/color][color=#d8d8d8], upgrade by [/color][color=#6d9eeb]Reinforced Medical Pack[/color][color=#d8d8d8] [/color])[/b][/*]\n<br />[/list][b]these 3 packs can only hold medical‑related items, just like the belt can only store tools[/b][/spoiler]\n<br />[b][color=#9fc5e8][size=4]2 Shoes [/size][/color][/b][b][color=#efefef][size=3]([/size][size=3]cr[/size][/color][/b][size=3][b][color=#efefef]aft at INT 10,12)[/color][/b][/size]\n<br />[spoiler][list]\n<br />[*][b][color=#d9ead3]Cloth Slip-ones - [/color][color=#d8d8d8]( Early upgrade by Wood Sandals, withstands [/color][color=#ead1dc]8–10[/color][color=#d8d8d8] glass shard hits )[/color][/b][/*]\n<br />[*][b][color=#f6b26b]Trail Runners - [/color][color=#d8d8d8]( stats sit [/color][color=#b4a7d6]between[/color][color=#d8d8d8] Sneakers and Tactical Boots, [/color][color=#ead1dc]150%[/color][color=#d8d8d8]proteciton, upgrade by Sneakers )[/color][/b][/*]\n<br />[/list][/spoiler]\n<br />[b][color=#9fc5e8][size=4]3 Belts[/size][/color][/b] [color=#efefef][size=3][b](craft at INT 11,12,13)[/b][/size][/color]\n<br />[spoiler][list]\n<br />[*][b][color=#fce5cd]Expanded Belt[/color][color=#cccccc] - ( [/color][color=#ead1dc]6u [/color][color=#efefef]/ [/color][color=#cccccc]4[/color][color=#cccccc]u, [/color][color=#ead1dc]10%[/color] [color=#d8d8d8]protection, upgrade by belt[/color][color=#cccccc] [/color][color=#cccccc]) [/color][/b][/*]\n<br />[*][b][color=#93c47d]Light Armor Belt[/color][color=#cccccc] - ( [/color][color=#cccccc]4u[/color][color=#999999] [/color][color=#efefef]/ [/color][color=#cccccc]4[/color][color=#cccccc]u, [/color][color=#d5a6bd]40%[/color][color=#cccccc] protection, upgrade by [/color][color=#fce5cd]Expanded Belt[/color][color=#cccccc])[/color][/b][/*]\n<br />[*][b][color=#3d85c6]Lab Belt[/color][color=#cccccc] - ( [/color][color=#d5a6bd]8u [/color][color=#efefef]/ [/color][color=#b6b6b6]2.5u[/color][color=#cccccc], [/color][color=#d5a6bd]60%[/color][color=#cccccc] protection, upgrade by [/color][color=#b6d7a8]Light Armor Belt[/color] [color=#cccccc])[/color][/b][/*]\n<br />[/list][/spoiler]\n<br />[b][color=#9fc5e8][size=4][size=4]4 Leg pouches[/size] [/size][/color][color=#efefef][size=3](craft at INT 11,12,13,13)[/size][/color][/b]\n<br />[spoiler][list]\n<br />[*][b][b][color=#d8d8d8]IV Leg Pouch - ( An easily craftable liquid pouch for early-game use. [/color][color=#ead1dc]0.5L[/color][color=#d8d8d8], upgrade by ivbag and canteen )[/color][/b][/b][/*]\n<br />[*][b][b][color=#f9cb9c]Camo Leg Pouch[/color][color=#d8d8d8] - ( [/color][color=#ead1dc]5.5u [/color][color=#efefef]/ [/color][color=#999999]3.5u[/color][color=#d8d8d8], [/color][color=#cccccc]35%[/color][color=#d8d8d8] protection, upgrade by leg pouch[/color][color=#d8d8d8] [/color][color=#d8d8d8])[/color][/b][/b][/*]\n<br />[*][b][b][color=#3c78d8]Spec Ops Leg Pouch[/color][color=#d8d8d8] - ( [/color][color=#d5a6bd]7.6u [/color][color=#efefef]/[/color][color=#d8d8d8] 4[/color][color=#d8d8d8]u, 60% protection, upgrade by [/color][color=#f9cb9c]camo pouch[/color] [color=#d8d8d8])[/color][/b][/b][/*]\n<br />[*][b][b][color=#6fa8dc]Ops Hydration Leg Pouch[/color][color=#d8d8d8] - ( [/color][color=#d8d8d8]same protecion but contain liquid [/color][color=#d5a6bd]1.8L[/color][color=#d8d8d8], [/color][color=#d8d8d8]upgrade by [/color][color=#3c78d8]Spec Ops Leg Pouch[/color] [color=#d8d8d8])[/color][/b][/b][/*]\n<br />[/list][/spoiler]\n<br />[b][size=4][color=#9fc5e8][size=4]3 Backpacks[/size] [/color][/size][color=#efefef][size=3]([b]craft at[/b] INT 11,13,15) [/size][/color][/b]\n<br />[spoiler][list]\n<br />[*][b][color=#efefef]Woven Backpack[/color] - ( [color=#cccccc]stats [/color][color=#d9d2e9]between[/color][color=#cccccc] duffle bag and big backpack, upgrade by foliage bag, nothing much to say[/color] )[/b][/*]\n<br />[*][b][color=#b6d7a8]Explorer Backpack[/color] - ( [color=#ead1dc]12.5u [/color][color=#efefef]/ [/color][color=#ead1dc]4.8u[/color][color=#d8d8d8],[/color] [color=#cccccc]25%[/color] [color=#cccccc]protection, upgrade by sling bag[/color] )[/b][/*]\n<br />[*][b][color=#e06666]Operation Backpack[/color] - ( [color=#a64d79]25u [/color]/ [color=#d5a6bd]5u[/color][color=#cccccc], 50% protection upgrade by big backpack, has a flashlight that can be toggled[/color]. )[/b][/*]\n<br />[/list][/spoiler]\n<br />[b][size=4][color=#9fc5e8][size=4]4 Material pouches[/size] [/color][/size][color=#efefef][size=3](INT 10,11,12,13)[/size][/color][/b]\n<br />[spoiler][b][color=#d8d8d8]They are[/color][/b]\n<br />[list]\n<br />[*][b][color=#efefef]Improved material pouch -[/color][color=#00ffff] [/color][color=#efefef]( [/color][color=#ead1dc]7.5u[/color][color=#cccccc],[/color][color=#ead1dc] [/color][color=#cccccc]15% protection, easy to craft [/color][color=#efefef])[/color][/b][/*]\n<br />[*][b][color=#f9cb9c]Advanced material pouch[/color] [color=#efefef]-[/color][color=#00ffff] [/color][color=#efefef]( [/color][color=#d5a6bd]10u [/color][color=#efefef]/ [/color][color=#d5a6bd]0.45u[/color][color=#cccccc],[/color][color=#d5a6bd] [/color][color=#cccccc]30% protection, upgrade by Improve pouch [/color][color=#efefef])[/color][/b][/*]\n<br />[*][b][color=#93c47d]Military supply pouch[/color] [color=#efefef]-[/color][color=#00ffff] [/color][color=#efefef]( [/color][color=#d5a6bd]13.5u [/color][color=#efefef]/ [/color][color=#c27ba0]0.65u[/color][color=#d8d8d8], 4[/color][color=#cccccc]0% protection, upgrade by Advanced material pouch [/color][color=#efefef])[/color][/b][/*]\n<br />[*][b][color=#3c78d8]Lab material pouch[/color] [color=#efefef]-[/color][color=#00ffff] [/color][color=#efefef]( [/color][color=#a64d79]18u [/color][color=#efefef]/ [/color][color=#c27ba0]1u[/color][color=#cccccc], [/color][color=#cccccc]50% protection, upgrade by military pouch [/color][color=#efefef])[/color][/b][/*]\n<br />[/list][/spoiler]\n<br />[size=5]Utilities and Tools：[/size]\n<br />\n<br />[b][size=4][color=#ead1dc]Schematic([/color][color=#ff7700]Main[/color][color=#ead1dc])[/color][/size][/b]\n<br />[list]\n<br />[*]A material used for advanced crafting.( Apply to [color=#e06666]Operation Backpack[/color] and [color=#3d85c6]Lab pouch[/color] and some [b][size=4]top[/size][/b] items [color=#efefef]craft recipes [/color])[/*]\n<br />[*]Only Spawn at Exp and Milky trade pool.[/*]\n<br />[*][font=Verdana]Qualities: [/font][color=#ffe599][font=Verdana]Engineering(2)[/font][/color][/*]\n<br />[/list][b][size=4][color=#ead1dc]Refitted Wrench([/color][color=#ff7700]Main[/color][color=#ead1dc])[/color][/size][/b]\n<br />[list]\n<br />[*]Has a unique quality called '[b]Modification[/b]' — some higher‑performance items require it in their recipes.[/*]\n<br />[*][size=3][color=#cccccc]Upgrade by wrench[/color][/size][/*]\n<br />[*][font=Verdana][color=#cccccc]Qualities[/color]: [color=#ffe599]Modification(160), Hammering(200)[/color][/font][/*]\n<br />[*][color=#cccccc][font=Arial]Crafting INT: 13[/font][/color][/*]\n<br />[/list][font=Arial][b][color=#ead1dc][size=4]Rehab Ice Pack[/size][/color][/b][/font]\n<br />[list]\n<br />[*][color=#cccccc][font=Arial]Chill time : [/font][/color][color=#ead1dc][font=Arial]240[/font][/color][color=#cccccc][font=Arial] seconds[/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]Could use [/font][/color][color=#ead1dc][font=Arial]4[/font][/color][color=#cccccc][font=Arial] times[/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]regeneration rate :  About [/font][/color][color=#999999][font=Arial]33%[/font][/color][color=#cccccc][font=Arial] of the original rate. [/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]Upgrade by Ice Pack[/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]Craft INT: 15[/font][/color][/*]\n<br />[/list][font=Arial][b][color=#ead1dc][size=4]Rapid Chest Drain[/size][/color][/b][/font]\n<br />[list]\n<br />[*][color=#cccccc][font=Arial]Hemothorax reduce: [/font][/color][font=Arial][color=#999999]20[/color][/font][color=#cccccc][font=Arial] (vanilla is 35) but could use [/font][/color][font=Arial][color=#ead1dc]2[/color][color=#cccccc] times[/color][/font][/*]\n<br />[*][color=#cccccc][font=Arial]Regeneration rate :  About [/font][/color][color=#999999][font=Arial]33%[/font][/color][color=#cccccc][font=Arial] of the original rate.[/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]Slightly increase bleed amout and pain when bleeding (about [/font][/color][color=#ead1dc][font=Arial]3.5[/font][/color][color=#cccccc][font=Arial] bleed amount and [/font][/color][color=#f4cccc][font=Arial]2[/font][/color][color=#cccccc][font=Arial] pain amount)[/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]Upgrade by Chest Drain [/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]Craft INT: 13 (on Medicine category instead of Utilities)[/font][/color][/*]\n<br />[/list][color=#ead1dc][size=4][b][font=Arial]D[/font][font=Arial]ive Rope[/font][/b][/size][/color]\n<br />[list]\n<br />[*][color=#cccccc]Could use [/color][color=#d5a6bd]5[/color][color=#cccccc] times[/color][/*]\n<br />[*][color=#cccccc]Small [/color][color=#ffffff]glows[/color][color=#cccccc] at both ends of the rope[/color][/*]\n<br />[*][color=#cccccc]Length: [/color][color=#d5a6bd]35 [/color][color=#d8d8d8](25 in vanilla)[/color][/*]\n<br />[*][color=#cccccc]Crafting INT: 8[/color][/*]\n<br />[/list][b][color=#ead1dc][size=4]Standard Canteen[/size][/color][/b]\n<br />[list]\n<br />[*][color=#d8d8d8]Increase capacity to[/color] [color=#d5a6bd]1.2L[/color][/*]\n<br />[*][color=#cccccc]Won't be filled when passing water[/color][/*]\n<br />[*][color=#cccccc]Upgrade by canteen[/color][/*]\n<br />[*][color=#cccccc]Crafting INT: 10[/color][/*]\n<br />[/list][b][size=4][color=#ead1dc]Mattock[/color] [/size][color=#d8d8d8]and[/color] [color=#ead1dc][size=4]Bush Machete[/size][/color][/b]\n<br />[list]\n<br />[*]They can upgrade by vanilla Pickaxe and Machete[/*]\n<br />[*]Bush Machete attack range [color=#ead1dc]slightly longer[/color][/*]\n<br />[*]Both the Mattock and the Bush Machete have stats that [color=#d5a6bd]set between[/color] the titanium weapons and the standard weapons. This includes damage, structure damage, durability, qualities, and more.[/*]\n<br />[*][color=#cccccc]Crafting INT: 13[/color][/*]\n<br />[/list][b][color=#ead1dc][size=4]Heating Cage[/size][/color][/b]\n<br />[list]\n<br />[*][color=#cccccc]Upgrade via lantern[/color][/*]\n<br />[*][color=#a4c2f4]Use in inventory toogle light,decay will stop[/color][/*]\n<br />[*][color=#efefef]Could use charcoal to repair in craft menu[/color][/*]\n<br />[*][color=#cccccc]Qualities[/color]: [color=#ffe599][font=Verdana]Heating Source(200) [/font][/color][/*]\n<br />[/list][b][color=#ead1dc][size=4]Auto Charger[/size][/color][/b]\n<br />[list]\n<br />[*][color=#d8d8d8]Maximum battery allowed[/color][color=#00ff00]: Large Battery[/color][/*]\n<br />[*][color=#efefef]Auto Charge: [/color][color=#00ff00]YES[/color][/*]\n<br />[*][color=#cccccc]Weight[/color][color=#efefef]: [/color][color=#ead1dc]0.5u[/color][/*]\n<br />[*][color=#cccccc]Crafting INT: 10[/color][/*]\n<br />[/list][b][color=#ead1dc][size=4]Grav bag V2[/size][/color][/b]\n<br />[list]\n<br />[*]Capacity increased – [color=#d5a6bd]12u[/color][/*]\n<br />[*]max weight per item – [color=#ead1dc]4.5u[/color][/*]\n<br />[*][color=#efefef]No weight reduction without battery; with battery active, reduces weight by approximately[/color] [color=#ead1dc]99.5%[/color][/*]\n<br />[*][color=#d8d8d8]Maximum battery allowed[/color]:[color=#00ff00] Large Battery[/color][/*]\n<br />[*]Battery life – increased by [color=#ead1dc]1 hour[/color], [color=#ead1dc]total 3 hours[/color][/*]\n<br />[*][color=#9fc5e8]Consumes battery only when carrying items [/color][color=#3d85c6]and moving[/color] [color=#d8d8d8](finally could sleep better)[/color][/*]\n<br />[*][color=#efefef]Explodes when battery reaches 0[/color]: [color=#ff0000]YES[/color][/*]\n<br />[*][color=#cccccc]Crafting INT: 12[/color][/*]\n<br />[/list][b][size=4][color=#ead1dc]Enhanced Machete[/color][/size][/b]\n<br />[list]\n<br />[*]Increased  damage – [color=#c27ba0]140[/color][/*]\n<br />[*]Slightly increased structure damage – [color=#ead1dc]70[/color][/*]\n<br />[*]Reduced [color=#efefef]stamina cost; swing cooldown; attack cooldown [/color][/*]\n<br />[*]Increased weapon [color=#d5a6bd]durability[/color][/*]\n<br />[*]Piercing attack: [color=#00ff00]Yes[/color][/*]\n<br />[*]Slightly increased hit stagger[/*]\n<br />[*][color=#d8d8d8]Maximum battery allowed[/color] : [color=#00ff00]Large Battery[/color][/*]\n<br />[*][color=#cccccc]Crafting INT: 17[/color][/*]\n<br />[*][color=#9fc5e8]With charged battery: Minor area light[/color][/*]\n<br />[/list][b][color=#ead1dc][size=4]Enhanced Pickaxe[/size][/color][/b]\n<br />[list]\n<br />[*]Slightly increased damage – [color=#ead1dc]90[/color][/*]\n<br />[*]Significantly increased structure damage – [color=#a64d79]240[/color][/*]\n<br />[*]Reduced [color=#efefef]stamina cost; swing cooldown; attack cooldown[/color][/*]\n<br />[*]Increased weapon durability[/*]\n<br />[*]Piercing attack: No[/*]\n<br />[*]Slightly increased hit stagger[/*]\n<br />[*][color=#d8d8d8]Maximum battery allowed[/color] : [color=#00ff00]Large Battery[/color][/*]\n<br />[*][color=#cccccc]Crafting INT: 17[/color][/*]\n<br />[*][color=#9fc5e8]With charged battery: Minor area light[/color][/*]\n<br />[/list][line]\n<br />[color=#d8d8d8][font=Arial][b][size=5]Support：[/size][/b][/font][/color]\n<br />[font=Arial][size=4]zh-CN[/size]: [color=#00ff00][size=4]彳亍[/size][/color][/font]\n<br />[font=Arial][size=4]EN[/size]: [color=#00ff00][size=4]Good[/size][/color][/font]\n<br />[font=Arial]Other: [color=#efefef]If you can offering translation i'll add into mod[/color][/font]\n<br />\n<br />KrokMP (多人联机)：[color=#93c47d]Should work（应该可以）[/color]\n<br />\n<br />[color=#e69138][size=4][b]Aware:[/b][/size][/color]\n<br />If you are using other language files (e.g., from Wikipedia), simply [b]RENAME[/b] the \n<br />[code]zh-CN.json or EN.json [/code] file located in \n<br />[code]BepInEx&#92;plugins&#92;EnhancedTools[/code] to match the [b]NAME[/b] of the[b] .json file[/b] you are using.\n<br />\n<br />\n<br />[size=5][b]Requires：[/b][/size]\n<br />[list=1]\n<br />[*][url=https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5]BepInEx 5.4.23.5[/url][/*]\n<br />[*][s][url=https://www.nexusmods.com/scavprototype/mods/140]ICEneco's Custom Item API[/url] ( Included now ) [/s] No Need   [/*]\n<br />[*][url=https://www.nexusmods.com/scavprototype/mods/341]CUCoreLib[/url] ( Included now )[/*]\n<br />[*]Download my mod and extract the .zip/.rar file,then drag the [b]EnhancedTools[/b] folder into the following location:[/*]\n<br />[/list][quote][color=#d8d8d8]Casualties Unknown Demo&#92;BepInEx&#92;plugins[/color][/quote][size=3]The API folder should be placed there as well. [/size]\n<br />\n<br />\n<br />[size=5][b]Shout Outs：[/b][/size]\n<br />[url=https://www.nexusmods.com/profile/ICEneco]ICEneco[/url]  -  Many thanks to this awesome modder for developing the prerequisite mod and patiently answering all my questions\n<br />[url=https://www.nexusmods.com/profile/Jimmyking9999999]JimmyKing[/url] - CUCoreLib \n<br />脑叶切除术, 凝慕依 - arts &amp; ideas for GravBag V2，Heating Cage\n<br />VALORANT - [b]Thanks to all the hackers, boosters, and trolls in CN Immortal rank, I've ditched the grind and moved on to more chill stuff[/b]\n<br />\n<br />[size=1]A bit of rambling[/size]\n<br />[spoiler]不敢相信我为了几个像素点画了30多个小时，妈的，再也不可能画了\n<br />又画了几天。。。画得真的sh*t\n<br />.......又画了几天，感觉又上瘾又折磨。。。。\n<br />脑袋好晕(((φ(◎ロ◎;)φ)))\n<br />啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊我不敢信我用CCL把我的整个模组重写了一遍，不过能自己改更多东西了但是好累.....T-T[/spoiler]\n<br />[size=4]Feel free to leave a comment if you have any question and advice hwh[/size]\n<br />",
+        "Summary": "IM BACK! Adds a selection of new items to upgrade vanilla utilities, wearables, tools, and containers and so on. No vanilla items are changed — these are simply new upgrade options.",
+        "Description": "[size=4]Dependency with CucoreLib v1.0.4/v1.0.5[/size]\n<br />\n<br />[size=3]([color=#a4c2f4] Hey! Just a quick heads-up — if you're traveling between layers and notice your installed batteries have vanished, that's a CCL issue. That's actually why I rewrote everything to test if it is my problem, I mean EVERYTHING from ICEnecoAPI to CCL. So I guess for now, the only workaround is to remove your batteries before transitioning.[/color][color=#8e7cc3] [/color])[/size]\n<br />\n<br />[size=5]Description[b]：[/b][/size]\n<br />[color=#d8d8d8][size=4]New tier of tools based on the originals, each with its own unique crafting recipe.[/size][/color]\n<br />[color=#d8d8d8][size=4]Strictly follows vanilla crafting level and recipe standards.[/size][/color]\n<br />[color=#ffffff]The [/color][color=#d5a6bd]darker[/color][color=#ffffff] the color, the more the data has been modified from the original. Use it as a quick visual reference.[/color]\n<br />\n<br />[line]\n<br />[size=5]Wearables：[/size]\n<br />[size=3]These may have some small changes in the future for balance, i[/size][size=3]f you have better advice plz leave in comments![/size]\n<br />\n<br />[b][size=4][color=#9fc5e8]3 Packs [/color][/size][color=#efefef][size=3](craft at INT 9,11,14)[/size][/color][/b]\n<br />[spoiler][list]\n<br />[*][b][color=#a2c4c9]Medical Fanny Pack[/color] - ( [color=#ead1dc]3.5u[/color] / [color=#b6b6b6]0.6u, [/color][color=#d8d8d8]upgrade by medkit and fanny pack [/color])[/b][/*]\n<br />[*][b][color=#6d9eeb]Reinforced Medical Pack[/color] - ( [color=#d5a6bd]7u[/color] / [color=#ead1dc]0.9u[/color], [color=#cccccc]70%[/color][color=#d8d8d8]protection[/color],  upgrade by [color=#a2c4c9]Medical Fanny Pack[/color] )[/b][/*]\n<br />[*][b][color=#1155cc]Surgical Rig[/color] -  ( [color=#d5a6bd]12u[/color] / [color=#cccccc]1.25u[/color], [color=#ead1dc]90%[/color][color=#d8d8d8]protec[/color][color=#d8d8d8]tion with Torso and [/color][color=#c27ba0]Chest[/color][color=#d8d8d8], upgrade by [/color][color=#6d9eeb]Reinforced Medical Pack[/color][color=#d8d8d8] [/color])[/b][/*]\n<br />[/list][b]these 3 packs can only hold medical‑related items, just like the belt can only store tools[/b][/spoiler]\n<br />[b][color=#9fc5e8][size=4]2 Shoes [/size][/color][/b][b][color=#efefef][size=3]([/size][size=3]cr[/size][/color][/b][size=3][b][color=#efefef]aft at INT 10,12)[/color][/b][/size]\n<br />[spoiler][list]\n<br />[*][b][color=#d9ead3]Cloth Slip-ones - [/color][color=#d8d8d8]( Early upgrade by Wood Sandals, withstands [/color][color=#ead1dc]8–10[/color][color=#d8d8d8] glass shard hits )[/color][/b][/*]\n<br />[*][b][color=#f6b26b]Trail Runners - [/color][color=#d8d8d8]( stats sit [/color][color=#b4a7d6]between[/color][color=#d8d8d8] Sneakers and Tactical Boots, [/color][color=#ead1dc]150%[/color][color=#d8d8d8]proteciton, upgrade by Sneakers )[/color][/b][/*]\n<br />[/list][/spoiler]\n<br />[b][color=#9fc5e8][size=4]3 Belts[/size][/color][/b] [color=#efefef][size=3][b](craft at INT 11,12,13)[/b][/size][/color]\n<br />[spoiler][list]\n<br />[*][b][color=#fce5cd]Expanded Belt[/color][color=#cccccc] - ( [/color][color=#ead1dc]6u [/color][color=#efefef]/ [/color][color=#cccccc]4[/color][color=#cccccc]u, [/color][color=#ead1dc]10%[/color] [color=#d8d8d8]protection, upgrade by belt[/color][color=#cccccc] [/color][color=#cccccc]) [/color][/b][/*]\n<br />[*][b][color=#93c47d]Light Armor Belt[/color][color=#cccccc] - ( [/color][color=#cccccc]4u[/color][color=#999999] [/color][color=#efefef]/ [/color][color=#cccccc]4[/color][color=#cccccc]u, [/color][color=#d5a6bd]40%[/color][color=#cccccc] protection, upgrade by [/color][color=#fce5cd]Expanded Belt[/color][color=#cccccc])[/color][/b][/*]\n<br />[*][b][color=#3d85c6]Lab Belt[/color][color=#cccccc] - ( [/color][color=#d5a6bd]8u [/color][color=#efefef]/ [/color][color=#b6b6b6]2.5u[/color][color=#cccccc], [/color][color=#d5a6bd]60%[/color][color=#cccccc] protection, upgrade by [/color][color=#b6d7a8]Light Armor Belt[/color] [color=#cccccc])[/color][/b][/*]\n<br />[/list][/spoiler]\n<br />[b][color=#9fc5e8][size=4][size=4]4 Leg pouches[/size] [/size][/color][color=#efefef][size=3](craft at INT 11,12,13,13)[/size][/color][/b]\n<br />[spoiler][list]\n<br />[*][b][b][color=#d8d8d8]IV Leg Pouch - ( An easily craftable liquid pouch for early-game use. [/color][color=#ead1dc]0.5L[/color][color=#d8d8d8], upgrade by ivbag and canteen )[/color][/b][/b][/*]\n<br />[*][b][b][color=#f9cb9c]Camo Leg Pouch[/color][color=#d8d8d8] - ( [/color][color=#ead1dc]5.5u [/color][color=#efefef]/ [/color][color=#999999]3.5u[/color][color=#d8d8d8], [/color][color=#cccccc]35%[/color][color=#d8d8d8] protection, upgrade by leg pouch[/color][color=#d8d8d8] [/color][color=#d8d8d8])[/color][/b][/b][/*]\n<br />[*][b][b][color=#3c78d8]Spec Ops Leg Pouch[/color][color=#d8d8d8] - ( [/color][color=#d5a6bd]7.6u [/color][color=#efefef]/[/color][color=#d8d8d8] 4[/color][color=#d8d8d8]u, 60% protection, upgrade by [/color][color=#f9cb9c]camo pouch[/color] [color=#d8d8d8])[/color][/b][/b][/*]\n<br />[*][b][b][color=#6fa8dc]Ops Hydration Leg Pouch[/color][color=#d8d8d8] - ( [/color][color=#d8d8d8]same protecion but contain liquid [/color][color=#d5a6bd]1.8L[/color][color=#d8d8d8], [/color][color=#d8d8d8]upgrade by [/color][color=#3c78d8]Spec Ops Leg Pouch[/color] [color=#d8d8d8])[/color][/b][/b][/*]\n<br />[/list][/spoiler]\n<br />[b][size=4][color=#9fc5e8][size=4]3 Backpacks[/size] [/color][/size][color=#efefef][size=3]([b]craft at[/b] INT 11,13,15) [/size][/color][/b]\n<br />[spoiler][list]\n<br />[*][b][color=#efefef]Woven Backpack[/color] - ( [color=#cccccc]stats [/color][color=#d9d2e9]between[/color][color=#cccccc] duffle bag and big backpack, upgrade by foliage bag, nothing much to say[/color] )[/b][/*]\n<br />[*][b][color=#b6d7a8]Explorer Backpack[/color] - ( [color=#ead1dc]12.5u [/color][color=#efefef]/ [/color][color=#ead1dc]4.8u[/color][color=#d8d8d8],[/color] [color=#cccccc]25%[/color] [color=#cccccc]protection, upgrade by sling bag[/color] )[/b][/*]\n<br />[*][b][color=#e06666]Operation Backpack[/color] - ( [color=#a64d79]25u [/color]/ [color=#d5a6bd]5u[/color][color=#cccccc], 50% protection upgrade by big backpack, has a flashlight that can be toggled[/color]. )[/b][/*]\n<br />[/list][/spoiler]\n<br />[b][size=4][color=#9fc5e8][size=4]4 Material pouches[/size] [/color][/size][color=#efefef][size=3](INT 10,11,12,13)[/size][/color][/b]\n<br />[spoiler][b][color=#d8d8d8]They are[/color][/b]\n<br />[list]\n<br />[*][b][color=#efefef]Improved material pouch -[/color][color=#00ffff] [/color][color=#efefef]( [/color][color=#ead1dc]7.5u[/color][color=#cccccc],[/color][color=#ead1dc] [/color][color=#cccccc]15% protection, easy to craft [/color][color=#efefef])[/color][/b][/*]\n<br />[*][b][color=#f9cb9c]Advanced material pouch[/color] [color=#efefef]-[/color][color=#00ffff] [/color][color=#efefef]( [/color][color=#d5a6bd]10u [/color][color=#efefef]/ [/color][color=#d5a6bd]0.45u[/color][color=#cccccc],[/color][color=#d5a6bd] [/color][color=#cccccc]30% protection, upgrade by Improve pouch [/color][color=#efefef])[/color][/b][/*]\n<br />[*][b][color=#93c47d]Military supply pouch[/color] [color=#efefef]-[/color][color=#00ffff] [/color][color=#efefef]( [/color][color=#d5a6bd]13.5u [/color][color=#efefef]/ [/color][color=#c27ba0]0.65u[/color][color=#d8d8d8], 4[/color][color=#cccccc]0% protection, upgrade by Advanced material pouch [/color][color=#efefef])[/color][/b][/*]\n<br />[*][b][color=#3c78d8]Lab material pouch[/color] [color=#efefef]-[/color][color=#00ffff] [/color][color=#efefef]( [/color][color=#a64d79]18u [/color][color=#efefef]/ [/color][color=#c27ba0]1u[/color][color=#cccccc], [/color][color=#cccccc]50% protection, upgrade by military pouch [/color][color=#efefef])[/color][/b][/*]\n<br />[/list][/spoiler]\n<br />[size=5]Utilities and Tools：[/size]\n<br />\n<br />[b][size=4][color=#ead1dc]Schematic([/color][color=#ff7700]Main[/color][color=#ead1dc])[/color][/size][/b]\n<br />[list]\n<br />[*]A material used for advanced crafting.( Apply to [color=#e06666]Operation Backpack[/color] and [color=#3d85c6]Lab pouch[/color] and some [b][size=4]top[/size][/b] items [color=#efefef]craft recipes [/color])[/*]\n<br />[*]Only Spawn at Exp and Milky trade pool.[/*]\n<br />[*][font=Verdana]Qualities: [/font][color=#ffe599][font=Verdana]Engineering(2)[/font][/color][/*]\n<br />[/list][b][size=4][color=#ead1dc]Refitted Wrench([/color][color=#ff7700]Main[/color][color=#ead1dc])[/color][/size][/b]\n<br />[list]\n<br />[*]Has a unique quality called '[b]Modification[/b]' — some higher‑performance items require it in their recipes.[/*]\n<br />[*][size=3][color=#cccccc]Upgrade by wrench[/color][/size][/*]\n<br />[*][font=Verdana][color=#cccccc]Qualities[/color]: [color=#ffe599]Modification(160), Hammering(200)[/color][/font][/*]\n<br />[*][color=#cccccc][font=Arial]Crafting INT: 13[/font][/color][/*]\n<br />[/list]\n<br />[color=#ead1dc][size=4][font=Arial][b]A.R.U.[/b][/font][/size][/color]\n<br />[list]\n<br />[*][color=#cccccc]A smart device that combines the advantages of an AED and an AutoPump[/color][/*]\n<br />[*][color=#cccccc]Notifies player via electronic display when defibrillation starts and ends[/color][/*]\n<br />[*][color=#cccccc]If the first shock fails, an additional [/color][color=#ead1dc]3.5%-[/color][color=#d5a6bd]5.0%[/color][color=#cccccc]（20% in vanilla） success rate is applied to restore heart rhythm[/color][/*]\n<br />[*][color=#cccccc]When powered by a [/color][color=#00ff00]Large Battery[/color][color=#cccccc]:[/color]\n<br />[color=#cccccc]- When heart rate in 0, provides up to [/color][b][color=#d5a6bd]9[/color][/b][color=#cccccc] defibrillation attempts (vanilla AED has roughly [/color][color=#b6b6b6]10–12[/color][color=#cccccc] attempts — can't quite remember)[/color]\n<br />[color=#cccccc]- When blood pressure drops below 84, provides a +44 blood pressure ([/color][color=#999999]Unchanged[/color][color=#cccccc])[/color]\n<br />[color=#cccccc]- Battery drain rate while maintaining blood pressure: [/color][color=#ead1dc]0.01/s[/color][color=#cccccc] ( 0.002/s in vanilla autopump)[/color][/*]\n<br />[*][color=#cccccc]Well i guess that's all[/color][/*]\n<br />[*][color=#cccccc]Upgrade by aed and autopump (main)[/color][/*]\n<br />[*][color=#cccccc]Craft INT: 16[/color][/*]\n<br />[/list][font=Arial][color=#ead1dc][size=4][b]Gradual Tourniquet[/b][/size][/color][/font]\n<br />[list]\n<br />[*][font=Arial][color=#cccccc]Durability per use: [/color][color=#c27ba0]5%[/color][color=#cccccc] (12.5% in vanilla)[/color][/font][/*]\n<br />[*][font=Arial][color=#cccccc]Limb max pain: [/color][color=#ead1dc]35 [/color][color=#cccccc](40 in vanilla)[/color][/font][/*]\n<br />[*][font=Arial][color=#cccccc]Limb damage: up to [/color][color=#d5a6bd]12[/color][color=#cccccc] min (9min in vanilla)[/color][/font][/*]\n<br />[*][font=Arial][color=#cccccc]Upgrade by tourniquet[/color][/font][/*]\n<br />[*][font=Arial][color=#cccccc]Craft INT: 11[/color][/font][/*]\n<br />[/list][font=Arial][b][color=#ead1dc][size=4]Rehab Ice Pack[/size][/color][/b][/font]\n<br />[list]\n<br />[*][color=#cccccc][font=Arial]Chill time : [/font][/color][color=#ead1dc][font=Arial]240[/font][/color][color=#cccccc][font=Arial] seconds[/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]Could use [/font][/color][color=#ead1dc][font=Arial]4[/font][/color][color=#cccccc][font=Arial] times[/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]regeneration rate :  About [/font][/color][color=#999999][font=Arial]33%[/font][/color][color=#cccccc][font=Arial] of the original rate. [/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]Upgrade by Ice Pack[/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]Craft INT: 15[/font][/color][/*]\n<br />[/list][font=Arial][b][color=#ead1dc][size=4]Rapid Chest Drain[/size][/color][/b][/font]\n<br />[list]\n<br />[*][color=#cccccc][font=Arial]Hemothorax reduce: [/font][/color][font=Arial][color=#999999]20[/color][/font][color=#cccccc][font=Arial] (vanilla is 35) but could use [/font][/color][font=Arial][color=#ead1dc]2[/color][color=#cccccc] times[/color][/font][/*]\n<br />[*][color=#cccccc][font=Arial]Regeneration rate :  About [/font][/color][color=#999999][font=Arial]33%[/font][/color][color=#cccccc][font=Arial] of the original rate.[/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]Slightly increase bleed amout and pain when bleeding (about [/font][/color][color=#ead1dc][font=Arial]3.5[/font][/color][color=#cccccc][font=Arial] bleed amount and [/font][/color][color=#f4cccc][font=Arial]2[/font][/color][color=#cccccc][font=Arial] pain amount)[/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]Upgrade by Chest Drain [/font][/color][/*]\n<br />[*][color=#cccccc][font=Arial]Craft INT: 13 (on Medicine category instead of Utilities)[/font][/color][/*]\n<br />[/list][color=#ead1dc][size=4][b][font=Arial]D[/font][font=Arial]ive Rope[/font][/b][/size][/color]\n<br />[list]\n<br />[*][color=#cccccc]Could use [/color][color=#d5a6bd]5[/color][color=#cccccc] times[/color][/*]\n<br />[*][color=#cccccc]Small [/color][color=#ffffff]glows[/color][color=#cccccc] at both ends of the rope[/color][/*]\n<br />[*][color=#cccccc]Length: [/color][color=#d5a6bd]35 [/color][color=#d8d8d8](25 in vanilla)[/color][/*]\n<br />[*][color=#cccccc]Crafting INT: 8[/color][/*]\n<br />[/list][b][color=#ead1dc][size=4]Standard Canteen[/size][/color][/b]\n<br />[list]\n<br />[*][color=#d8d8d8]Increase capacity to[/color] [color=#d5a6bd]1.2L[/color][/*]\n<br />[*][color=#cccccc]Won't be filled when passing water[/color][/*]\n<br />[*][color=#cccccc]Upgrade by canteen[/color][/*]\n<br />[*][color=#cccccc]Crafting INT: 10[/color][/*]\n<br />[/list][b][size=4][color=#ead1dc]Mattock[/color] [/size][color=#d8d8d8]and[/color] [color=#ead1dc][size=4]Bush Machete[/size][/color][/b]\n<br />[list]\n<br />[*]They can upgrade by vanilla Pickaxe and Machete[/*]\n<br />[*]Bush Machete attack range [color=#ead1dc]slightly longer[/color][/*]\n<br />[*]Both the Mattock and the Bush Machete have stats that [color=#d5a6bd]set between[/color] the titanium weapons and the standard weapons. This includes damage, structure damage, durability, qualities, and more.[/*]\n<br />[*][color=#cccccc]Crafting INT: 13[/color][/*]\n<br />[/list][b][color=#ead1dc][size=4]Heating Cage[/size][/color][/b]\n<br />[list]\n<br />[*][color=#cccccc]Upgrade via lantern[/color][/*]\n<br />[*][color=#a4c2f4]Use in inventory toogle light,decay will stop[/color][/*]\n<br />[*][color=#efefef]Could use charcoal to repair in craft menu[/color][/*]\n<br />[*][color=#cccccc]Qualities[/color]: [color=#ffe599][font=Verdana]Heating Source(200) [/font][/color][/*]\n<br />[/list][b][color=#ead1dc][size=4]Auto Charger[/size][/color][/b]\n<br />[list]\n<br />[*][color=#d8d8d8]Maximum battery allowed[/color][color=#00ff00]: Large Battery[/color][/*]\n<br />[*][color=#efefef]Auto Charge: [/color][color=#00ff00]YES[/color][/*]\n<br />[*][color=#cccccc]Weight[/color][color=#efefef]: [/color][color=#ead1dc]0.5u[/color][/*]\n<br />[*][color=#cccccc]Crafting INT: 10[/color][/*]\n<br />[/list][b][color=#ead1dc][size=4]Grav bag V2[/size][/color][/b]\n<br />[list]\n<br />[*]Capacity increased – [color=#d5a6bd]12u[/color][/*]\n<br />[*]max weight per item – [color=#ead1dc]4.5u[/color][/*]\n<br />[*][color=#efefef]No weight reduction without battery; with battery active, reduces weight by approximately[/color] [color=#ead1dc]99.5%[/color][/*]\n<br />[*][color=#d8d8d8]Maximum battery allowed[/color]:[color=#00ff00] Large Battery[/color][/*]\n<br />[*]Battery life – increased by [color=#ead1dc]1 hour[/color], [color=#ead1dc]total 3 hours[/color][/*]\n<br />[*][color=#9fc5e8]Consumes battery only when carrying items [/color][color=#3d85c6]and moving[/color] [color=#d8d8d8](finally could sleep better)[/color][/*]\n<br />[*][color=#efefef]Explodes when battery reaches 0[/color]: [color=#ff0000]YES[/color][/*]\n<br />[*][color=#cccccc]Crafting INT: 12[/color][/*]\n<br />[/list][b][size=4][color=#ead1dc]Enhanced Machete[/color][/size][/b]\n<br />[list]\n<br />[*]Increased  damage – [color=#c27ba0]140[/color][/*]\n<br />[*]Slightly increased structure damage – [color=#ead1dc]70[/color][/*]\n<br />[*]Reduced [color=#efefef]stamina cost; swing cooldown; attack cooldown [/color][/*]\n<br />[*]Increased weapon [color=#d5a6bd]durability[/color][/*]\n<br />[*]Piercing attack: [color=#00ff00]Yes[/color][/*]\n<br />[*]Slightly increased hit stagger[/*]\n<br />[*][color=#d8d8d8]Maximum battery allowed[/color] : [color=#00ff00]Large Battery[/color][/*]\n<br />[*][color=#cccccc]Crafting INT: 17[/color][/*]\n<br />[*][color=#9fc5e8]With charged battery: Minor area light[/color][/*]\n<br />[/list][b][color=#ead1dc][size=4]Enhanced Pickaxe[/size][/color][/b]\n<br />[list]\n<br />[*]Slightly increased damage – [color=#ead1dc]90[/color][/*]\n<br />[*]Significantly increased structure damage – [color=#a64d79]240[/color][/*]\n<br />[*]Reduced [color=#efefef]stamina cost; swing cooldown; attack cooldown[/color][/*]\n<br />[*]Increased weapon durability[/*]\n<br />[*]Piercing attack: No[/*]\n<br />[*]Slightly increased hit stagger[/*]\n<br />[*][color=#d8d8d8]Maximum battery allowed[/color] : [color=#00ff00]Large Battery[/color][/*]\n<br />[*][color=#cccccc]Crafting INT: 17[/color][/*]\n<br />[*][color=#9fc5e8]With charged battery: Minor area light[/color][/*]\n<br />[/list][line]\n<br />[color=#d8d8d8][font=Arial][b][size=5]Support：[/size][/b][/font][/color]\n<br />[font=Arial][size=4]zh-CN[/size]: [color=#00ff00][size=4]彳亍[/size][/color][/font]\n<br />[font=Arial][size=4]EN[/size]: [color=#00ff00][size=4]Good[/size][/color][/font]\n<br />[font=Arial]Other: [color=#efefef]If you can offering translation i'll add into mod[/color][/font]\n<br />\n<br />KrokMP (多人联机)：[color=#93c47d]Should work（应该可以）[/color]\n<br />\n<br />[color=#e69138][size=4][b]Aware:[/b][/size][/color]\n<br />If you are using other language files (e.g., from Wikipedia), simply [b]RENAME[/b] the \n<br />[code]zh-CN.json or EN.json [/code] file located in \n<br />[code]BepInEx&#92;plugins&#92;EnhancedTools[/code] to match the [b]NAME[/b] of the[b] .json file[/b] you are using.\n<br />\n<br />\n<br />[size=5][b]Requires：[/b][/size]\n<br />[list=1]\n<br />[*][url=https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5]BepInEx 5.4.23.5[/url][/*]\n<br />[*][s][url=https://www.nexusmods.com/scavprototype/mods/140]ICEneco's Custom Item API[/url] ( Included now ) [/s] No Need   [/*]\n<br />[*][url=https://www.nexusmods.com/scavprototype/mods/341]CUCoreLib[/url] ( Included now )[/*]\n<br />[*]Download my mod and extract the .zip/.rar file,then drag the [b]EnhancedTools[/b] folder into the following location:[/*]\n<br />[/list][quote][color=#d8d8d8]Casualties Unknown Demo&#92;BepInEx&#92;plugins[/color][/quote][size=3]The API folder should be placed there as well. [/size]\n<br />\n<br />\n<br />[size=5][b]Shout Outs：[/b][/size]\n<br />[url=https://www.nexusmods.com/profile/ICEneco]ICEneco[/url]  -  Many thanks to this awesome modder for developing the prerequisite mod and patiently answering all my questions\n<br />[url=https://www.nexusmods.com/profile/Jimmyking9999999]JimmyKing[/url] - CUCoreLib \n<br />脑叶切除术, 凝慕依 - arts &amp; ideas for GravBag V2，Heating Cage\n<br />VALORANT - [b]Thanks to all the hackers, boosters, and trolls in CN Immortal rank, I've ditched the grind and moved on to more chill stuff[/b]\n<br />\n<br />[size=1]A bit of rambling[/size]\n<br />[spoiler]不敢相信我为了几个像素点画了30多个小时，妈的，再也不可能画了\n<br />又画了几天。。。画得真的sh*t\n<br />.......又画了几天，感觉又上瘾又折磨。。。。\n<br />脑袋好晕(((φ(◎ロ◎;)φ)))\n<br />啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊我不敢信我用CCL把我的整个模组重写了一遍，不过能自己改更多东西了但是好累.....T-T[/spoiler]\n<br />[size=4]Feel free to leave a comment if you have any question and advice hwh[/size]\n<br />",
         "Author": "jcmamama",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/325/325-1785403122-380215927.jpg",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/325"
         },
-        "DownloadUrl": "nexus://scavprototype/325/1890",
+        "DownloadUrl": "nexus://scavprototype/325/1945",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 325,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-08-27T06:00:51.000Z",
-        "ReleaseDate": "2026-08-27T06:00:51.000Z",
-        "SHA256": "5ba7f372c7f1b2eaa8d154af7442fd208737dbad577c30e08d07a02bb2a0d33a",
+        "LastUpdated": "2026-08-30T16:25:37.000Z",
+        "ReleaseDate": "2026-08-30T16:25:37.000Z",
+        "SHA256": "9af3c73a7e83fa54d5abab087c5c99215a89bd578ff390b494526f1e77140519",
         "dllSHA256s": {
-            "EnhancedTools.dll": "0c47811a28ab9662a5c28977c9cae5b3f7bbe8823be239cc8a8916edfc16d175"
+            "EnhancedTools.dll": "0c82e917ecfe2ba6ef12a303311f57087743d8dd2614a2b70291a9a231ecfd56"
         },
-        "downloadsSinceLatestVersion": 81,
+        "downloadsSinceLatestVersion": 5,
         "Dependencies": [],
         "Changelogs": [
             {
                 "Version": "2",
-                "Changelog": "做了一些平衡性调整，使得它不那么op\nmade some balances makes it not too op"
+                "Changelog": "- 做了一些平衡性调整，使得它不那么op\n- made some balances makes it not too op"
             },
             {
                 "Version": "1.2",
-                "Changelog": "change API from rshlib to Cucorelib\nAdd a new weapon and a container"
+                "Changelog": "- change API from rshlib to Cucorelib\n- Add a new weapon and a container"
             },
             {
                 "Version": "1.3",
-                "Changelog": "added Auto Charger\nGravBag will now explode when bat runs out and craft INT is 12"
+                "Changelog": "- added Auto Charger\n- GravBag will now explode when bat runs out and craft INT is 12"
             },
             {
                 "Version": "1.3.1",
-                "Changelog": "fixed gravbag will immediately explode when crafted"
+                "Changelog": "- fixed gravbag will immediately explode when crafted"
             },
             {
                 "Version": "1.3.2",
-                "Changelog": "fixed some small bugs"
+                "Changelog": "- fixed some small bugs"
             },
             {
                 "Version": "1.3.3",
-                "Changelog": "Now added 4 different material pouch！\nFixed battery issue."
+                "Changelog": "- Now added 4 different material pouch！\n- Fixed battery issue."
             },
             {
                 "Version": "1.3.4",
-                "Changelog": "Fine‑tuned item zoom scaling for more accurate inventory display.\nSlightly adjusted machete attack speed."
+                "Changelog": "- Fine‑tuned item zoom scaling for more accurate inventory display.\n- Slightly adjusted machete attack speed."
             },
             {
                 "Version": "1.3.5",
-                "Changelog": "Added 2 tools! The Mattock and Bush Machete\nAdjust enhanced weapons description\nAdjust enhanced machete's attack speed when bat is on"
+                "Changelog": "- Added 2 tools! The Mattock and Bush Machete\n- Adjust enhanced weapons description\n- Adjust enhanced machete's attack speed when bat is on"
             },
             {
                 "Version": "1.3.6",
-                "Changelog": "Add a new canteen,you can craft in INT 10,\nFixed Bush Whacker recipe problem,\nMade some minor recipe adjustments for pouches."
+                "Changelog": "- Add a new canteen,you can craft in INT 10,\n- Fixed Bush Whacker recipe problem,\n- Made some minor recipe adjustments for pouches."
             },
             {
                 "Version": "2.0.1",
-                "Changelog": "Added 3 new backpacks.\nAdded 1 item (Schematic) used as material to craft Operation Backpack and Lab Material Pouch.Can only buy it from Milky and Exp.\nLittle tweaked material pouches and canteen artwork.\nLab Material Pouch is no longer sold by trader, now you can craft it.\nAdjusted stats for various containers and weapons (trust me, I'm trying my best with the balance).\nCrafting recipes may have minor changes (Only a few specific items).\nIf you have any suggestions, feel free to leave a comment!"
+                "Changelog": "- Added 3 new backpacks.\n- Added 1 item (Schematic) used as material to craft Operation Backpack and Lab Material Pouch.Can only buy it from Milky and Exp.\n- Little tweaked material pouches and canteen artwork.\n- Lab Material Pouch is no longer sold by trader, now you can craft it.\n- Adjusted stats for various containers and weapons (trust me, I'm trying my best with the balance).\n- Crafting recipes may have minor changes (Only a few specific items).\n- If you have any suggestions, feel free to leave a comment!"
             },
             {
                 "Version": "2.0.2",
-                "Changelog": "Changed default description to English that should fix language problem.\nMay have some grammar issue cause i translate it on website,feel free to point out any issue! ^^"
+                "Changelog": "- Changed default description to English that should fix language problem.\n- May have some grammar issue cause i translate it on website,feel free to point out any issue! ^^"
             },
             {
                 "Version": "2.1.0",
-                "Changelog": "2 new qualities, 4 leg pouches and 3 belts and 1 new wrench.\nnew Wrench quality：Modification\nold Schematic now has quality：Engineering\nSome better performance items need it in their recipes\n***Stats changes***\n- The military canteen now weighs 1.35u when full and 0.1u when empty,capacity set to 1.2L and has no intrinsic value.\n- The wovenpack recipe has been updated. It will no longer use materials like 'resin' that feel more like raw ingredients — which may lead to further recipe changes down the line.\n- Explopack stats have been reduced, and its recipe has been updated.\n- Operpack stats have been reduced, and its recipe has been updated.\n- All material pouch stats have been reduced. The military pouch now has a single‑item weight of 0.65u, and the lab pouch weighs 1u per item. (The original idea was that the best pouch would hold a single 100% durability metal scrap.)\n- The lab pouch's battery weight reduction has been lowered to 100%, and its capacity has been reduced to 18u.\n- Battery‑powered weapons now perform at one‑third of their original titanium‑weapon stats when either durability or charge hits 0%.\n- Most recipes will become more complex.\n-Generally speaking, all items will now cost more to craft.XD\n-In v2.1.0 the qualities like hammering,cutting and firestarter of two enhanced weapons have been removed for balance since battery item exsist infinite qualities,this situation also fit in vanilla item 'Heavy drill'.\nAlways welcome any feedback！"
+                "Changelog": "- 2 new qualities, 4 leg pouches and 3 belts and 1 new wrench.\n- new Wrench quality：Modification\n- old Schematic now has quality：Engineering\n- Some better performance items need it in their recipes\n- ***Stats changes***\n- The military canteen now weighs 1.35u when full and 0.1u when empty,capacity set to 1.2L and has no intrinsic value.\n- The wovenpack recipe has been updated. It will no longer use materials like 'resin' that feel more like raw ingredients — which may lead to further recipe changes down the line.\n- Explopack stats have been reduced, and its recipe has been updated.\n- Operpack stats have been reduced, and its recipe has been updated.\n- All material pouch stats have been reduced. The military pouch now has a single‑item weight of 0.65u, and the lab pouch weighs 1u per item. (The original idea was that the best pouch would hold a single 100% durability metal scrap.)\n- The lab pouch's battery weight reduction has been lowered to 100%, and its capacity has been reduced to 18u.\n- Battery‑powered weapons now perform at one‑third of their original titanium‑weapon stats when either durability or charge hits 0%.\n- Most recipes will become more complex.\n-Generally speaking, all items will now cost more to craft.XD\n-In v2.1.0 the qualities like hammering,cutting and firestarter of two enhanced weapons have been removed for balance since battery item exsist infinite qualities,this situation also fit in vanilla item 'Heavy drill'.\n- Always welcome any feedback！"
             },
             {
                 "Version": "2.1.1",
-                "Changelog": "fixed Auto Charger can only fit small battery"
+                "Changelog": "- fixed Auto Charger can only fit small battery"
             },
             {
                 "Version": "2.1.2",
-                "Changelog": "Fixed belt like wearables fit correct tools and utilities with 'belttool' and 'tool' tags，\nLight sources like lantern and flashlight now correctly emit light in belt as expected."
+                "Changelog": "- Fixed belt like wearables fit correct tools and utilities with 'belttool' and 'tool' tags，\n- Light sources like lantern and flashlight now correctly emit light in belt as expected."
             },
             {
                 "Version": "2.1.3",
-                "Changelog": "Adapted ICEnecoV2.7.\nAdded 2 new shoes, their stats sit between Wood Sandals and Sneakers, and between Sneakers and Tactical Boots.\nMade some visual adjustments with Bush Whacker and Refitted Wrench to better align with the game's vanilla aesthetic.\nMost battery‑powered items will no longer come with a battery pre‑installed after crafting. You'll need to insert one yourself, except Gravbag V2.\nTweaked the scaling for the Enhanced Machete and GravbagV2.\nChange Operation Pack craft INT from 14 to 15.\nTODO: Port utility items from MoreCustomItems into this mod."
+                "Changelog": "- Adapted ICEnecoV2.7.\n- Added 2 new shoes, their stats sit between Wood Sandals and Sneakers, and between Sneakers and Tactical Boots.\n- Made some visual adjustments with Bush Whacker and Refitted Wrench to better align with the game's vanilla aesthetic.\n- Most battery‑powered items will no longer come with a battery pre‑installed after crafting. You'll need to insert one yourself, except Gravbag V2.\n- Tweaked the scaling for the Enhanced Machete and GravbagV2.\n- Change Operation Pack craft INT from 14 to 15.\n- TODO: Port utility items from MoreCustomItems into this mod."
             },
             {
                 "Version": "2.1.4",
-                "Changelog": "Fixed watch and plushie can't contained in belt"
+                "Changelog": "- Fixed watch and plushie can't contained in belt"
             },
             {
                 "Version": "2.1.5",
-                "Changelog": "Added Refitted Wrench repair recipe at INT10，\nFixed when crafting Explorer Backpack would destroy the whole tool with cutting quality."
+                "Changelog": "- Added Refitted Wrench repair recipe at INT10，\n- Fixed when crafting Explorer Backpack would destroy the whole tool with cutting quality."
             },
             {
                 "Version": "2.1.6",
-                "Changelog": "Be aware that this version still using CucoreLib v1.0.3 instead of newest version of CCL v1.0.4\nFixed Ops leg pouch size problem.\nNothing new. Sorry guys I've been busy moving lately."
+                "Changelog": "- Be aware that this version still using CucoreLib v1.0.3 instead of newest version of CCL v1.0.4\n- Fixed Ops leg pouch size problem.\n- Nothing new. Sorry guys I've been busy moving lately."
             },
             {
                 "Version": "2.1.7",
-                "Changelog": "Added 3 new waist packs! Designed specifically for carrying medical supplies, each with different capacities and protections.\nAdjusted max weight of the Light Armor Belt from 3.5u to 3.8u."
+                "Changelog": "- Added 3 new waist packs! Designed specifically for carrying medical supplies, each with different capacities and protections.\n- Adjusted max weight of the Light Armor Belt from 3.5u to 3.8u."
             },
             {
                 "Version": "2.2.0",
-                "Changelog": "v2.2:\nI rewrote the whole thing from ICEnecoAPI to CCL, I never thought letters and numbers could be this confusing.honestly.\n3 new items they are Rehab ice pack, Rapid chest drain and Dive rope, I've listed their general stats at the bottom of the mod page.\nADJUSTMENT：\nMaterial pouches and backpacks: capacity reduced across the board (roughly between 0.5u and 2.5u). Some wearable items have had their protection and insulation slightly lowered (around 2% to 5%).\nRemoved amputation functionality from the Mattock, Enhanced Pickaxe, and Refitted Wrench.\nItems crafted using the Schematic (Quality: Engineering) no longer have any monetary value.\nEnhanced Pickaxe and Enhanced Machete: base damage and structural damage have been reduced (by about 10–20). They now perform significantly worse when unpowered — damage drops to one‑third, and stamina cost / attack speed are also affected.\nRemoved the light from the Operation Pack. GravBag V2 lifetime reduced from 180 to 150 minutes.\nHeating Cage now has native campfire‑like behavior — including sound effects, heating, and a faint flickering light.\nThe Auto Charger now notifies the player when fully charged using an electronic watch display.\n-------------------------------------------------------------------\n我把整个模组从 ICEnecoAPI 重写到了 CCL，从来没想过字母和数字能这么让人困惑。\nv2.2\n新增物品：快速胸腔引流器、康复冰敷包、探降绳。大致属性在模组页面下列出。\n调整：\n材料袋与背包的容量全面下调（大约在 0.5u 至 2.5u 之间）。部分可穿戴装备的防护性与保温性略微降低（约 2% 至 5%）。\n移除了 宽头镐、增强镐 与 改装扳手 的截肢功能。\n通过 设计图（性质：工程化）制造的物品不再具有任何价值。\n增强镐 与 增强钛刀 的基础伤害与建筑伤害下调（约 10 至 20），且在无电量时性能大幅下降——伤害降至三分之一，体力消耗与攻速等均受影响。\n移除了 战术背包 的灯光。重力袋V2 的寿命从 180 分钟下调至 150 分钟。\n加热笼 现在具备原生营火效果，包含音效、加热功能与微微闪烁的火光。\n现在 自动充电器 充满电会以电子表的形式告知玩家。"
+                "Changelog": "- v2.2:\n- I rewrote the whole thing from ICEnecoAPI to CCL, I never thought letters and numbers could be this confusing.honestly.\n- 3 new items they are Rehab ice pack, Rapid chest drain and Dive rope, I've listed their general stats at the bottom of the mod page.\n- ADJUSTMENT：\n- Material pouches and backpacks: capacity reduced across the board (roughly between 0.5u and 2.5u). Some wearable items have had their protection and insulation slightly lowered (around 2% to 5%).\n- Removed amputation functionality from the Mattock, Enhanced Pickaxe, and Refitted Wrench.\n- Items crafted using the Schematic (Quality: Engineering) no longer have any monetary value.\n- Enhanced Pickaxe and Enhanced Machete: base damage and structural damage have been reduced (by about 10–20). They now perform significantly worse when unpowered — damage drops to one‑third, and stamina cost / attack speed are also affected.\n- Removed the light from the Operation Pack. GravBag V2 lifetime reduced from 180 to 150 minutes.\n- Heating Cage now has native campfire‑like behavior — including sound effects, heating, and a faint flickering light.\n- The Auto Charger now notifies the player when fully charged using an electronic watch display.\n-------------------------------------------------------------------\n- 我把整个模组从 ICEnecoAPI 重写到了 CCL，从来没想过字母和数字能这么让人困惑。\n- v2.2\n- 新增物品：快速胸腔引流器、康复冰敷包、探降绳。大致属性在模组页面下列出。\n- 调整：\n- 材料袋与背包的容量全面下调（大约在 0.5u 至 2.5u 之间）。部分可穿戴装备的防护性与保温性略微降低（约 2% 至 5%）。\n- 移除了 宽头镐、增强镐 与 改装扳手 的截肢功能。\n- 通过 设计图（性质：工程化）制造的物品不再具有任何价值。\n- 增强镐 与 增强钛刀 的基础伤害与建筑伤害下调（约 10 至 20），且在无电量时性能大幅下降——伤害降至三分之一，体力消耗与攻速等均受影响。\n- 移除了 战术背包 的灯光。重力袋V2 的寿命从 180 分钟下调至 150 分钟。\n- 加热笼 现在具备原生营火效果，包含音效、加热功能与微微闪烁的火光。\n- 现在 自动充电器 充满电会以电子表的形式告知玩家。"
             },
             {
                 "Version": "2.2.1",
-                "Changelog": "added Chinese localization with Grav Bagv2 and Explorer pack"
+                "Changelog": "- added Chinese localization with Grav Bagv2 and Explorer pack"
+            },
+            {
+                "Version": "2.2.2",
+                "Changelog": "- New items added: Gradual Tourniquet, Auto Resuscitation Unit —  stats are listed below the mod page.\n-Recipe adjustment: Refitted Wrench now requires tweezers with a minimum durability of 5% (down from 90%), while the flimsy knife requirement is set to 50% durability.\n-Belt container fix: Added a string to accommodate tag restrictions on all belts, preventing them from being unable to hold firearms.\n-Liquid container fix: Fixed a bug where the Ops Hydration Pouch would automatically absorb all liquids when passing through fluids.\n-Localization fix: Fixed a bug where the Explorer Pack would display in Chinese when the game was set to English.\n- Tweaks: Adjusted the crafting and repair recipes for the Refitted Wrench.\n----------------------------------------------------------------------------------------\n- 新物品：舒緩止血带，自动复苏单元——大概数据已在modpage下列出\n-Refitted Wrench合成配方中需要材料镊子最小耐久度90%的条件变为5%，但flimsy knife的耐久度需求为50%;\n-添加了一个字符串以适配所有belt的tag限制，以防止他们无法容纳枪械;\n-修复了Ops hydration pouch经过流体时候会自动吸收所有液体的bug;\n-修复了当英文界面下Explorer pack显示为中文的bug;\n-微调refitted wrench的合成配方和修理配方;"
             }
         ],
         "dllNames": [
@@ -11129,9 +11232,9 @@
             "EnhancedTools.dll": "1.0.0"
         },
         "Statistics": {
-            "Endorsements": 18,
-            "UniqueDownloads": 463,
-            "TotalDownloads": 1161,
+            "Endorsements": 19,
+            "UniqueDownloads": 487,
+            "TotalDownloads": 1258,
             "TotalViews": null
         },
         "Images": [
@@ -11168,7 +11271,7 @@
             "GunsawGenetics.dll": "12adfb0734755e5eadf0eb7b7bf649cc8cba5355e7b1dd8004607b0d8ba0480b",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 2318,
+        "downloadsSinceLatestVersion": 2344,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -11329,7 +11432,7 @@
         "dllSHA256s": {
             "VineBoom.dll": "ad933693cd2fd211bd7209eca8e172f33a00e578042f5dd0d838381f7027bd36"
         },
-        "downloadsSinceLatestVersion": 215,
+        "downloadsSinceLatestVersion": 216,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -11373,7 +11476,7 @@
             "AdditionalTraps.dll": "9930360188297944605550e6a805e2e3757278b23e1fa4c51d1290d5e9cbc488",
             "TrapLib.dll": "bafaf4cee0d3df5695fe2816f426119cd524311546130f755c84bebcb94cf50f"
         },
-        "downloadsSinceLatestVersion": 210,
+        "downloadsSinceLatestVersion": 212,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -11432,7 +11535,7 @@
         "dllSHA256s": {
             "SimpleQoL.dll": "a634210c798081f936cd84fd4cc64acb83e890cc664fdf507babf7e927ecf960"
         },
-        "downloadsSinceLatestVersion": 80,
+        "downloadsSinceLatestVersion": 82,
         "Dependencies": [
             "nexus-115"
         ],
@@ -11488,7 +11591,7 @@
         "dllSHA256s": {
             "PissEnjoyment.dll": "5435c699a40855fa80173f5c282ade2977582f77d3e04f9b2fedeb8ea8803d30"
         },
-        "downloadsSinceLatestVersion": 164,
+        "downloadsSinceLatestVersion": 165,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -11881,7 +11984,7 @@
         "dllSHA256s": {
             "GravityChanger.dll": "fa20c7a917067bea1cf391ae683bef9038ecbf907afa084688b3f05e24f5b7d5"
         },
-        "downloadsSinceLatestVersion": 99,
+        "downloadsSinceLatestVersion": 100,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -11922,7 +12025,7 @@
         "ReleaseDate": "2026-06-28T18:00:03.000Z",
         "SHA256": "cbf453747d9a96761fb58fdc25402b9cf9489c96c80a83b1014c6774a581538b",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 517,
+        "downloadsSinceLatestVersion": 518,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -11974,7 +12077,7 @@
         "dllSHA256s": {
             "VforWhiningMPAddon.dll": "443dadc0d76759dfd0aa809d5c29587dfdc26f8864e78e0743cc2c37a14764e4"
         },
-        "downloadsSinceLatestVersion": 324,
+        "downloadsSinceLatestVersion": 325,
         "Dependencies": [
             "nexus-67",
             "nexus-115",
@@ -12022,7 +12125,7 @@
             "CasualtiesThings.dll": "5bf5092b594e963223ea3cc5e69e1918cba7d5c6d550d0ca597ef59a3087713d",
             "NVorbis.dll": "924863d1a818e0c5714ae6df68f4aa5b2ff9c2fafc86214c2cde20fa819c3252"
         },
-        "downloadsSinceLatestVersion": 143,
+        "downloadsSinceLatestVersion": 144,
         "Dependencies": [
             "nexus-32"
         ],
@@ -12201,7 +12304,7 @@
         "dllSHA256s": {
             "UltimateSoundSwap.dll": "865721f181eecb3cec5a291085ed69f5a5e7e1b6e069faeb264f490cc21b62a2"
         },
-        "downloadsSinceLatestVersion": 520,
+        "downloadsSinceLatestVersion": 522,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -12497,7 +12600,7 @@
         "dllSHA256s": {
             "AutoSort.dll": "d53f5cd40fc6a463af7c3564c8bcec601ce91d763639177c2ac0fbe827a47158"
         },
-        "downloadsSinceLatestVersion": 1421,
+        "downloadsSinceLatestVersion": 1423,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -12641,7 +12744,7 @@
             "KefPluginRuntime.dll": "06091482b33aa192a19a6d6c414338175a727af3d8020daa18f794521c0a9c8a",
             "UnlockedSliders.dll": "4d494856fd181453264c59353ea86decbefc611de13cea374761ff744e90c629"
         },
-        "downloadsSinceLatestVersion": 197,
+        "downloadsSinceLatestVersion": 198,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -12826,7 +12929,7 @@
         "dllSHA256s": {
             "GammaRestoreMod.dll": "2521f0a37c2e90d4c2dd0ac246cafc3b82bf59446dbd235405c46d9638af9e72"
         },
-        "downloadsSinceLatestVersion": 348,
+        "downloadsSinceLatestVersion": 349,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -12869,7 +12972,7 @@
         "dllSHA256s": {
             "Magazine Merge.dll": "0700fbe270d09c3e862b85713e5116e4e111b70d0f22efb8fa862402e98645cc"
         },
-        "downloadsSinceLatestVersion": 39,
+        "downloadsSinceLatestVersion": 40,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -13024,7 +13127,7 @@
         "dllSHA256s": {
             "SFHealthPanel.dll": "e45033ab353268fdfffa65425001951fad54889cf13c64bc63f4a994069e6b8d"
         },
-        "downloadsSinceLatestVersion": 410,
+        "downloadsSinceLatestVersion": 411,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13084,7 +13187,7 @@
         "dllSHA256s": {
             "VforWhining.dll": "ad115c465857112756a20204f07883da3087eb4c68f2a977e18cf571b5e7183e"
         },
-        "downloadsSinceLatestVersion": 2250,
+        "downloadsSinceLatestVersion": 2251,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13219,7 +13322,7 @@
         "dllSHA256s": {
             "WearableArray.dll": "792dbc65b7aca784dc7849ea49347c9336b0e7444779abca9c4b32d5a02ce4e5"
         },
-        "downloadsSinceLatestVersion": 1086,
+        "downloadsSinceLatestVersion": 1089,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -13260,7 +13363,7 @@
         "ReleaseDate": "2026-06-08T05:28:05.000Z",
         "SHA256": "69d63b067314cf1e394babed1f3c8b611ff274f333e88d5b98b69b91fe4a11fa",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 1410,
+        "downloadsSinceLatestVersion": 1411,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -13575,7 +13678,7 @@
         "dllSHA256s": {
             "KrokMPChineseSupplement.dll": "1cce24ba649adc547da8c55fe78d22b85f8fb4f45d9d4e5f6a05c43dadaf31b7"
         },
-        "downloadsSinceLatestVersion": 611,
+        "downloadsSinceLatestVersion": 652,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -13714,7 +13817,7 @@
         "dllSHA256s": {
             "ContainerTweaks.dll": "87211a32516c35eb2bfa62efac79c793157635ed050ad368247f678b46760ec6"
         },
-        "downloadsSinceLatestVersion": 1029,
+        "downloadsSinceLatestVersion": 1031,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13770,7 +13873,7 @@
         "dllSHA256s": {
             "CasualtiesExtra.dll": "35f32d1c42ffb287e84a5c2046a5e9646f46ac731a3c2e7bd6593d28d190d8e9"
         },
-        "downloadsSinceLatestVersion": 982,
+        "downloadsSinceLatestVersion": 987,
         "Dependencies": [
             "nexus-341"
         ],
@@ -13872,7 +13975,7 @@
         "dllSHA256s": {
             "CUQuickPickup.dll": "0dbb13f9bee2c04507420f55bd6a7a03eddc8b2e8b9f51a006f6dd074b67d44b"
         },
-        "downloadsSinceLatestVersion": 519,
+        "downloadsSinceLatestVersion": 520,
         "Dependencies": [
             "nexus-115"
         ],
@@ -13926,7 +14029,7 @@
         "dllSHA256s": {
             "MoreDialogues.dll": "940ace94c1b036ebd6b4230b4a3bad95386a7888b18674854e177bd1f268f390"
         },
-        "downloadsSinceLatestVersion": 96,
+        "downloadsSinceLatestVersion": 97,
         "Dependencies": [
             "nexus-432"
         ],
@@ -13971,7 +14074,7 @@
         "dllSHA256s": {
             "No Self-Destruct on Quit.dll": "7cd4fc48749afee28e1988dddfb2af8262019e8974a4dc6b3657b80f4f6441fe"
         },
-        "downloadsSinceLatestVersion": 2095,
+        "downloadsSinceLatestVersion": 2097,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -14014,7 +14117,7 @@
         "dllSHA256s": {
             "ElectricTitaniumTools.dll": "8368c92be85f1a47d75937f8753616abc85afbd175adf00a3588dee2e18075b7"
         },
-        "downloadsSinceLatestVersion": 113,
+        "downloadsSinceLatestVersion": 114,
         "Dependencies": [
             "nexus-341"
         ],
@@ -14120,7 +14223,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "89d104890e05b7e7cb29d42de2e351b04b42180e79ac8a853cae210d716cb1b2"
         },
-        "downloadsSinceLatestVersion": 33,
+        "downloadsSinceLatestVersion": 39,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -14235,7 +14338,7 @@
         "dllSHA256s": {
             "PlayerCustomizer.dll": "302790505a795d9e58b477b5c0b2b1f58d24d68bcdc8a42515a8452dc4012189"
         },
-        "downloadsSinceLatestVersion": 1802,
+        "downloadsSinceLatestVersion": 1804,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -14291,7 +14394,7 @@
         "dllSHA256s": {
             "Weight_Metal.dll": "6f567d4376a2a51725a475a6c32fd1fd9ca442c4013ad4d7a97d66e7ce7415b7"
         },
-        "downloadsSinceLatestVersion": 87,
+        "downloadsSinceLatestVersion": 88,
         "Dependencies": [
             "nexus-32"
         ],
@@ -14388,7 +14491,7 @@
         "dllSHA256s": {
             "DogThings.dll": "0641a46590e79d464283e1c2eb9de6b6b512caa97a81dd7269c05f319286ed39"
         },
-        "downloadsSinceLatestVersion": 517,
+        "downloadsSinceLatestVersion": 518,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -14573,7 +14676,7 @@
         "dllSHA256s": {
             "DevMenuV2.dll": "48ac4310edd308faf82d1ffd177498d89864cfa6d5cace7abb623452b651f8cf"
         },
-        "downloadsSinceLatestVersion": 1091,
+        "downloadsSinceLatestVersion": 1096,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -14656,7 +14759,7 @@
         "ReleaseDate": "2026-05-29T11:41:53.000Z",
         "SHA256": "b10ae5f95744bf2ae1dc45d2efd90474e9bffb4b4d49124f618e6d3398101d5b",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 275,
+        "downloadsSinceLatestVersion": 276,
         "Dependencies": [
             "nexus-9"
         ],
@@ -14742,7 +14845,7 @@
         "dllSHA256s": {
             "CraftingFramework.dll": "57ac161f765caa0fd58ef49e97f3dd082f7eb5e50e16acd22693629e1ee2f230"
         },
-        "downloadsSinceLatestVersion": 1313,
+        "downloadsSinceLatestVersion": 1314,
         "Dependencies": [
             "nexus-115"
         ],
@@ -14993,7 +15096,7 @@
         "dllSHA256s": {
             "LastStandTheme.dll": "05cb4b84ebc86ab99123d94db2f014722f18bdf2d71e5065489cd49aa8e142ec"
         },
-        "downloadsSinceLatestVersion": 586,
+        "downloadsSinceLatestVersion": 587,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -15037,7 +15140,7 @@
             "ChangeSkinMP.dll": "b57fb344a3beb1ad084a898f716b2fe097a479beda84aadbb29054df7e9bd705",
             "CommandLine.dll": "2135b40fa819e58cf1942453e4409bfdea2be631077a354b878de8402be7e026"
         },
-        "downloadsSinceLatestVersion": 4580,
+        "downloadsSinceLatestVersion": 4587,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15294,7 +15397,7 @@
         "dllSHA256s": {
             "RandomLayer.dll": "31ded186348181eb2922fd507c338083e7cc470fdcba41316930cae3e5333027"
         },
-        "downloadsSinceLatestVersion": 345,
+        "downloadsSinceLatestVersion": 347,
         "Dependencies": [
             "nexus-115"
         ],
@@ -15344,7 +15447,7 @@
         "dllSHA256s": {
             "InfiniteBatteries.dll": "eef30dab28e25caf8ab9b6077f9a7e76b33cc2bbb471d6ec93d3b10c2d792a55"
         },
-        "downloadsSinceLatestVersion": 726,
+        "downloadsSinceLatestVersion": 727,
         "Dependencies": [
             "nexus-115"
         ],
@@ -15980,7 +16083,7 @@
         "dllSHA256s": {
             "UEI.build.dll": "c5642c531f3248234f76a2ca1cb186cde7bd23f63c99437e98ff94114ca33244"
         },
-        "downloadsSinceLatestVersion": 1066,
+        "downloadsSinceLatestVersion": 1067,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16154,7 +16257,7 @@
         "dllSHA256s": {
             "CuSaveManager.dll": "c97db5074e41f73e957cd2a56d4b33bf3403ebe93b228a3947a00825d7d06099"
         },
-        "downloadsSinceLatestVersion": 349,
+        "downloadsSinceLatestVersion": 350,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16254,7 +16357,7 @@
         "ReleaseDate": "2026-06-16T19:20:20.000Z",
         "SHA256": "a7be4a588783e7dd3cc019b304a503c11c6e117352fa68180333297c31e6f8ff",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 565,
+        "downloadsSinceLatestVersion": 566,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16388,7 +16491,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownAdditionalDescriptions.dll": "e112dbe3fdd14c446f39c824f884096e2d749758f6f4f7851d97fe424a7d8cc9"
         },
-        "downloadsSinceLatestVersion": 1876,
+        "downloadsSinceLatestVersion": 1878,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -16431,7 +16534,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownAlwaysLastStand.dll": "623daebd6e8db318ca25cfff85aafd29991a97a808caad74a90425022270916f"
         },
-        "downloadsSinceLatestVersion": 513,
+        "downloadsSinceLatestVersion": 514,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -16474,7 +16577,7 @@
         "dllSHA256s": {
             "ShrapnelVariants.dll": "be7895efb36f5b33e6473ffdf821f768e818c0881064fe30f092fa2e4975e4fb"
         },
-        "downloadsSinceLatestVersion": 4541,
+        "downloadsSinceLatestVersion": 4548,
         "Dependencies": [
             "nexus-115"
         ],
@@ -16524,7 +16627,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6dcbd87171f4a802d8f748a97bb5418b3976ac21b77d7f520e2c4aac97daa049"
         },
-        "downloadsSinceLatestVersion": 13744,
+        "downloadsSinceLatestVersion": 13772,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16580,7 +16683,7 @@
         "dllSHA256s": {
             "SellFromBags.dll": "69293fda8c68ebce9951ae1d276a48f7b8e6a09b73fc8a7e746ab32dda93e146"
         },
-        "downloadsSinceLatestVersion": 3045,
+        "downloadsSinceLatestVersion": 3046,
         "Dependencies": [
             "nexus-115"
         ],
@@ -16634,7 +16737,7 @@
         "dllSHA256s": {
             "ItemSpawner.build.dll": "40d05db299cbbc2f09aee3371b482514383588148997d06742e919848476c09b"
         },
-        "downloadsSinceLatestVersion": 1852,
+        "downloadsSinceLatestVersion": 1854,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -16677,7 +16780,7 @@
         "dllSHA256s": {
             "cu.kinatera.gravbagbeeper.dll": "b0572492e97e399dc9c28c16a9c94f9222b8eefc53482249bb49eedbea82da0d"
         },
-        "downloadsSinceLatestVersion": 712,
+        "downloadsSinceLatestVersion": 713,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16729,7 +16832,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "89d104890e05b7e7cb29d42de2e351b04b42180e79ac8a853cae210d716cb1b2"
         },
-        "downloadsSinceLatestVersion": 14,
+        "downloadsSinceLatestVersion": 18,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -16857,7 +16960,7 @@
         "dllSHA256s": {
             "CatPatch.dll": "ed1920f44e76fa4b142a97cf18dff54796d4235349200b8d710f3fc3af280308"
         },
-        "downloadsSinceLatestVersion": 4172,
+        "downloadsSinceLatestVersion": 4193,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16980,7 +17083,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1779204775-632331574.png"
         ],
-        "downloadsSinceLatestVersion": 51394,
+        "downloadsSinceLatestVersion": 51505,
         "ContainsAdultContent": false
     },
     {
@@ -17006,7 +17109,7 @@
         "dllSHA256s": {
             "Razor.dll": "ae80b32a512b1e92c7f8c1267246c90d588a7d8879f212704b195bdf3311b379"
         },
-        "downloadsSinceLatestVersion": 251,
+        "downloadsSinceLatestVersion": 252,
         "Dependencies": [
             "nexus-32",
             "nexus-341"
@@ -17093,7 +17196,7 @@
         "ReleaseDate": "2026-07-07T05:42:33.000Z",
         "SHA256": "4b0951c30e9b9d77d21e3108ec9911c2634a20f24f38f7b8056c0fec08afebed",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 623,
+        "downloadsSinceLatestVersion": 624,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -17201,7 +17304,7 @@
         "dllSHA256s": {
             "Animalese.dll": "e1a766d35d2f60bb0b6865bf7d1171d70702351da09cdc273ca5f69c4471fad1"
         },
-        "downloadsSinceLatestVersion": 846,
+        "downloadsSinceLatestVersion": 853,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -17295,7 +17398,7 @@
         "dllSHA256s": {
             "New_Gun_Loader.dll": "db221d6b346cf55d22e783a2e7869db066ccdf2dc36e375cbb4428e10c8ce949"
         },
-        "downloadsSinceLatestVersion": 718,
+        "downloadsSinceLatestVersion": 719,
         "Dependencies": [
             "nexus-32"
         ],
@@ -17349,7 +17452,7 @@
         "dllSHA256s": {
             "body_sprite_replacer.dll": "198ecd109d8b0d28cfd289d52aa0afe81c0234089dc0c317c934a7735396d507"
         },
-        "downloadsSinceLatestVersion": 1060,
+        "downloadsSinceLatestVersion": 1061,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -17397,7 +17500,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownRussifier.dll": "a5557014b2cdd9c27911859f80ef38171094ee3fae8a15ccc85422be7e775f1c"
         },
-        "downloadsSinceLatestVersion": 2252,
+        "downloadsSinceLatestVersion": 2256,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -17613,7 +17716,7 @@
         "dllSHA256s": {
             "RemiyamuremodLayerUnlock.dll": "dd66574025d93f6344f42f7b01ca54c45a2937e9cc11d00859dfa8940b77f51c"
         },
-        "downloadsSinceLatestVersion": 1852,
+        "downloadsSinceLatestVersion": 1879,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -17682,7 +17785,7 @@
         "dllSHA256s": {
             "HeadTurret.dll": "dfc8aa40038b5453e8b73623c8ff33bdc9a2d5c00d9f55617c03aa21376751ad"
         },
-        "downloadsSinceLatestVersion": 517,
+        "downloadsSinceLatestVersion": 518,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -17765,7 +17868,7 @@
         "ReleaseDate": "2026-06-29T06:31:10.000Z",
         "SHA256": "d5eaebfa7ab12803ef814ffabaf76e5288add3996ff893658302202b37ce2df1",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 224,
+        "downloadsSinceLatestVersion": 226,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -17806,7 +17909,7 @@
         "dllSHA256s": {
             "VoySoundSwap.dll": "87350304e88337444eb16fdab262addf9f3712f515ef84954960acd6db32f93a"
         },
-        "downloadsSinceLatestVersion": 1140,
+        "downloadsSinceLatestVersion": 1141,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -17917,7 +18020,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "15f047a0ed401af24d49193439e29bbab2f1a37c64a5a6e22f1cadfa65b17ccd"
         },
-        "downloadsSinceLatestVersion": 2265,
+        "downloadsSinceLatestVersion": 2278,
         "Dependencies": [
             "nexus-341"
         ],
@@ -18196,7 +18299,7 @@
         "dllSHA256s": {
             "ReGrowthSerums.dll": "af97bbd0388171313fbb991e0b4b5c7f0a3e375035e8be8a3a5cf9e73e09b9a0"
         },
-        "downloadsSinceLatestVersion": 386,
+        "downloadsSinceLatestVersion": 389,
         "Dependencies": [
             "nexus-32"
         ],
@@ -18433,7 +18536,7 @@
         "dllSHA256s": {
             "ThighHighs.dll": "24d9c929c786575ae3ffffa4767064b33c92dd1d6e8c72d5c7b6e6945ece5ec8"
         },
-        "downloadsSinceLatestVersion": 193,
+        "downloadsSinceLatestVersion": 195,
         "Dependencies": [
             "nexus-32",
             "nexus-341"
@@ -18479,7 +18582,7 @@
         "dllSHA256s": {
             "RshLib.dll": "fb168f3609cb652b4858608947d1f347f44a433b8d4baa65afd297f373f41ddf"
         },
-        "downloadsSinceLatestVersion": 4486,
+        "downloadsSinceLatestVersion": 4489,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -18560,7 +18663,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/31/31-1777215394-1750634006.png"
         ],
-        "downloadsSinceLatestVersion": 3753,
+        "downloadsSinceLatestVersion": 3758,
         "ContainsAdultContent": false
     },
     {
@@ -18920,7 +19023,7 @@
         "dllSHA256s": {
             "Brainrot.dll": "919b7e5ebf870dbf1badf74109f42aba41ba6388af62a1b4c3f330079a18a9cf"
         },
-        "downloadsSinceLatestVersion": 472,
+        "downloadsSinceLatestVersion": 475,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -19006,7 +19109,7 @@
         "dllSHA256s": {
             "TimeLimitUnknown.dll": "3690382f08425e52d91cde76beaa7c72970a324fdde91ecb51e3ac3d6fbe6787"
         },
-        "downloadsSinceLatestVersion": 348,
+        "downloadsSinceLatestVersion": 349,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -19054,7 +19157,7 @@
         "dllSHA256s": {
             "MJackson.dll": "55e516631d88ad6b59c4007bb7f6f46bcc2c7e404c0f0351f529fab66c3bb166"
         },
-        "downloadsSinceLatestVersion": 97,
+        "downloadsSinceLatestVersion": 98,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -19315,7 +19418,7 @@
         "dllSHA256s": {
             "body_sprite_replacer.dll": "dc92eec8e3fcaa62396616050d4bd2315b7648a15ee92a2354885908454c8fb0"
         },
-        "downloadsSinceLatestVersion": 4711,
+        "downloadsSinceLatestVersion": 4715,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -19547,7 +19650,7 @@
         "dllSHA256s": {
             "Custom Structures.dll": "64ba2b7bb8d4c6162721396e0867d1eba30ac682fec8bbe7d087a479bf9a3a4e"
         },
-        "downloadsSinceLatestVersion": 2033,
+        "downloadsSinceLatestVersion": 2038,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -19647,7 +19750,7 @@
         "dllSHA256s": {
             "QoL Unknown.dll": "61415f75fe7843b88da6f86e8758597929ca2d2d72e4bc575923ebfb409f34bc"
         },
-        "downloadsSinceLatestVersion": 7535,
+        "downloadsSinceLatestVersion": 7551,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -19814,7 +19917,7 @@
         "dllSHA256s": {
             "Prolo_Texturse.dll": "d43303df4c1551399c4ab5d698ef63f83a6079ef5bbb433b5d66f77a873cf665"
         },
-        "downloadsSinceLatestVersion": 41,
+        "downloadsSinceLatestVersion": 42,
         "Dependencies": [
             "nexus-115"
         ],
@@ -19903,7 +20006,7 @@
         "dllSHA256s": {
             "CU_ItemSpawner_Mod.dll": "67d21848c6e6a398538a51d465f30901d5b0bc9a16b606a4037e4d60b29c14c3"
         },
-        "downloadsSinceLatestVersion": 2453,
+        "downloadsSinceLatestVersion": 2454,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [

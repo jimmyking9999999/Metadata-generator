@@ -55,11 +55,12 @@ jobs:
           MONO_CECIL_DLL_PATH: ${{ env.MONO_CECIL_DLL_PATH }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_WEBHOOK_URL_RELEASES: ${{ secrets.DISCORD_WEBHOOK_URL_RELEASES }}
+          DISCORD_WEBHOOK_URL_NSFW: ${{ secrets.DISCORD_WEBHOOK_URL_NSFW }}
         run: npm run update:nexusmods:quick
 
       - name: Commit and push changes
         run: |
-          $changes = git status --porcelain -- nexusmods.json badges
+          $changes = git status --porcelain -- nexusmods.json nexusmods-versions.json badges
           if (-not $changes) {
             Write-Host "No Nexus metadata or badge changes detected."
             exit 0
@@ -67,6 +68,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add nexusmods.json badges
+          git add nexusmods.json nexusmods-versions.json badges
           git commit -m "Update Nexus metadata"
           git push

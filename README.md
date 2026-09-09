@@ -22,6 +22,8 @@ The data is stored in [nexusmods.json](https://github.com/jimmyking9999999/Metad
 
 For an example of how this may be used, see [https://discord.gg/ehCptz9pwU](https://discord.gg/ehCptz9pwU) for an Discord announcement channel with new mod listings and mod updates, or see external projects such as [Casualties Hub](https://github.com/Casualties-Hub/Casualties-Hub-Public-Releases) and [UCU Mod Manager](https://www.nexusmods.com/scavprototype/mods/405).
 
+Each sync also writes `nexusmods-versions.json`, a plain GUID-to-version object such as `{ "author.mod": "1.2.3" }`. This comes from each DLL's `BepInPlugin` attribute, and is used for [CUCoreLib](https://github.com/jimmyking9999999/CUCoreLib)'s version check function.
+
 ---
 ### Badges
 Also automated to update hourly-ish, `badges/` is a complete Shields endpoint response with the Nexus Mods icon

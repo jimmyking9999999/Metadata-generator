@@ -16,6 +16,7 @@ const __dirname = path.dirname(__filename);
 const SCRIPT_ROOT = path.resolve(__dirname, "..");
 const REPO_ROOT = await resolveRepoRoot();
 const NEXUSMODS_PATH = path.join(REPO_ROOT, "nexusmods.json");
+const NEXUS_VERSIONS_PATH = path.join(REPO_ROOT, "nexusmods-versions.json");
 const BADGES_PATH = path.join(REPO_ROOT, "badges");
 const PACKAGE_PATH = path.join(REPO_ROOT, "package.json");
 const TEMP_ROOT = path.join(os.tmpdir(), "metadata-nexusmods");
@@ -47,6 +48,7 @@ const OWNED_FIELDS = new Set([
   "Name",
   "Version",
   "bepinexVersion",
+  "bepinexPlugins",
   "Summary",
   "Description",
   "Author",
@@ -218,19 +220,35 @@ async function main() {
   ];
   const nextJson = `${JSON.stringify(nextEntries, null, 4)}\n`;
   const catalogChanged = await writeFileIfChanged(NEXUSMODS_PATH, nextJson);
+  const versionsChanged = await writeFileIfChanged(NEXUS_VERSIONS_PATH, `${JSON.stringify(buildNexusVersions(nextEntries), null, 2)}\n`);
   const badgeChanges = await writeNexusBadges(nextEntries);
 
-  if (!catalogChanged && badgeChanges === 0) {
-    logInfo("nexusmods.json and badges are already up to date.");
+  if (!catalogChanged && !versionsChanged && badgeChanges === 0) {
+    logInfo("nexusmods.json, nexusmods-versions.json and badges are already up to date.");
     return;
   }
 
   if (catalogChanged) {
     logSuccess("Updated nexusmods.json");
   }
+  if (versionsChanged) {
+    logSuccess("Updated nexusmods-versions.json");
+  }
   if (badgeChanges > 0) {
     logSuccess(`Updated ${badgeChanges} badge file${badgeChanges === 1 ? "" : "s"}.`);
   }
+}
+
+function buildNexusVersions(entries) {
+  const versions = new Map();
+  for (const entry of entries) {
+    for (const [guid, version] of Object.entries(entry.bepinexPlugins ?? {})) {
+      if (guid.trim() && typeof version === "string" && version.trim()) {
+        versions.set(guid, highestVersion([versions.get(guid), version]));
+      }
+    }
+  }
+  return Object.fromEntries([...versions].sort(([left], [right]) => left.localeCompare(right)));
 }
 
 async function exportNexusBadges() {
@@ -388,7 +406,7 @@ async function runQuickSync({ apiKey, appVersion, gameDomains, entryByKey }) {
         const isNewRelease = existingEntry === undefined;
         const hasNexusVersionChange = !isNewRelease && !areEqual(existingEntry?.Version, nextVersion);
 
-        if (!isNewRelease && !hasNexusVersionChange) {
+        if (!isNewRelease && !hasNexusVersionChange && existingEntry.bepinexPlugins !== undefined) {
           await refreshLatestFileDownloads({
             apiKey,
             appVersion,
@@ -713,12 +731,16 @@ async function processArchive({ apiKey, appVersion, gameDomain, modId, fileInfo 
     }
 
     const dllVersions = {};
+    const bepinexPlugins = new Map();
     const dllSHA256s = {};
     for (const dllFile of dllFiles) {
       const dllName = path.basename(dllFile);
       dllSHA256s[dllName] = await calculateFileSha256(dllFile);
 
       const parsed = await readDllMetadata(dllFile);
+      for (const { guid, version } of parsed.plugins) {
+        bepinexPlugins.set(guid, highestVersion([bepinexPlugins.get(guid), version]));
+      }
       if (parsed.bepinexVersion) {
         dllVersions[dllName] = parsed.bepinexVersion;
       } else {
@@ -744,6 +766,7 @@ async function processArchive({ apiKey, appVersion, gameDomain, modId, fileInfo 
       dllVersions,
       dllVersion: highestVersion(Object.values(dllVersions)),
       bepinexVersion: highestVersion(Object.values(dllVersions)),
+      bepinexPlugins: Object.fromEntries(bepinexPlugins),
       mirrorLinks,
       sha256,
       archiveSizeBytes,
@@ -943,22 +966,24 @@ async function readDllMetadata(dllPath) {
   const script = [
     `$path = '${escapedPath}'`,
     `$monoCecilPath = '${escapedMonoCecilPath}'`,
-    "$json = @{ bepinexVersion = $null }",
+    "$json = @{ bepinexVersion = $null; plugins = @() }",
     "try {",
     "  Add-Type -Path $monoCecilPath",
     "  $module = [Mono.Cecil.ModuleDefinition]::ReadModule($path)",
     "  try {",
-    "    foreach ($type in $module.Types) {",
+    "    foreach ($type in $module.GetTypes()) {",
     "      foreach ($attr in $type.CustomAttributes) {",
     "        if ($attr.AttributeType.FullName -eq 'BepInEx.BepInPlugin' -and $attr.ConstructorArguments.Count -ge 3) {",
     "          $value = [string]$attr.ConstructorArguments[2].Value",
     "          if (-not [string]::IsNullOrWhiteSpace($value)) {",
-    "            $json.bepinexVersion = $value",
-    "            break",
+    "            if (-not $json.bepinexVersion) { $json.bepinexVersion = $value }",
+    "            $guid = [string]$attr.ConstructorArguments[0].Value",
+    "            if (-not [string]::IsNullOrWhiteSpace($guid)) {",
+    "              $json.plugins += @{ guid = $guid; version = $value }",
+    "            }",
     "          }",
     "        }",
     "      }",
-    "      if ($json.bepinexVersion) { break }",
     "    }",
     "  } finally {",
     "    $module.Dispose()",
@@ -978,6 +1003,9 @@ async function readDllMetadata(dllPath) {
   const payload = JSON.parse(result.trim() || "{}");
   return {
     bepinexVersion: payload.bepinexVersion || null,
+    plugins: Array.isArray(payload.plugins)
+      ? payload.plugins
+      : payload.plugins ? [payload.plugins] : [],
   };
 }
 
@@ -1077,6 +1105,7 @@ function mergeEntry({
     Name: modInfo.name ?? existingEntry?.Name ?? `Mod ${modInfo.mod_id}`,
     Version: modInfo.version ?? existingEntry?.Version ?? "",
     bepinexVersion: nextBepinexVersion ?? null,
+    bepinexPlugins: archiveContext?.bepinexPlugins ?? existingEntry?.bepinexPlugins ?? {},
     Summary: modInfo.summary ?? existingEntry?.Summary ?? "",
     Description: modInfo.description ?? existingEntry?.Description ?? "",
     Author: modInfo.author ?? existingEntry?.Author ?? "",
@@ -1333,7 +1362,9 @@ function createDiscordEmbed({ type, previousEntry, currentEntry, archiveSizeByte
 }
 
 async function sendDiscordNotification(notification) {
-  const webhookUrl = notification.kind === "created"
+  const webhookUrl = notification.embed?.title && notification.content === ADULT_MOD_MESSAGE
+    ? process.env.DISCORD_WEBHOOK_URL_NSFW
+    : notification.kind === "created"
     ? process.env.DISCORD_WEBHOOK_URL_RELEASES
     : process.env.DISCORD_WEBHOOK_URL;
 
@@ -1632,6 +1663,16 @@ function extractDependencyIds(response) {
 }
 
 function runSelfTest() {
+  const versions = buildNexusVersions([
+    { bepinexPlugins: { "test.mod": "1.9.0", "test.other": "2.0.0" }, Version: "99.0", dllVersion: "88.0" },
+    { bepinexPlugins: { "test.mod": "1.10.0", "": "1.0", "test.empty": "", "test.null": null } },
+    { bepinexPlugins: { "test.mod": "1.2.0" } },
+    { Id: "nexus-1", bepinexVersion: "77.0", dllVersions: { "library.dll": "66.0" } },
+  ]);
+  if (!areEqual(versions, { "test.mod": "1.10.0", "test.other": "2.0.0" })) {
+    throw new Error("Nexus plugin versions self-test failed.");
+  }
+  logSuccess("Nexus plugin versions self-test passed.");
   const createdNotification = buildNotification(undefined, {
     Name: "Test Mod",
     NexusModId: 1,

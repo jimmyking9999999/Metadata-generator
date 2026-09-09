@@ -1,0 +1,58 @@
+name: Deploy Metadata to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build Pages site
+        shell: bash
+        run: |
+          mkdir -p _site/badges
+          cp nexusmods-versions.json nexusmods.json WMITF-metadata.json scavgame-locale-id-names-demo.json scavgame-locale-id-names.json _site/
+          cp badges/*.json _site/badges/
+          cat > _site/index.html <<'EOF'
+          <!doctype html>
+          <meta charset="utf-8">
+          <title>Metadata</title>
+          <h1>Metadata</h1>
+          <ul>
+            <li><a href="nexusmods-versions.json">nexusmods-versions.json</a></li>
+            <li><a href="nexusmods.json">nexusmods.json</a></li>
+            <li><a href="WMITF-metadata.json">WMITF-metadata.json</a></li>
+            <li><a href="scavgame-locale-id-names-demo.json">scavgame-locale-id-names-demo.json</a></li>
+            <li><a href="scavgame-locale-id-names.json">scavgame-locale-id-names.json</a></li>
+            <li><a href="badges/">badges/</a></li>
+          </ul>
+          EOF
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

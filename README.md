@@ -24,6 +24,8 @@ For an example of how this may be used, see [https://discord.gg/ehCptz9pwU](http
 
 Each sync also writes `nexusmods-versions.json`, a plain GUID-to-version object such as `{ "author.mod": "1.2.3" }`. This comes from each DLL's `BepInPlugin` attribute, and is used for [CUCoreLib](https://github.com/jimmyking9999999/CUCoreLib)'s version check function.
 
+The metadata is also deployed to [GitHub Pages](https://jimmyking9999999.github.io/Metadata-generator/) as raw JSON files, including the `badges/` directory, if you expect many concurrent users
+
 ---
 ### Badges
 Also automated to update hourly-ish, `badges/` is a complete Shields endpoint response with the Nexus Mods icon

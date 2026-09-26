@@ -39,7 +39,9 @@ Also automated to update hourly-ish, `badges/` is a complete Shields endpoint re
 ```md
 [url=https://www.nexusmods.com/scavprototype/mods/341][img]https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjimmyking9999999%2FMetadata-generator%2Fmain%2Fbadges%2Fcucorelib.json[/img][/url]
 ```
-To use, simply change the `cucorelib.json` text above to your mod's name of choice, then remove or adjust the hyperlink to your mod's own ID or link.
+To use, simply change the `cucorelib.json` text above to your mod's name of choice, then remove or adjust the hyperlink to your mod's own ID or link. 
+
+(Or, visit [https://jimmyking9999999.github.io/Metadata-generator/](https://jimmyking9999999.github.io/Metadata-generator/) for a tool that automatically does that)
 
 Note: Badge files use the normalized Nexus mod name: lowercase, with words separated by hyphens. For example, CUCoreLib is `badges/cucorelib.json`:
 

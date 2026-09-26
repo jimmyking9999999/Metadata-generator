@@ -26,6 +26,13 @@ const GRAPHQL_API_URL = "https://api.nexusmods.com/v2/graphql";
 const V3_API_BASE_URL = "https://api.nexusmods.com/v3";
 const APP_NAME = "Metadata Nexus Sync";
 const REQUEST_TIMEOUT_MS = 60_000;
+const REQUEST_MAX_ATTEMPTS = 4;
+const REQUEST_RETRY_MAX_DELAY_MS = 30_000;
+const QUICK_SCAN_CONCURRENCY = 6;
+const DOWNLOAD_COUNT_CONCURRENCY = 4;
+// Nexus returns at most 20 modFilesByUid nodes per query, however many uids are sent.
+// Guuh.
+const DOWNLOAD_COUNT_UIDS_PER_QUERY = 20;
 const MAX_FULL_REFRESH_ARCHIVE_SIZE_BYTES = 50 * 1024 * 1024;
 const FULL_RECENT_PERIODS = ["1d", "1w", "1m"];
 const QUICK_DISCOVERY_ROUTES = [
@@ -253,9 +260,6 @@ function buildNexusVersions(entries) {
 
 async function exportNexusBadges() {
   const entries = JSON.parse(await readFile(NEXUSMODS_PATH, "utf8"));
-  if (!Array.isArray(entries)) {
-    throw new Error("nexusmods.json must contain a top-level array.");
-  }
 
   const badgeChanges = await writeNexusBadges(entries);
   if (badgeChanges > 0) {
@@ -395,52 +399,131 @@ async function runQuickSync({ apiKey, appVersion, gameDomains, entryByKey }) {
     logInfo(`Recent candidate mods: ${candidateMods.length}`);
     logInfo(`Quick scan set: ${candidateModIds.size}`);
 
-    for (const modId of [...candidateModIds].sort((a, b) => b - a)) {
-      const entryKey = getEntryKey(gameDomain, modId);
-      const existingEntry = entryByKey.get(entryKey);
+    const scans = await mapWithConcurrency(
+      [...candidateModIds].sort((a, b) => b - a),
+      QUICK_SCAN_CONCURRENCY,
+      (modId) => scanQuickMod({ apiKey, appVersion, gameDomain, modId, entryByKey }),
+    );
 
-      try {
-        logStep(`Checking mod ${modId}`);
-        const modInfo = await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}`, apiKey, appVersion);
-        const nextVersion = modInfo.version ?? existingEntry?.Version ?? "";
-        const isNewRelease = existingEntry === undefined;
-        const hasNexusVersionChange = !isNewRelease && !areEqual(existingEntry?.Version, nextVersion);
+    const downloadCounts = await getFileDownloadCounts({
+      apiKey,
+      appVersion,
+      fileInfos: scans.map((scan) => scan.selectedFile).filter(Boolean),
+    });
 
-        if (!isNewRelease && !hasNexusVersionChange && existingEntry.bepinexPlugins !== undefined) {
-          await refreshLatestFileDownloads({
-            apiKey,
-            appVersion,
-            gameDomain,
-            modId,
-            modInfo,
-            existingEntry,
-            entryByKey,
-          });
-          continue;
+    for (const scan of scans) {
+      const { modId } = scan;
+      const existingEntry = entryByKey.get(getEntryKey(gameDomain, modId));
+
+      if (scan.action === "noFile") {
+        logWarn("FILE_STATS", `No downloadable file found for mod ${modId}!`);
+        continue;
+      }
+
+      if (scan.action === "unavailable" || scan.action === "failed") {
+        reportQuickFailure(modId, existingEntry, scan.error);
+        continue;
+      }
+
+      const uid = scan.selectedFile?.uid;
+      const hasUid = uid !== undefined && uid !== null;
+
+      if (scan.action === "latest" && !scan.latestFileChanged) {
+        if (!hasUid) {
+          logWarn("FILE_STATS", `File ${scan.selectedFile.file_id} has no UID!?`);
         }
 
+        applyLatestFileScan({
+          gameDomain,
+          modId,
+          modInfo: scan.modInfo,
+          existingEntry,
+          entryByKey,
+          downloadsSinceLatestVersion: hasUid ? downloadCounts.get(String(uid)) ?? null : null,
+        });
+        continue;
+      }
+
+      
+      const prefetchedDownloadCount = hasUid ? downloadCounts.get(String(uid)) : undefined;
+
+      if (scan.latestFileChanged) {
+        logInfo(`Latest file changed for mod ${modId}, refreshing archive metadata.`);
+      }
+
+      try {
         await refreshModAndNotify({
           apiKey,
           appVersion,
           gameDomain,
           modId,
-          modInfo,
+          modInfo: scan.modInfo,
+          modFiles: scan.modFiles,
           existingEntry,
           entryByKey,
+          prefetchedDownloadCount,
         });
       } catch (error) {
-        if (isUnavailableModError(error)) {
-          logWarn("UNAVAILABLE", `Skipping unavailable recent mod ${modId}.`);
-          continue;
-        }
-
-        if (existingEntry) {
-          logWarn("MOD_FAIL", `Quick check failed for mod ${modId}; keeping existing entry. ${error.message}`);
-        } else {
-          logWarn("MOD_FAIL", `Quick check failed for new mod ${modId}; skipping entry. ${error.message}`);
-        }
+        reportQuickFailure(modId, existingEntry, error);
       }
     }
+  }
+}
+
+function reportQuickFailure(modId, existingEntry, error) {
+  if (isUnavailableModError(error)) {
+    logWarn("UNAVAILABLE", `Skipping unavailable recent mod ${modId}.`);
+    return;
+  }
+
+  if (existingEntry) {
+    logWarn("MOD_FAIL", `Quick check failed for mod ${modId}, keeping existing entry. ${error.message}`);
+    return;
+  }
+
+  logWarn("MOD_FAIL", `Quick check failed for new mod ${modId}, skipping entry. ${error.message}`);
+}
+
+async function scanQuickMod({ apiKey, appVersion, gameDomain, modId, entryByKey }) {
+  try {
+    logStep(`Checking mod ${modId}`);
+    const existingEntry = entryByKey.get(getEntryKey(gameDomain, modId));
+    const modInfo = await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}`, apiKey, appVersion);
+    const nextVersion = modInfo.version ?? existingEntry?.Version ?? "";
+    const isNewRelease = existingEntry === undefined;
+    const hasNexusVersionChange = !isNewRelease && !areEqual(existingEntry?.Version, nextVersion);
+
+    if (isNewRelease || hasNexusVersionChange || existingEntry.bepinexPlugins === undefined) {
+      return { action: "refresh", modId, modInfo };
+    }
+
+    const modFiles = await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}/files`, apiKey, appVersion);
+    const selectedFile = selectBestFile(modFiles);
+    if (!selectedFile) {
+      return { action: "noFile", modId };
+    }
+
+    const selectedDownloadUrl = buildDownloadUrl(
+      gameDomain,
+      modId,
+      selectedFile.file_id,
+      existingEntry?.DownloadUrl,
+    );
+
+    return {
+      action: "latest",
+      modId,
+      modInfo,
+      modFiles,
+      selectedFile,
+      latestFileChanged: !areEqual(existingEntry?.DownloadUrl, selectedDownloadUrl),
+    };
+  } catch (error) {
+    return {
+      action: isUnavailableModError(error) ? "unavailable" : "failed",
+      modId,
+      error,
+    };
   }
 }
 
@@ -469,7 +552,7 @@ async function runFullSync({ apiKey, appVersion, gameDomains, entryByKey, skipLa
       } catch (error) {
         if (isUnavailableModError(error)) {
           if (existingEntry) {
-            logWarn("UNAVAILABLE", `Mod ${modId} is no longer available; keeping existing entry.`);
+            logWarn("UNAVAILABLE", `Mod ${modId} is no longer available, keeping existing entry.`);
           } else {
             logWarn("UNAVAILABLE", `Skipping unavailable mod ${modId}.`);
           }
@@ -477,9 +560,9 @@ async function runFullSync({ apiKey, appVersion, gameDomains, entryByKey, skipLa
         }
 
         if (existingEntry) {
-          logWarn("MOD_FAIL", `Failed to refresh mod ${modId}; keeping existing entry. ${error.message}`);
+          logWarn("MOD_FAIL", `Failed to refresh mod ${modId}, keeping existing entry. ${error.message}`);
         } else {
-          logWarn("MOD_FAIL", `Failed to refresh mod ${modId}; skipping new entry. ${error.message}`);
+          logWarn("MOD_FAIL", `Failed to refresh mod ${modId}, skipping new entry. ${error.message}`);
         }
       }
     }
@@ -501,6 +584,7 @@ async function refreshModAndNotify({
   modFiles,
   existingEntry,
   entryByKey,
+  prefetchedDownloadCount = undefined,
   skipLargeArchives = false,
 }) {
   logStep(`Refreshing mod ${modId}`);
@@ -511,20 +595,25 @@ async function refreshModAndNotify({
     throw new Error(`No downloadable file found for mod ${modId}.`);
   }
 
-  if (skipLargeArchives) {
-    const archiveSizeBytes = getFileSizeBytes(selectedFile);
-    if (archiveSizeBytes > MAX_FULL_REFRESH_ARCHIVE_SIZE_BYTES) {
-      logInfo(`Skipping mod ${modId}: archive is ${(archiveSizeBytes / 1024 / 1024).toFixed(1)} MiB, over the 50 MiB full-refresh limit.`);
-      return;
-    }
+  logSubstep(`Selected file ${selectedFile.file_id}: ${selectedFile.file_name}`);
+
+  const archiveSizeBytes = getFileSizeBytes(selectedFile);
+  const reuseLargeArchive = skipLargeArchives
+    && archiveSizeBytes > MAX_FULL_REFRESH_ARCHIVE_SIZE_BYTES
+    && hasProcessedArchiveFile(existingEntry, buildDownloadUrl(
+      resolvedModInfo.domain_name,
+      modId,
+      selectedFile.file_id,
+      existingEntry?.DownloadUrl,
+    ));
+
+  if (reuseLargeArchive) {
+    logInfo(`Reusing archive results for mod ${modId}: ${(archiveSizeBytes / 1024 / 1024).toFixed(1)} MiB file ${selectedFile.file_id} is already hashed.`);
   }
 
-  logSubstep(`Selected file ${selectedFile.file_id}: ${selectedFile.file_name}`);
-  const downloadsSinceLatestVersion = await getFileDownloadCount({
-    apiKey,
-    appVersion,
-    fileInfo: selectedFile,
-  });
+  const downloadsSinceLatestVersion = prefetchedDownloadCount === undefined
+    ? await getFileDownloadCount({ apiKey, appVersion, fileInfo: selectedFile })
+    : prefetchedDownloadCount;
   const dependencies = await getFileDependencies({
     apiKey,
     appVersion,
@@ -532,13 +621,15 @@ async function refreshModAndNotify({
     fileInfo: selectedFile,
   });
   const changelogs = await getModChangelogs({ apiKey, appVersion, gameDomain, modId });
-  const archiveContext = await processArchive({
-    apiKey,
-    appVersion,
-    gameDomain,
-    modId,
-    fileInfo: selectedFile,
-  });
+  const archiveContext = reuseLargeArchive
+    ? null
+    : await processArchive({
+      apiKey,
+      appVersion,
+      gameDomain,
+      modId,
+      fileInfo: selectedFile,
+    });
 
   const mergedEntry = mergeEntry({
     existingEntry,
@@ -559,48 +650,18 @@ async function refreshModAndNotify({
   }
 }
 
-async function refreshLatestFileDownloads({
-  apiKey,
-  appVersion,
+function hasProcessedArchiveFile(existingEntry, downloadUrl) {
+  return Boolean(existingEntry?.SHA256) && areEqual(existingEntry?.DownloadUrl, downloadUrl);
+}
+
+function applyLatestFileScan({
   gameDomain,
   modId,
   modInfo,
   existingEntry,
   entryByKey,
+  downloadsSinceLatestVersion,
 }) {
-  const modFiles = await nexusRest(`/games/${encodeURIComponent(gameDomain)}/mods/${modId}/files`, apiKey, appVersion);
-  const selectedFile = selectBestFile(modFiles);
-  if (!selectedFile) {
-    logWarn("FILE_STATS", `No downloadable file found for mod ${modId}; keeping existing download count.`);
-    return;
-  }
-
-  const selectedDownloadUrl = buildDownloadUrl(
-    gameDomain,
-    modId,
-    selectedFile.file_id,
-    existingEntry?.DownloadUrl,
-  );
-  if (!areEqual(existingEntry?.DownloadUrl, selectedDownloadUrl)) {
-    logInfo(`Latest file changed for mod ${modId}; refreshing archive metadata.`);
-    await refreshModAndNotify({
-      apiKey,
-      appVersion,
-      gameDomain,
-      modId,
-      modInfo,
-      modFiles,
-      existingEntry,
-      entryByKey,
-    });
-    return;
-  }
-
-  const downloadsSinceLatestVersion = await getFileDownloadCount({
-    apiKey,
-    appVersion,
-    fileInfo: selectedFile,
-  });
   const containsAdultContent = modInfo.contains_adult_content ?? existingEntry?.ContainsAdultContent ?? false;
   const downloadsChanged = downloadsSinceLatestVersion !== null
     && !areEqual(existingEntry?.downloadsSinceLatestVersion, downloadsSinceLatestVersion);
@@ -791,7 +852,8 @@ async function downloadArchive({ appVersion, downloadLinks, fileInfo, destinatio
     .map(normalizeDownloadUrl)
     .filter((value) => typeof value === "string" && value.length > 0);
 
-  logSubstep(`Downloading from ${primaryUrl}`);
+  // Can't show this, sadly :(
+  // logSubstep(`Downloading from ${primaryUrl}`);
 
   const response = await fetchWithTimeout(primaryUrl, {
     headers: {
@@ -1514,38 +1576,69 @@ async function validateApiKey(apiKey, appVersion) {
   await nexusRest("/users/validate", apiKey, appVersion);
 }
 
+async function getFileDownloadCounts({ apiKey, appVersion, fileInfos }) {
+  const countsByUid = new Map();
+  const uids = [...new Set(fileInfos
+    .filter((fileInfo) => fileInfo?.uid !== undefined && fileInfo?.uid !== null)
+    .map((fileInfo) => String(fileInfo.uid)))];
+  const chunks = [];
+
+  for (let start = 0; start < uids.length; start += DOWNLOAD_COUNT_UIDS_PER_QUERY) {
+    chunks.push(uids.slice(start, start + DOWNLOAD_COUNT_UIDS_PER_QUERY));
+  }
+
+  if (uids.length > 1) {
+    logInfo(`Loading download counts for ${uids.length} files, in ${chunks.length} reqs.`);
+  }
+
+  await mapWithConcurrency(chunks, DOWNLOAD_COUNT_CONCURRENCY, async (chunk) => {
+    try {
+      const data = await nexusGraphQL(
+        `query FileDownloadCount($uids: [ID!]!) {
+          modFilesByUid(uids: $uids) {
+            nodes {
+              uid
+              count
+              totalDownloads
+            }
+          }
+        }`,
+        { uids: chunk },
+        apiKey,
+        appVersion,
+      );
+
+      for (const node of data?.modFilesByUid?.nodes ?? []) {
+        const downloads = node?.totalDownloads ?? node?.count;
+        if (typeof downloads === "number" && Number.isFinite(downloads)) {
+          countsByUid.set(String(node.uid), downloads);
+        }
+      }
+
+      const missing = chunk.filter((uid) => !countsByUid.has(uid));
+      if (chunk.length > 1 && missing.length > 0) {
+        logWarn("FILE_STATS", `No download count was returned. Nexus is down?`);
+        logWarn("FILE_STATS", `(${missing.length} of ${chunk.length})`);
+      }
+    } catch (error) {
+      logWarn("FILE_STATS", `Could not load download counts for ${chunk.length} file(s). ${error.message}`);
+    }
+  });
+
+  return countsByUid;
+}
+
 async function getFileDownloadCount({ apiKey, appVersion, fileInfo }) {
   if (fileInfo?.uid === undefined || fileInfo?.uid === null) {
-    logWarn("FILE_STATS", `File ${fileInfo?.file_id ?? "<unknown>"} has no UID; download count is unavailable.`);
+    logWarn("FILE_STATS", `File ${fileInfo?.file_id ?? "<unknown>"} has no UID. Download count is unavailable.`);
     return null;
   }
 
-  try {
-    const data = await nexusGraphQL(
-      `query FileDownloadCount($uids: [ID!]!) {
-        modFilesByUid(uids: $uids) {
-          nodes {
-            uid
-            count
-            totalDownloads
-          }
-        }
-      }`,
-      { uids: [String(fileInfo.uid)] },
-      apiKey,
-      appVersion,
-    );
-    const file = data?.modFilesByUid?.nodes?.find(
-      (candidate) => String(candidate?.uid) === String(fileInfo.uid),
-    );
-    const downloads = file?.totalDownloads ?? file?.count;
-    if (typeof downloads === "number" && Number.isFinite(downloads)) {
-      logInfo(`Downloads for latest file: ${downloads}`);
-      return downloads;
-    }
-  } catch (error) {
-    logWarn("FILE_STATS", `Could not load download count for file ${fileInfo.file_id}. ${error.message}`);
-    return null;
+  const counts = await getFileDownloadCounts({ apiKey, appVersion, fileInfos: [fileInfo] });
+  const downloads = counts.get(String(fileInfo.uid));
+  if (downloads !== undefined) {
+    logInfo(`Downloads for latest file: ${downloads}`);
+    return downloads;
   }
 
   logWarn("FILE_STATS", `No download count was returned for file ${fileInfo.file_id}.`);
@@ -1662,153 +1755,10 @@ function extractDependencyIds(response) {
   return [...ids].sort((left, right) => left.localeCompare(right, undefined, { numeric: true }));
 }
 
-function runSelfTest() {
-  const versions = buildNexusVersions([
-    { bepinexPlugins: { "test.mod": "1.9.0", "test.other": "2.0.0" }, Version: "99.0", dllVersion: "88.0" },
-    { bepinexPlugins: { "test.mod": "1.10.0", "": "1.0", "test.empty": "", "test.null": null } },
-    { bepinexPlugins: { "test.mod": "1.2.0" } },
-    { Id: "nexus-1", bepinexVersion: "77.0", dllVersions: { "library.dll": "66.0" } },
-  ]);
-  if (!areEqual(versions, { "test.mod": "1.10.0", "test.other": "2.0.0" })) {
-    throw new Error("Nexus plugin versions self-test failed.");
-  }
-  logSuccess("Nexus plugin versions self-test passed.");
-  const createdNotification = buildNotification(undefined, {
-    Name: "Test Mod",
-    NexusModId: 1,
-    Summary: "A short mod blurb.",
-    Links: { NexusMods: "https://www.nexusmods.com/scavprototype/mods/1" },
-    Statistics: { Endorsements: 0, UniqueDownloads: 3 },
-  }, { archiveSizeBytes: 3_145_728, dllSizeBytes: 1_572_864 });
-  if (!areEqual(createdNotification?.embed?.fields, [
-    { name: "File Size", value: "1.5 MB", inline: true },
-    { name: "Zip Size", value: "3.0 MB", inline: true },
-  ])) {
-    throw new Error("New-mod Discord file-size self-test failed.");
-  }
-  if (createdNotification?.embed?.description !== "A short mod blurb.") {
-    throw new Error("Discord summary self-test failed.");
-  }
-  if (buildNotification(undefined, {
-    Name: "Casualities After Dark",
-    Links: { NexusMods: "https://www.nexusmods.com/scavprototype/mods/1" },
-  }) !== null) {
-    throw new Error("Discord notification blacklist self-test failed.");
-  }
-  const changelogs = normalizeChangelogs({
-    "1.0.0": ["Initial release."],
-    "1.1.0": ["Fixed the important thing.", "Also fixed another thing."],
-  });
-  if (!areEqual(changelogs, [
-    { Version: "1.0.0", Changelog: "- Initial release." },
-    { Version: "1.1.0", Changelog: "- Fixed the important thing.\n- Also fixed another thing." },
-  ])) {
-    throw new Error("Changelog metadata self-test failed.");
-  }
-  const encodedChangelog = normalizeChangelogs({
-    "1.2.0": ["Fixed &amp; improved &lt;items&gt; &gt; &#x20;", "- Already dashed"],
-  });
-  if (!areEqual(encodedChangelog, [{
-    Version: "1.2.0",
-    Changelog: "- Fixed & improved <items> >\n- Already dashed",
-  }])) {
-    throw new Error("Changelog encoding self-test failed.");
-  }
-  if (getFileSizeBytes({ size_kb: 50 * 1024 + 1 }) <= MAX_FULL_REFRESH_ARCHIVE_SIZE_BYTES) {
-    throw new Error("Large-archive skip self-test failed.");
-  }
-  const updatedNotification = buildNotification({
-    Version: "1.0.0",
-    Links: { NexusMods: "https://www.nexusmods.com/scavprototype/mods/1" },
-  }, {
-    Name: "Test Mod",
-    NexusModId: 1,
-    Version: "1.1.0",
-    Summary: "A short mod blurb.",
-    Links: { NexusMods: "https://www.nexusmods.com/scavprototype/mods/1" },
-    Statistics: {},
-    Changelogs: [{ Version: "1.1.0", Changelog: "Fixed the important thing." }],
-  });
-  if (updatedNotification?.embed?.description !== "Fixed the important thing.") {
-    throw new Error("Discord changelog description self-test failed.");
-  }
-  const fallbackNotification = buildNotification({
-    Version: "1.0.0",
-    Links: { NexusMods: "https://www.nexusmods.com/scavprototype/mods/1" },
-  }, {
-    Name: "Test Mod",
-    NexusModId: 1,
-    Version: "1.1.0",
-    Summary: "A short mod blurb.",
-    Links: { NexusMods: "https://www.nexusmods.com/scavprototype/mods/1" },
-    Statistics: {},
-    Changelogs: [{ Version: "1.0.0", Changelog: "Initial release." }],
-  });
-  if (fallbackNotification?.embed?.description !== "A short mod blurb.") {
-    throw new Error("Discord changelog fallback self-test failed.");
-  }
-  if (buildDiscordMessage({ ContainsAdultContent: true }) !== ADULT_MOD_MESSAGE || buildDiscordMessage({ ContainsAdultContent: false }) !== "") {
-    throw new Error("Adult-mod Discord message self-test failed.");
-  }
-
-  const dependencies = extractDependencyIds({
-    dependency_definitions: [
-      { ranges: [{ target_mod_file: { mod: { game_scoped_id: "341" } } }] },
-      { ranges: [{ target_mod_file: { mod: { game_scoped_id: "67" } } }, { target_mod_file: { mod: { game_scoped_id: "341" } } }] },
-    ],
-  });
-  if (!areEqual(dependencies, ["nexus-67", "nexus-341"])) {
-    throw new Error("Dependency extraction self-test failed.");
-  }
-
-  const badges = buildNexusBadges([
-    {
-      NexusGameDomain: "scavprototype",
-      NexusModId: 341,
-      Name: "CUCoreLib",
-      Statistics: { TotalDownloads: 1234 },
-    },
-    {
-      NexusGameDomain: "scavprototype",
-      NexusModId: 7,
-      Name: "QoL Unknown",
-      Statistics: {},
-    },
-    {
-      NexusGameDomain: "scavprototype",
-      NexusModId: 1,
-      Name: "Item Spawner Menu",
-      Statistics: { TotalDownloads: 5 },
-    },
-    {
-      NexusGameDomain: "scavprototype",
-      NexusModId: 90,
-      Name: "Item Spawner Menu.",
-      Statistics: { TotalDownloads: 10 },
-    },
-  ]);
-  if (!areEqual(badges, [
-    { modId: 341, name: "CUCoreLib", downloads: 1234, baseName: "cucorelib", fileName: "cucorelib.json" },
-    { modId: 1, name: "Item Spawner Menu", downloads: 5, baseName: "item-spawner-menu", fileName: "item-spawner-menu-1.json" },
-    { modId: 90, name: "Item Spawner Menu.", downloads: 10, baseName: "item-spawner-menu", fileName: "item-spawner-menu-90.json" },
-    { modId: 7, name: "QoL Unknown", downloads: null, baseName: "qol-unknown", fileName: "qol-unknown.json" },
-  ])) {
-    throw new Error("Nexus badge export self-test failed.");
-  }
-  logSuccess("Dependency extraction self-test passed.");
-  logSuccess("Nexus badge export self-test passed.");
-  logSuccess("New-mod Discord file-size self-test passed.");
-  logSuccess("Discord summary self-test passed.");
-  logSuccess("Discord notification blacklist self-test passed.");
-  logSuccess("Changelog metadata self-test passed.");
-  logSuccess("Discord changelog description self-test passed.");
-  logSuccess("Adult-mod Discord message self-test passed.");
-}
-
 async function nexusRest(route, apiKey, appVersion) {
-  const response = await fetchWithTimeout(`${API_BASE_URL}${route}`, {
+  const response = await fetchNexus(`${API_BASE_URL}${route}`, {
     headers: buildHeaders(apiKey, appVersion),
-  });
+  }, `REST ${route}`);
 
   if (!response.ok) {
     throw await buildHttpError("Nexus REST request failed", response);
@@ -1818,9 +1768,9 @@ async function nexusRest(route, apiKey, appVersion) {
 }
 
 async function nexusV3(route, apiKey, appVersion) {
-  const response = await fetchWithTimeout(`${V3_API_BASE_URL}${route}`, {
+  const response = await fetchNexus(`${V3_API_BASE_URL}${route}`, {
     headers: buildHeaders(apiKey, appVersion),
-  });
+  }, `v3 ${route}`);
 
   if (!response.ok) {
     throw await buildHttpError("Nexus v3 request failed", response);
@@ -1831,11 +1781,11 @@ async function nexusV3(route, apiKey, appVersion) {
 }
 
 async function nexusGraphQL(query, variables, apiKey, appVersion) {
-  const response = await fetchWithTimeout(GRAPHQL_API_URL, {
+  const response = await fetchNexus(GRAPHQL_API_URL, {
     method: "POST",
     headers: buildHeaders(apiKey, appVersion),
     body: JSON.stringify({ query, variables }),
-  });
+  }, "GraphQL modFilesByUid");
 
   if (!response.ok) {
     throw await buildHttpError("Nexus GraphQL request failed", response);
@@ -1851,6 +1801,33 @@ async function nexusGraphQL(query, variables, apiKey, appVersion) {
   }
 
   return payload?.data;
+}
+
+async function fetchNexus(url, init, label) {
+  for (let attempt = 0; ; attempt += 1) {
+    const response = await fetchWithTimeout(url, init);
+    if (!isRetryableStatus(response.status) || attempt >= REQUEST_MAX_ATTEMPTS - 1) {
+      return response;
+    }
+
+    const delayMs = retryDelayMs(response, attempt);
+    logWarn("RETRY", `${label} returned ${response.status}; retrying in ${delayMs}ms.`);
+    await response.body?.cancel().catch(() => {});
+    await sleep(delayMs);
+  }
+}
+
+function isRetryableStatus(status) {
+  return status === 429 || status >= 500;
+}
+
+function retryDelayMs(response, attempt) {
+  const retryAfterSeconds = Number(response.headers?.get?.("retry-after"));
+  const delayMs = Number.isFinite(retryAfterSeconds) && retryAfterSeconds > 0
+    ? retryAfterSeconds * 1000
+    : 1_000 * 2 ** attempt;
+
+  return Math.min(delayMs, REQUEST_RETRY_MAX_DELAY_MS);
 }
 
 function buildHeaders(apiKey, appVersion) {
@@ -1919,6 +1896,26 @@ async function fetchWithTimeout(url, init) {
   }
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function mapWithConcurrency(items, limit, worker) {
+  const results = new Array(items.length);
+  let nextIndex = 0;
+
+  const runners = Array.from({ length: Math.min(limit, items.length) }, async () => {
+    while (nextIndex < items.length) {
+      const index = nextIndex;
+      nextIndex += 1;
+      results[index] = await worker(items[index]);
+    }
+  });
+
+  await Promise.all(runners);
+  return results;
+}
+
 async function execProcess(command, args, workdir, timeoutMs) {
   const { execFile } = await import("node:child_process");
   return await new Promise((resolve, reject) => {
@@ -1932,9 +1929,7 @@ async function execProcess(command, args, workdir, timeoutMs) {
   });
 }
 
-if (process.argv.includes("--self-test")) {
-  runSelfTest();
-} else if (process.argv.includes("--export-badges")) {
+if (process.argv.includes("--export-badges")) {
   await exportNexusBadges().catch((error) => {
     console.error(colorize(COLORS.red, error.message));
     process.exitCode = 1;

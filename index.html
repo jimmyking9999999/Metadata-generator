@@ -3,14 +3,143 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CUCoreLib Media</title>
+  <title>Metadata</title>
 </head>
 <body>
+  <h1>Metadata</h1>
+
+  <h2>Raw files</h2>
+  <ul>
+    <li><a href="nexusmods.json">nexusmods.json</a></li>
+    <li><a href="nexusmods-versions.json">nexusmods-versions.json</a></li>
+    <li><a href="WMITF-metadata.json">WMITF-metadata.json</a></li>
+    <li><a href="scavgame-locale-id-names.json">scavgame-locale-id-names.json</a></li>
+    <li><a href="scavgame-locale-id-names-demo.json">scavgame-locale-id-names-demo.json</a></li>
+    <li><a href="manifest.json">manifest.json</a></li>
+  </ul>
+
+  <h2>Badges</h2>
+
+  <div id="badge-preview" hidden>
+    <p id="badge-preview-name"></p>
+    <p>GitHub markdown:</p>
+    <pre id="badge-preview-markdown"></pre>
+    <p>NexusMods BBCode:</p>
+    <pre id="badge-preview-bbcode"></pre>
+  </div>
+
+  <p>
+    <label for="badge-search">Search badge files</label><br>
+    <input id="badge-search" type="search" placeholder="mod name" autocomplete="off" style="width: 18em">
+  </p>
+  <p id="badge-status">Loading badge list...</p>
+  <ul id="badge-list"></ul>
+
+  <h2>Videos</h2>
   <ul>
     <li><a href="videos/setup.mp4">setup.mp4</a></li>
     <li><a href="videos/embedding-images.mp4">embedding-images.mp4</a></li>
     <li><a href="videos/hot-reload.mp4">hot-reload.mp4</a></li>
     <li><a href="videos/spore-trap-ingame.mp4">spore-trap-ingame.mp4</a></li>
   </ul>
+
+  <script>
+    const MAX_RESULTS = 200;
+    const BADGES_URL = "https://jimmyking9999999.github.io/Metadata-generator/badges/";
+
+    const searchInput = document.getElementById("badge-search");
+    const statusElement = document.getElementById("badge-status");
+    const listElement = document.getElementById("badge-list");
+    const previewElement = document.getElementById("badge-preview");
+    const previewNameElement = document.getElementById("badge-preview-name");
+    const previewMarkdownElement = document.getElementById("badge-preview-markdown");
+    const previewBbcodeElement = document.getElementById("badge-preview-bbcode");
+
+    // Normalize mod name
+    function toBadgeFileName(name) {
+      const normalized = name.normalize("NFKD").replace(/\p{Mark}/gu, "");
+      return normalized.replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "").toLowerCase() || "unnamed-mod";
+    }
+
+    function badgeFiles(entries) {
+      const mods = entries
+        .filter((entry) => Number.isInteger(entry?.NexusModId) && entry.NexusModId >= 0)
+        .map((entry) => ({
+          modId: entry.NexusModId,
+          name: typeof entry?.Name === "string" && entry.Name.trim() ? entry.Name.trim() : `mod-${entry.NexusModId}`,
+          modUrl: `https://www.nexusmods.com/${entry.NexusGameDomain}/mods/${entry.NexusModId}`,
+        }));
+
+      const counts = new Map();
+      for (const mod of mods) {
+        mod.baseName = toBadgeFileName(mod.name);
+        counts.set(mod.baseName, (counts.get(mod.baseName) ?? 0) + 1);
+      }
+
+      return mods
+        .map((mod) => ({
+          name: mod.name,
+          modUrl: mod.modUrl,
+          fileName: `${mod.baseName}${counts.get(mod.baseName) > 1 ? `-${mod.modId}` : ""}.json`,
+        }))
+        .sort((left, right) => left.fileName.localeCompare(right.fileName));
+    }
+
+    let files = [];
+
+    function renderPreview(match) {
+      if (!match) {
+        previewElement.hidden = true;
+        return;
+      }
+
+      const endpoint = `https://img.shields.io/endpoint?url=${encodeURIComponent(`${BADGES_URL}${match.fileName}`)}`;
+      previewElement.hidden = false;
+      previewNameElement.textContent = `First result: ${match.name} (${match.fileName})`;
+      previewMarkdownElement.textContent = `[![Nexus Downloads](${endpoint})](${match.modUrl})`;
+      previewBbcodeElement.textContent = `[url=${match.modUrl}][img]${endpoint}[/img][/url]`;
+    }
+
+    function render(query) {
+      const needle = query.trim().toLowerCase();
+      const matches = needle
+        ? files.filter((file) => file.fileName.includes(needle) || file.name.toLowerCase().includes(needle))
+        : files;
+
+      renderPreview(matches[0]);
+
+      listElement.textContent = "";
+      for (const match of matches.slice(0, MAX_RESULTS)) {
+        const link = document.createElement("a");
+        link.href = `badges/${match.fileName}`;
+        link.textContent = match.fileName;
+        link.title = match.name;
+
+        const item = document.createElement("li");
+        item.append(link);
+        listElement.append(item);
+      }
+
+      const suffix = matches.length > MAX_RESULTS ? ` (first ${MAX_RESULTS})` : "";
+      statusElement.textContent = `${matches.length} of ${files.length} badge files${suffix}`;
+    }
+
+    searchInput.addEventListener("input", () => render(searchInput.value));
+
+    fetch("nexusmods.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((entries) => {
+        files = badgeFiles(entries);
+        render(searchInput.value);
+      })
+      .catch((error) => {
+        statusElement.textContent = `${error.message}. Huh?`;
+      });
+  </script>
 </body>
 </html>

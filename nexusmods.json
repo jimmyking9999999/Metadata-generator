@@ -1,5 +1,109 @@
 [
     {
+        "Id": "nexus-743",
+        "Name": "F--KConsole",
+        "Version": "1",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "com.cu.fuckconsole": "1.0.0"
+        },
+        "Summary": "Console enhancements for Casualties Unknown : log text selection, cross-session command history, and a smart retry command.",
+        "Description": "[center][b][size=5][color=#900000]F--k[/color][color=#cc0000]C[/color][color=#e06666]o[/color][color=#ea9999]n[/color][color=#f4cccc]s[/color][color=#fce5cd]o[/color][color=#f4f4f4]l[/color]e[/size][/b][/center]\n<br />[center][size=4][font=Arial][i]Console Enhancement Mod for \"Casualties Unknown\"[/i][/font][/size][/center]\n<br />[center][font=Arial][i][size=2]Built on top of the vanilla console, it adds text selection, cross-session history, and command error correction. [/size][/i][/font][/center]\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/743/743-1791264319-1564317408.png[/img]\n<br />\n<br />[b]Features:[/b]\n<br />[list]\n<br />Log Selection and Copy: Drag the mouse to highlight any text in the console output, double-click to select a single word. Releasing the mouse automatically copies the selected content to the clipboard.Persistent Command History: Press the Up / Down keys to browse command history. History is saved in BepInEx/plugins/console_history.txt and remains available after restarting the game.fuck Command: Used to correct and re-execute commands.[/list]\n<br />[b]f..k Command Description:[/b]\n<br />[list=1]\n<br />If the previous command executed successfully, entering f..k will repeat that command as-is.If the previous command failed, fuck will match the closest valid command name or argument, display the corrected result, and execute the corrected command.[/list][img]https://staticdelivery.nexusmods.com/mods/8391/images/743/743-1791264761-1323966900.png[/img]\n<br />[b]Examples:[/b]\n<br />[code]heall (error)\n<br />f--k\n<br />fuck: heall -&gt; heal &lt;- corrected and executed[/code]\n<br />[b]Installation:[/b]\n<br />[list=1]\n<br />Install BepInEx 5 (HarmonyX required).Place F..kConsole.dll into the BepInEx/plugins/ directory.Launch the game and open the console.[/list][img]https://staticdelivery.nexusmods.com/mods/8391/images/743/743-1791264329-1985212961.png[/img]\n<br />\n<br />[b]Notes:[/b]\n<br />[list]\n<br />To clear the history, delete BepInEx/plugins/console_history.txt.This mod does not modify save files and is compatible with the Demo version.[/list][center][img]https://staticdelivery.nexusmods.com/mods/8391/images/743/743-1791264335-2099233271.png[/img][/center]\n<br />",
+        "Author": "ouse6767",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/743/743-1791264319-1564317408.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/743"
+        },
+        "DownloadUrl": "nexus://scavprototype/743/2401",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 743,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-10-06T05:34:46.000Z",
+        "ReleaseDate": "2026-10-06T05:31:04.000Z",
+        "SHA256": "95223ca6b36742e3bfb7cae3be1e68ce6e801da55f6768884e96d72d0600b85c",
+        "dllSHA256s": {
+            "FuckConsole.dll": "1e18113961f854b4e65ec62ef7cfe1c18ad2bcd88865c13da7da563f294f7ac3"
+        },
+        "downloadsSinceLatestVersion": 1,
+        "Dependencies": [],
+        "Changelogs": [
+            {
+                "Version": "1",
+                "Changelog": "- The first"
+            }
+        ],
+        "dllNames": [
+            "FuckConsole.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "FuckConsole.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 2,
+            "TotalDownloads": 2,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/743/743-1791264319-1564317408.png"
+        ]
+    },
+    {
+        "Id": "nexus-742",
+        "Name": "MapForge",
+        "Version": "2.0.0",
+        "bepinexVersion": "2.0.0",
+        "bepinexPlugins": {
+            "com.Serenil.MapForge": "2.0.0"
+        },
+        "Summary": "MapForge is a general-purpose world editor / map tool for Casualties: Unknown. Save the entire world to disk, load it back anywhere, regenerate terrain and structures on demand, box out any region and place it elsewhere — all from an in-game GUI. Host-side plugin, no client install needed.",
+        "Description": "[line]\n<br />[size=5]About this mod[/size]\n<br />\n<br />MapForge is a general-purpose world editor / map tool for Casualties: Unknown. Save the entire world to disk, load it back anywhere, regenerate terrain and structures on demand, box out any region and place it elsewhere — all from an in-game GUI. Host-side plugin, no client install needed. Pairs naturally with map packs, gameplay mods, and custom scenarios.\n<br />\n<br />MapForge 是一个面向《Casualties: Unknown》的通用世界编辑器 / 地图工具。可将整个世界保存到磁盘、任意载入、按需重新生成地形与结构、框选任意区域并搬运到别处——全部通过游戏内 GUI 完成。纯主机端插件，客机无需安装。天然适配地图包、玩法模组与自定义场景。\n<br />[line]\n<br />[size=5][b]Description[/b][/size]\n<br />\n<br />[list]\n<br />[*]MapForge lets you treat the world as editable data. Save the full map — blocks, fluids, items, buildings, custom objects, special region tags, layer modifiers, world runtime state — and load it back at any time. It supports both \"full map\" saves and \"region\" saves, plus an in-memory load path for mods that embed maps inside their own DLL.\n<br />MapForge 将世界视作可编辑的数据。可保存整张地图——方块、流体、物品、建筑、自定义物体、特殊区域标记、层修饰符、世界运行时状态——并在任意时刻载入回来。支持\"全图\"与\"区域\"两种存档，也支持供模组使用的\"内存载入\"路径（可把地图嵌进自己的 dll）。[/*]\n<br />[/list]\n<br />[list]\n<br />[*]Unlike simple snapshot tools, MapForge's loader performs a dynamic world resize. Load a 1024×1024 map into a 256×256 world and it will rebuild the world to fit — no mismatch error, no manual setup. Load a 256×256 map into a 1024×1024 world and it shrinks gracefully. Same goes the other way around.[/*]\n<br />[*]与简单的快照工具不同，MapForge 的加载器支持**动态世界缩放**。把 1024×1024 的地图载入到 256×256 的世界中，它会重建世界以适配——没有尺寸不匹配报错，也不需要手动调整。把 256×256 载入到 1024×1024 的世界中，它会平滑缩小。反向亦然。[/*]\n<br />[*]Region tools complement full-map saves: drag a box in the world, save just that slice, drop it anywhere else with anchor and flip control. Everything is previewed before it lands. A unified undo/redo stack covers block edits, fluid edits, item/building/custom-object spawns — undo a region load and the previous contents come back completely.[/*]\n<br />[*]区域工具与全图存档互补：在世界中拖出一个框，只保存这一片，然后带着锚点与翻转控制在别处落位。落位前会有预览。一套统一的撤销/重做机制覆盖方块、流体、物品、建筑、自定义物体——撤销一次区域加载，之前的内容会完整复原。[/*]\n<br />[*]World generation is exposed as an in-game tool too. Regenerate the whole world through the game's own native routine, or regenerate only a selected region with fine-grained control: terrain, liquid, ore, structures, items, corpses, traps, entities, clusters, trees, flora, crystals, climbables, wallflowers. Whitelists, loot/trap multipliers, seed, and depth override are all available per-region. Output matches vanilla generation closely; you decide when and where it runs.[/*]\n<br />[*]世界生成本身也被做成游戏内工具。可通过游戏的原生流程重生成整个世界，或只重生成选定区域，并且支持细粒度控制：地形、液体、矿物、结构、物品、尸体、陷阱、生物、方块团、树、植被、水晶、攀爬物、墙花。白名单、战利品/陷阱倍率、种子、层级覆盖，全部可按区域调整。生成结果与原版高度一致；何时何地运行，由你决定。[/*]\n<br />[*]MapForge is designed to be a foundation. It exposes a public API that other mods can call to load maps, place regions, spawn entities, manipulate special region tags, and drive regeneration. A gameplay mod can ship with its map embedded inside its own DLL and simply ask MapForge to load it on join. That is exactly how it is meant to be used.\n<br />MapForge 的定位是一块地基。它对外暴露公开 API，供其他模组调用以加载地图、放置区域、生成实体、操作特殊区域标记、驱动世界重生成。一个玩法模组可以把地图直接嵌在自己的 dll 里，玩家加入时让 MapForge 载入即可。这正是它的设计用法。[/*]\n<br />[/list][line]\n<br />[size=5][b]Installation instructions &amp; Requirements[/b][/size]\n<br />\n<br />Requirements:\n<br />\n<br />- BepInEx (5.4.x)\n<br />- KrokoshaMP (for multiplayer; single-player works without it)\n<br />- MapForge.dll (this mod)\n<br />\n<br />前置：\n<br />\n<br />- BepInEx (5.4.x)\n<br />- KrokoshaMP (联机需要；单人可不用)\n<br />- MapForge.dll (就是这个模组)\n<br />\n<br />[size=4][b][u]Installation &amp; Usage:[/u][/b][/size]\n<br />\n<br />- Ensure BepInEx is correctly installed.\n<br />- Place MapForge.dll into BepInEx/plugins.\n<br />- Launch the game and enter any world.\n<br />- Press PageUp (default) to open the MapForge panel. The default hotkey can be changed in MapForge.cfg.\n<br />- In multiplayer, only the host can open the panel.\n<br />\n<br />[u][b][size=4]安装与使用：[/size][/b][/u]\n<br />\n<br />- 确保 BepInEx 已正确安装。\n<br />- 将 MapForge.dll 放入 BepInEx/plugins。\n<br />- 启动游戏，进入任意世界。\n<br />- 按 PageUp（默认）打开 MapForge 面板。默认快捷键可在 MapForge.cfg 中修改。\n<br />- 联机时只有主机能打开面板。\n<br />\n<br />[line]\n<br />[size=5][b]Main features[/b][/size]\n<br />\n<br />[size=4][b]1. Full Map Save / Load[/b][/size]\n<br />\n<br />Save the entire world to disk as a JSON + binary pair (plus an optional fluid file). Includes blocks, fluids, items (with container nesting, guns, batteries, liquids), buildings (health, climbables, sprite sizes), custom objects, special region tags, layer modifiers, unchipped mode, line of sight, world runtime state, and biome depth. Reload anywhere, anytime.\n<br />\n<br />将整个世界以 JSON + 二进制成对文件保存到磁盘（流体为可选的第三文件）。包含方块、流体、物品（含容器嵌套、枪械、电池、液体）、建筑（血量、可攀爬、精灵尺寸）、自定义物体、特殊区域标记、层修饰符、未芯片模式、视线遮蔽、世界运行时状态、生物群系深度。可在任何时间、任何地点载入。\n<br />\n<br />[size=4][b]2. Super Save (with Traders)[/b][/size]\n<br />\n<br />Super saves additionally record every trader's full state — reputation, hostility, haggle amount, hug history, shop inventory, buyback prices, and so on. A normal save treats traders as regeneratable; a super save carries them over exactly.\n<br />\n<br />超级保存在普通保存的基础上，额外记录每个商人的完整状态——声望、敌意、砍价额度、拥抱历史、商店库存、回购价格等。普通保存把商人视作可重新生成的；超级保存则原样携带。\n<br />\n<br />[size=4][b]3. Dynamic World Resize[/b][/size]\n<br />\n<br />MapForge's loader detects world-size mismatches and rebuilds the world on the fly. No error, no manual config. Load any map into any world — the size follows.\n<br />\n<br />MapForge 的加载器会检测世界尺寸不匹配，并即时重建世界。没有报错，不需要手动配置。任何地图载入到任何世界，尺寸自动跟随。\n<br />\n<br />[size=4][b]4. Region Tools[/b][/size]\n<br />\n<br />Drag a box in the world, save just that region. Later, place it anywhere with anchor control (5 modes) and flip options (X / Y / both). Live block-level preview shows exactly what will land before you commit. Region saves can be packaged and shared.\n<br />\n<br />在世界中拖出一个框，只保存该区域。之后带锚点控制（5 种模式）与翻转选项（X / Y / 双轴）在任意位置落位。落位前有方块级实时预览，所见即所得。区域存档可打包分享。\n<br />\n<br />[size=4][b]5. Batch Building Operations[/b][/size]\n<br />\n<br />Place a prefab across a selection by spacing, optionally snapping to ground. Rotate every Building inside a selection by any angle. All operations go through the undo stack.\n<br />\n<br />按间距在选区内铺设预制件，可选吸附地面。可将选区内所有建筑旋转任意角度。所有操作都进入撤销栈。\n<br />\n<br />[size=4][b]6. Unified Undo / Redo[/b][/size]\n<br />\n<br />One history stack covers every edit: region load, region delete, batch building placement, building rotation, region regeneration. Blocks, fluids, items, buildings, custom objects, and traders all roll back together. Up to 20 steps. The UI shows exactly what the next undo/redo will do.\n<br />\n<br />一套历史栈覆盖所有编辑：区域加载、区域删除、批量建筑放置、建筑旋转、区域重新生成。方块、流体、物品、建筑、自定义物体、商人一起回滚。最多 20 步。界面上直接显示下一次撤销/重做会回退哪一步。\n<br />\n<br />[size=4][b]7. World Regeneration (Full &amp; Region)\n<br />[/b][/size]\n<br />Full regeneration routes through the game's native routine — vanilla behavior, no surprises. Region regeneration is the fine-grained one, with independent toggles for:\n<br />\n<br />- Terrain, Liquid, Ore, Clusters\n<br />- Structures, Items, Corpses, Traps, Entities\n<br />- Trees, Flora, Wallflowers\n<br />- Crystals, Climbables\n<br />\n<br />Additionally: whitelist filtering per category, loot multiplier, trap/entity multiplier, minimum-per-structure, seed, and depth override. Output is tuned to match vanilla generation as closely as possible, so regenerated areas blend with the rest of the world.\n<br />\n<br />全图重新生成走游戏原生流程——原版行为，没有意外。区域重新生成则是细粒度的那个版本，独立开关包括：\n<br />\n<br />- 地形、液体、矿物、方块团\n<br />- 结构、物品、尸体、陷阱、生物\n<br />- 树、植被、墙花\n<br />- 水晶、攀爬物\n<br />\n<br />此外支持：按类别白名单过滤、战利品倍率、陷阱/生物倍率、每种结构最少生成数、种子、层级覆盖。生成结果已调至尽量贴近原版，重生成区域能自然融入世界其余部分。\n<br />\n<br />[size=4][b]8. Special Region Tags[/b][/size]\n<br />\n<br />Mark any rectangle with a type tag (protected, safe, mining, spawn, ...). MapForge stores the data; what you do with it is up to your mods. Tags are exported in full-map saves and carried with region saves.\n<br />\n<br />为任意矩形打上类型标签（protected、safe、mining、spawn……）。MapForge 只负责存储数据；具体用途交由你的模组决定。标签会随全图保存导出，并随区域保存一起携带。\n<br />\n<br />[size=4][b]9. Settings[/b][/size]\n<br />\n<br />Save directory, hotkeys, freeze players during load, auto-refresh chunks, verbose logging, skip item condition on save (loads as full), heal damaged buildings on load (reset to prefab health). All persisted in MapForge.cfg.\n<br />\n<br />存档目录、快捷键、加载时冻结玩家、自动刷新区块、详细日志、保存时忽略物品耐久（加载视为满耐久）、加载时治愈受损建筑（恢复为预制体血量）。全部持久化在 MapForge.cfg 中。\n<br />\n<br />\n<br />[size=5][b]Additional — API for Mod Authors[/b][/size]\n<br />\n<br />[size=4][b]MapForge exposes a public API (MapForgeAPI) covering:[/b][/size]\n<br />\n<br />- World info &amp; coordinate conversion\n<br />- Save / load from disk, path, or memory\n<br />- Region placement (interactive or programmatic)\n<br />- Special region management\n<br />- Regeneration with full flag/option control\n<br />- The unified undo/redo stack\n<br />\n<br />If you are building a map-pack mod, a gameplay expansion, or anything that needs to manipulate world data, MapForge is meant to be the layer you build on. Open an issue or PM if you need a hook that isn't exposed yet.\n<br />\n<br />[size=4][b]MapForge 对外暴露公开 API（MapForgeAPI），涵盖：[/b][/size]\n<br />\n<br />- 世界信息与坐标转换\n<br />- 从磁盘、路径或内存进行保存 / 加载\n<br />- 区域放置（交互式或程序化）\n<br />- 特殊区域管理\n<br />- 带完整 flag / 选项控制的世界重生成\n<br />- 统一的撤销/重做栈\n<br />\n<br />如果你在做地图包、玩法拓展，或任何需要操作世界数据的模组，MapForge 就是你可以直接构建于其上的那一层。如果需要尚未暴露的接口，欢迎开 issue 或私信。\n<br />\n<br />额外 — 模组作者 API：如上。\n<br />\n<br />[line]\n<br />[size=5][b]Performance &amp; Safety[/b][/size]\n<br />\n<br />- Host-side only. Non-hosts cannot open the panel; the check is done via reflection against KrokoshaMP, with conservative fallback if the MP mod is absent.\n<br />- Non-invasive by default. Patches only activate while a world is loaded. Outside of that, MapForge does nothing.\n<br />- Reflective access. MapForge reads/writes the game's internal state through cached reflection, not by copying or forking game code.\n<br />- Bounded history. Undo stack is capped at 20 steps to keep memory predictable.\n<br />- Graceful degradation. If reflection targets are missing (game update, mod conflict), MapForge logs and skips rather than crashing.\n<br />\n<br />- 仅主机端。非主机无法打开面板；检测通过反射访问 KrokoshaMP，MP 模组不存在时会保守回退。\n<br />- 默认非侵入。补丁只在整个世界加载完成期间生效；除此之外 MapForge 什么都不做。\n<br />- 反射式访问。通过缓存反射读写游戏内部状态，不复制、不分叉游戏代码。\n<br />- 有界历史。撤销栈上限 20 步，内存占用可预期。\n<br />- 优雅降级。反射目标缺失（游戏更新、模组冲突）时记录日志并跳过，不崩溃。\n<br />\n<br />性能与安全：如上。\n<br />\n<br />[line]\n<br />[size=5][b]Notes[/b][/size]\n<br />\n<br />- This is a tool, not a modpack. It doesn't add content; it gives you (and other mods) the ability to save, load, and generate world data.\n<br />- Multiplayer: only the host can use the panel. Loading a map freezes players briefly and restores their positions afterward.\n<br />- Region saves are portable. You can share them between machines; all paths are relative to the save directory.\n<br />- Bug reports &amp; suggestions are welcome in the comments or via PM.\n<br />\n<br />- 这是一个工具，不是整合包。它不添加内容；它给你（和其他模组）保存、载入、生成世界数据的能力。\n<br />- 多人联机：只有主机可使用面板。加载地图会短暂冻结玩家，并在完成后恢复其位置。\n<br />- 区域存档可移植。可以在不同机器间分享；所有路径均相对于存档目录。\n<br />- 欢迎在评论区或私信反馈建议 / BUG。\n<br />\n<br />注意事项：如上。\n<br />\n<br />[line]\n<br />[size=5][b]Shoutouts[/b][/size]\n<br />\n<br />Thanks to the author of SuperGodFistTool (a Chinese community mod) — their map-loading implementation was an early inspiration, and the region/placement style in MapForge evolved partly from seeing how useful that kind of tool can be.\n<br />\n<br />Thanks to the KrokoshaMP team for the multiplayer framework that makes host-side world manipulation possible at all, and to the BepInEx developers for the modding platform.\n<br />\n<br />And thanks to everyone who tested early versions and gave feedback — MapForge's region tools and undo system exist because of you.\n<br />\n<br />特别感谢 SuperGodFistTool.dll（一个中国社区模组）的作者——其地图加载实现是早期灵感来源，MapForge 的区域/放置风格有一部分是从\"这类工具能有多好用\"出发演化而来。\n<br />\n<br />感谢 KrokoshaMP 团队提供多人游戏框架，使得主机端世界操作成为可能；感谢 BepInEx 开发者提供模组平台。\n<br />\n<br />也感谢所有测试过早期版本、提供反馈的人——MapForge 的区域工具和撤销系统是因为你们才存在的。\n<br />\n<br />鸣谢：如上。",
+        "Author": "Serenil84",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/742/742-1791263550-149608903.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/742"
+        },
+        "DownloadUrl": "nexus://scavprototype/742/2402",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 742,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-10-06T06:10:49.000Z",
+        "ReleaseDate": "2026-10-06T06:10:10.000Z",
+        "SHA256": "00d8089d8b98b87aedb2cbdf7b1116ecbf3154eeecfeb9fe8c4027039ef08730",
+        "dllSHA256s": {
+            "MapForge.dll": "73df1cdd1936958d351a4a6a3f06e8ef348dda7a870f1d5087d4dff957e927d3"
+        },
+        "downloadsSinceLatestVersion": 0,
+        "Dependencies": [
+            "nexus-115"
+        ],
+        "Changelogs": [
+            {
+                "Version": "2.0.0",
+                "Changelog": "- MapForge v2.0.0\n- The original version."
+            }
+        ],
+        "dllNames": [
+            "MapForge.dll"
+        ],
+        "dllVersion": "2.0.0",
+        "dllVersions": {
+            "MapForge.dll": "2.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 1,
+            "TotalDownloads": 1,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/742/742-1791263550-149608903.png"
+        ]
+    },
+    {
         "Id": "nexus-739",
         "Name": "CuCategoryBar",
         "Version": "1",
@@ -25,7 +129,7 @@
         "dllSHA256s": {
             "CuCategoryBar.dll": "94f08b965e459d7adbc6266d111525c54c57fc9e9398cb510a82487e818fe6a0"
         },
-        "downloadsSinceLatestVersion": 6,
+        "downloadsSinceLatestVersion": 7,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -76,7 +180,7 @@
         "dllSHA256s": {
             "BetterModEnforcer.dll": "368dfea9fd2ef581a76cf15fc9c6681fbf0c74a511f91c7230fbdeab3c492c05"
         },
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 18,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -122,7 +226,7 @@
         "dllSHA256s": {
             "TeammateList.dll": "626e8f16cd2d90a9c9fbe610469ab84c62a907e837962705d4e534a95e11c65c"
         },
-        "downloadsSinceLatestVersion": 68,
+        "downloadsSinceLatestVersion": 91,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -168,7 +272,7 @@
         "dllSHA256s": {
             "Carfentanil.dll": "52009d811314ac49970316b0dbe32cb7223f834c98769e038bea780252c4349e"
         },
-        "downloadsSinceLatestVersion": 28,
+        "downloadsSinceLatestVersion": 33,
         "Dependencies": [
             "nexus-341"
         ],
@@ -216,7 +320,7 @@
         "dllSHA256s": {
             "ChangeableMoodles.dll": "fe4f62c7868d46bbe71b2ff54c324b4e389c818243b48c18da7393e1cd13f674"
         },
-        "downloadsSinceLatestVersion": 14,
+        "downloadsSinceLatestVersion": 16,
         "Dependencies": [
             "nexus-341"
         ],
@@ -260,7 +364,7 @@
         "ReleaseDate": "2026-10-03T16:17:18.000Z",
         "SHA256": "e7aa673310207c8d35db4d3938ff12d7be474478e5f405bdf2f78dee12c34c48",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 10,
+        "downloadsSinceLatestVersion": 12,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -302,7 +406,7 @@
         "dllSHA256s": {
             "CasualtyPsychology.dll": "7d95ca0702b9ea8412206ec54563642b2073c5ee1ebe62b6ec66286272aa8a1e"
         },
-        "downloadsSinceLatestVersion": 95,
+        "downloadsSinceLatestVersion": 106,
         "Dependencies": [
             "nexus-341"
         ],
@@ -468,7 +572,7 @@
         "dllSHA256s": {
             "DebugTools.dll": "ac8693e55ef5aae11a9763454423c303270ccfc589ad45da453c64299b1fb946"
         },
-        "downloadsSinceLatestVersion": 84,
+        "downloadsSinceLatestVersion": 85,
         "Dependencies": [
             "nexus-341"
         ],
@@ -516,7 +620,7 @@
         "dllSHA256s": {
             "UnchippedUnhanded.dll": "eda9b9aab88f61aaeed2799afdd14ac6b80dc71916a674cb56e1270fac6f84b8"
         },
-        "downloadsSinceLatestVersion": 28,
+        "downloadsSinceLatestVersion": 29,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -567,7 +671,7 @@
         "dllSHA256s": {
             "GoofyCactus.dll": "8d3e5e5a8c2ec46e179f7b7f94d9fd784209acf8c616eaf46de46a032fe6cff8"
         },
-        "downloadsSinceLatestVersion": 34,
+        "downloadsSinceLatestVersion": 36,
         "Dependencies": [
             "nexus-341"
         ],
@@ -615,7 +719,7 @@
         "dllSHA256s": {
             "OnlineCursor.dll": "49e59525a5ca461b19fcb516bde549693eda69a327ffc923c56fc3efad8380be"
         },
-        "downloadsSinceLatestVersion": 135,
+        "downloadsSinceLatestVersion": 141,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -666,7 +770,7 @@
         "dllSHA256s": {
             "CasualtiesTogetherWhisper.dll": "91a3b93b2aeabb8b61b8c149c2a7bde108596132ae80b62c9820ec86229fd8ec"
         },
-        "downloadsSinceLatestVersion": 31,
+        "downloadsSinceLatestVersion": 32,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -712,7 +816,7 @@
         "dllSHA256s": {
             "OTMM.dll": "07d9b02677b06a0c4aff70e2ebb209df6872f9168dd5916439ee86ffe465a903"
         },
-        "downloadsSinceLatestVersion": 27,
+        "downloadsSinceLatestVersion": 31,
         "Dependencies": [
             "nexus-341"
         ],
@@ -769,7 +873,7 @@
         "dllSHA256s": {
             "SmarterChargingStations.dll": "cea52d44f4e02d941e3063f91ae44fa9b315696cd0b212995785fe5b8279e629"
         },
-        "downloadsSinceLatestVersion": 52,
+        "downloadsSinceLatestVersion": 57,
         "Dependencies": [
             "nexus-341"
         ],
@@ -822,7 +926,7 @@
         "ReleaseDate": "2026-09-30T20:23:54.000Z",
         "SHA256": "45eb2dc40094967562f14b9c5c57e4a849eaa77fa042a968898d0989372feb02",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 53,
+        "downloadsSinceLatestVersion": 56,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -868,7 +972,7 @@
             "PrizeDraw_GameBugFix.dll": "36032c7d5b6e14a695ec209df35384c6af82cd392ec041b5bf8e23f28a0dbf97",
             "PrizeDraw_MP.mod.dll": "a453b63b56fd290f9038373ce14c059581c15cef68f7c1c6cf1b39f6a38f95f0"
         },
-        "downloadsSinceLatestVersion": 5,
+        "downloadsSinceLatestVersion": 6,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -943,7 +1047,7 @@
         "dllSHA256s": {
             "CustomTraders.dll": "04b00764b52af28a1567b430873c6245297a2c876dd5246d6aaeb6c3cc0c639e"
         },
-        "downloadsSinceLatestVersion": 20,
+        "downloadsSinceLatestVersion": 24,
         "Dependencies": [
             "nexus-341"
         ],
@@ -1004,7 +1108,7 @@
         "dllSHA256s": {
             "SuperDump.dll": "f5b6fcb782c13fba3f57676d71dfb22de0dd02a774a1d7b99bebe49705b02d72"
         },
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 5,
         "Dependencies": [
             "nexus-115"
         ],
@@ -1052,7 +1156,7 @@
         "dllSHA256s": {
             "FurReal.dll": "61cf5ff84c08c2ba4905b65c6f63e3d010eb0f42673f03a885e731a8e935e7fd"
         },
-        "downloadsSinceLatestVersion": 150,
+        "downloadsSinceLatestVersion": 171,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -1119,7 +1223,7 @@
         "dllSHA256s": {
             "SpiderForge.dll": "fb1d2cd3d380550353a9fd2cedba9aab93743615de09dba8695f48a782ef82f0"
         },
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [
             "nexus-115"
         ],
@@ -1168,7 +1272,7 @@
         "ReleaseDate": "2026-10-01T10:17:45.000Z",
         "SHA256": "52e96c236de01fbb03cef5b47033975e88444242a56718f2550e161e88e0149e",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 54,
+        "downloadsSinceLatestVersion": 58,
         "Dependencies": [
             "nexus-115",
             "nexus-324"
@@ -1351,7 +1455,7 @@
         "dllSHA256s": {
             "NforGrowling.dll": "0b519bfc49d451b89a2710891b4b2faff4ac7c61c2faf94a83ae4aa840bf6888"
         },
-        "downloadsSinceLatestVersion": 242,
+        "downloadsSinceLatestVersion": 243,
         "Dependencies": [
             "nexus-115"
         ],
@@ -1408,7 +1512,7 @@
         "dllSHA256s": {
             "CraftingExpFix.dll": "2b16c8a250878b11a7dbd15eab680e84a9c17fee2a2c7f197b58e79b29ddcb0f"
         },
-        "downloadsSinceLatestVersion": 158,
+        "downloadsSinceLatestVersion": 159,
         "Dependencies": [
             "nexus-67",
             "nexus-115"
@@ -1457,7 +1561,7 @@
         "dllSHA256s": {
             "GunsawgeneticsSkillsFix.dll": "7e6e390f566d69dcb123f334ef4a370d5c3175ef797e82996bb00d98c7553f0b"
         },
-        "downloadsSinceLatestVersion": 281,
+        "downloadsSinceLatestVersion": 288,
         "Dependencies": [
             "nexus-67",
             "nexus-324"
@@ -1615,7 +1719,7 @@
             "CUUICompat.dll": "8d22011b97e2b8074ae340175d02be04c2f4ac5c9a1b70bdbec80704947df4e0",
             "ModSyncCompat.dll": "eda164c8ed862434f59f8c869f6e651974cdfb6d5daa8787df8f711d124baed8"
         },
-        "downloadsSinceLatestVersion": 177,
+        "downloadsSinceLatestVersion": 203,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1680,7 +1784,7 @@
         "dllSHA256s": {
             "Remove the purchase limit for merchants.dll": "d5ba9f26af2c883a012ca49ed6ead40593a63832dd844962016b8a96a897699d"
         },
-        "downloadsSinceLatestVersion": 299,
+        "downloadsSinceLatestVersion": 302,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1726,7 +1830,7 @@
         "dllSHA256s": {
             "JiaolangMod v0.2.dll": "58b37897c992c761675e66159365ca0ec5e1828aec16a3c425a3148929586e2d"
         },
-        "downloadsSinceLatestVersion": 76,
+        "downloadsSinceLatestVersion": 78,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1871,7 +1975,7 @@
         "dllSHA256s": {
             "ChattersUnknown.dll": "514debbab5c37d1a2905fa12f1e67a6a83bc5e204aa3bfd8a765e51845ad34a7"
         },
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1930,7 +2034,7 @@
         "dllSHA256s": {
             "MoveCheckMod.dll": "f80a4feb57808cb64c1b1ae08656f97c85345df750c3a12f1b009a7630ddcb21"
         },
-        "downloadsSinceLatestVersion": 13,
+        "downloadsSinceLatestVersion": 14,
         "Dependencies": [
             "nexus-67"
         ],
@@ -1991,7 +2095,7 @@
         "dllSHA256s": {
             "LastStandCustomizer.dll": "8104bb080917f6de8d49aa6471914d2fe85d2f5e06cb997739093ea9f67d042a"
         },
-        "downloadsSinceLatestVersion": 239,
+        "downloadsSinceLatestVersion": 242,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -2075,7 +2179,7 @@
         "dllSHA256s": {
             "AnnoyingLittleFella.dll": "7f1e8a4c1684a29e4c435f62e8b5ef7275b9835cfeacdf79ddefdd76a8d898da"
         },
-        "downloadsSinceLatestVersion": 177,
+        "downloadsSinceLatestVersion": 180,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -2234,7 +2338,7 @@
         "dllSHA256s": {
             "NoRunning.dll": "3e6e05536454dd2f5f3f63da4e81336c37457d4b594bf662ed31a32ab1073a7d"
         },
-        "downloadsSinceLatestVersion": 184,
+        "downloadsSinceLatestVersion": 186,
         "Dependencies": [
             "nexus-115"
         ],
@@ -2284,7 +2388,7 @@
         "ReleaseDate": "2026-09-14T09:18:35.000Z",
         "SHA256": "218a345219fc363a79f072546fe62a9e6bbbafca8d3af66d364640160cee159b",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 94,
+        "downloadsSinceLatestVersion": 96,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -2461,7 +2565,7 @@
         "dllSHA256s": {
             "GrappleSwing.dll": "59695b95abceca0623cd53c563899a32b0558f808de2aa3423aaf1ef1e21154f"
         },
-        "downloadsSinceLatestVersion": 236,
+        "downloadsSinceLatestVersion": 237,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -2620,7 +2724,7 @@
         "dllSHA256s": {
             "Tailor.dll": "a350a026337100fcc78e1504770e05538f8872b23ed226bf131d08ed55eb02d4"
         },
-        "downloadsSinceLatestVersion": 78,
+        "downloadsSinceLatestVersion": 88,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2668,10 +2772,10 @@
     {
         "Id": "nexus-670",
         "Name": "CPU Optimization (MP Support)",
-        "Version": "8",
-        "bepinexVersion": "0.7.67",
+        "Version": "9",
+        "bepinexVersion": "0.7.79",
         "bepinexPlugins": {
-            "com.local.worldcapture": "0.7.67"
+            "com.local.worldcapture": "0.7.79"
         },
         "Summary": "Implements chunk-based culling and update-loop prefixes that can offer 300-500%+ more fps in single *or* multiplayer. Replaces broken mods like \"GlassM\" / \"GlassN\".",
         "Description": "[size=4][b]Description[/b][/size]\n<br />More FPS..?\n<br />It's yours, my friend.\n<br />Highly recommend pairing with MP Optimization Mod if you play multiplayer. \n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[list]\n<br />[*][color=#D4D4D8]Culls decorative Light2D outside camera range (view-based radius, works with ultrawide)[/color][/*]\n<br />[*][color=#D4D4D8]Replaces jumppad/coil/turret lights with cheap sprite flash (spike traps keep blinking red light)[/color][/*]\n<br />[*][color=#D4D4D8]Only sims physics/updates in a 2×2 chunk window around you (SP) or all players as a union (MP host)[/color][/*]\n<br />[*][color=#D4D4D8]MP clients only sim their local 2×2, not the whole map[/color][/*]\n<br />[*][color=#D4D4D8]Disables chunk colliders outside active windows[/color][/*]\n<br />[*][color=#D4D4D8]Clamps water/lava sim + spreads fluid rendering across frames[/color][/*]\n<br />[*][color=#D4D4D8]Optional KrokMP perf tweaks (throttled ForceForMP, despawner skip, voicechat early-out)[/color][/*]\n<br />[*][color=#D4D4D8]Works in SP and MP; KrokMP is optional. Integrates with MP Optimization Mod to provide chunk union data.\n<br />\n<br />(This screenshot showcases the latest update! (9/27/26)[/color]\n<br />\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/670/670-1790573065-1575355089.png[/img][/*]\n<br />[/list](Pre-v2 update)\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/670/670-1789659470-1584264956.png[/img]\n<br />\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/670/670-1789659476-832359605.png[/img]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[size=3][color=#D4D4D8]Big thanks to KingCyanPD for helping me test on his laptop![/color][/size]\n<br />",
@@ -2680,18 +2784,18 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/670/670-1789659596-921773337.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/670"
         },
-        "DownloadUrl": "nexus://scavprototype/670/2386",
+        "DownloadUrl": "nexus://scavprototype/670/2400",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 670,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-10-05T05:46:36.000Z",
-        "ReleaseDate": "2026-10-05T05:46:36.000Z",
-        "SHA256": "bf970355acf84b0943cd5c7ca3513aa994dd6958e6580994ceb6116af23bd13c",
+        "LastUpdated": "2026-10-06T04:41:42.000Z",
+        "ReleaseDate": "2026-10-06T04:41:41.000Z",
+        "SHA256": "585a306858c08c49ae1d4dc8d175d116f2cb424e71ad27c444a0e15835805681",
         "dllSHA256s": {
-            "CPUOptimization2.dll": "8cb20c069859e453338256cb488221809a05c3dae245a7bad3fcbcdb284fd629"
+            "CPUOptimization2.dll": "08be06d46a6dc5722d4b6dc6d08f512512c55f5b09ea859d16f39ae8f4766633"
         },
-        "downloadsSinceLatestVersion": 117,
+        "downloadsSinceLatestVersion": 21,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2722,14 +2826,14 @@
         "dllNames": [
             "CPUOptimization2.dll"
         ],
-        "dllVersion": "0.7.67",
+        "dllVersion": "0.7.79",
         "dllVersions": {
-            "CPUOptimization2.dll": "0.7.67"
+            "CPUOptimization2.dll": "0.7.79"
         },
         "Statistics": {
-            "Endorsements": 29,
-            "UniqueDownloads": 1033,
-            "TotalDownloads": 1903,
+            "Endorsements": 30,
+            "UniqueDownloads": 1079,
+            "TotalDownloads": 2048,
             "TotalViews": null
         },
         "Images": [
@@ -2763,7 +2867,7 @@
         "dllSHA256s": {
             "VangersMusic.dll": "7c9bc8948fe85f29c0d6c8638962449cbf5b5ba295eb7fd5322d727ec0945f10"
         },
-        "downloadsSinceLatestVersion": 13,
+        "downloadsSinceLatestVersion": 12,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -2895,7 +2999,7 @@
             "KefPluginRuntime.dll": "91d29f056b94fd713ae10b8236d18a8e7c95c957034031c569246532142419f3",
             "DoktorMod.dll": "e76795af5c685820ba0db7c58d2095b99abd0331c7d2d3e1080d79f1a29dc1d1"
         },
-        "downloadsSinceLatestVersion": 190,
+        "downloadsSinceLatestVersion": 191,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3124,7 +3228,7 @@
         "dllSHA256s": {
             "New Descents.dll": "c385e54a4480ad7ef665eaf05259426eeacad4b1cd54309aa2795d04c4c7d5ba"
         },
-        "downloadsSinceLatestVersion": 1099,
+        "downloadsSinceLatestVersion": 1114,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3183,7 +3287,7 @@
         "dllSHA256s": {
             "DistressSignal.dll": "5d29468522c195f68439b0cb909afec743c41e2e8276949642cb50af5afb5e0a"
         },
-        "downloadsSinceLatestVersion": 224,
+        "downloadsSinceLatestVersion": 229,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -3284,7 +3388,7 @@
         "dllSHA256s": {
             "ReworkedBandages.dll": "72e0c36e5d6e1d8f4e3a4699fca0688b716ddf04e3fcabebbcbc26d58454957e"
         },
-        "downloadsSinceLatestVersion": 205,
+        "downloadsSinceLatestVersion": 207,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3373,7 +3477,7 @@
         "dllSHA256s": {
             "HeadlampToggle.dll": "d2ae482432f367b7b2e2be0c205754cf105e2bc5e7e6ab205bf33fa6752f86a9"
         },
-        "downloadsSinceLatestVersion": 252,
+        "downloadsSinceLatestVersion": 253,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -3512,7 +3616,7 @@
         "ReleaseDate": "2026-10-03T15:40:53.000Z",
         "SHA256": "64ee9aeac31405f04921117b3739b549cde7f4e0339d819d33eadcf1f448d90f",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 10,
+        "downloadsSinceLatestVersion": 12,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3603,7 +3707,7 @@
             "CUCoreLib.dll": "5a12ffcc9470146af34a36073bb6a712e8f3825502cebfceefc4152c48abe89d",
             "collarsunknown.dll": "c6848ed42a1378efeec7e2aa7c3177052ba4aad715e406d177f25e4a61f8b260"
         },
-        "downloadsSinceLatestVersion": 235,
+        "downloadsSinceLatestVersion": 241,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3672,7 +3776,7 @@
         "dllSHA256s": {
             "BetterFluidTransfer.dll": "abcd7e92da5b19159429037b2143ba849c9c3f0a86aa30fd54d8fbdf11adc098"
         },
-        "downloadsSinceLatestVersion": 87,
+        "downloadsSinceLatestVersion": 92,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3733,7 +3837,7 @@
         "dllSHA256s": {
             "FixLOS.dll": "e478bca5dc5b64cc9ae8fb9be59607db31419067c607f2aedf9dc2a1b4863e91"
         },
-        "downloadsSinceLatestVersion": 306,
+        "downloadsSinceLatestVersion": 307,
         "Dependencies": [
             "nexus-115"
         ],
@@ -4013,7 +4117,7 @@
         "dllSHA256s": {
             "ArmorBugFix.dll": "492643d0dc6f6bcb647054e5365c47b4c1a09a45af58ea417dd851db40e4bc58"
         },
-        "downloadsSinceLatestVersion": 99,
+        "downloadsSinceLatestVersion": 98,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -4107,7 +4211,7 @@
         "dllSHA256s": {
             "CasualtiesTogetherConsciousnessIndicator.dll": "da2c63b5b3a5b8bdb725c9dcc13629c2e60063ecd749188d4a422023d5dee84e"
         },
-        "downloadsSinceLatestVersion": 203,
+        "downloadsSinceLatestVersion": 209,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4166,7 +4270,7 @@
         "dllSHA256s": {
             "KrokMPStrengthBoost.dll": "4aa03615516f781c2d9cb00db045623f19da6f2c64c5d91c6ef405fd3414e9c9"
         },
-        "downloadsSinceLatestVersion": 170,
+        "downloadsSinceLatestVersion": 169,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -4212,7 +4316,7 @@
         "dllSHA256s": {
             "CasualtiesCharacterScale.dll": "f874892fe2d77a9c2c5ffa9f76ae874357d81f5d54bfc524bef93320c749fdd1"
         },
-        "downloadsSinceLatestVersion": 92,
+        "downloadsSinceLatestVersion": 93,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4267,7 +4371,7 @@
         "dllSHA256s": {
             "seal_containers.dll": "97eb87c5ba69f8b4ad8425229cb594aa9d38502339a2f5c263342dafe9a70ed8"
         },
-        "downloadsSinceLatestVersion": 357,
+        "downloadsSinceLatestVersion": 359,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4368,7 +4472,7 @@
         "dllSHA256s": {
             "DukesDeadAhead.dll": "1bb366a385acc415fa5a0983b065972803a333001ae9e8cdf7cb7e294821bf78"
         },
-        "downloadsSinceLatestVersion": 402,
+        "downloadsSinceLatestVersion": 404,
         "Dependencies": [
             "nexus-341"
         ],
@@ -4416,7 +4520,7 @@
         "dllSHA256s": {
             "CU_GunHelper.dll": "c59a98b059feaf2b6d20771a05db9c51207350555bf38728e7716745824a0094"
         },
-        "downloadsSinceLatestVersion": 116,
+        "downloadsSinceLatestVersion": 115,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4577,7 +4681,7 @@
         "dllSHA256s": {
             "ThighHighs.dll": "9abad2abc4d427f3bded66ac99d8acc04dd157fc4f30708f42102e6083ddd98c"
         },
-        "downloadsSinceLatestVersion": 378,
+        "downloadsSinceLatestVersion": 380,
         "Dependencies": [
             "nexus-32"
         ],
@@ -4625,7 +4729,7 @@
         "dllSHA256s": {
             "ImprovedCrafting.dll": "f8b966c7d238a3ef1f07d9ea82b5f2a87780d5895b1a19d911a21a5c6648f619"
         },
-        "downloadsSinceLatestVersion": 30,
+        "downloadsSinceLatestVersion": 34,
         "Dependencies": [
             "nexus-341"
         ],
@@ -4687,7 +4791,7 @@
         "dllSHA256s": {
             "CasualtiesRandom_0.1.0.dll": "9814c258dabdb71accd269146b07945ec899bfb01002e0bdf7c80a91de3617d2"
         },
-        "downloadsSinceLatestVersion": 141,
+        "downloadsSinceLatestVersion": 142,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -4968,7 +5072,7 @@
         "dllSHA256s": {
             "WholeMeal.dll": "f75489751b09ade6ea9601d8797b82fcb0a26e8285533fbe1ba4aab6669de6b6"
         },
-        "downloadsSinceLatestVersion": 1058,
+        "downloadsSinceLatestVersion": 1063,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -5026,7 +5130,7 @@
         "dllSHA256s": {
             "LOSDisabler.dll": "2427efd92386d9bc8fdf2b3c317852b5dd336a7592815c5dd419fc175d2baac3"
         },
-        "downloadsSinceLatestVersion": 126,
+        "downloadsSinceLatestVersion": 125,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -5209,7 +5313,7 @@
         "dllSHA256s": {
             "Gunshot Wound System.dll": "6bf18318fa018980a8598852b1396f431f1d141eea0c5319da9ef8a63764f7bf"
         },
-        "downloadsSinceLatestVersion": 216,
+        "downloadsSinceLatestVersion": 217,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5261,7 +5365,7 @@
             "Repair-YAML.dll": "076d3f6fd804b8f9df75e6528fb4b5c7b6d6006ba9c781ab3aafbc2f868ed796",
             "Repair.dll": "8257f49b830c94726c2110e9dff7968457b03b7249b7358771dac0a9414f6379"
         },
-        "downloadsSinceLatestVersion": 150,
+        "downloadsSinceLatestVersion": 151,
         "Dependencies": [
             "nexus-341"
         ],
@@ -5536,7 +5640,7 @@
         "dllSHA256s": {
             "AutoTranslate.dll": "4eaf2f9035aafe899e678bb83eda997ff2c9995934910a085dca28c0eb4eb311"
         },
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 6,
         "Dependencies": [
             "nexus-67",
             "nexus-115",
@@ -5596,7 +5700,7 @@
         "dllSHA256s": {
             "DisableDecay.dll": "0681929402813a5926f079416c415d78e1c92dfec8691883c12cc99b64c0bdea"
         },
-        "downloadsSinceLatestVersion": 91,
+        "downloadsSinceLatestVersion": 93,
         "Dependencies": [
             "nexus-341"
         ],
@@ -5802,7 +5906,7 @@
         "dllSHA256s": {
             "RKI2.dll": "87ce6f706032d51734d24d81e21a1b5488810a800ec1f4bd3ca44daab6784c92"
         },
-        "downloadsSinceLatestVersion": 101,
+        "downloadsSinceLatestVersion": 107,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5877,7 +5981,7 @@
         "dllSHA256s": {
             "KrokMPOptimization2.dll": "131d90fdd4c1e49c1e265cb305a120a8b600b0885a756d5b3700f9a5c8258cc8"
         },
-        "downloadsSinceLatestVersion": 17,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5956,7 +6060,7 @@
         "ReleaseDate": "2026-08-30T19:23:30.000Z",
         "SHA256": "14bf9e63e4a64ca19a2b68a75d18ca38864c189048e9d99f6992727b27dfd3c2",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 231,
+        "downloadsSinceLatestVersion": 232,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6052,7 +6156,7 @@
         "dllSHA256s": {
             "AdultBark.dll": "aa21b1ce64721c6d9b00a351a0a04ca4f0da908a028de9686c67480634f5507e"
         },
-        "downloadsSinceLatestVersion": 59,
+        "downloadsSinceLatestVersion": 60,
         "Dependencies": [
             "nexus-97",
             "nexus-341",
@@ -6164,7 +6268,7 @@
         "dllSHA256s": {
             "GlassN.dll": "1db675bf63f941e003450ad060f1e167c477164e9ce1ffead7350f4127319b36"
         },
-        "downloadsSinceLatestVersion": 380,
+        "downloadsSinceLatestVersion": 382,
         "Dependencies": [
             "nexus-67",
             "nexus-580"
@@ -6318,7 +6422,7 @@
         "dllSHA256s": {
             "ClientJoinFix.dll": "ccc0101d397e18b29a24f7c5f46d62802314092da26b8829c6fb9af8c2963df2"
         },
-        "downloadsSinceLatestVersion": 440,
+        "downloadsSinceLatestVersion": 441,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6419,7 +6523,7 @@
         "dllSHA256s": {
             "DifferentiatingTraits.dll": "c0b09e35ff06b0b4be6004fe3a579b7121a655194c0363223635b259b5f2ed4d"
         },
-        "downloadsSinceLatestVersion": 938,
+        "downloadsSinceLatestVersion": 944,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6478,7 +6582,7 @@
         "dllSHA256s": {
             "CasULastStandReplacer.dll": "2e1015f12de5bea61d9ebe1ed8050c8f06762cc38b12cd909b1b48483b6027e8"
         },
-        "downloadsSinceLatestVersion": 164,
+        "downloadsSinceLatestVersion": 165,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -6524,7 +6628,7 @@
         "dllSHA256s": {
             "LazyMinimap.dll": "5792cd6d6f3fd7d0dae51e839cf01d80ed431df129a93a9c176c68ccca914639"
         },
-        "downloadsSinceLatestVersion": 334,
+        "downloadsSinceLatestVersion": 335,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6575,7 +6679,7 @@
         "ReleaseDate": "2026-09-19T07:51:39.000Z",
         "SHA256": "f3fddc5903b3b238bfc2e2e1ca168f788b5690a71a0f0e620fba5abee2c14108",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 87,
+        "downloadsSinceLatestVersion": 90,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6686,7 +6790,7 @@
         "dllSHA256s": {
             "GlassM.dll": "c5cee83413dd2b4ec298edcbc8f121015c5eec65513231cff9731cd147d54f6b"
         },
-        "downloadsSinceLatestVersion": 406,
+        "downloadsSinceLatestVersion": 409,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -6791,7 +6895,7 @@
         "dllSHA256s": {
             "GamepadSupport.dll": "e514b1a1a0a96e216956adbd601909a9166989ba7ef8445f5cadcebde10e8c5d"
         },
-        "downloadsSinceLatestVersion": 264,
+        "downloadsSinceLatestVersion": 267,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -7142,7 +7246,7 @@
         "ReleaseDate": "2026-08-17T09:00:16.000Z",
         "SHA256": "df7c03784e772f0459e9fb5977c389897185220aa862f9de3ea49941abc9d662",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 244,
+        "downloadsSinceLatestVersion": 245,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -7180,7 +7284,7 @@
         "ReleaseDate": "2026-08-17T08:41:16.000Z",
         "SHA256": "07dd018bbfb84b9c19399242b0f9556ab311db4146280e805c42ae492bd5c1e1",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 195,
+        "downloadsSinceLatestVersion": 196,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -7218,7 +7322,7 @@
         "ReleaseDate": "2026-08-17T08:15:19.000Z",
         "SHA256": "7bed960324b7b83abc9df34245efff67e9dabeb57f53804c4e2566f692a3dd1f",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 229,
+        "downloadsSinceLatestVersion": 230,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -7260,7 +7364,7 @@
         "dllSHA256s": {
             "ProjectTelchak.dll": "60f0fbdc45fd7936ff3ac2aa624dfbd4c63f62bdfe0370ba986cfe72c117f4da"
         },
-        "downloadsSinceLatestVersion": 36,
+        "downloadsSinceLatestVersion": 35,
         "Dependencies": [
             "nexus-9",
             "nexus-341",
@@ -7352,7 +7456,7 @@
         "ReleaseDate": "2026-08-17T06:16:12.000Z",
         "SHA256": "84edc5168d7c10a69b0c6237989f6279404bc352855d44b4b0ea33e376ad18bc",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 257,
+        "downloadsSinceLatestVersion": 259,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -7480,7 +7584,7 @@
         "dllSHA256s": {
             "MaxTraderRep.dll": "a8f632b0324ca3400be589034b39d998cda0187e4eb3960ac243279331f9b15c"
         },
-        "downloadsSinceLatestVersion": 143,
+        "downloadsSinceLatestVersion": 142,
         "Dependencies": [
             "nexus-115"
         ],
@@ -7635,7 +7739,7 @@
         "dllSHA256s": {
             "GamblingUnknown.dll": "f0c98df4baee4308268e44bad33f2773aa290fd8019d65283bdd5760488b3818"
         },
-        "downloadsSinceLatestVersion": 129,
+        "downloadsSinceLatestVersion": 130,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -7845,7 +7949,7 @@
         "dllSHA256s": {
             "HoldWearableInHand.dll": "212891667e049d951d8aab5e0bd71def7b0031c07f9055cbf336b0cdc04396ef"
         },
-        "downloadsSinceLatestVersion": 115,
+        "downloadsSinceLatestVersion": 116,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -8060,7 +8164,7 @@
         "dllSHA256s": {
             "WhatModIsThisFrom.dll": "d21cbb8daf443644f59251c8bd230ce3b995e5e8addfa304cd1937f4ff74e978"
         },
-        "downloadsSinceLatestVersion": 723,
+        "downloadsSinceLatestVersion": 725,
         "Dependencies": [
             "nexus-341"
         ],
@@ -8209,7 +8313,7 @@
         "dllSHA256s": {
             "Assembly-CSharp.dll": "70fe5dd5dfbf735da613a1d79ddf59e99694debcec838bba500e33151767a67c"
         },
-        "downloadsSinceLatestVersion": 468,
+        "downloadsSinceLatestVersion": 470,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -8356,7 +8460,7 @@
         "dllSHA256s": {
             "Performant Rendering.dll": "44404ed33c48bc69e571278d773a3139b6a5220ebb5e0f219d038e5038dec9ce"
         },
-        "downloadsSinceLatestVersion": 1571,
+        "downloadsSinceLatestVersion": 1573,
         "Dependencies": [
             "nexus-341"
         ],
@@ -8413,7 +8517,7 @@
         "dllSHA256s": {
             "HandSpriteR.dll": "0f903ef599d1f4634989c465b17fd80703d36203ab5750179bd5c31cd7b631a4"
         },
-        "downloadsSinceLatestVersion": 175,
+        "downloadsSinceLatestVersion": 176,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -8459,7 +8563,7 @@
         "dllSHA256s": {
             "PisCondensedCrafting.dll": "4caab1577eed7e05f74ce018d4148965cc443d920a8d1f25f34b1bd67139782a"
         },
-        "downloadsSinceLatestVersion": 286,
+        "downloadsSinceLatestVersion": 288,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -8576,7 +8680,7 @@
         "dllSHA256s": {
             "transparentsyringes.dll": "a4b425bbc43f51b3c6ee556ee6e6d0c613e1aab19563161b804a54f8b56b0950"
         },
-        "downloadsSinceLatestVersion": 274,
+        "downloadsSinceLatestVersion": 275,
         "Dependencies": [
             "nexus-341"
         ],
@@ -8686,7 +8790,7 @@
         "dllSHA256s": {
             "MilkiesMilk.dll": "bf3741946a4d2d30016cd42f466e238863c399c171defe88a1766b17049a7b53"
         },
-        "downloadsSinceLatestVersion": 1301,
+        "downloadsSinceLatestVersion": 1306,
         "Dependencies": [
             "nexus-341"
         ],
@@ -8799,7 +8903,7 @@
         "dllSHA256s": {
             "SayAgain.dll": "9f9fe613869f807dc146e280a75c81801b4843f690452488a815b10329d91190"
         },
-        "downloadsSinceLatestVersion": 218,
+        "downloadsSinceLatestVersion": 223,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -8899,7 +9003,7 @@
         "dllSHA256s": {
             "CasualtiesCraft.dll": "ae244b3dfe909c388a352575c70bc130d07283ec80aa2c66eab14fde52a5981a"
         },
-        "downloadsSinceLatestVersion": 48,
+        "downloadsSinceLatestVersion": 52,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -8966,7 +9070,7 @@
         "dllSHA256s": {
             "Improved Headlamp.dll": "e9fd2aac600b23d9ec03cab159abf71746cf930fe5a5f9edb8cd0438811f5e56"
         },
-        "downloadsSinceLatestVersion": 158,
+        "downloadsSinceLatestVersion": 160,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -9067,7 +9171,7 @@
             "CU-MCP-Mod.dll": "5370ea6a9f8e52b41af657b20fc150c74f837efa01b108e242c7224a354f1fdf",
             "Newtonsoft.Json.dll": "e1e27af7b07eeedf5ce71a9255f0422816a6fc5849a483c6714e1b472044fa9d"
         },
-        "downloadsSinceLatestVersion": 150,
+        "downloadsSinceLatestVersion": 151,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -9316,7 +9420,7 @@
         "ReleaseDate": "2026-10-02T01:27:46.000Z",
         "SHA256": "fb9c73f697f0a63cd8c451cb483d818b21f0617f13894554842465619c62899c",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 27,
+        "downloadsSinceLatestVersion": 30,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -9460,7 +9564,7 @@
         "dllSHA256s": {
             "CasualtiesUnderTheInfluence.dll": "0b3e5e4355617371a99b86c7af778b3e57c82dfc2fc011a868e313a6a1d8a6d4"
         },
-        "downloadsSinceLatestVersion": 623,
+        "downloadsSinceLatestVersion": 627,
         "Dependencies": [
             "nexus-341"
         ],
@@ -9521,7 +9625,7 @@
         "dllSHA256s": {
             "A.Multi_Mod.Chinese.Localization.dll": "7c70081b462b58a4c349dc3d3a51aed32845e4e8b5bbce8110dc42b711a2a057"
         },
-        "downloadsSinceLatestVersion": 127,
+        "downloadsSinceLatestVersion": 129,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -9575,7 +9679,7 @@
         "dllSHA256s": {
             "CUCoreLib.KrokMP.SaveHotfix.dll": "8f100d5b0afefcd7e0045afc86eb7bfd2dbc2bc52f7de9edc8cee8c7ae3e5d77"
         },
-        "downloadsSinceLatestVersion": 489,
+        "downloadsSinceLatestVersion": 490,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -9621,7 +9725,7 @@
         "dllSHA256s": {
             "VariantOrganisms.dll": "57fda7e95b1541745887d66eaa71c9adc7c79e32ca461f2e79124993761c89b3"
         },
-        "downloadsSinceLatestVersion": 324,
+        "downloadsSinceLatestVersion": 325,
         "Dependencies": [
             "nexus-341",
             "nexus-502"
@@ -9778,7 +9882,7 @@
         "dllSHA256s": {
             "CUButt_1.1.2.dll": "906b519a3fb2c3826623725b5efcf0cf09ce731dd73b0dc94efb28a911a872cd"
         },
-        "downloadsSinceLatestVersion": 197,
+        "downloadsSinceLatestVersion": 198,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -9833,7 +9937,7 @@
         "ReleaseDate": "2026-08-25T02:28:44.000Z",
         "SHA256": "18ef17d40b505be1dc1046f20c1469723912ffaa642075e4beea905d01cdd63b",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 2451,
+        "downloadsSinceLatestVersion": 2476,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -9890,7 +9994,7 @@
             "CUCoreLib.dll": "ebc96311ec65f9053e557cd1837c0ee8823a85e05f4d2900d3132fa1f451e052",
             "CaveDiver.dll": "09d63521a2731c4088531a7b5988c4ea21f43cfce21b982566f17bf1ef5356d8"
         },
-        "downloadsSinceLatestVersion": 347,
+        "downloadsSinceLatestVersion": 346,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10083,7 +10187,7 @@
         "dllSHA256s": {
             "CreatureKit.dll": "563ad5dfd0334e152633338bbb56c031fb7914e4df3b87b5a84ac6f066a128d9"
         },
-        "downloadsSinceLatestVersion": 432,
+        "downloadsSinceLatestVersion": 433,
         "Dependencies": [
             "nexus-341"
         ],
@@ -10144,7 +10248,7 @@
         "dllSHA256s": {
             "EMI.dll": "ff29a0d66322265135a984896715ce7e13d5f310f5f6e27aa7b665081b7bece6"
         },
-        "downloadsSinceLatestVersion": 553,
+        "downloadsSinceLatestVersion": 555,
         "Dependencies": [
             "nexus-115"
         ],
@@ -10410,7 +10514,7 @@
         "dllSHA256s": {
             "AutoMinigameTools.dll": "07c13530b5be1da9f30a62aa96e9393bb303dd0c3e98794aff177605e71cec22"
         },
-        "downloadsSinceLatestVersion": 695,
+        "downloadsSinceLatestVersion": 698,
         "Dependencies": [
             "nexus-341"
         ],
@@ -10517,7 +10621,7 @@
         "dllSHA256s": {
             "MultiplayerStartItems.dll": "04622ef2fa4dd280ac7c5b81c9a0e2c6830e4223fe6abd9ddaafc31143a06846"
         },
-        "downloadsSinceLatestVersion": 10,
+        "downloadsSinceLatestVersion": 12,
         "Dependencies": [
             "nexus-67",
             "nexus-115"
@@ -10575,7 +10679,7 @@
         "dllSHA256s": {
             "ColorfulInsides.dll": "3fbbe26f4c8871ddad0e3e9a8ce218e13b11c4f1ba6079bbab6ce49d4f61140c"
         },
-        "downloadsSinceLatestVersion": 35,
+        "downloadsSinceLatestVersion": 41,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10675,7 +10779,7 @@
         "dllSHA256s": {
             "ServerModLoaderByStaili.dll": "2d69382878f6e86d3c31803d9eb63daf894634a35c623c50204a3a87f00de05f"
         },
-        "downloadsSinceLatestVersion": 368,
+        "downloadsSinceLatestVersion": 369,
         "Dependencies": [
             "nexus-67"
         ],
@@ -10723,7 +10827,7 @@
         "dllSHA256s": {
             "TemporaryBottleCountdown.dll": "7fb2ee7d4e2828153e6db4621b93c02b580797e68f34866cacedddf0760fd910"
         },
-        "downloadsSinceLatestVersion": 249,
+        "downloadsSinceLatestVersion": 250,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10841,7 +10945,7 @@
             "CUCoreLib.dll": "d44531cc0c8e11db13c622557da359375bfa7cd7660920726a887dc2c4538690",
             "ICEnecoCustomItemAPI.dll": "ef9732f12c8fce1b5c50748bda4d5687cc177c44d50d3b4035dcd6314b659eb7"
         },
-        "downloadsSinceLatestVersion": 230,
+        "downloadsSinceLatestVersion": 231,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10900,7 +11004,7 @@
         "dllSHA256s": {
             "ConsolePlus.dll": "8c1b2f35c70f1e3bd7528cf63d0306f37bad9b7a0966b0f459cfd25b7577759e"
         },
-        "downloadsSinceLatestVersion": 369,
+        "downloadsSinceLatestVersion": 372,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -11004,7 +11108,7 @@
         "dllSHA256s": {
             "CUMoreNpcMod.dll": "c310ccfb04f627798319010605c97a56f35fa6d14a4c6c4f5b59d696cb174314"
         },
-        "downloadsSinceLatestVersion": 140,
+        "downloadsSinceLatestVersion": 142,
         "Dependencies": [
             "nexus-67",
             "nexus-341"
@@ -11058,7 +11162,7 @@
         "dllSHA256s": {
             "MilkyHateYou.dll": "b465a09a67048c6e845a9ad71667630d68daa9ad595616bce7f700a91d89ecbf"
         },
-        "downloadsSinceLatestVersion": 64,
+        "downloadsSinceLatestVersion": 63,
         "Dependencies": [
             "nexus-115"
         ],
@@ -11152,7 +11256,7 @@
         "dllSHA256s": {
             "CeilingTurret.dll": "bd586ff876934b33e79334c14bf101827f895327753d11aace2a1c13cbbb11b6"
         },
-        "downloadsSinceLatestVersion": 202,
+        "downloadsSinceLatestVersion": 204,
         "Dependencies": [
             "nexus-341"
         ],
@@ -11205,7 +11309,7 @@
         "dllSHA256s": {
             "EchoLocation.dll": "9ffab421465895ced0e775f4a33c175ad035b3165875365320b0239930cb11f3"
         },
-        "downloadsSinceLatestVersion": 332,
+        "downloadsSinceLatestVersion": 333,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -11254,7 +11358,7 @@
         "dllSHA256s": {
             "CU'sKitchenV1.3Early.dll": "afce9b964c84d4865aa62e8d48a62580781449cfd8dde79e7670a5f454b6d009"
         },
-        "downloadsSinceLatestVersion": 1554,
+        "downloadsSinceLatestVersion": 1559,
         "Dependencies": [
             "nexus-341"
         ],
@@ -11358,7 +11462,7 @@
         "dllSHA256s": {
             "Wearable Crystals.dll": "3f3338596ab9e1bc876e6ca57863d0d413a54e0234ba2843fbfa9b0fc2753e33"
         },
-        "downloadsSinceLatestVersion": 854,
+        "downloadsSinceLatestVersion": 856,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -11412,7 +11516,7 @@
         "dllSHA256s": {
             "BurnCare.dll": "ed695b4b92d4d17c5bb23611d82ff00038e70a2eb3720007add48be29b766863"
         },
-        "downloadsSinceLatestVersion": 178,
+        "downloadsSinceLatestVersion": 180,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -11463,7 +11567,7 @@
         "dllSHA256s": {
             "MakeshiftProsthetics.dll": "a66253b0a2bcafd1e78a71158163cd9d100304e26f39bd5897d31b11e216cd4c"
         },
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 17,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -11707,7 +11811,7 @@
         "dllSHA256s": {
             "SkinDeep.dll": "059f5f0155d35145d98a3804728e4e0bb7b58c55c660286435abc124b879a946"
         },
-        "downloadsSinceLatestVersion": 787,
+        "downloadsSinceLatestVersion": 792,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -11802,7 +11906,7 @@
         "ReleaseDate": "2026-07-15T16:42:30.000Z",
         "SHA256": "d343c96ced9a1f3174eed74a891df82f5e3cfa476d23d26895485c5bfe14ed8c",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 51,
+        "downloadsSinceLatestVersion": 52,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -11895,7 +11999,7 @@
         "dllSHA256s": {
             "CUSuperArsenal.dll": "ffaa61c8bee4d8567a9292a29fbbe9fe5a0874ef6dab44ac7641d95fea881a63"
         },
-        "downloadsSinceLatestVersion": 226,
+        "downloadsSinceLatestVersion": 228,
         "Dependencies": [
             "nexus-341"
         ],
@@ -11948,7 +12052,7 @@
         "dllSHA256s": {
             "Extra Medicaments.dll": "a4b726c6748d05c58840d933d6c1b74c0c9ef7ad8ea03b7465617c5ca3632c8c"
         },
-        "downloadsSinceLatestVersion": 440,
+        "downloadsSinceLatestVersion": 441,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -12061,7 +12165,7 @@
         "dllSHA256s": {
             "RedBlood.dll": "3ee240efb8e3c07a09988f6c6f9589e83c76223db15d32b8395eab6a872b4910"
         },
-        "downloadsSinceLatestVersion": 315,
+        "downloadsSinceLatestVersion": 317,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -12145,7 +12249,7 @@
         "dllSHA256s": {
             "NeurotraumaModikByStaili.dll": "a3dbaff57923a3017b2b48c6fcce7e2e63b5d271fc75928cbe4c56872df52be0"
         },
-        "downloadsSinceLatestVersion": 509,
+        "downloadsSinceLatestVersion": 510,
         "Dependencies": [
             "nexus-40",
             "nexus-67",
@@ -12292,7 +12396,7 @@
         "dllSHA256s": {
             "Upgradable Storage Packs.dll": "ba392814158712fafe30abb833b89eb8a74d7ed2a368c80ac5fe384724a5c755"
         },
-        "downloadsSinceLatestVersion": 159,
+        "downloadsSinceLatestVersion": 160,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -12416,7 +12520,7 @@
         "dllSHA256s": {
             "CustomMap.dll": "448ace7d95208a49b205c574ace5624495e46437516906606ae0fb76c646d52f"
         },
-        "downloadsSinceLatestVersion": 128,
+        "downloadsSinceLatestVersion": 129,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -12522,7 +12626,7 @@
         "dllSHA256s": {
             "ModikDialog.dll": "e0f78fe0192168c7bc0c7261bb761b27e8cb3735236e08a051fdb5a500d0a98e"
         },
-        "downloadsSinceLatestVersion": 81,
+        "downloadsSinceLatestVersion": 82,
         "Dependencies": [
             "nexus-7",
             "nexus-341"
@@ -12576,7 +12680,7 @@
         "dllSHA256s": {
             "extraDialogue.dll": "d775fa44ede3a1175e93c8e2e3f6032e857547c38b749ef13e38212492374cb3"
         },
-        "downloadsSinceLatestVersion": 1525,
+        "downloadsSinceLatestVersion": 1526,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -12749,7 +12853,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "2b189c3285703f51d31b26942f3656c066cc10603f53bb06e47dbe0a9dd404ea"
         },
-        "downloadsSinceLatestVersion": 3252,
+        "downloadsSinceLatestVersion": 3258,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -12812,7 +12916,7 @@
         "dllSHA256s": {
             "CUZoomPlus.dll": "aa4f4ce533818b24c854b3e6796e2a71795e4db2c81b8ea339828c3cc47045b0"
         },
-        "downloadsSinceLatestVersion": 727,
+        "downloadsSinceLatestVersion": 728,
         "Dependencies": [
             "nexus-341"
         ],
@@ -13016,7 +13120,7 @@
             "CUCoreLib.dll": "47275a8cd64cd998537a5f3405f3373aed7b429d2179fcff84844367918e1e41",
             "MoodReimagined.dll": "d08e3f6298f9c6173158b33601e2f332921b762339ed0180cbf5c9bd8dd085f7"
         },
-        "downloadsSinceLatestVersion": 194,
+        "downloadsSinceLatestVersion": 198,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13073,7 +13177,7 @@
         "dllSHA256s": {
             "CUAdvancedBossBar.dll": "5189a2d7b9ddbe29ed8c7e9ee04448c8ec30e2cb8e99cf508f55ee153218d8e2"
         },
-        "downloadsSinceLatestVersion": 517,
+        "downloadsSinceLatestVersion": 519,
         "Dependencies": [
             "nexus-341"
         ],
@@ -13123,7 +13227,7 @@
             "CUCoreLib.dll": "8f07dbc4909fd3ab673a5890a755af3bf5c20d7ffe43a6fc4c92e4efd8e1d7c1",
             "MultiBatteryPack.dll": "e4fa568602ae5e918f457d6240c01ae18cc98126acfa640ada0ac948db43e6cd"
         },
-        "downloadsSinceLatestVersion": 88,
+        "downloadsSinceLatestVersion": 89,
         "Dependencies": [
             "nexus-341"
         ],
@@ -13173,7 +13277,7 @@
         "dllSHA256s": {
             "ManualGunSuicide.dll": "ed661c435778b8f25633e96e1e5b8a4429667924b74e6aa04dbbdda14ba74823"
         },
-        "downloadsSinceLatestVersion": 665,
+        "downloadsSinceLatestVersion": 664,
         "Dependencies": [
             "nexus-67",
             "nexus-115"
@@ -13231,7 +13335,7 @@
         "dllSHA256s": {
             "CUTarkovMedicalMod.dll": "1f5dc1eb0f65206850b8e837edf0ebd1e58280e542669a5c4738e5d61fa0fd04"
         },
-        "downloadsSinceLatestVersion": 452,
+        "downloadsSinceLatestVersion": 453,
         "Dependencies": [
             "nexus-341"
         ],
@@ -13292,7 +13396,7 @@
         "dllSHA256s": {
             "ImmersiveTraps.dll": "de795274d079b0bc18313f7675bf283f669550804caa20e4486961a3de12f35b"
         },
-        "downloadsSinceLatestVersion": 391,
+        "downloadsSinceLatestVersion": 392,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13490,7 +13594,7 @@
         "dllSHA256s": {
             "TooManySettings.dll": "bcb57d6a2a5820faf250e808f0909cf74c019c18f30e992c502a9ce5a703f3f4"
         },
-        "downloadsSinceLatestVersion": 678,
+        "downloadsSinceLatestVersion": 681,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -13536,7 +13640,7 @@
         "dllSHA256s": {
             "CUMoreAmputation.dll": "edfd809af5be12c72878a465a3385999e0d5cf2c1b02737aed83452cda61e28d"
         },
-        "downloadsSinceLatestVersion": 1556,
+        "downloadsSinceLatestVersion": 1559,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -13713,7 +13817,7 @@
             "KefPluginRuntime.dll": "06091482b33aa192a19a6d6c414338175a727af3d8020daa18f794521c0a9c8a",
             "SoundReplacer.dll": "62e679c70bbccff7b8ca2e30c2ede9a4328d9425d7dd10b7c49d50c8ba2f5557"
         },
-        "downloadsSinceLatestVersion": 291,
+        "downloadsSinceLatestVersion": 292,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -13866,7 +13970,7 @@
         "dllSHA256s": {
             "knotrecipemod.dll": "540ca2574401953c3fdab3e0cd4f4f4c933eba7e33e276b3ff0b72d5e2774779"
         },
-        "downloadsSinceLatestVersion": 2074,
+        "downloadsSinceLatestVersion": 2084,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13917,7 +14021,7 @@
         "dllSHA256s": {
             "MassiveCasualties.dll": "d1f77c845af7fa53cc3a284c1f26f753ed1f88006bba5d0df3494f39d1bd8933"
         },
-        "downloadsSinceLatestVersion": 350,
+        "downloadsSinceLatestVersion": 349,
         "Dependencies": [
             "nexus-67",
             "nexus-115",
@@ -14119,7 +14223,7 @@
         "dllSHA256s": {
             "CasualtyVitals.dll": "d1f34534486472dbcc0af7527f55163f52d9eaefa657347bf55ab9d5512509b8"
         },
-        "downloadsSinceLatestVersion": 2,
+        "downloadsSinceLatestVersion": 18,
         "Dependencies": [
             "nexus-341"
         ],
@@ -14359,7 +14463,7 @@
         "dllSHA256s": {
             "NoOilMod v2.dll": "0c3f9bd5048bdc347ac5ec70bf55de535d58f0dd4cdc7cf8006f4360efb0e434"
         },
-        "downloadsSinceLatestVersion": 82,
+        "downloadsSinceLatestVersion": 84,
         "Dependencies": [
             "nexus-115"
         ],
@@ -14407,7 +14511,7 @@
         "dllSHA256s": {
             "ChooseQuitType.dll": "944c5d73785f52565982cd44bb956fbb0253402a2bc0c80ce117284f2bf749f7"
         },
-        "downloadsSinceLatestVersion": 1094,
+        "downloadsSinceLatestVersion": 1095,
         "Dependencies": [
             "nexus-115"
         ],
@@ -14547,7 +14651,7 @@
         "dllSHA256s": {
             "RuScavMods.dll": "c2202c64457022a31c8d43732abe53eaa52b732b4a5b1153fdf8b39eee7c5870"
         },
-        "downloadsSinceLatestVersion": 79,
+        "downloadsSinceLatestVersion": 85,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -14696,7 +14800,7 @@
         "dllSHA256s": {
             "ExpSneeze.dll": "6c4bf9ef1de3c32d84c9029154e48f3e17984afc529b35477b3d31932586ae0f"
         },
-        "downloadsSinceLatestVersion": 478,
+        "downloadsSinceLatestVersion": 482,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -14877,7 +14981,7 @@
         "dllSHA256s": {
             "WhatDidiPressWrong.dll": "920ceb92aab53f7272b6e3055ee44fc6fda1b6fe1f2ccfb8bfa27e6d1563200f"
         },
-        "downloadsSinceLatestVersion": 247,
+        "downloadsSinceLatestVersion": 249,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15007,7 +15111,7 @@
             "CraftingTweaks.dll": "66a557052db508e9a06caa72c7e4b047a5451affd2a1f40c4a7a13ffd1cc1df2",
             "KefPluginRuntime.dll": "02f3791e7db6e464c595f685fdbc63641bb2dd7a1e9f4903b851ef540b3b9e6a"
         },
-        "downloadsSinceLatestVersion": 1017,
+        "downloadsSinceLatestVersion": 1021,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15060,7 +15164,7 @@
         "dllSHA256s": {
             "AllWearableCanBeHeld.dll": "2807520bc5eca3efe8792122703162d0c8bac45368a1d65668d2c6339713e3c7"
         },
-        "downloadsSinceLatestVersion": 1293,
+        "downloadsSinceLatestVersion": 1296,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -15199,7 +15303,7 @@
         "dllSHA256s": {
             "LeftyExpie.dll": "66781c5e0846cb86aa6a2eaaf53e057e8f54a79e59e23460bb0c29458c486c1e"
         },
-        "downloadsSinceLatestVersion": 193,
+        "downloadsSinceLatestVersion": 194,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -15338,7 +15442,7 @@
         "dllSHA256s": {
             "VProfiler.dll": "2fbd5deba8c6a3dfdfc44e3bd6d06535b61e198980bbc1d55c13d8d0f1faf3f8"
         },
-        "downloadsSinceLatestVersion": 23,
+        "downloadsSinceLatestVersion": 24,
         "Dependencies": [
             "nexus-115"
         ],
@@ -15398,7 +15502,7 @@
             "CUCoreLib.dll": "d44531cc0c8e11db13c622557da359375bfa7cd7660920726a887dc2c4538690",
             "狗曦的狗屎玩意.dll": "1a78a655b71ea77d177b906eb65f2b7ff16ba4eca6ab15e00b4bb9359a77ccad"
         },
-        "downloadsSinceLatestVersion": 343,
+        "downloadsSinceLatestVersion": 345,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15504,7 +15608,7 @@
         "dllSHA256s": {
             "MistalCrysMap.dll": "d582c7425ae6cd7b160f0d4a93a0fd9f58cd26e53adcdd364b08bb610477decf"
         },
-        "downloadsSinceLatestVersion": 323,
+        "downloadsSinceLatestVersion": 325,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15665,7 +15769,7 @@
         "ReleaseDate": "2026-07-20T03:19:03.000Z",
         "SHA256": "624841785f5e45f8382fcad238e8a4a8d7278ce98addbf8d4ace8ac96494ee98",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 265,
+        "downloadsSinceLatestVersion": 266,
         "Dependencies": [
             "nexus-32",
             "nexus-122"
@@ -15707,7 +15811,7 @@
         "ReleaseDate": "2026-06-27T16:23:50.000Z",
         "SHA256": "7f35f5dda7eade8024d50cdcc2f03aa9c570544859a4565e60ebd1d6bf80ef7f",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 422,
+        "downloadsSinceLatestVersion": 423,
         "Dependencies": [
             "nexus-43"
         ],
@@ -15797,7 +15901,7 @@
         "dllSHA256s": {
             "Refill_Jetpack_with_Oil.dll": "7a64777661e1f47ac670bf636cfeb8fc9e808e2539d521f9a1c52646ba2152f1"
         },
-        "downloadsSinceLatestVersion": 233,
+        "downloadsSinceLatestVersion": 234,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15844,7 +15948,7 @@
         "ReleaseDate": "2026-07-13T13:20:36.000Z",
         "SHA256": "a321bee6e6e8406c252014c42bbc09ef0cb68e1583c6f32164afced25e7c7e93",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 486,
+        "downloadsSinceLatestVersion": 485,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15923,7 +16027,7 @@
         "dllSHA256s": {
             "CraftingLogic.dll": "24b276de3e7a38ce23940996a6e06f3b78fa6f987dcd29efdbe8b9056768f8ea"
         },
-        "downloadsSinceLatestVersion": 730,
+        "downloadsSinceLatestVersion": 734,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16085,7 +16189,7 @@
         "dllSHA256s": {
             "CUCoreLib.dll": "4394c51af86dd825b4455637fceaa35abe7a3da340c49153c2dd42c5fcb72302"
         },
-        "downloadsSinceLatestVersion": 886,
+        "downloadsSinceLatestVersion": 928,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16433,7 +16537,7 @@
         "dllSHA256s": {
             "Flimsiestknife.dll": "23ea0854cbbba42beada4b4ffb02b0ed574c20aa899904e10c724cdf9981e9cd"
         },
-        "downloadsSinceLatestVersion": 194,
+        "downloadsSinceLatestVersion": 193,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16484,7 +16588,7 @@
         "dllSHA256s": {
             "CU_ModSettings.dll": "4da647e7971802d6bca1dc5135e682ec9c80e006a4e9d620d5740c9ba30c6722"
         },
-        "downloadsSinceLatestVersion": 846,
+        "downloadsSinceLatestVersion": 848,
         "Dependencies": [
             "nexus-115"
         ],
@@ -16592,7 +16696,7 @@
         "dllSHA256s": {
             "ExpiePettingMod.dll": "189909b97d3d8668d9e26b50bd69dd23887be0648997ecd7ea93b95ac383d835"
         },
-        "downloadsSinceLatestVersion": 3085,
+        "downloadsSinceLatestVersion": 3090,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -16795,7 +16899,7 @@
         "dllSHA256s": {
             "GSR's General Framework.dll": "38654d81f44ab78bbee2ca2f0fadb5e1d04ce123582fd40818c80cb825184b8a"
         },
-        "downloadsSinceLatestVersion": 1,
+        "downloadsSinceLatestVersion": 3,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16846,7 +16950,7 @@
         "dllSHA256s": {
             "EnhancedTools.dll": "e8f9dbf960d31500346a7800b8cd0f35557c176c27f37fe689a47b0dfa3bd9cb"
         },
-        "downloadsSinceLatestVersion": 338,
+        "downloadsSinceLatestVersion": 342,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -17006,7 +17110,7 @@
             "GunsawGenetics.dll": "3053c925a321b0c9aaa449c41a1bb06be46879ce5160555a14f16963e4eeaecf",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 852,
+        "downloadsSinceLatestVersion": 1064,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -17291,7 +17395,7 @@
         "dllSHA256s": {
             "SimpleQoL.dll": "138cdd2d840407ea4ee0c8c2ff667f5e69f40d116d6f27f5a30d284fb0184818"
         },
-        "downloadsSinceLatestVersion": 76,
+        "downloadsSinceLatestVersion": 80,
         "Dependencies": [
             "nexus-115"
         ],
@@ -17358,7 +17462,7 @@
         "dllSHA256s": {
             "PissEnjoyment.dll": "5435c699a40855fa80173f5c282ade2977582f77d3e04f9b2fedeb8ea8803d30"
         },
-        "downloadsSinceLatestVersion": 182,
+        "downloadsSinceLatestVersion": 183,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -17446,7 +17550,7 @@
         "ReleaseDate": "2026-06-16T19:07:31.000Z",
         "SHA256": "b7013ba0a8683a3e7e79bbd52262d170d0ef8105ff58cc166d764f6752b0d9d7",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 96,
+        "downloadsSinceLatestVersion": 97,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -17580,7 +17684,7 @@
         "dllSHA256s": {
             "EscapeFromCasualtiesInjectors.dll": "2ee22b0051537e7a19ea19667a56f2cfdbb05b0610a0d8586c82f1713e35609e"
         },
-        "downloadsSinceLatestVersion": 319,
+        "downloadsSinceLatestVersion": 320,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -17819,7 +17923,7 @@
         "ReleaseDate": "2026-06-28T18:00:03.000Z",
         "SHA256": "cbf453747d9a96761fb58fdc25402b9cf9489c96c80a83b1014c6774a581538b",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 703,
+        "downloadsSinceLatestVersion": 704,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -17874,7 +17978,7 @@
         "dllSHA256s": {
             "VforWhiningMPAddon.dll": "443dadc0d76759dfd0aa809d5c29587dfdc26f8864e78e0743cc2c37a14764e4"
         },
-        "downloadsSinceLatestVersion": 606,
+        "downloadsSinceLatestVersion": 608,
         "Dependencies": [
             "nexus-67",
             "nexus-115",
@@ -17925,7 +18029,7 @@
             "CasualtiesThings.dll": "5bf5092b594e963223ea3cc5e69e1918cba7d5c6d550d0ca597ef59a3087713d",
             "NVorbis.dll": "924863d1a818e0c5714ae6df68f4aa5b2ff9c2fafc86214c2cde20fa819c3252"
         },
-        "downloadsSinceLatestVersion": 177,
+        "downloadsSinceLatestVersion": 178,
         "Dependencies": [
             "nexus-32"
         ],
@@ -17979,7 +18083,7 @@
         "dllSHA256s": {
             "StarterGameModifiers.dll": "11287ca99752977b8fede148ad8e553fb9db329f0cf7c85626330a06bcc40c15"
         },
-        "downloadsSinceLatestVersion": 135,
+        "downloadsSinceLatestVersion": 136,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -18114,7 +18218,7 @@
         "dllSHA256s": {
             "UltimateSoundSwap.dll": "865721f181eecb3cec5a291085ed69f5a5e7e1b6e069faeb264f490cc21b62a2"
         },
-        "downloadsSinceLatestVersion": 773,
+        "downloadsSinceLatestVersion": 774,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -18428,7 +18532,7 @@
         "dllSHA256s": {
             "AutoSort.dll": "d53f5cd40fc6a463af7c3564c8bcec601ce91d763639177c2ac0fbe827a47158"
         },
-        "downloadsSinceLatestVersion": 1882,
+        "downloadsSinceLatestVersion": 1887,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -18474,7 +18578,7 @@
         "dllSHA256s": {
             "TitaniumRestored.dll": "2f3ffa71e2c612ad04f6622297098c8720b3bd7a3ef188c507420737806c36b7"
         },
-        "downloadsSinceLatestVersion": 801,
+        "downloadsSinceLatestVersion": 802,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -18529,7 +18633,7 @@
         "dllSHA256s": {
             "InventoryVisibilityFix.dll": "25a20ae70aa0c995bbdbdfbf2965e5da44fc6eba0b4661c3e9f108e0d4dd6adc"
         },
-        "downloadsSinceLatestVersion": 658,
+        "downloadsSinceLatestVersion": 660,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -18583,7 +18687,7 @@
             "KefPluginRuntime.dll": "e03bc4fd2f6aab35e010e36939a525fb5f1e0683c616d5898240bdc300b12266",
             "UnlockedSliders.dll": "f2fefccd2795cee75169d7cd0231a744c1facba84c49a68c64ed34910d9661f1"
         },
-        "downloadsSinceLatestVersion": 41,
+        "downloadsSinceLatestVersion": 43,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -18730,7 +18834,7 @@
         "dllSHA256s": {
             "bepinex_soundmod.dll": "d3e2a099cabac465faee24b54f896d32a3f7b7dacc8d712de5866e1eaa194c98"
         },
-        "downloadsSinceLatestVersion": 348,
+        "downloadsSinceLatestVersion": 349,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -18785,7 +18889,7 @@
         "dllSHA256s": {
             "GammaRestoreMod.dll": "2521f0a37c2e90d4c2dd0ac246cafc3b82bf59446dbd235405c46d9638af9e72"
         },
-        "downloadsSinceLatestVersion": 428,
+        "downloadsSinceLatestVersion": 429,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -18831,7 +18935,7 @@
         "dllSHA256s": {
             "Magazine Merge.dll": "a8a7d67101cfe37b7dc36ec92ddcdb447ddca76e43ab460cd8dd0ccd2d8e0632"
         },
-        "downloadsSinceLatestVersion": 152,
+        "downloadsSinceLatestVersion": 154,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -18994,7 +19098,7 @@
         "dllSHA256s": {
             "SFHealthPanel.dll": "e45033ab353268fdfffa65425001951fad54889cf13c64bc63f4a994069e6b8d"
         },
-        "downloadsSinceLatestVersion": 528,
+        "downloadsSinceLatestVersion": 529,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -19057,7 +19161,7 @@
         "dllSHA256s": {
             "VforWhining.dll": "ad115c465857112756a20204f07883da3087eb4c68f2a977e18cf571b5e7183e"
         },
-        "downloadsSinceLatestVersion": 2760,
+        "downloadsSinceLatestVersion": 2764,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -19196,7 +19300,7 @@
         "dllSHA256s": {
             "WearableArray.dll": "633700d6f35b8ec8c3c4e2a2061c4531a98ef43037436c98e9b8518c26e7a12e"
         },
-        "downloadsSinceLatestVersion": 467,
+        "downloadsSinceLatestVersion": 470,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -19243,7 +19347,7 @@
         "ReleaseDate": "2026-06-08T05:28:05.000Z",
         "SHA256": "69d63b067314cf1e394babed1f3c8b611ff274f333e88d5b98b69b91fe4a11fa",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 1668,
+        "downloadsSinceLatestVersion": 1671,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -19574,7 +19678,7 @@
         "dllSHA256s": {
             "KrokMPChineseSupplement.dll": "3131852bbfc8ab78e94e4732888244cbdfceb2c23ca5b7748556f1ef55290a50"
         },
-        "downloadsSinceLatestVersion": 49,
+        "downloadsSinceLatestVersion": 54,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -19720,7 +19824,7 @@
         "dllSHA256s": {
             "ContainerTweaks.dll": "87211a32516c35eb2bfa62efac79c793157635ed050ad368247f678b46760ec6"
         },
-        "downloadsSinceLatestVersion": 1195,
+        "downloadsSinceLatestVersion": 1196,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -19779,7 +19883,7 @@
         "dllSHA256s": {
             "CasualtiesExtra.dll": "35f32d1c42ffb287e84a5c2046a5e9646f46ac731a3c2e7bd6593d28d190d8e9"
         },
-        "downloadsSinceLatestVersion": 2154,
+        "downloadsSinceLatestVersion": 2157,
         "Dependencies": [
             "nexus-341"
         ],
@@ -19944,7 +20048,7 @@
         "dllSHA256s": {
             "MoreDialogues.dll": "8d2a69b32286155b45aabfa358ff8f5e89431847f00e7a967f88b4294e965ab7"
         },
-        "downloadsSinceLatestVersion": 36,
+        "downloadsSinceLatestVersion": 44,
         "Dependencies": [
             "nexus-432"
         ],
@@ -19992,7 +20096,7 @@
         "dllSHA256s": {
             "No Self-Destruct on Quit.dll": "7cd4fc48749afee28e1988dddfb2af8262019e8974a4dc6b3657b80f4f6441fe"
         },
-        "downloadsSinceLatestVersion": 2425,
+        "downloadsSinceLatestVersion": 2427,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -20150,7 +20254,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "89d104890e05b7e7cb29d42de2e351b04b42180e79ac8a853cae210d716cb1b2"
         },
-        "downloadsSinceLatestVersion": 534,
+        "downloadsSinceLatestVersion": 536,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -20268,7 +20372,7 @@
         "dllSHA256s": {
             "PlayerCustomizer.dll": "302790505a795d9e58b477b5c0b2b1f58d24d68bcdc8a42515a8452dc4012189"
         },
-        "downloadsSinceLatestVersion": 2200,
+        "downloadsSinceLatestVersion": 2201,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -20327,7 +20431,7 @@
         "dllSHA256s": {
             "Weight_Metal.dll": "6f567d4376a2a51725a475a6c32fd1fd9ca442c4013ad4d7a97d66e7ce7415b7"
         },
-        "downloadsSinceLatestVersion": 115,
+        "downloadsSinceLatestVersion": 116,
         "Dependencies": [
             "nexus-32"
         ],
@@ -20570,7 +20674,7 @@
         "dllSHA256s": {
             "CustomFungamePack.dll": "abdeda5e05d3dc47c8d774065028a86d189ee0a75480a1bb27adb93ecbb05568"
         },
-        "downloadsSinceLatestVersion": 124,
+        "downloadsSinceLatestVersion": 125,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -20625,7 +20729,7 @@
         "dllSHA256s": {
             "DevMenuV2.dll": "48ac4310edd308faf82d1ffd177498d89864cfa6d5cace7abb623452b651f8cf"
         },
-        "downloadsSinceLatestVersion": 1780,
+        "downloadsSinceLatestVersion": 1786,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -20802,7 +20906,7 @@
         "dllSHA256s": {
             "CraftingFramework.dll": "57ac161f765caa0fd58ef49e97f3dd082f7eb5e50e16acd22693629e1ee2f230"
         },
-        "downloadsSinceLatestVersion": 1701,
+        "downloadsSinceLatestVersion": 1700,
         "Dependencies": [
             "nexus-115"
         ],
@@ -20871,7 +20975,7 @@
         "dllSHA256s": {
             "Replacer.dll": "7de3821262d957a60be9a7d8af90ae3a1862dbd16424e815d34675142e601079"
         },
-        "downloadsSinceLatestVersion": 208,
+        "downloadsSinceLatestVersion": 214,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -20942,32 +21046,32 @@
     {
         "Id": "nexus-122",
         "Name": "New Firearms",
-        "Version": "1.6.4",
-        "bepinexVersion": "1.6.4",
+        "Version": "1.6.5",
+        "bepinexVersion": "1.6.5",
         "bepinexPlugins": {
-            "com.rushellxyz.gunminigame": "0.3.1",
-            "com.rushellxyz.newfirearms": "1.6.4"
+            "com.rushellxyz.newclothing": "1.6.5",
+            "com.rushellxyz.newfirearms": "1.6.5"
         },
-        "Summary": "New firearms! 13 new firearms (more to come!) with new ammo types new magazine types and fire selector",
+        "Summary": "New firearms! 14 new firearms (more to come!) with new ammo types new magazine types and fire selector",
         "Description": "Хей, здесь есть [url=https://www.nexusmods.com/scavprototype/mods/378?tab=description]перевод[/url] на русский \n<br />[size=4][b]Key features[/b][/size]\n<br />[size=3]- Fire mode selector, some full-auto guns can be put into semi-auto mode to not waste ammunition[/size]\n<br />[size=3]- Different magazine types, m1911 mag, small magazine, smg magazine, etc.[/size]\n<br />[size=3]- Different ammunition types: 12gauge birdshot, buckshot, slugshot; 9mm round, hollow and venomus[/size]\n<br />[size=1]You can also choose what ammo fill magazine with when spawning by adding $ at a end of id[/size]\n<br />[size=3]- Magazine feed guns, tube feed guns, barrel feed guns (with display of all chambers!)[/size]\n<br />[size=3]- Custom UI sprites for guns, custom sounds too[/size]\n<br />[size=3]- Balancing rework: guns significly buffed to make them more useful[/size]\n<br />[size=3]- Shooting right over/under enemy stuns them[/size]\n<br />[size=3]- SLiders for configurabile damage/jaming/casings[/size]\n<br />[size=3]- Multiplayer compatability![/size]\n<br />[size=3]- Support for custom gun packs by .json editing![/size]\n<br />\n<br />[size=1]TODO: Update media page[/size]\n<br />\n<br />All guns:\n<br />[spoiler]Makeshift pistol:\n<br />   Early-game gun, can be easily crafted, and most lightweight. With a tradeoff of dealing least damage of all, being able to hold no more then 2 rounds at a time, and having bad durability\n<br />M1911:\n<br />   9mm semi-auto handgun, fairly lightweight and durabile. Can only hold 8 rounds in specialized magazine, craftable tho recipes will take a while to learn (18 int)\n<br />Glock 17 (pistol):\n<br />   Very durabile, holds 17 rounds in small magazine and good damage/accuracy. Not craftable\n<br />Glock 18:\n<br />   Upgrade of glock 17 (16 int). Same in everything, except option for full-auto\n<br />\n<br />UZI:\n<br />   Reuses assets from SMG in gunsaw\n<br />   Custom rack/unrack sounds and buttons\n<br />   Craftable (19 int), moderate damage of 9mm\n<br />   Lightweight (1u), uses small magazines or SMG magazines\n<br />   Not very durabile, have high recoil, inaccurate\n<br />   High RPM and only full-auto\n<br />MP5:\n<br />  Reuses assets from Mini-SMG in gunsaw\n<br />  1.25u, highest damage of 9mm\n<br />  Uses small magazines or SMG magazines\n<br />  Most relaible of 9mm, accurate, select-fire\n<br />Vector:\n<br />[size=1]  TODO i prob would repaint it[/size]\n<br />  Reuses assets from Prototype in gunsaw\n<br />  Heavy (1.5u), highest damage of 9mm\n<br />  Uses only SMG magazines\n<br />  Very accurate and have almost no recoil\n<br />  Low RPM and select-fire\n<br />P90:\n<br />  Reuses assets from PDW in gunsaw\n<br />  1.25u, highest damage of 9mm\n<br />  Uses P90 magazines (that are not craftable...)\n<br />  Low recoil, select-fire\n<br />\n<br />Sawed off:\n<br />  Reuses assets from Sawedoff in gunsaw\n<br />  Lightweight (1u), lowest damage of 12gauge\n<br />Pump-action shotgun\n<br />Semi-auto shotgun\n<br />Bolt-action rifle[/spoiler]\n<br />[color=#00ff00][b]MP Status: C[/b][b]ompatible[/b][/color]\n<br />Required on both parties\n<br />Even more, gun jamming is no longer dysnching and removing mag now makes you auto pick up\n<br />\n<br />Other mods that do anything with firearms (including rusiber's new firearms loader and my old new firearms) are [b]Incompatible[/b]\n<br />[b][size=4]\n<br />Installation instructions[/size][/b]\n<br />If you mod your game for first time (dont have BepInEx):\n<br />[spoiler]Go to BepInEx download page\n<br />https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5\n<br />And download BepInEx_win_x64_5.4.23.5\n<br />Open steam, choose browse local file\n<br />Extract BepInEx contents into game folder's root (winhttp.dll should be in same folder as executable)\n<br />Open game once and close\n<br />Now folder BepInEx/plugins should be created\n<br />\n<br />Additional instruction for Linux users:\n<br />  - Add  `WINEDLLOVERRIDES=\"winhttp=n,b\"  %command%` into launch arguments[/spoiler]\n<br />\n<br />Download and extract CUCoreLib into BepInEx/plugins(if you haven't before)\n<br />  You can alternativly use RshLib instead of CUCoreLib, tho, some of other mods doesnt like it, and you should not install them both\n<br />Download `NewFirearms` and extract into BepInEx/plugins\n<br />\n<br />[size=4][b]Known bugs[/b][/size]\n<br />It doesnt work in singleplayer with multiplayer mod active. Either host an empty server or deactivate multiplayer mod\n<br />[size=2]In multiplayer, killing trader from a gun, makes host to apply mood penality? (same in og mod)[/size]\n<br />[size=2]Do not try to load save without this mod with this mod, and vica verse[/size]\n<br />[size=2]Switching your main hand might mess up with aim (but this bug is present in vanila too!)[/size]\n<br />[size=2]Tube feed option behave differently from what you'd expect IRL[/size]\n<br />[size=2]After loading a save gun might have wrong sprite, this is only visual[/size]\n<br />[size=2]Yet again, other firearms-releated mods not supported[/size]\n<br />\n<br />[b][size=4]Future plans[/size][/b]\n<br /> - More standalone guns (and crosbow!)(add more assets to already existing, and add rifles and special)\n<br /> - Tube feed with shift (like if you have tube-feed shotgun full of buckshots, and then instert a birdshot pump slider, a birdshot now will be in chamber)\n<br /> - Revolver feed (idk, the reloading it is bad)\n<br /> - Maybe battery powered (chemcoilgun, railgun, laser)\n<br /> - Maybe minigame (i saw that concept https://youtu.be/eKnXDqIYSiE might implement) (Check out the pre release!!)\n<br /> - Maybe firearm handling course\n<br />\n<br />Documentation for creating new gun pack have moved into NewFirearms/doc.txt\n<br />Please report any bugs you find\n<br />[url=https://github.com/rushellxyz/NewFirearms]GitHub[/url] repo\n<br />[url=https://github.com/rushellxyz/NewFirearms][/url]\n<br />[b][size=4]Shout outs[/size]\n<br />[/b][size=4]NEVERLITD[/size]\n<br />for like, every single minigame sprite +semiauto shotgun +boxes sprites +minigme idea",
         "Author": "RushellXYZ",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/122/122-1779962803-1133798693.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/122"
         },
-        "DownloadUrl": "nexus://scavprototype/122/2211",
+        "DownloadUrl": "nexus://scavprototype/122/2404",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 122,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-09-22T07:09:41.000Z",
-        "ReleaseDate": "2026-09-22T07:09:41.000Z",
-        "SHA256": "f40d8e339d99c1292d93329ebbe6b4b8bb86118b77294ad951e7c0bcc77f606f",
+        "LastUpdated": "2026-10-06T08:14:01.000Z",
+        "ReleaseDate": "2026-10-06T08:12:28.000Z",
+        "SHA256": "efe61661f4bd6d14303f373a64d2bf3d310b4cfbedb2407c4a275417f122db5c",
         "dllSHA256s": {
-            "GunMinigame.dll": "d6e0fa0a74e2f2a36bdd1add58502e66435c1a893fca2c35ffd6043c78ac0c8d",
-            "NewFirearms.dll": "3f46fe080999bc1fffd8ab7459cf2c1a2c2c8447e6933b1c5eadfdc9dbe814dd"
+            "NewClothing.dll": "9dee1b390fabb1e6266cd3bc852bdd71bcf7a267e9d706ef982de59cfb5b6a00",
+            "NewFirearms.dll": "81175819c58021c87fd165620f4e0594f29df862b04624b66c771ed9ce9de0d5"
         },
-        "downloadsSinceLatestVersion": 383,
+        "downloadsSinceLatestVersion": 3,
         "Dependencies": [
             "nexus-32",
             "nexus-341"
@@ -20984,21 +21088,25 @@
             {
                 "Version": "1.6.4",
                 "Changelog": "- Fixed FPS drop"
+            },
+            {
+                "Version": "1.6.5",
+                "Changelog": "- Improved multimod compat\n- Balancing tweaks\n- Added M16"
             }
         ],
         "dllNames": [
-            "GunMinigame.dll",
+            "NewClothing.dll",
             "NewFirearms.dll"
         ],
-        "dllVersion": "1.6.4",
+        "dllVersion": "1.6.5",
         "dllVersions": {
-            "GunMinigame.dll": "0.3.1",
-            "NewFirearms.dll": "1.6.4"
+            "NewClothing.dll": "1.6.5",
+            "NewFirearms.dll": "1.6.5"
         },
         "Statistics": {
-            "Endorsements": 76,
-            "UniqueDownloads": 2197,
-            "TotalDownloads": 4120,
+            "Endorsements": 81,
+            "UniqueDownloads": 2367,
+            "TotalDownloads": 4402,
             "TotalViews": null
         },
         "Images": [
@@ -21077,7 +21185,7 @@
         "dllSHA256s": {
             "LastStandTheme.dll": "05cb4b84ebc86ab99123d94db2f014722f18bdf2d71e5065489cd49aa8e142ec"
         },
-        "downloadsSinceLatestVersion": 771,
+        "downloadsSinceLatestVersion": 770,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -21124,7 +21232,7 @@
             "ChangeSkinMP.dll": "b57fb344a3beb1ad084a898f716b2fe097a479beda84aadbb29054df7e9bd705",
             "CommandLine.dll": "2135b40fa819e58cf1942453e4409bfdea2be631077a354b878de8402be7e026"
         },
-        "downloadsSinceLatestVersion": 5873,
+        "downloadsSinceLatestVersion": 5887,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -21245,7 +21353,7 @@
         "dllSHA256s": {
             "QuickMedicalAutomation.dll": "e52658598d057a71fcdfe1c624ac19493fac66619641afd7b0d5c11f1019d475"
         },
-        "downloadsSinceLatestVersion": 231,
+        "downloadsSinceLatestVersion": 230,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -21449,7 +21557,7 @@
         "dllSHA256s": {
             "InfiniteBatteries.dll": "eef30dab28e25caf8ab9b6077f9a7e76b33cc2bbb471d6ec93d3b10c2d792a55"
         },
-        "downloadsSinceLatestVersion": 846,
+        "downloadsSinceLatestVersion": 848,
         "Dependencies": [
             "nexus-115"
         ],
@@ -21581,7 +21689,7 @@
         "dllSHA256s": {
             "ReplaceEnemies.dll": "e40155a018e4bf31c8cf102693075467a711bbe32e05edc20cd1af40839ad13c"
         },
-        "downloadsSinceLatestVersion": 259,
+        "downloadsSinceLatestVersion": 260,
         "Dependencies": [
             "nexus-115"
         ],
@@ -21676,7 +21784,7 @@
         "dllSHA256s": {
             "NoCostCraft.dll": "c71355045b55f315fa21c2e067de0cf7cbcc1a6416b0b3f6503ff2fb175cd009"
         },
-        "downloadsSinceLatestVersion": 673,
+        "downloadsSinceLatestVersion": 675,
         "Dependencies": [
             "nexus-115"
         ],
@@ -21944,7 +22052,7 @@
         "dllSHA256s": {
             "EdgeSneak.dll": "3b0436c7f8851e83ce5c285c219ef364656f38867aaa5cd5cdb6564d535f6fd6"
         },
-        "downloadsSinceLatestVersion": 336,
+        "downloadsSinceLatestVersion": 335,
         "Dependencies": [
             "nexus-83",
             "nexus-115"
@@ -21993,7 +22101,7 @@
         "dllSHA256s": {
             "ItemSpawnerMenuCN.dll": "b6e2478cdf528e2e6b876746a708c1384db688f9836d6d25b9d297a8c80863d0"
         },
-        "downloadsSinceLatestVersion": 721,
+        "downloadsSinceLatestVersion": 723,
         "Dependencies": [
             "nexus-115"
         ],
@@ -22310,7 +22418,7 @@
         "dllSHA256s": {
             "CuSaveManager.dll": "c97db5074e41f73e957cd2a56d4b33bf3403ebe93b228a3947a00825d7d06099"
         },
-        "downloadsSinceLatestVersion": 747,
+        "downloadsSinceLatestVersion": 751,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -22361,7 +22469,7 @@
         "ReleaseDate": "2026-09-10T19:07:09.000Z",
         "SHA256": "214626d4f05a2a9c55d945db9aba3c1a8db4056b2889098bce0e165d605a5a8d",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 83,
+        "downloadsSinceLatestVersion": 84,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -22420,7 +22528,7 @@
         "ReleaseDate": "2026-06-16T19:20:20.000Z",
         "SHA256": "a7be4a588783e7dd3cc019b304a503c11c6e117352fa68180333297c31e6f8ff",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 703,
+        "downloadsSinceLatestVersion": 705,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -22471,7 +22579,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownStarterKit.dll": "97c7c3e1a383e67ab064b68ba39fbed1c06650035bf02edacb79346473521c19"
         },
-        "downloadsSinceLatestVersion": 471,
+        "downloadsSinceLatestVersion": 470,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -22563,7 +22671,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownAdditionalDescriptions.dll": "e112dbe3fdd14c446f39c824f884096e2d749758f6f4f7851d97fe424a7d8cc9"
         },
-        "downloadsSinceLatestVersion": 2308,
+        "downloadsSinceLatestVersion": 2313,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -22609,7 +22717,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownAlwaysLastStand.dll": "623daebd6e8db318ca25cfff85aafd29991a97a808caad74a90425022270916f"
         },
-        "downloadsSinceLatestVersion": 613,
+        "downloadsSinceLatestVersion": 614,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -22655,7 +22763,7 @@
         "dllSHA256s": {
             "ShrapnelVariants.dll": "be7895efb36f5b33e6473ffdf821f768e818c0881064fe30f092fa2e4975e4fb"
         },
-        "downloadsSinceLatestVersion": 5712,
+        "downloadsSinceLatestVersion": 5719,
         "Dependencies": [
             "nexus-115"
         ],
@@ -22708,7 +22816,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6dcbd87171f4a802d8f748a97bb5418b3976ac21b77d7f520e2c4aac97daa049"
         },
-        "downloadsSinceLatestVersion": 18046,
+        "downloadsSinceLatestVersion": 18076,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -22767,7 +22875,7 @@
         "dllSHA256s": {
             "SellFromBags.dll": "69293fda8c68ebce9951ae1d276a48f7b8e6a09b73fc8a7e746ab32dda93e146"
         },
-        "downloadsSinceLatestVersion": 3956,
+        "downloadsSinceLatestVersion": 3966,
         "Dependencies": [
             "nexus-115"
         ],
@@ -22824,7 +22932,7 @@
         "dllSHA256s": {
             "ItemSpawner.build.dll": "40d05db299cbbc2f09aee3371b482514383588148997d06742e919848476c09b"
         },
-        "downloadsSinceLatestVersion": 2174,
+        "downloadsSinceLatestVersion": 2178,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -22870,7 +22978,7 @@
         "dllSHA256s": {
             "cu.kinatera.gravbagbeeper.dll": "b0572492e97e399dc9c28c16a9c94f9222b8eefc53482249bb49eedbea82da0d"
         },
-        "downloadsSinceLatestVersion": 860,
+        "downloadsSinceLatestVersion": 861,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -22925,7 +23033,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "89d104890e05b7e7cb29d42de2e351b04b42180e79ac8a853cae210d716cb1b2"
         },
-        "downloadsSinceLatestVersion": 272,
+        "downloadsSinceLatestVersion": 274,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -23056,7 +23164,7 @@
         "dllSHA256s": {
             "CatPatch.dll": "ed1920f44e76fa4b142a97cf18dff54796d4235349200b8d710f3fc3af280308"
         },
-        "downloadsSinceLatestVersion": 7096,
+        "downloadsSinceLatestVersion": 7119,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -23258,7 +23366,7 @@
         "dllSHA256s": {
             "CustomStartItem.dll": "49234fd22bd7a61abed1a1dc2e3cc4b55cac1eeff66e97df15528170822611cf"
         },
-        "downloadsSinceLatestVersion": 367,
+        "downloadsSinceLatestVersion": 368,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -23300,7 +23408,7 @@
         "ReleaseDate": "2026-07-07T05:42:33.000Z",
         "SHA256": "4b0951c30e9b9d77d21e3108ec9911c2634a20f24f38f7b8056c0fec08afebed",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 805,
+        "downloadsSinceLatestVersion": 807,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -23412,7 +23520,7 @@
         "dllSHA256s": {
             "Animalese.dll": "e1a766d35d2f60bb0b6865bf7d1171d70702351da09cdc273ca5f69c4471fad1"
         },
-        "downloadsSinceLatestVersion": 1118,
+        "downloadsSinceLatestVersion": 1121,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -23454,7 +23562,7 @@
         "ReleaseDate": "2026-06-11T05:52:33.000Z",
         "SHA256": "8f411312470cc374eed5fb17b2e27c5caf4a2f05e8102d3958c09edec2168259",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 1369,
+        "downloadsSinceLatestVersion": 1370,
         "Dependencies": [
             "nexus-32",
             "nexus-43",
@@ -23510,7 +23618,7 @@
         "dllSHA256s": {
             "New_Gun_Loader.dll": "db221d6b346cf55d22e783a2e7869db066ccdf2dc36e375cbb4428e10c8ce949"
         },
-        "downloadsSinceLatestVersion": 894,
+        "downloadsSinceLatestVersion": 896,
         "Dependencies": [
             "nexus-32"
         ],
@@ -23567,7 +23675,7 @@
         "dllSHA256s": {
             "body_sprite_replacer.dll": "198ecd109d8b0d28cfd289d52aa0afe81c0234089dc0c317c934a7735396d507"
         },
-        "downloadsSinceLatestVersion": 1153,
+        "downloadsSinceLatestVersion": 1156,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -23618,7 +23726,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownRussifier.dll": "a5557014b2cdd9c27911859f80ef38171094ee3fae8a15ccc85422be7e775f1c"
         },
-        "downloadsSinceLatestVersion": 2718,
+        "downloadsSinceLatestVersion": 2720,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -23664,7 +23772,7 @@
         "dllSHA256s": {
             "Cigs.dll": "f9160991be0177ef571f8421315ab73c5feb216972e943a100720c1123a81de5"
         },
-        "downloadsSinceLatestVersion": 876,
+        "downloadsSinceLatestVersion": 875,
         "Dependencies": [
             "nexus-32"
         ],
@@ -23920,7 +24028,7 @@
         "dllSHA256s": {
             "HeadTurret.dll": "dfc8aa40038b5453e8b73623c8ff33bdc9a2d5c00d9f55617c03aa21376751ad"
         },
-        "downloadsSinceLatestVersion": 587,
+        "downloadsSinceLatestVersion": 588,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -24004,7 +24112,7 @@
         "ReleaseDate": "2026-09-28T07:14:19.000Z",
         "SHA256": "d7da7e76164f6deb814907e71228b329accae17e8873c4d8f044fca21102f99f",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 58,
+        "downloadsSinceLatestVersion": 59,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -24053,7 +24161,7 @@
         "dllSHA256s": {
             "VoySoundSwap.dll": "87350304e88337444eb16fdab262addf9f3712f515ef84954960acd6db32f93a"
         },
-        "downloadsSinceLatestVersion": 1358,
+        "downloadsSinceLatestVersion": 1359,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -24099,7 +24207,7 @@
         "dllSHA256s": {
             "LTS.dll": "370773364409e8f280f99c05cbbf838e45191a8b87a2fc73bcd24495e5af67ba"
         },
-        "downloadsSinceLatestVersion": 150,
+        "downloadsSinceLatestVersion": 151,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -24170,7 +24278,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "57474923bf97342b8136e936a112d3f66543be3e03f14ab811fdda5c0dbc3ad7"
         },
-        "downloadsSinceLatestVersion": 1150,
+        "downloadsSinceLatestVersion": 1178,
         "Dependencies": [
             "nexus-341"
         ],
@@ -24468,7 +24576,7 @@
         "dllSHA256s": {
             "ReGrowthSerums.dll": "af97bbd0388171313fbb991e0b4b5c7f0a3e375035e8be8a3a5cf9e73e09b9a0"
         },
-        "downloadsSinceLatestVersion": 814,
+        "downloadsSinceLatestVersion": 817,
         "Dependencies": [
             "nexus-32"
         ],
@@ -24718,7 +24826,7 @@
         "dllSHA256s": {
             "ThighHighs.dll": "24d9c929c786575ae3ffffa4767064b33c92dd1d6e8c72d5c7b6e6945ece5ec8"
         },
-        "downloadsSinceLatestVersion": 525,
+        "downloadsSinceLatestVersion": 524,
         "Dependencies": [
             "nexus-32",
             "nexus-341"
@@ -24767,7 +24875,7 @@
         "dllSHA256s": {
             "RshLib.dll": "fb168f3609cb652b4858608947d1f347f44a433b8d4baa65afd297f373f41ddf"
         },
-        "downloadsSinceLatestVersion": 5880,
+        "downloadsSinceLatestVersion": 5888,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -24923,7 +25031,7 @@
         "dllSHA256s": {
             "SlidersUnlocker.dll": "5607c985f6fe7537b3af390e617e98c27f9601333d50d4f939e6595cb6937a3f"
         },
-        "downloadsSinceLatestVersion": 694,
+        "downloadsSinceLatestVersion": 695,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -25015,7 +25123,7 @@
         "dllSHA256s": {
             "BlockPack.dll": "cd5e006ca34e47d114f3eeef8c89282d8f9d0daf5a213685ee1c1c76f86d51c8"
         },
-        "downloadsSinceLatestVersion": 110,
+        "downloadsSinceLatestVersion": 109,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -25429,7 +25537,7 @@
         "dllSHA256s": {
             "LobotomyScreenshotMod.dll": "ca563cbdcc7404e5cbf45fbfbd6331fd0ed364a7835864ebf6c4974d260f5946"
         },
-        "downloadsSinceLatestVersion": 340,
+        "downloadsSinceLatestVersion": 339,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -25643,7 +25751,7 @@
         "dllSHA256s": {
             "body_sprite_replacer.dll": "dc92eec8e3fcaa62396616050d4bd2315b7648a15ee92a2354885908454c8fb0"
         },
-        "downloadsSinceLatestVersion": 5865,
+        "downloadsSinceLatestVersion": 5875,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -25833,7 +25941,7 @@
         "dllSHA256s": {
             "MossLib.dll": "16cd594f0f9b7716710cd4e3f8b1fb94f4cbdde9df5659121bd98eba7a8f24ec"
         },
-        "downloadsSinceLatestVersion": 509,
+        "downloadsSinceLatestVersion": 510,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -25890,7 +25998,7 @@
             "CUCoreLib.dll": "2d30fd6b1a94f06db257bde6b478b313205583a69019ccae0ec9a89642bbd67e",
             "Custom Structures.dll": "57dbe4e9d6377411d54f8a075a01d56c2694af42c8adeb2bbe8d94322adcbcfa"
         },
-        "downloadsSinceLatestVersion": 516,
+        "downloadsSinceLatestVersion": 526,
         "Dependencies": [
             "nexus-341"
         ],
@@ -26009,7 +26117,7 @@
         "dllSHA256s": {
             "QoL Unknown.dll": "61415f75fe7843b88da6f86e8758597929ca2d2d72e4bc575923ebfb409f34bc"
         },
-        "downloadsSinceLatestVersion": 10849,
+        "downloadsSinceLatestVersion": 10870,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -26277,7 +26385,7 @@
         "dllSHA256s": {
             "CU_ItemSpawner_Mod.dll": "67d21848c6e6a398538a51d465f30901d5b0bc9a16b606a4037e4d60b29c14c3"
         },
-        "downloadsSinceLatestVersion": 2911,
+        "downloadsSinceLatestVersion": 2927,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [

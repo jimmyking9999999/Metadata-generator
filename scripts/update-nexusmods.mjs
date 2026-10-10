@@ -1434,7 +1434,10 @@ function createDiscordEmbed({ type, previousEntry, currentEntry, archiveSizeByte
       });
     }
 
-    const changelog = getChangelogForVersion(currentEntry.Changelogs, currentEntry.Version);
+    const changelog = changelogDelta(
+      getChangelogForVersion(previousEntry?.Changelogs, currentEntry.Version),
+      getChangelogForVersion(currentEntry.Changelogs, currentEntry.Version),
+    );
     currentEntry = { ...currentEntry, Summary: firstNonEmptyString(changelog, currentEntry.Summary) };
   }
 
@@ -1821,6 +1824,15 @@ function combineChangelogText(existingText, incomingText) {
     return next;
   }
   return `${previous}\n\n${next}`;
+}
+
+function changelogDelta(previousText, nextText) {
+  const previous = String(previousText ?? "").trim();
+  const next = String(nextText ?? "").trim();
+  if (!previous || !next.startsWith(previous)) {
+    return next;
+  }
+  return next.slice(previous.length).replace(/^\s+/, "");
 }
 
 function changelogsChanged(previousEntry, nextEntry) {

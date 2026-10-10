@@ -704,7 +704,6 @@ function applyLatestFileScan({
   }
 }
 
-// Handles a changelog that was added without any version or file change
 async function applyChangelogScan({ gameDomain, modId, existingEntry, changelogs, entryByKey }) {
   if (!existingEntry || !Array.isArray(changelogs) || changelogs.length === 0) {
     return;

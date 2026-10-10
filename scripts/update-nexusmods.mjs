@@ -441,6 +441,13 @@ async function runQuickSync({ apiKey, appVersion, gameDomains, entryByKey }) {
           entryByKey,
           downloadsSinceLatestVersion: hasUid ? downloadCounts.get(String(uid)) ?? null : null,
         });
+        await applyChangelogScan({
+          gameDomain,
+          modId,
+          existingEntry,
+          changelogs: scan.changelogs,
+          entryByKey,
+        });
         continue;
       }
 
@@ -509,6 +516,11 @@ async function scanQuickMod({ apiKey, appVersion, gameDomain, modId, entryByKey 
       selectedFile.file_id,
       existingEntry?.DownloadUrl,
     );
+    const latestFileChanged = !areEqual(existingEntry?.DownloadUrl, selectedDownloadUrl);
+
+    const changelogs = latestFileChanged
+      ? null
+      : await getModChangelogs({ apiKey, appVersion, gameDomain, modId });
 
     return {
       action: "latest",
@@ -516,7 +528,8 @@ async function scanQuickMod({ apiKey, appVersion, gameDomain, modId, entryByKey 
       modInfo,
       modFiles,
       selectedFile,
-      latestFileChanged: !areEqual(existingEntry?.DownloadUrl, selectedDownloadUrl),
+      latestFileChanged,
+      changelogs,
     };
   } catch (error) {
     return {
@@ -688,6 +701,29 @@ function applyLatestFileScan({
       `Updated mod ${modId} ContainsAdultContent: `
       + `${formatValue(existingEntry?.ContainsAdultContent)} -> ${formatValue(containsAdultContent)}`,
     );
+  }
+}
+
+// Handles a changelog that was added without any version or file change
+async function applyChangelogScan({ gameDomain, modId, existingEntry, changelogs, entryByKey }) {
+  if (!existingEntry || !Array.isArray(changelogs) || changelogs.length === 0) {
+    return;
+  }
+
+  const entryKey = getEntryKey(gameDomain, modId);
+  const currentEntry = entryByKey.get(entryKey) ?? existingEntry;
+  const nextChangelogs = mergeChangelogs(currentEntry.Changelogs, changelogs);
+  if (areEqual(currentEntry.Changelogs ?? [], nextChangelogs)) {
+    return;
+  }
+
+  const nextEntry = { ...currentEntry, Changelogs: nextChangelogs };
+  entryByKey.set(entryKey, nextEntry);
+  logSuccess(`Updated mod ${modId} Changelogs: added new changelog content.`);
+
+  const notification = buildNotification(currentEntry, nextEntry, null);
+  if (notification) {
+    await sendDiscordNotification(notification);
   }
 }
 
@@ -1093,7 +1129,7 @@ async function getReadyMonoCecilPath(sourcePath) {
       });
     });
   } catch {
-    // Some environments do not support zone metadata; the copy still works there.
+    // Some environments do not support zone metadata
   }
 
   cachedMonoCecilPath = stagedPath;
@@ -1185,7 +1221,7 @@ function mergeEntry({
       ?? existingEntry?.downloadsSinceLatestVersion
       ?? null,
     Dependencies: dependencies ?? existingEntry?.Dependencies ?? [],
-    Changelogs: changelogs ?? existingEntry?.Changelogs ?? [],
+    Changelogs: mergeChangelogs(existingEntry?.Changelogs, changelogs),
     dllNames: nextDllNames,
     dllVersion: nextDllVersion ?? null,
     dllVersions: nextDllVersions,
@@ -1334,7 +1370,7 @@ function buildNotification(previousEntry, nextEntry, archiveContext) {
     };
   }
 
-  if (!areEqual(previousEntry?.Version, nextEntry?.Version)) {
+  if (!areEqual(previousEntry?.Version, nextEntry?.Version) || changelogsChanged(previousEntry, nextEntry)) {
     return {
       kind: "updated",
       content: buildDiscordMessage(nextEntry),
@@ -1740,6 +1776,58 @@ function getFileSizeBytes(file) {
 
 function getChangelogForVersion(changelogs, version) {
   return changelogs?.find((entry) => String(entry?.Version ?? "").trim() === String(version ?? "").trim())?.Changelog ?? null;
+}
+
+function mergeChangelogs(existingChangelogs, incomingChangelogs) {
+  const existing = Array.isArray(existingChangelogs) ? existingChangelogs : [];
+  const incoming = Array.isArray(incomingChangelogs) ? incomingChangelogs : [];
+  if (incoming.length === 0) {
+    return existing;
+  }
+
+  const incomingByVersion = new Map();
+  for (const entry of incoming) {
+    const version = String(entry?.Version ?? "").trim();
+    if (!version) {
+      continue;
+    }
+    incomingByVersion.set(version, combineChangelogText(incomingByVersion.get(version), entry?.Changelog));
+  }
+
+  const merged = [];
+  for (const entry of existing) {
+    const version = String(entry?.Version ?? "").trim();
+    if (!version || merged.some((item) => item.Version === version)) {
+      continue;
+    }
+    merged.push({ Version: version, Changelog: combineChangelogText(entry?.Changelog, incomingByVersion.get(version)) });
+    incomingByVersion.delete(version);
+  }
+  for (const [version, changelog] of incomingByVersion) {
+    merged.push({ Version: version, Changelog: changelog });
+  }
+  return merged;
+}
+
+function combineChangelogText(existingText, incomingText) {
+  const previous = String(existingText ?? "").trim();
+  const next = String(incomingText ?? "").trim();
+  if (!previous) {
+    return next;
+  }
+  if (!next || previous === next || previous.startsWith(next)) {
+    return previous;
+  }
+  if (next.startsWith(previous)) {
+    return next;
+  }
+  return `${previous}\n\n${next}`;
+}
+
+function changelogsChanged(previousEntry, nextEntry) {
+  const previous = Array.isArray(previousEntry?.Changelogs) ? previousEntry.Changelogs : [];
+  const next = Array.isArray(nextEntry?.Changelogs) ? nextEntry.Changelogs : [];
+  return !areEqual(previous, next);
 }
 
 function extractDependencyIds(response) {

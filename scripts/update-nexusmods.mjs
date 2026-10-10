@@ -1066,7 +1066,7 @@ async function readDllMetadata(dllPath) {
     "$json = @{ bepinexVersion = $null; plugins = @() }",
     "try {",
     "  Add-Type -Path $monoCecilPath",
-    "  $module = [Mono.Cecil.ModuleDefinition]::ReadModule($path)",
+    "  try { $module = [Mono.Cecil.ModuleDefinition]::ReadModule($path) } catch { $json | ConvertTo-Json -Compress; return }",
     "  try {",
     "    foreach ($type in $module.GetTypes()) {",
     "      foreach ($attr in $type.CustomAttributes) {",
@@ -1814,7 +1814,7 @@ function combineChangelogText(existingText, incomingText) {
   if (!previous) {
     return next;
   }
-  if (!next || previous === next || previous.startsWith(next)) {
+  if (!next || previous.includes(next)) {
     return previous;
   }
   if (next.startsWith(previous)) {

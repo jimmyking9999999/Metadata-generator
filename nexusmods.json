@@ -29,7 +29,7 @@
             "KaitoKid.ArchipelagoUtilities.AssetDownloader.dll": "13dc4af65176fec7d0921f543b5cfaceecd0a2c701397fe44372c6bf0682b3bb",
             "KaitoKid.Utilities.Interfaces.dll": "01f357509d3650e4577bd1a6a813e94948c15fb9a69f45ce00795e08c41e52b2"
         },
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -56,13 +56,13 @@
     {
         "Id": "nexus-832",
         "Name": "Inventory Save and Load",
-        "Version": "0.1",
+        "Version": "0.2",
         "bepinexVersion": "1.0.0",
         "bepinexPlugins": {
             "inventorysaveload.plugin": "1.0.0"
         },
         "Summary": "A BepInEx plugin for Casualties: Unknown. Save/load inventory, dynamic slots, Q-binds, and an admin window (ALT+U). Select players and click \"Load\" to instantly give them your saved gear. Requires KrokMP 4.1.2 and sv_cheats enabled in server settings for MP.",
-        "Description": "[b]Supported Game Version:[/b] 7.0.1 Demo\n<br />\n<br />[b]Inventory Save &amp; Load[/b] is a BepInEx plugin for Casualties: Unknown that allows you to save and load your equipment and items. No more manually typing commands in the console to build your desired gear.\n<br />\n<br />[b][size=5]⚠ IMPORTANT: Requirements[/size][/b]\n<br />[list]\n<br />[*][b][color=red]This mod works ONLY with Multiplayer mod (MP) version 4.1.2 [/color][color=yellow]— it will not run without it. (Versions higher than 4.1.2 will cause errors or issues).[/color][/b]\n<br />[*][b][color=green]Multiplayer mod (MP) 4.1.2[/color][/b]\n<br />[*][b][color=green]BepInEx 5.4.23.5[/color][/b]\n<br />[/list]\n<br />[b][size=5]Features[/size][/b]\n<br />[list]\n<br />[*][b]Save Slots:[/b] Create as many slots as you want, rename the slot name, or delete them. [i](I don't recommend creating millions of slots)[/i].\n<br />[*][b]Q-Bind (hotkeys):[/b] Click the [b]Q[/b] icon, choose any key combination (even [b]ALT + K + I + 2[/b]), and hit the green checkmark. Now just press your chosen keys in-game — and boom, gear is yours. If you want to remove the bind, click [b]Q[/b] again and hit the green checkmark to clear it.\n<br />[*][b]Item state preservation:[/b] The mod remembers not only the items themselves but also their exact state: condition, battery charge, liquid volume in containers, and rounds in the magazine and chamber.\n<br />[*][b]Host Multiplayer Window (MP+):[/b] Press [b]ALT + U[/b] and boom, the multiplayer window is right there. Select the players you need, open the main menu with [b]ALT + O[/b], and click \"Load\" — gear delivered to the players.\n<br />[*][b]In-Game GUI Editor:[/b] I made a shitty interface, so feel free to customize it yourself.\n<br />[/list]\n<br />[b][size=5]Default hotkeys[/size][/b]\n<br />[list]\n<br />[*][b]ALT + O[/b] — open/close the mod menu (can be changed in settings).\n<br />[*][b]ALT + U[/b] — open the Host multiplayer window (can be changed in settings).\n<br />[/list]\n<br />[b][size=5]Installation[/size][/b]\n<br />[list=1]\n<br />[*]Install [b]BepInEx 5.4.23.5[/b] into the game folder (ignore if already installed).\n<br />[*]Install [b]Multiplayer mod (MP) 4.1.2[/b] (see the Requirements section).\n<br />[*]Place the [b]InventorySaveLoad.dll[/b] file into the [b]BepInEx/plugins[/b] folder.\n<br />[*]If the game is installed via Steam, the path is usually:\n<br />[code]C:&#92;Program Files (x86)&#92;Steam&#92;steamapps&#92;common&#92;Casualties Unknown Demo&#92;BepInEx&#92;plugins[/code][*]Launch the game.\n<br />[/list]\n<br />[b][size=5]Server setup (multiplayer)[/size][/b]\n<br />For the host to use the multiplayer features, the [b]sv_cheats[/b] option must be enabled in the server settings. This applies to any server (public or private). If sv_cheats is disabled, the host will not be able to load inventories for players.\n<br />In single-player mode, [b]sv_cheats is not required[/b].\n<br />\n<br />[b][size=5]Requirements[/size][/b]\n<br />[list]\n<br />[*][b][color=orange]Multiplayer mod (MP) 4.1.2[/color][/b] — [b][url=https://github.com/creaturefeaturelarry/casualties-together/releases#release-v4.1.2]Download[/url][/b]\n<br />[*][b][color=lime]Multiplayer mod (MP) 4.1.2[/color][/b] — [url=https://github.com/creaturefeaturelarry/casualties-together/releases/download/release-v4.1.2/MPMod_4.1.2_game7.0.1demo_bepinex5.4.23.5.zip]MPMod_4.1.2_game7.0.1demo_bepinex5.4.23.5.zip[/url]\n<br />[*][b][color=orange]BepInEx 5.4.23.5[/color][/b] — [url=https://github.com/bepinex/bepinex/releases]Download[/url]\n<br />[*][b][color=lime]BepInEx 5.4.23.5[/color][/b] — [url=https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip]BepInEx_win_x64_5.4.23.5.zip[/url]\n<br />[/list]\n<br />[b][size=5]⚠ Warning / Anti-Cheat[/size][/b]\n<br />This mod is created solely as a tool for convenient server management, gear distribution, and testing. It is [b]NOT intended[/b] for cheating, toxic behavior, ruining the game experience for other players, or gaining an unfair advantage without the permission of the host. Please use this mod responsibly.",
+        "Description": "[b]Supported [color=#ff7700][font=Arial Black]Casualties: Unknown Demo[/font][/color][/b][color=#ff7700] 7.0.1[/color]\n<br />\n<br />[b][color=#00ffff]Inventory Save &amp; Load[/color][/b] is a BepInEx plugin for Casualties: Unknown that allows you to save and load your equipment and items. No more manually typing commands in the console to build your desired gear.\n<br />\n<br />[b][size=5]⚠ [color=#ffd966]IMPORTANT[/color]: Requirements[/size][/b]\n<br />[list]\n<br />[*][b][color=#cc0000][font=Arial Black]This mod works ONLY with Multiplayer mod (MP) version 4.1.2 - it will not run without it. (Versions higher than 4.1.2 will cause errors or issues).[/font][/color][/b][/*]\n<br />[*][color=#ffffff][b]Multiplayer mod (MP) 4.1.2[/b][/color][/*]\n<br />[*][b][color=#ffffff]BepInEx 5.4.23.5[/color][/b][/*]\n<br />[/list]\n<br />[b][size=5]Features[/size][/b]\n<br />[list]\n<br />[*][b]Save Slots:[/b] Create as many slots as you want, rename the slot name, or delete them. [i](I don't recommend creating millions of slots)[/i].[/*]\n<br />[*][b]Q-Bind (hotkeys):[/b] Click the [b]Q[/b] icon, choose any key combination (even [b]ALT + K + I + 2[/b]), and hit the green checkmark. Now just press your chosen keys in-game — and boom, gear is yours. If you want to remove the bind, click [b]Q[/b] again and hit the green checkmark to clear it.[/*]\n<br />[*][b]Item state preservation:[/b] The mod remembers not only the items themselves but also their exact state: condition, battery charge, liquid volume in containers, and rounds in the magazine and chamber.[/*]\n<br />[*][b]Host Multiplayer Window (MP+):[/b] Press [b][color=#9900ff]ALT + U[/color][/b] and boom, the multiplayer window is right there. Select the players you need, open the main menu with [b][color=#9900ff]ALT + O[/color][/b], and click \"Load\" — gear delivered to the players.[/*]\n<br />[*][b]In-Game GUI Editor:[/b] I made a shitty interface, so feel free to customize it yourself.[/*]\n<br />[/list]\n<br />[b][size=5]Default hotkeys[/size][/b]\n<br />[list]\n<br />[*][b][color=#9900ff]ALT + O[/color][/b] — open/close the mod menu (can be changed in settings).[/*]\n<br />[*][b][color=#9900ff]ALT + U[/color][/b] — open the Host multiplayer window (can be changed in settings).[/*]\n<br />[/list]\n<br />[b][color=#f1c232][size=5]Installation[/size][/color][/b]\n<br />[list=1]\n<br />[*][b][color=#ffffff]Install [/color][color=#00ffff]BepInEx 5.4.23.5[/color].[/b] If it is already installed, skip this step.\n<br />The game folder path:\n<br />[code]...&#92;Casualties Unknown Demo&#92;[/code][/*]\n<br />[*][b][color=#ffffff]Install [/color][color=#00ffff]Multiplayer Mod (MP) version 4.1.2[/color].[/b]\n<br />Open the [b]MPMod_4.1.2_game7.0.1demo_bepinex5.4.23.5.zip[/b] archive, then open the [b]mod[/b] folder. Select the [b]BepInEx[/b] folder and the [b]steam_appid.txt[/b] file, copy them, and paste them into the game's root folder at the following path:\n<br />[code]...&#92;Casualties Unknown Demo&#92;[/code]If Windows prompts you to replace existing files or folders, confirm the replacement.[/*]\n<br />[*][b][color=#ffffff]Install [/color][color=#00ffff]InventorySaveLoad v0.1[/color].[/b]\n<br />Extract the mod archive and place the [b]InventorySaveLoad.dll[/b] file into the [b]BepInEx/plugins[/b] folder.\n<br />The file path:\n<br />[code]...&#92;Casualties Unknown Demo&#92;BepInEx&#92;plugins&#92;InventorySaveLoad.dll[/code]If the [b]plugins[/b] folder doesn't exist, create it manually.[/*]\n<br />[*][b]Launch the game.[/b] Press [b][color=#9900ff]Alt + O[/color][/b] or [b][color=#9900ff]Alt + U[/color][/b] to open the mod's interface and make sure it works correctly.[/*]\n<br />[/list]\n<br />[b]Important:[/b] Do not copy the entire [b]mod[/b] folder from the Multiplayer Mod archive into the game folder. Open it and transfer only [b]BepInEx[/b] and [b]steam_appid.txt[/b] so that the files end up in the correct directories.\n<br />\n<br />[b][size=5]Server setup (multiplayer)[/size][/b]\n<br />For the host to use the multiplayer features, the [color=#6aa84f][b]sv_cheats[/b] [/color]option must be enabled in the server settings. This applies to any server (public or private). If [color=#93c47d]sv_cheats [/color]is disabled, the host will not be able to load inventories for players.\n<br />In single-player mode, [b]sv_cheats is not required[/b].\n<br />\n<br />[b][size=5]Requirements[/size][/b]\n<br />[list]\n<br />[*][color=#ffffff][b]Multiplayer mod (MP) 4.1.2[/b] — [b][url=https://github.com/creaturefeaturelarry/casualties-together/releases#release-v4.1.2]Download[/url][/b][/color][/*]\n<br />[*][color=#ffffff][b]Multiplayer mod (MP) 4.1.2[/b] — [url=https://github.com/creaturefeaturelarry/casualties-together/releases/download/release-v4.1.2/MPMod_4.1.2_game7.0.1demo_bepinex5.4.23.5.zip]MPMod_4.1.2_game7.0.1demo_bepinex5.4.23.5.zip[/url][/color][/*]\n<br />[*][color=#ffffff][b]BepInEx 5.4.23.5[/b]  — [url=https://github.com/bepinex/bepinex/releases]Download[/url][/color][/*]\n<br />[*][color=#ffffff][b]BepInEx 5.4.23.5[/b] — [url=https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip]BepInEx_win_x64_5.4.23.5.zip[/url][/color][/*]\n<br />[/list]\n<br />[b][color=#ffffff][size=5]⚠ [/size][/color][color=#ff7700][size=5]Warning [/size][/color]\n<br />[color=#cc0000] The mod was made by AI[/color]. [/b]",
         "Author": "Kacharsik",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/832/832-1792539473-1282128716.png",
@@ -73,13 +73,13 @@
         "NexusModId": 832,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-10-20T23:44:21.000Z",
+        "LastUpdated": "2026-10-22T01:48:34.000Z",
         "ReleaseDate": "2026-10-20T23:40:29.000Z",
         "SHA256": "fca02cb6004f1b5cfdc9f6534313814658156bb1e2611091a0ff41ca04a6d5a7",
         "dllSHA256s": {
             "InventorySaveLoad.dll": "8be8091b5e77eb9cb6b72e30303c99da3969e818043661f9d36d2934c60b0a67"
         },
-        "downloadsSinceLatestVersion": 9,
+        "downloadsSinceLatestVersion": 10,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -91,8 +91,8 @@
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 2,
-            "TotalDownloads": 2,
+            "UniqueDownloads": 10,
+            "TotalDownloads": 12,
             "TotalViews": null
         },
         "Images": [
@@ -173,7 +173,7 @@
         "dllSHA256s": {
             "LewdStatus.dll": "ab9eedcf5100961495f1620494dd18c1a024242063c313915c40a08299e01d49"
         },
-        "downloadsSinceLatestVersion": 88,
+        "downloadsSinceLatestVersion": 126,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -337,7 +337,7 @@
         "dllSHA256s": {
             "CUFirstPerson.dll": "175a36e070cead8e9e7f50ca3ce7da9b159324350dd0efe8f2dafd231acf1819"
         },
-        "downloadsSinceLatestVersion": 192,
+        "downloadsSinceLatestVersion": 194,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -383,7 +383,7 @@
         "dllSHA256s": {
             "OrganMod.dll": "af600979def19ca5396cd155a8bbcff490367f72d46721c0888ad9db36adfb2f"
         },
-        "downloadsSinceLatestVersion": 13,
+        "downloadsSinceLatestVersion": 15,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -429,7 +429,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6b5a0a2784e6051b0afd3b03b2802565c1b19c920fd6babb8a3511b73413c3e0"
         },
-        "downloadsSinceLatestVersion": 700,
+        "downloadsSinceLatestVersion": 712,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -475,7 +475,7 @@
         "dllSHA256s": {
             "BetterRagdoll.dll": "f7e1c503423a8398043f60d24c84b173439a3047a55849b9a15695a8a79ded8c"
         },
-        "downloadsSinceLatestVersion": 147,
+        "downloadsSinceLatestVersion": 149,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -820,7 +820,7 @@
         "dllSHA256s": {
             "FloydbaAchievements.dll": "7e2fbe10c74a7b8f83c2b1fb38941433ec272a5f20ab4d6177fba6c61c5d53a0"
         },
-        "downloadsSinceLatestVersion": 46,
+        "downloadsSinceLatestVersion": 47,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -913,7 +913,7 @@
         "dllSHA256s": {
             "old_moodles_reused.dll": "f65c652a2bef1a0e8168bf97bdc7cb3d1bc24fe078fa29490ad2261e20ef00a7"
         },
-        "downloadsSinceLatestVersion": 42,
+        "downloadsSinceLatestVersion": 44,
         "Dependencies": [
             "nexus-115"
         ],
@@ -1600,7 +1600,7 @@
         "dllSHA256s": {
             "GunsawTraders.dll": "f8f3236624cacbbaffd4afee3476598f8bd8ccae9d4e4f9639f8e89b4c0ff4bd"
         },
-        "downloadsSinceLatestVersion": 80,
+        "downloadsSinceLatestVersion": 84,
         "Dependencies": [
             "nexus-341",
             "nexus-710"
@@ -1729,7 +1729,7 @@
         "dllSHA256s": {
             "BetterRagdollPerspective.dll": "0d536f895e99b67e05e5d5d2f9ee377cba21f8ea30603355652044ce12a744dd"
         },
-        "downloadsSinceLatestVersion": 174,
+        "downloadsSinceLatestVersion": 176,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1873,7 +1873,7 @@
         "dllSHA256s": {
             "SobrietyTest.dll": "8e335a04172cc0902dc100426cac0a752ededc2b54d221ec088a3c41c8dd3bc8"
         },
-        "downloadsSinceLatestVersion": 54,
+        "downloadsSinceLatestVersion": 55,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1920,7 +1920,7 @@
         "dllSHA256s": {
             "NoDurabilityEverythingEdition.dll": "a6e5586d0e369d2d2f6b6a65ed36d668d9b70275c7bb7ab478fd4e9c20ace0bc"
         },
-        "downloadsSinceLatestVersion": 131,
+        "downloadsSinceLatestVersion": 132,
         "Dependencies": [
             "nexus-115"
         ],
@@ -2180,7 +2180,7 @@
         "ReleaseDate": "2026-10-20T14:55:50.000Z",
         "SHA256": "572d081434822f01f584b746589bbfe160e02546925bec0655f4cb9b1e659f3c",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 2,
+        "downloadsSinceLatestVersion": 3,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2235,7 +2235,7 @@
         "dllSHA256s": {
             "CUDevTools.dll": "fa47b019b188573543f1bbc00504ae7dbbcade3d249e3ea3f0af5a5b74798750"
         },
-        "downloadsSinceLatestVersion": 215,
+        "downloadsSinceLatestVersion": 217,
         "Dependencies": [
             "nexus-115"
         ],
@@ -2441,7 +2441,7 @@
         "dllSHA256s": {
             "CasualtiesUnknown_GM_Menu.dll": "41f623cb148dfa9ff7758ad57d6b88f067aa157ce394aad2aed5d7e2b5042506"
         },
-        "downloadsSinceLatestVersion": 152,
+        "downloadsSinceLatestVersion": 153,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2746,30 +2746,30 @@
     {
         "Id": "nexus-730",
         "Name": "Casualty Psychology",
-        "Version": "0.5.1",
+        "Version": "0.5.2",
         "bepinexVersion": "2.0.5.1",
         "bepinexPlugins": {
             "com.carlo.casualtiesunknown.psychology": "2.0.5.1"
         },
         "Summary": "A reimagination/overhaul mod of the mood system. Psychologically interesting ways to suffer.",
-        "Description": "[center]\n<br />[size=6][b][color=#b388ff]CASUALTY PSYCHOLOGY[/color][/b][/size]\n<br />[size=4][i]Mental State, Trauma, Panic Attacks &amp; Somatics for Casualties Unknown[/i][/size]\n<br />[size=3][b][color=#ffb74d]v0.5.1 (Beta)[/color][/b][/size]\n<br />[/center]\n<br />\n<br />[b]Casualty Psychology[/b] is a Cas:U mod that expands on the mental health of the Sawians and reworks the mood system, tying fear, trauma, physical stressors, and enviromental factors into somatic reactions such as tremors, panic attacks, sleep disturbances, sensory overload, catatonia, and extensive dialogue responses with contextual hints. Mood tooltips in WoundView display the current state of your Sawian in simple terms. It is up to you to decide how good their day will be.\n<br />\n<br />[line]\n<br />\n<br />[size=5][b][color=#b388ff]Requirements &amp; Installation[/color][/b][/size]\n<br />\n<br />[b]Requirements:[/b]\n<br />[list]\n<br />[*]Casualties Unknown (Demo or Full Game)[/*]\n<br />[*][url=https://www.nexusmods.com/scavprototype/mods/341][b]CUCoreLib[/b][/url] (1.0.7-alpha) (Required for custom items, moodles, and save data)[/*]\n<br />[*][url=https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5][b]BepInEx 5[/b][/url] (x64)[/*]\n<br />[/list]\n<br />[b]Installation:[/b]\n<br />[list=1]\n<br />[*]Install [b]BepInEx 5[/b] into your Casualties Unknown game folder if you haven't already.[/*]\n<br />[*]Put [font=Courier New]CUCoreLib.dll[/font] and [font=Courier New]CasualtyPsychology.dll[/font] into your [font=Courier New]BepInEx&#92;plugins&#92;[/font] folder.[/*]\n<br />[*]Put the [font=Courier New]Assets&#92;CasualtyPsychology[/font] folder into [font=Courier New]BepInEx&#92;plugins&#92;Assets&#92;CasualtyPsychology&#92;[/font].[/*]\n<br />[*]Launch the game. The config file will generate automatically on first run.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=5][b][color=#b388ff]What This Mod Adds[/color][/b][/size]\n<br />\n<br />[b][size=4][color=#ffd54f]1. The Six Psychological Pillars[/color][/size][/b]\n<br />Your Sawian's mood is no longer a singular numerical value. Mental state is now split across six stats ranging from -100 to +100:\n<br />[list]\n<br />[*][b][color=#81c784]Valence[/color][/b]: (Semi)directly wired into vanilla happiness. Taking hits, starving, or sitting in pitch darkness lowers it , while a warm meal or campfire pulls it back up. It acts as: \"How good or bad did XYZ feel?\".[/*]\n<br />[*][b][color=#ef5350]Arousal[/color][/b]: Adrenaline and nervous tension. Higher values mean twitchiness or otherwise erratic behaviour, whilst lower ones work as being sluggish or otherwise averted to working. As in: \"How active did XYZ make me?\"[/*]\n<br />[*][b][color=#4dd0e1]Agency[/color][/b]: Bodily autonomy and control. Losing a limb or getting into sticky situations tanks this. Patching wounds, crafting, or using tools reminds them that they've got some control over these caves. As is: \"Do I feel capable of changing my current situation by XYZ?\"[/*]\n<br />[*][b][color=#ffb74d]Predictability[/color][/b]: Situational awareness and your control over them (sort of). Acts as: \"Do I know if XYZ is coming next?\"[/*]\n<br />[*][b][color=#b388ff]Social Connectedness[/color][/b]: Isolation meter. Drops from isolation, and rises from being near traders or your teammates (MP). Acts as: \"How socially secure am I?\"[/*]\n<br />[*][b][color=#80d8ff]Goal Satisfaction[/color][/b]: Survival satisfaction. Kept steady by doing basic survival needs. Acts as: \"How motivated, or needful to complete XYZ am I?\"[/*]\n<br />[/list]Each Sawian rolls a distinct personality mix at the start of every run, making for a unique experience every time. It can range from fatalism to aggresive behaviours, neurotiscism, and many more.\n<br />\n<br />[line]\n<br />\n<br />[b][size=4][color=#ef5350]2. Panic Attacks[/color][/size][/b]\n<br />A high arousal or high adrenaline combined with low valence can trigger panic attacks in three stages:\n<br />[list]\n<br />[*][b]Tier 1 (Mild)[/b]: Elevated pulse and light tremors. Walking and eating aren't affected.[/*]\n<br />[*][b]Tier 2 (Moderate)[/b]: Weapon sway with a 15% slowdown. Sawians will refuse to eat or drink until they catch their breath.[/*]\n<br />[*][b]Tier 3 (Severe)[/b]: Heavy full-body tremors with a 25% movement penalty. Most actions are blocked. Extreme stress can cause vomiting.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#ffb74d]3. Stress Analgesia, Pain Storms &amp; Head Trauma[/color][/size][/b]\n<br />Physical injuries trigger short-term adrenaline reactions alongside lasting cranial trauma:\n<br />[list]\n<br />[*][b]Stress-Induced Analgesia[/b]: High-intensity injuries numb pain perception for 4 to 28 seconds, giving Sawians a quick window to pack bleeds or take pills before the pain registers.[/*]\n<br />[*][b]Pain Storms[/b]: Once adrenaline numbness expires, unmanaged pain hits all at once with sudden valence drops, arousal spikes, and loud complaining (usually).[/*]\n<br />[*][b]Fracture Limping[/b]: Walking on an unsplinted fractured leg forces a limp, periodic groans, and an agency penalty.[/*]\n<br />[*][b]Directional Cranial Trauma[/b]: Impacts track where the skull took damage ([b]Brow[/b], [b]Temples[/b], [b]Crown[/b], [b]Occiput[/b]). Minor knocks leave subtle run quirks in the Dossier, while severe blows trigger whiteouts, jumbled bag slots, typoglycemia, swapped tooltip names, dimmed icons, and slurred speech.[/*]\n<br />[*][b]Braingrow Conditioning[/b]: Regenerating brain tissue with Braingrow leaves a lasting imprint depending on recovery circumstances. Doing it under combat or bleeding builds pain tolerance (+15%) and longer adrenaline rushes, while regenerating in safe shelter softens pain tolerance slightly (+8%) in exchange for faster calm mood recovery.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#ba68c8]4. Sleep, Unconsciousness &amp; Nightmares[/color][/size][/b]\n<br />Resting conditions matter:\n<br />[list]\n<br />[*][b]Safe Rest[/b]: Sleeping inside a pod, near lit campfires, or around teammates keeps rest stable.[/*]\n<br />[*][b]Unsafe Rest[/b]: Sleeping in pitch darkness, near corpses, or around active traps raises the risk of a nightmare.[/*]\n<br />[*][b]Unconscious Knockouts[/b]: Passing out from blood loss or pain in dark areas runs the same nightmare checks as voluntary sleep.[/*]\n<br />[*][b]Nightmares[/b]: Above 25 trauma in unsafe spots, nightmares wake the Sawian up stressed and groggy (BadSleep).[/*]\n<br />[*][b]Sleep Paralysis[/b]: At high trauma (50+) in unlit spots, Sawians can wake up paralyzed for up to about 40 seconds. Sleep near light sources, or use sleeping pills, or a plushie prevent it.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#ffd54f]5. Sensory Overload &amp; Sluggishness[/color][/size][/b]\n<br />[list]\n<br />[*][b]Sensory Gating Failure[/b]: High stress makes it harder to filter noise. Anxious Sawians begin to hear the tiniest of noises, while dissociated Sawians hear high-pitched tinnitus.[/*]\n<br />[*][b]Depressive Sluggishness[/b]: Severe depression causes a sluggish acceleration from a dead stop, making it harder to move and transverse effectively.[/*]\n<br />[*][b]Derealization[/b]: Sawians begin to dissociate between themselves, represented as the camera \"lagging\" behind.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#ffd54f]6. Phobias &amp; Auditory Flashbacks[/color][/size][/b]\n<br />Hazardous injuries leave lasting conditioning:\n<br />[list]\n<br />[*]Traps, mines, turrets, sound cannons, and broken glass register conditioned phobias on injury.[/*]\n<br />[*]Encountering those hazards later raises stress and lowers situational awareness even without getting hit, no less hearing them trigger can cause anxiety spikes.[/*]\n<br />[*][b]Auditory Flashbacks[/b]: At 40+ trauma, triggers can cause realistic, anxiety induced auditory flashbacks.[/*]\n<br />[*]Safe exposure without injury gradually desensitizes the Sawian to their phobia.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#ef5350]7. Crises &amp; Resignation[/color][/size][/b]\n<br />[list]\n<br />[*][b]Crisis States[/b]: Severe depression and high stress activate vanilla self-harm impulses if your Sawian stays frozen in place for too long.[/*]\n<br />[*][b]Sensory Breaks[/b]: Rather than guaranteed self-harm, a deep breath sound effect can play, aborting the minigame entirely to give your Sawian a moment of calm and putting the impulse on cooldown.[/*]\n<br />[*][b]Escalating Breakdown[/b]: Repeated self-harm episodes under severe neglect carry serious risks of lasting physical trauma.[/*]\n<br />[*][b]Terminal Despair[/b]: Leaving a Sawian trapped in prolonged, rock-bottom despair risks an irreversible resignation spiral. Tending to basic survival needs like food, clean water, medicine, safe rest, or a plushie helps ground them and pull them back from the brink momentarily.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#81c784]8. Survival Adjustments &amp; Last Stand Rework[/color][/size][/b]\n<br />[list]\n<br />[*][b]Food Fatigue[/b]: Eating identical meals repeatedly cuts happiness gains and prompts verbal complaints, it may be of interest to vary your Sawian's diet.[/*]\n<br />[*][b]Soothing Crystal Shard[/b]: Drains faster and gives weaker relief when used while depressed.[/*]\n<br />[*][b]Reworked Last Stand[/b]: Near-death survival checks current agency, resilience, plushies, and teammates rather than a stale happiness number from ten minutes ago. Surviving gives a 5-minute borrowed time window with pain buffering and a crash warning when time runs out.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#4dd0e1]9. Items[/color][/size][/b]\n<br />[list]\n<br />[*][b][color=#ffd54f]Clinical Intake Dossier[/color][/b] ([font=Courier New]intakedossier[/font]): Clipboard found in the lifepod. Reads your Sawian's rolled traits, stress responses, memory log, and any notes.[/*]\n<br />[*][b][color=#b388ff]Mindclean[/color][/b] ([font=Courier New]mindclean[/font]): Removes 30 trauma. Has a 70% chance to clear traumatic memories (+15 Valence) and a 30% chance to clear positive ones (-15 Valence), with brief dizziness and nausea.[/*]\n<br />[*][b][color=#ff8a80]Plushies[/color][/b]: Holding or carrying a plushie grounds panic, cuts panic duration, and prevents sleep paralysis.[/*]\n<br />[*][b]Medications &amp; Serums[/b]: Sedatives reduce arousal and stop panic attacks. Regrowth serums rebuild lost limbs, restoring lost agency.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#ffd54f]10. Contextual Dialogue &amp; Multiplayer[/color][/size][/b]\n<br />[list]\n<br />[*]Dialogue covering injuries, darkness, limb loss, surgery, and panic recovery.[/*]\n<br />[*][b]Unchipped Sawians[/b]: Sawians without neural chips play somatic audio (heartbeats, heavy breathing, sighs) when stressed or fatigued.[/*]\n<br />[*][b]Trader Haggling[/b]: Trader reputation reacts to Sawian mood and predictability during haggling.[/*]\n<br />[*][b]Multiplayer[/b]: Compatible with Krokosha Casualties MP (including 5.0.0 LTS) and CUCoreLib. Both host and clients require the mod.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=5][b][color=#b388ff]Care &amp; Survival Tips[/color][/b][/size]\n<br />A full player guide ([font=Courier New]GUIDE.md[/font]) is bundled with the mod archive covering mechanics, pillar numbers, and troubleshooting.\n<br />\n<br />[list]\n<br />[*]Keep light sources nearby: Darkness drains predictability and increases nightmare risk during sleep or unconsciousness.[/*]\n<br />[*]Carry a plushie: Grounds panic warnings early and prevents sleep paralysis.[/*]\n<br />[*]Treat severe wounds quickly: Bandage bleeds and fractures while adrenaline is active before the pain storm hits.[/*]\n<br />[*]Do not force food during panic: Sawians refuse food and drink during moderate to severe panic attacks. Use sedatives, plushies, or wait out the attack.[/*]\n<br />[*]Vary your food: Eating the same food in rapid succession causes palate fatigue and diminishing returns.[/*]\n<br />[*]Sleep in safe areas: Avoid resting next to traps or unburied corpses.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=5][b][color=#b388ff]Console Commands &amp; Configuration[/color][/b][/size]\n<br />\n<br />[b][size=4][color=#ffd54f]Console Commands[/color][/size][/b]\n<br />[spoiler]\n<br />Open the in-game console and use [font=Courier New]psych[/font] or [font=Courier New]psychology[/font]:\n<br />\n<br />[list]\n<br />[*][font=Courier New]psych pillar [player|@a][/font] - Displays or modifies affective pillars (e.g. [font=Courier New]psych pillar v20a-10ar15[/font] or [font=Courier New]psych pillar add v15so20 @a[/font]).[/*]\n<br />[*][font=Courier New]psych trait [set|add|remove|clear|reroll|list] [player|@a] &lt;trait&gt; &lt;value&gt;[/font] - Manages personality traits and baseline shifts.[/*]\n<br />[*][font=Courier New]psych head &lt;brow|temple|crown|occiput|flash|set|damage|heal|reset&gt; &lt;args&gt; [player|@a][/font] - Simulates cranial trauma, triggers concussion flashbangs, or modifies brain health.[/*]\n<br />[*][font=Courier New]psych braingrow &lt;stress|calm|set|reset&gt; &lt;seconds&gt; [player|@a][/font] - Adjusts Braingrow neuro-conditioning recovery time and pain gate bias.[/*]\n<br />[*][font=Courier New]psych despair &lt;preamble|trigger|shave|add|sub|set|clear&gt; &lt;amount&gt; [player|@a][/font] - Tests terminal despair buildup, late preamble warnings, food/water reduction shaves, or cancels sequences.[/*]\n<br />[*][font=Courier New]psych trauma &lt;amount&gt; [player|@a][/font] - Checks or modifies trauma score (0 to 100).[/*]\n<br />[*][font=Courier New]psych panic &lt;1|2|3|mild|mod|sev|stop|off|on&gt; [player|@a][/font] - Triggers or cancels panic attacks. Accepts numeric tiers, semantic names, or truthy/falsy toggles.[/*]\n<br />[*][font=Courier New]psych paralysis [now|next|off|on][/font] - Triggers sleep paralysis immediately, arms it for the next sleep cycle, or disarms queued events.[/*]\n<br />[*][font=Courier New]psych nightmare [now|next|off|on][/font] - Triggers a nightmare wake-up immediately, arms it for the next rest, or disarms queued nightmares.[/*]\n<br />[*][font=Courier New]psych flashback &lt;short|standard|prolonged&gt;[/font] - Forces an auditory flashback.[/*]\n<br />[*][font=Courier New]psych vomit &lt;blood|panic|sick&gt;[/font] - Forces specific vomiting sequences.[/*]\n<br />[*][font=Courier New]psych dialogue &lt;key&gt;[/font] - Forces the character to speak a specific line from [font=Courier New]EN.json[/font].[/*]\n<br />[*][font=Courier New]psych spawn &lt;body|trader|pod|podtrader|dossier&gt;[/font] - Spawns entities/items at mouse cursor.[/*]\n<br />[*][font=Courier New]psych dossier [player|@a][/font] - Spawns a Clinical Intake Dossier bound to you or a teammate.[/*]\n<br />[*][font=Courier New]psych status [player|@a][/font] - Prints current psychological stats and telemetry to console.[/*]\n<br />[*][font=Courier New]psych reset [player|@a][/font] (or [font=Courier New]psych heal[/font]) - Resets trauma to 0, stops panic and despair, and restores all pillars to baseline.[/*]\n<br />[/list]\n<br />[b]Vanilla Command Integrations:[/b]\n<br />[list]\n<br />[*][font=Courier New]heal [player|@a][/font] - Also clears psychological trauma, stops panic, and resets pillars to baseline.[/*]\n<br />[*][font=Courier New]setbodyfield happiness &lt;val&gt;[/font] - Synchronizes Valence pillar directly with vanilla happiness.[/*]\n<br />[*][font=Courier New]setbodyfield traumaamount &lt;val&gt;[/font] - Synchronizes trauma score.[/*]\n<br />[*][font=Courier New]spawn intakedossier [player|@a][/font] - Safe multiplayer binding without crashes.[/*]\n<br />[/list][/spoiler]\n<br />\n<br />[b][size=4][color=#ffd54f]Configuration Options (CasualtyPsychology.cfg)[/color][/size][/b]\n<br />[spoiler]\n<br />Located at [font=Courier New]BepInEx&#92;config&#92;CasualtyPsychology.cfg[/font]:\n<br />\n<br />[code]\n<br />[General]\n<br />## Master switch for Casualty Psychology.\n<br />Enabled = true\n<br />\n<br />[Localization]\n<br />## Language file to load ('Auto', 'EN', 'ES-419', 'RU', 'ZH').\n<br />Language = Auto\n<br />\n<br />[Balancing]\n<br />## Global multiplier for pillar decay rates back to baseline.\n<br />GlobalDecayMultiplier = 1.0\n<br />\n<br />## Multiplier for trauma gained from severe stressors and injuries.\n<br />TraumaGainMultiplier = 1.0\n<br />\n<br />## Multiplier for trauma decay rate during safety and rest.\n<br />TraumaDecayMultiplier = 1.0\n<br />\n<br />## Multiplier for duration of stress-induced analgesia (shock numbness).\n<br />StressAnalgesiaDurationMultiplier = 1.0\n<br />\n<br />[Trauma]\n<br />## Auditory flashbacks (turret beeps, mine clicks, explosions).\n<br />EnableFlashbacks = true\n<br />\n<br />## Panic attacks with tremors and food refusal.\n<br />EnablePanicAttacks = true\n<br />\n<br />## Crisis self-harm behavior during severe distress.\n<br />EnableSuicideRisk = true\n<br />\n<br />## Waking up frozen with hallucinations after nightmares.\n<br />EnableSleepParalysis = true\n<br />\n<br />## Nightmares and restless sleep when resting with high trauma.\n<br />EnableNightmares = true\n<br />\n<br />## Tremor and camera shake multiplier during panic attacks.\n<br />PanicAttackSeverityMultiplier = 1.0\n<br />\n<br />[Somatics]\n<br />## Pain flare-up when injury shock / adrenaline wears off.\n<br />EnablePainStorm = true\n<br />\n<br />## Limping sound and movement penalties on untreated broken legs.\n<br />EnableBrokenLegHobble = true\n<br />\n<br />## Audible heartbeats and heavy breathing when unchipped.\n<br />EnableUnchippedSomaticAudio = true\n<br />\n<br />[Visuals]\n<br />## Camera drift and blur during panic or dissociation.\n<br />EnableScreenEffects = true\n<br />\n<br />## Screen effect intensity multiplier (0.0 - 1.5).\n<br />ScreenEffectIntensity = 0.8\n<br />\n<br />[Apparel]\n<br />## Dialogue lines when putting on gear.\n<br />EnableApparelDialogue = true\n<br />\n<br />## Complaining when gear is swapped back and forth repeatedly.\n<br />EnableApparelAnnoyance = true\n<br />\n<br />[Dialogue]\n<br />## Avoid talking over active speech bubbles from vanilla or other mods.\n<br />EnableDialogueCoexistence = true\n<br />\n<br />## Chattiness frequency multiplier for spontaneous remarks (lower = less chatty, 0 = disabled).\n<br />DialogueFrequencyMultiplier = 1.0\n<br />\n<br />## Paranoid dialogue lines if OBS or Streamlabs is running.\n<br />EnableStreamerAwareness = true\n<br />\n<br />[Mechanics]\n<br />## Mindwipe breakdown stages, coma, and temporary muteness.\n<br />EnableMindwipeRevamp = true\n<br />\n<br />## Headache, nausea, and memory loss effects from mindclean.\n<br />EnableMindcleanReactions = true\n<br />\n<br />## Mental state influences trader haggling disposition.\n<br />EnableTraderHagglingReaction = true\n<br />\n<br />## Whether sustained catastrophic despair triggers a fatal resignation sequence.\n<br />EnableTerminalSuicide = true\n<br />\n<br />[Items]\n<br />## Spawn the clinical intake dossier in the lifepod.\n<br />SpawnStartingDossier = true\n<br />\n<br />## Plushies reduce trauma and shorten panic attacks.\n<br />EnablePlushieGrounding = true[/code][/spoiler]\n<br />\n<br />[line]\n<br />\n<br />[size=5][b][color=#ffd54f]Compatibility[/color][/b][/size]\n<br />[list]\n<br />[*]Dialogue covers all three launch Sawians (Expie, Milky, and Dune), complete with distinct personalities.[/*]\n<br />[*][b]Gunsaw Genetics[/b]: Playable species can be used, but might be wonky depending on how custom species balance their mood.[/*]\n<br />[*][b]Euphoric[/b]: Compatible and recommended to round out mood coverage.[/*]\n<br />[*][b]Overhauls (Medical Brutalism, Viscera &amp; Vitals, etc)[/b]: Overhauls that modify health and vital shock independently lack official Casualty Psychology ports (for now). Stacking them can make the game unbalanced or cause rapid psychological spirals, so use with caution.[/*]\n<br />[*]General mood mods might be hit or miss depending on how they interact with vitals and happiness.[/*]\n<br />[*]Supported addon dialogue:\n<br />[list]\n<br />[*][b]Casualties: Under the Influence[/b] (by comradefoxx)[/*]\n<br />[*][b]Collars: Unknown[/b] (by gouxi)[/*]\n<br />[*][b]Substances Expanded[/b] (by Shiri)[/*]\n<br />[/list][/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=5][b][color=#b388ff]Credits &amp; Special Thanks[/color][/b][/size]\n<br />[list]\n<br />[*]Built with [b]BepInEx 5[/b] and [b]Harmony[/b].[/*]\n<br />[*]Powered by [url=https://www.nexusmods.com/scavprototype/mods/341][b]CUCoreLib[/b][/url] by [b]JimmyKing.[/b][/*]\n<br />[*][b]Krokosha/Larry[/b] for the Multiplayer mod framework.[/*]\n<br />[*][color=#6e48e8][b]Nullrot[/b][/color]: Writing &amp; Artwork.[/*]\n<br />[*][b]Raz0rDisk[/b]: Writing.[/*]\n<br />[*][b]JMoldy (Kallin)[/b]: Writing.[/*]\n<br />[*][b]Toky[/b]: Mod header/thumbnail art[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[center][size=3][color=#b0bec5][i]\"We suffer more often in imagination than in reality.\"[/i][/color][/size]\n<br />[size=2][color=#78909c]- Seneca[/color][/size][/center]\n<br />",
+        "Description": "[center]\n<br />[size=6][b][color=#b388ff]CASUALTY PSYCHOLOGY[/color][/b][/size]\n<br />[size=4][i]Mental State, Trauma, Panic Attacks &amp; Somatics for Casualties Unknown[/i][/size]\n<br />[size=3][b][color=#ffb74d]v0.5.2 (Beta)[/color][/b][/size]\n<br />[/center]\n<br />\n<br />[b]Casualty Psychology[/b] is a Cas:U mod that expands on the mental health of the Sawians and reworks the mood system, tying fear, trauma, physical stressors, and enviromental factors into somatic reactions such as tremors, panic attacks, sleep disturbances, sensory overload, catatonia, and extensive dialogue responses with contextual hints. Mood tooltips in WoundView display the current state of your Sawian in simple terms. It is up to you to decide how good their day will be.\n<br />\n<br />[line]\n<br />\n<br />[size=5][b][color=#b388ff]Requirements &amp; Installation[/color][/b][/size]\n<br />\n<br />[b]Requirements:[/b]\n<br />[list]\n<br />[*]Casualties Unknown (Demo or Full Game)[/*]\n<br />[*][url=https://www.nexusmods.com/scavprototype/mods/341][b]CUCoreLib[/b][/url] (1.0.7-alpha) (Required for custom items, moodles, and save data)[/*]\n<br />[*][url=https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5][b]BepInEx 5[/b][/url] (x64)[/*]\n<br />[/list]\n<br />[b]Installation:[/b]\n<br />[list=1]\n<br />[*]Install [b]BepInEx 5[/b] into your Casualties Unknown game folder if you haven't already.[/*]\n<br />[*]Put [font=Courier New]CUCoreLib.dll[/font] and [font=Courier New]CasualtyPsychology.dll[/font] into your [font=Courier New]BepInEx&#92;plugins&#92;[/font] folder.[/*]\n<br />[*]Put the [font=Courier New]Assets&#92;CasualtyPsychology[/font] folder into [font=Courier New]BepInEx&#92;plugins&#92;Assets&#92;CasualtyPsychology&#92;[/font].[/*]\n<br />[*]Launch the game. The config file will generate automatically on first run.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=5][b][color=#b388ff]What This Mod Adds[/color][/b][/size]\n<br />\n<br />[b][size=4][color=#ffd54f]1. The Six Psychological Pillars[/color][/size][/b]\n<br />Your Sawian's mood is no longer a singular numerical value. Mental state is now split across six stats ranging from -100 to +100:\n<br />[list]\n<br />[*][b][color=#81c784]Valence[/color][/b]: (Semi)directly wired into vanilla happiness. Taking hits, starving, or sitting in pitch darkness lowers it , while a warm meal or campfire pulls it back up. It acts as: \"How good or bad did XYZ feel?\".[/*]\n<br />[*][b][color=#ef5350]Arousal[/color][/b]: Adrenaline and nervous tension. Higher values mean twitchiness or otherwise erratic behaviour, whilst lower ones work as being sluggish or otherwise averted to working. As in: \"How active did XYZ make me?\"[/*]\n<br />[*][b][color=#4dd0e1]Agency[/color][/b]: Bodily autonomy and control. Losing a limb or getting into sticky situations tanks this. Patching wounds, crafting, or using tools reminds them that they've got some control over these caves. As is: \"Do I feel capable of changing my current situation by XYZ?\"[/*]\n<br />[*][b][color=#ffb74d]Predictability[/color][/b]: Situational awareness and your control over them (sort of). Acts as: \"Do I know if XYZ is coming next?\"[/*]\n<br />[*][b][color=#b388ff]Social Connectedness[/color][/b]: Isolation meter. Drops from isolation, and rises from being near traders or your teammates (MP). Acts as: \"How socially secure am I?\"[/*]\n<br />[*][b][color=#80d8ff]Goal Satisfaction[/color][/b]: Survival satisfaction. Kept steady by doing basic survival needs. Acts as: \"How motivated, or needful to complete XYZ am I?\"[/*]\n<br />[/list]Each Sawian rolls a distinct personality mix at the start of every run, making for a unique experience every time. It can range from fatalism to aggresive behaviours, neurotiscism, and many more.\n<br />\n<br />[line]\n<br />\n<br />[b][size=4][color=#ef5350]2. Panic Attacks[/color][/size][/b]\n<br />A high arousal or high adrenaline combined with low valence can trigger panic attacks in three stages:\n<br />[list]\n<br />[*][b]Tier 1 (Mild)[/b]: Elevated pulse and light tremors. Walking and eating aren't affected.[/*]\n<br />[*][b]Tier 2 (Moderate)[/b]: Weapon sway with a 15% slowdown. Sawians will refuse to eat or drink until they catch their breath.[/*]\n<br />[*][b]Tier 3 (Severe)[/b]: Heavy full-body tremors with a 25% movement penalty. Most actions are blocked. Extreme stress can cause vomiting.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#ffb74d]3. Stress Analgesia, Pain Storms &amp; Head Trauma[/color][/size][/b]\n<br />Physical injuries trigger short-term adrenaline reactions alongside lasting cranial trauma:\n<br />[list]\n<br />[*][b]Stress-Induced Analgesia[/b]: High-intensity injuries numb pain perception for 4 to 28 seconds, giving Sawians a quick window to pack bleeds or take pills before the pain registers.[/*]\n<br />[*][b]Pain Storms[/b]: Once adrenaline numbness expires, unmanaged pain hits all at once with sudden valence drops, arousal spikes, and loud complaining (usually).[/*]\n<br />[*][b]Fracture Limping[/b]: Walking on an unsplinted fractured leg forces a limp, periodic groans, and an agency penalty.[/*]\n<br />[*][b]Directional Cranial Trauma[/b]: Impacts track where the skull took damage ([b]Brow[/b], [b]Temples[/b], [b]Crown[/b], [b]Occiput[/b]). Minor knocks leave subtle run quirks in the Dossier, while severe blows trigger whiteouts, jumbled bag slots, typoglycemia, swapped tooltip names, dimmed icons, and slurred speech.[/*]\n<br />[*][b]Braingrow Conditioning[/b]: Regenerating brain tissue with Braingrow leaves a lasting imprint depending on recovery circumstances. Doing it under combat or bleeding builds pain tolerance (+15%) and longer adrenaline rushes, while regenerating in safe shelter softens pain tolerance slightly (+8%) in exchange for faster calm mood recovery.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#ba68c8]4. Sleep, Unconsciousness &amp; Nightmares[/color][/size][/b]\n<br />Resting conditions matter:\n<br />[list]\n<br />[*][b]Safe Rest[/b]: Sleeping inside a pod, near lit campfires, or around teammates keeps rest stable.[/*]\n<br />[*][b]Unsafe Rest[/b]: Sleeping in pitch darkness, near corpses, or around active traps raises the risk of a nightmare.[/*]\n<br />[*][b]Unconscious Knockouts[/b]: Passing out from blood loss or pain in dark areas runs the same nightmare checks as voluntary sleep.[/*]\n<br />[*][b]Nightmares[/b]: Above 25 trauma in unsafe spots, nightmares wake the Sawian up stressed and groggy (BadSleep).[/*]\n<br />[*][b]Sleep Paralysis[/b]: At high trauma (50+) in unlit spots, Sawians can wake up paralyzed for up to about 40 seconds. Sleep near light sources, or use sleeping pills, or a plushie prevent it.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#ffd54f]5. Sensory Overload &amp; Sluggishness[/color][/size][/b]\n<br />[list]\n<br />[*][b]Sensory Gating Failure[/b]: High stress makes it harder to filter noise. Anxious Sawians begin to hear the tiniest of noises, while dissociated Sawians hear high-pitched tinnitus.[/*]\n<br />[*][b]Depressive Sluggishness[/b]: Severe depression causes a sluggish acceleration from a dead stop, making it harder to move and transverse effectively.[/*]\n<br />[*][b]Derealization[/b]: Sawians begin to dissociate between themselves, represented as the camera \"lagging\" behind.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#ffd54f]6. Phobias &amp; Auditory Flashbacks[/color][/size][/b]\n<br />Hazardous injuries leave lasting conditioning:\n<br />[list]\n<br />[*]Traps, mines, turrets, sound cannons, and broken glass register conditioned phobias on injury.[/*]\n<br />[*]Encountering those hazards later raises stress and lowers situational awareness even without getting hit, no less hearing them trigger can cause anxiety spikes.[/*]\n<br />[*][b]Auditory Flashbacks[/b]: At 40+ trauma, triggers can cause realistic, anxiety induced auditory flashbacks.[/*]\n<br />[*]Safe exposure without injury gradually desensitizes the Sawian to their phobia.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#ef5350]7. Crises &amp; Resignation[/color][/size][/b]\n<br />[list]\n<br />[*][b]Crisis States[/b]: Severe depression and high stress activate vanilla self-harm impulses if your Sawian stays frozen in place for too long.[/*]\n<br />[*][b]Sensory Breaks[/b]: Rather than guaranteed self-harm, a deep breath sound effect can play, aborting the minigame entirely to give your Sawian a moment of calm and putting the impulse on cooldown.[/*]\n<br />[*][b]Escalating Breakdown[/b]: Repeated self-harm episodes under severe neglect carry serious risks of lasting physical trauma.[/*]\n<br />[*][b]Terminal Despair[/b]: Leaving a Sawian trapped in prolonged, rock-bottom despair risks an irreversible resignation spiral. Tending to basic survival needs like food, clean water, medicine, safe rest, or a plushie helps ground them and pull them back from the brink momentarily.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#81c784]8. Survival Adjustments &amp; Last Stand Rework[/color][/size][/b]\n<br />[list]\n<br />[*][b]Food Fatigue[/b]: Eating identical meals repeatedly cuts happiness gains and prompts verbal complaints, it may be of interest to vary your Sawian's diet.[/*]\n<br />[*][b]Soothing Crystal Shard[/b]: Drains faster and gives weaker relief when used while depressed.[/*]\n<br />[*][b]Reworked Last Stand[/b]: Near-death survival checks current agency, resilience, plushies, and teammates rather than a stale happiness number from ten minutes ago. Surviving gives a 5-minute borrowed time window with pain buffering and a crash warning when time runs out.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#4dd0e1]9. Items[/color][/size][/b]\n<br />[list]\n<br />[*][b][color=#ffd54f]Clinical Intake Dossier[/color][/b] ([font=Courier New]intakedossier[/font]): Clipboard found in the lifepod. Reads your Sawian's rolled traits, stress responses, memory log, and any notes.[/*]\n<br />[*][b][color=#b388ff]Mindclean[/color][/b] ([font=Courier New]mindclean[/font]): Removes 30 trauma. Has a 70% chance to clear traumatic memories (+15 Valence) and a 30% chance to clear positive ones (-15 Valence), with brief dizziness and nausea.[/*]\n<br />[*][b][color=#ff8a80]Plushies[/color][/b]: Holding or carrying a plushie grounds panic, cuts panic duration, and prevents sleep paralysis.[/*]\n<br />[*][b]Medications &amp; Serums[/b]: Sedatives reduce arousal and stop panic attacks. Regrowth serums rebuild lost limbs, restoring lost agency.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[b][size=4][color=#ffd54f]10. Contextual Dialogue &amp; Multiplayer[/color][/size][/b]\n<br />[list]\n<br />[*]Dialogue covering injuries, darkness, limb loss, surgery, and panic recovery.[/*]\n<br />[*][b]Unchipped Sawians[/b]: Sawians without neural chips play somatic audio (heartbeats, heavy breathing, sighs) when stressed or fatigued.[/*]\n<br />[*][b]Trader Haggling[/b]: Trader reputation reacts to Sawian mood and predictability during haggling.[/*]\n<br />[*][b]Multiplayer[/b]: Compatible with Krokosha Casualties MP (including 5.0.0 LTS) and CUCoreLib. Both host and clients require the mod.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=5][b][color=#b388ff]Care &amp; Survival Tips[/color][/b][/size]\n<br />A full player guide ([font=Courier New]GUIDE.md[/font]) is bundled with the mod archive covering mechanics, pillar numbers, and troubleshooting.\n<br />\n<br />[list]\n<br />[*]Keep light sources nearby: Darkness drains predictability and increases nightmare risk during sleep or unconsciousness.[/*]\n<br />[*]Carry a plushie: Grounds panic warnings early and prevents sleep paralysis.[/*]\n<br />[*]Treat severe wounds quickly: Bandage bleeds and fractures while adrenaline is active before the pain storm hits.[/*]\n<br />[*]Do not force food during panic: Sawians refuse food and drink during moderate to severe panic attacks. Use sedatives, plushies, or wait out the attack.[/*]\n<br />[*]Vary your food: Eating the same food in rapid succession causes palate fatigue and diminishing returns.[/*]\n<br />[*]Sleep in safe areas: Avoid resting next to traps or unburied corpses.[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=5][b][color=#b388ff]Console Commands &amp; Configuration[/color][/b][/size]\n<br />\n<br />[b][size=4][color=#ffd54f]Console Commands[/color][/size][/b]\n<br />[spoiler]\n<br />Open the in-game console and use [font=Courier New]psych[/font] or [font=Courier New]psychology[/font]:\n<br />\n<br />[list]\n<br />[*][font=Courier New]psych pillar [player|@a][/font] - Displays or modifies affective pillars (e.g. [font=Courier New]psych pillar v20a-10ar15[/font] or [font=Courier New]psych pillar add v15so20 @a[/font]).[/*]\n<br />[*][font=Courier New]psych trait [set|add|remove|clear|reroll|list] [player|@a] &lt;trait&gt; &lt;value&gt;[/font] - Manages personality traits and baseline shifts.[/*]\n<br />[*][font=Courier New]psych head &lt;brow|temple|crown|occiput|flash|set|damage|heal|reset&gt; &lt;args&gt; [player|@a][/font] - Simulates cranial trauma, triggers concussion flashbangs, or modifies brain health.[/*]\n<br />[*][font=Courier New]psych braingrow &lt;stress|calm|set|reset&gt; &lt;seconds&gt; [player|@a][/font] - Adjusts Braingrow neuro-conditioning recovery time and pain gate bias.[/*]\n<br />[*][font=Courier New]psych despair &lt;preamble|trigger|shave|add|sub|set|clear&gt; &lt;amount&gt; [player|@a][/font] - Tests terminal despair buildup, late preamble warnings, food/water reduction shaves, or cancels sequences.[/*]\n<br />[*][font=Courier New]psych trauma &lt;amount&gt; [player|@a][/font] - Checks or modifies trauma score (0 to 100).[/*]\n<br />[*][font=Courier New]psych panic &lt;1|2|3|mild|mod|sev|stop|off|on&gt; [player|@a][/font] - Triggers or cancels panic attacks. Accepts numeric tiers, semantic names, or truthy/falsy toggles.[/*]\n<br />[*][font=Courier New]psych paralysis [now|next|off|on][/font] - Triggers sleep paralysis immediately, arms it for the next sleep cycle, or disarms queued events.[/*]\n<br />[*][font=Courier New]psych nightmare [now|next|off|on][/font] - Triggers a nightmare wake-up immediately, arms it for the next rest, or disarms queued nightmares.[/*]\n<br />[*][font=Courier New]psych flashback &lt;short|standard|prolonged&gt;[/font] - Forces an auditory flashback.[/*]\n<br />[*][font=Courier New]psych vomit &lt;blood|panic|sick&gt;[/font] - Forces specific vomiting sequences.[/*]\n<br />[*][font=Courier New]psych dialogue &lt;key&gt;[/font] - Forces the character to speak a specific line from [font=Courier New]EN.json[/font].[/*]\n<br />[*][font=Courier New]psych spawn &lt;body|trader|pod|podtrader|dossier&gt;[/font] - Spawns entities/items at mouse cursor.[/*]\n<br />[*][font=Courier New]psych dossier [player|@a][/font] - Spawns a Clinical Intake Dossier bound to you or a teammate.[/*]\n<br />[*][font=Courier New]psych status [player|@a][/font] - Prints current psychological stats and telemetry to console.[/*]\n<br />[*][font=Courier New]psych reset [player|@a][/font] (or [font=Courier New]psych heal[/font]) - Resets trauma to 0, stops panic and despair, and restores all pillars to baseline.[/*]\n<br />[/list]\n<br />[b]Vanilla Command Integrations:[/b]\n<br />[list]\n<br />[*][font=Courier New]heal [player|@a][/font] - Also clears psychological trauma, stops panic, and resets pillars to baseline.[/*]\n<br />[*][font=Courier New]setbodyfield happiness &lt;val&gt;[/font] - Synchronizes Valence pillar directly with vanilla happiness.[/*]\n<br />[*][font=Courier New]setbodyfield traumaamount &lt;val&gt;[/font] - Synchronizes trauma score.[/*]\n<br />[*][font=Courier New]spawn intakedossier [player|@a][/font] - Safe multiplayer binding without crashes.[/*]\n<br />[/list][/spoiler]\n<br />\n<br />[b][size=4][color=#ffd54f]Configuration Options (CasualtyPsychology.cfg)[/color][/size][/b]\n<br />[spoiler]\n<br />Located at [font=Courier New]BepInEx&#92;config&#92;CasualtyPsychology.cfg[/font]:\n<br />\n<br />[code]\n<br />[General]\n<br />## Master switch for Casualty Psychology.\n<br />Enabled = true\n<br />\n<br />[Localization]\n<br />## Language file to load ('Auto', 'EN', 'ES-419', 'RU', 'ZH').\n<br />Language = Auto\n<br />\n<br />[Balancing]\n<br />## Global multiplier for pillar decay rates back to baseline.\n<br />GlobalDecayMultiplier = 1.0\n<br />\n<br />## Multiplier for trauma gained from severe stressors and injuries.\n<br />TraumaGainMultiplier = 1.0\n<br />\n<br />## Multiplier for trauma decay rate during safety and rest.\n<br />TraumaDecayMultiplier = 1.0\n<br />\n<br />## Multiplier for duration of stress-induced analgesia (shock numbness).\n<br />StressAnalgesiaDurationMultiplier = 1.0\n<br />\n<br />[Trauma]\n<br />## Auditory flashbacks (turret beeps, mine clicks, explosions).\n<br />EnableFlashbacks = true\n<br />\n<br />## Panic attacks with tremors and food refusal.\n<br />EnablePanicAttacks = true\n<br />\n<br />## Crisis self-harm behavior during severe distress.\n<br />EnableSuicideRisk = true\n<br />\n<br />## Waking up frozen with hallucinations after nightmares.\n<br />EnableSleepParalysis = true\n<br />\n<br />## Nightmares and restless sleep when resting with high trauma.\n<br />EnableNightmares = true\n<br />\n<br />## Tremor and camera shake multiplier during panic attacks.\n<br />PanicAttackSeverityMultiplier = 1.0\n<br />\n<br />[Somatics]\n<br />## Pain flare-up when injury shock / adrenaline wears off.\n<br />EnablePainStorm = true\n<br />\n<br />## Limping sound and movement penalties on untreated broken legs.\n<br />EnableBrokenLegHobble = true\n<br />\n<br />## Audible heartbeats and heavy breathing when unchipped.\n<br />EnableUnchippedSomaticAudio = true\n<br />\n<br />[Visuals]\n<br />## Camera drift and blur during panic or dissociation.\n<br />EnableScreenEffects = true\n<br />\n<br />## Screen effect intensity multiplier (0.0 - 1.5).\n<br />ScreenEffectIntensity = 0.8\n<br />\n<br />[Apparel]\n<br />## Dialogue lines when putting on gear.\n<br />EnableApparelDialogue = true\n<br />\n<br />## Complaining when gear is swapped back and forth repeatedly.\n<br />EnableApparelAnnoyance = true\n<br />\n<br />[Dialogue]\n<br />## Avoid talking over active speech bubbles from vanilla or other mods.\n<br />EnableDialogueCoexistence = true\n<br />\n<br />## Chattiness frequency multiplier for spontaneous remarks (lower = less chatty, 0 = disabled).\n<br />DialogueFrequencyMultiplier = 1.0\n<br />\n<br />## Paranoid dialogue lines if OBS or Streamlabs is running.\n<br />EnableStreamerAwareness = true\n<br />\n<br />[Mechanics]\n<br />## Mindwipe breakdown stages, coma, and temporary muteness.\n<br />EnableMindwipeRevamp = true\n<br />\n<br />## Headache, nausea, and memory loss effects from mindclean.\n<br />EnableMindcleanReactions = true\n<br />\n<br />## Mental state influences trader haggling disposition.\n<br />EnableTraderHagglingReaction = true\n<br />\n<br />## Whether sustained catastrophic despair triggers a fatal resignation sequence.\n<br />EnableTerminalSuicide = true\n<br />\n<br />[Items]\n<br />## Spawn the clinical intake dossier in the lifepod.\n<br />SpawnStartingDossier = true\n<br />\n<br />## Plushies reduce trauma and shorten panic attacks.\n<br />EnablePlushieGrounding = true[/code][/spoiler]\n<br />\n<br />[line]\n<br />\n<br />[size=5][b][color=#ffd54f]Compatibility[/color][/b][/size]\n<br />[list]\n<br />[*]Dialogue covers all three launch Sawians (Expie, Milky, and Dune), complete with distinct personalities.[/*]\n<br />[*][b]Gunsaw Genetics[/b]: Playable species can be used, but might be wonky depending on how custom species balance their mood.[/*]\n<br />[*][b]Euphoric[/b]: Compatible and recommended to round out mood coverage.[/*]\n<br />[*][b]Overhauls (Medical Brutalism, Viscera &amp; Vitals, etc)[/b]: Overhauls that modify health and vital shock independently lack official Casualty Psychology ports (for now). Stacking them can make the game unbalanced or cause rapid psychological spirals, so use with caution.[/*]\n<br />[*]General mood mods might be hit or miss depending on how they interact with vitals and happiness.[/*]\n<br />[*]Supported addon dialogue:\n<br />[list]\n<br />[*][b]Casualties: Under the Influence[/b] (by comradefoxx)[/*]\n<br />[*][b]Collars: Unknown[/b] (by gouxi)[/*]\n<br />[*][b]Substances Expanded[/b] (by Shiri)[/*]\n<br />[/list][/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[size=5][b][color=#b388ff]Credits &amp; Special Thanks[/color][/b][/size]\n<br />[list]\n<br />[*]Built with [b]BepInEx 5[/b] and [b]Harmony[/b].[/*]\n<br />[*]Powered by [url=https://www.nexusmods.com/scavprototype/mods/341][b]CUCoreLib[/b][/url] by [b]JimmyKing.[/b][/*]\n<br />[*][b]Krokosha/Larry[/b] for the Multiplayer mod framework.[/*]\n<br />[*][color=#6e48e8][b]Nullrot[/b][/color]: Writing &amp; Artwork.[/*]\n<br />[*][b]Raz0rDisk[/b]: Writing.[/*]\n<br />[*][b]JMoldy (Kallin)[/b]: Writing.[/*]\n<br />[*][b]Toky[/b]: Mod header/thumbnail art[/*]\n<br />[/list]\n<br />[line]\n<br />\n<br />[center][size=3][color=#b0bec5][i]\"We suffer more often in imagination than in reality.\"[/i][/color][/size]\n<br />[size=2][color=#78909c]- Seneca[/color][/size][/center]\n<br />",
         "Author": "yzaCarlos",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/730/730-1790903217-1201731304.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/730"
         },
-        "DownloadUrl": "nexus://scavprototype/730/2642",
+        "DownloadUrl": "nexus://scavprototype/730/2663",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 730,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-10-20T04:19:21.000Z",
-        "ReleaseDate": "2026-10-20T04:19:21.000Z",
-        "SHA256": "2b6e93ba9a1aa42d6943a939da16febdde43f2bab6ac0aafeb8d8dfb168df9ed",
+        "LastUpdated": "2026-10-22T01:03:36.000Z",
+        "ReleaseDate": "2026-10-22T01:03:36.000Z",
+        "SHA256": "19a3a64d0ed697a8d77c8201e7b47a9b63a86d525a8622767fb773f1e867c1ff",
         "dllSHA256s": {
-            "CasualtyPsychology.dll": "37950f1e12fb7d660b8b3480e3558fa783921b791373988d6d0580cd3e6f604b"
+            "CasualtyPsychology.dll": "a78c7a73fe76d4f9831163c17eff0cff0396fc837fb152a73254a0fd62ac12c2"
         },
-        "downloadsSinceLatestVersion": 151,
+        "downloadsSinceLatestVersion": 9,
         "Dependencies": [
             "nexus-341"
         ],
@@ -2813,6 +2813,10 @@
             {
                 "Version": "0.5.1",
                 "Changelog": "- 2.0.5.0\n- Added terminal despair. You may want to keep your expies happy.\n- Fixed conflict where Medical Brutalism panic music and positive valence fought against some sequences\n- Fixed an issue where modded crafting recipes falsely reported as botched\n- Fixed fluid container intake reading the container condition instead of consumed liquid\n- Multiplayer compat (I hope)\n- New debug command: psych despair\n- Item balancing\n- 2.0.5.1\n- Directional cranial trauma (brow, temples, crown, occiput) now dictates personality changes (either severe or none)\n- Reworked text scrambling to be more confusing and universal (for other languages)\n- Braingrow neuro-conditioning (regenerating brain health under combat stress vs safe rest imprints lasting pain resistance or mood stability)\n- Despair accumulator rebalance: bumped threshold to 360s baseline (240s-480s depending on traits)\n- Terminal despair timer now properly saves and restores through save files\n- Container agnosia filter (being able to view container contents even while scrambled)\n- Log warnings when running unported overhauls (Medical Brutalism, Viscera & Vitals) to forewarn about balance death spirals. This list may expand or shrink down.\n- Fixed Clinical Intake Dossier description in the guide (clipboard only reads traits/profile, doesn't track live pillars)\n- New debug console commands: psych head and psych braingrow\n- Added detection for missing files and json keys\n- Reworked mod BBCode/Nexus page"
+            },
+            {
+                "Version": "0.5.2",
+                "Changelog": "- Fixed \"depressionDeny\" dialogue line not existing (i swear it did)"
             }
         ],
         "dllNames": [
@@ -2823,9 +2827,9 @@
             "CasualtyPsychology.dll": "2.0.5.1"
         },
         "Statistics": {
-            "Endorsements": 33,
-            "UniqueDownloads": 1027,
-            "TotalDownloads": 1812,
+            "Endorsements": 38,
+            "UniqueDownloads": 1101,
+            "TotalDownloads": 2009,
             "TotalViews": null
         },
         "Images": [
@@ -3106,7 +3110,7 @@
         "dllSHA256s": {
             "NullsOddsnEnds.dll": "2a70591767fa00f0d85a5b5c8f074eff6820d626c8387a2f84773a319e8916ff"
         },
-        "downloadsSinceLatestVersion": 14,
+        "downloadsSinceLatestVersion": 15,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3276,7 +3280,7 @@
         "dllSHA256s": {
             "OTMM.dll": "7ada469dbf23c073b8ff96d6cb21b9cb20b9d119868e7bb8134130cd6e7a4e84"
         },
-        "downloadsSinceLatestVersion": 46,
+        "downloadsSinceLatestVersion": 47,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3515,7 +3519,7 @@
         "dllSHA256s": {
             "CustomTraders.dll": "16537164ea3798624e13795bc9856b185aefc42075030611bab81a5de7025dfb"
         },
-        "downloadsSinceLatestVersion": 156,
+        "downloadsSinceLatestVersion": 160,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3901,7 +3905,7 @@
         "dllSHA256s": {
             "TraumarigExtender.dll": "2660517099f99545d4e8c8d1599aae5f6c55ae134828386ef1f3e442d0e7f9d3"
         },
-        "downloadsSinceLatestVersion": 178,
+        "downloadsSinceLatestVersion": 179,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3964,7 +3968,7 @@
         "dllSHA256s": {
             "NforGrowling.dll": "0b519bfc49d451b89a2710891b4b2faff4ac7c61c2faf94a83ae4aa840bf6888"
         },
-        "downloadsSinceLatestVersion": 387,
+        "downloadsSinceLatestVersion": 388,
         "Dependencies": [
             "nexus-115"
         ],
@@ -4232,7 +4236,7 @@
             "CUUICompat.dll": "8d22011b97e2b8074ae340175d02be04c2f4ac5c9a1b70bdbec80704947df4e0",
             "ModSyncCompat.dll": "eda164c8ed862434f59f8c869f6e651974cdfb6d5daa8787df8f711d124baed8"
         },
-        "downloadsSinceLatestVersion": 1217,
+        "downloadsSinceLatestVersion": 1219,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5250,7 +5254,7 @@
         "dllSHA256s": {
             "Tailor.dll": "e813e9a87c0877ca6141cc8879abcd8c2b325812d0f917f67afa7c19b413b2d3"
         },
-        "downloadsSinceLatestVersion": 234,
+        "downloadsSinceLatestVersion": 235,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5325,7 +5329,7 @@
         "dllSHA256s": {
             "CPUOptimization2.dll": "3b10ee6f1469cdcf499fca49d0efd0e0b9fefcc466f89c887e9d935ed3b767a6"
         },
-        "downloadsSinceLatestVersion": 183,
+        "downloadsSinceLatestVersion": 186,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5762,7 +5766,7 @@
         "dllSHA256s": {
             "New Descents.dll": "2dba4590831504baaa29e703a0e29ec7cc54af739db961044f9db0a241f94f83"
         },
-        "downloadsSinceLatestVersion": 92,
+        "downloadsSinceLatestVersion": 99,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6245,7 +6249,7 @@
             "CUCoreLib.dll": "5a12ffcc9470146af34a36073bb6a712e8f3825502cebfceefc4152c48abe89d",
             "collarsunknown.dll": "c6848ed42a1378efeec7e2aa7c3177052ba4aad715e406d177f25e4a61f8b260"
         },
-        "downloadsSinceLatestVersion": 483,
+        "downloadsSinceLatestVersion": 486,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6655,7 +6659,7 @@
         "dllSHA256s": {
             "ArmorBugFix.dll": "a5dfc4dafe07c227f9764ac0e4cc3e5fc916ccff080c0605575edf5ef568827b"
         },
-        "downloadsSinceLatestVersion": 69,
+        "downloadsSinceLatestVersion": 70,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -6749,7 +6753,7 @@
         "dllSHA256s": {
             "CasualtiesTogetherConsciousnessIndicator.dll": "6e6a0e4e2477efb139da26d30017741f00a3ab747319fd5779d2260ba32f9c6d"
         },
-        "downloadsSinceLatestVersion": 224,
+        "downloadsSinceLatestVersion": 228,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -7614,7 +7618,7 @@
         "dllSHA256s": {
             "WholeMeal.dll": "ac8ecd7cdfb9a048963f50bb561c062b706e41449ca57061e88a137c0be23ace"
         },
-        "downloadsSinceLatestVersion": 137,
+        "downloadsSinceLatestVersion": 139,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -8816,7 +8820,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownPTBR.dll": "9bf8c3af0524d1f42f3c8c1bb5bd8a8cad402582d33fae41a287c24e50f6457e"
         },
-        "downloadsSinceLatestVersion": 182,
+        "downloadsSinceLatestVersion": 183,
         "Dependencies": [
             "nexus-115"
         ],
@@ -9132,7 +9136,7 @@
         "dllSHA256s": {
             "DifferentiatingTraits.dll": "b3dd6c185a6e04c08d89c4074e3a7334bf221f6d993c224b4a6ff750db042665"
         },
-        "downloadsSinceLatestVersion": 52,
+        "downloadsSinceLatestVersion": 55,
         "Dependencies": [
             "nexus-341"
         ],
@@ -10701,7 +10705,7 @@
             "CUCoreLib.dll": "47275a8cd64cd998537a5f3405f3373aed7b429d2179fcff84844367918e1e41",
             "gouxismorefirearms.dll": "cf43bbed14537bf598e7a1599e9a150a86e890b90b414408c6117734b5c70896"
         },
-        "downloadsSinceLatestVersion": 153,
+        "downloadsSinceLatestVersion": 154,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10809,7 +10813,7 @@
         "dllSHA256s": {
             "WhatModIsThisFrom.dll": "1be03f0a37dd7155378387a7c8cbcc51f025c3a824f10dad33f8c8fc690b091a"
         },
-        "downloadsSinceLatestVersion": 202,
+        "downloadsSinceLatestVersion": 203,
         "Dependencies": [
             "nexus-341"
         ],
@@ -11114,7 +11118,7 @@
         "dllSHA256s": {
             "Performant Rendering.dll": "44404ed33c48bc69e571278d773a3139b6a5220ebb5e0f219d038e5038dec9ce"
         },
-        "downloadsSinceLatestVersion": 1830,
+        "downloadsSinceLatestVersion": 1831,
         "Dependencies": [
             "nexus-341"
         ],
@@ -11449,7 +11453,7 @@
         "dllSHA256s": {
             "MilkiesMilk.dll": "bf3741946a4d2d30016cd42f466e238863c399c171defe88a1766b17049a7b53"
         },
-        "downloadsSinceLatestVersion": 1640,
+        "downloadsSinceLatestVersion": 1642,
         "Dependencies": [
             "nexus-341"
         ],
@@ -11923,7 +11927,7 @@
         "dllSHA256s": {
             "SubstancesExpanded.dll": "a77b7f6b61b61ea5c544417b9aee4f8fff498de089c12b3bb71c03e89946cbc3"
         },
-        "downloadsSinceLatestVersion": 89,
+        "downloadsSinceLatestVersion": 90,
         "Dependencies": [
             "nexus-341"
         ],
@@ -12091,7 +12095,7 @@
         "ReleaseDate": "2026-10-02T01:27:46.000Z",
         "SHA256": "fb9c73f697f0a63cd8c451cb483d818b21f0617f13894554842465619c62899c",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 86,
+        "downloadsSinceLatestVersion": 89,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -12236,7 +12240,7 @@
         "dllSHA256s": {
             "CasualtiesUnderTheInfluence.dll": "2da6f020562f3ca4391afe805416d9b4c4b3b6c85bba73c3a0178fd63aa7964e"
         },
-        "downloadsSinceLatestVersion": 252,
+        "downloadsSinceLatestVersion": 253,
         "Dependencies": [
             "nexus-341"
         ],
@@ -12619,7 +12623,7 @@
         "ReleaseDate": "2026-08-25T02:28:44.000Z",
         "SHA256": "18ef17d40b505be1dc1046f20c1469723912ffaa642075e4beea905d01cdd63b",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 3541,
+        "downloadsSinceLatestVersion": 3545,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13041,7 +13045,7 @@
         "dllSHA256s": {
             "Gigasalad.dll": "00cc47f004d0585cd306372921639ce7097e6689265f01830274a45e91c5aa16"
         },
-        "downloadsSinceLatestVersion": 173,
+        "downloadsSinceLatestVersion": 174,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13204,7 +13208,7 @@
         "dllSHA256s": {
             "AutoMinigameTools.dll": "5b7ed26fdabb623b349931cb6e6b80ab172e1f611f5f80fd1b39c02116f26217"
         },
-        "downloadsSinceLatestVersion": 35,
+        "downloadsSinceLatestVersion": 42,
         "Dependencies": [
             "nexus-341"
         ],
@@ -13389,7 +13393,7 @@
         "dllSHA256s": {
             "ColorfulInsides.dll": "da76a1513bad3a5dfddf5789aa5cd740114cc4bef6b0c96d0625a62b9fb11c65"
         },
-        "downloadsSinceLatestVersion": 119,
+        "downloadsSinceLatestVersion": 121,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13725,7 +13729,7 @@
         "dllSHA256s": {
             "ConsolePlus.dll": "8c1b2f35c70f1e3bd7528cf63d0306f37bad9b7a0966b0f459cfd25b7577759e"
         },
-        "downloadsSinceLatestVersion": 417,
+        "downloadsSinceLatestVersion": 418,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13829,7 +13833,7 @@
         "dllSHA256s": {
             "CUMoreNpcMod.dll": "c310ccfb04f627798319010605c97a56f35fa6d14a4c6c4f5b59d696cb174314"
         },
-        "downloadsSinceLatestVersion": 271,
+        "downloadsSinceLatestVersion": 272,
         "Dependencies": [
             "nexus-67",
             "nexus-341"
@@ -13999,7 +14003,7 @@
             "MonoMod.RuntimeDetour.dll": "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c",
             "MonoMod.Utils.dll": "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9"
         },
-        "downloadsSinceLatestVersion": 25,
+        "downloadsSinceLatestVersion": 26,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -14071,7 +14075,7 @@
             "MonoMod.RuntimeDetour.dll": "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c",
             "MonoMod.Utils.dll": "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9"
         },
-        "downloadsSinceLatestVersion": 20,
+        "downloadsSinceLatestVersion": 21,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -14336,7 +14340,7 @@
         "dllSHA256s": {
             "Wearable Crystals.dll": "b8a8f079852d0f039a7005b9bdb503ec5fca9486ddc08124fff720a66e87f355"
         },
-        "downloadsSinceLatestVersion": 140,
+        "downloadsSinceLatestVersion": 141,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -14449,7 +14453,7 @@
         "dllSHA256s": {
             "MakeshiftProsthetics.dll": "a66253b0a2bcafd1e78a71158163cd9d100304e26f39bd5897d31b11e216cd4c"
         },
-        "downloadsSinceLatestVersion": 378,
+        "downloadsSinceLatestVersion": 379,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -14697,7 +14701,7 @@
         "dllSHA256s": {
             "SkinDeep.dll": "059f5f0155d35145d98a3804728e4e0bb7b58c55c660286435abc124b879a946"
         },
-        "downloadsSinceLatestVersion": 922,
+        "downloadsSinceLatestVersion": 924,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -14809,7 +14813,7 @@
             "MonoMod.RuntimeDetour.dll": "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c",
             "MonoMod.Utils.dll": "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9"
         },
-        "downloadsSinceLatestVersion": 634,
+        "downloadsSinceLatestVersion": 638,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15931,7 +15935,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "2b189c3285703f51d31b26942f3656c066cc10603f53bb06e47dbe0a9dd404ea"
         },
-        "downloadsSinceLatestVersion": 3795,
+        "downloadsSinceLatestVersion": 3797,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15994,7 +15998,7 @@
         "dllSHA256s": {
             "CUZoomPlus.dll": "aa4f4ce533818b24c854b3e6796e2a71795e4db2c81b8ea339828c3cc47045b0"
         },
-        "downloadsSinceLatestVersion": 785,
+        "downloadsSinceLatestVersion": 786,
         "Dependencies": [
             "nexus-341"
         ],
@@ -16355,7 +16359,7 @@
         "dllSHA256s": {
             "ManualGunSuicide.dll": "ed661c435778b8f25633e96e1e5b8a4429667924b74e6aa04dbbdda14ba74823"
         },
-        "downloadsSinceLatestVersion": 756,
+        "downloadsSinceLatestVersion": 757,
         "Dependencies": [
             "nexus-67",
             "nexus-115"
@@ -16718,7 +16722,7 @@
         "dllSHA256s": {
             "CUMoreAmputation.dll": "edfd809af5be12c72878a465a3385999e0d5cf2c1b02737aed83452cda61e28d"
         },
-        "downloadsSinceLatestVersion": 1780,
+        "downloadsSinceLatestVersion": 1781,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -16841,7 +16845,7 @@
         "ReleaseDate": "2026-07-27T09:43:17.000Z",
         "SHA256": "8c04592e8abbac23cf7cb15f7db1653ef24e181d3fd8cdb58c2f75d36d5e8efd",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 422,
+        "downloadsSinceLatestVersion": 423,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -17048,7 +17052,7 @@
         "dllSHA256s": {
             "knotrecipemod.dll": "540ca2574401953c3fdab3e0cd4f4f4c933eba7e33e276b3ff0b72d5e2774779"
         },
-        "downloadsSinceLatestVersion": 2489,
+        "downloadsSinceLatestVersion": 2492,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -17301,7 +17305,7 @@
         "dllSHA256s": {
             "CasualtyVitals.dll": "d1f34534486472dbcc0af7527f55163f52d9eaefa657347bf55ab9d5512509b8"
         },
-        "downloadsSinceLatestVersion": 357,
+        "downloadsSinceLatestVersion": 358,
         "Dependencies": [
             "nexus-341"
         ],
@@ -17407,7 +17411,7 @@
         "dllSHA256s": {
             "CosmeticPetMod.dll": "236d08d9bbd087a6a76b00d6a3c9f831aa12ffa3278dac248eca5af424aae404"
         },
-        "downloadsSinceLatestVersion": 204,
+        "downloadsSinceLatestVersion": 205,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -18933,7 +18937,7 @@
         "ReleaseDate": "2026-07-20T03:19:03.000Z",
         "SHA256": "624841785f5e45f8382fcad238e8a4a8d7278ce98addbf8d4ace8ac96494ee98",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 307,
+        "downloadsSinceLatestVersion": 308,
         "Dependencies": [
             "nexus-32",
             "nexus-122"
@@ -19309,7 +19313,7 @@
         "dllSHA256s": {
             "UnknownPerformance.dll": "bac238d7f9189a92cadac34690b233c22928fed16df01b053ea02c5d0e34ad94"
         },
-        "downloadsSinceLatestVersion": 3879,
+        "downloadsSinceLatestVersion": 3881,
         "Dependencies": [
             "nexus-338"
         ],
@@ -19357,7 +19361,7 @@
         "dllSHA256s": {
             "CUCoreLib.dll": "45b3ef0657392fdf98309b381dcffc806a8f29e017549755a3c78d9772c1484d"
         },
-        "downloadsSinceLatestVersion": 3128,
+        "downloadsSinceLatestVersion": 3145,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -19539,7 +19543,7 @@
         "dllSHA256s": {
             "ScavSetLib.dll": "c5822431086b62fc321f1f462b925d33b6b5424df4869c07b76a6bc0da61149f"
         },
-        "downloadsSinceLatestVersion": 2923,
+        "downloadsSinceLatestVersion": 2924,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -19880,7 +19884,7 @@
         "dllSHA256s": {
             "ExpiePettingMod.dll": "189909b97d3d8668d9e26b50bd69dd23887be0648997ecd7ea93b95ac383d835"
         },
-        "downloadsSinceLatestVersion": 3315,
+        "downloadsSinceLatestVersion": 3316,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -20294,7 +20298,7 @@
             "GunsawGenetics.dll": "3053c925a321b0c9aaa449c41a1bb06be46879ce5160555a14f16963e4eeaecf",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 4603,
+        "downloadsSinceLatestVersion": 4612,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -24269,7 +24273,7 @@
             "GunMinigame.dll": "5f228be2884db271c623bd5c904d15c647a6893ee1865a1028e04765f99bbba7",
             "NewFirearms.dll": "458b3aa6ab02396398814e88d16727a01b9405aed26ddd585e571f44633a848b"
         },
-        "downloadsSinceLatestVersion": 454,
+        "downloadsSinceLatestVersion": 457,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -24427,7 +24431,7 @@
             "ChangeSkinMP.dll": "b57fb344a3beb1ad084a898f716b2fe097a479beda84aadbb29054df7e9bd705",
             "CommandLine.dll": "2135b40fa819e58cf1942453e4409bfdea2be631077a354b878de8402be7e026"
         },
-        "downloadsSinceLatestVersion": 6501,
+        "downloadsSinceLatestVersion": 6505,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -24483,7 +24487,7 @@
         "dllSHA256s": {
             "WorldMap.dll": "604e534767d814de5924787781eb1beb60119d53fe63ab86c5eef0acd860afab"
         },
-        "downloadsSinceLatestVersion": 875,
+        "downloadsSinceLatestVersion": 876,
         "Dependencies": [
             "nexus-115"
         ],
@@ -25247,7 +25251,7 @@
         "dllSHA256s": {
             "EdgeSneak.dll": "3b0436c7f8851e83ce5c285c219ef364656f38867aaa5cd5cdb6564d535f6fd6"
         },
-        "downloadsSinceLatestVersion": 366,
+        "downloadsSinceLatestVersion": 367,
         "Dependencies": [
             "nexus-83",
             "nexus-115"
@@ -25430,7 +25434,7 @@
         "dllSHA256s": {
             "UEI.build.dll": "c5642c531f3248234f76a2ca1cb186cde7bd23f63c99437e98ff94114ca33244"
         },
-        "downloadsSinceLatestVersion": 1274,
+        "downloadsSinceLatestVersion": 1276,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -26011,7 +26015,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6dcbd87171f4a802d8f748a97bb5418b3976ac21b77d7f520e2c4aac97daa049"
         },
-        "downloadsSinceLatestVersion": 20096,
+        "downloadsSinceLatestVersion": 20107,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -26359,7 +26363,7 @@
         "dllSHA256s": {
             "CatPatch.dll": "180f1cf14e450a63240a96966d091961c1432981a02f9ffcb201157fcbede6f1"
         },
-        "downloadsSinceLatestVersion": 603,
+        "downloadsSinceLatestVersion": 608,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -26483,7 +26487,7 @@
             "steam_api64.dll": "e3fe06e2d802c2f753aeb46869e2af898f34715ce85f08001456fd8a80ecd21e",
             "System.Runtime.CompilerServices.Unsafe.dll": "01748200f2400c742aa689f1f5101bd6298efdfd92c00c18f4fa473847235ba9"
         },
-        "downloadsSinceLatestVersion": 294,
+        "downloadsSinceLatestVersion": 394,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -27036,7 +27040,7 @@
         "dllSHA256s": {
             "Cigs.dll": "f9160991be0177ef571f8421315ab73c5feb216972e943a100720c1123a81de5"
         },
-        "downloadsSinceLatestVersion": 941,
+        "downloadsSinceLatestVersion": 942,
         "Dependencies": [
             "nexus-32"
         ],
@@ -27543,7 +27547,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "2ecb1b20cc076f187855231faf6a5745e7bc4c3be0c90aeedb6569dc8ede6fc2"
         },
-        "downloadsSinceLatestVersion": 1192,
+        "downloadsSinceLatestVersion": 1199,
         "Dependencies": [
             "nexus-341"
         ],
@@ -28140,7 +28144,7 @@
         "dllSHA256s": {
             "RshLib.dll": "fb168f3609cb652b4858608947d1f347f44a433b8d4baa65afd297f373f41ddf"
         },
-        "downloadsSinceLatestVersion": 6320,
+        "downloadsSinceLatestVersion": 6321,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -28206,7 +28210,7 @@
             "MonoMod.RuntimeDetour.dll": "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c",
             "MonoMod.Utils.dll": "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9"
         },
-        "downloadsSinceLatestVersion": 917,
+        "downloadsSinceLatestVersion": 920,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29077,7 +29081,7 @@
         "dllSHA256s": {
             "body_sprite_replacer.dll": "dc92eec8e3fcaa62396616050d4bd2315b7648a15ee92a2354885908454c8fb0"
         },
-        "downloadsSinceLatestVersion": 6428,
+        "downloadsSinceLatestVersion": 6434,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29443,7 +29447,7 @@
         "dllSHA256s": {
             "QoL Unknown.dll": "43476ee1108f38f83fcec90cf0a9203f67874b545fa0fc63b2d87862c843b8e5"
         },
-        "downloadsSinceLatestVersion": 869,
+        "downloadsSinceLatestVersion": 882,
         "Dependencies": [],
         "Changelogs": [
             {

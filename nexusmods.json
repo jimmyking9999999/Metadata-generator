@@ -25,7 +25,7 @@
         "dllSHA256s": {
             "KnightArmor.dll": "38cc3f8437e875d7691c710ae950f59b2a17d26aaffedc6127a7084b3cb79789"
         },
-        "downloadsSinceLatestVersion": 1,
+        "downloadsSinceLatestVersion": 5,
         "Dependencies": [
             "nexus-115"
         ],
@@ -78,7 +78,7 @@
         "dllSHA256s": {
             "MP3Together.dll": "d5f3924aba182761f0f9934cd5fe2b93f9553a9434ab6521d50e7fa563e3c6af"
         },
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 5,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -124,7 +124,7 @@
         "dllSHA256s": {
             "StrimScav.dll": "469809a38ae5aa7885dfd21751ed81dd4c5cee797aa08623be2883eba153a095"
         },
-        "downloadsSinceLatestVersion": 19,
+        "downloadsSinceLatestVersion": 21,
         "Dependencies": [
             "nexus-341"
         ],
@@ -193,9 +193,9 @@
         "Id": "nexus-847",
         "Name": "Sandbox Toolkit",
         "Version": "1",
-        "bepinexVersion": "2.0.0",
+        "bepinexVersion": "2.1.0",
         "bepinexPlugins": {
-            "davis.cu.sandboxtoolkit": "2.0.0"
+            "davis.cu.sandboxtoolkit": "2.1.0"
         },
         "Summary": "Sandbox Toolkit adds an F1 sandbox panel for Casualties: Unknown. An successor to the default console command system.",
         "Description": "[center][b][size=6]Description[/size][/b][/center]\n<br />Sandbox Toolkit is a full in-game sandbox panel for Casualties: Unknown (formerly Scav Prototype). Open it with F1 while the game window is focused to access godmode, item and entity spawning, world tools, events, damage controls, body fixes and named loadouts from one draggable panel.\n<br />\n<br />It is built for testing, messing around and taking the edge off a bad run. It is not intended for competitive or leaderboard play.\n<br />\n<br />The panel hides the game's HUD and menus while open and restores them when closed. Its interface uses rounded cards, a sliding tab indicator, animated pages, section reveals and toasts. Everything is client-side and designed around single-player.\n<br />\n<br />Current version: 1.0.0\n<br />\n<br />**Installation instructions**\n<br />\n<br />1. Install BepInEx 5 (64-bit) into your Casualties: Unknown folder if you have not already. Run the game once so BepInEx creates its folders.\n<br />2. Close the game.\n<br />3. Extract the mod archive into the game folder, next to CasualtiesUnknown.exe. Merge the included BepInEx folder with the existing one.\n<br />4. The installed DLL should be at:\n<br />\n<br />  &lt;Game Folder&gt;&#92;BepInEx&#92;plugins&#92;SandboxToolkit&#92;SandboxToolkit.dll\n<br />\n<br />5. Launch the game and press F1 while the game window is focused.\n<br />\n<br />No other mods are required. If your mod manager supports BepInEx packages, you can also install the archive through it.\n<br />\n<br />To uninstall, close the game and delete the BepInEx&#92;plugins&#92;SandboxToolkit folder. Saved loadouts remain in BepInEx&#92;config&#92;SandboxToolkit&#92;loadouts.json unless you delete them.\n<br />\n<br />[center][b]Main features[/b][/center]\n<br />\n<br />PLAYER\n<br />• Godmode blocks impact damage, fractures, dislocations, dismemberment and eye loss, and continuously restores health, blood, oxygen, consciousness, limbs and status effects.\n<br />• Infinite stamina, infinite oxygen, no bleeding, no hunger/thirst and no pain/infection.\n<br />• Fullbright using the game's debug lighting.\n<br />• Noclip with WASD flight (hold Shift to boost) and freecam with arrow-key movement.\n<br />• Player speed from 1x to 5x, plus 1x / 5x / 20x game speed.\n<br />• One-click full heal and a starter kit with tools, bags, medicine and batteries.\n<br />\n<br />ITEMS\n<br />• Searchable catalogue of every item prefab found in Resources, with the game's localized names and real categories.\n<br />• Spawn 1 to 20 items directly into your inventory or at your last aim point.\n<br />• Spawned pistol and rifle magazines arrive fully loaded for immediate weapon testing.\n<br />• Virtualized, scrollable lists keep large catalogues responsive.\n<br />\n<br />LOADOUTS\n<br />• Save named loadouts containing every inventory slot, both hands, worn armour and clothing, favourites, condition values and nested container contents.\n<br />• Item-specific state is saved through the game's own save data: loaded magazines, chambered rounds, gun safety and racked state, batteries and charge, liquid stacks, pill counts and more.\n<br />• Keep saved durability can restore exact condition, wear and charge, or load gear at full condition. Ammo counts, liquids and stored contents are preserved either way.\n<br />• Loadout saving, overwriting and loading use explicit confirmations.\n<br />• Loadouts are stored in BepInEx&#92;config&#92;SandboxToolkit&#92;loadouts.json.\n<br />• Clear dropped items removes loose items from the world while protecting carried gear, worn equipment, stored contents and dropped containers that still hold items.\n<br />\n<br />ENTITIES\n<br />• Spawn animals, crystal enemies and structures found in Resources.\n<br />• Filter by Animals, Enemies or Structures, search by name or prefab ID, and spawn 1 to 20 at a time.\n<br />• Spawn at your feet or at your last aim point.\n<br />• Clear removes only entities spawned through the panel, without touching the level.\n<br />\n<br />WORLD\n<br />• Live run info: layer, biome, depth, total depth, run time, position and vital bars.\n<br />• Save and return to a reusable position bookmark.\n<br />• Teleport to your last aim point.\n<br />• Skip to the next layer with confirmation.\n<br />\n<br />EVENTS\n<br />• Trigger the game's own tremor and major earthquake effects.\n<br />• Drop supply capsules at your last aim point.\n<br />• Apply real layer events: Foggy, Warm, Scorching, Cold, Freezing, Flooded, Dried, Rainy, Infested, Ionized and Solar Flare.\n<br />• Only one layer event is active at a time, with a clear-event option.\n<br />\n<br />DAMAGE\n<br />• Damage a chosen limb with Blunt, Cut, Burn, Bite, Infection, Shrapnel, Internal bleeding or Brain damage.\n<br />• Advanced limb picker covering the head, thorax, abdomen, arms, hands, legs and feet.\n<br />• Break bone, dislocate, infect, amputate, heal a limb, heal the whole body or kill the player.\n<br />• Destructive actions use two-click confirmation. Godmode is disabled automatically when applying an injury so it does not undo it.\n<br />\n<br />BODY\n<br />• Quick fixes for hunger, thirst, temperature, blood, oxygen, energy, bleeding, infection, pain, sickness and radiation.\n<br />• No encumbrance toggle.\n<br />• Mood slider with Miserable, Low, Neutral, Happy and Euphoric presets, plus mood lock.\n<br />• Repair every carried item to full condition or duplicate the item in your hands.\n<br />\n<br />INTERFACE AND SETTINGS\n<br />• Draggable panel with a rebindable toggle key and optional open-on-start.\n<br />• Accent themes, panel opacity, corner radius, font size and backdrop dimming.\n<br />• Animation toggle and speed control.\n<br />• FPS counter.\n<br />• Settings are saved to the BepInEx config and apply live.\n<br />\n<br />[center][b]Requirements[/b] [/center]\n<br />\n<br />• Casualties: Unknown. Built and tested against the v7.0.1 demo. The retail build may work, but rebuilding against its Assembly-CSharp.dll is recommended.\n<br />• BepInEx 5.4.x (64-bit).\n<br />• Windows PC.\n<br />• Single-player is strongly recommended. Spawned items, entities, teleports and other changes are not synchronized in multiplayer and can desync or confuse other players.\n<br />• No additional mods, frameworks or dependencies.\n<br />\n<br />[center][b]Notes and limitations[/b][/center]\n<br />[center][/center]\n<br />• F1 is intentionally not a global hotkey. It only responds while the game has focus; no system-wide keyboard hook is installed.\n<br />• Loadouts cover carried and worn gear, not the body. Health, mood, broken bones, dismemberment and world position are not restored.\n<br />• Godmode prevents new dismemberment but does not regrow lost limbs. Amputation and death are permanent for the current run.\n<br />• Terrain changes from Flooded and Dried cannot be undone. Generate a new layer or reload a save to reset them.\n<br />• Dropped containers that still contain items are protected from Clear dropped items. Empty containers and loose items are removed.\n<br />• Back up your save before using destructive tools or testing loadouts.\n<br />\n<br />[center][b]Shout outs[/b][/center]\n<br />[center][/center]\n<br />Thanks to Orsoniks and the Casualties: Unknown team for making such a great game to tinker with.\n<br />\n<br />Thanks to the BepInEx team for the modding framework that makes this possible.\n<br />\n<br />Thanks to the Casualties: Unknown modding community and everyone who tested, shared feedback or reported issues.\n<br />\n<br />[center][b]Future Plans[/b]\n<br />\n<br />[left]Four our mod's future updates, we are currently planning in adding support to other mods, such as:\n<br />\n<br />[list]\n<br />[*] Casualties: Together[/*]\n<br />[*]Alexx_'s Medical Brutalism[/*]\n<br />[*]Casualty Psychology\n<br />And other mods...[/*]\n<br />[/list][/left]\n<br />[/center]\n<br />",
@@ -204,18 +204,18 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/847/847-1792971429-835438372.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/847"
         },
-        "DownloadUrl": "nexus://scavprototype/847/2745",
+        "DownloadUrl": "nexus://scavprototype/847/2751",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 847,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-10-28T15:34:29.000Z",
-        "ReleaseDate": "2026-10-28T15:34:29.000Z",
-        "SHA256": "9a48edc5f330f02fbb5dc138352932f8ca36896ea24e3d65ea8452bdf2b27718",
+        "LastUpdated": "2026-10-29T00:58:12.000Z",
+        "ReleaseDate": "2026-10-29T00:58:12.000Z",
+        "SHA256": "d53f65537f1cb47760e629ab765f44f4552bda99903a78ba8a8e2fd527c99c18",
         "dllSHA256s": {
-            "SandboxToolkit.dll": "73750f82641c41da7865d71ae8bb419119b0cabca7d5f9ee226ac05017a307c1"
+            "SandboxToolkit.dll": "5f530bd9d76bb424adf77f3441c5975c9e9299795099d9f26cb12850471b1098"
         },
-        "downloadsSinceLatestVersion": 13,
+        "downloadsSinceLatestVersion": 4,
         "Dependencies": [
             "nexus-115"
         ],
@@ -227,19 +227,23 @@
             {
                 "Version": "3",
                 "Changelog": "- Added\n-Entity icons in the spawner. Animal, enemy and structure rows now show the\n- entity's in-game icon before its name wherever the prefab has artwork. The item and\n- entity browsers share the same sprite lookup.\n-Main-menu changelog mode. Opening the panel from the main menu keeps the menu\n- visible and replaces the sandbox tabs with a changelog. you can still open the settings in the main menu."
+            },
+            {
+                "Version": "5",
+                "Changelog": "- Added\n- Build Mode Undo and Redo. Step through voxel placements, reverse a complete\n- Shift-drag spray as one action, and undo or redo Build Mode item and entity placements.\n- The placement preview expands to show the entire Shift-spray footprint and marks\n- the outline red if any part would land outside the active world.\n- Improved\n- The animated rounded-square outline now loops continuously and its stripes bend\n- smoothly through the corners.\n- Fixed\n- Skill slider edits now apply once when the mouse is released instead of rewriting\n- skill levels and experience thresholds throughout the drag."
             }
         ],
         "dllNames": [
             "SandboxToolkit.dll"
         ],
-        "dllVersion": "2.0.0",
+        "dllVersion": "2.1.0",
         "dllVersions": {
-            "SandboxToolkit.dll": "2.0.0"
+            "SandboxToolkit.dll": "2.1.0"
         },
         "Statistics": {
             "Endorsements": 1,
-            "UniqueDownloads": 103,
-            "TotalDownloads": 120,
+            "UniqueDownloads": 112,
+            "TotalDownloads": 135,
             "TotalViews": null
         },
         "Images": [
@@ -274,7 +278,7 @@
             "CUCoreLib.dll": "4d96bf9f90ef4b70b1c4eafe16883b37a74fbda4bc23f19d50e76311c8e00ab4",
             "Mine Casualty.dll": "98913689405f8870c9b800050f1a57b87c2adb7dd5fee4fd4701d23aeafa2f86"
         },
-        "downloadsSinceLatestVersion": 56,
+        "downloadsSinceLatestVersion": 58,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -505,7 +509,7 @@
         "dllSHA256s": {
             "CU_DevMenu.dll": "4c9a89e75052759ff46815a412f9f8998b375daacaffb072139f965ea10ad403"
         },
-        "downloadsSinceLatestVersion": 85,
+        "downloadsSinceLatestVersion": 88,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -551,7 +555,7 @@
         "dllSHA256s": {
             "ggmpcompat.dll": "1a196ad005d3c3688093b609b7d47b381eeb45d049db98196f2ff7afd052df92"
         },
-        "downloadsSinceLatestVersion": 294,
+        "downloadsSinceLatestVersion": 305,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -726,10 +730,10 @@
     {
         "Id": "nexus-833",
         "Name": "Casualties Archipelago (CUAP)",
-        "Version": "0.12.0",
-        "bepinexVersion": "0.12.0.0",
+        "Version": "0.12.1",
+        "bepinexVersion": "0.12.1",
         "bepinexPlugins": {
-            "nichologeam.cuap": "0.12.0.0"
+            "nichologeam.cuap": "0.12.1"
         },
         "Summary": "Archipelago Multiworld Randomizer support for Casualties: Unknown.",
         "Description": "[size=3]This is a mod for Casualties: Unknown that adds it to the list of playable games in [url=https://archipelago.gg]Archipelago[/url]. As with most other mods, it requres BepInEx.[/size]\n<br />\n<br />\n<br />[b][size=4]What is Archipelago?[/size][/b]\n<br />[size=3]Archipelago is a server and collection of game mods that creates a seemeless multi-game randomizer experience.[/size]\n<br />\n<br />[size=3]As an example, take an Archipelago game with Minecraft and Terraria. When the Terraria player defeats a boss, it allows the Minecraft player to craft Iron Tools, which the Minecraft player uses to mine diamonds, which sends the Terraria player access to Hardmode.[/size]\n<br />\n<br />[size=3]You can play an Archipelago with as many or as little games as you want. You can even play solo with just C:U.[/size]\n<br />\n<br />\n<br />[b][size=4]What is randomized?[/size][/b]\n<br />[size=3]The randomization is highly customizeable, with most locations being optional behind enabling them inside the YAML (see the next section).[/size]\n<br />\n<br />[size=3]Locations (where other player's items are):[/size]\n<br />[list]\n<br />[*][size=3]Depth Milestones at each 100m[/size][/*]\n<br />[*][size=3]Picking up the new Archipelago Items (YAML option)[/size][/*]\n<br />[*][size=3]Crafting each recipe (YAML option)[/size][/*]\n<br />[*][size=3]Being aflicted with each Moodle (YAML option)[/size][/*]\n<br />[*][size=3]Leveling up Skills (YAML option)[/size][/*]\n<br />[/list][size=3]Items (what other players can get for you):[/size]\n<br />[list]\n<br />[*][size=3]Layers/Depth Extenders (Goal dependant)[/size][/*]\n<br />[*][size=3]Recipes (YAML option)[/size][/*]\n<br />[*][size=3]Skill Levels (YAML option)[/size][/*]\n<br />[*][size=3]Arm Limbs (YAML option)[/size][/*]\n<br />[*][size=3]Traps (YAML option)[/size][/*]\n<br />[*][size=3]Minigames (YAML option)[/size][/*]\n<br />[/list]\n<br />[b][size=4]Archipelago Setup[/size][/b]\n<br />[size=3]This depends on if you are the host or a player, however, both require the [url=https://github.com/ArchipelagoMW/Archipelago/releases/]Archipelago Launcher[/url] (version 0.6.7 or above).[/size]\n<br />\n<br />[size=3][b]I'm hosting, not playing[/b]:[/size]\n<br />[size=3]You don't need the game mod (or to even own Casualties: Unknown). Simply download the APWorld for the version your player(s) are playing from the CUAP [url=https://github.com/Nichologeam/CUAP/releases/latest]GitHub[/url]. Place this inside your Archipelago Launcher's `custom_worlds` folder. The C:U player will send you their YAML file, which goes in the `Players` folder. You can then generate a world from the Launcher, and either host locally (not recommended) or host on the [url=https://archipelago.gg]Archipelago Website[/url].[/size]\n<br />\n<br />[size=3][b]I'm playing, not hosting[/b]:[/size]\n<br />[size=3]Download the APWorld for the version the host has from the CUAP [url=https://github.com/Nichologeam/CUAP/releases/latest]GitHub[/url]. Place this inside your Archipelago Launcher's `custom_worlds` folder. Inside the Launcher, launch the Options Creator and select Casualties: Unknown from the games on the left. Fill out your options and export to a YAML file. Send this file to the host.[/size]\n<br />\n<br />[size=3][b]I'm hosting and playing[/b]:[/size]\n<br />[size=3]Follow the instructions for playing, then follow up with the instructions for hosting.[/size]\n<br />\n<br />\n<br />[b][size=4]How do I join a server?[/size][/b]\n<br />[size=3]Once the server is running, start up C:U. On the main menu, you will see a new UI panel on the right side. If you don't see it, see the next section. This panel has three inputs.[/size]\n<br />\n<br />[size=3]The top input is the server's IP, which can be found at the top of the room page when hosting on the Archipelago Website. This follows the format of `archipelago.gg:xxxxx` if you are hosting on the website. If you are hosting through the Archipelago Launcher on your own PC, this is `localhost`.[/size]\n<br />\n<br />[size=3]The middle input is your slot name. This is the name you put into your YAML file, and is the filename of your YAML file if you used Options Creator. Archipelago limits this to 16 characters, so any letters after that will be removed.[/size]\n<br />\n<br />[size=3]The bottom input is the server password. Most Archipelago servers do not have a password. If the server you want to connect to does, ask the host for what it is.[/size]\n<br />\n<br />[b][size=4]Troubleshooting[/size][/b]\n<br />[size=3]If you cannot see the Archipelago UI, but the Descend and Tutorial buttons are not clickable, you have the mod installed in the wrong directory. Make sure the mod files are inside `BepInEx/plugins/CUAP` and not `BepInEx/plugins`.[/size]\n<br />\n<br />[size=3]If the Descend and Tutorial buttons work and the UI is missing, the mod failed to start. Make sure the mod files are in the correct place, and check the BepInEx log for any visible errors.[/size]\n<br />\n<br />[size=3]If you were suddenly kicked to the main menu mid-run without warning, that means you have disconnected from the server. Make sure the server is still running, then reconnect. A safety save was made upon disconnection.[/size]\n<br />\n<br />[size=3]If you cannot see or run basegame console commands, that means the Archipelago server you are connected to has Race Mode enabled. Commands are disabled in this mode to ensure fairness.[/size]\n<br />\n<br />[size=3]If you are still having issues, open the console and type `apreportbug`.[/size]\n<br />\n<br />\n<br />[b][size=4]Custom Commands[/size][/b]\n<br />[size=3]This mod adds custom commands to allow interacting with the Archipelago server.[/size]\n<br />\n<br />[list]\n<br />[*][size=3]`apdeathlink [severity]`: Enables DeathLink. Severity is either `kill` to instantly end the run, or `limbdamage` to deal large damage to one limb.[/size][/*]\n<br />[*][size=3]`apchat [text]`: Sends a chat message to the Archipelago server.[/size][/*]\n<br />[*][size=3]`aphint [item]`: Hints an item. If no hint popup appears, check the console for your required hint points. Leave [item] empty for a hint status update.[/size][/*]\n<br />[*][size=3]`aphintlocation [location]`: Tells you what item is at a given location. If no hint popup appears, check the console for your required hint points.[/size][/*]\n<br />[*][size=3]`aprelease`: Releases your remaining locations. Normal restrictions apply.[/size][/*]\n<br />[*][size=3]`apcollect`: Collects your remaining items. Normal restrictions apply.[/size][/*]\n<br />[*][size=3]`apcheat [item]`: Attempts a !getitem command on the specified item. Disabled in Race Mode.[/size][/*]\n<br />[*][size=3]`apalias [name]`: Sets your Archipelago server alias.[/size][/*]\n<br />[*][size=3]`aplang [file]`: Changes the mod's language file. Note that missing translations are not handled gracefully like in the vanilla game.[/size][/*]\n<br />[*][size=3]`apgift [inventorySlot] [player]`: Attempts to gift the item inside the given slot to the specifed player. Both you and the other player must have Gifting enabled.[/size][/*]\n<br />[/list]\n<br />[i][size=3]The Archipelago logo was created by Krista Corkos and Christopher Wilson and is licenced under Attribution-NonCommercial 4.0 International. To view a copy, visit [url=http://creativecommons.ord/licences/by-nc/4.0/]http://creativecommons.org/licences/by-nc/4.0/[/url].[/size][/i]",
@@ -738,22 +742,22 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/833/833-1792620971-188878755.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/833"
         },
-        "DownloadUrl": "nexus://scavprototype/833/2662",
+        "DownloadUrl": "nexus://scavprototype/833/2754",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 833,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-10-21T22:28:55.000Z",
-        "ReleaseDate": "2026-10-21T22:20:38.000Z",
-        "SHA256": "cc501e5a28afa8447597134ab9dbbdd409eec55f97e7bf519a59e0be9c6b2399",
+        "LastUpdated": "2026-10-29T02:53:11.000Z",
+        "ReleaseDate": "2026-10-29T02:53:11.000Z",
+        "SHA256": "3d86fceee3d61c03cac012c06d2807dac2fc793d7778cdb40e57c3351fc97f1a",
         "dllSHA256s": {
             "Archipelago.Gifting.Net.dll": "52b23e45e6d20255597281e1d6589fbfaf16f285725d477f31d351aa4ad89a20",
             "Archipelago.MultiClient.Net.dll": "600be8320b190fcf537dcc7159c2e590e85b316214d5d06f71692c717af15b88",
-            "CUAP.dll": "c89298b5e9bf3f556cc5822aeb4a80538bfbb460d0d9bc895f0bbd95213c3f51",
+            "CUAP.dll": "055b8f8e2883ef86db2ccbb06dc1e12abba165f2905aee05875a9146fba27371",
             "KaitoKid.ArchipelagoUtilities.AssetDownloader.dll": "13dc4af65176fec7d0921f543b5cfaceecd0a2c701397fe44372c6bf0682b3bb",
             "KaitoKid.Utilities.Interfaces.dll": "01f357509d3650e4577bd1a6a813e94948c15fb9a69f45ce00795e08c41e52b2"
         },
-        "downloadsSinceLatestVersion": 20,
+        "downloadsSinceLatestVersion": 0,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -763,14 +767,14 @@
             "KaitoKid.ArchipelagoUtilities.AssetDownloader.dll",
             "KaitoKid.Utilities.Interfaces.dll"
         ],
-        "dllVersion": "0.12.0.0",
+        "dllVersion": "0.12.1",
         "dllVersions": {
-            "CUAP.dll": "0.12.0.0"
+            "CUAP.dll": "0.12.1"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 1,
-            "TotalDownloads": 1,
+            "UniqueDownloads": 21,
+            "TotalDownloads": 22,
             "TotalViews": null
         },
         "Images": [
@@ -897,7 +901,7 @@
         "dllSHA256s": {
             "LewdStatus.dll": "a14a617cb19bb9f38aee6a9a87d7118e98d8e2cd665c96d8a3ba45a41f2c4250"
         },
-        "downloadsSinceLatestVersion": 749,
+        "downloadsSinceLatestVersion": 779,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -972,7 +976,7 @@
         "dllSHA256s": {
             "CreatureComforts.Tinker.dll": "83ef1302e9ad05ecfba7e784905e080ee4a67f113dfbb46175e6e001d92beecd"
         },
-        "downloadsSinceLatestVersion": 42,
+        "downloadsSinceLatestVersion": 43,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1087,7 +1091,7 @@
         "dllSHA256s": {
             "CUFirstPerson.dll": "175a36e070cead8e9e7f50ca3ce7da9b159324350dd0efe8f2dafd231acf1819"
         },
-        "downloadsSinceLatestVersion": 367,
+        "downloadsSinceLatestVersion": 370,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1133,7 +1137,7 @@
         "dllSHA256s": {
             "OrganMod.dll": "48732ef453ae1676f6d6a772a569bef059cd33b96e2f6abe8b3d55f35973d2e2"
         },
-        "downloadsSinceLatestVersion": 30,
+        "downloadsSinceLatestVersion": 33,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1179,7 +1183,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6b5a0a2784e6051b0afd3b03b2802565c1b19c920fd6babb8a3511b73413c3e0"
         },
-        "downloadsSinceLatestVersion": 1652,
+        "downloadsSinceLatestVersion": 1676,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1225,7 +1229,7 @@
         "dllSHA256s": {
             "BetterRagdoll.dll": "f7e1c503423a8398043f60d24c84b173439a3047a55849b9a15695a8a79ded8c"
         },
-        "downloadsSinceLatestVersion": 289,
+        "downloadsSinceLatestVersion": 290,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1414,7 +1418,7 @@
         "dllSHA256s": {
             "CustomFlashlights.dll": "0259462a214470dc53c42e39b59f4f993c79f615745c5d9a9bba6f396f8e39d7"
         },
-        "downloadsSinceLatestVersion": 24,
+        "downloadsSinceLatestVersion": 25,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1621,7 +1625,7 @@
         "ReleaseDate": "2026-10-16T07:02:37.000Z",
         "SHA256": "0b71383a09328bbb5cbbce6f4fff0cd9592616b1e45b9937e54101e6fb446285",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 27,
+        "downloadsSinceLatestVersion": 30,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -1663,7 +1667,7 @@
         "dllSHA256s": {
             "old_moodles_reused.dll": "f65c652a2bef1a0e8168bf97bdc7cb3d1bc24fe078fa29490ad2261e20ef00a7"
         },
-        "downloadsSinceLatestVersion": 71,
+        "downloadsSinceLatestVersion": 72,
         "Dependencies": [
             "nexus-115"
         ],
@@ -1920,7 +1924,7 @@
         "dllSHA256s": {
             "CUClothing.dll": "6d859a575c16b6a82fb1c912b9fcc72d9eb9e1987ec506eb315a39a274200717"
         },
-        "downloadsSinceLatestVersion": 19,
+        "downloadsSinceLatestVersion": 22,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2235,7 +2239,7 @@
         "ReleaseDate": "2026-10-13T15:06:31.000Z",
         "SHA256": "4cbf55eeefe71ec11f939b230ebdf91bee753421d2f535f74789e38a21ea7623",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 27,
+        "downloadsSinceLatestVersion": 28,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -2366,7 +2370,7 @@
         "dllSHA256s": {
             "GunsawTraders.dll": "f8f3236624cacbbaffd4afee3476598f8bd8ccae9d4e4f9639f8e89b4c0ff4bd"
         },
-        "downloadsSinceLatestVersion": 278,
+        "downloadsSinceLatestVersion": 281,
         "Dependencies": [
             "nexus-341",
             "nexus-710"
@@ -2495,7 +2499,7 @@
         "dllSHA256s": {
             "BetterRagdollPerspective.dll": "0d536f895e99b67e05e5d5d2f9ee377cba21f8ea30603355652044ce12a744dd"
         },
-        "downloadsSinceLatestVersion": 209,
+        "downloadsSinceLatestVersion": 210,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -2543,7 +2547,7 @@
             "CasualtyVR.XrBridge.dll": "04161b717ef072f348906b31107409f55804a7b39ffd18e6944accb3464682be",
             "openxr_loader.dll": "66946ea6e9cc2649e299ec412521c5eafe56c635d05055097fe4db81e11932df"
         },
-        "downloadsSinceLatestVersion": 342,
+        "downloadsSinceLatestVersion": 343,
         "Dependencies": [
             "nexus-115"
         ],
@@ -2737,7 +2741,7 @@
         "dllSHA256s": {
             "NoDurabilityEverythingEdition.dll": "a6e5586d0e369d2d2f6b6a65ed36d668d9b70275c7bb7ab478fd4e9c20ace0bc"
         },
-        "downloadsSinceLatestVersion": 164,
+        "downloadsSinceLatestVersion": 166,
         "Dependencies": [
             "nexus-115"
         ],
@@ -2945,7 +2949,7 @@
         "dllSHA256s": {
             "OptionalRecruit.dll": "6c51e003ac9df6c6a071a0b47cdcd8be3a9512509fc3ee94315da29680552ef6"
         },
-        "downloadsSinceLatestVersion": 48,
+        "downloadsSinceLatestVersion": 49,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3052,7 +3056,7 @@
         "dllSHA256s": {
             "CUDevTools.dll": "fa47b019b188573543f1bbc00504ae7dbbcade3d249e3ea3f0af5a5b74798750"
         },
-        "downloadsSinceLatestVersion": 282,
+        "downloadsSinceLatestVersion": 283,
         "Dependencies": [
             "nexus-115"
         ],
@@ -3406,7 +3410,7 @@
         "dllSHA256s": {
             "TeammateList.dll": "4fbce11ace5a5036a7e1e25bf54ef818d0c5beaf18b71f275382de4e258ea662"
         },
-        "downloadsSinceLatestVersion": 211,
+        "downloadsSinceLatestVersion": 213,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -3452,7 +3456,7 @@
         "dllSHA256s": {
             "Carfentanil.dll": "52009d811314ac49970316b0dbe32cb7223f834c98769e038bea780252c4349e"
         },
-        "downloadsSinceLatestVersion": 92,
+        "downloadsSinceLatestVersion": 93,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3586,7 +3590,7 @@
         "dllSHA256s": {
             "CasualtyPsychology.dll": "8edcefdc0d890b29d53c1c4d1419226be6a3e6ceace9ac62b39f626db885e5d9"
         },
-        "downloadsSinceLatestVersion": 61,
+        "downloadsSinceLatestVersion": 74,
         "Dependencies": [
             "nexus-341"
         ],
@@ -3931,7 +3935,7 @@
         "dllSHA256s": {
             "NullsOddsnEnds.dll": "d708965e7eb6e734dc855d5a65416fc18e5ad598e45cee64babccb36efe53913"
         },
-        "downloadsSinceLatestVersion": 44,
+        "downloadsSinceLatestVersion": 47,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4273,7 +4277,7 @@
             "PrizeDraw_GameBugFix.dll": "36032c7d5b6e14a695ec209df35384c6af82cd392ec041b5bf8e23f28a0dbf97",
             "PrizeDraw_MP.mod.dll": "a453b63b56fd290f9038373ce14c059581c15cef68f7c1c6cf1b39f6a38f95f0"
         },
-        "downloadsSinceLatestVersion": 19,
+        "downloadsSinceLatestVersion": 20,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4348,7 +4352,7 @@
         "dllSHA256s": {
             "CustomTraders.dll": "16537164ea3798624e13795bc9856b185aefc42075030611bab81a5de7025dfb"
         },
-        "downloadsSinceLatestVersion": 339,
+        "downloadsSinceLatestVersion": 344,
         "Dependencies": [
             "nexus-341"
         ],
@@ -4477,7 +4481,7 @@
         "dllSHA256s": {
             "FurReal.dll": "8d53b6a64508d088ea0b6312753fb69db3244a69f5b879b0ba2eb170aa01eb26"
         },
-        "downloadsSinceLatestVersion": 134,
+        "downloadsSinceLatestVersion": 136,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -4664,7 +4668,7 @@
         "dllSHA256s": {
             "ProtogenTraderMod.dll": "b1488007bf425a2b1e4b3ced8b87e67a112a8ae7e61ec39ba7a6e5cf85f128e4"
         },
-        "downloadsSinceLatestVersion": 74,
+        "downloadsSinceLatestVersion": 76,
         "Dependencies": [
             "nexus-341",
             "nexus-710"
@@ -4907,7 +4911,7 @@
         "dllSHA256s": {
             "GunsawgeneticsSkillsFix.dll": "7e6e390f566d69dcb123f334ef4a370d5c3175ef797e82996bb00d98c7553f0b"
         },
-        "downloadsSinceLatestVersion": 546,
+        "downloadsSinceLatestVersion": 547,
         "Dependencies": [
             "nexus-67",
             "nexus-324"
@@ -5134,7 +5138,7 @@
         "dllSHA256s": {
             "Remove the purchase limit for merchants.dll": "d5ba9f26af2c883a012ca49ed6ead40593a63832dd844962016b8a96a897699d"
         },
-        "downloadsSinceLatestVersion": 469,
+        "downloadsSinceLatestVersion": 470,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -6095,7 +6099,7 @@
         "dllSHA256s": {
             "Tailor.dll": "e813e9a87c0877ca6141cc8879abcd8c2b325812d0f917f67afa7c19b413b2d3"
         },
-        "downloadsSinceLatestVersion": 431,
+        "downloadsSinceLatestVersion": 434,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6170,7 +6174,7 @@
         "dllSHA256s": {
             "CPUOptimization2.dll": "3b10ee6f1469cdcf499fca49d0efd0e0b9fefcc466f89c887e9d935ed3b767a6"
         },
-        "downloadsSinceLatestVersion": 389,
+        "downloadsSinceLatestVersion": 391,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6374,7 +6378,7 @@
             "KefPluginRuntime.dll": "91d29f056b94fd713ae10b8236d18a8e7c95c957034031c569246532142419f3",
             "DoktorMod.dll": "e76795af5c685820ba0db7c58d2095b99abd0331c7d2d3e1080d79f1a29dc1d1"
         },
-        "downloadsSinceLatestVersion": 305,
+        "downloadsSinceLatestVersion": 307,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6607,7 +6611,7 @@
         "dllSHA256s": {
             "New Descents.dll": "2dba4590831504baaa29e703a0e29ec7cc54af739db961044f9db0a241f94f83"
         },
-        "downloadsSinceLatestVersion": 465,
+        "downloadsSinceLatestVersion": 471,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -6771,7 +6775,7 @@
         "dllSHA256s": {
             "ReworkedBandages.dll": "d692ef6c9dac2707f5a4dcb397f08d89d21d112eb47e1d02fb7af680924585f1"
         },
-        "downloadsSinceLatestVersion": 35,
+        "downloadsSinceLatestVersion": 36,
         "Dependencies": [
             "nexus-341"
         ],
@@ -7094,7 +7098,7 @@
             "CUCoreLib.dll": "5a12ffcc9470146af34a36073bb6a712e8f3825502cebfceefc4152c48abe89d",
             "collarsunknown.dll": "5d702075d60f033fa78f198b3130d6e9a5c0a277976dff9c748c9caf469a54c2"
         },
-        "downloadsSinceLatestVersion": 162,
+        "downloadsSinceLatestVersion": 164,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -7167,7 +7171,7 @@
         "dllSHA256s": {
             "BetterFluidTransfer.dll": "abcd7e92da5b19159429037b2143ba849c9c3f0a86aa30fd54d8fbdf11adc098"
         },
-        "downloadsSinceLatestVersion": 221,
+        "downloadsSinceLatestVersion": 222,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -8467,7 +8471,7 @@
         "dllSHA256s": {
             "WholeMeal.dll": "3f785706362d6687ea656715e96a11ba140972088b5661c92e8dc51b2812af97"
         },
-        "downloadsSinceLatestVersion": 115,
+        "downloadsSinceLatestVersion": 120,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -10001,7 +10005,7 @@
         "dllSHA256s": {
             "DifferentiatingTraits.dll": "329c832e05faa19fcf5a95219484e78bcdc05d53dbd3b61a5829cd8b1bc6e760"
         },
-        "downloadsSinceLatestVersion": 106,
+        "downloadsSinceLatestVersion": 108,
         "Dependencies": [
             "nexus-341"
         ],
@@ -10388,7 +10392,7 @@
         "dllSHA256s": {
             "GamepadSupport.dll": "e514b1a1a0a96e216956adbd601909a9166989ba7ef8445f5cadcebde10e8c5d"
         },
-        "downloadsSinceLatestVersion": 375,
+        "downloadsSinceLatestVersion": 377,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -11189,7 +11193,7 @@
         "dllSHA256s": {
             "HarderEnemies.dll": "ca4572a70df466a20b9cb04d8dcdacf01d6826922a478f11d35ef4a9b736a59b"
         },
-        "downloadsSinceLatestVersion": 244,
+        "downloadsSinceLatestVersion": 245,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -11321,7 +11325,7 @@
         "dllSHA256s": {
             "PisFoodOverhaul.dll": "276b44e40e81cce85962fde9b4eb87cf66a0cec9357dd657108013ea1c6f502a"
         },
-        "downloadsSinceLatestVersion": 461,
+        "downloadsSinceLatestVersion": 462,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -11530,7 +11534,7 @@
         "dllSHA256s": {
             "RedStoneCraft.dll": "dd15422ae602f08c0473d995dc6912ecec2b30bd354dacf0718b8b13ebba31ae"
         },
-        "downloadsSinceLatestVersion": 58,
+        "downloadsSinceLatestVersion": 59,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -11686,7 +11690,7 @@
         "dllSHA256s": {
             "WhatModIsThisFrom.dll": "1be03f0a37dd7155378387a7c8cbcc51f025c3a824f10dad33f8c8fc690b091a"
         },
-        "downloadsSinceLatestVersion": 277,
+        "downloadsSinceLatestVersion": 280,
         "Dependencies": [
             "nexus-341"
         ],
@@ -11991,7 +11995,7 @@
         "dllSHA256s": {
             "Performant Rendering.dll": "44404ed33c48bc69e571278d773a3139b6a5220ebb5e0f219d038e5038dec9ce"
         },
-        "downloadsSinceLatestVersion": 1944,
+        "downloadsSinceLatestVersion": 1946,
         "Dependencies": [
             "nexus-341"
         ],
@@ -12143,7 +12147,7 @@
         "dllSHA256s": {
             "MP3Client.dll": "0b50752d3a1e0832cec4ecba33da3b280e80e4fe806bf251eb477cc8049cb172"
         },
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 17,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -12326,7 +12330,7 @@
         "dllSHA256s": {
             "MilkiesMilk.dll": "bf3741946a4d2d30016cd42f466e238863c399c171defe88a1766b17049a7b53"
         },
-        "downloadsSinceLatestVersion": 1775,
+        "downloadsSinceLatestVersion": 1777,
         "Dependencies": [
             "nexus-341"
         ],
@@ -12439,7 +12443,7 @@
         "dllSHA256s": {
             "SayAgain.dll": "9f9fe613869f807dc146e280a75c81801b4843f690452488a815b10329d91190"
         },
-        "downloadsSinceLatestVersion": 413,
+        "downloadsSinceLatestVersion": 414,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -12610,7 +12614,7 @@
         "dllSHA256s": {
             "Improved Headlamp.dll": "e9fd2aac600b23d9ec03cab159abf71746cf930fe5a5f9edb8cd0438811f5e56"
         },
-        "downloadsSinceLatestVersion": 110,
+        "downloadsSinceLatestVersion": 111,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -12804,7 +12808,7 @@
         "dllSHA256s": {
             "SubstancesExpanded.dll": "a77b7f6b61b61ea5c544417b9aee4f8fff498de089c12b3bb71c03e89946cbc3"
         },
-        "downloadsSinceLatestVersion": 193,
+        "downloadsSinceLatestVersion": 194,
         "Dependencies": [
             "nexus-341"
         ],
@@ -13117,7 +13121,7 @@
         "dllSHA256s": {
             "CasualtiesUnderTheInfluence.dll": "2da6f020562f3ca4391afe805416d9b4c4b3b6c85bba73c3a0178fd63aa7964e"
         },
-        "downloadsSinceLatestVersion": 345,
+        "downloadsSinceLatestVersion": 346,
         "Dependencies": [
             "nexus-341"
         ],
@@ -13238,7 +13242,7 @@
         "dllSHA256s": {
             "CUCoreLib.KrokMP.SaveHotfix.dll": "8f100d5b0afefcd7e0045afc86eb7bfd2dbc2bc52f7de9edc8cee8c7ae3e5d77"
         },
-        "downloadsSinceLatestVersion": 546,
+        "downloadsSinceLatestVersion": 547,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -13500,7 +13504,7 @@
         "ReleaseDate": "2026-08-25T02:28:44.000Z",
         "SHA256": "18ef17d40b505be1dc1046f20c1469723912ffaa642075e4beea905d01cdd63b",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 3950,
+        "downloadsSinceLatestVersion": 3963,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -14606,7 +14610,7 @@
         "dllSHA256s": {
             "ConsolePlus.dll": "8c1b2f35c70f1e3bd7528cf63d0306f37bad9b7a0966b0f459cfd25b7577759e"
         },
-        "downloadsSinceLatestVersion": 432,
+        "downloadsSinceLatestVersion": 433,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -14710,7 +14714,7 @@
         "dllSHA256s": {
             "CUMoreNpcMod.dll": "c7f775c48279b4891d8c027cd0752fdb8675c9c8ec558f9ee0c4797704b65671"
         },
-        "downloadsSinceLatestVersion": 10,
+        "downloadsSinceLatestVersion": 11,
         "Dependencies": [
             "nexus-67",
             "nexus-341"
@@ -14880,7 +14884,7 @@
             "MonoMod.RuntimeDetour.dll": "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c",
             "MonoMod.Utils.dll": "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9"
         },
-        "downloadsSinceLatestVersion": 30,
+        "downloadsSinceLatestVersion": 31,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -15330,7 +15334,7 @@
         "dllSHA256s": {
             "MakeshiftProsthetics.dll": "a66253b0a2bcafd1e78a71158163cd9d100304e26f39bd5897d31b11e216cd4c"
         },
-        "downloadsSinceLatestVersion": 521,
+        "downloadsSinceLatestVersion": 523,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -15578,7 +15582,7 @@
         "dllSHA256s": {
             "SkinDeep.dll": "059f5f0155d35145d98a3804728e4e0bb7b58c55c660286435abc124b879a946"
         },
-        "downloadsSinceLatestVersion": 980,
+        "downloadsSinceLatestVersion": 982,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -15690,7 +15694,7 @@
             "MonoMod.RuntimeDetour.dll": "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c",
             "MonoMod.Utils.dll": "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9"
         },
-        "downloadsSinceLatestVersion": 1096,
+        "downloadsSinceLatestVersion": 1103,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16812,7 +16816,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "2b189c3285703f51d31b26942f3656c066cc10603f53bb06e47dbe0a9dd404ea"
         },
-        "downloadsSinceLatestVersion": 4032,
+        "downloadsSinceLatestVersion": 4046,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -17599,7 +17603,7 @@
         "dllSHA256s": {
             "CUMoreAmputation.dll": "edfd809af5be12c72878a465a3385999e0d5cf2c1b02737aed83452cda61e28d"
         },
-        "downloadsSinceLatestVersion": 1870,
+        "downloadsSinceLatestVersion": 1874,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -17677,7 +17681,7 @@
         "dllSHA256s": {
             "CannibalismMP.dll": "e0c302b28dc3d89b805434d35584e4584bd383456f154a97548c1528c2683789"
         },
-        "downloadsSinceLatestVersion": 499,
+        "downloadsSinceLatestVersion": 500,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -17929,7 +17933,7 @@
         "dllSHA256s": {
             "knotrecipemod.dll": "540ca2574401953c3fdab3e0cd4f4f4c933eba7e33e276b3ff0b72d5e2774779"
         },
-        "downloadsSinceLatestVersion": 2630,
+        "downloadsSinceLatestVersion": 2634,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -18182,7 +18186,7 @@
         "dllSHA256s": {
             "CasualtyVitals.dll": "d1f34534486472dbcc0af7527f55163f52d9eaefa657347bf55ab9d5512509b8"
         },
-        "downloadsSinceLatestVersion": 461,
+        "downloadsSinceLatestVersion": 462,
         "Dependencies": [
             "nexus-341"
         ],
@@ -18334,7 +18338,7 @@
         "dllSHA256s": {
             "AxivornsExpieNPCMod.dll": "ee7694e259fc5f59c748b0bc9e97218bf43773cd44494e54c72b1191e05b914a"
         },
-        "downloadsSinceLatestVersion": 2516,
+        "downloadsSinceLatestVersion": 2517,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -18470,7 +18474,7 @@
         "dllSHA256s": {
             "ChooseQuitType.dll": "944c5d73785f52565982cd44bb956fbb0253402a2bc0c80ce117284f2bf749f7"
         },
-        "downloadsSinceLatestVersion": 1230,
+        "downloadsSinceLatestVersion": 1231,
         "Dependencies": [
             "nexus-115"
         ],
@@ -18948,7 +18952,7 @@
         "dllSHA256s": {
             "WhatDidiPressWrong.dll": "b9084de8e0d65ef491a934bf851e70495f39765123e5c35871e51558c73c17d9"
         },
-        "downloadsSinceLatestVersion": 138,
+        "downloadsSinceLatestVersion": 139,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -19082,7 +19086,7 @@
             "CraftingTweaks.dll": "66a557052db508e9a06caa72c7e4b047a5451affd2a1f40c4a7a13ffd1cc1df2",
             "KefPluginRuntime.dll": "02f3791e7db6e464c595f685fdbc63641bb2dd7a1e9f4903b851ef540b3b9e6a"
         },
-        "downloadsSinceLatestVersion": 1174,
+        "downloadsSinceLatestVersion": 1175,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -19135,7 +19139,7 @@
         "dllSHA256s": {
             "AllWearableCanBeHeld.dll": "2807520bc5eca3efe8792122703162d0c8bac45368a1d65668d2c6339713e3c7"
         },
-        "downloadsSinceLatestVersion": 1466,
+        "downloadsSinceLatestVersion": 1467,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -19473,7 +19477,7 @@
             "CUCoreLib.dll": "d44531cc0c8e11db13c622557da359375bfa7cd7660920726a887dc2c4538690",
             "狗曦的狗屎玩意.dll": "1a78a655b71ea77d177b906eb65f2b7ff16ba4eca6ab15e00b4bb9359a77ccad"
         },
-        "downloadsSinceLatestVersion": 404,
+        "downloadsSinceLatestVersion": 405,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -20190,7 +20194,7 @@
         "dllSHA256s": {
             "UnknownPerformance.dll": "bac238d7f9189a92cadac34690b233c22928fed16df01b053ea02c5d0e34ad94"
         },
-        "downloadsSinceLatestVersion": 4068,
+        "downloadsSinceLatestVersion": 4071,
         "Dependencies": [
             "nexus-338"
         ],
@@ -20238,7 +20242,7 @@
         "dllSHA256s": {
             "CUCoreLib.dll": "45b3ef0657392fdf98309b381dcffc806a8f29e017549755a3c78d9772c1484d"
         },
-        "downloadsSinceLatestVersion": 4909,
+        "downloadsSinceLatestVersion": 4934,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -20325,7 +20329,7 @@
         "ReleaseDate": "2026-06-20T08:18:04.000Z",
         "SHA256": "9a1d4a33cc6c2b5c89875291c4bc5800df3563ff352fb507d926d8b00b674fe6",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 497,
+        "downloadsSinceLatestVersion": 498,
         "Dependencies": [
             "nexus-15"
         ],
@@ -20420,7 +20424,7 @@
         "dllSHA256s": {
             "ScavSetLib.dll": "c5822431086b62fc321f1f462b925d33b6b5424df4869c07b76a6bc0da61149f"
         },
-        "downloadsSinceLatestVersion": 3047,
+        "downloadsSinceLatestVersion": 3049,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -20761,7 +20765,7 @@
         "dllSHA256s": {
             "ExpiePettingMod.dll": "189909b97d3d8668d9e26b50bd69dd23887be0648997ecd7ea93b95ac383d835"
         },
-        "downloadsSinceLatestVersion": 3421,
+        "downloadsSinceLatestVersion": 3424,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -21015,7 +21019,7 @@
         "dllSHA256s": {
             "EnhancedTools.dll": "e8f9dbf960d31500346a7800b8cd0f35557c176c27f37fe689a47b0dfa3bd9cb"
         },
-        "downloadsSinceLatestVersion": 551,
+        "downloadsSinceLatestVersion": 552,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -21175,7 +21179,7 @@
             "GunsawGenetics.dll": "3053c925a321b0c9aaa449c41a1bb06be46879ce5160555a14f16963e4eeaecf",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 5654,
+        "downloadsSinceLatestVersion": 5668,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -21398,7 +21402,7 @@
             "AdditionalTraps.dll": "4d765a80dbe18ab9576901c862bcaf5647ea04197897648f69ec47b8e58257a9",
             "TrapLib.dll": "0a71814e1168125cdf2157cfc38df72bf4926c60d75cd88806c05b605ac6798c"
         },
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 17,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -22000,7 +22004,7 @@
         "ReleaseDate": "2026-06-28T18:00:03.000Z",
         "SHA256": "cbf453747d9a96761fb58fdc25402b9cf9489c96c80a83b1014c6774a581538b",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 797,
+        "downloadsSinceLatestVersion": 798,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -22055,7 +22059,7 @@
         "dllSHA256s": {
             "VforWhiningMPAddon.dll": "bf61f8465e9a436baeea2adc0d7bdc95b11a726a2246a8c874692a2efcdb8421"
         },
-        "downloadsSinceLatestVersion": 228,
+        "downloadsSinceLatestVersion": 230,
         "Dependencies": [
             "nexus-67",
             "nexus-115",
@@ -22660,7 +22664,7 @@
         "dllSHA256s": {
             "TitaniumRestored.dll": "2f3ffa71e2c612ad04f6622297098c8720b3bd7a3ef188c507420737806c36b7"
         },
-        "downloadsSinceLatestVersion": 890,
+        "downloadsSinceLatestVersion": 891,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -23143,7 +23147,7 @@
         "ReleaseDate": "2026-06-10T07:23:22.000Z",
         "SHA256": "7c23a992e518fa9995bd74f726f78e821024e0212b6d1ce7066c6d381fb5235d",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 298,
+        "downloadsSinceLatestVersion": 299,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -23248,7 +23252,7 @@
         "dllSHA256s": {
             "VforWhining.dll": "ad115c465857112756a20204f07883da3087eb4c68f2a977e18cf571b5e7183e"
         },
-        "downloadsSinceLatestVersion": 3041,
+        "downloadsSinceLatestVersion": 3042,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -23387,7 +23391,7 @@
         "dllSHA256s": {
             "WearableArray.dll": "633700d6f35b8ec8c3c4e2a2061c4531a98ef43037436c98e9b8518c26e7a12e"
         },
-        "downloadsSinceLatestVersion": 814,
+        "downloadsSinceLatestVersion": 816,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -23434,7 +23438,7 @@
         "ReleaseDate": "2026-06-08T05:28:05.000Z",
         "SHA256": "69d63b067314cf1e394babed1f3c8b611ff274f333e88d5b98b69b91fe4a11fa",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 1791,
+        "downloadsSinceLatestVersion": 1792,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -23970,7 +23974,7 @@
         "dllSHA256s": {
             "CasualtiesExtra.dll": "35f32d1c42ffb287e84a5c2046a5e9646f46ac731a3c2e7bd6593d28d190d8e9"
         },
-        "downloadsSinceLatestVersion": 2609,
+        "downloadsSinceLatestVersion": 2614,
         "Dependencies": [
             "nexus-341"
         ],
@@ -24078,7 +24082,7 @@
         "dllSHA256s": {
             "CUQuickPickup.dll": "0dbb13f9bee2c04507420f55bd6a7a03eddc8b2e8b9f51a006f6dd074b67d44b"
         },
-        "downloadsSinceLatestVersion": 636,
+        "downloadsSinceLatestVersion": 637,
         "Dependencies": [
             "nexus-115"
         ],
@@ -24183,7 +24187,7 @@
         "dllSHA256s": {
             "No Self-Destruct on Quit.dll": "7cd4fc48749afee28e1988dddfb2af8262019e8974a4dc6b3657b80f4f6441fe"
         },
-        "downloadsSinceLatestVersion": 2594,
+        "downloadsSinceLatestVersion": 2595,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -24459,7 +24463,7 @@
         "dllSHA256s": {
             "PlayerCustomizer.dll": "302790505a795d9e58b477b5c0b2b1f58d24d68bcdc8a42515a8452dc4012189"
         },
-        "downloadsSinceLatestVersion": 2429,
+        "downloadsSinceLatestVersion": 2430,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -24816,7 +24820,7 @@
         "dllSHA256s": {
             "DevMenuV2.dll": "48ac4310edd308faf82d1ffd177498d89864cfa6d5cace7abb623452b651f8cf"
         },
-        "downloadsSinceLatestVersion": 2159,
+        "downloadsSinceLatestVersion": 2161,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -25158,7 +25162,7 @@
             "GunMinigame.dll": "5f228be2884db271c623bd5c904d15c647a6893ee1865a1028e04765f99bbba7",
             "NewFirearms.dll": "458b3aa6ab02396398814e88d16727a01b9405aed26ddd585e571f44633a848b"
         },
-        "downloadsSinceLatestVersion": 725,
+        "downloadsSinceLatestVersion": 731,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -25316,7 +25320,7 @@
             "ChangeSkinMP.dll": "b57fb344a3beb1ad084a898f716b2fe097a479beda84aadbb29054df7e9bd705",
             "CommandLine.dll": "2135b40fa819e58cf1942453e4409bfdea2be631077a354b878de8402be7e026"
         },
-        "downloadsSinceLatestVersion": 6753,
+        "downloadsSinceLatestVersion": 6756,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -26847,7 +26851,7 @@
         "dllSHA256s": {
             "ShrapnelVariants.dll": "be7895efb36f5b33e6473ffdf821f768e818c0881064fe30f092fa2e4975e4fb"
         },
-        "downloadsSinceLatestVersion": 6402,
+        "downloadsSinceLatestVersion": 6404,
         "Dependencies": [
             "nexus-115"
         ],
@@ -26900,7 +26904,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6dcbd87171f4a802d8f748a97bb5418b3976ac21b77d7f520e2c4aac97daa049"
         },
-        "downloadsSinceLatestVersion": 20692,
+        "downloadsSinceLatestVersion": 20706,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -26959,7 +26963,7 @@
         "dllSHA256s": {
             "SellFromBags.dll": "69293fda8c68ebce9951ae1d276a48f7b8e6a09b73fc8a7e746ab32dda93e146"
         },
-        "downloadsSinceLatestVersion": 4476,
+        "downloadsSinceLatestVersion": 4479,
         "Dependencies": [
             "nexus-115"
         ],
@@ -27062,7 +27066,7 @@
         "dllSHA256s": {
             "cu.kinatera.gravbagbeeper.dll": "b0572492e97e399dc9c28c16a9c94f9222b8eefc53482249bb49eedbea82da0d"
         },
-        "downloadsSinceLatestVersion": 937,
+        "downloadsSinceLatestVersion": 938,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -27225,30 +27229,30 @@
     {
         "Id": "nexus-69",
         "Name": "CatPatch",
-        "Version": "1.0.7",
-        "bepinexVersion": "1.0.7",
+        "Version": "1.0.8",
+        "bepinexVersion": "1.0.8",
         "bepinexPlugins": {
-            "meow.catpatch": "1.0.7"
+            "meow.catpatch": "1.0.8"
         },
         "Summary": "Multiplayer mod that lets you hug ur friends for mood boost, use sprays, and have increased host controls.",
-        "Description": "[size=6][b]Description[/b][/size]\n<br />[color=#D4D4D8]A fork of CatPatch originally made by GarytheCat that we lost in the great steam scourge. Hugging increases mood and has mood based dialogue.[/color]\n<br />[color=#D4D4D8]Should be fine to play with others who don't have the mod.[/color]\n<br />\n<br />Artist of the thumbnail is Nexeron, heres a link to their thread in the target planet discord server: https://discord.com/channels/955738554129063947/1408288625652666488\n<br />\n<br />[size=5]IF YOU HAVE ANY PROBLEMS YOU CAN FIND ME ON MY DISCORD SERVER:  https://discord.gg/sJBqMSW4nn [/size]\n<br />\n<br />[size=6][b]Installation instructions[/b][/size]\n<br />put bepinex in the game folder immediately after \"browse local files\" on steam\n<br />\n<br />or watch this video\n<br />https://youtu.be/6y2U8E7EFoM\n<br />\n<br />[size=6][b]Main features[/b][/size]\n<br />[color=#D4D4D8][size=5]Hugging :3 yay[/size][/color]\n<br />[list]\n<br />[*]default key bind: H[/*]\n<br />[/list][size=5]Sprays[/size]\n<br />[list]\n<br />[*]Default Spray key bind: G (hold for radial menu if you have many pictures in the folder, scroll wheel to browse)[/*]\n<br />[*]Default Inspect spray key bind: I (must inspect gifs for them to animate)[/*]\n<br />[/list]\n<br />[size=5]Host Moderation menu[/size]\n<br />[list]\n<br />[*]Kill, heal, tp to them or them to you, fling or skin ur friends in this menu[/*]\n<br />[*]kick, ban, or admin players[/*]\n<br />[*]server mute other players vc, text or sprays[/*]\n<br />[*]configure other host settings such as meows final challenge or dogpile.[/*]\n<br />[/list]\n<br />[size=5]Save your friend from harming themself[/size]\n<br />[list]\n<br />[*]When a friend is in the self harm minigame they will begin to flash red[/*]\n<br />[*]open their health panel to wrestle with them to convince them to not hurt themself (click and swipe right in the minigame)[/*]\n<br />[*]if successful, no one gets hurt, yay, as an added bonus they will allow you to operate on them for 120 seconds regardless of mood[/*]\n<br />[*]if you fail, you will be pushed away and scratched.[/*]\n<br />[*]tip: if your expie is weak, tired, depressed, etc you will fail regardless of input speed. you must be of good health and mind.[/*]\n<br />[/list]\n<br />[size=5]Dogpile: Sleeping on top of others gives better sleep quality (go cuddle ur friends :3)\n<br />\n<br />Emotes[/size]\n<br />[list]\n<br />[*]default key bind unbound[/*]\n<br />[*]right now only the idle positions[/*]\n<br />[*]may be used to get into places you otherwise not be able to go[/*]\n<br />[/list]\n<br />[size=5]Meow's Challenge (allows for any amount and combo of traps in any layer)[/size]\n<br />[list]\n<br />[*]config literally any traps spawn rate, you can have floating landmines or tentacle plants in the first layer for example[/*]\n<br />[*]there is a global trap multiplier and an individual trap multiplier.[/*]\n<br />[*]starter kit to offset the difficulty. if you want items to spawn in a container, type them directly after the container.[/*]\n<br />[/list]\n<br />[size=5]Added command arguments for dead/alive people and teams[/size]\n<br />[list]\n<br />[*][size=3]for example, to heal all dead players: heal @dead[/size][/*]\n<br />[*][size=3]to tp anyone who is colored white to you, tp @white cursor[/size][/*]\n<br />[*][size=3]general shit like that[/size][/*]\n<br />[/list]\n<br />[size=6][b]Requirements[/b][/size]\n<br />[color=#D4D4D8]Krok's mp mod [/color]\n<br />Bepinex\n<br />\n<br />[size=6][b]Shout outs[/b][/size]\n<br />[color=#D4D4D8]My hero GarytheCat and my friends who gave me emotional support along the way (go check out the prosthetics mod)\n<br />\n<br />https://youtu.be/o50U_NDAsLE[/color]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />",
+        "Description": "[size=6][b]Description[/b][/size]\n<br />[color=#D4D4D8]A fork of CatPatch originally made by GarytheCat that we lost in the great steam scourge. Hugging increases mood and has mood based dialogue.[/color]\n<br />[color=#D4D4D8]Should be fine to play with others who don't have the mod.[/color]\n<br />\n<br />Artist of the thumbnail is Nexeron, heres a link to their thread in the target planet discord server: https://discord.com/channels/955738554129063947/1408288625652666488\n<br />\n<br />[size=5]IF YOU HAVE ANY PROBLEMS YOU CAN FIND ME ON MY DISCORD SERVER:  https://discord.gg/sJBqMSW4nn [/size]\n<br />\n<br />[size=6][b]Installation instructions[/b][/size]\n<br />put bepinex in the game folder immediately after \"browse local files\" on steam\n<br />\n<br />or watch this video\n<br />https://youtu.be/6y2U8E7EFoM\n<br />\n<br />[size=6][b]Main features[/b][/size]\n<br />[color=#D4D4D8][size=5]Hugging :3 yay[/size][/color]\n<br />[list]\n<br />[*]default key bind: H[/*]\n<br />[/list][size=5]Sprays[/size]\n<br />[list]\n<br />[*]Default Spray key bind: G (hold for radial menu if you have many pictures in the folder, scroll wheel to browse)[/*]\n<br />[*]Default Inspect spray key bind: I (must inspect gifs for them to animate)[/*]\n<br />[/list]\n<br />[size=5]Host Moderation menu[/size]\n<br />[list]\n<br />[*]Kill, heal, tp to them or them to you, fling or skin ur friends in this menu[/*]\n<br />[*]kick, ban, or admin players[/*]\n<br />[*]server mute other players vc, text or sprays[/*]\n<br />[*]configure other host settings such as meows final challenge or dogpile.[/*]\n<br />[/list]\n<br />[size=5]Save your friend from harming themself[/size]\n<br />[list]\n<br />[*]When a friend is in the self harm minigame they will begin to flash red[/*]\n<br />[*]open their health panel to wrestle with them to convince them to not hurt themself (click and swipe right in the minigame)[/*]\n<br />[*]if successful, no one gets hurt, yay, as an added bonus they will allow you to operate on them for 120 seconds regardless of mood[/*]\n<br />[*]if you fail, you will be pushed away and scratched.[/*]\n<br />[*]tip: if your expie is weak, tired, depressed, etc you will fail regardless of input speed. you must be of good health and mind.[/*]\n<br />[/list]\n<br />[size=5]Dogpile: Sleeping on top of others gives better sleep quality (go cuddle ur friends :3)\n<br />\n<br />Emotes[/size]\n<br />[list]\n<br />[*]default key bind unbound[/*]\n<br />[*]right now only the idle positions[/*]\n<br />[*]may be used to get into places you otherwise not be able to go[/*]\n<br />[/list]\n<br />[size=5]Meow's Challenge (allows for any amount and combo of traps in any layer)[/size]\n<br />[list]\n<br />[*]config literally any traps spawn rate, you can have floating landmines or tentacle plants in the first layer for example[/*]\n<br />[*]there is a global trap multiplier and an individual trap multiplier.[/*]\n<br />[*]starter kit to offset the difficulty. if you want items to spawn in a container, type them directly after the container.[/*]\n<br />[/list]\n<br />[size=5]Added command arguments for dead/alive people and teams[/size]\n<br />[list]\n<br />[*][size=3]for example, to heal all dead players: heal @dead[/size][/*]\n<br />[*][size=3]to tp anyone who is colored white to you, tp @white cursor[/size][/*]\n<br />[*][size=3]general shit like that[/size][/*]\n<br />[*]Link to documentation: https://docs.google.com/document/d/1GjxQX9F18oRt4x5wLz92A3mCWbfZf1Cnyh1i9OmPuoU/edit?usp=sharing[/*]\n<br />[/list]\n<br />[size=6][b]Requirements[/b][/size]\n<br />[color=#D4D4D8]Krok's mp mod [/color]\n<br />Bepinex\n<br />\n<br />[size=6][b]Shout outs[/b][/size]\n<br />[color=#D4D4D8]My hero GarytheCat and my friends who gave me emotional support along the way (go check out the prosthetics mod)\n<br />\n<br />https://youtu.be/o50U_NDAsLE[/color]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />",
         "Author": "Meow",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/69/69-1779806023-1700655876.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/69"
         },
-        "DownloadUrl": "nexus://scavprototype/69/2608",
+        "DownloadUrl": "nexus://scavprototype/69/2753",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 69,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-10-17T16:45:57.000Z",
-        "ReleaseDate": "2026-10-17T21:50:40.000Z",
-        "SHA256": "b7803ac576ace1c5455b39d3b8d7ec24312da3a17be607fcf58e9946ba73f4e7",
+        "LastUpdated": "2026-10-29T02:39:55.000Z",
+        "ReleaseDate": "2026-10-29T02:39:55.000Z",
+        "SHA256": "94fe240ff6ba0bc1170746baa0d943eca12751ac45b1ed393ec21bfbdd4c7d23",
         "dllSHA256s": {
-            "CatPatch.dll": "180f1cf14e450a63240a96966d091961c1432981a02f9ffcb201157fcbede6f1"
+            "CatPatch.dll": "5a6dbf76a3d3433ed652e21f6ea79f183610c5215902c8e255a946e8e4072610"
         },
-        "downloadsSinceLatestVersion": 1375,
+        "downloadsSinceLatestVersion": 7,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -27278,19 +27282,23 @@
             {
                 "Version": "1.0.7",
                 "Changelog": "- added folder layout for organization\n- fixed IMGUI so it wouldn't reskin every frame\n- stopped catpatch from scanning every loaded assembly twice per repaint\n- measurable frame cost dropped by ~92%\n- added folder layout for organization\n- fixed IMGUI so it wouldn't reskin every frame\n- stopped catpatch from scanning every loaded assembly twice per repaint\n- measurable frame cost dropped by ~92%"
+            },
+            {
+                "Version": "1.0.8",
+                "Changelog": "- Updated commands to make more sense\n- Fixed self harm stopper from not working"
             }
         ],
         "dllNames": [
             "CatPatch.dll"
         ],
-        "dllVersion": "1.0.7",
+        "dllVersion": "1.0.8",
         "dllVersions": {
-            "CatPatch.dll": "1.0.7"
+            "CatPatch.dll": "1.0.8"
         },
         "Statistics": {
-            "Endorsements": 474,
-            "UniqueDownloads": 12617,
-            "TotalDownloads": 21765,
+            "Endorsements": 501,
+            "UniqueDownloads": 13130,
+            "TotalDownloads": 23301,
             "TotalViews": null
         },
         "Images": [
@@ -27340,10 +27348,10 @@
     {
         "Id": "nexus-67",
         "Name": "Casualties Together",
-        "Version": "5.1.5",
-        "bepinexVersion": "5.1.5",
+        "Version": "5.2.0",
+        "bepinexVersion": "5.2.0",
         "bepinexPlugins": {
-            "CasualtiesMP": "5.1.5"
+            "CasualtiesMP": "5.2.0"
         },
         "Summary": "Online Multiplayer Co-op Mod for game \"Casualtues: Unknown\"",
         "Description": "[size=4][b]This mod converts the game into true friendslop.[/b][/size]\n<br />\n<br />[color=#ff7700][size=5][b]Installation:[/b][/size][/color]\n<br />[color=#D4D4D8]Download Game: [url=https://store.steampowered.com/app/4576510]https://store.steampowered.com/app/4576510[/url]\n<br />Download BepInEx: [url=https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip]https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip[/url][/color]\n<br />[color=#D4D4D8]Download Co-op Mod: [url=https://www.nexusmods.com/scavprototype/mods/67?tab=files]https://www.nexusmods.com/scavprototype/mods/67?tab=files[/url][/color]\n<br />\n<br />Click to show full guide: \n<br />[spoiler]\n<br />[list=1]\n<br />[*]Download all the prerequisistes ^^^^^[/*]\n<br />[*]Go to the game root directory.\n<br />[list]\n<br />[*]In Steam, Right click on the game. [/*]\n<br />[*]Click [b]Manage &gt; Browse local files [/b][/*]\n<br />[/list][/*]\n<br />[*]Unzip BepInEx.zip into the game root directory. [/*]\n<br />[*]Unzip KrokMP.zip, open mod folder and move the contents into the game root directory. [/*]\n<br />[*]Now it should look like this[img]https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop/raw/main/.github/tut_1.png[/img]\n<br />[/*]\n<br />[*]Go back to steam and click [b]Play[/b].\n<br />[list]\n<br />[*]LINUX USERS: Add this to launch options: [b]WINEDLLOVERRIDES=\"winhttp=n,b\" %command%[/b][/*]\n<br />[/list][/*]\n<br />[*]In main menu, multiplayer related buttons should appear.\n<br />[list]\n<br />[*](To go back to singleplayer you need to press the Deactivate MP Mod button in Settings &gt; General!) [/*]\n<br />[/list][/*]\n<br />[*](optional) Upvote/Share/Support the mod. [/*]\n<br />[/list][/spoiler]\n<br />\n<br />[color=#ff7700][size=5][b]Feature List:[/b][/size][/color]\n<br />Steam Lobbies\n<br />Real voice chat with in-game effects.\n<br />Middle Mouse Button to point at a location.\n<br />Right click to interact and heal other players.\n<br />Stay close to others to share body temperature.\n<br />CPR minigame.\n<br />Spectator mode when dead.\n<br />Sleeping is disabled.\n<br />Hunger and thirst is slowed down.\n<br />Carrying incapacitated players.\n<br />Unchipped option is individual.\n<br />Most of these features can be tweaked in the in-game console.\n<br />Also this mod can run as a dedicated server. (its not real headless)\n<br />\n<br />There's no client prediction.\n<br />There's no network ownership.\n<br />There's no deterministic RNG.\n<br />There's no anticheat.\n<br />This mod only adds a simple co-op experience to the game.\n<br />\n<br />[b][color=#ff7700][size=4]For discussion, feedback, bug reports join our discord:[/size][/color][/b]\n<br />Casualties: Together Mod Discord:      [url=https://discord.gg/MxnmVtveZn]https://discord.gg/MxnmVtveZn[/url]\n<br />Casualties: Unknown Official Discord: [url=https://discord.gg/targetplanet]https://discord.gg/targetplanet[/url]\n<br />\n<br />[size=4]Support the developer with [url=https://buymeacoffee.com/casualtiestogether]Buy Me a Coffee[/url][/size]",
@@ -27352,16 +27360,16 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/67/67-1792603487-1791039765.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/67"
         },
-        "DownloadUrl": "nexus://scavprototype/67/2677",
+        "DownloadUrl": "nexus://scavprototype/67/2752",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 67,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-10-22T18:44:45.000Z",
-        "ReleaseDate": "2026-10-22T18:44:45.000Z",
-        "SHA256": "c40b7c307a80f662733bb807ceade6531995bcc03977f70d228b7a96747fc287",
+        "LastUpdated": "2026-10-29T01:22:46.000Z",
+        "ReleaseDate": "2026-10-29T01:22:46.000Z",
+        "SHA256": "db1b8825de6f46590cc8f93a5d32b0231509a90ebf81b825e541e88fe610d52a",
         "dllSHA256s": {
-            "CasualtiesMP.dll": "49bd16874a5fa842b8fcab9043c3b8a4ed3e0570082af694c984ebea2dccf3a3",
+            "CasualtiesMP.dll": "a1db509dfc58287104ede51d70cbd443393d91b8b3d7e84a854e23e76d65dfc2",
             "K4os.Compression.LZ4.dll": "2229999ac58aa7bbfe9f65850810e9433a7305dad6eb11ff1527c75faff9b2d0",
             "LiteEntitySystem.dll": "122fb2a4cf86b02c0211481b2688b52eec18fa7d71e16ca3230f138dd9622da9",
             "LiteNetLib.dll": "63b2acfd0df3e61d270066034e1dbfaf4f3002da9749eae9b6d0c796dd128e37",
@@ -27372,7 +27380,7 @@
             "steam_api64.dll": "e3fe06e2d802c2f753aeb46869e2af898f34715ce85f08001456fd8a80ecd21e",
             "System.Runtime.CompilerServices.Unsafe.dll": "01748200f2400c742aa689f1f5101bd6298efdfd92c00c18f4fa473847235ba9"
         },
-        "downloadsSinceLatestVersion": 4865,
+        "downloadsSinceLatestVersion": 98,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -27418,6 +27426,10 @@
             {
                 "Version": "5.1.5",
                 "Changelog": "- Fixed bug that makes explosion damage range infinite for clients\n- Fixed phantom camera shake from player bone breaks/dislocations\n- Fixed bruisekit not working correctly"
+            },
+            {
+                "Version": "5.2.0",
+                "Changelog": "- Optimization\n- Item & entity gameobjects are disabled when outside of 3x3 culling window\n- Bug fixes\n- Craft XP bonuses getting reset on rejoin now fixed\n- Favorited items getting reset on rejoin now fixed\n- Fracture / Shrapnel minigame getting 'stuck' now fixed\n- Bug where liquid containers could get stuck with tiny amounts of liquid forever now fixed\n- Bug that caused UI to break when player leaves while victim has that players UI open now fixed\n- Bug that caused player to become on 'waiting for spawn location' from host when joining now fixed\n- Bug that caused trader hostile / reputation state to desync now fixed\n- Bug that caused major desync when `saveandquit` was used in a normal run prior to entering tutorial world now fixed\n- Bug that caused geysers to fail when far from host now fixed\n- Desync related to inventory usage, 'ghost items' dropping from crates, etc, all fixed\n- Locale tweaks:\n- Filled missing locale entries\n- All rules finally have detailed descriptions"
             }
         ],
         "dllNames": [
@@ -27432,14 +27444,14 @@
             "Steamworks.NET.dll",
             "System.Runtime.CompilerServices.Unsafe.dll"
         ],
-        "dllVersion": "5.1.5",
+        "dllVersion": "5.2.0",
         "dllVersions": {
-            "CasualtiesMP.dll": "5.1.5"
+            "CasualtiesMP.dll": "5.2.0"
         },
         "Statistics": {
-            "Endorsements": 1051,
-            "UniqueDownloads": 77966,
-            "TotalDownloads": 129952,
+            "Endorsements": 1098,
+            "UniqueDownloads": 79966,
+            "TotalDownloads": 135290,
             "TotalViews": null
         },
         "Images": [
@@ -28316,7 +28328,7 @@
         "ReleaseDate": "2026-09-28T07:14:19.000Z",
         "SHA256": "d7da7e76164f6deb814907e71228b329accae17e8873c4d8f044fca21102f99f",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 226,
+        "downloadsSinceLatestVersion": 227,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -28482,7 +28494,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "1f440dc03f12bd36c8dd052981b97feca2f545fbee61f75cfb73feaab64a225a"
         },
-        "downloadsSinceLatestVersion": 780,
+        "downloadsSinceLatestVersion": 796,
         "Dependencies": [
             "nexus-341"
         ],
@@ -29083,7 +29095,7 @@
         "dllSHA256s": {
             "RshLib.dll": "fb168f3609cb652b4858608947d1f347f44a433b8d4baa65afd297f373f41ddf"
         },
-        "downloadsSinceLatestVersion": 6458,
+        "downloadsSinceLatestVersion": 6460,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29149,7 +29161,7 @@
             "MonoMod.RuntimeDetour.dll": "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c",
             "MonoMod.Utils.dll": "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9"
         },
-        "downloadsSinceLatestVersion": 1160,
+        "downloadsSinceLatestVersion": 1168,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29216,7 +29228,7 @@
         "dllSHA256s": {
             "HugAnimation.dll": "267b5dac76a677972209bd13604ae95dc2981c312b3788cc1a487f293402ed27"
         },
-        "downloadsSinceLatestVersion": 2026,
+        "downloadsSinceLatestVersion": 2027,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -29604,7 +29616,7 @@
         "dllSHA256s": {
             "Brainrot.dll": "919b7e5ebf870dbf1badf74109f42aba41ba6388af62a1b4c3f330079a18a9cf"
         },
-        "downloadsSinceLatestVersion": 603,
+        "downloadsSinceLatestVersion": 604,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -29696,7 +29708,7 @@
         "dllSHA256s": {
             "TimeLimitUnknown.dll": "3690382f08425e52d91cde76beaa7c72970a324fdde91ecb51e3ac3d6fbe6787"
         },
-        "downloadsSinceLatestVersion": 434,
+        "downloadsSinceLatestVersion": 435,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29893,7 +29905,7 @@
         "dllSHA256s": {
             "LastStandCMD.dll": "95ecc28a3078ea619e8f54f50fb1136f23ec16226545299e68ec00756cec4ad0"
         },
-        "downloadsSinceLatestVersion": 196,
+        "downloadsSinceLatestVersion": 197,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -30020,7 +30032,7 @@
         "dllSHA256s": {
             "body_sprite_replacer.dll": "dc92eec8e3fcaa62396616050d4bd2315b7648a15ee92a2354885908454c8fb0"
         },
-        "downloadsSinceLatestVersion": 6658,
+        "downloadsSinceLatestVersion": 6661,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -30265,7 +30277,7 @@
         "dllSHA256s": {
             "Custom Structures.dll": "a24826af1d32d7c60c3d3e2a1efe47aca8f8935657d0d8bc9095f45ba3258a33"
         },
-        "downloadsSinceLatestVersion": 676,
+        "downloadsSinceLatestVersion": 681,
         "Dependencies": [
             "nexus-341"
         ],
@@ -30386,7 +30398,7 @@
         "dllSHA256s": {
             "QoL Unknown.dll": "3b697b32d13e7604dc6b7ccbf6dbdd26aef80e43d834454e6d854ec00082e5e8"
         },
-        "downloadsSinceLatestVersion": 1225,
+        "downloadsSinceLatestVersion": 1240,
         "Dependencies": [],
         "Changelogs": [
             {

@@ -1462,25 +1462,29 @@ function createDiscordEmbed({ type, previousEntry, currentEntry, archiveSizeByte
 }
 
 async function sendDiscordNotification(notification) {
-  const webhookUrl = notification.embed?.title && notification.content === ADULT_MOD_MESSAGE
-    ? process.env.DISCORD_WEBHOOK_URL_NSFW
+  const webhookUrls = notification.embed?.title && notification.content === ADULT_MOD_MESSAGE
+    ? [process.env.DISCORD_WEBHOOK_URL_NSFW, process.env.DISCORD_WEBHOOK_URL_NSFW_2]
     : notification.kind === "created"
-    ? process.env.DISCORD_WEBHOOK_URL_RELEASES
-    : process.env.DISCORD_WEBHOOK_URL;
+    ? [process.env.DISCORD_WEBHOOK_URL_RELEASES, process.env.DISCORD_WEBHOOK_URL_RELEASES_2]
+    : [process.env.DISCORD_WEBHOOK_URL, process.env.DISCORD_WEBHOOK_URL_2];
 
-  if (!webhookUrl) {
+  const validUrls = webhookUrls.filter(url => url);
+
+  if (validUrls.length === 0) {
     logWarn("DISCORD", `Missing webhook for ${notification.kind}; skipping Discord notification.`);
     return;
   }
 
-  await postDiscordWebhook(webhookUrl, {
-    username: DISCORD_USERNAME,
-    avatar_url: DISCORD_AVATAR_URL,
-    content: notification.content,
-    embeds: [notification.embed],
-  });
+  for (const webhookUrl of validUrls) {
+    await postDiscordWebhook(webhookUrl, {
+      username: DISCORD_USERNAME,
+      avatar_url: DISCORD_AVATAR_URL,
+      content: notification.content,
+      embeds: [notification.embed],
+    });
+  }
 
-  logSuccess(`Sent ${notification.kind} Discord notification.`);
+  logSuccess(`Sent ${notification.kind} Discord notification to ${validUrls.length} server(s).`);
 }
 
 function buildDiscordMessage(entry) {

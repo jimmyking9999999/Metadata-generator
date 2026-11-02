@@ -54,8 +54,11 @@ jobs:
           NEXUS_API_KEY: ${{ secrets.NEXUS_API_KEY }}
           MONO_CECIL_DLL_PATH: ${{ env.MONO_CECIL_DLL_PATH }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_WEBHOOK_URL_2: ${{ secrets.DISCORD_WEBHOOK_URL_2 }}
           DISCORD_WEBHOOK_URL_RELEASES: ${{ secrets.DISCORD_WEBHOOK_URL_RELEASES }}
+          DISCORD_WEBHOOK_URL_RELEASES_2: ${{ secrets.DISCORD_WEBHOOK_URL_RELEASES_2 }}
           DISCORD_WEBHOOK_URL_NSFW: ${{ secrets.DISCORD_WEBHOOK_URL_NSFW }}
+          DISCORD_WEBHOOK_URL_NSFW_2: ${{ secrets.DISCORD_WEBHOOK_URL_NSFW_2 }}
         run: npm run update:nexusmods:quick
 
       - name: Commit and push changes

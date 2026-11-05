@@ -660,6 +660,21 @@ async function refreshModAndNotify({
   const notification = buildNotification(existingEntry, mergedEntry, archiveContext);
   if (notification) {
     await sendDiscordNotification(notification);
+    if (notification.kind === "updated") {
+      const delta = changelogDelta(
+        getChangelogForVersion(existingEntry?.Changelogs, mergedEntry.Version),
+        getChangelogForVersion(mergedEntry.Changelogs, mergedEntry.Version),
+      );
+      if (!delta && Array.isArray(mergedEntry.Changelogs) && mergedEntry.Changelogs.length > 0) {
+        const latest = mergedEntry.Changelogs[mergedEntry.Changelogs.length - 1];
+        if (latest?.Changelog) {
+          entryByKey.set(getEntryKey(gameDomain, modId), {
+            ...mergedEntry,
+            LastNotifiedChangelogVersion: String(latest.Version),
+          });
+        }
+      }
+    }
   }
 }
 
@@ -723,6 +738,21 @@ async function applyChangelogScan({ gameDomain, modId, existingEntry, changelogs
   const notification = buildNotification(currentEntry, nextEntry, null);
   if (notification) {
     await sendDiscordNotification(notification);
+    if (notification.kind === "updated") {
+      const delta = changelogDelta(
+        getChangelogForVersion(currentEntry?.Changelogs, nextEntry.Version),
+        getChangelogForVersion(nextEntry.Changelogs, nextEntry.Version),
+      );
+      if (!delta && Array.isArray(nextEntry.Changelogs) && nextEntry.Changelogs.length > 0) {
+        const latest = nextEntry.Changelogs[nextEntry.Changelogs.length - 1];
+        if (latest?.Changelog) {
+          entryByKey.set(entryKey, {
+            ...nextEntry,
+            LastNotifiedChangelogVersion: String(latest.Version),
+          });
+        }
+      }
+    }
   }
 }
 
@@ -1434,10 +1464,16 @@ function createDiscordEmbed({ type, previousEntry, currentEntry, archiveSizeByte
       });
     }
 
-    const changelog = changelogDelta(
+    let changelog = changelogDelta(
       getChangelogForVersion(previousEntry?.Changelogs, currentEntry.Version),
       getChangelogForVersion(currentEntry.Changelogs, currentEntry.Version),
     );
+    if (!changelog && Array.isArray(currentEntry.Changelogs) && currentEntry.Changelogs.length > 0) {
+      const latest = currentEntry.Changelogs[currentEntry.Changelogs.length - 1];
+      if (latest?.Changelog && String(latest?.Version ?? "").trim() !== String(previousEntry?.LastNotifiedChangelogVersion ?? "").trim()) {
+        changelog = latest.Changelog;
+      }
+    }
     currentEntry = { ...currentEntry, Summary: firstNonEmptyString(changelog, currentEntry.Summary) };
   }
 

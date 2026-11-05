@@ -28,7 +28,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p _site/badges
-          cp nexusmods-versions.json nexusmods.json WMITF-metadata.json scavgame-locale-id-names-demo.json scavgame-locale-id-names.json _site/
+          cp nexusmods-versions.json nexusmods.json WMITF-metadata.json scavgame-locale-id-names-demo.json scavgame-locale-id-names-fullgame.json scavgame-locale-id-names.json _site/
           cp badges/*.json _site/badges/
           cat > _site/index.html <<'EOF'
           <!doctype html>
@@ -40,6 +40,7 @@ jobs:
             <li><a href="nexusmods.json">nexusmods.json</a></li>
             <li><a href="WMITF-metadata.json">WMITF-metadata.json</a></li>
             <li><a href="scavgame-locale-id-names-demo.json">scavgame-locale-id-names-demo.json</a></li>
+            <li><a href="scavgame-locale-id-names-fullgame.json">scavgame-locale-id-names-fullgame.json</a></li>
             <li><a href="scavgame-locale-id-names.json">scavgame-locale-id-names.json</a></li>
             <li><a href="badges/">badges/</a></li>
           </ul>

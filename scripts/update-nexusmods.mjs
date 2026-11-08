@@ -33,6 +33,8 @@ const DOWNLOAD_COUNT_CONCURRENCY = 4;
 // Nexus returns at most 20 modFilesByUid nodes per query, however many uids are sent.
 // Guuh.
 const DOWNLOAD_COUNT_UIDS_PER_QUERY = 20;
+const MOD_TAGS_PER_QUERY = 20;
+const MOD_TAGS_CONCURRENCY = 4;
 const MAX_FULL_REFRESH_ARCHIVE_SIZE_BYTES = 50 * 1024 * 1024;
 const FULL_RECENT_PERIODS = ["1d", "1w", "1m"];
 const QUICK_DISCOVERY_ROUTES = [
@@ -77,6 +79,7 @@ const OWNED_FIELDS = new Set([
   "dllVersions",
   "Statistics",
   "Images",
+  "nexusTags",
 ]);
 const TRACKED_LOG_FIELDS = [
   "Id",
@@ -107,6 +110,7 @@ const TRACKED_LOG_FIELDS = [
   "Statistics.TotalDownloads",
   "Statistics.TotalViews",
   "Images",
+  "nexusTags",
 ];
 const COLORS = {
   reset: "\x1b[0m",
@@ -410,6 +414,12 @@ async function runQuickSync({ apiKey, appVersion, gameDomains, entryByKey }) {
       appVersion,
       fileInfos: scans.map((scan) => scan.selectedFile).filter(Boolean),
     });
+    const tagsByModId = await getModTags({
+      apiKey,
+      appVersion,
+      gameDomain,
+      modIds: [...candidateModIds],
+    });
 
     for (const scan of scans) {
       const { modId } = scan;
@@ -440,6 +450,7 @@ async function runQuickSync({ apiKey, appVersion, gameDomains, entryByKey }) {
           existingEntry,
           entryByKey,
           downloadsSinceLatestVersion: hasUid ? downloadCounts.get(String(uid)) ?? null : null,
+          nexusTags: tagsByModId.get(modId),
         });
         await applyChangelogScan({
           gameDomain,
@@ -469,6 +480,7 @@ async function runQuickSync({ apiKey, appVersion, gameDomains, entryByKey }) {
           existingEntry,
           entryByKey,
           prefetchedDownloadCount,
+          prefetchedTags: tagsByModId.get(modId),
         });
       } catch (error) {
         reportQuickFailure(modId, existingEntry, error);
@@ -547,6 +559,7 @@ async function runFullSync({ apiKey, appVersion, gameDomains, entryByKey, skipLa
     const existingModIds = getExistingModIdsForGame(entryByKey, gameDomain);
     const modIds = [...new Set([...existingModIds, ...discoveredMods.map((item) => item.mod_id)])].sort((a, b) => b - a);
     logInfo(`Candidate mods: ${modIds.length}`);
+    const tagsByModId = await getModTags({ apiKey, appVersion, gameDomain, modIds });
 
     for (const modId of modIds) {
       const entryKey = getEntryKey(gameDomain, modId);
@@ -560,6 +573,7 @@ async function runFullSync({ apiKey, appVersion, gameDomains, entryByKey, skipLa
           modId,
           existingEntry,
           entryByKey,
+          prefetchedTags: tagsByModId.get(modId),
           skipLargeArchives,
         });
       } catch (error) {
@@ -598,6 +612,7 @@ async function refreshModAndNotify({
   existingEntry,
   entryByKey,
   prefetchedDownloadCount = undefined,
+  prefetchedTags = undefined,
   skipLargeArchives = false,
 }) {
   logStep(`Refreshing mod ${modId}`);
@@ -652,6 +667,7 @@ async function refreshModAndNotify({
     downloadsSinceLatestVersion,
     dependencies,
     changelogs,
+    nexusTags: prefetchedTags,
   });
 
   entryByKey.set(getEntryKey(gameDomain, modId), mergedEntry);
@@ -689,13 +705,15 @@ function applyLatestFileScan({
   existingEntry,
   entryByKey,
   downloadsSinceLatestVersion,
+  nexusTags,
 }) {
   const containsAdultContent = modInfo.contains_adult_content ?? existingEntry?.ContainsAdultContent ?? false;
   const downloadsChanged = downloadsSinceLatestVersion !== null
     && !areEqual(existingEntry?.downloadsSinceLatestVersion, downloadsSinceLatestVersion);
   const adultFlagChanged = !areEqual(existingEntry?.ContainsAdultContent, containsAdultContent);
+  const tagsChanged = nexusTags !== undefined && !areEqual(existingEntry?.nexusTags, nexusTags);
 
-  if (!downloadsChanged && !adultFlagChanged) {
+  if (!downloadsChanged && !adultFlagChanged && !tagsChanged) {
     logDim(`   No Nexus version or latest-file download change for mod ${modId}.`);
     return;
   }
@@ -703,6 +721,7 @@ function applyLatestFileScan({
   entryByKey.set(getEntryKey(gameDomain, modId), {
     ...existingEntry,
     ...(downloadsChanged ? { downloadsSinceLatestVersion } : {}),
+    ...(tagsChanged ? { nexusTags } : {}),
     ContainsAdultContent: containsAdultContent,
   });
   if (downloadsChanged) {
@@ -715,6 +734,12 @@ function applyLatestFileScan({
     logSuccess(
       `Updated mod ${modId} ContainsAdultContent: `
       + `${formatValue(existingEntry?.ContainsAdultContent)} -> ${formatValue(containsAdultContent)}`,
+    );
+  }
+  if (tagsChanged) {
+    logSuccess(
+      `Updated mod ${modId} nexusTags: `
+      + `${formatValue(existingEntry?.nexusTags)} -> ${formatValue(nexusTags)}`,
     );
   }
 }
@@ -1194,6 +1219,7 @@ function mergeEntry({
   downloadsSinceLatestVersion,
   dependencies,
   changelogs,
+  nexusTags,
 }) {
   const preserved = { ...(existingEntry ?? {}) };
   for (const key of OWNED_FIELDS) {
@@ -1261,6 +1287,7 @@ function mergeEntry({
       TotalViews: existingEntry?.Statistics?.TotalViews ?? null,
     },
     Images: collectImages(modInfo, existingEntry?.Images),
+    nexusTags: nexusTags ?? existingEntry?.nexusTags ?? [],
   };
 }
 
@@ -1491,7 +1518,9 @@ function createDiscordEmbed({ type, previousEntry, currentEntry, archiveSizeByte
     fields,
     image: imageUrl ? { url: imageUrl } : undefined,
     footer: {
-      text: `Nexus mod ${currentEntry.NexusModId}`,
+      text: Array.isArray(currentEntry.nexusTags) && currentEntry.nexusTags.length > 0
+        ? currentEntry.nexusTags.join(", ")
+        : `Nexus mod ${currentEntry.NexusModId}`,
     },
     timestamp: new Date().toISOString(),
   };
@@ -1684,6 +1713,7 @@ async function getFileDownloadCounts({ apiKey, appVersion, fileInfos }) {
         { uids: chunk },
         apiKey,
         appVersion,
+        "modFilesByUid",
       );
 
       for (const node of data?.modFilesByUid?.nodes ?? []) {
@@ -1704,6 +1734,55 @@ async function getFileDownloadCounts({ apiKey, appVersion, fileInfos }) {
   });
 
   return countsByUid;
+}
+
+async function getModTags({ apiKey, appVersion, gameDomain, modIds }) {
+  const tagsByModId = new Map();
+  const ids = [...new Set(modIds)].filter(Number.isInteger).sort((a, b) => a - b);
+  const chunks = [];
+
+  for (let start = 0; start < ids.length; start += MOD_TAGS_PER_QUERY) {
+    chunks.push(ids.slice(start, start + MOD_TAGS_PER_QUERY));
+  }
+
+  if (chunks.length > 1) {
+    logInfo(`Loading tags for ${ids.length} mods, in ${chunks.length} reqs.`);
+  }
+
+  await mapWithConcurrency(chunks, MOD_TAGS_CONCURRENCY, async (chunk) => {
+    try {
+      const data = await nexusGraphQL(
+        `query ModTags($ids: [CompositeDomainWithIdInput!]!, $count: Int!) {
+          legacyModsByDomain(ids: $ids, count: $count) {
+            nodes {
+              modId
+              tags {
+                name
+              }
+            }
+          }
+        }`,
+        { ids: chunk.map((modId) => ({ gameDomain, modId })), count: chunk.length },
+        apiKey,
+        appVersion,
+        "legacyModsByDomain",
+      );
+
+      for (const node of data?.legacyModsByDomain?.nodes ?? []) {
+        if (!Number.isInteger(node?.modId)) {
+          continue;
+        }
+        const tags = (node.tags ?? [])
+          .map((tag) => tag?.name)
+          .filter((name) => typeof name === "string" && name.length > 0);
+        tagsByModId.set(node.modId, [...new Set(tags)].sort((a, b) => a.localeCompare(b)));
+      }
+    } catch (error) {
+      logWarn("MOD_TAGS", `Could not load tags for ${chunk.length} mod(s). ${error.message}`);
+    }
+  });
+
+  return tagsByModId;
 }
 
 async function getFileDownloadCount({ apiKey, appVersion, fileInfo }) {
@@ -1919,12 +1998,12 @@ async function nexusV3(route, apiKey, appVersion) {
   return payload?.data ?? payload;
 }
 
-async function nexusGraphQL(query, variables, apiKey, appVersion) {
+async function nexusGraphQL(query, variables, apiKey, appVersion, label) {
   const response = await fetchNexus(GRAPHQL_API_URL, {
     method: "POST",
     headers: buildHeaders(apiKey, appVersion),
     body: JSON.stringify({ query, variables }),
-  }, "GraphQL modFilesByUid");
+  }, `GraphQL ${label}`);
 
   if (!response.ok) {
     throw await buildHttpError("Nexus GraphQL request failed", response);

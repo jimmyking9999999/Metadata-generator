@@ -1540,16 +1540,24 @@ async function sendDiscordNotification(notification) {
     return;
   }
 
+  let sentCount = 0;
   for (const webhookUrl of validUrls) {
-    await postDiscordWebhook(webhookUrl, {
-      username: DISCORD_USERNAME,
-      avatar_url: DISCORD_AVATAR_URL,
-      content: notification.content,
-      embeds: [notification.embed],
-    });
+    try {
+      await postDiscordWebhook(webhookUrl, {
+        username: DISCORD_USERNAME,
+        avatar_url: DISCORD_AVATAR_URL,
+        content: notification.content,
+        embeds: [notification.embed],
+      });
+      sentCount += 1;
+    } catch (error) {
+      logWarn("DISCORD", `Failed to send ${notification.kind} Discord notification: ${error.message}`);
+    }
   }
 
-  logSuccess(`Sent ${notification.kind} Discord notification to ${validUrls.length} server(s).`);
+  if (sentCount > 0) {
+    logSuccess(`Sent ${notification.kind} Discord notification to ${sentCount} server(s).`);
+  }
 }
 
 function buildDiscordMessage(entry) {

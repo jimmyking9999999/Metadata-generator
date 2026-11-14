@@ -1,5 +1,152 @@
 [
     {
+        "Id": "nexus-951",
+        "Name": "fr-FR translation",
+        "Version": "1.0.2",
+        "bepinexVersion": null,
+        "bepinexPlugins": {},
+        "Summary": "Fichier de traduction pour le français. Nécessitera peut être encore quelques améliorations, mais c'est déjà largement suffisant pour profiter :)",
+        "Description": "[color=#d4d4d8]Pour installer, simplement placer le fichier fr-FR.json ici :[/color]\n<br />[color=#D4D4D8]GAME_FOLDER&#92;CasualtiesUnknown_Data&#92;Lang&#92;fr-FR.json[/color]\n<br />Et la langue apparaîtra dans le menu d'option\n<br />\n<br />Je vais le maintenir à jour le temps autant que possible, mais n'hésitez pas à le récupérer, le modifier et le propager :)",
+        "Author": "jameedutofu",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/951/951-1794695577-1923657765.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/951"
+        },
+        "DownloadUrl": "nexus://scavprototype/951/3209",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 951,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-14T22:37:35.000Z",
+        "ReleaseDate": "2026-11-14T22:34:28.000Z",
+        "SHA256": "289d035076e463729f6270236dba8973438bc38e6564059c3cfb4422ac41fefa",
+        "dllSHA256s": {},
+        "downloadsSinceLatestVersion": 0,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [],
+        "dllVersion": null,
+        "dllVersions": {},
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 0,
+            "TotalDownloads": 0,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/951/951-1794695577-1923657765.png"
+        ],
+        "nexusTags": [
+            "AI-Generated Content",
+            "Translation"
+        ]
+    },
+    {
+        "Id": "nexus-950",
+        "Name": "Dual Wielding",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.1",
+        "bepinexPlugins": {
+            "net.cucorelib": "1.1",
+            "com.gouxi.gouxidualwield": "1.0.0"
+        },
+        "Summary": "a sub mod of gouxis more attachment, allow you dual wielding you guns without those attachments",
+        "Description": "[b][size=6]gouxiDualWield[/size][/b]\n<br />[size=4]A small, standalone dual wield mod for [b]Casualties Unknown[/b]: the gun in your other hand fires on its own, so both hands can shoot at the same time.[/size]\n<br />This is the dual wield part pulled out of my full attachment mod, for people who don't want attachments or recipes.\n<br />[size=5][b]Installation[/b][/size]\n<br />[list=1]\n<br />[*]Install [b]BepInEx 5.4.23[/b] or newer into the game folder.[/*]\n<br />[*]Put [b]CUCoreLib[/b] into [font=Courier New]BepInEx/plugins/[/font].[/*]\n<br />[*]Put [font=Courier New]gouxiDualWield.dll[/font] into [font=Courier New]BepInEx/plugins/[/font].[/*]\n<br />[*]Start the game.[/*]\n<br />[/list][size=5][b]Main features[/b][/size]\n<br />[list]\n<br />[*][b]Off-hand fire[/b] - the gun in your other hand fires with its own key (default right mouse). Rebind it in the vanilla key bindings settings.[/*]\n<br />[*][b]Off-hand gun menu[/b] - a clone of the vanilla gun menu sits above it and controls the off-hand gun.[/*]\n<br />[*][b]Ammo HUD[/b] - round counter, magazine name, fill bar and EMPTY / JAM state for the main hand and the off hand.[/*]\n<br />[*][b]Quick keys[/b] - [b]Shift+E[/b] racks the off-hand gun, [b]Shift+G[/b] ejects its magazine.[/*]\n<br />[/list][size=5][b]Requirements[/b][/size]\n<br />[list]\n<br />[*]Casualties Unknown [b]7.0.1[/b] (official release, not the demo)[/*]\n<br />[*]BepInEx 5.4.23 or newer (x64)[/*]\n<br />[*][b]CUCoreLib 1.1 or newer[/b] - hard dependency, the mod will not load without it[/*]\n<br />[/list]If my full attachment mod ([i]gouxismoreattachments[/i]) is installed, this mod will turns itself off automatically, since that mod already includes dual wield.\n<br />\n<br />\n<br />[/*]\n<br />",
+        "Author": "G0ux1",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/950/950-1794688065-132014397.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/950"
+        },
+        "DownloadUrl": "nexus://scavprototype/950/3205",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 950,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-14T20:39:44.000Z",
+        "ReleaseDate": "2026-11-14T20:38:19.000Z",
+        "SHA256": "a1a1c3cde6a11c985845ca788b40c373845fa6bd8c5f02ee89f6eaace5f6db00",
+        "dllSHA256s": {
+            "CUCoreLib.dll": "c0f064260b2671d02bf802c460aa346c6b858ec9269f2ff93439ebabaa940aa3",
+            "gouxiDualWield.dll": "9092863979ffd99d6c7c6a3569b2e51f9c24fa55b59708f3ce2a4ccfb8ca017e"
+        },
+        "downloadsSinceLatestVersion": 7,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [
+            "CUCoreLib.dll",
+            "gouxiDualWield.dll"
+        ],
+        "dllVersion": "1.1",
+        "dllVersions": {
+            "CUCoreLib.dll": "1.1",
+            "gouxiDualWield.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 9,
+            "TotalDownloads": 9,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/950/950-1794688065-132014397.png"
+        ],
+        "nexusTags": [
+            "Fair and balanced",
+            "Gameplay",
+            "Quality of Life"
+        ]
+    },
+    {
+        "Id": "nexus-949",
+        "Name": "Stim pistol",
+        "Version": "1",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "cn.stimpistol": "1.0.0"
+        },
+        "Summary": "Add stim pistol - a 5-round revolver firing subsonic mini stim dart that heals its target.",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />[color=#d4d4d8]Here is stim pistol, basically the same one from helldivers2. It heals whoever it hits.[/color]\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[size=3][color=#D4D4D8]Same as most of others. Unzip file in plugins.[/color][/size]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[size=3][color=#D4D4D8]5-round loaded revolver, firing subsonic mini stim dart. Mini darts only provides 1/5 effects of standard stim, and...it can't heal fracture or clear infection. Also can't help putting other things back.[/color][/size]\n<br />[color=#d4d4d8]Each 5 mini stims have same price plus 1 flammablepowder.[/color]\n<br />[color=#d4d4d8]Stim pistol is craftable.[/color]\n<br />[color=#d4d4d8]Different from hd2, you can heal yourself by shooting your feet.[/color]\n<br />[color=#d4d4d8]You can run this without stim mod, but you won't have vingette.[/color]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[size=3][color=#D4D4D8]1.BeplnEx[/color][/size]\n<br />[size=3][color=#D4D4D8]2.CUCorelib[/color][/size]\n<br />[size=3][color=#D4D4D8]3.New Firearms[/color][/size]\n<br />[size=3][color=#D4D4D8]4.(Optional) I neeeeed stiiiiims[/color][/size]\n<br />\n<br />[b][size=4]MP Compability[/size][/b]\n<br />[size=3]Technically yes, idk, I have no friends can test with 😢[/size]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[size=3][color=#D4D4D8]Thanks the black orca. Tho he did terrible or art.[/color][/size]",
+        "Author": "U647",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/949/949-1794681334-104855020.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/949"
+        },
+        "DownloadUrl": "nexus://scavprototype/949/3197",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 949,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-14T18:42:18.000Z",
+        "ReleaseDate": "2026-11-14T18:39:56.000Z",
+        "SHA256": "26f525cb99329c3f02ce8b3c4f402b516874d4efac1c3e7db802a6111d6a8724",
+        "dllSHA256s": {
+            "StimPistol.dll": "62d14d56ac03173952a028c89d31f0059c861f0fe8e72a5376b77b34efb5d07b"
+        },
+        "downloadsSinceLatestVersion": 2,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [
+            "StimPistol.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "StimPistol.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 2,
+            "TotalDownloads": 2,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/949/949-1794681334-104855020.png"
+        ],
+        "nexusTags": [
+            "AI Assisted",
+            "Gameplay"
+        ]
+    },
+    {
         "Id": "nexus-948",
         "Name": "Cheat Panel -Full World Save-God Mode-Item Spawner",
         "Version": "1.1.0",
@@ -365,9 +512,9 @@
         "Id": "nexus-938",
         "Name": "Routes Unknown",
         "Version": "1.2",
-        "bepinexVersion": "1.0.7",
+        "bepinexVersion": "1.0.5",
         "bepinexPlugins": {
-            "nyaruqwq.layerroutes": "1.0.7"
+            "nyaruqwq.layerroutes": "1.0.5"
         },
         "Summary": "Build your own descent in Casualties Unknown: choose biomes layer by layer, tune modifiers and spawns, play a challenge preset, or let Chaos decide your fate.",
         "Description": "[b]What if the whole descent was frozen? Or the desert gave way to five straight layers of geothermal wasteland?[/b]\n<br />Extended Run Settings gives you more control over how a run plays out in Casualties Unknown. Start with a preset, build a route by hand, or roll the dice with two chaos settings.\n<br />[center][b]Build your own run![/b][/center]\n<br />[list]\n<br />[*][b]Biomes:[/b] Pick a biome for each descent layer, repeat a favorite, or shuffle the route. Story biomes stay in place.[/*]\n<br />[*][b]Layer modifiers:[/b] Force or ban individual modifiers, tune their weights, and override the rules for specific layers. The mod also adds modifiers such as Blackout, Migration, and Unstable Ground.[/*]\n<br />[*][b]Enemies and traps:[/b] Keep vanilla placement, disable selected spawns, or let them appear on layers where you wouldn’t normally find them.[/*]\n<br />[*][b]Presets:[/b] Try [b]Full Winter[/b], or take on [b]Satan’s Ass[/b](lol): four desert layers followed by five geothermal layers. You can also save your own setups.[/*]\n<br />[/list][b]Or... Roll the dice! Life is a gamble after all, isnt it?\n<br />[/b]\n<br />[b]Chaos[/b] rolls the route, modifiers, spawns, and a range of regular run settings. [b]Absolute Chaos[/b] takes the randomization further and can roll your starting character. You can arm it from the title menu. In multiplayer, Absolute Chaos is experimental and the starting species stays the same between layers (doesnt do that in MP cuz currently its fucking hardcoded).\n<br />[b]Installation[/b]\n<br />[list=1]\n<br />[*]Install [b]BepInEx 5[/b].[/*]\n<br />[*]Put\n<br />[code]RoutesUnknown.dll[/code]in\n<br />[code]BepInEx/plugins[/code][/*]\n<br />[*]Open the game’s custom run settings and select [b]Extended Run Settings[/b]. Click [b]Apply[/b] before starting the run.[/*]\n<br />[/list][b]Multiplayer[/b]\n<br />RoutesUnknown were tested with [b]Casualties Together 5.5.0[/b], and it should working fine. Report all bugs yall find folks\n<br />\n<br />\n<br />Contact me in discord: bestnyaru or join the modding community server of the game: [url=https://discord.gg/aCBrFPYYjs]https://discord.gg/aCBrFPYYjs[/url] ",
@@ -376,36 +523,40 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/938/938-1794616044-2119808333.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/938"
         },
-        "DownloadUrl": "nexus://scavprototype/938/3151",
+        "DownloadUrl": "nexus://scavprototype/938/3210",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 938,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-14T02:35:56.000Z",
-        "ReleaseDate": "2026-11-14T02:35:56.000Z",
-        "SHA256": "0754b33c9ec7223c03abdd7ce01fb2a5f32ee9944ebf46ab7696109ab301a0f6",
+        "LastUpdated": "2026-11-14T22:35:44.000Z",
+        "ReleaseDate": "2026-11-14T22:35:44.000Z",
+        "SHA256": "8d576de44270bb43ed41a7f8baf8bd6ed61043f4513d76db473621bfcf4fb11a",
         "dllSHA256s": {
-            "RoutesUnknown.dll": "47cd858706e9a108a851e803541637264953aef9b137a933e6522fff95b7fe0c"
+            "RoutesUnknown.dll": "5a172247a849521fcbf1db3354678a983119814137cef2a81d264c0f72919478"
         },
-        "downloadsSinceLatestVersion": 36,
+        "downloadsSinceLatestVersion": 1,
         "Dependencies": [],
         "Changelogs": [
             {
                 "Version": "1.1",
                 "Changelog": "- I forgot to put fixed version lol"
+            },
+            {
+                "Version": "1.3",
+                "Changelog": "- Changed IsHost to IsServer (So dedicated servers should work fine now)\n- Added fluffy spider from winter biom and young thornback (i forgot to add them)"
             }
         ],
         "dllNames": [
             "RoutesUnknown.dll"
         ],
-        "dllVersion": "1.0.7",
+        "dllVersion": "1.0.5",
         "dllVersions": {
-            "RoutesUnknown.dll": "1.0.7"
+            "RoutesUnknown.dll": "1.0.5"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 7,
-            "TotalDownloads": 8,
+            "UniqueDownloads": 14,
+            "TotalDownloads": 16,
             "TotalViews": null
         },
         "Images": [
@@ -416,7 +567,8 @@
             "Gameplay",
             "Quality of Life",
             "Utilities for Players"
-        ]
+        ],
+        "LastNotifiedChangelogVersion": "1.3"
     },
     {
         "Id": "nexus-937",
@@ -574,33 +726,33 @@
     },
     {
         "Id": "nexus-934",
-        "Name": "(Character mod) Olivide(cultist)",
-        "Version": "1.2",
-        "bepinexVersion": "1.0.0",
+        "Name": "(Character mod) Olivide(cultist) -Multiplayer fix and Major updat-",
+        "Version": "1.5",
+        "bepinexVersion": "1.1.0",
         "bepinexPlugins": {
             "cu.customcharacter": "0.2.0",
-            "com.olivide.net": "1.0.0"
+            "com.olivide.net": "1.1.0"
         },
-        "Summary": "Added a new playable character Olivide, two items, one special mechanic, and two endings!",
+        "Summary": "Added a new playable character Olivide, four items, one special mechanic, and two endings!",
         "Description": "[size=4][b]Description[/b][/size]\n<br />[color=#D4D4D8]Added a new playable character Olivide, two items, one special mechanic, and two endings! [/color]\n<br />\n<br />[size=4][b]Installation[/b][/size]\n<br />[color=#D4D4D8]Download Game: [url=https://store.steampowered.com/app/4576510]https://store.steampowered.com/app/4576510[/url]\n<br />Download BepInEx: [url=https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip]https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip[/url][/color]\n<br />\n<br />[size=4][b]Special Mechanic[/b][/size]\n<br />[size=3][i]Right-click[/i] a corpse with the [b]Sacrificial Knife,[/b] then [i]left-click[/i] the [b]cross[/b] above it. [/size]",
         "Author": "flowers9202",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/934/934-1794652224-404257534.jpg",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/934"
         },
-        "DownloadUrl": "nexus://scavprototype/934/3169",
+        "DownloadUrl": "nexus://scavprototype/934/3207",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 934,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-14T07:34:12.000Z",
-        "ReleaseDate": "2026-11-14T07:34:12.000Z",
-        "SHA256": "a806829db138510517ddcb7af6601d82d1df73683aef6e045e98902013c3d6c2",
+        "LastUpdated": "2026-11-14T21:17:51.000Z",
+        "ReleaseDate": "2026-11-14T21:17:51.000Z",
+        "SHA256": "260b479e72ec94b8cbb845ea352a852d46dbb0c512fd8795c21076f7bde6b2c9",
         "dllSHA256s": {
-            "CU.CustomCharacter.dll": "a248bee5d388c657efb540a30c32515b565714148afeab9e10a15301f2458327",
-            "OlivideNet.dll": "ddf2ccb1165dc20977d18d798addbec7f5fccc1771ffcd10a7cb02c6c047dbeb"
+            "CU.CustomCharacter.dll": "0047ae5bfab7dade2727b18946a117a4e304253e79f4b11fbd7ccc99747f8ed0",
+            "OlivideNet.dll": "b931ace5b3c275b0efc67992629ab8a0c698126cde2f71cbaa6d0fbfbdc812af"
         },
-        "downloadsSinceLatestVersion": 44,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -610,21 +762,33 @@
             {
                 "Version": "1.2",
                 "Changelog": "- Tentacle Containers / Backpack\n- Backpacks and toolboxes can store and retrieve tentacles normally:\n- First click on the tentacle button -> the backpack hovers and opens.\n- Click the same button again while the UI is open -> the backpack drops (is retrieved).\n- Tentacle Containers / Backpack\n- Backpacks and toolboxes can store and retrieve tentacles normally:\n- First click on the tentacle button -> the backpack hovers and opens.\n- Click the same button again while the UI is open -> the backpack drops (is retrieved).\n- Close the UI directly -> the tentacle auto-retracts.\n- Items inside the backpack also count toward the player's weight (backpack body + contents, at 50%).\n- A currently hovering and open backpack also counts toward the weight.\n- The crafting system will search tentacle items and items inside tentacle backpacks, allowing them to be used directly as materials.\n- Cross / Threat Detection\n- Threat scanning changed from a \"single scan\" to continuous scanning, refreshing every 0.5 seconds and following the player.\n- Radius 30 -> 50.\n- Newly entered traps/creatures are automatically highlighted, and they automatically turn off when leaving (1.3x buffer).\n- Glow 4.5 -> 5.2, target limit 80.\n- Equipment Adaptation\n- Automatically fits to the limb's bounding box, no longer using uniform scaling which caused offset.\n- Wraps/bandage-type items are additionally scaled down by 22%, and temporary textures are slightly shrunk.\n- Equipment layers are automatically raised above the body to avoid clipping.\n- New equipment.json: Allows adjusting scale / x / y / order / shade / hide by item ID; no need to recompile after changes.\n- Opening Cinematic\n- Plays a background introduction upon entering the game (black screen + typewriter effect + click to continue), controls are restored after it finishes.\n- Bilingual (Chinese and English), 7 segments.\n- Death Cinematic\n- Removed the brain chip explosion -> replaced with tentacle transformation death:\n- 0-3 seconds: The body continuously grows tentacles (46 tentacles, gradually becoming denser).\n- 3 seconds: Massive bleeding all over the body, blood explosion, death.\n- 0.6 seconds later: Generates a corpse covered with 30 tentacles (can be sacrificed).\n- The \"Give Up/Suicide\" option in the pause menu follows the same sequence.\n- Removed beeping sounds, keeping only flesh sound effects.\n- Tentacle enhancement: Root width 1.5-2.3, 12-18 segments, total length 8-16, driven by Perlin noise with irregular wriggling.\n- New OlivideNet.dll Multiplayer Sync:\n- Other players can see the tentacle death and tentacle corpses.\n- Automatically runs silently when Together is not present, without affecting single-player.\n- Visual only; does not change the remote player's actual state.\n- Fixes / Optimizations\n- Wet texture changed to use Tight mesh, disabled _Wetness distortion, and skipped the water-shaking animation.\n- Original leftovers not covered by the skin (nosebleeds/overlays) are automatically hidden.\n- Animal corpses can no longer be sacrificed (only human corpses).\n- Rewrote the ascension dialogue, removing self-contradictory prefixes.\n- Replaced 13 eye textures on the left side of the face with new images.\n- Compatibility: Startup log outputs system/resolution/DPI/GPU/Unity version; mesh failure fallback; path case tolerance; cutscene dimensions scale according to Canvas."
+            },
+            {
+                "Version": "1.3",
+                "Changelog": "- New Item:Sacrament\n- Recipe: Yellow Flesh ×2\n- Olivide consumption: Satiety +25, Mood +20\n- Other characters consuming it: Sickness +20, Mood -20\n- The icon is much smaller than normal items\n- New Item: Strange Mark\n- Recipe: Yellow Flesh ×3\n- Can be charged with blood, 5 charges total (drag onto a wound to charge)\n- While held, right-click to summon an auto-attacking tentacle at the mouse cursor position\n- Summoned tentacle: root automatically attaches to nearby blocks, lasts 30 seconds, automatically attacks enemies\n- Each use costs 3 points of brain tissue integrity\n- Attack animation is identical to the \"Tentacle Auto-Attack\" skill (wind-up → lunge → damage resolution)\n- Ending CG\n- After the subtitles end, the ending CG is displayed: Preacher / Path of Suffering\n- Mechanic Adjustments\n- Tentacle Auto-Attack skill damage: 30 → 50\n- Yellow Flesh / Viscera Clump: Olivide consumption no longer causes sickness or mood loss; instead increases mood (+6 / +12)\n- Ending CG fades in over 0.8s, stays for 8s or can be skipped by clicking\n- Sacrifice UI\n- Black screen fade-in: 0.35s → 0.18s\n- Tentacle slide-in: 0.9s → 0.45s"
+            },
+            {
+                "Version": "1.4",
+                "Changelog": "- Multiplayer fix"
+            },
+            {
+                "Version": "1.5",
+                "Changelog": "- Fixed more multiplayer bugs"
             }
         ],
         "dllNames": [
             "CU.CustomCharacter.dll",
             "OlivideNet.dll"
         ],
-        "dllVersion": "1.0.0",
+        "dllVersion": "1.1.0",
         "dllVersions": {
             "CU.CustomCharacter.dll": "0.2.0",
-            "OlivideNet.dll": "1.0.0"
+            "OlivideNet.dll": "1.1.0"
         },
         "Statistics": {
-            "Endorsements": 1,
-            "UniqueDownloads": 32,
-            "TotalDownloads": 40,
+            "Endorsements": 2,
+            "UniqueDownloads": 40,
+            "TotalDownloads": 62,
             "TotalViews": null
         },
         "Images": [
@@ -843,42 +1007,47 @@
         "Id": "nexus-927",
         "Name": "LEWD CU Extender",
         "Version": "1",
-        "bepinexVersion": "0.1.4",
+        "bepinexVersion": "0.2.8",
         "bepinexPlugins": {
-            "com.pyh.cu.lewdextender": "0.1.4"
+            "com.pyh.cu.lewdextender": "0.2.8"
         },
         "Summary": "This mod expand LEWD Casualties Unknown, added more sexual animation, different level of player's horny stage and corresponding action, and more.",
-        "Description": "  Description\n<br />\n<br />  LewdExtender CU is an extension for LEWD Casualties UNKNOWN on Casualties Unknown. It does not replace the LEWD mod —\n<br />  it hooks its pose and scene systems and adds new capture/pentacle poses, multi-partner scenes, a four-tier lewd\n<br />  progression with escalating dialogue and spontaneous behaviour, a deeper arousal model, staged self-pleasure\n<br />  animations, and several fixes for toy and ragdoll issues.\n<br />\n<br />  The mod is designed as a drop-in plugin: install it into BepInEx, and it works alongside the existing LEWD content.\n<br />  Anything it adds can be disabled in the config without uninstalling.\n<br />\n<br />  Installation instructions\n<br />\n<br />  1. Fully close the game (confirm no Casualties Unknown process remains in Task Manager).\n<br />  2. If an older version is installed, delete or back up:\n<br />    - ...&#92;Casualties Unknown&#92;BepInEx&#92;plugins&#92;LewdExtenderCU&#92;\n<br />    - ...&#92;BepInEx&#92;config&#92;com.pyh.cu.lewdextender.cfg (optional; it is regenerated)\n<br />  3. Extract the archive and merge its BepInEx folder into the game root:\n<br />  ...&#92;steamapps&#92;common&#92;Casualties Unknown&#92;\n<br />    The final layout must be:\n<br />  BepInEx&#92;plugins&#92;LewdExtenderCU&#92;\n<br />  ├─ LewdExtenderCU.dll\n<br />  ├─ poses_extra.txt\n<br />  └─ icons&#92;lewdmood0.png … lewdmood3.png\n<br />    Do not rename the folder or the DLL, and do not place the DLL directly in BepInEx&#92;plugins&#92;.\n<br />  4. Optional: copy optional-config&#92;com.pyh.cu.lewdextender.cfg to BepInEx&#92;config&#92; to use the tuned defaults. Otherwise\n<br />    a default config is generated on first launch.\n<br />  5. Launch the game and check BepInEx&#92;LogOutput.log for messages beginning with [LewdExtenderCU], including patched\n<br />    methods containing PoseKit.HerPuppet.Show.\n<br />\n<br />  In-game: ↑/↓ switches custom poses while LEWD's Debug keys setting is enabled; poses also rotate automatically every\n<br />  8–10 seconds. F11 toggles multi-partner scenes.\n<br />\n<br />  Main features\n<br />\n<br />  - Custom poses — riding, side-lying and kneeling capture poses, plus four tentacle poses. Poses blend with the game's\n<br />    existing animation and can be edited in poses_extra.txt without rebuilding.\n<br />  - Multi-partner scenes — nearby existing scavengers walk in and join (holder + one extra, with a waiting queue).\n<br />    Includes a threesome variant of the riding pose with a standing partner.\n<br />  - Lewd-tier progression — orgasms and captures raise a persistent four-tier level, shown as a status moodle, with\n<br />    escalating dialogue, spontaneous relief, body offers, and a cooldown \"safe window\".\n<br />  - Arousal model — clothing coverage, exposed areas, toy type/size, vibrator speed events and nearby scavengers all\n<br />    affect arousal, with thresholds that drop as the tier rises.\n<br />  - Staged self-pleasure — stand, squat, sit and ground stages with smooth transitions, wall poses when toys are used,\n<br />    and ragdoll plus recovery after orgasm.\n<br />  - Fixes — inserted toys no longer count as clothing, worn-toy colliders no longer shake the camera, and the\n<br />    hormone-reflex attack/jump is suppressed while she is ragdolled.\n<br />\n<br />  All added NPCs are visual only: no extra damage, no extra captures, and no new NPCs are spawned.\n<br />\n<br />  Requirements\n<br />\n<br />  - BepInEx 5.4.23.x, x64 — must already be installed (BepInEx&#92;core&#92;BepInEx.dll and 0Harmony.dll).\n<br />  - LEWD Casualties UNKNOWN v3.0.2 — required; the plugin references and patches its internal types. Other versions are\n<br />    not guaranteed.\n<br />  Optional: HormonesRealismMod, for the ragdoll hormone-reflex guard. Without it, the plugin only logs a warning.\n<br />\n<br />  Shout outs\n<br />\n<br />  - Thanks to the author of LEWD Casualties UNKNOWN for the pose system and the content this mod builds on.",
+        "Description": "  Description\n<br />\n<br />  LewdExtender CU is an extension for LEWD Casualties UNKNOWN on Casualties Unknown. It does not replace the LEWD mod —\n<br />  it hooks its pose and scene systems and adds new capture/pentacle poses, multi-partner scenes, a four-tier lewd\n<br />  progression with escalating dialogue and spontaneous behaviour, a deeper arousal model, staged self-pleasure\n<br />  animations, and several fixes for toy and ragdoll issues.\n<br />\n<br />  The mod is designed as a drop-in plugin: install it into BepInEx, and it works alongside the existing LEWD content.\n<br />  Anything it adds can be disabled in the config without uninstalling.\n<br />\n<br />  Installation instructions\n<br />\n<br />  1. Fully close the game (confirm no Casualties Unknown process remains in Task Manager).\n<br />  2. If an older version is installed, delete or back up:\n<br />    - ...&#92;Casualties Unknown&#92;BepInEx&#92;plugins&#92;LewdExtenderCU&#92;\n<br />    - ...&#92;BepInEx&#92;config&#92;com.pyh.cu.lewdextender.cfg (optional; it is regenerated)\n<br />  3. Extract the archive and merge its BepInEx folder into the game root:\n<br />  ...&#92;steamapps&#92;common&#92;Casualties Unknown&#92;\n<br />    The final layout must be:\n<br />  BepInEx&#92;plugins&#92;LewdExtenderCU&#92;\n<br />  ├─ LewdExtenderCU.dll\n<br />  ├─ poses_extra.txt\n<br />  └─ icons&#92;lewdmood0.png … lewdmood3.png\n<br />    Do not rename the folder or the DLL, and do not place the DLL directly in BepInEx&#92;plugins&#92;.\n<br />  4. Optional: copy optional-config&#92;com.pyh.cu.lewdextender.cfg to BepInEx&#92;config&#92; to use the tuned defaults. Otherwise\n<br />    a default config is generated on first launch.\n<br />  5. Launch the game and check BepInEx&#92;LogOutput.log for messages beginning with [LewdExtenderCU], including patched\n<br />    methods containing PoseKit.HerPuppet.Show.\n<br />\n<br />  In-game: ↑/↓ switches custom poses while LEWD's Debug keys setting is enabled; poses also rotate automatically every\n<br />  8–10 seconds. F11 toggles multi-partner scenes.\n<br />\n<br />  Main features\n<br />\n<br />  - Custom poses — riding, side-lying and kneeling capture poses, plus four tentacle poses. Poses blend with the game's\n<br />    existing animation and can be edited in poses_extra.txt without rebuilding.\n<br />  - Multi-partner scenes — nearby existing scavengers walk in and join (holder + one extra, with a waiting queue).\n<br />    Includes a threesome variant of the riding pose with a standing partner.\n<br />  - Lewd-tier progression — orgasms and captures raise a persistent four-tier level, shown as a status moodle, with\n<br />    escalating dialogue, spontaneous relief, body offers, and a cooldown \"safe window\".\n<br />  - Arousal model — clothing coverage, exposed areas, toy type/size, vibrator speed events and nearby scavengers all\n<br />    affect arousal, with thresholds that drop as the tier rises.\n<br />  - Staged self-pleasure — stand, squat, sit and ground stages with smooth transitions, wall poses when toys are used,\n<br />    and ragdoll plus recovery after orgasm.\n<br />  - Fixes — inserted toys no longer count as clothing, worn-toy colliders no longer shake the camera, and the\n<br />    hormone-reflex attack/jump is suppressed while she is ragdolled.\n<br />\n<br />  All added NPCs are visual only: no extra damage, no extra captures, and no new NPCs are spawned.\n<br />\n<br />  Requirements\n<br />\n<br />  - BepInEx 5.4.23.x, x64 — must already be installed (BepInEx&#92;core&#92;BepInEx.dll and 0Harmony.dll).\n<br />  - LEWD Casualties UNKNOWN v3.0.3 — required; the plugin references and patches its internal types. Other versions may\n<br />    not guaranteed.\n<br />  Optional: HormonesRealismMod, for the ragdoll hormone-reflex guard. Without it, the plugin only logs a warning.\n<br />\n<br />  Shout outs\n<br />\n<br />  - Thanks to the author of LEWD Casualties UNKNOWN for the pose system and the content this mod builds on.",
         "Author": "CLAYALC",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/927/927-1794652737-321185471.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/927"
         },
-        "DownloadUrl": "nexus://scavprototype/927/3177",
+        "DownloadUrl": "nexus://scavprototype/927/3195",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 927,
         "SourceName": "Nexus",
         "ContainsAdultContent": true,
-        "LastUpdated": "2026-11-14T10:46:44.000Z",
-        "ReleaseDate": "2026-11-14T10:39:23.000Z",
-        "SHA256": "06eb8f5790b97b5bc148a9293b9822c8a10c2802ef89c505fef04b8c820b57c5",
+        "LastUpdated": "2026-11-14T17:38:51.000Z",
+        "ReleaseDate": "2026-11-14T17:38:51.000Z",
+        "SHA256": "ae236be93e96636da661b161ddc4c0f9cacf090f63cbabda2b8eda4e2910030d",
         "dllSHA256s": {
-            "LewdExtenderCU.dll": "806d1f76ea2c0db186f2170e26e12db7bc5f1c8c99d56fa70311fa05de13daa1"
+            "LewdExtenderCU.dll": "e23702446f299b2a84db5e18a8f78b5a468a19facb3db472f268507c931f2dc4"
         },
-        "downloadsSinceLatestVersion": 79,
+        "downloadsSinceLatestVersion": 175,
         "Dependencies": [],
-        "Changelogs": [],
+        "Changelogs": [
+            {
+                "Version": "1",
+                "Changelog": "- fixed the weird waking pattern of scavs when they are joining a scene.\n- recoded the horny level so it won't arouse too quickly."
+            }
+        ],
         "dllNames": [
             "LewdExtenderCU.dll"
         ],
-        "dllVersion": "0.1.4",
+        "dllVersion": "0.2.8",
         "dllVersions": {
-            "LewdExtenderCU.dll": "0.1.4"
+            "LewdExtenderCU.dll": "0.2.8"
         },
         "Statistics": {
-            "Endorsements": 0,
-            "UniqueDownloads": 28,
-            "TotalDownloads": 28,
+            "Endorsements": 3,
+            "UniqueDownloads": 169,
+            "TotalDownloads": 188,
             "TotalViews": null
         },
         "Images": [
@@ -1049,6 +1218,62 @@
         ]
     },
     {
+        "Id": "nexus-922",
+        "Name": "Walk Mode",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "com.vorpalvoid.walkmode": "1.0.0"
+        },
+        "Summary": "A button to make you zoom around less.",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/922/922-1794517877-2104471611.png[/img]\n<br />\n<br />moffr forgor..\n<br />\n<br />..but not really? Turns out game has an ability to [b]Body.forceWalk[/b] you in specific places! \n<br />This mod is doing pretty much the same in slightly different manner (clamping final Body.actualMaxSpeed on demand via hotkey).\n<br />Mod respects base game authority, disabling itself temporary when game decides to forceWalk you.\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />Adds a walk button. It will clamp expie running speed to about the same as in the beginning of the first tutorial section, making them walk.\n<br />Did you know you're walking normal sane speed in tutorial and not immediately be zoomin'? Now you know.\n<br />\n<br />This is pretty useful in many situations, such as: approaching glass shards instead of stepping in them, exploring cliff edges, looking intimidating, etc.\n<br />\n<br />Affects crouching speed as well, making it even slower, as well as jumps, reducing potential horizontal distance coverage. \n<br />Can be toggled mid-jump for some sick skill expression, I guess.\n<br />\n<br />[list]\n<br />[*][color=#00ff00][b]Walk mode button defaults[/b][/color]: CapsLock, toggle mode. Both can be change in Controls tab.[/*]\n<br />[/list]In addition, game has some interesting method of transform rotate tail when expie moves backwards, moving it either straight down to the floor or up to their head, presumably to imitate immense speed they are running at for whatever reason. When in active walk mode, the tail will behave less erratic and will move in constrained angle area instead. \n<br />\n<br />[list]\n<br />[*]By default, this only affects walk mode. [/*]\n<br />[*]if you like my implementation better, and want it to also affect running mode, enable [b]Tamed Tail Physics in[/b] Gameplay settings tab.[/*]\n<br />[/list]Some additional little coding to make the animation transition not that jumpy, and lowering foot(paw)steps volume when in walk mode.\n<br />Tested in 2-player MP mode, seems to be working.\n<br />All in all, sensible approach.\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[list]\n<br />[*][color=#D4D4D8][url=https://github.com/BepInEx/BepInEx/releases]BepInEx[/url], naturally. [/color][/*]\n<br />[*][size=3][color=#D4D4D8][url=https://www.nexusmods.com/scavprototype/mods/341]CUCoreLib[/url] as dependency. Probably could've be done without it, but why[/color][/size][/*]\n<br />[/list][color=#D4D4D8][b][size=4]Installation instructions[/size][/b]\n<br />Unpack archive into[/color]\n<br />[code]&#92;Casualties Unknown Game Folder&#92;BepInEx&#92;plugins&#92;[/code][size=4][b]Shout outs[/b][/size]\n<br />[color=#D4D4D8]Roza Horse, Jackie Tannis, Jystica, true_sisyphus, IvanStoilov86, Dynaze, and everyone else who asked about the walk button, either aloud or silently in their big brain energy expression. Y'all can now slowly approach all the threats [s]and still step into them[/s].[/color]",
+        "Author": "vorpalvoid",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/922/922-1794666961-1791668556.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/922"
+        },
+        "DownloadUrl": "nexus://scavprototype/922/3189",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 922,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-14T14:53:07.000Z",
+        "ReleaseDate": "2026-11-14T14:29:13.000Z",
+        "SHA256": "5d7c4696a9ec45455f76f89a75a110ba4c898228c5072d20bacfb3e0af9db0c8",
+        "dllSHA256s": {
+            "WalkMode.dll": "02afbdee2fe5356b005f6effc7ff3014e31eb7d2bd4b29757ff6f301125ee9a1"
+        },
+        "downloadsSinceLatestVersion": 36,
+        "Dependencies": [],
+        "Changelogs": [
+            {
+                "Version": "1.0.0",
+                "Changelog": "- Initial release."
+            }
+        ],
+        "dllNames": [
+            "WalkMode.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "WalkMode.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 14,
+            "TotalDownloads": 14,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/922/922-1794666961-1791668556.png"
+        ],
+        "nexusTags": [
+            "Fair and balanced",
+            "Gameplay",
+            "Quality of Life"
+        ]
+    },
+    {
         "Id": "nexus-921",
         "Name": "Genetic Roulette",
         "Version": "1",
@@ -1105,9 +1330,9 @@
         "Id": "nexus-920",
         "Name": "I neeeed stiiiiims",
         "Version": "1.1",
-        "bepinexVersion": "2.9.0",
+        "bepinexVersion": "2.10.0",
         "bepinexPlugins": {
-            "com.dsh.helldiversstim": "2.9.0"
+            "com.dsh.helldiversstim": "2.10.0"
         },
         "Summary": "Stims and experimentle stims from Helldivers2. Makes you complete, again. Powerful. Addiction and opium overdose risk, take care.",
         "Description": "[size=4][b]Description[/b][/size]\n<br />[size=3][color=#D4D4D8]Add 2 types of stims from Helldivers2 to the game. With full function, funny lines and...addictions.[/color][/size]\n<br />\n<br />[size=4][b]Language support[/b][/size]\n<br />[size=3][color=#D4D4D8]english/简体中文[/color][/size]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[size=3][color=#D4D4D8]Both can heal the wounds, stop bleeding, relief pain and clear shock. And fix your brain, eyes and limbs. Only torso left? As long as you can still inject will will be a fully recovered little guy again!\n<br />Also have buffs, normal stim gives speed boost by 1.15 and jump height by 1.1 for 10s, experimentle stim gives 1.25 speed and 1.15 jump height for 15s.\n<br />Both are contained in 50ml capacity 1-used syringe, syringe will be destory whether you inject all in once or not. Can be used via inventory.\n<br />No opium overdose risk, but still addictable.[/color][/size]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[size=3][color=#D4D4D8]1. BepInEx 5.4.x\n<br />2.CUCoreLib[/color][/size]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[size=3][color=#D4D4D8]Inspired by Re-Growth Serums by plaugerism.[/color][/size]",
@@ -1116,36 +1341,40 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/920/920-1794536124-97870641.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/920"
         },
-        "DownloadUrl": "nexus://scavprototype/920/3085",
+        "DownloadUrl": "nexus://scavprototype/920/3190",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 920,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-13T02:51:09.000Z",
-        "ReleaseDate": "2026-11-13T02:51:09.000Z",
-        "SHA256": "4bb25ea9c6ed1fe61e41464bd559c61262ae829031a94ce2c613a1d87ee5d741",
+        "LastUpdated": "2026-11-14T15:06:59.000Z",
+        "ReleaseDate": "2026-11-14T15:06:59.000Z",
+        "SHA256": "be375c644273c35f300ee6a66c34263f034e826de8fdc9d2cb8bec3bc2337c29",
         "dllSHA256s": {
-            "HelldiversStim.dll": "88481a9e066bcd4b9331772811aea75034d8ec24b433cdd14135837ab94404d7"
+            "HelldiversStim.dll": "76f75b0ddc26c98bc0b461fc29268cb1aed2ffd794d49cd7448f4f47f086f00a"
         },
-        "downloadsSinceLatestVersion": 27,
+        "downloadsSinceLatestVersion": 11,
         "Dependencies": [],
         "Changelogs": [
             {
                 "Version": "1.1",
                 "Changelog": "- Adjust sprite scale so you can now see it in world without holding ctrl."
+            },
+            {
+                "Version": "1.2",
+                "Changelog": "- Add effect vignette so you can ensure it works."
             }
         ],
         "dllNames": [
             "HelldiversStim.dll"
         ],
-        "dllVersion": "2.9.0",
+        "dllVersion": "2.10.0",
         "dllVersions": {
-            "HelldiversStim.dll": "2.9.0"
+            "HelldiversStim.dll": "2.10.0"
         },
         "Statistics": {
             "Endorsements": 1,
-            "UniqueDownloads": 19,
-            "TotalDownloads": 19,
+            "UniqueDownloads": 40,
+            "TotalDownloads": 52,
             "TotalViews": null
         },
         "Images": [
@@ -1156,7 +1385,8 @@
             "AI Assisted",
             "Gameplay",
             "Not Safe For Work"
-        ]
+        ],
+        "LastNotifiedChangelogVersion": "1.2"
     },
     {
         "Id": "nexus-919",
@@ -2376,10 +2606,10 @@
     {
         "Id": "nexus-890",
         "Name": "CU Mechs",
-        "Version": "1.5",
-        "bepinexVersion": "1.13.1",
+        "Version": "1.6",
+        "bepinexVersion": "1.14.0",
         "bepinexPlugins": {
-            "karma.additionitems": "1.13.1"
+            "karma.additionitems": "1.14.0"
         },
         "Summary": "A Mod that adds a set of new craftable items, including the new Mech Suit MK1![wait for Mech Suit MK1 Combat :3, it will be epik for real ^w^]",
         "Description": "[size=4][b]Description[/b][/size]\n<br />I'll now add crafts recipes here with item names listed :p\n<br />\n<br />Scrap spring: 1 Scrap cube and any cutting tool\n<br />\n<br />Scrap helmet: 2 Scrap metal 90% condition, 1 scrap cube, 5 scrap panel, 2 canvas, 15 bio-chem, any cutting &amp; hammering tool\n<br />\n<br />Scrap fist: 2 Scrap metal 90% condition, 4 scrap panel, 15 bio-chem, 1 canvas, cutting &amp; hammering tool\n<br />\n<br />Scrap spring boots: 2 Scrap spring, 1 scrap cube, 20 bio-chem, 2 canvas, 2 chunk of plastic, Processed Copper, cutting tool\n<br />\n<br />Scavenger Armor: 3 Scrap metal 90% condition, 1 scrap cube, 5 scrap panels, 30 bio-chem, 4 canvas, cutting &amp; hammering tool\n<br />\n<br />Scavenger Leggins: 1 Scrap metal 90% condition, 2 scrap cube, 2 scrap panel, 15 bio-chem, cutting &amp; hammering tool\n<br />\n<br />ExoSkeleton MK1: 2 Scrap metal 90% condition, 1 scrap cube, 2 nails, 4 scrap tubes, 5 scrap panel, 2 circuit board 80% condition, 5 bundle of wires, 2 processed copper, 4 plastic chunk\n<br />\n<br />Pure Imertis Slab: 1 Raw Imertis, 50 bio-chem, any 100 water quality, cutting &amp; hammering tool\n<br />\n<br />Ripper: 2 Scrap cubes, 2 scrap panel, 1 circuit board 80% condition, 3 bundle of wires, 1 processed copper, 2 plastic chunk, 1 pure imertis slab, 25 bio-chem, cutting &amp; hammering tool\n<br />\n<br />Mech Core: 1 Scrap cube, 4 scrap panel, 4 circuit board 80%, 5 bundle of wires, pure imertis slab\n<br />\n<br />Laser Pistol: 2 Scrap cube, 4 scrap panel, 2 scrap tube, 2 scrap spring, 3 circuit board 80%, 4 bundle of wires, 1 processed copper, 1 pure imertis slab, 25 bio-chem\n<br />\n<br />MechSuit MK1: Scavenger Armor, Scavenger Leggins, Scrap Helmet, Scrap Fist, Scrap Spring Boots,  ExoSkeleton MK1, Mech Core, cutting &amp; hammering tool\n<br />\n<br />Done for now :3\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[size=3][color=#D4D4D8]Adds 13 new items &amp; 12 crafts for now :3[/color][/size]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />Obviously BeplnEx\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />AI :3",
@@ -2388,18 +2618,18 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/890/890-1794523360-561061787.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/890"
         },
-        "DownloadUrl": "nexus://scavprototype/890/3175",
+        "DownloadUrl": "nexus://scavprototype/890/3204",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 890,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-14T10:21:45.000Z",
-        "ReleaseDate": "2026-11-14T10:21:41.000Z",
-        "SHA256": "6c2310efd21949ee6233101d8e8b3eece3f4e3c400c82ffb6e51191281e4f2f0",
+        "LastUpdated": "2026-11-14T20:08:18.000Z",
+        "ReleaseDate": "2026-11-14T20:08:18.000Z",
+        "SHA256": "26acb7977676e75a6f44ab976e1a6efee17cad4bcd1056abf9f3f2e4b5884915",
         "dllSHA256s": {
-            "KarmaAdditionItems.dll": "46d1c2704ab6fd59811b82a1f40290c5a69116c6446bba1448635b894b2f2f4c"
+            "KarmaAdditionItems.dll": "c7f696713b8cfeec2829795dccee685f17c1c7681338e53d03282571f2ff4682"
         },
-        "downloadsSinceLatestVersion": 21,
+        "downloadsSinceLatestVersion": 5,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2413,19 +2643,23 @@
             {
                 "Version": "1.5",
                 "Changelog": "- Fixed some bug with ExoSkeleton and Mech :v [most likely xd]"
+            },
+            {
+                "Version": "1.6",
+                "Changelog": "- Some necessary changes to Laser Pistol, plus buff of ExoSkeleton MK1 durability :p"
             }
         ],
         "dllNames": [
             "KarmaAdditionItems.dll"
         ],
-        "dllVersion": "1.13.1",
+        "dllVersion": "1.14.0",
         "dllVersions": {
-            "KarmaAdditionItems.dll": "1.13.1"
+            "KarmaAdditionItems.dll": "1.14.0"
         },
         "Statistics": {
-            "Endorsements": 1,
-            "UniqueDownloads": 82,
-            "TotalDownloads": 147,
+            "Endorsements": 2,
+            "UniqueDownloads": 86,
+            "TotalDownloads": 163,
             "TotalViews": null
         },
         "Images": [
@@ -3885,6 +4119,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/860/860-1793475035-1539743003.png"
         ],
         "nexusTags": [
+            "AI-Generated Content",
             "Quality of Life"
         ]
     },
@@ -4975,6 +5210,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/838/838-1792705769-1576269353.png"
         ],
         "nexusTags": [
+            "AI-Generated Content",
             "Gameplay"
         ]
     },
@@ -10105,29 +10341,29 @@
         "Id": "nexus-686",
         "Name": "YouTube Live Chat Integration",
         "Version": "3.0.0",
-        "bepinexVersion": "2.0.0",
+        "bepinexVersion": "3.0.0",
         "bepinexPlugins": {
-            "com.Ashashhicks69.ChattersUnknown": "2.0.0"
+            "Ashashhicks69.ChattersUnknown": "3.0.0"
         },
         "Summary": "Adds commands that connects Your Youtube Live Chat To Casualties: Unknown! And does... \"Things\"",
-        "Description": "[size=4][b]Description[/b][/size]\n<br />Adds [b]YouTube Live Chat Integrations[/b] with [b]Casualties: Unknown[/b]!!\n<br />With this you can view the Live Chat through the Console, Let your Chatters Harass you by giving them access to Console Commands, And more to come soon! (pleaseibegsuggestfeaturesformetocodeicantthinkofshithelpppp)\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />Extract the wonderful little zip file, Shove the extracted folder into plugins, And it should look like this! :3\n<br />[img width=273]https://staticdelivery.nexusmods.com/mods/8391/images/686/686-1789619970-1340435782.png[/img]\n<br />\n<br />[size=4][b]some features or whatever lmao[/b][/size]\n<br />[size=3][color=#D4D4D8]uhhh idk what to put here so ima just list commands that my mod adds :PPP[/color][/size]\n<br />[list]\n<br />[*][u][b]ConnectChatIntegration[/b][/u] | Add your Stream URL and it'll connect![/*]\n<br />[*][u][b]DisconnectChatIntegration[/b][/u] | It disconnects From Everything and stops the Connection.[/*]\n<br />[*][b][u]AllowChatToSendCommands[/u][/b] | It Lets Chat Send Console Commands. [b][u]Make sure it has the ! prefix at the start!!![/u][/b] [b]enable at your own risk...[/b][/*]\n<br />[*][u][b]Command Blacklist[/b][/u] | it blocks commands chat sends![/*]\n<br />[*][u][b]Control Panel[/b][/u] | A GUI To Control Stuff??? idk lmao[/*]\n<br />[/list][b][size=4]And theres more to come!![/size][/b]\n<br />[size=3]i have plans for more features[/size]\n<br />[list]\n<br />[*][size=3][s]Command Blacklist[/s][/size][/*]\n<br />[*][s]Control Panel GUI[/s][/*]\n<br />[*][s]And Command Polls! (hopefully Next Update Cus im a lazy bitch)[/s][/*]\n<br />[*]Twitch Support[/*]\n<br />[/list][left][b][size=4][i]also please i beg give me feature ideas i cant think for shittttt please please please please please please please please please please please please please please please please please please please please please please please please[/i][/size][/b][/left]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[size=4][s][b][url=https://www.nexusmods.com/scavprototype/mods/341]CUCoreLib[/url] - [/b]newer versions won't need this just saying.. (I'm too lazy to change my code lol)[/s][/size]\n<br />[size=4]None Any More Yayayayyay i made it all by myself :3333[/size]\n<br />\n<br />\n<br />Also i wanna thank [b]KAPII[/b] on YT for asking for a mod like this cuzz im starved for ideas lol and also all the helpful people suggesting things to add :33",
+        "Description": "[center][size=4][b]THIS IS somewhat... MULTIPLAYER COMPATABLE!!![/b][/size]\n<br />[size=3]only the host needs the mod fyi[/size][/center]\n<br />\n<br />[size=4][b]Description[/b][/size]\n<br />Adds [b]YouTube Live Chat Integrations[/b] with [b]Casualties: Unknown[/b]!!\n<br />With this you can view the Live Chat through the Console, Let your Chatters Harass you by giving them access to Console Commands and random ass voting Because Democracy is fun!\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />Extract the wonderful little zip file, Shove the extracted folder into plugins, And it should look like this! :3\n<br />[img width=273]https://staticdelivery.nexusmods.com/mods/8391/images/686/686-1789619970-1340435782.png[/img]\n<br />\n<br />[b][size=4]What Does This Mod Add Exactly?[/size][/b]\n<br />[list]\n<br />[*]A Controllable Voting/Poll System That lets Chatters Vote on a Command to Execute[b]! [/b]\n<br />With the bonus of some exclusive commands in the mix![/*]\n<br />[*]Chat Can have Access To The Console And Type In Commands.. (This one is Evil)[/*]\n<br />[*]A Command Blacklist/Whitelist to make The Previous thing less evil! :3[/*]\n<br />[*]In Game Chat Viewer![/*]\n<br />[/list]Also i wanna thank [b]KAPII[/b] on YT for asking for a mod like this cuzz im starved for ideas lol and also all the helpful people suggesting things to add :33",
         "Author": "Ashashhicks69",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/686/686-1789622050-1378426194.jpg",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/686"
         },
-        "DownloadUrl": "nexus://scavprototype/686/2390",
+        "DownloadUrl": "nexus://scavprototype/686/3200",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 686,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-10-05T07:16:36.000Z",
-        "ReleaseDate": "2026-10-05T07:16:36.000Z",
-        "SHA256": "fadb44bc4338bdec2db9f40ea02d6be91b263070abd3cef474bed3e1428be589",
+        "LastUpdated": "2026-11-14T18:58:41.000Z",
+        "ReleaseDate": "2026-11-14T18:58:41.000Z",
+        "SHA256": "b4eb5fb626859d93bf85bdc8f8462d8e7905edd22ad526d89bf9010c2800beb0",
         "dllSHA256s": {
-            "ChattersUnknown.dll": "514debbab5c37d1a2905fa12f1e67a6a83bc5e204aa3bfd8a765e51845ad34a7"
+            "ChattersUnknown.dll": "f15088caeec430dba5ecd2ab1d9969f508a1f7032b1a0dcce6e3962ffd56017e"
         },
-        "downloadsSinceLatestVersion": 13,
+        "downloadsSinceLatestVersion": 0,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10141,19 +10377,23 @@
             {
                 "Version": "4",
                 "Changelog": "- CHAT POLLS ARE HERE YAYAYYAYAY"
+            },
+            {
+                "Version": "3.0.0",
+                "Changelog": "- i just forgot to disable a debug thing for the ui"
             }
         ],
         "dllNames": [
             "ChattersUnknown.dll"
         ],
-        "dllVersion": "2.0.0",
+        "dllVersion": "3.0.0",
         "dllVersions": {
-            "ChattersUnknown.dll": "2.0.0"
+            "ChattersUnknown.dll": "3.0.0"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 18,
-            "TotalDownloads": 32,
+            "UniqueDownloads": 19,
+            "TotalDownloads": 35,
             "TotalViews": null
         },
         "Images": [
@@ -12032,11 +12272,11 @@
     {
         "Id": "nexus-650",
         "Name": "Collars Unknown",
-        "Version": "1.1.1",
-        "bepinexVersion": "1.1.0",
+        "Version": "2.0.0",
+        "bepinexVersion": "1.2.0",
         "bepinexPlugins": {
-            "net.cucorelib": "1.0.6",
-            "com.gouxi.collarsunknown": "1.1.0"
+            "net.cucorelib": "1.1",
+            "com.gouxi.collarsunknown": "1.2.0"
         },
         "Summary": "A small QoL mod – as for which quality of life it's improving,well idk. It monitors your vitals, and administers small corrective nudges when you step out of line. Who benefits from? The answer depends on which side of the collar you're on. Let's just say, it's not designed with your comfort in mind.",
         "Description": "[b]Collars Unknown[/b] is a content mod for Casualties:Unknown that introduces a diverse set of functional, lore‑rich collars. Each collar is more than a cosmetic – they come with physics‑based chains and bells, health monitoring, auto‑injection, shock punishment, and even a lock‑picking minigame for the brave (or foolish). Whether you want a simple jingly accessory, a life‑saving medical device, or a permanent restraint that fights back, this mod has you covered.\n<br />[line]\n<br />[heading]Description[/heading]\n<br />This mod adds [b]seven unique collars (for now)[/b], each with distinct behaviours and backstories. From a simple fabric collar with a bell to a high‑tech “healthcare” collar that injects stimulants when your vitals drop, and from a shock collar that teaches obedience to a custom collar that combines all the worst (and best) features – the choice is yours, but be careful what you put around your neck.\n<br />All locked collars cannot be removed by normal means; attempting to drop or unequip them triggers a painful shock, along with a stern message. Some collars include a lock‑picking minigame that, if failed, also delivers punishment. The mod also adds recipe support so you can craft basic versions.\n<br />[line]\n<br />[heading]Installation[/heading]\n<br />[list=1]\n<br />[*]Ensure you have [b]BepInEx[/b] (or the mod loader required by your game) installed.[/*]\n<br />[*]Place the \n<br />[code]CollarsUnknown.dll[/code] (or the compiled mod folder) into your \n<br />[code]BepInEx/plugins[/code] folder.[/*]\n<br />[*]Launch the game. The items will be registered automatically and will appear in loot tables or can be spawned via console commands (if available).[/*]\n<br />[/list][line]\n<br />[heading]Main Features[/heading]\n<br />[list]\n<br />[*][b]7 Unique Collars(for now)[/b] – each with its own sprite, description, and behaviour.[/*]\n<br />[*][b]Physics‑based Chains &amp; Bells[/b] – using a Verlet‑like rope simulation, chains and bells sway realistically with movement, and they clink/jingle when moving fast enough.[/*]\n<br />[*][b]Auto‑Injector Module[/b] – monitors your blood volume and pain; when thresholds are crossed, it automatically injects a pre‑loaded liquid (e.g., epinephrine, chloroform) without your consent.[/*]\n<br />[*][b]Health Monitoring[/b] – the healthcare variant tracks bleeding, infection, fractures, weight change, and fibrillation, giving you spoken alerts (via Talker or UI alerts).[/*]\n<br />[*][b]Locked Collars &amp; Punishment[/b] – collars with the \n<br />[code]locked[/code] tag cannot be dropped or unequipped. Any attempt triggers a shock (muscle/skin damage, ragdoll, pain) and a warning message.[/*]\n<br />[*][b]Lock‑Picking Minigame[/b] – for some locked collars, you can attempt to unlock them via a rotating‑dial minigame. Success removes the collar; failure results in punishment.[/*]\n<br />[*][b]Crafting Recipes[/b] – basic and advanced collars can be crafted using common materials (canvas, scrap, wires, biochem, etc.).[/*]\n<br />[*][b]Lore‑Rich Descriptions[/b] – each collar tells a story, from the faded aqua of ComradeFox’s collar to the mysterious EEI logo on Mossent’s collar.[/*]\n<br />[/list][line]\n<br />[heading]Requirements[/heading]\n<br />[list]\n<br />[*]Base game (version 7.0.1 or later – check compatibility).[/*]\n<br />[*]BepInEx or equivalent mod loader.[/*]\n<br />[*]Cucorelib is required.[/*]\n<br />[/list][line]\n<br />[heading]Shout Outs[/heading]\n<br />A huge thanks to:\n<br />[list]\n<br />[*][b]ComradeFoxx[/b] – for the artistic support.[/*]\n<br />[*][b]Mossent[/b] – for base artwork[/*]\n<br />[*][b]夕临枫·永智  – for cover artwork[/b][/*]\n<br />[*][b]Myself[/b] – for recording the bell and chain sounds while wearing an actual collar (yes, really – those jingles and rattles are 100% authentic). The immersion is real.[/*]\n<br />[/list]Also, thanks to the community for feedback and testing. This mod was built with love (and a bit of shock therapy). Enjoy, and remember – the collar always wins. Grrr.\n<br />[line]\n<br />[i]For any issues or suggestions, feel free to reach out on the mod’s discussion page.(and if you want your own collar fell free to ask)[/i]\n<br />[b]Stay collared, stay safe.[/b]",
@@ -12045,19 +12285,19 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/650/650-1788576112-1848480610.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/650"
         },
-        "DownloadUrl": "nexus://scavprototype/650/2670",
+        "DownloadUrl": "nexus://scavprototype/650/3199",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 650,
         "SourceName": "Nexus",
         "ContainsAdultContent": true,
-        "LastUpdated": "2026-10-22T10:00:06.000Z",
-        "ReleaseDate": "2026-10-22T10:00:05.000Z",
-        "SHA256": "eb75c2e1c452af35febc5e1aba07e0fbd2c7ba0ddba1b3657475571dee9858b8",
+        "LastUpdated": "2026-11-14T18:56:56.000Z",
+        "ReleaseDate": "2026-11-14T18:56:56.000Z",
+        "SHA256": "5312a43ea3796440196ff3b62a9b182cfd77d9582d5f6da04ed58e39f56e43bd",
         "dllSHA256s": {
-            "CUCoreLib.dll": "5a12ffcc9470146af34a36073bb6a712e8f3825502cebfceefc4152c48abe89d",
-            "collarsunknown.dll": "5d702075d60f033fa78f198b3130d6e9a5c0a277976dff9c748c9caf469a54c2"
+            "CUCoreLib.dll": "c0f064260b2671d02bf802c460aa346c6b858ec9269f2ff93439ebabaa940aa3",
+            "collarsunknown.dll": "bbe94534f45bd415e1c866b8db66cbd86c7cd534614138a0769e3b705ec830a3"
         },
-        "downloadsSinceLatestVersion": 463,
+        "downloadsSinceLatestVersion": 22,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -12083,21 +12323,25 @@
             {
                 "Version": "1.1.1",
                 "Changelog": "- add some collar\n- V5 is not stable yet, so compat have to wait"
+            },
+            {
+                "Version": "2.0.0",
+                "Changelog": "- full game compat\n- small bug fix, and renaming\n- i know the main menu icon is incorrect when you are not expie, will fix in next update, im tried fighting the v5 and full release at the same time"
             }
         ],
         "dllNames": [
             "collarsunknown.dll",
             "CUCoreLib.dll"
         ],
-        "dllVersion": "1.1.0",
+        "dllVersion": "1.2.0",
         "dllVersions": {
-            "CUCoreLib.dll": "1.0.6",
-            "collarsunknown.dll": "1.1.0"
+            "CUCoreLib.dll": "1.1",
+            "collarsunknown.dll": "1.2.0"
         },
         "Statistics": {
-            "Endorsements": 29,
-            "UniqueDownloads": 1099,
-            "TotalDownloads": 1700,
+            "Endorsements": 33,
+            "UniqueDownloads": 1143,
+            "TotalDownloads": 1766,
             "TotalViews": null
         },
         "Images": [
@@ -13510,10 +13754,10 @@
     {
         "Id": "nexus-619",
         "Name": "Whole Meal",
-        "Version": "1.6.1",
-        "bepinexVersion": "1.6.1",
+        "Version": "1.7.0",
+        "bepinexVersion": "1.7.0",
         "bepinexPlugins": {
-            "com.nocturnalweirdo.wholemeal": "1.6.1"
+            "com.nocturnalweirdo.wholemeal": "1.7.0"
         },
         "Summary": "Force the Salad to finish its meal. Replaces the Elder Thornback's limb-severing bite with an attack that swallows the player whole, into a fully functioning stomach that acts as a cramped, damp, high-adrenaline boss battle.",
         "Description": "\n<br />[center][/center]\n<br />[center][img width=609]https://staticdelivery.nexusmods.com/mods/8391/images/619/619-1791316474-1712310125.png[/img]\n<br />[size=4][i]Take the fight inside the Salad.[/i][/size][/center]\n<br />[center][line]\n<br />[size=5][font=Courier New][b][color=#e65c5c] !! CONTENT WARNING !![/color][/b][/font][/size][/center]\n<br />[size=4][font=Courier New]This mod depicts the player character being[color=#f6b26b][b] swallowed alive[/b] [/color]and contains themes of [b][color=#f6b26b]digestion[/color][color=#f4f4f4],[/color][color=#f6b26b] crush injuries[/color][color=#ffffff],[/color][color=#f6b26b] acid damage[/color][color=#ffffff],[/color][color=#f6b26b] claustrophobia[/color][color=#ffffff],[/color][color=#f6b26b] suffocation, body horror[/color] [/b]and[b] [color=#f6b26b]regurgitation[/color].[/b][/font][/size]\n<br />\n<br />[center][size=4][font=Courier New][b]If that subject matter makes you uncomfortable, [color=#e06666]this mod is not for you.[/color][/b][/font][/size][/center]\n<br />[line]\n<br />\n<br />[left][size=6][color=#ff69b4]1[/color][color=#f86cb7].[/color][color=#f06fbb]5[/color] [color=#e175c2]-[/color] [color=#d27bc8]C[/color][color=#cb7ecc]O[/color][color=#c381cf]M[/color][color=#bc84d3]B[/color][color=#b487d6]O[/color] [color=#a58cdd]M[/color][color=#9e8fe0]E[/color][color=#9692e4]A[/color][color=#8f95e7]L[/color] [color=#809bee]U[/color][color=#789ef1]P[/color][color=#71a1f5]D[/color][color=#69a4f8]A[/color][color=#62a7fc]T[/color][color=#5aaaff]E[/color][/size][/left]\n<br />[spoiler][center][size=4]MULTIPLAYER is HERE![/size][/center]\n<br />\n<br />[center][img width=445]https://staticdelivery.nexusmods.com/mods/8391/images/619/619-1792009901-138573149.png[/img][/center]\n<br />\n<br />[list]\n<br />[*]Krok v5 support[/*]\n<br />[*]Watch your friends get eaten[/*]\n<br />[*]Rescue them[/*]\n<br />[*]... Or join them, and fight together from inside[/*]\n<br />[/list][/spoiler]\n<br />\n<br />[size=4][b]NEW in 1.3[/b][/size]\n<br />[spoiler][size=4][b]Customizable Run Settings\n<br />[/b][/size]You can now tweak many difficulty settings from the custom run menu: stomach harshness and reactivity, bite damage, acid level, etc.[size=4]\n<br />[b]\n<br />Gameplay Tweaks\n<br />[/b][/size]\n<br />[list]\n<br />[*][size=3]Added a short windup before stomach contractions; going limp (ragdolling) before a contraction will reduce some damage if you time it right. [/size][/*]\n<br />[*]Killing an elder from the inside now gives some additional mood and health bonuses on top of vanilla relief.[/*]\n<br />[/list][size=4][b]\n<br />Acid Overhaul\n<br />[/b][/size][size=3]The game's liquid simulation just wasn't cutting it, so [b]we built our own acid, with blackjack and hookers.[/b] It looks clearer and less noisy, features waves and ripples, and produces particle effects like sprays and droplets. [/size][size=4][b]\n<br />\n<br />Cosmetic Changes\n<br />[/b][/size][size=3]A Whole Meal of changes to the stomach visuals, including:[/size]\n<br />[list]\n<br />[*]New stomach lining and background to make it look and feel more like the Elder's[/*]\n<br />[*]Remove dust particles and other visual disturbances[/*]\n<br />[*]Dimmed exterior view while swallowed, to remind you what's waiting for you outside[/*]\n<br />[*]A new \"Eaten alive\" moodle: [/*]\n<br />[/list][center][img]https://staticdelivery.nexusmods.com/mods/8391/images/619/619-1791310822-712275342.png[/img][/center]\n<br />[size=4][b]Multiplayer wen?[/b][/size]\n<br />Soon, hopefully! We're working on it.[/spoiler]\n<br />\n<br />[size=4][b]1.2:[/b][/size]\n<br />[spoiler][size=4][b]Internal View Overlay\n<br />[/b][/size]This is the major new feature shipping in this release. When you hover the Elder as it's digesting NPC(s), pressing Shift (or whatever key is bind to expanddesc) will display an overlay with a simulated internal preview.\n<br />The intention behind this feature is to provide a solid foundation and testing ground for true multiplayer support, which will work through interactive overlays built from the same concept[b].\n<br />[/b][size=4][b]\n<br />Compatibility with KrokMP (local only mode)\n<br />[/b][/size]Fix a crash when running KrokMP in single player host mode. Thanks @Guyedude for reporting.\n<br />This should also fix compatibility with Casualties: Consumed.\n<br />\n<br />[b][size=4]Refinements[/size][/b]\n<br />Squashed every single bug I could find, improved look &amp; feel of interior and exterior, (tried to) re-balance the difficulty level. \n<br />\n<br />Hope you enjoy![/spoiler]\n<br />\n<br />[size=4][b]What does it do?[/b][/size]\n<br />\n<br />Whole Meal replaces the Elder Thornback's limb-severing bite with a[b] fully realised swallowing sequence and internal boss encounter.[/b]\n<br />\n<br />The game already builds its tension around traumatic injury, amputation and desperate treatment under pressure; this nod extends those systems into an interactive encounter where being swallowed is catastrophic, but leaves the player with more decisions than simply watching a limb disappear. \n<br />\n<br />[b]The Thornback’s digestive system is a living, reactive environment.[/b] The insides are more vulnerable, but sustained damage provokes violent convulsions that can crush limbs and knock you down, while corrosive acid pools around you and the oxygen-poor atmosphere steadily erodes your ability to keep fighting. Escape is possible, if you find the opportunity and still have the strength to reach it.\n<br />\n<br />[b]But it won't be easy.[/b]\n<br />\n<br />Being swallowed replaces one of the base game’s most devastating attacks. [b]It is not intended as a safer shortcut to killing the Elder.[/b] Enter unprepared and you will probably die. Enter with experience, protection and the right equipment, however, and you might turn the monster’s vulnerable interior against it.\n<br />\n<br />[b]SPOILERS - BLIND FIRST PLAY RECOMMENDED[/b]\n<br />[spoiler][b]Features[/b]\n<br />[list]\n<br />[*]Adds a short exterior swallowing animation with ragdoll physics[/*]\n<br />[*]A deforming throat and stomach with contractions, convulsions and wall-jump climbing[/*]\n<br />[*]Pooling acid that hurts your skin and degrades your gear[/*]\n<br />[*]Crushing injuries that cause dislocations, fractures or internal bleeding[/*]\n<br />[*]Oxygen-deprived atmosphere makes it harder to stay conscious[/*]\n<br />[*]A stomach which reacts to sustained damage: rapid gunfire can provoke violent convulsions, disarming you or injuring your limbs.[/*]\n<br />[*]Your armour protects against acid and crushing at the cost of its condition.[/*]\n<br />[*]Natural escape opportunities, forced regurgitation and a separate oesophageal sphincter target.[/*]\n<br />[*]A more hostile second phase if the Elder catches you again after regurgitation.[/*]\n<br />[*]Custom ambience, reuses game assets for organic sound effects.[/*]\n<br />[/list][b]Hints[/b]\n<br />[list]\n<br />[*]Watch your stamina. Reaching an open throat is useless if you cannot climb it.[/*]\n<br />[*]The muscular collar at the base of the throat is a separate target. Breaking it forces an escape window, but it will take some time to recover.[/*]\n<br />[*]Natural openings are unreliable and may happen while you are injured or ragdolled.[/*]\n<br />[*]Sustained damage irritates the stomach. Trigger discipline matters.[/*]\n<br />[*]Protective equipment can make an internal kill viable, but expect to pay for it in armour condition.[/*]\n<br />[*]After the Elder attempts regurgitation, the oesophageal escape target is gone. If you end up inside again, finish the fight.[/*]\n<br />[*]Successfully crawling out leaves the Elder docile for a while. Use them to stand up, treat urgent wounds and get the hell away.[/*]\n<br />[/list][/spoiler]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />\n<br />[list]\n<br />[*]BepInEx 5[/*]\n<br />[*]CUCoreLib 1.0.6.1+[/*]\n<br />[*]Casualties: Unknown Demo 7.0.1[/*]\n<br />[/list][size=4][b]Installation[/b][/size]\n<br />\n<br />Install BepInEx and CUCoreLib, then place [b]WholeMeal.dll[/b] in:\n<br />\n<br />[code]BepInEx/plugins/[/code]\n<br />[size=4][b]Compatibility[/b][/size]\n<br />Mutiplayer: [b]Supported![/b] (Together/Krok v5.0.2-5.2.0)\n<br />\n<br />Experimental support for NPC interactions through [url=https://www.nexusmods.com/scavprototype/mods/386?tab=files&amp;file_id=1116]Ixolun's Experiment NPCs[/url] (Version[b] 1.28.1[/b])\n<br />[spoiler][list]\n<br />[*]NPCs can get swallowed by Elders, including multiple NPCs across multiple Elders, and subsequently found inside their stomachs if the player is also swallowed.[/*]\n<br />[*]NPCs can get swallowed after the player if they are clumsy enough to bump into the Elder (which happens fairly often).[/*]\n<br />[*]NPCs slowly lose health to acid and crushing damage while inside the stomach.[/*]\n<br />[*]NPCs can be rescued by forcing regurgitation or by killing the Elder.[/*]\n<br />[*]Dead NPCs drop loot inside the stomach.[/*]\n<br />[*]NPCs now panic and flee from Elders; Elders target the player and any nearby NPCs randomly.[/*]\n<br />[*]NPCs' muffled dialogue text (mostly cries for help) can be seen from outside.[/*]\n<br />[*]Currently, NPCs are constantly ragdolled and non-interactive while inside the stomach. Their woundview is accessible.[/*]\n<br />[/list][/spoiler]\n<br />",
@@ -13522,18 +13766,18 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/619/619-1787949921-1353307933.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/619"
         },
-        "DownloadUrl": "nexus://scavprototype/619/2784",
+        "DownloadUrl": "nexus://scavprototype/619/3208",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 619,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-10-31T09:14:53.000Z",
-        "ReleaseDate": "2026-10-31T09:14:53.000Z",
-        "SHA256": "382b02f955d46e7be734e616ec866491b19aa35ee305857f28e6194c6b11be96",
+        "LastUpdated": "2026-11-14T21:25:03.000Z",
+        "ReleaseDate": "2026-11-14T21:25:02.000Z",
+        "SHA256": "f5e017d61122fcd526812909a20ea8e7d6881f0b5248dd03a773334c562e4230",
         "dllSHA256s": {
-            "WholeMeal.dll": "d45514f6010c32b90d1d36c4bffc406fc0a03ee1c2bc55ae9ef91b5327efcc23"
+            "WholeMeal.dll": "a65eec06dfbda9000a9dfbbe67de54436dfe690688f1190a9f6efb26e12c3d33"
         },
-        "downloadsSinceLatestVersion": 439,
+        "downloadsSinceLatestVersion": 15,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -13574,19 +13818,23 @@
             {
                 "Version": "1.6.1",
                 "Changelog": "- Fixed intermittent bug that could leave players stuck in terrain above the stomach when swallowed with equipment (for real this time)\n- Improved automatic recovery from failed entry"
+            },
+            {
+                "Version": "1.7.0",
+                "Changelog": "- Added support for the full game release"
             }
         ],
         "dllNames": [
             "WholeMeal.dll"
         ],
-        "dllVersion": "1.6.1",
+        "dllVersion": "1.7.0",
         "dllVersions": {
-            "WholeMeal.dll": "1.6.1"
+            "WholeMeal.dll": "1.7.0"
         },
         "Statistics": {
-            "Endorsements": 49,
-            "UniqueDownloads": 1619,
-            "TotalDownloads": 2927,
+            "Endorsements": 51,
+            "UniqueDownloads": 1656,
+            "TotalDownloads": 3004,
             "TotalViews": null
         },
         "Images": [

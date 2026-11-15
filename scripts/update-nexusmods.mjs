@@ -29,6 +29,8 @@ const REQUEST_TIMEOUT_MS = 60_000;
 const REQUEST_MAX_ATTEMPTS = 4;
 const REQUEST_RETRY_MAX_DELAY_MS = 30_000;
 const QUICK_SCAN_CONCURRENCY = 6;
+const SWEEP_INTERVAL_MS = 24 * 60 * 60 * 1000;
+const SWEEP_MAX_PER_RUN = 250;
 const DOWNLOAD_COUNT_CONCURRENCY = 4;
 // Nexus returns at most 20 modFilesByUid nodes per query, however many uids are sent.
 // Guuh.
@@ -390,8 +392,7 @@ async function runQuickSync({ apiKey, appVersion, gameDomains, entryByKey }) {
   for (const gameDomain of gameDomains) {
     logSection(`Quick Check ${gameDomain}`);
     const candidateMods = await discoverRecentModsForGame(apiKey, appVersion, gameDomain);
-    const existingModIds = getExistingModIdsForGame(entryByKey, gameDomain);
-    const candidateModIds = new Set(existingModIds);
+    const candidateModIds = new Set();
 
     for (const item of candidateMods) {
       if (Number.isInteger(item?.mod_id)) {
@@ -399,8 +400,14 @@ async function runQuickSync({ apiKey, appVersion, gameDomains, entryByKey }) {
       }
     }
 
-    logInfo(`Tracked mods to scan: ${existingModIds.length}`);
     logInfo(`Recent candidate mods: ${candidateMods.length}`);
+
+    const sweepModIds = selectSweepMods(entryByKey, gameDomain, candidateModIds);
+    for (const modId of sweepModIds) {
+      candidateModIds.add(modId);
+    }
+
+    logInfo(`Sweep mods due: ${sweepModIds.length}`);
     logInfo(`Quick scan set: ${candidateModIds.size}`);
 
     const scans = await mapWithConcurrency(
@@ -486,6 +493,15 @@ async function runQuickSync({ apiKey, appVersion, gameDomains, entryByKey }) {
         reportQuickFailure(modId, existingEntry, error);
       }
     }
+
+    const checkedAt = new Date().toISOString();
+    for (const modId of candidateModIds) {
+      const entryKey = getEntryKey(gameDomain, modId);
+      const entry = entryByKey.get(entryKey);
+      if (entry) {
+        entryByKey.set(entryKey, { ...entry, LastQuickCheck: checkedAt });
+      }
+    }
   }
 }
 
@@ -501,6 +517,18 @@ function reportQuickFailure(modId, existingEntry, error) {
   }
 
   logWarn("MOD_FAIL", `Quick check failed for new mod ${modId}, skipping entry. ${error.message}`);
+}
+
+function selectSweepMods(entryByKey, gameDomain, excludeModIds) {
+  const cutoff = Date.now() - SWEEP_INTERVAL_MS;
+  return [...entryByKey.values()]
+    .filter((entry) => entry?.NexusGameDomain === gameDomain && Number.isInteger(entry?.NexusModId))
+    .filter((entry) => !excludeModIds.has(entry.NexusModId))
+    .map((entry) => ({ modId: entry.NexusModId, checkedAt: Date.parse(entry.LastQuickCheck ?? "") || 0 }))
+    .filter(({ checkedAt }) => checkedAt <= cutoff)
+    .sort((left, right) => left.checkedAt - right.checkedAt || left.modId - right.modId)
+    .slice(0, SWEEP_MAX_PER_RUN)
+    .map(({ modId }) => modId);
 }
 
 async function scanQuickMod({ apiKey, appVersion, gameDomain, modId, entryByKey }) {

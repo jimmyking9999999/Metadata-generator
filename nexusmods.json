@@ -25,7 +25,7 @@
         "dllSHA256s": {
             "Thirsty Fingers.dll": "0e7be9223d4be32b68bb878a185f2865b8fe83f6d7d9d3198eb48ac11399af1e"
         },
-        "downloadsSinceLatestVersion": 5,
+        "downloadsSinceLatestVersion": 6,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -48,7 +48,7 @@
             "AI-Generated Content",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z"
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z"
     },
     {
         "Id": "nexus-995",
@@ -76,7 +76,7 @@
         "dllSHA256s": {
             "ItemSpriteOutline.dll": "77c70fb52016a8fdee826c27d1f846883da2450e3194561093c9deffd83cac1c"
         },
-        "downloadsSinceLatestVersion": 26,
+        "downloadsSinceLatestVersion": 27,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -101,7 +101,7 @@
             "Quality of Life",
             "Visual Effects/Particles"
         ],
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z"
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z"
     },
     {
         "Id": "nexus-994",
@@ -129,7 +129,7 @@
         "dllSHA256s": {
             "LaseasMendingKit.dll": "27e31889ce36f55375311f412606916e736e76af549a69e59e6710df4de7d216"
         },
-        "downloadsSinceLatestVersion": 54,
+        "downloadsSinceLatestVersion": 59,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -152,7 +152,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z"
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z"
     },
     {
         "Id": "nexus-993",
@@ -180,7 +180,7 @@
         "dllSHA256s": {
             "MilitaryGearMod.dll": "3b794ebf191377004af805408a7f55c7286e2bb92d5a46ec0f5e6feccee471f9"
         },
-        "downloadsSinceLatestVersion": 29,
+        "downloadsSinceLatestVersion": 32,
         "Dependencies": [
             "nexus-341",
             "nexus-918"
@@ -206,7 +206,60 @@
             "AI-Generated Content",
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z"
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z"
+    },
+    {
+        "Id": "nexus-992",
+        "Name": "Remove Tinnitus",
+        "Version": "1.0",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "com.mayzmae.removetinnitus": "1.0.0"
+        },
+        "Summary": "It removes tinnitus and doesn't use AI. That's it.",
+        "Description": "[b][size=4]What does this do?[/size][/b]\n<br />Remove Tinnitus does exactly what the name says while additionally reducing the volume of sound cannon hits, gunshots, and explosions.\n<br />\n<br />It has no config (right now), no other features and has no dependencies. You can use it if you want, but it likely wasn't made with you in mind, and the other mods around should be enough for your use.\n<br />\n<br />How do I set this up?\n<br />1. Download BepInEx here: [url=https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5]https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5[/url]\n<br />2. Paste it into your game's root folder, then launch it to generate some folders\n<br />3. Download the mod's dll and throw it into BepInEx/plugins\n<br />\n<br />[b][size=4]Why does this exist?[/size][/b]\n<br />Most mods made for this game use AI, including most mods that modify sounds for accessibility reasons. AI is also known to be very bad for the environment.\n<br />\n<br />While I do see it as a good force on occasion I do not approve of it's use right now due to it's environmental impact on the world, and so this mod was made with that purpose in mind.\n<br />\n<br />You can see it as being petty, which is fair, but I don't care what you think. Like I said; this mod wasn't made with you in mind.\n<br />\n<br />[b][size=4]Why not just use QOL?[/size][/b]\n<br />QOL Unknown is a good mod and the creator is a great guy! But for my purposes it does a little too much, and it feels a bit too non-vanilla for my liking. I just need a mod that stops the tinnitus effect.\n<br />\n<br />However for 99.9% of players (which this mod wasn't made for) I would greatly recommend it. [url=https://www.nexusmods.com/scavprototype/mods/7]Download it here![/url]",
+        "Author": "mayzmae",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/992/992-1794951586-429607.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/992"
+        },
+        "DownloadUrl": "nexus://scavprototype/992/3377",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 992,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-17T21:48:44.000Z",
+        "ReleaseDate": "2026-11-17T21:43:43.000Z",
+        "SHA256": "35ee870746b4178248bcb16e626a7e24e097ff422dadaf77f3ca14dcbff601f7",
+        "dllSHA256s": {
+            "RemoveTinnitus.dll": "f3189d03896206a0ecd8e5a45f1933fd95d8c49f7badda0709904f7897bf7ede"
+        },
+        "downloadsSinceLatestVersion": 0,
+        "Dependencies": [
+            "nexus-115"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "RemoveTinnitus.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "RemoveTinnitus.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 0,
+            "TotalDownloads": 0,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/992/992-1794951586-429607.png"
+        ],
+        "nexusTags": [
+            "Quality of Life",
+            "Sound FX"
+        ],
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z"
     },
     {
         "Id": "nexus-990",
@@ -264,10 +317,10 @@
             "Gameplay",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z"
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z"
     },
     {
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z",
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z",
         "Id": "nexus-988",
         "Name": "Expansion of evil dragon formula",
         "Version": "1.01",
@@ -293,7 +346,7 @@
         "dllSHA256s": {
             "邪龙配方扩展.dll": "96fc55a33dbe7ac3a6d05e36ae26020733067e8050407277a191fddd0d641b31"
         },
-        "downloadsSinceLatestVersion": 2,
+        "downloadsSinceLatestVersion": 3,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -404,7 +457,7 @@
             "Gameplay",
             "Unbalanced"
         ],
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z"
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z"
     },
     {
         "Id": "nexus-985",
@@ -458,13 +511,13 @@
         "LastQuickCheck": "2026-11-17T03:17:42.974Z"
     },
     {
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z",
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z",
         "Id": "nexus-984",
         "Name": "Rosary mod",
-        "Version": "4",
-        "bepinexVersion": "1.2.0",
+        "Version": "4.1",
+        "bepinexVersion": "1.2.1",
         "bepinexPlugins": {
-            "com.cabelo.casualties.rosary": "1.2.0"
+            "com.cabelo.casualties.rosary": "1.2.1"
         },
         "Summary": "This mods an rosary of Our Lady, you can pray with it and you will be happy, they say if you are in the edge of death and you prayed before, you will be saved from death... this mod was made with AI, i don't know how to code and i wanted an rosary on C:U, if an real coder make an better version of it i will be really happy.",
         "Description": "[size=4][b]Description[/b][/size]\n<br />[color=#d4d4d8]Tis mod adds an rosary to the game[/color]\n<br />[color=#d4d4d8]with each charcter in the game having different reactions finding it and praying![/color]\n<br />[color=#d4d4d8]Experiment: will pray just like us, since he is now very special[/color]\n<br />[color=#d4d4d8]Milky: will pray in Latin due his high INT level[/color]\n<br />[color=#d4d4d8]Dune: will not be able to pray if he don't get atleast 5 INT![/color]\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[size=3][color=#D4D4D8]unzip the folder and paste the beplex folder on the root of the C:U just like any other mod![/color][/size]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[size=3][color=#D4D4D8]Praying makes you happier and if you are in the edge of death, you get an custom last stand![/color][/size]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />BeplEx and the full version of Casualties Unkown!\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[size=3][color=#D4D4D8]Thanks to claude and the guy that made this cute expie art, the creator of Casualties Unkown and the team that made BeplEx[/color][/size]",
@@ -473,16 +526,16 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/984/984-1794795450-112133648.jpg",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/984"
         },
-        "DownloadUrl": "nexus://scavprototype/984/3376",
+        "DownloadUrl": "nexus://scavprototype/984/3379",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 984,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-17T21:04:29.000Z",
-        "ReleaseDate": "2026-11-17T21:04:29.000Z",
-        "SHA256": "8940489ce3ccb00736658b12910ba925e643f57ab782646f13787267074f63b6",
+        "LastUpdated": "2026-11-17T22:24:26.000Z",
+        "ReleaseDate": "2026-11-17T22:24:26.000Z",
+        "SHA256": "ce21575addc6698816e6bb5e063a30c243eb00b3d323eccda96b37dd4fe6f795",
         "dllSHA256s": {
-            "RosaryMod.dll": "c997dec93890816109448f6e5036fdeadf8adb64f86018480c4f0d77667859d4"
+            "RosaryMod.dll": "2f13918ef96bced439f6fe2a3198ce478b2e92053dd41daca36a75111e5a09a0"
         },
         "downloadsSinceLatestVersion": 0,
         "Dependencies": [],
@@ -490,19 +543,23 @@
             {
                 "Version": "4",
                 "Changelog": "- Nerfed the rosary, so now there is an cooldown between each prayer and you need 10 uses to unlock LMS guarantee.\n- now you can stack 2 LMS if you actually made 20 uses\n- Moodle for praying!\n- Moodle when you get the LMS guarantee (not dead, only when you reach the the 10 use you get it)"
+            },
+            {
+                "Version": "4.1",
+                "Changelog": "- fixed bug moodle dissapering on the next layers"
             }
         ],
         "dllNames": [
             "RosaryMod.dll"
         ],
-        "dllVersion": "1.2.0",
+        "dllVersion": "1.2.1",
         "dllVersions": {
-            "RosaryMod.dll": "1.2.0"
+            "RosaryMod.dll": "1.2.1"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 14,
-            "TotalDownloads": 16,
+            "UniqueDownloads": 15,
+            "TotalDownloads": 20,
             "TotalViews": null
         },
         "Images": [
@@ -571,7 +628,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-16T20:47:34.018Z",
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z",
         "Id": "nexus-982",
         "Name": "SuperBackpack",
         "Version": "0.9.3",
@@ -597,7 +654,7 @@
         "dllSHA256s": {
             "SuperBackpack.dll": "7022f02bbd9adc9a44e1e2bd695de0824836047810058512d6bc4dea610ed0de"
         },
-        "downloadsSinceLatestVersion": 42,
+        "downloadsSinceLatestVersion": 87,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -624,7 +681,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-16T20:47:34.018Z",
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z",
         "Id": "nexus-981",
         "Name": "Realistic Speech",
         "Version": "1",
@@ -672,7 +729,7 @@
             "llama.dll": "17318f48fd6b5ff3e72db0fbf2b5adfab60e8ccb23e634d82c7946c612111c05",
             "mtmd.dll": "46212ff176942b74880625cef789f29ec8c23f34b1812003c0b187bdd9fe8461"
         },
-        "downloadsSinceLatestVersion": 19,
+        "downloadsSinceLatestVersion": 68,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1356,7 +1413,7 @@
         "LastQuickCheck": "2026-11-17T01:51:44.689Z"
     },
     {
-        "LastQuickCheck": "2026-11-16T20:47:34.018Z",
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z",
         "Id": "nexus-955",
         "Name": "Gluttony",
         "Version": "1.0.1",
@@ -1382,7 +1439,7 @@
         "dllSHA256s": {
             "Gluttony.dll": "88a5462e2fcae0804498426cd510fcf291ae1e0d623197e0fbff6e22497a0a4c"
         },
-        "downloadsSinceLatestVersion": 17,
+        "downloadsSinceLatestVersion": 38,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -2277,7 +2334,7 @@
         "LastQuickCheck": "2026-11-17T01:51:44.689Z"
     },
     {
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z",
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z",
         "Id": "nexus-934",
         "Name": "(Character mod) Olivide(cultist)V2.3 -New Multiplayer Mod Support and More Languages-",
         "Version": "2.3",
@@ -2305,7 +2362,7 @@
             "CU.CustomCharacter.dll": "8fd1b1753507ed635859632339989254230ceda2499cc26ff900c5e66fbc3dd7",
             "OlivideNet.dll": "72db05ee4cf8ad0d0964c93ae03004b2662e1a124817bcad2558f367c76b8a70"
         },
-        "downloadsSinceLatestVersion": 10,
+        "downloadsSinceLatestVersion": 14,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4269,7 +4326,7 @@
         "LastQuickCheck": "2026-11-17T01:51:44.689Z"
     },
     {
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z",
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z",
         "LastNotifiedChangelogVersion": "1",
         "Id": "nexus-890",
         "Name": "CU Mechs",
@@ -5799,7 +5856,7 @@
         "LastQuickCheck": "2026-11-17T01:51:44.689Z"
     },
     {
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z",
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z",
         "Id": "nexus-860",
         "Name": "Simpler Firearms",
         "Version": "1.4",
@@ -5825,7 +5882,7 @@
         "dllSHA256s": {
             "CU_Simpler_Firearms.dll": "b0206223a672c7c9dfe077793cf328a29d3ada0e97641b35d8b16b64942fec30"
         },
-        "downloadsSinceLatestVersion": 1,
+        "downloadsSinceLatestVersion": 5,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -9123,7 +9180,7 @@
         "ReleaseDate": "2026-11-03T15:26:15.000Z",
         "SHA256": "ec80f449161bc2c4fd71fef3291ffe223c4184209d5e9cbdbe2a1207e169ad4f",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 20,
+        "downloadsSinceLatestVersion": 22,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -9159,7 +9216,7 @@
             "Gameplay",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-16T20:47:34.018Z"
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z"
     },
     {
         "Id": "nexus-781",
@@ -9209,7 +9266,7 @@
         "nexusTags": [
             "Humour, Joke or Just for Fun"
         ],
-        "LastQuickCheck": "2026-11-16T20:47:34.018Z"
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z"
     },
     {
         "Id": "nexus-778",
@@ -9261,7 +9318,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-16T20:47:34.018Z"
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z"
     },
     {
         "Id": "nexus-776",
@@ -9289,7 +9346,7 @@
         "dllSHA256s": {
             "NoDurabilityEverythingEdition.dll": "a6e5586d0e369d2d2f6b6a65ed36d668d9b70275c7bb7ab478fd4e9c20ace0bc"
         },
-        "downloadsSinceLatestVersion": 298,
+        "downloadsSinceLatestVersion": 301,
         "Dependencies": [
             "nexus-115"
         ],
@@ -9314,7 +9371,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-16T20:47:34.018Z"
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z"
     },
     {
         "Id": "nexus-772",
@@ -12380,7 +12437,7 @@
         "LastQuickCheck": "2026-11-17T21:27:16.531Z"
     },
     {
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z",
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z",
         "Id": "nexus-682",
         "Name": "arabic moooooood",
         "Version": "1",
@@ -13163,7 +13220,7 @@
         "dllSHA256s": {
             "CPUOptimization2.dll": "b25139b1995310fade30fd2f72df590fca607ff979be543d7f30122774b845d9"
         },
-        "downloadsSinceLatestVersion": 733,
+        "downloadsSinceLatestVersion": 738,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -13214,7 +13271,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/670/670-1789072249-715837731.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-17T21:27:16.531Z"
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z"
     },
     {
         "Id": "nexus-669",
@@ -29728,36 +29785,35 @@
         "LastQuickCheck": "2026-11-17T12:37:51.739Z"
     },
     {
+        "LastQuickCheck": "2026-11-17T22:33:59.826Z",
         "Id": "nexus-324",
         "Name": "Gunsaw Genetics",
-        "Version": "2.0.0",
-        "bepinexVersion": "2.0.0",
+        "Version": "2.1.0",
+        "bepinexVersion": "2.1.0",
         "bepinexPlugins": {
-            "spritereplacer": "1.1.0",
-            "GunsawGenetics": "2.0.0",
+            "GunsawGenetics": "2.1.0",
             "gunsawgeneticsmpbridge": "1.0.0"
         },
         "Summary": "Gunsaw Genetics is a mod that adds all 14 (+Albino) species into the game for you to use. As soon as you load in, you will be able to choose your species. #killallnonvoyagers",
-        "Description": "\n<br />[center][size=6][b][color=#ff0000]NOTE: SPRITES ARE NOT INCLUDED IN THIS MOD. DOWNLOAD THEM FROM HERE:[/color][color=#d4d4d8] [/color][/b] [url=https://skin.cat-bot.de/][b][color=#ff00ff]https://skin.cat-bot.de/[/color][/b][/url][/size][/center]\n<br />\n<br />\n<br />\n<br />\n<br />[center][img]https://i.imgur.com/4fOFweo.png[/img][/center]\n<br />[center]Is this mod balanced? [i]No, not at all.\n<br />[/i]Everything is very unfinished and subject to change. If a species hasn't gotten a dedicated update, it's probably buggy as hell.[/center]\n<br />\n<br />[line]\n<br />\n<br />[b][size=5]Installation instructions:[/size]\n<br />[/b]\n<br />[color=#d4d4d8]Requirements:[/color]\n<br />[b][color=#d4d4d8]BepInEx must be installed first.[/color][/b]\n<br />[b][color=#d4d4d8]CUCoreLib must be installed as of v1.5.0[/color][/b]\n<br />[size=2][i][b][color=#d4d4d8]Currently uses: [/color][color=#6d9eeb]Version 1.0.4-alpha (Will say 1.0.5 in the console)[/color][/b][/i][/size]\n<br />[b][color=#d4d4d8]Game version: Casualties Unknown demo v7.0.1[/color][/b]\n<br />[b][color=#ff0000]RshLib is incompatible with Gunsaw Genetics. [/color]\n<br />[/b][color=#ff0000][b] AiserOmniMod seems to also break things in GG.[/b][/color]\n<br />\n<br />[center]Litmus Test:[/center]\n<br />[center][/center]\n<br />[center][youtube]RyGaaDV82p0[/youtube][/center]\n<br />[color=#d4d4d8][b]\n<br />\n<br />[size=5]Steps:[/size][/b][/color]\n<br />[color=#d4d4d8][b][size=4]1.[/size][/b] Download the Gunsaw Genetics.zip file.[/color]\n<br />\n<br />[color=#d4d4d8][b][size=4]2.[/size][/b] Extract the contents of the .zip file.[/color]\n<br />\n<br />[color=#d4d4d8][b][size=4]3.[/size][/b] Done! Don't drag the files/folders instead of the GunsawGenetics folder into plugins. Just leave it as is.[/color]\n<br />\n<br />[i][color=#d4d4d8]This is the correct format:[/color]\n<br />[/i][color=#d4d4d8]&#92;BepInEx&#92;plugins&#92;GunsawGenetics[/color]\n<br />[color=#d4d4d8]&#92;BepInEx&#92;plugins&#92;GunsawGenetics&#92;GunsawGenetics.dll[/color]\n<br />&#92;BepInEx&#92;plugins&#92;GunsawGenetics&#92;body_sprite_replacer.dll\n<br />[color=#d4d4d8]etc.[/color]\n<br />\n<br />\n<br />[size=4][color=#d4d4d8](Optional but [/color][b][color=#d4d4d8]HIGHLY[/color][/b][color=#d4d4d8] Recommended)[/color][/size]\n<br />[color=#d4d4d8]To add custom skins, navigate to &#92;BepInEx&#92;plugins&#92;GunsawGenetics&#92;CustomSprites and add in the sprites of your choosing. Folders are ordered the same as the species. 1 = Expie, 15 = Albino. [b]You do not need to separate sprites in Head / Body. If your files only have Body, just delete the extra folder. It is there for old versions of GG.[/b][/color]\n<br />\n<br />[color=#d4d4d8][b][size=4]4.[/size][/b] Launch the game.[/color]\n<br />\n<br />[line]\n<br />\n<br />[size=4][b]Main features:[/b][/size]\n<br />\n<br />[color=#d4d4d8]Each species is given different stats, resistances, passives, actives, and sometimes even items.[/color]\n<br />\n<br />[size=3][color=#d4d4d8]As of v1.1.0, progression has been added to unlocking each species. This is[/color] [b][color=#ff00ff]entirely optional[/color][color=#d4d4d8].[/color][/b][color=#d4d4d8] There is a checkbox on the same menu that can be used to unlock every species. It can be toggled at any time and does [/color][i][color=#d4d4d8]not[/color][/i][color=#d4d4d8] wipe progress.[/color][/size]\n<br />\n<br />[i][color=#d4d4d8]These are definitely not final. This is my first mod outside of Minecraft, so I'm still learning. [/color][/i]\n<br />[i][color=#d4d4d8]Expect new mechanics, abilities, etc. to be added with time.[/color][/i]\n<br />\n<br />\n<br />[center][size=4]Gunsaw Genetics now has a...[/size][/center]\n<br />[center][/center]\n<br />[center][url=https://gunsawgenetics.miraheze.org/wiki/Main_Page][/url][url=https://gunsawgenetics.miraheze.org/wiki/Main_Page][color=#9900ff][size=6][b]Wiki!!!![/b][/size][/color][/url][/center]\n<br />[center][color=#1e84cc]^[/color]\n<br />[color=#1e84cc]Click this![/color][/center]\n<br />[center][/center]\n<br />\n<br />[line]\n<br />\n<br />[size=4][b]Credits:\n<br />[/b][/size]\n<br />\n<br />[b]Art assets:[/b]\n<br />\n<br />[b][size=4]ThePristineAnt!!!!!!![/size][/b]\n<br />This guy is my goat. I couldn't do even a fraction of this myself.\n<br />\n<br />Specifically, as of v1.6.5:\n<br />[spoiler]All custom moodle art.\n<br />Baron WoundView sprites.\n<br />Milky WoundView sprites.\n<br />Dune WoundView sprites.\n<br />Velvet WoundView sprites.\n<br />Orange Portrait art.\n<br />Albino Portrait art.\n<br />Voyager Portrait art.[/spoiler]\n<br />[b][size=4]Toky!!![/size][/b]\n<br />Specifically, as of v1.6.5:\n<br />[spoiler]Velvet Portrait art.[/spoiler]\n<br />\n<br />\n<br />[b][size=3]Writing:[/size]\n<br />[/b]\n<br />Velvet dialogue:  ThePristineAnt!\n<br />Milky dialogue:    ThePristineAnt!\n<br />Dune dialogue:   Dirasial!\n<br />Orange dialogue: frigidFriend / DaryllDemo! (Aliases. Same guy!)\n<br />\n<br />[b]Notes / E-PDAs:\n<br />[/b]\n<br />ThePristineAnt:\n<br />\n<br />[spoiler][list]\n<br />[*]OrangeNote1[/*]\n<br />[*]OrangeNote2[/*]\n<br />[*]LeapyNote1[/*]\n<br />[*]LeapyNote2[/*]\n<br />[*]BaronNote1[/*]\n<br />[*]BaronNote2[/*]\n<br />[*]VelvetNote1[/*]\n<br />[*]AlbinoNote2[/*]\n<br />[*]Orange E-PDA[/*]\n<br />[*]Baron E-PDA[/*]\n<br />[*]Leapy E-PDA[/*]\n<br />[*]Voyager E-PDA[/*]\n<br />[/list][/spoiler]\n<br />\n<br />[b]Localization:[/b]\n<br />\n<br />Chinese translation: lpoklpok!!!\n<br />\n<br />\n<br />[b]Sprite Replacement Logic:[/b]\n<br />\n<br />Modified from Player Sprite Replacer by [url=https://www.nexusmods.com/scavprototype/users/43097342]d0gederp[/url]. I wouldn't have been able to do the visual side of this mod without this. Please check out their work:\n<br />\n<br />https://www.nexusmods.com/scavprototype/mods/15?tab=description\n<br />\n<br />Original Game Assets: Orsoniks\n<br />\n<br />[line]\n<br />[center][img width=383]https://i.imgur.com/oZysglG.png[/img][/center]\n<br />[center][/center]\n<br />[center]\n<br />If you need to contact me directly, you can join my discord.[/center]\n<br />[center](This is for another mod of mine, but I don't really care lol)[/center]\n<br />[center][/center]\n<br />[center][url=https://discord.gg/gFydkw8MyK]https://discord.gg/gFydkw8MyK[/url][/center]\n<br />\n<br />",
+        "Description": "[center][b][size=6][color=#ff0000]NOTE: SPRITES ARE NOT INCLUDED IN THIS MOD. DOWNLOAD THEM FROM HERE:[/color][color=#d4d4d8] [/color][/size][/b] [url=https://skin.cat-bot.de/][size=6][b][color=#ff00ff]https://skin.cat-bot.de/[/color][/b][/size][/url][/center]\n<br />\n<br />\n<br />\n<br />\n<br />[center][img]https://i.imgur.com/4fOFweo.png[/img][/center]\n<br />[center]Is this mod balanced? [i]No, not at all.\n<br />[/i]Everything is very unfinished and subject to change. If a species hasn't gotten a dedicated update, it's probably buggy as hell.[/center]\n<br />\n<br />[line]\n<br />\n<br />[b][size=5]Installation instructions:[/size]\n<br />[/b]\n<br />[color=#d4d4d8]Requirements:[/color]\n<br />[b][color=#d4d4d8]BepInEx must be installed first.[/color][/b]\n<br />[b][color=#d4d4d8]CUCoreLib must be installed as of v1.5.0[/color][/b]\n<br />[size=2][i][b][color=#d4d4d8]Currently uses: [/color][color=#6d9eeb]Version 1.0.4-alpha (Will say 1.0.5 in the console)[/color][/b][/i][/size]\n<br />[b][color=#d4d4d8]Game version: Casualties Unknown demo v7.0.1[/color][/b]\n<br />[b][color=#ff0000]RshLib is incompatible with Gunsaw Genetics. [/color]\n<br />[/b][color=#ff0000][b] AiserOmniMod seems to also break things in GG.[/b][/color]\n<br />\n<br />[center]Litmus Test:[/center]\n<br />[center][/center]\n<br />[center][youtube]RyGaaDV82p0[/youtube][/center]\n<br />[color=#d4d4d8][b]\n<br />\n<br />[size=5]Steps:[/size][/b][/color]\n<br />[color=#d4d4d8][b][size=4]1.[/size][/b] Download the Gunsaw Genetics.zip file.[/color]\n<br />\n<br />[color=#d4d4d8][b][size=4]2.[/size][/b] Extract the contents of the .zip file.[/color]\n<br />\n<br />[color=#d4d4d8][b][size=4]3.[/size][/b] Done! Don't drag the files/folders instead of the GunsawGenetics folder into plugins. Just leave it as is.[/color]\n<br />\n<br />[i][color=#d4d4d8]This is the correct format:[/color]\n<br />[/i][color=#d4d4d8]&#92;BepInEx&#92;plugins&#92;GunsawGenetics[/color]\n<br />[color=#d4d4d8]&#92;BepInEx&#92;plugins&#92;GunsawGenetics&#92;GunsawGenetics.dll[/color]\n<br />&#92;BepInEx&#92;plugins&#92;GunsawGenetics&#92;body_sprite_replacer.dll\n<br />[color=#d4d4d8]etc.[/color]\n<br />\n<br />\n<br />[size=4][color=#d4d4d8](Optional but [/color][b][color=#d4d4d8]HIGHLY[/color][/b][color=#d4d4d8] Recommended)[/color][/size]\n<br />[color=#d4d4d8]To add custom skins, navigate to &#92;BepInEx&#92;plugins&#92;GunsawGenetics&#92;CustomSprites and add in the sprites of your choosing. Folders are ordered the same as the species. 1 = Expie, 15 = Albino. [b]You do not need to separate sprites in Head / Body. If your files only have Body, just delete the extra folder. It is there for old versions of GG.[/b][/color]\n<br />\n<br />[color=#d4d4d8][b][size=4]4.[/size][/b] Launch the game.[/color]\n<br />\n<br />[line]\n<br />\n<br />[size=4][b]Main features:[/b][/size]\n<br />\n<br />[color=#d4d4d8]Each species is given different stats, resistances, passives, actives, and sometimes even items.[/color]\n<br />\n<br />[size=3][color=#d4d4d8]As of v1.1.0, progression has been added to unlocking each species. This is[/color] [b][color=#ff00ff]entirely optional[/color][color=#d4d4d8].[/color][/b][color=#d4d4d8] There is a checkbox on the same menu that can be used to unlock every species. It can be toggled at any time and does [/color][i][color=#d4d4d8]not[/color][/i][color=#d4d4d8] wipe progress.[/color][/size]\n<br />\n<br />[i][color=#d4d4d8]These are definitely not final. This is my first mod outside of Minecraft, so I'm still learning. [/color][/i]\n<br />[i][color=#d4d4d8]Expect new mechanics, abilities, etc. to be added with time.[/color][/i]\n<br />\n<br />\n<br />[center][size=4]Gunsaw Genetics now has a...[/size][/center]\n<br />[center][/center]\n<br />[center][url=https://gunsawgenetics.miraheze.org/wiki/Main_Page][/url][url=https://gunsawgenetics.miraheze.org/wiki/Main_Page][color=#9900ff][size=6][b]Wiki!!!![/b][/size][/color][/url][/center]\n<br />[center][color=#1e84cc]^[/color]\n<br />[color=#1e84cc]Click this![/color][/center]\n<br />[center][/center]\n<br />\n<br />[line]\n<br />\n<br />[size=4][b]Credits:\n<br />[/b][/size]\n<br />\n<br />[b]Art assets:[/b]\n<br />\n<br />[b][size=4]ThePristineAnt!!!!!!![/size][/b]\n<br />This guy is my goat. I couldn't do even a fraction of this myself.\n<br />\n<br />Specifically, as of v1.6.5:\n<br />[spoiler]All custom moodle art.\n<br />Baron WoundView sprites.\n<br />Milky WoundView sprites.\n<br />Dune WoundView sprites.\n<br />Velvet WoundView sprites.\n<br />Orange Portrait art.\n<br />Albino Portrait art.\n<br />Voyager Portrait art.[/spoiler]\n<br />[b][size=4]Toky!!![/size][/b]\n<br />Specifically, as of v1.6.5:\n<br />[spoiler]Velvet Portrait art.[/spoiler]\n<br />\n<br />\n<br />[b][size=3]Writing:[/size]\n<br />[/b]\n<br />Velvet dialogue:  ThePristineAnt!\n<br />Milky dialogue:    ThePristineAnt!\n<br />Dune dialogue:   Dirasial!\n<br />Orange dialogue: frigidFriend / DaryllDemo! (Aliases. Same guy!)\n<br />\n<br />[b]Notes / E-PDAs:\n<br />[/b]\n<br />ThePristineAnt:\n<br />\n<br />[spoiler][list]\n<br />[*]OrangeNote1[/*]\n<br />[*]OrangeNote2[/*]\n<br />[*]LeapyNote1[/*]\n<br />[*]LeapyNote2[/*]\n<br />[*]BaronNote1[/*]\n<br />[*]BaronNote2[/*]\n<br />[*]VelvetNote1[/*]\n<br />[*]AlbinoNote2[/*]\n<br />[*]Orange E-PDA[/*]\n<br />[*]Baron E-PDA[/*]\n<br />[*]Leapy E-PDA[/*]\n<br />[*]Voyager E-PDA[/*]\n<br />[/list][/spoiler]\n<br />\n<br />[b]Localization:[/b]\n<br />\n<br />Chinese translation: lpoklpok!!!\n<br />\n<br />\n<br />[b]Sprite Replacement Logic:[/b]\n<br />\n<br />Modified from Player Sprite Replacer by [url=https://www.nexusmods.com/scavprototype/users/43097342]d0gederp[/url]. I wouldn't have been able to do the visual side of this mod without this. Please check out their work:\n<br />\n<br />https://www.nexusmods.com/scavprototype/mods/15?tab=description\n<br />\n<br />Original Game Assets: Orsoniks\n<br />\n<br />[line]\n<br />[center][img width=383]https://i.imgur.com/oZysglG.png[/img][/center]\n<br />[center][/center]\n<br />[center]\n<br />If you need to contact me directly, you can join my discord.[/center]\n<br />[center](This is for another mod of mine, but I don't really care lol)[/center]\n<br />[center][/center]\n<br />[center][url=https://discord.gg/gFydkw8MyK]https://discord.gg/gFydkw8MyK[/url][/center]\n<br />\n<br />",
         "Author": "Xion",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/324/324-1784646089-193524787.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/324"
         },
-        "DownloadUrl": "nexus://scavprototype/324/2377",
+        "DownloadUrl": "nexus://scavprototype/324/3378",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 324,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-10-04T16:20:27.000Z",
-        "ReleaseDate": "2026-10-04T16:20:26.000Z",
-        "SHA256": "332e2b84a31c4c274ce644fd2a3e9ed04688d790a91613ebd929441d270004d9",
+        "LastUpdated": "2026-11-17T22:12:52.000Z",
+        "ReleaseDate": "2026-11-17T22:12:52.000Z",
+        "SHA256": "86de4713c1b576361b8d3f4cbe59b118ad509a0e2b93ce453f80c9e9dad0331f",
         "dllSHA256s": {
-            "body_sprite_replacer.dll": "071b388ad4b73dc33f6483d616953efea6730b003f99fa406b8d29729571be9a",
-            "GunsawGenetics.dll": "3053c925a321b0c9aaa449c41a1bb06be46879ce5160555a14f16963e4eeaecf",
+            "GunsawGenetics.dll": "bb5d779992ae09f5ea8b667d640417072cc0f4437a23572b0de695e044bcfc2a",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 8506,
+        "downloadsSinceLatestVersion": 25,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29811,23 +29867,25 @@
             {
                 "Version": "2.0.0",
                 "Changelog": "- **Gunsaw Genetics v2.0.0 Changelog:**\n- **Orange Overhaul:**\n- *Orange now has four arms! These are completely new limbs that actually exist on the ragdoll. They copy the same sprites used for the upper arms, fixing any issues with custom sprites.*\n- **Dysregulation and Meltdown:**\n- *Sustained three/four arm strain can build toward an emotional overload event. A slow, mostly invisible buildup escalates into two visible stages if left unmanaged.*\n- Trigger only possible with 3 or 4 arms attached. Impossible at 2 or fewer.\n- Checked every 10 seconds. Chance increases from:\n- - Current mood and mood ~6 minutes ago, once either drops below -30 happiness (up to +5% combined at the worst extreme, -90)\n- - Stamina below 20 (+1%)\n- - Dirtiness above 70 (+1%)\n- - Temperature outside roughly 34-39°C (+1%)\n- Standing on a Good sleep quality tile reduces this by -1%, an Okay tile by -0.5%.\n- Once building, progression rises using the same factors above, 30% faster with all four arms attached versus three.\n- Early stages (invisible, progression 0-20+):\n- - Talker line alteration chance slowly increases.\n- - Minigame hand control penalty slowly increases.\n- - Mood drains very slowly, scaling with progression.\n- Later stages (still invisible, progression 40-70):\n- - Heart rate and blood pressure begin a slow rise.\n- - Stamina drains faster.\n- - Low stamina dialogue lines are suppressed.\n- - - *Doesn't fit, and takes the place of better lines*\n- - Early stage effects continue increasing.\n- Dysregulation (progression 70+, first visible stage):\n- - Dysregulation moodle appears (by KindaYellowishStuff!).\n- - All of the above effects are now more pronounced.\n- Meltdown (progression 90+, final stage):\n- - Dysregulation moodle disappears.\n- - Meltdown moodle appears (by KindaYellowishStuff!).\n- - Progression locks to 100 for the duration.\n- - A timed event triggers, lasting roughly 30-45 seconds.\n- - Movement is locked.\n- - Actions are refused roughly 60% of the time.\n- - Heart rate, blood pressure, adrenaline, and respiratory rate rise toward elevated levels, with some natural fluctuation.\n- - The screen desaturates, the camera eases into a slight zoom, and the screen shakes lightly for the duration.\n- - After a Meltdown ends, progression drains back to 0 over about 50 seconds. Once it reaches 0, there is a 5 minute cooldown before it can trigger again at all.\n- Can be countered by:\n- - Opiates and antidepressants, scaling with dose.\n- - Plushies give an instant, flat reduction per use. Costs a small amount of durability, but only when it actually reduces progression.\n- - A trusted (90+ reputation), non-Dune trader standing nearby. Gives a smaller reduction roughly every 20 seconds, with dialogue.\n- - Successfully hugging a trusted, non-Dune trader. Gives a larger, one-time reduction (once per trader).\n- - Losing any arm immediately and fully cancels progression.\n- - Reducing progress to 0 cancels it, and puts the trigger on a 60 second cooldown (Still needs to trigger by chance again, once off cooldown).\n- Impossible to trigger after becoming Hollow.\n- **Four Arms:**\n- The new arms move with a distinct diagonal gait, swinging opposite the original arms instead of in lockstep.\n- Radial menu updated to include two more hand slots (Tertiary hand, Quaternary hand)\n- Woundview updated to show and allow treatment of all four arms.\n- - New limb names are tagged with (L) to distinguish them from the original arms\n- Losing a whole arm causes bleeding on the abdomen, matching how losing an original arm affects the torso\n- The lower arms can be amputated at any time, without needing to be severely infected first\n- - Cutting tool tooltips update to reflect this while playing Orange\n- Chance to fail at reading blueprints:\n- - 35% with both extra arms attached, 17.5% with one\n- - Failing still consumes the blueprint, but grants no recipe or XP\n- Crafting fail chance increased:\n- - 60% with both extra arms attached, 55% with one (vanilla is 50%)\n- Talker lines can be altered (repetition, trailing off, word dropping):\n- - Up to 3 alterations can stack on a single line\n- - Chance per alteration: 25% / 15% / 10% (1st / 2nd / 3rd), halved with one extra arm attached, doesn't occur with none attached\n- When a lower arm is lost:\n- +1 INT, regardless of current level\n- +5% INT XP rate (so a two-armed Orange has a 45% INT XP rate, up from the baseline 35%)\n- Successfully hugging a trader (first time only, per trader) grants an additional +3 reputation and +1.5 mood per arm currently attached (does not apply to Dune).\n- Arm warmers and limb wraps can each be worn a second time to cover the new arms independently. Limb wraps' feet protection does not stack with this.\n- **Trader Reputation:**\n- All trader reputation still receives a bonus from current mood\n- - Bonus = Mood x 0.45\n- Milky:\n- - -15 Baseline Reputation\n- - -5 Per extra arm (beyond the original two)\n- Dune:\n- - +15 Baseline Reputation\n- - +3 Per extra arm\n- Experiment:\n- - +15 Baseline Reputation\n- **General:**\n- Orange's mood swings harder than baseline, scaling with arms currently attached:\n- - 1.15x at two or fewer\n- - 1.3x at three\n- - 1.5x at four.\n- Bone healing buff removed\n- New keybind, Hand Step Back. Default: E.\n- - Cycles backward one hand slot, so you don't need to cycle through all four to go back\n- New setting, Show Hand Labels. Off by default.\n- - Displays a label showing which hand slot is currently active/next, to help with getting used to four slots\n--------------------------------------------------------------------------------------\n- **Albino Changes:**\n- *Albino was a very early update, so it was about time that I went back and cleaned them up.*\n- Heart rate, blood pressure, stamina, and consciousness now ramp in and fall off instead of snapping instantly. Still fast, just no longer instant.\n- Fixed several bugs from early GG versions:\n- - Body temperature no longer spikes on a new run.\n- - Custom Desync music now correctly respects your saved on/off preference on loaded runs (previously always defaulted to off)\n- - All Desync state now properly resets on a new character, instead of partially carrying over\n- Stage 3 no longer force sets vitals to zero. It now pushes heart rate high enough to trigger real cardiac arrest and fibrillation.\n- Added the Nociceptive Suppression Chip (NSC), a permanent, non-removable, non-sellable implant every Albino now carries. Purely cosmetic/lore for now.\n- New UI element: an NSC status indicator appears on the Woundview..\n- - Escalates with Desync stage: subtle at Stage 1, more unstable at Stage 2 (flicker, minor shake), and outright corrupted at Stage 3.\n- - At Stage 2 and above, will occasionally flash a different, hallucinated phrase in place of its normal text.\n- - The main Woundview header and mood icon can now also be affected by the same hallucination, showing a corrupted phrase or a rapidly shifting expression instead of the real thing.\n- **Starting Wounds:**\n- Albino now rolls a random set of old injuries and conditions in three tiers:\n- - Minor: always rolls.\n- - Moderate: 55% chance.\n- - Serious: 12% chance. At most one Serious condition.\n- A tier can give a second pick (40%), and a third (15% *after* a second). Serious never gives more than one.\n- Minor conditions:\n- - Low mood\n- - Underweight\n- - A splinted arm or leg fracture\n- - Damaged claws\n- Moderate conditions:\n- - Trauma\n- - Broken (splinted) ribs\n- - Rapid Neuron Regeneration Sickness\n- Serious conditions:\n- - Opioid craving\n- - Losing an eye\n- - A broken (splinted) neck\n- - Hollow\n- Losing both eyes is never possible.\n- Only one fracture can be rolled per Albino.\n- Rolling Hollow removes low mood and trauma from the other tiers, since Hollow would erase them anyway.\n-----------------------------------------------------------------------------------\n- **Albino Trader Added:**\n- Replaces roughly 5% of all traders. Only Experiment traders can become him, and he never replaces chests.\n- Has his own sprites, name, and lore tooltip.\n- 700 health.\n- **Trading:**\n- Carries far more stock than other traders, skewed toward medical and drug items.\n- His sell limit is 120 instead of 60. Value still starts at 0 and converts at the normal rate.\n- Pays a large bonus for Combat Pens (Epinephrine). The bonus doesn't count against his sell limit.\n- New category, Restricted, below Prefer to Keep:\n- - Contains the Auto Pump, Manual Defibrillator, Amiodarone, and Combat Pen.\n- - Locked until you reach 160 reputation. Clicking a locked item gets a refusal and costs you nothing.\n- - Same price increase as Prefer to Keep, and buying from it gives no reputation.\n- - Any extra copy of those items he rolls elsewhere is moved into this category.\n- - Other Albinos (Players) always have access, regardless of reputation.\n- **Combat:**\n- Swings and repositions faster than other traders, and roams a much wider area while hostile.\n- Desync:\n- - Can trigger once he is at 600 health or below, with a 20% chance each second.\n- - Lasts 15 seconds. Swings faster, stays much closer to you, and takes 60% less damage.\n- - Activation line plays when it begins.\n- Recovery:\n- - Lasts 5 seconds. He can't move or attack, and all Desync buffs are removed.\n- - Can trigger Desync again after a 20 second cooldown.\n- **Trader Reputation:**\n- Albino species: +50\n- Positive (+8): Roza, Orange, Chompy, Baron\n- Slightly negative (-3): Milky, Leapy\n- Negative: Icke (-8), Voyager (-10), Velvet (-10), Dune (-10)\n- All other species: no change\n- **Dialogue:**\n- Full trader dialogue written for Voyager and Albino players, covering greetings, trading, hugs, combat, and condition responses.\n- All other species currently use Experiment's trader lines.\n- Albino (player) now has their own greeting, murder regret, and swing response lines.\n-----------------------------------------------------------------------------------\n- **Mercenary Changes:**\n- Levitation Chip added\n- Reformation Chip added\n- Mindswap Chip added\n- All three of these are unable to be removed, just like Albino's NSC chip.\n- **Leapy Changes:**\n- Natural regeneration nerfed. It was almost as fast as Regrowth due to an oversight during Leapy's update.\n- Regrowth now heals skin and muscle notably faster than natural regeneration.\n- **Roza Changes:**\n- Cooling now drains thirst more slowly, with a lower starting cost and a gentler increase the longer it's held.\n- **Voyager Changes:**\n- Cloak now has its own slot and doesn't take the belt slot anymore. Whoops.\n- **Custom Hand Sprites:**\n- *By Echosian!*\n- Orange Hand Sprites added\n- Baron Hand Sprites added\n- *By Dirasial!*\n- Albino Hand Sprites added\n- **Custom Woundview:**\n- Dune Woundview Sprites redrawn (By ThePristineAnt!!!)\n- Orange Woundview Sprites added (By Dirasial!!)\n- **Portraits:**\n- Roza Portrait art added (By Echosian!!!!)\n- Leapy Portrait art added (By Echosian!!!)\n- **Notes:**\n- *By ThePristineAnt!!!*\n- Crystal Note 1 added\n- Crystal Note 2 added\n- Shelly Note 1 added\n- Shelly Note 2 added\n- **E-PDAs:**\n- *By ThePristineAnt!!!*\n- Crystal E-PDA 1 added\n- Shelly E-PDA 1 added\n- Dune E-PDA 1 added\n- **Carrying Capacity and Barrels:**\n- Some species now have extra carrying capacity. Starting capacity is Experiment's baseline plus:\n- - Roza, Velvet, Dune, Crystal: +1.0u\n- - Shelly, Chompy: +1.5u\n- - Orange: +1.5u, plus +0.5u per extra arm attached (+2.5u with all four)\n- - Baron: +4.5u\n- No species has reduced capacity.\n- Baron now counts each minibarrel he carries as 6u instead of 12u toward his carrying capacity. The item's tooltip still shows 12u.\n- Orange gets the same reduction, with an extra requirement:\n- - The barrel must be held in a hand slot, and it takes both hands of a pair: Main + Secondary, or Tertiary + Quaternary (clumsy).\n- - The other hand in the pair drops whatever it holds and can't hold anything until the barrel is put down. The other pair is unaffected.\n- - Both locked hands are colored blue so it's clear what's happening.\n- - If either hand in the pair is broken, dislocated or missing, the barrel counts as its full 12u.\n- **Custom Species Overhaul:**\n- *Custom species can now use most of the systems built-in species do.*\n- New editor options, on a second column:\n- - XP rate per stat (STR / RES / INT), as a percentage (100 = normal).\n- - Diet: None, Carnivore, Herbivore, Semi-Herbivore or Semi-Carnivore, with the same penalties as built-in species.\n- - Hunger and thirst cap offset (-30 to +60).\n- - Weight bonus in kg (cosmetic only).\n- - Carry capacity bonus (-10u to +10u).\n- - Blood volume (60 to 200, 100 = normal). Works like Baron's, including the scaled bleed display and death thresholds.\n- - Baseline reputation with each trader (Experiment, Milky, Dune, Albino).\n- The editor was rearranged into two columns to fit everything.\n- Custom species made in earlier versions still load, but need to be re-saved to use the new options.\n- The ggswitchspecies command now lists and accepts custom species.\n- **Quality of Life:**\n- *This is definitely missing a bit. I'm not the best at keeping my changelogs 100% accurate.*\n- Added a reading progress bar to long notes and E-PDAs. An option to disable this in settings was added as well.\n- Added a new debug command, ggdebugomniorange, to fire all four hands at once (Orange only, for fun/testing)\n- Commands remade to properly show autofilling. *ALL* commands are now formatted as \"gg+command\" instead of \"GG\" + \"<subcommand>\".\n- **General:**\n- Dune's placeholder bite button icon replaced (By Dirasial!!!)\n- Velvet's placeholder cannibalize icon replaced (By Dirasial!!!)\n- **Bug Fixes:**\n- Starting hunger and thirst now scale with the species' own caps, so species with raised caps no longer start underfed, and lowered caps no longer start overfed.\n- The heal command now restores hunger and thirst to the species' full point, and Baron's blood volume to its own maximum (Only did 100/100 + 5.00l before)\n- Fixed species hunger and thirst caps only partly applying:\n- - Passive weight gain and loss now follow your species' own caps, with the same range and rates as vanilla.\n- - Being overfed or overhydrated no longer blocks jumping or cripples movement before your species' own limit. (This is why Baron/Orange's movement felt a lot worse than the stat numbers would imply. They both are far more mobile now!)\n- Fixed a crash in the hunger and thirst Woundview bars. When another mod changed those bars, the inventory and crafting menus could disappear until a restart.\n- Fixed a Woundview weight display error when no species had been selected yet.\n- Fixed species unlocks sometimes being reset by the in-game settings menu. The BepInEx config and the in-game settings now stay in sync, and whichever you change last wins.\n- Fixed traders dropping a huge pile of bandages when killed with a Voyager stealth attack while the Voyager was bleeding.\n- Fixed Dune's overfeed sickness reduction using vanilla's hunger cap instead of their own.\n- Fixed species with a raised or lowered hunger/thirst cap getting a permanent immunity bonus or penalty from the cap offset. This was very minor, so don't expect a huge change in gameplay.\n- Fixed the Woundview fracture/dislocation icon and the health/armor mode toggle staying green instead of matching the species' color."
+            },
+            {
+                "Version": "2.1.0",
+                "Changelog": "- **Gunsaw Genetics v2.1.0 Changelog:**\n- **Crystal Overhaul:**\n- **[TONGUE]** added\n- - Active ability. Tap the ability key to fire a tongue that sticks to the first solid thing it hits.\n- - - Hold the ability key to reel, and tap it to let go.\n- - - Terrain pulls you toward it. Loose objects are pulled toward you, with force shared by mass. Light things fly to you, heavy things drag you to them. Physics bro\n- - A stuck tongue acts like a rope. It holds you at its length, bends around terrain corners, and can be used to swing. Air control is reduced while hanging from it.\n- - Strain builds while the tongue is in use. Tugging against something on the ground builds it, and so does hanging, swinging, or reeling in the air. Tongue can give out and be put on cooldown.\n- - Small enough enemies (Cave Ticks rn) are reeled in automatically and eaten. Controls are locked until it's done. Gives a small amount of hunger.\n- - Traps can be set off by the tongue, and the tongue can be hurt by them.\n- - - Spike Traps and Turrets fire when the tongue crosses their trigger, and hurt it badly if it's still in the way when they do.\n- - - Barbed Fences hurt on contact. A tongue draped over one takes small, repeated damage.\n- **Gunsaw Genetics v2.1.0 Changelog:**\n- **Crystal Overhaul:**\n- **[TONGUE]** added\n- - Active ability. Tap the ability key to fire a tongue that sticks to the first solid thing it hits.\n- - - Hold the ability key to reel, and tap it to let go.\n- - - Terrain pulls you toward it. Loose objects are pulled toward you, with force shared by mass. Light things fly to you, heavy things drag you to them. Physics bro\n- - A stuck tongue acts like a rope. It holds you at its length, bends around terrain corners, and can be used to swing. Air control is reduced while hanging from it.\n- - Strain builds while the tongue is in use. Tugging against something on the ground builds it, and so does hanging, swinging, or reeling in the air. Tongue can give out and be put on cooldown.\n- - Small enough enemies (Cave Ticks rn) are reeled in automatically and eaten. Controls are locked until it's done. Gives a small amount of hunger.\n- - Traps can be set off by the tongue, and the tongue can be hurt by them.\n- - - Spike Traps and Turrets fire when the tongue crosses their trigger, and hurt it badly if it's still in the way when they do.\n- - - Barbed Fences hurt on contact. A tongue draped over one takes small, repeated damage.\n- - - Coils shock the body (reduced) when the tongue hits them.\n- - - Landmines can be pressed by the tongue. Any explosion close to the tongue will damage it. You can do this fast enough to not be hurt.\n- - - Bear Traps catch the tongue and hold it. Pulling free rips it off. Breaking the trap will free it.\n- - Tongue injuries land on the head. Severe damage can disfigure the face, and disfigurement disables the tongue.\n- **[LITHOPHAGOUS]** added\n- - The vanilla crystal shards can be dragged to the center of the inventory like food. Each one gives a stronger but short version of its passive effect, plus a small amount of hunger.\n- - - Each active shard gets its own moodle with a timer and a stack count.\n- - - Stacking is disabled on Turbulent crystals and instead overwrites with the higher of the two\n- **[FURLESS]** added\n- - Crystal uses (vanilla) Dune's quirk, Furless. Effects should be 1:1.\n- - - These include: Half base insulation, faster drying, and water stabilizing body temperature.\n-----------------------------------------------------------------------------------\n- **Roza Trader Added:**\n- Roza is a fourth trader type, spawning alongside Experiment, Milky, and Dune. Unlike Albino from last update, this is a completely new spawn, not a % chance for replacement.\n- Spawn chance scales with the layer (share of all traders):\n- - Gravel Lands: ~3%\n- - Deeper Gravel Lands: ~5%\n- - Dried Desert: Never\n- - Wasteland: ~9%\n- - Overgrown Depths: ~12%\n- - I'll add the rest later. They DO still appear though.\n- Always sells an ice pack.\n- Hug reputation requirement lowered to 90 (vanilla is 100).\n- Hugging Roza chills you. Every successful hug lowers your body temperature by 0.6°C, down to a minimum of 35°C. Roza won't let you get colder than that.\n- Medicine is 25% cheaper while your REP with her is 90 or higher.\n- **Freezing:**\n- New button to the right of the hug button (Requires 90 REP).\n- Pressing it tints the sell area blue. Drag an item there to have Roza freeze it instead of buying it.\n- Costs 5 trade credit.\n- Roza refuses things that can't be frozen (Dry food, empty containers) and things that are already frozen.\n- **Frozen Items:**\n- *Frozen items are now available to everyone, so this is just making up for that. The general mechanics are still the same.*\n- No species can eat or drink frozen items anymore. Previously, only Roza refused them. Other species get their own refusal line.\n- Frozen liquid containers can no longer pour liquid into, or out of, other containers.\n- Frozen liquid containers can no longer be drained in the radial inventory.\n-----------------------------------------------------------------------------------\n- **Trader Chat:**\n- *You can now talk to traders. Chats are short conversations with one choice in the middle, and what you say changes how they feel about you (and how you feel about them).*\n- New chat button, to the right of the trader's info box. It greys out with a tooltip explaining why when you can't use it, and disappears when the trader is hostile.\n- Each trader gets one chat. A random conversation is rolled when you start it, and you can't reroll.\n- Conversations are unique to each pairing of your species and theirs. Playing an Experiment and talking to a Milky has different conversations to playing a Milky and talking to an Experiment.\n- Each conversation has a REP weight. Conversations closer to your current REP with the trader are more likely, so higher REP leads to more personal chats.\n- You can't start a chat if the trader's reputation is below 60, or if your mood is below -50.\n- Every trader of the same species gives you a new conversation. Rolled conversations are tracked/saved and never rolled again for that run. Obviously resets on a new run.\n- **Chat Box:**\n- Each species has its own name color in the history. Trader colors are slightly muted, so a chat between the same species stays readable.\n- Closing the trade menu doesn't cancel a conversation. Lines in progress still finish, and you can reopen the box at any time. If something interrupts you (The trader going hostile, taking damage, passing out, walking away, etc etc etc), you can continue from the cut off line.\n- Finished chats can be reopened and read again, but not changed.\n- Passive talker lines (Hungry, thirsty, cold, etc.) and the trader's reactions to them are suppressed during a chat, so they can't talk over a conversation. Trader warnings still come through if they're about to turn hostile.\n- **Chat Timeouts:**\n- If you don't choose within 10 seconds, the choices disappear and the conversation continues down its own timeout branch, with its own reputation and mood effects.\n- Timing out isn't always bad, to be clear. It might be best to remain quiet in some cases.\n- The timer pauses if you close the trade menu or pause the game.\n- Two new settings:\n- - Trader Chat: Custom Timer (Off by default)\n- - Trader Chat: Timer Length (3-30 seconds). The length only applies when the custom timer is on.\n-----------------------------------------------------------------------------------\n- **Custom Species:**\n- **Gunsaw Genetics v2.1.0 Changelog:**\n- **Crystal Overhaul:**\n- **[TONGUE]** added\n- - Active ability. Tap the ability key to fire a tongue that sticks to the first solid thing it hits.\n- - - Hold the ability key to reel, and tap it to let go.\n- - - Terrain pulls you toward it. Loose objects are pulled toward you, with force shared by mass. Light things fly to you, heavy things drag you to them. Physics bro\n- - A stuck tongue acts like a rope. It holds you at its length, bends around terrain corners, and can be used to swing. Air control is reduced while hanging from it.\n- - Strain builds while the tongue is in use. Tugging against something on the ground builds it, and so does hanging, swinging, or reeling in the air. Tongue can give out and be put on cooldown.\n- - Small enough enemies (Cave Ticks rn) are reeled in automatically and eaten. Controls are locked until it's done. Gives a small amount of hunger.\n- - Traps can be set off by the tongue, and the tongue can be hurt by them.\n- - - Spike Traps and Turrets fire when the tongue crosses their trigger, and hurt it badly if it's still in the way when they do.\n- - - Barbed Fences hurt on contact. A tongue draped over one takes small, repeated damage.\n- - - Coils shock the body (reduced) when the tongue hits them.\n- - - Landmines can be pressed by the tongue. Any explosion close to the tongue will damage it. You can do this fast enough to not be hurt.\n- - - Bear Traps catch the tongue and hold it. Pulling free rips it off. Breaking the trap will free it.\n- - Tongue injuries land on the head. Severe damage can disfigure the face, and disfigurement disables the tongue.\n- **[LITHOPHAGOUS]** added\n- - The vanilla crystal shards can be dragged to the center of the inventory like food. Each one gives a stronger but short version of its passive effect, plus a small amount of hunger.\n- - - Each active shard gets its own moodle with a timer and a stack count.\n- - - Stacking is disabled on Turbulent crystals and instead overwrites with the higher of the two\n- **[FURLESS]** added\n- - Crystal uses (vanilla) Dune's quirk, Furless. Effects should be 1:1.\n- - - These include: Half base insulation, faster drying, and water stabilizing body temperature.\n-----------------------------------------------------------------------------------\n- **Roza Trader Added:**\n- Roza is a fourth trader type, spawning alongside Experiment, Milky, and Dune. Unlike Albino from last update, this is a completely new spawn, not a % chance for replacement.\n- Spawn chance scales with the layer (share of all traders):\n- - Gravel Lands: ~3%\n- - Deeper Gravel Lands: ~5%\n- - Dried Desert: Never\n- - Wasteland: ~9%\n- - Overgrown Depths: ~12%\n- - I'll add the rest later. They DO still appear though.\n- Always sells an ice pack.\n- Hug reputation requirement lowered to 90 (vanilla is 100).\n- Hugging Roza chills you. Every successful hug lowers your body temperature by 0.6°C, down to a minimum of 35°C. Roza won't let you get colder than that.\n- Medicine is 25% cheaper while your REP with her is 90 or higher.\n- **Freezing:**\n- New button to the right of the hug button (Requires 90 REP).\n- Pressing it tints the sell area blue. Drag an item there to have Roza freeze it instead of buying it.\n- Costs 5 trade credit.\n- Roza refuses things that can't be frozen (Dry food, empty containers) and things that are already frozen.\n- **Frozen Items:**\n- *Frozen items are now available to everyone, so this is just making up for that. The general mechanics are still the same.*\n- No species can eat or drink frozen items anymore. Previously, only Roza refused them. Other species get their own refusal line.\n- Frozen liquid containers can no longer pour liquid into, or out of, other containers.\n- Frozen liquid containers can no longer be drained in the radial inventory.\n-----------------------------------------------------------------------------------\n- **Trader Chat:**\n- *You can now talk to traders. Chats are short conversations with one choice in the middle, and what you say changes how they feel about you (and how you feel about them).*\n- New chat button, to the right of the trader's info box. It greys out with a tooltip explaining why when you can't use it, and disappears when the trader is hostile.\n- Each trader gets one chat. A random conversation is rolled when you start it, and you can't reroll.\n- Conversations are unique to each pairing of your species and theirs. Playing an Experiment and talking to a Milky has different conversations to playing a Milky and talking to an Experiment.\n- Each conversation has a REP weight. Conversations closer to your current REP with the trader are more likely, so higher REP leads to more personal chats.\n- You can't start a chat if the trader's reputation is below 60, or if your mood is below -50.\n- Every trader of the same species gives you a new conversation. Rolled conversations are tracked/saved and never rolled again for that run. Obviously resets on a new run.\n- **Chat Box:**\n- Each species has its own name color in the history. Trader colors are slightly muted, so a chat between the same species stays readable.\n- Closing the trade menu doesn't cancel a conversation. Lines in progress still finish, and you can reopen the box at any time. If something interrupts you (The trader going hostile, taking damage, passing out, walking away, etc etc etc), you can continue from the cut off line.\n- Finished chats can be reopened and read again, but not changed.\n- Passive talker lines (Hungry, thirsty, cold, etc.) and the trader's reactions to them are suppressed during a chat, so they can't talk over a conversation. Trader warnings still come through if they're about to turn hostile.\n- **Chat Timeouts:**\n- If you don't choose within 10 seconds, the choices disappear and the conversation continues down its own timeout branch, with its own reputation and mood effects.\n- Timing out isn't always bad, to be clear. It might be best to remain quiet in some cases.\n- The timer pauses if you close the trade menu or pause the game.\n- Two new settings:\n- - Trader Chat: Custom Timer (Off by default)\n- - Trader Chat: Timer Length (3-30 seconds). The length only applies when the custom timer is on.\n-----------------------------------------------------------------------------------\n- **Custom Species:**\n- Portraits now use the new design. See the help section in the editor for more info on that.\n- Description removed (Old)\n- ID Tag added\n- Family added\n- Callout quote added\n- Success Prediction added\n- Note(s) added\n- Roza Rep added\n- Quirks added\n- - This is what vanilla calls traits. For now, these are cosmetic.\n- Advanced page added\n- - This is mostly for optional stuff and mod compat.\n- - In-Game ID (1 - 99999)\n- - Height (Cosmetic)\n- - Age\n- - Speech color\n- - Speech Size (Font size)\n- - Speech font. Add them to GunsawGenetics/Fonts\n- - Speech voice. Add them to GunsawGenetics/Audio/Speech. Replaces each digit and letter, so you'll need quite a few files if you don't use the presets.\n- - Voice sounds (confusing ik). These are for general bark/pain/yawn/growl/etc sounds. Presets included for the vanilla species. Custom sounds go into GunsawGenetics/Audio/Voices.\n- - Body base. Uses the new vanilla bodies without their traits (Hopefully). Custom skins DO work, but will need to specifically made for these bodies. The sprite replacer uses different folders for these skins, and prevents swapping between different skins from different bodies.\n- - Starting hunger\n- - Starting thirst\n- - Mod compat for **Colorful Insides** to allow choice of blood color\n-----------------------------------------------------------------------------------\n- **Velvet Changes:**\n- All mentions of Psychopathy are changed to Machiavellian. Some small rewrites too. #woke\n- - This quirk will be remade later on, but this update just changes some text.\n- **General:**\n- **Full release port** (duh)\n- Remade Species Selection menu.\n- Added Variant Species menu.\n- Remade Balance menu.\n- Remade Custom Species menu.\n- Remade Changelog screen.\n- Added Credits screen.\n- Remade Update Notifier.\n- Added version label (Clickable. Changelogs and credits are here)\n- **CUCoreLib updated to 1.1-Alpha (Stable)**\n- en.json (and other langs) completely reformatted.\n- General log cleanup\n- **Quality of Life:**\n- Added a new command, ggfindtrader <Trader> <true/false>, to list the GG traders on the current layer. Setting the last argument to true teleports you to the closest one.\n- Added a new command, rozamode. :roz_dog:\n- Added a new command, imagemode. Looks for ImageMode.png. Go wild.\n- Added a new setting, Unlock Vanilla Characters. Just unlocks vanilla Milky and Dune. Off by default.\n- Added a new setting, Cheats Don't Disable Achievements. Prevents cheats (certain commands) from marking your save as cheated. Off by default.\n- Added a new setting, Tutorial Species Select. Allows the run settings and selection menu to appear when entering the tutorial/sandbox. Off by default.\n- Custom Music setting moved to the settings menu properly (Used to be on the old selection screen)\n- Unlock All Species setting moved to the settings menu (Used to be on the old selection screen).\n- **Orange Changes:**\n- Added inventory boxes for lower arms in Woundview (Forgot :orng_dog:)\n- Repositioned Woundview sprites slightly\n- **Custom Last Stands:**\n- *By Dirasial!!*\n- Orange LS drone added\n- Velvet LS drone added\n- **Custom Hand Sprites:**\n- Orange + Baron hand sprites repositioned to fit the cursor better in certain minigames.\n- **Bug Fixes:**\n- Fixed a bug where hand slots would still cycle through hand slots of dismembered limbs.\n- Fixed a bug where items in hands would be duped if ggswitchspecies was used to switch to Orange\n- Fixed frozen liquid containers still being able to transfer liquid and be drained.\n- Fixed vanilla spawn commands (Like \"spawn trader1\") sometimes turning the trader into an Albino trader. Vanilla commands only spawn vanilla traders, GG commands only spawn GG traders."
             }
         ],
         "dllNames": [
-            "body_sprite_replacer.dll",
             "GunsawGenetics.dll",
             "GunsawGeneticsMPBridge.dll"
         ],
-        "dllVersion": "2.0.0",
+        "dllVersion": "2.1.0",
         "dllVersions": {
-            "body_sprite_replacer.dll": "1.1.0",
-            "GunsawGenetics.dll": "2.0.0",
+            "GunsawGenetics.dll": "2.1.0",
             "GunsawGeneticsMPBridge.dll": "1.0.0"
         },
         "Statistics": {
-            "Endorsements": 533,
-            "UniqueDownloads": 12676,
-            "TotalDownloads": 27135,
+            "Endorsements": 567,
+            "UniqueDownloads": 13245,
+            "TotalDownloads": 28033,
             "TotalViews": null
         },
         "Images": [
@@ -29837,8 +29895,7 @@
         "nexusTags": [
             "Gameplay",
             "User Interface"
-        ],
-        "LastQuickCheck": "2026-11-17T12:37:51.739Z"
+        ]
     },
     {
         "Id": "nexus-323",

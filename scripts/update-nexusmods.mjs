@@ -1554,14 +1554,24 @@ function createDiscordEmbed({ type, previousEntry, currentEntry, archiveSizeByte
   };
 }
 
-async function sendDiscordNotification(notification) {
-  const webhookUrls = notification.embed?.title && notification.content === ADULT_MOD_MESSAGE
-    ? [process.env.DISCORD_WEBHOOK_URL_NSFW, process.env.DISCORD_WEBHOOK_URL_NSFW_2]
-    : notification.kind === "created"
-    ? [process.env.DISCORD_WEBHOOK_URL_RELEASES, process.env.DISCORD_WEBHOOK_URL_RELEASES_2]
-    : [process.env.DISCORD_WEBHOOK_URL, process.env.DISCORD_WEBHOOK_URL_2];
+// Collects BASE, BASE_2, BASE_3, ... from env and the SECRETS_JSON blob (toJSON(secrets) in CI).
+function getWebhookUrls(base) {
+  let secrets = {};
+  try { secrets = JSON.parse(process.env.SECRETS_JSON || "{}"); } catch {}
+  const pattern = new RegExp(`^${base}(_[0-9]+)?$`);
+  return [...new Set(
+    Object.entries({ ...process.env, ...secrets })
+      .filter(([key, value]) => pattern.test(key) && value)
+      .map(([, value]) => value),
+  )];
+}
 
-  const validUrls = webhookUrls.filter(url => url);
+async function sendDiscordNotification(notification) {
+  const validUrls = notification.embed?.title && notification.content === ADULT_MOD_MESSAGE
+    ? getWebhookUrls("DISCORD_WEBHOOK_URL_NSFW")
+    : notification.kind === "created"
+    ? getWebhookUrls("DISCORD_WEBHOOK_URL_RELEASES")
+    : getWebhookUrls("DISCORD_WEBHOOK_URL");
 
   if (validUrls.length === 0) {
     logWarn("DISCORD", `Missing webhook for ${notification.kind}; skipping Discord notification.`);

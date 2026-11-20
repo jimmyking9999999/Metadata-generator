@@ -1,5 +1,182 @@
 [
     {
+        "Id": "nexus-1033",
+        "Name": "Constant temperature portable tool",
+        "Version": "1.3",
+        "bepinexVersion": "1.3.0",
+        "bepinexPlugins": {
+            "com.thermocarrier.mod": "1.3.0"
+        },
+        "Summary": "装备后持续提供恒温保温毛发烘干与身体清洁功能。 Continuously providing constant temperature insulation, hair drying, and body cleaning functions after equipment installation.",
+        "Description": "机制说明 :\n<br />恒温:装上电池后会以极快的速度降低或者提高体温直到回复至正常体温,因为手工制作的关系无法限制装备以极快的速度去消耗电池电量,恢复完成后建议立马把电池拆下来\n<br />烘干: 以极快的速度降低身体湿润度\n<br />清洁: 以极快的速度降低身体肮脏\n<br />电池仓 兼容大型(300)/中型(100)/小型(50)电池；装电池后其电量转入装置 \n<br />电磁脉冲 对装置造成50%耐久损坏\n<br />\n<br />运行环境\n<br />游戏：Casualties Unknown\n<br />前置：BepInEx 5.4.23（x64）——已安装于游戏根目录\n<br />  （若在新游戏安装中缺失，需先安装 BepInEx 5.x：解压 winhttp.dll、doorstop_config.ini 与 BepInEx 文件夹到游戏根目录）\n<br />\n<br />安装\n<br />将 `ThermocarrierPlugin.dll` 复制到：\n<br />游戏根目录&gt;&#92;BepInEx&#92;plugins&#92;\n<br />启动游戏即可，无需其他操作。\n<br />\n<br />游戏内获取方式\n<br />1. 合成：在制作台（装备）使用以下材料合成：\n<br />  纤维绳 ×2\n<br />  帆布×1\n<br />  塑料块 ×3\n<br />  废料管×2\n<br />  废料板×2\n<br />  钛棒 ×2\n<br />  电路板×1\n<br />  （配方无需技能研究，默认可见）\n<br />\n<br />卸载\n<br />删除 `BepInEx&#92;plugins&#92;ThermocarrierPlugin.dll` 即可，游戏存档中如残留本物品将不再登记新条目（旧存档物品可能显示为未知，属正常现象）。\n<br />\n<br />故障排查\n<br />查看 游戏根目录&gt;&#92;BepInEx&#92;LogOutput.log\n<br />出现 Loading [ThermoCarrier 1.3.0]表示模组已加载\n<br />出现 物品已注册/配方已注册` 表示物品与配方登记成功（进入游戏世界后）\n<br />任何 [TC] ... 错误` 行为异常信息，可反馈用于排查\n<br />\n<br />\n<br />Mechanism description:\n<br />Constant temperature: After installing the battery, the body temperature will decrease or increase rapidly until it returns to normal temperature. Due to manual production, it is not possible to limit the equipment from consuming battery power at a very fast speed. It is recommended to remove the battery immediately after recovery is complete\n<br />Drying: Reduce body moisture at an extremely fast speed\n<br />Cleaning: Reduce body dirtiness at an extremely fast speed\n<br />The battery compartment is compatible with large (300)/medium (100)/small (50) batteries; After installing the battery, its power is transferred to the device\n<br />Electromagnetic pulse causes 50% durability damage to the device\n<br />\n<br />Runtime Environment\n<br />Game: Casualties Unknown\n<br />Prerequisite: BepInEx 5.4.23 (x64) - Installed in the game root directory\n<br />(If it is missing in the installation of a new game, BepInEx 5. x needs to be installed first: unzip winhttpdll, doorstop_comfig.ini, and BepInEx folders to the game root directory)\n<br />\n<br />Install\n<br />Copy 'ThermocarrierPlugin. dll' to:\n<br />Game root directory&gt;&#92; BepInEx &#92; plugins&#92;\n<br />Just start the game, no further action is required.\n<br />\n<br />In game acquisition methods\n<br />1. Synthesis: Use the following materials to synthesize on the production platform (equipment):\n<br />Fiber rope x 2\n<br />Canvas x 1\n<br />Plastic block x 3\n<br />Waste pipe x 2\n<br />Waste board x 2\n<br />Titanium rod x 2\n<br />Circuit board x 1\n<br />(Formula does not require skill research, visible by default)\n<br />\n<br />uninstall\n<br />Delete 'BepInEx &#92; plugins &#92; ThermocarrierPlugin. dll'. If there are any remaining items in the game save, new entries will no longer be registered (old save items may appear as unknown, which is a normal phenomenon)\n<br />\n<br />troubleshooting\n<br />View game root directory&gt;&#92; BepInEx &#92; LogOutput.rog\n<br />Loading [ThermoCarrier 1.3.0] indicates that the module has been loaded\n<br />The appearance of 'item registered/recipe registered' indicates that the item and recipe have been successfully registered (after entering the game world)\n<br />Any [TC]... error or abnormal behavior information can be fed back for troubleshooting",
+        "Author": "11545zx",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1033/1033-1795190358-148736490.jpg",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1033"
+        },
+        "DownloadUrl": "nexus://scavprototype/1033/3487",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1033,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-20T16:14:47.000Z",
+        "ReleaseDate": "2026-11-20T16:07:16.000Z",
+        "SHA256": "a8141dc323b533fcd256ba81b9c06076767883f7cec15230aeb4e46df19818ed",
+        "dllSHA256s": {
+            "ThermocarrierPlugin.dll": "0d941460b108d0de29f651cc0da8ec0eedb2d1e59302d9f9428839300f0a7a03"
+        },
+        "downloadsSinceLatestVersion": 2,
+        "Dependencies": [
+            "nexus-115"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "ThermocarrierPlugin.dll",
+            "ThermocarrierPlugin.dll"
+        ],
+        "dllVersion": "1.3.0",
+        "dllVersions": {
+            "ThermocarrierPlugin.dll": "1.3.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 2,
+            "TotalDownloads": 2,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1033/1033-1795190358-148736490.jpg"
+        ],
+        "nexusTags": [
+            "AI-Generated Content",
+            "Gameplay",
+            "Quality of Life"
+        ],
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+    },
+    {
+        "Id": "nexus-1032",
+        "Name": "DDExcNet-CUmodM",
+        "Version": "1.3",
+        "bepinexVersion": "1.3.0",
+        "bepinexPlugins": {
+            "com.dden.mpfix": "1.3.0",
+            "com.dden.perf": "1.3.0",
+            "com.dden.saveeditor": "1.3.0",
+            "com.dden.cumodm": "1.3.0"
+        },
+        "Summary": "一个统一的管理器，加上一套专治联机不同步的修复 ------------------------A unified manager, along with a set of fixes to address online desynchronization.",
+        "Description": "对联机模组的部分问题，如：主客机有无芯片不同步，物品穿墙掉落等等做出了修复， 具体修复请查看GitHub\n<br />我此后的模组也将支持这个管理器\n<br />\n<br />Fixed several issues with the multiplayer mod, such as desynchronization between the host and client regarding whether chips are present, items clipping through walls and falling, and more , Please check GitHub for the specific fixes.\n<br />My future mods will also support this manager.\n<br />\n<br />安装：\n<br />1.游戏先装好 BepInEx 5（游戏目录下会出现 BepInEx/ 文件夹）\n<br />2.把下载的压缩包文件解压，把DDEN文件夹放进 BepInEx/plugins/—— 包内的dll文件必须放在同一个文件夹里。 \n<br />3.想用联机相关的修复，还需要装联机框架 Together 与 CUCoreLib ，没装也能进游戏，只是联机那部分修复不会生效，管理器里会标成「功能受限」\n<br />\n<br />Installation:\n<br />1. Install BepInEx 5 for the game first (a BepInEx/ folder will appear in the game directory). \n<br />2. Extract the downloaded archive and place the DDEN folder into BepInEx/plugins/ — the dll files in the package must be placed in the same folder. \n<br />3. To use the multiplayer-related fixes, you also need to install the multiplayer frameworks Together and CUCoreLib. You can still enter the game without them, but the multiplayer fixes won't take effect, and they will be marked as \"Limited Functionality\" in the manager. ",
+        "Author": "MornJor",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1032/1032-1795192420-554301859.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1032"
+        },
+        "DownloadUrl": "nexus://scavprototype/1032/3485",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1032,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-20T15:19:35.000Z",
+        "ReleaseDate": "2026-11-20T15:19:35.000Z",
+        "SHA256": "f89ca601548088541b85b2179be18c25d520713269f8089808a6fcd6d68fb280",
+        "dllSHA256s": {
+            "DDEN.MPfix.dll": "935848ad9bfb83c0ef9552ac4a4181e290acd34167e187c6360f5ab0e4958d67",
+            "DDEN.NetPerfTracker.dll": "4b7cf63d33a194cf7b3f26c7dcb1736bb41f00aed120771f80f6afffacb48259",
+            "DDEN.SaveEditor.dll": "30f2b5ad9464040ef0e114249290275d74ab3df954326972e53f37d555cff527",
+            "DDEN.Shared.dll": "a0583f62023646e4fccea4c61cc3945072e31d9ba219543ed259512ecb4683f4",
+            "DDExcNet-CUmodM.dll": "0fa83977cf6cec93dbf37f7b7da147e3fcbe1382ae726bcd4b381f30688962b9"
+        },
+        "downloadsSinceLatestVersion": 8,
+        "Dependencies": [],
+        "Changelogs": [
+            {
+                "Version": "1",
+                "Changelog": "- CN：\n- 新增存档编辑器\n- 性能修复\n- 部分BUG修复\n- EN：\n- Added a save editor\n- Performance fixes\n- Fixed some bugs"
+            }
+        ],
+        "dllNames": [
+            "DDEN.MPfix.dll",
+            "DDEN.NetPerfTracker.dll",
+            "DDEN.SaveEditor.dll",
+            "DDEN.Shared.dll",
+            "DDExcNet-CUmodM.dll"
+        ],
+        "dllVersion": "1.3.0",
+        "dllVersions": {
+            "DDEN.MPfix.dll": "1.3.0",
+            "DDEN.NetPerfTracker.dll": "1.3.0",
+            "DDEN.SaveEditor.dll": "1.3.0",
+            "DDExcNet-CUmodM.dll": "1.3.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 10,
+            "TotalDownloads": 12,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1032/1032-1795192420-554301859.png"
+        ],
+        "nexusTags": [
+            "AI-Generated Content",
+            "Bug Fixes",
+            "Performance Optimization",
+            "Quality of Life"
+        ],
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+    },
+    {
+        "Id": "nexus-1031",
+        "Name": "Tutorial Check Bypass",
+        "Version": "1",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "dev.jayo.TutorialCheckBypass": "1.0.0"
+        },
+        "Summary": "Let's you play any tutorial whenever and as any species",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />[size=3][color=#D4D4D8]This mod let's you play any tutorial regardless of layer depth requirement or species.[/color][/size]\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[color=#d4d4d8]Move the \"TutorialCheckBypass\" folder in the .zip file to the BepInEx plugin folder.[/color]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[size=3][color=#D4D4D8]bypasses tutorial restrictions[/color][/size]\n<br />",
+        "Author": "Jayo5",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1031/1031-1795177180-727409814.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1031"
+        },
+        "DownloadUrl": "nexus://scavprototype/1031/3479",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1031,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-20T12:24:57.000Z",
+        "ReleaseDate": "2026-11-20T12:24:27.000Z",
+        "SHA256": "cd6198987ca05509446c1be15f02c6b8cd1338675b0446cecacf069c9cf0ca3c",
+        "dllSHA256s": {
+            "TutorialCheckbypass.dll": "1bd998b9d805b3d4b1e7314086fc072cf4dda354ee2be4e58033ea1490d81424"
+        },
+        "downloadsSinceLatestVersion": 3,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [
+            "TutorialCheckbypass.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "TutorialCheckbypass.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 8,
+            "TotalDownloads": 8,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1031/1031-1795177180-727409814.png"
+        ],
+        "nexusTags": [
+            "Gameplay"
+        ],
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+    },
+    {
         "Id": "nexus-1029",
         "Name": "Wearable resprite",
         "Version": "1",
@@ -25,7 +202,7 @@
         "dllSHA256s": {
             "CUWearableResprites.dll": "3e43d8c737ee5af45fe0b2b329dd7effd94bbdf9e306eb5fc2ee5406016d7f97"
         },
-        "downloadsSinceLatestVersion": 1,
+        "downloadsSinceLatestVersion": 4,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -48,7 +225,7 @@
             "AI Assisted",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-1027",
@@ -76,7 +253,7 @@
         "dllSHA256s": {
             "RecipeHotlinks.dll": "855795ae5809b484140756a00984b4551ea0e26aa2dbef8b189aceee526f679f"
         },
-        "downloadsSinceLatestVersion": 17,
+        "downloadsSinceLatestVersion": 55,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -101,7 +278,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-1025",
@@ -129,7 +306,7 @@
         "dllSHA256s": {
             "Alphabetized Crafting.dll": "bf88a939bdd89c9d2357a2f599cd6bdecd51055829cf922220d51b68e7b3cd26"
         },
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 8,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -154,31 +331,32 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-1024",
         "Name": "Plushies Unknown",
-        "Version": "1.2",
+        "Version": "1.2.1",
         "bepinexVersion": null,
         "bepinexPlugins": {},
         "Summary": "CU mod that adds a lot, and i mean, a lot of new plushies.",
-        "Description": "[left][center][img width=162]https://cdn.discordapp.com/attachments/1573154768321380382/1573154853948227584/image.png?ex=6b00fa20&amp;is=6affa8a0&amp;hm=c2558b78e63753d4f4703b4a15a667aa7c01e1304c366cfb77a282d16f663b30&amp;[/img][/center]\n<br />[center]Milky plush :3[/center]\n<br />[line]\n<br />[/left]\n<br />[left][b][size=6]Overview[/size][/b]\n<br />Plushies: Unknown is a CU mod that adds a lot of new plushies to the game.[/left]\n<br />[left]\n<br />It just adds plushies, the fuck else you think.\n<br />[line]\n<br />\n<br />[size=6][b]Features[/b][/size][/left]\n<br />[left]Adds a lot of plushies to the game.[/left]\n<br />[left][list]\n<br />[*]8Bit expie plushie[/*]\n<br />[*]Milky plushie[/*]\n<br />[*]Realistic expie plush[/*]\n<br />[*]icannotexpressitinawaythatisquan plush[/*]\n<br />[*]Voyager plush[/*]\n<br />[*]Cursed eldethornback plush[/*]\n<br />[*]Blahaj[/*]\n<br />[*]Blood Tendril[/*]\n<br />[*]Mizu[/*]\n<br />[*]Noik Oneshit[/*]\n<br />[*]Fish[/*]\n<br />[*]Dune stare[/*]\n<br />[*]Albino[/*]\n<br />[/list][size=6]Upcoming Plushies[/size]\n<br />Baron plush \n<br />Chik plush \n<br />Chompy plush \n<br />Crystal plush \n<br />Dune plush \n<br />Icke plush \n<br />Leapy plush \n<br />Velvet plush (or Mommy Velvet as some call her) \n<br />Orange plush \n<br />Roza plush \n<br />Shelly plush\n<br />AND MORE\n<br />[line]\n<br />[b][size=6]Installation.[/size][/b][/left]\n<br />[left]Download the Zip file and open it.[/left]\n<br />[left]Drag and drop plushies.unknown folder into your plugins folder in Bepinex.[/left]\n<br />[left]Its simple as that.[/left]\n<br />[left][/left]\n<br />[left]Requires ICEnecoCustomItemAPI.[/left]\n<br />",
+        "Description": "[left][center][img width=162]https://cdn.discordapp.com/attachments/1573154768321380382/1573154853948227584/image.png?ex=6b00fa20&amp;is=6affa8a0&amp;hm=c2558b78e63753d4f4703b4a15a667aa7c01e1304c366cfb77a282d16f663b30&amp;[/img][/center]\n<br />[center]Milky plush :3[/center]\n<br />[line]\n<br />[/left]\n<br />[left][b][size=6]Overview[/size][/b]\n<br />Plushies: Unknown is a CU mod that adds a lot of new plushies to the game.[/left]\n<br />[left]\n<br />It just adds plushies, the fuck else you think.\n<br />\n<br />Also, very sorry that this mod updates really fast and a lot, i try to only post updates every 5+ new plushies that i make so that you don't have to re-download the mod so much. ^w^\n<br />[line]\n<br />\n<br />[size=6][b]Features[/b][/size][/left]\n<br />[left]Adds a lot of plushies to the game.[/left]\n<br />[left][list]\n<br />[*]8Bit expie plushie[/*]\n<br />[*]Milky plushie[/*]\n<br />[*]Realistic expie plush[/*]\n<br />[*]icannotexpressitinawaythatisquan plush[/*]\n<br />[*]Voyager plush[/*]\n<br />[*]Cursed eldethornback plush[/*]\n<br />[*]Blahaj[/*]\n<br />[*]Blood Tendril[/*]\n<br />[*]Mizu[/*]\n<br />[*]Noik Oneshit[/*]\n<br />[*]Fish[/*]\n<br />[*]Dune stare[/*]\n<br />[*]Albino[/*]\n<br />[*]Velvet[/*]\n<br />[/list][size=6]Upcoming Plushies[/size]\n<br />Baron plush \n<br />Chik plush \n<br />Chompy plush \n<br />Crystal plush \n<br />Dune plush \n<br />Icke plush \n<br />Leapy plush \n<br />Orange plush \n<br />Roza plush \n<br />Shelly plush\n<br />AND MORE\n<br />[line]\n<br />[b][size=6]Installation.[/size][/b][/left]\n<br />[left]Download the Zip file and open it.[/left]\n<br />[left]Drag and drop plushies.unknown folder into your plugins folder in Bepinex.[/left]\n<br />[left]Its simple as that.[/left]\n<br />[left][/left]\n<br />[left]Requires ICEnecoCustomItemAPI.[/left]\n<br />",
         "Author": "Milky50262",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1024/1024-1795145245-285165689.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1024"
         },
-        "DownloadUrl": "nexus://scavprototype/1024/3470",
+        "DownloadUrl": "nexus://scavprototype/1024/3486",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1024,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-20T05:27:08.000Z",
-        "ReleaseDate": "2026-11-20T05:27:08.000Z",
-        "SHA256": "aac264be3e54dbeafa2f0a5b3da062ba14b2d75ce79c6ade7deaa458ac423bd0",
+        "LastUpdated": "2026-11-20T15:25:37.000Z",
+        "ReleaseDate": "2026-11-20T15:25:37.000Z",
+        "SHA256": "c34f5614730dc20408f877c17e720b1846b208044fd92be3d9e8090372f61f45",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 3,
+        "downloadsSinceLatestVersion": 7,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -188,6 +366,10 @@
             {
                 "Version": "1.2",
                 "Changelog": "- Added 6 new plushies\n- Dune stare\n- Mizu (by Mizu)\n- Fish emoji\n- Noik Oneshit (By Mizu)\n- Blood tendril (from New Descents by Jimmy_King)\n- Albino Plushie"
+            },
+            {
+                "Version": "1.2.1",
+                "Changelog": "- added Velvet plush"
             }
         ],
         "dllNames": [],
@@ -195,8 +377,8 @@
         "dllVersions": {},
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 9,
-            "TotalDownloads": 11,
+            "UniqueDownloads": 26,
+            "TotalDownloads": 32,
             "TotalViews": null
         },
         "Images": [
@@ -206,8 +388,7 @@
             "Fair and balanced",
             "Humour, Joke or Just for Fun",
             "LGBTQ+"
-        ],
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z"
+        ]
     },
     {
         "Id": "nexus-1023",
@@ -370,15 +551,16 @@
         "LastQuickCheck": "2026-11-20T09:22:31.629Z"
     },
     {
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-1020",
         "Name": "Casualties Prepared",
-        "Version": "1",
+        "Version": "1.0.1",
         "bepinexVersion": "0.2.0",
         "bepinexPlugins": {
             "com.casprepared.loadout": "0.2.0"
         },
         "Summary": "Addon for Casualties: Together mod, allowing players to spawn their own starter loadout",
-        "Description": "[center][b][size=4][img]https://staticdelivery.nexusmods.com/mods/8391/images/1020/1020-1795117115-449238522.png[/img][/size][/b][/center]\n<br />\n<br />[b][size=4]Description[/size][/b]\n<br />Addon for [b]CU[/b] multiplayer mod ([b]Casualties: Together[/b]). After spawning, each player gets a loadout menu once per campaign. They pick items within a budget, and game delivers them in a temporary supply crate.\n<br />\n<br />\n<br />[b][size=4]Installation instructions[/size][/b]\n<br />Simply unpack casprepared.zip into /bepinex/plugins \n<br />\n<br />[b][size=4]Main features[/size][/b]\n<br />[*][b]Loadout menu.[/b] Searchable item catalog with categories, a selection list, the budget and the loadout cost. The Spawn button is blocked when the cost exceeds the budget.[/*]\n<br />[*][b]Prices.[/b] Each item costs its trader price times a host-adjustable multiplier (default 1.0).[/*]\n<br />[*][b]Host-authoritative.[/b] Every purchase is a request to the host over Casualties: Together. The host validates it and spawns the items at the player's position.[/*]\n<br />[*][b]Supply crate.[/b] Items arrive in a temporary crate that cannot be carried or worn. It decays after 5 minutes by default, and its contents drop on the floor.[/*]\n<br />[*][b]Once per campaign.[/b] The host records players by SteamID, and the records are saved with the campaign.[/*]\n<br />[*][b]Spawn window.[/b] The menu closes after a time limit (can be turned off) or when the player moves too far from the spawn point.[/*]\n<br />[*][b]Achievements disabled.[/b] While the mod is active, achievements are disabled the same way Together does it for SV_Cheats , without unlocking cheat commands.[/*]\n<br />[*][b]Server settings toggle.[/b] A checkbox in Together's Server settings turns the mod on or off.\n<br />\n<br />\n<br />[b][size=4]Requirements[/size][/b]\n<br />[url=https://github.com/bepinex/bepinex]BepInEx[/url]\n<br />[url=https://github.com/jimmyking9999999/CUCoreLib]CUCoreLib[/url]\n<br />[url=https://github.com/creaturefeaturelarry/casualties-together]Casualties: Together[/url]\n<br />\n<br />[b][size=4]Special thanks to:[/size][/b]\n<br />[b]Orsoniks [/b]For such awesome game;\n<br />[b]CU:Together and CUCoreLib devs [/b]For letting us playing with friends.\n<br />\n<br />Source:[/*]\n<br />[*]Github https://github.com/Turianel/Casualties-Prepared\n<br />\n<br />[/*]\n<br />",
+        "Description": "[center][b][size=4][img width=445]https://staticdelivery.nexusmods.com/mods/8391/images/1020/1020-1795117115-449238522.png[/img][/size][/b][/center]\n<br />[center][b][color=#00ffff][size=5]PREPARE YOURSELF, LITTLE FRIEND![/size][/color][/b][/center]\n<br />\n<br />[center][b][size=4]Description[/size][/b][/center]\n<br />Addon for [b]CU[/b] multiplayer mod ([b]Casualties: Together[/b]). After spawning, each player gets a loadout menu once per campaign. They pick items within a budget, and game delivers them in a temporary supply crate.\n<br />\n<br />\n<br />[center][b][size=4]How to install?[/size][/b][/center]\n<br />[center]Simply unpack casprepared.zip into /bepinex/plugins [/center]\n<br />\n<br />[b][size=4]Main features[/size][/b]\n<br />[*][b]Loadout menu.[/b] Searchable item catalog with categories, a selection list, the budget and the loadout cost. The Spawn button is blocked when the cost exceeds the budget.[/*]\n<br />[*][b]Prices.[/b] Each item costs its trader price times a host-adjustable multiplier (default 1.0).[/*]\n<br />[*][b]Host-authoritative.[/b] Every purchase is a request to the host over Casualties: Together. The host validates it and spawns the items at the player's position.[/*]\n<br />[*][b]Supply crate.[/b] Items arrive in a temporary crate that cannot be carried or worn. It decays after 5 minutes by default, and its contents drop on the floor.[/*]\n<br />[*][b]Once per campaign.[/b] The host records players by SteamID, and the records are saved with the campaign.[/*]\n<br />[*][b]Spawn window.[/b] The menu closes after a time limit (can be turned off) or when the player moves too far from the spawn point.[/*]\n<br />[*][b]Achievements disabled.[/b] While the mod is active, achievements are disabled the same way Together does it for SV_Cheats , without unlocking cheat commands.[/*]\n<br />[*][b]Server settings toggle.[/b] A checkbox in Together's Server settings turns the mod on or off.\n<br />\n<br />\n<br />[b][size=4]Requirements[/size][/b]\n<br />[url=https://github.com/bepinex/bepinex]BepInEx[/url]\n<br />[url=https://github.com/jimmyking9999999/CUCoreLib]CUCoreLib[/url]\n<br />[url=https://github.com/creaturefeaturelarry/casualties-together]Casualties: Together[/url]\n<br />\n<br />[b][size=4]Special thanks to:[/size][/b]\n<br />[b]Orsoniks [/b]For such awesome game;\n<br />[b]CU:Together and CUCoreLib devs [/b]For letting us playing with friends.\n<br />\n<br />Source code: [url=https://github.com/Turianel/Casualties-Prepared]Github[/url] \n<br />\n<br />[color=#00ffff][size=5]YOUR COMMENTS AND BUG REPORTS ARE VERY IMPORTANT TO ME![/size][/color]\n<br />[/*]\n<br />",
         "Author": "Turianel",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1020/1020-1795116050-497398678.png",
@@ -389,13 +571,13 @@
         "NexusModId": 1020,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-19T19:38:01.000Z",
+        "LastUpdated": "2026-11-20T16:56:12.000Z",
         "ReleaseDate": "2026-11-19T19:34:54.000Z",
         "SHA256": "6942e2014c4af32a1805469f0838f5ba42034f32f180117cd2b8b9ac219004bf",
         "dllSHA256s": {
             "CasPrepared.dll": "c39c6ed32daead47190ec45f447e6fd1e71be7219e9f0e3e3a540c4f163910ef"
         },
-        "downloadsSinceLatestVersion": 17,
+        "downloadsSinceLatestVersion": 36,
         "Dependencies": [
             "nexus-67",
             "nexus-115",
@@ -405,6 +587,10 @@
             {
                 "Version": "1",
                 "Changelog": "- First release"
+            },
+            {
+                "Version": "1.0.1",
+                "Changelog": "- Added client-side checks. If the mod is not detected on the server, you will be notified. Theoretically resolves a minor memory leak.\n- Changed the achievement notification; it’s now more precise and smaller in size.\n- Adjusted the mod's checkbox to fit the new Server Settings menu.\n- (Note: May be incompatible with older versions of CU:Together.)"
             }
         ],
         "dllNames": [
@@ -416,8 +602,8 @@
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 18,
-            "TotalDownloads": 19,
+            "UniqueDownloads": 46,
+            "TotalDownloads": 49,
             "TotalViews": null
         },
         "Images": [
@@ -426,8 +612,7 @@
         "nexusTags": [
             "AI-Generated Content",
             "Gameplay"
-        ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        ]
     },
     {
         "Id": "nexus-1018",
@@ -674,54 +859,59 @@
         "LastQuickCheck": "2026-11-20T01:30:33.416Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-1011",
         "Name": "QoL-EMI-RecipeRowFix",
-        "Version": "1.1",
-        "bepinexVersion": "1.1.0",
+        "Version": "1.3",
+        "bepinexVersion": "1.3.0",
         "bepinexPlugins": {
-            "qol.emi.reciperowfix": "1.1.0"
+            "qol.emi.reciperowfix": "1.3.0"
         },
         "Summary": "Experimental fix for the blank crafting list bug caused by a conflict between the new version of QoL Unknown and EMI.",
         "Description": "CN:最新版的QoL Unknown使用快速合成或者单纯打开合成列表都可能会导致与EMI冲突，导致合成列表变成空白一片\n<br />此模组为对最新版本（1.1.5.0）的实验性修复，不保证绝对修复成功，后续作者修复此BUG的话，模组也会停止更新\n<br />\n<br />EN:The latest version of QoL Unknown may conflict with EMI when using quick crafting or simply opening the crafting list, causing the crafting list to go completely blank.\n<br />This mod is an experimental fix for the latest version (1.1.5.0). A successful fix is not guaranteed. If the author fixes this bug in a future update, this mod will also stop being updated. ",
         "Author": "MornJor",
         "Links": {
-            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1011/1011-1795071319-807355976.png",
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1011/1011-1795192269-1078229689.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1011"
         },
-        "DownloadUrl": "nexus://scavprototype/1011/3433",
+        "DownloadUrl": "nexus://scavprototype/1011/3488",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1011,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-19T14:00:01.000Z",
-        "ReleaseDate": "2026-11-19T14:00:01.000Z",
-        "SHA256": "c8a716da88008d0a17aecdb4e1ed92d66b41d0381852d9c7966e0b3dff844a89",
+        "LastUpdated": "2026-11-20T16:11:52.000Z",
+        "ReleaseDate": "2026-11-20T16:11:52.000Z",
+        "SHA256": "de21615c882d4efde24f5a8229d7942764222583239f49b403b4fe9a6fadcf3e",
         "dllSHA256s": {
-            "QoL-EMI-RecipeRowFix.dll": "fcd37cdad6a9fcab627384e8ac8fd1028608ce4f9d8ef21b0d9486edbc9c689d"
+            "QoL-EMI-RecipeRowFix.dll": "e4f440b3acf2f01d05591e663bc40a9bd31b9e894cb6b028b4e4c86cfe0f9a01"
         },
-        "downloadsSinceLatestVersion": 5,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [],
         "Changelogs": [
             {
                 "Version": "1.1",
                 "Changelog": "- CN：修正了置顶逻辑，现在EMI应该能高亮置顶正确的物品了\n- EN：Fixed the pin-to-top logic; EMI should now highlight the correct pinned item."
+            },
+            {
+                "Version": "1.3",
+                "Changelog": "- CN：优化索引逻辑并缓存图标，提升性能\n- EN:Optimized the indexing logic and cached icons to improve performance."
             }
         ],
         "dllNames": [
             "QoL-EMI-RecipeRowFix.dll"
         ],
-        "dllVersion": "1.1.0",
+        "dllVersion": "1.3.0",
         "dllVersions": {
-            "QoL-EMI-RecipeRowFix.dll": "1.1.0"
+            "QoL-EMI-RecipeRowFix.dll": "1.3.0"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 12,
-            "TotalDownloads": 14,
+            "UniqueDownloads": 15,
+            "TotalDownloads": 21,
             "TotalViews": null
         },
         "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1011/1011-1795192269-1078229689.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/1011/1011-1795071319-807355976.png"
         ],
         "nexusTags": [
@@ -810,7 +1000,7 @@
         "dllSHA256s": {
             "Greenleaf.dll": "54f1635f0e83c838802014f4825f57928c1061c2b077b544f46869b680e7580e"
         },
-        "downloadsSinceLatestVersion": 30,
+        "downloadsSinceLatestVersion": 104,
         "Dependencies": [
             "nexus-341"
         ],
@@ -837,7 +1027,7 @@
             "Gameplay",
             "Humour, Joke or Just for Fun"
         ],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-1005",
@@ -865,7 +1055,7 @@
         "dllSHA256s": {
             "Highlight.dll": "d0a259ec86b2f1bd3a2288f05d91a3eaa3f413ac0b6559310be2ac09cde5b7cc"
         },
-        "downloadsSinceLatestVersion": 57,
+        "downloadsSinceLatestVersion": 139,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -891,7 +1081,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-1004",
@@ -919,7 +1109,7 @@
         "dllSHA256s": {
             "AllLight.dll": "f3c666dd5f49c8b9787832c79201b7592840bcf58478f265475bf775512d86f3"
         },
-        "downloadsSinceLatestVersion": 13,
+        "downloadsSinceLatestVersion": 35,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -945,7 +1135,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-19T02:14:38.836Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-1002",
@@ -973,7 +1163,7 @@
         "dllSHA256s": {
             "CasualtiesSidekick.dll": "122dc827e605667f67c28367aa77faad591383355f13455b8e327d351aa2ae05"
         },
-        "downloadsSinceLatestVersion": 14,
+        "downloadsSinceLatestVersion": 39,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -999,7 +1189,7 @@
             "Gameplay",
             "Performance Optimization"
         ],
-        "LastQuickCheck": "2026-11-19T02:14:38.836Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-1001",
@@ -1029,7 +1219,7 @@
             "GunsawGenetics.dll": "df674a92a3dc706a74077408ea9a80d2294396a5102c2f03d676714df5fa5b5b",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 53,
+        "downloadsSinceLatestVersion": 116,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1056,10 +1246,10 @@
             "Gameplay",
             "Races - New"
         ],
-        "LastQuickCheck": "2026-11-19T02:14:38.836Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
-        "LastQuickCheck": "2026-11-19T02:14:38.836Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-1000",
         "Name": "PT-BR Mod",
         "Version": "1.0.2",
@@ -1081,7 +1271,7 @@
         "ReleaseDate": "2026-11-18T22:09:50.000Z",
         "SHA256": "d5b37144de61fe05b48f53be303b45caca9ac4e9adf61a667b0e0741322a7726",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 6,
+        "downloadsSinceLatestVersion": 36,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -1098,7 +1288,8 @@
         ],
         "nexusTags": [
             "AI-Generated Content",
-            "Translation"
+            "Translation",
+            "User Interface"
         ]
     },
     {
@@ -1127,7 +1318,7 @@
         "dllSHA256s": {
             "CustomDeathScreen.dll": "3797531cd8ffeac36fe6dc69ac75f3ac64b7bd9b1fa4db7e6006b93821fe61b6"
         },
-        "downloadsSinceLatestVersion": 14,
+        "downloadsSinceLatestVersion": 28,
         "Dependencies": [
             "nexus-115"
         ],
@@ -1151,7 +1342,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-19T02:14:38.836Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-998",
@@ -1204,32 +1395,33 @@
         "LastQuickCheck": "2026-11-20T01:30:33.416Z"
     },
     {
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-997",
         "Name": "Chipped Better Fog",
-        "Version": "1",
-        "bepinexVersion": "1.1.1",
+        "Version": "3",
+        "bepinexVersion": "1.2.0",
         "bepinexPlugins": {
-            "com.szarkan.chippedbetterfog": "1.1.1"
+            "com.szarkan.chippedbetterfog": "1.2.0"
         },
         "Summary": "Make your Sawian remember what was explored, making Uchipped slightly easier but yet logical.",
-        "Description": "[size=5]Let your Sawian remember where they've been![/size]\n<br />\n<br />[size=4]This simple mod replaces the annoying fog in Unchipped mode with a [b]Fog of War[/b] system! Areas your Sawian has already explored stay visible instead of disappearing as soon as they leave.[/size]\n<br />\n<br />[img width=710]https://i.postimg.cc/ZRCGjg5F/2026-11-18021533-ezgif-com-video-to-gif-converter.gif[/img]\n<br />\n<br />[size=4]Also you can enable the optional [b]Forget[/b] feature in the settings - after a some in-game minutes (configurable), your Sawian will forget previously explored areas and youll need to explore them again.[/size]\n<br />\n<br />[size=4][img]https://i.postimg.cc/t4ctWm8y/2026-11-18021644-ezgif-com-video-to-gif-converter.gif[/img][/size]\n<br />\n<br />[size=6][b]Installation[/b][/size]\n<br />[size=5]Drop the mod file into [b]&lt;game&gt;/BepInEx/plugins[/b], and you're good to go![/size]\n<br />\n<br />[size=5]Need support? Have an idea? Have a bug?[/size]\n<br />Join our Discord: [url=https://discord.gg/a3F9YtkwyG]https://discord.gg/a3F9YtkwyG[/url]",
+        "Description": "[size=5]Let your Sawian remember where they've been![/size]\n<br />\n<br />[size=4]This simple mod replaces the annoying fog in Unchipped mode with a [b]Fog of War[/b] system! Areas your Sawian has already explored stay visible instead of disappearing as soon as they leave.[/size]\n<br />\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/997/997-1795070767-364665271.gif[/img]\n<br />\n<br />[size=6]Memory System[/size]\n<br />[size=4]Also you can enable the optional [b]Forget[/b] feature in the settings - after a some in-game minutes (configurable), your Sawian will forget previously explored areas and youll need to explore them again.[/size]\n<br />\n<br />[size=4]Time to forget is based on your character's INT. By default, you need to have 16 INT so your charchater not forget the layer in 60 minutes. Dune is basically a golden fish and Milky has more advantage. Expies, as awlays, are just dumbasses.[/size]\n<br />\n<br />[size=4]All configurable in [i]&lt;game folder&gt;/BepInEx/config/com.szarkan.chippedbetterfog.cfg[/i][/size]\n<br />\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/997/997-1795070774-1977317276.gif[/img]\n<br />\n<br />[size=6][b]Installation[/b][/size]\n<br />[size=5]Drop the mod file into [b]&lt;game&gt;/BepInEx/plugins[/b], and you're good to go![/size]\n<br />\n<br />[size=5]Need support? Have an idea? Have a bug?[/size]\n<br />Join our Discord: [url=https://discord.gg/a3F9YtkwyG]https://discord.gg/a3F9YtkwyG[/url]",
         "Author": "szarkanz",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/997/997-1794960158-429998767.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/997"
         },
-        "DownloadUrl": "nexus://scavprototype/997/3385",
+        "DownloadUrl": "nexus://scavprototype/997/3493",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 997,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-17T23:48:51.000Z",
-        "ReleaseDate": "2026-11-17T23:48:51.000Z",
-        "SHA256": "d6dd3f953a96b4ad4bdd6955873a4e98e8b65277b50265a9d4590d4d8c7f3e99",
+        "LastUpdated": "2026-11-20T17:59:18.000Z",
+        "ReleaseDate": "2026-11-20T17:59:18.000Z",
+        "SHA256": "574267e08f26cf33ad254730abeda5999ef95df78e36081ce22685ab6e94e6ed",
         "dllSHA256s": {
-            "ChippedBetterFog.dll": "baaeb9299e62c187dec7353b6bfdf4c8cc897398b5ce25cdfd004eb7eed1370b"
+            "ChippedBetterFog.dll": "6aebcda8e3527e45900aec0236cb8edda10368538fcc8ebc538a026c0bd838fc"
         },
-        "downloadsSinceLatestVersion": 124,
+        "downloadsSinceLatestVersion": 0,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1240,14 +1432,14 @@
         "dllNames": [
             "ChippedBetterFog.dll"
         ],
-        "dllVersion": "1.1.1",
+        "dllVersion": "1.2.0",
         "dllVersions": {
-            "ChippedBetterFog.dll": "1.1.1"
+            "ChippedBetterFog.dll": "1.2.0"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 19,
-            "TotalDownloads": 19,
+            "UniqueDownloads": 153,
+            "TotalDownloads": 157,
             "TotalViews": null
         },
         "Images": [
@@ -1259,7 +1451,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-19T19:15:05.308Z"
+        "LastNotifiedChangelogVersion": "1"
     },
     {
         "Id": "nexus-996",
@@ -1391,7 +1583,7 @@
         "dllSHA256s": {
             "LaseasMendingKit.dll": "27e31889ce36f55375311f412606916e736e76af549a69e59e6710df4de7d216"
         },
-        "downloadsSinceLatestVersion": 149,
+        "downloadsSinceLatestVersion": 195,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1414,10 +1606,10 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-993",
         "Name": "Play as a trained military professional",
         "Version": "1",
@@ -1443,7 +1635,7 @@
         "dllSHA256s": {
             "MilitaryGearMod.dll": "af2db5f6675dfaa8d407d8998a2efe9812d5fed8464f94ab1d953bdb7e56b761"
         },
-        "downloadsSinceLatestVersion": 10,
+        "downloadsSinceLatestVersion": 34,
         "Dependencies": [
             "nexus-341",
             "nexus-918"
@@ -1536,32 +1728,33 @@
         "LastNotifiedChangelogVersion": "1.0.1"
     },
     {
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-990",
         "Name": "ECGPlus heart monitor",
-        "Version": "1.1.0",
-        "bepinexVersion": "1.1.0",
+        "Version": "1.2.0",
+        "bepinexVersion": "1.2.0",
         "bepinexPlugins": {
-            "local.cu.ecgplus": "1.1.0"
+            "local.cu.ecgplus": "1.2.0"
         },
-        "Summary": "Reworks the ECG on the heart chips so it looks closer to a real monitor. Align to most identifiable vanilla threshold, so vanilla experience remains valid.",
-        "Description": "[img]https://staticdelivery.nexusmods.com/mods/8391/images/990/990-1794860228-112276510.gif[/img]\n<br />\n<br />Reworks the ECG on the health chip so it looks closer to a real monitor. Align to most identifiable vanilla threshold, so vanilla experience remains valid. [url=https://www.nexusmods.com/scavprototype/articles/14]Read more about how to read ECG[/url]\n<br />\n<br />Since 1.1.0 it also has two optional gameplay parts: a rework of defib shocks during cardiac arrest (on by default, can be turned off in the config) and a Long QT syndrome challenge (a run setting, off by default).\n<br />\n<br />[size=5][b]Changes[/b][/size]\n<br />[list]\n<br />[*]Normal heartbeats: proper P/QRS/T timing, which QT will now properly scales with heart rate, and ST will sit on the baseline.[/*]\n<br />[*]Most vanilla behaviour like Heartbeat sound etc. still synced to the trace[/*]\n<br />[*]Hypothermia: J waves (or Osborn if you like) will appear below 33C body temp and longer Q-T period[/*]\n<br />[*]Hemothorax: smaller complexes (lower voltage/amplitude)[/*]\n<br />[*](1.1.0) Sinus beat closer to realistic lead II[/*]\n<br />[*](1.1.0) PVCs looks more realistic[/*]\n<br />[*](1.1.0) Artifacts(ECG noises): footsteps, movement/attack/mining, getting hit, shivering when cold[/*]\n<br />[*](1.1.0) Breathing slightly affect ECG (respiratory sinus arrhythmia)[/*]\n<br />[*](1.1.0) Heartbeat sound follows pulse strength[/*]\n<br />[/list]Arrhythmia still follow the fibrillation value in stages:\n<br />\n<br />[size=4][b]15+[/b][/size]\n<br />occasional PVCs with a compensatory pause (Premature Ventricular Contraction, two heart beat spikes(R) will be close to each other)\n<br />\n<br />[size=4][b]30+[/b][/size]\n<br />couplets and short runs of VT, means PVCs start coming in pairs or short bursts\n<br />\n<br />[size=4][b]50+[/b][/size]\n<br />sustained VT, same threshold where the game shows Ventricular tachycardia\n<br />complexes fuse into a triangle wave as it gets worse, then round off into flutter around 75 (where worse debuff shows)\n<br />\n<br />[size=4][b]95-100[/b][/size]\n<br />degrades into VF (The more realistic fibrillation behaviour)\n<br />\n<br />[size=4][b]100+ cardiac arrest[/b][/size]\n<br />heart fails, VF that goes from coarse VF to fine VF as the brain fails, flatline on death\n<br />\n<br />[size=5][b]Text changes for en and zhCN[/b][/size]\n<br />[list]\n<br />[*]Fibrillation above 75 is now called Ventricular flutter instead of Fibrillation, which it wasn't in vanilla[/*]\n<br />[*]Cardiac arrest description now says ventricular fibrillation instead of asystole, when the heart still properly loses its functionalities[/*]\n<br />[*]Fix minor typo in zhCN[/*]\n<br />[/list][size=5][b]Big monitor (1.1.0)[/b][/size]\n<br />[list]\n<br />[*]The manual defibrillator screen uses a bigger monitor, with a MARK button to automatically label[/*]\n<br />[/list][size=5][b]Defib shocks in cardiac arrest (1.1.0, config [font=Courier New]ArrestShockRework[/font])[/b][/size]\n<br />Vanilla: a shock in cardiac arrest restarts the heart 20% of the time.\n<br />Now it depends on how long the heart has been in VF:\n<br />[list]\n<br />[*]90% while VF is still coarse, falling to 30% as it decays to fine VF[/*]\n<br />[*]only 20% of shocks are clean restarts (same as vanilla); the rest come back with fibrillation at 60-80 and can slide back into arrest if blood pressure or oxygen stay low[/*]\n<br />[/list][size=5][b]Long QT syndrome challenge (1.1.0, run setting)[/b][/size]\n<br />Found at the end of the challenges group. Fibrillation rises slowly whatever you do and never settles on its own:\n<br />[list]\n<br />[*]LQT1: exertion (running, low stamina, climbing, working out), doubled while swimming[/*]\n<br />[*]LQT3: sitting idle, sleeping, unconscious, slow heart rate[/*]\n<br />[*]LQT2: stress (adrenaline, horror, pain), plus a kick from loud noises and hard hits[/*]\n<br />[*]Cold below 36C speeds it all up[/*]\n<br />[/list]At a normal pace that is one treatment every 1.5 layers or so. You start with +2 INT, a manual defibrillator (small battery at 33%), a syringe with 20 ml of amiodarone and a small battery blueprint.\n<br />The QT interval on the monitor is longer, and the big monitor shows which subtype is driving it.\n<br />Command [font=Courier New]lqt[/font] shows the rates, [font=Courier New]lqt KEY VALUE[/font] tunes them (saved to the config).\n<br />\n<br />[size=5][b]Console[/b][/size]\n<br />command [font=Courier New]ecg[/font] toggles between plus and vanilla monitor ([font=Courier New]ecg plus[/font] / [font=Courier New]ecg vanilla[/font]). Will not disable achievements upon using.\n<br />\n<br />[size=5][b]Install[/b][/size]\n<br />Install BepInEx 5 and drop EcgPlus.dll into BepInEx/plugins/\n<br />\n<br />[size=5][b]Compatibility[/b][/size]\n<br />works in existing saves, Should work alongside most other mods unless they also work on ECG.\n<br />the monitor part should be client side only so it should be safe with multiplayer but I didn't test it. The arrest shock rework and Long QT are gameplay changes and are untested in multiplayer.\n<br />A Long QT save still loads after removing the mod (the challenge just turns off): the setting is kept in [font=Courier New]save.sv.ecgplus[/font] next to the save instead of inside it.\n<br />\n<br />[size=5][b]Source[/b][/size]\n<br />[url=https://github.com/apflu/ECGPlus]github.com/apflu/ECGPlus[/url]",
+        "Summary": "A well ECG overhaul, balances between reality and gameplay. Align to most identifiable vanilla threshold, so vanilla experience remains valid.",
+        "Description": "[img]https://staticdelivery.nexusmods.com/mods/8391/images/990/990-1794860228-112276510.gif[/img]\n<br />\n<br />language: en | [url=https://www.nexusmods.com/scavprototype/articles/16]中文[/url]\n<br />\n<br />Reworks the ECG on the health chip so it looks closer to a real monitor. Align to most identifiable vanilla threshold, so vanilla experience remains valid. [url=https://www.nexusmods.com/scavprototype/articles/14]Read more about how to read ECG[/url]\n<br />\n<br />Since 1.1.0 it also has two optional gameplay parts: a rework of defib shocks during cardiac arrest (on by default, can be turned off in the config) and a Long QT syndrome challenge (a run setting, off by default).\n<br />\n<br />[size=5][b]Changes[/b][/size]\n<br />[list]\n<br />[*]Normal heartbeats: proper P/QRS/T timing, which QT will now properly scales with heart rate, and ST will sit on the baseline.[/*]\n<br />[*]Most vanilla behaviour like Heartbeat sound etc. still synced to the trace[/*]\n<br />[*]Hypothermia: J waves (or Osborn if you like) will appear below 33C body temp and longer Q-T period[/*]\n<br />[*]Hemothorax: smaller complexes (lower voltage/amplitude)[/*]\n<br />[*]Sinus beat, VT, VFib, capture beat etc. closer to realistic lead II[/*]\n<br />[*]Artifacts(ECG noises): footsteps, movement/attack/mining, getting hit, shivering when cold[/*]\n<br />[*]Breathing will slightly affect ECG (respiratory sinus arrhythmia)[/*]\n<br />[*]Heartbeat sound follows pulse strength[/*]\n<br />[/list][url=https://www.nexusmods.com/scavprototype/articles/15]full patch note[/url]\n<br />\n<br />Arrhythmia still follow the fibrillation value in stages:\n<br />\n<br />[size=4][b]15+[/b][/size]\n<br />occasional PVCs with a compensatory pause (Premature Ventricular Contraction, two heart beat spikes(R) will be close to each other)\n<br />\n<br />[size=4][b]30+[/b][/size]\n<br />couplets and short runs of VT, means PVCs start coming in pairs or short bursts\n<br />\n<br />[size=4][b]50+[/b][/size]\n<br />sustained VT, same threshold where the game shows Ventricular tachycardia\n<br />complexes fuse into a triangle wave as it gets worse, then round off into flutter around 75 (where worse debuff shows)\n<br />\n<br />[size=4][b]95-100[/b][/size]\n<br />degrades into VF (The more realistic fibrillation behaviour)\n<br />\n<br />[size=4][b]100+ cardiac arrest[/b][/size]\n<br />heart fails, VF that goes from coarse VF to fine VF as the brain fails, flatline on death\n<br />\n<br />[size=5][b]Text changes for en and zhCN[/b][/size]\n<br />[list]\n<br />[*]Fibrillation above 75 is now called Ventricular flutter instead of Fibrillation, which it wasn't in vanilla[/*]\n<br />[*]Cardiac arrest description now says ventricular fibrillation instead of asystole, when the heart still properly loses its functionalities[/*]\n<br />[*]Fix minor typo in zhCN[/*]\n<br />[/list][size=5][b]Big monitor (1.1.0)[/b][/size]\n<br />[list]\n<br />[*]The manual defibrillator screen uses a bigger monitor, with a MARK button to automatically label[/*]\n<br />[/list][size=5][b]Defib shocks in cardiac arrest (1.1.0, config [font=Courier New]ArrestShockRework[/font])[/b][/size]\n<br />Vanilla: a shock in cardiac arrest restarts the heart 20% of the time.\n<br />Now it depends on how long the heart has been in VF:\n<br />[list]\n<br />[*]90% while VF is still coarse, falling to 30% as it decays to fine VF[/*]\n<br />[*]only 20% of shocks are clean restarts (same as vanilla); the rest come back with fibrillation at 60-80 and can slide back into arrest if blood pressure or oxygen stay low[/*]\n<br />[/list][size=5][b]Long QT syndrome challenge (1.1.0, run setting)[/b][/size]\n<br />Found at the end of the challenges group. Fibrillation rises slowly whatever you do and never settles on its own:\n<br />[list]\n<br />[*]LQT1: exertion (running, low stamina, climbing, working out), doubled while swimming[/*]\n<br />[*]LQT3: sitting idle, sleeping, unconscious, slow heart rate[/*]\n<br />[*]LQT2: stress (adrenaline, horror, pain), plus a kick from loud noises and hard hits[/*]\n<br />[*]Cold below 36C speeds it all up[/*]\n<br />[/list]At a normal pace that is one treatment every 1.5 layers or so. You start with +2 INT, a manual defibrillator (small battery at 33%), a syringe with 20 ml of amiodarone and a small battery blueprint.\n<br />The QT interval on the monitor is longer, and the big monitor shows which subtype is driving it.\n<br />Command [font=Courier New]lqt[/font] shows the rates, [font=Courier New]lqt KEY VALUE[/font] tunes them (saved to the config).\n<br />\n<br />[size=5][b]Console[/b][/size]\n<br />command [font=Courier New]ecg[/font] toggles between plus and vanilla monitor ([font=Courier New]ecg plus[/font] / [font=Courier New]ecg vanilla[/font]). Will not disable achievements upon using.\n<br />\n<br />[size=5][b]Install[/b][/size]\n<br />Install BepInEx 5 and drop EcgPlus.dll into BepInEx/plugins/\n<br />\n<br />[size=5][b]Compatibility[/b][/size]\n<br />works in existing saves, Should work alongside most other mods unless they also work on ECG.\n<br />the monitor part should be client side only so it should be safe with multiplayer but I didn't test it. The arrest shock rework and Long QT are gameplay changes and are untested in multiplayer.\n<br />A Long QT save still loads after removing the mod (the challenge just turns off): the setting is kept in [font=Courier New]save.sv.ecgplus[/font] next to the save instead of inside it.\n<br />\n<br />[size=5][b]Source[/b][/size]\n<br />[url=https://github.com/apflu/ECGPlus]github.com/apflu/ECGPlus[/url]",
         "Author": "apflu",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/990/990-1794856892-1358996415.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/990"
         },
-        "DownloadUrl": "nexus://scavprototype/990/3342",
+        "DownloadUrl": "nexus://scavprototype/990/3491",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 990,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-16T19:25:51.000Z",
-        "ReleaseDate": "2026-11-16T19:24:07.000Z",
-        "SHA256": "27803a7e9b2a5c93f368067960c29d994843d371bc061337060b0ce59b7d1a19",
+        "LastUpdated": "2026-11-20T17:25:34.000Z",
+        "ReleaseDate": "2026-11-20T17:25:34.000Z",
+        "SHA256": "9abec98c5ef8c9dfaa5ee17d49ed3092f8d3a7f4b03c01ab204cd1316d00020b",
         "dllSHA256s": {
-            "EcgPlus.dll": "438d03c70976fedc896320aa1750d90fccb2459db0e8d42d9aea020727f78e11"
+            "EcgPlus.dll": "f5965a81eb69d0d4730aa9527edac8b88e97e0aa09be2991a4fecd21b7cb15ba"
         },
-        "downloadsSinceLatestVersion": 161,
+        "downloadsSinceLatestVersion": 4,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1572,14 +1765,14 @@
         "dllNames": [
             "EcgPlus.dll"
         ],
-        "dllVersion": "1.1.0",
+        "dllVersion": "1.2.0",
         "dllVersions": {
-            "EcgPlus.dll": "1.1.0"
+            "EcgPlus.dll": "1.2.0"
         },
         "Statistics": {
-            "Endorsements": 0,
-            "UniqueDownloads": 7,
-            "TotalDownloads": 7,
+            "Endorsements": 2,
+            "UniqueDownloads": 181,
+            "TotalDownloads": 195,
             "TotalViews": null
         },
         "Images": [
@@ -1591,10 +1784,10 @@
             "Gameplay",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastNotifiedChangelogVersion": "1.1.0"
     },
     {
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-988",
         "Name": "Expansion of evil dragon formula",
         "Version": "1.01",
@@ -1609,23 +1802,31 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/988/988-1794839638-1383048928.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/988"
         },
-        "DownloadUrl": "nexus://scavprototype/988/3371",
+        "DownloadUrl": "nexus://scavprototype/988/3484",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 988,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-17T17:21:33.000Z",
-        "ReleaseDate": "2026-11-17T17:21:33.000Z",
-        "SHA256": "d271e38f216f46595160a0cba0401bbc9995ce82580b5a5c92baf5ed4eded177",
+        "LastUpdated": "2026-11-20T14:42:35.000Z",
+        "ReleaseDate": "2026-11-20T14:42:35.000Z",
+        "SHA256": "a8f5d5c43a85c622cdd63737c640b181bbcad5d68ea1e85603dac30418fe6cb4",
         "dllSHA256s": {
-            "邪龙配方扩展.dll": "96fc55a33dbe7ac3a6d05e36ae26020733067e8050407277a191fddd0d641b31"
+            "邪龙配方扩展.dll": "4de1113a71c584b5539fc92ed35e1dc76dcd19a18e595e1de2863e2e1d993e7f"
         },
-        "downloadsSinceLatestVersion": 15,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [],
         "Changelogs": [
             {
                 "Version": "1.01",
                 "Changelog": "- 在最新版本，咱修复了能量转换器的一些漏洞，如：联机会导致好友工具电量不消耗，电池充不满，以及耐久度消耗这些小bug，正在思考要不要再添加一些小玩意进来，或者只加一些配方？\n- Version 1.0.1\n- Fixes\n- Multiplayer: the Void Energy Converter could stop other players' tools\n- from draining their batteries.\n- Batteries could not reach 100% charge and stopped at 99%.\n- The converter itself lost durability when hit.\n- Also\n- Corrected the Ripped Bag recipe (plastic -> plastic chunk).\n- Note: still deciding whether to add a few more small items in a future\n- update, or just more recipes. Feedback is welcome."
+            },
+            {
+                "Version": "1.2",
+                "Changelog": "- 【新增】\n- 跃空芯片\n- 配方：易燃粉末 x3 + 电路板 x1 + 一捆导线 x2 + 激荡晶碎片 x1（智力 1）\n- 重量 0.1，只能放进虚空能量转换器\n- 放入后，玩家在空中可以额外跳一次\n- 触发条件：有芯片 + 离地超过 0.5 秒 + 中电池电量 ≥ 50% + 距上次触发超过 1 秒\n- 每次消耗中电池 50% 电量\n- 图标：红色电路板，中间嵌一枚棱形晶片\n- 【修改】\n- 1. 充电速率：充电站的 1/2 → 1/5（充满一块中电池约 6 分钟）\n- 2. 转换器重量：1.2 → 0.3\n- 【修复】\n- 1. 佩戴转换器时崩溃\n- 2. 保存并退出后继续游戏，物品丢失\n- 3. 多人联机时，会导致其他玩家的工具电量不消耗\n- 4. 电池只能充到 99%\n- 5. 转换器耐久会随受击消耗\n- [ADDED]\n- Void Leap Chip\n- Recipe: Flammable Powder x3 + Circuit Board x1 + Bundle of Wires x2 + Turbulent Crystal Shard x1 (INT 1)\n- Weight 0.1, can only be stored inside a Void Energy Converter\n- Grants one extra mid-air jump\n- Conditions: chip installed + airborne for at least 0.5s + a medium battery at 50% or more + 1s cooldown\n- Each jump drains 50% of that medium battery\n- Icon: red circuit board with a diamond-shaped core\n- [CHANGED]\n- 1. Charge rate: 1/2 -> 1/5 of the Recharging Station (about 6 minutes for a full medium battery)\n- 2. Converter weight: 1.2 -> 0.3\n- [FIXED]\n- 1. Crash when equipping the converter\n- 2. Item loss after save and reload\n- 3. Multiplayer: other players' tools stopped draining battery\n- 4. Batteries stopped charging at 99%\n- 5. Converter durability drained when hit\n- [ADDED]\n- Void Leap Chip\n- Recipe: Flammable Powder x3 + Circuit Board x1 + Bundle of Wires x2 + Turbulent Crystal Shard x1 (INT 1)\n- Weight 0.1, can only be stored inside a Void Energy Converter\n- Grants one extra mid-air jump\n- Conditions: chip installed + airborne for at least 0.5s + a medium battery at 50% or more + 1s cooldown\n- Each jump drains 50% of that medium battery\n- Icon: red circuit board with a diamond-shaped core\n- [CHANGED]\n- 1. Charge rate: 1/2 -> 1/5 of the Recharging Station (about 6 minutes for a full medium battery)\n- 2. Converter weight: 1.2 -> 0.3\n- [FIXED]\n- 1. Crash when equipping the converter\n- 2. Item loss after save and reload\n- 3. Multiplayer: other players' tools stopped draining battery\n- 4. Batteries stopped charging at 99%\n- 5. Converter durability drained when hit\n- 【新增】\n- 跃空芯片\n- 配方：易燃粉末 x3 + 电路板 x1 + 一捆导线 x2 + 激荡晶碎片 x1（智力 1）\n- 重量 0.1，只能放进虚空能量转换器\n- 放入后，玩家在空中可以额外跳一次\n- 触发条件：有芯片 + 离地超过 0.5 秒 + 中电池电量 ≥ 50% + 距上次触发超过 1 秒\n- 每次消耗中电池 50% 电量\n- 图标：红色电路板，中间嵌一枚棱形晶片\n- 【修改】\n- 1. 充电速率：充电站的 1/2 → 1/5（充满一块中电池约 6 分钟）\n- 2. 转换器重量：1.2 → 0.3\n- 【修复】\n- 1. 佩戴转换器时崩溃\n- 2. 保存并退出后继续游戏，物品丢失\n- 3. 多人联机时，会导致其他玩家的工具电量不消耗\n- 4. 电池只能充到 99%\n- 5. 转换器耐久会随受击消耗"
+            },
+            {
+                "Version": "1.3",
+                "Changelog": "- ==================================================\n- Update Notes 1.3.0\n- ==================================================\n- [ADDED]\n- 1. Void Leap Chip\n- Flammable Powder x3 + Circuit Board x1 + Bundle of Wires x2 + Turbulent Crystal Shard x1 (INT 8)\n- Fits only in the Void Energy Converter\n- Grants one extra mid-air jump (once per leaving the ground)\n- Each jump drains 10% of the lowest-charged medium battery\n- Weight 0.1\n- 2. Value Chip\n- Flammable Powder x1 + Circuit Board x2 + Bundle of Wires x2 + Oxygen Crystal Shard x1 (INT 8)\n- Expands the converter from 2u to 5u and allows tools\n- Occupies one battery charging slot\n- Removed chip drops non-battery/chip contents on the ground\n- Weight 0.1\n- 3. First Aid Chip\n- Blood Crystal Shard x1 + Circuit Board x3 + Bundle of Wires x2 + Scrap Panel x4 + Flammable Powder x1 (INT 8)\n- Bleeding (large battery 50%, 3 min) / Fracture (50%, 3 min)\n- Limb regrowth / Radiation / Consciousness (100%, 5 min each)\n- Over 300% large battery charge forces a Last Stand on death, the chip burns out\n- Weight 0.1\n- [CHANGED]\n- 1. Void Energy Converter\n- Weight 1.2 -> 0.3\n- Charge rate 1/2 -> 1/3 of the Recharging Station\n- Armor 1% -> 5%\n- Description rewritten\n- 2. All chips can now appear in trader stock (base value 30)\n- 3. Chip weights unified to 0.1\n- [FIXED]\n- 1. Crash when equipping the converter\n- 2. Item loss after save and reload\n- [COMPATIBILITY]\n- Old saves are supported. The converter keeps its id (voidconverter),\n- and a missing container component is restored automatically on load.\n- The old Expansion Chip is now called Value Chip; existing items keep\n- working and simply display the new name.\n- ==================================================\n- 更新说明 1.3.0\n- ==================================================\n- 【新增】\n- 1. 跃空芯片\n- 易燃粉末 x3 + 电路板 x1 + 一捆导线 x2 + 激荡晶碎片 x1（智力 8）\n- 只能放进虚空能量转换器\n- 空中额外跳一次（每次离地一次）\n- 每次消耗电量最少的中电池 10%\n- 重量 0.1\n- 2. 增值芯片\n- 易燃粉末 x1 + 电路板 x2 + 一捆导线 x2 + 富氧晶碎片 x1（智力 8）\n- 转换器容量 2u 扩大到 5u，允许放工具\n- 占据一个电池充电位\n- 取出时非电池/芯片物品掉在地上\n- 重量 0.1\n- 3. 急救芯片\n- 生血晶碎片 x1 + 电路板 x3 + 一捆导线 x2 + 废料板 x4 + 易燃粉末 x1（智力 8）\n- 止血/正骨（大电池 50%，3 分钟）\n- 再生肢体/清辐射/拉回意识（大电池 100%，5 分钟）\n- 大电池电量超过 300% 时死亡强制触发背水一战，芯片融毁\n- 重量 0.1\n- 【修改】\n- 1. 虚空能量转换器\n- 重量 1.2 → 0.3\n- 充电速率 1/2 → 1/3\n- 防御 1% → 5%\n- 描述重写\n- 2. 所有芯片可在商人处刷新（基础价值 30）\n- 3. 芯片重量统一为 0.1\n- 【修复】\n- 1. 佩戴转换器时崩溃\n- 2. 保存并退出后物品丢失\n- 【兼容性】\n- 支持旧存档。转换器 id（voidconverter）不变，\n- 加载时若缺少容器组件会自动补上。\n- 原扩展芯片改名为增值芯片，旧物品继续可用，仅显示新名字。"
             }
         ],
         "dllNames": [
@@ -1637,8 +1838,8 @@
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 11,
-            "TotalDownloads": 13,
+            "UniqueDownloads": 26,
+            "TotalDownloads": 36,
             "TotalViews": null
         },
         "Images": [
@@ -1651,7 +1852,8 @@
             "Fair and balanced",
             "Gameplay",
             "Quality of Life"
-        ]
+        ],
+        "LastNotifiedChangelogVersion": "1.3"
     },
     {
         "Id": "nexus-986",
@@ -1731,16 +1933,16 @@
             "Gameplay",
             "Unbalanced"
         ],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-985",
         "Name": "Guardian Drone - Combat and Medical Companion",
-        "Version": "0.3.0",
-        "bepinexVersion": "0.3.0",
+        "Version": "0.4.0",
+        "bepinexVersion": "0.4.0",
         "bepinexPlugins": {
-            "local.cu.guardiandrone": "0.3.0"
+            "local.cu.guardiandrone": "0.4.0"
         },
         "Summary": "A free, indestructible drone that follows you, fires at nearby supported threats, and treats external wounds. Checks its firing lane; rounds in flight can still hit you. Windows single-player beta.",
         "Description": "Guardian Drone adds a free quadcopter companion for your descent. Carry its controller to deploy it, let it patrol nearby, and call it in to treat external wounds.\n<br />\n<br />This is a [b]single-player beta for Windows x64[/b], tested with Steam build [b]26666273[/b], BepInEx [b]5.4.23.6[/b] and CUCoreLib [b]1.1[/b].\n<br />\n<br />[b]What it does[/b]\n<br />\n<br />[list]\n<br />[*]Follows the player and stays roughly 6–9 world units away in open spaces. Low caves use closer side positions.[/*]\n<br />[*]Fires at nearby supported threats. It checks the firing lane before shooting and attempts to move when a body or obstacle blocks the shot.[/*]\n<br />[*]Keeps physical projectiles: [b]a round already in flight can still hit you or a bystander[/b]. F7 toggles ceasefire.[/*]\n<br />[*]Moves close to reduce external bleeding and repair skin and muscle on existing organic limbs. F8 requests medical priority.[/*]\n<br />[*]Shows escort/ceasefire and current activity in a small status panel.[/*]\n<br />[*]Stows while no usable flight position is available, then redeploys when space opens.[/*]\n<br />[*]Saves deployment intent and ceasefire with the character.[/*]\n<br />[/list]\n<br />The drone is indestructible and consumes no ammunition, batteries, medicine or crafting resources.\n<br />\n<br />[b]Install[/b]\n<br />\n<br />[list=1]\n<br />[*]Install [url=https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.6]BepInEx 5.4.23.6 for Windows x64[/url] beside CasualtiesUnknown.exe. Run the game once and close it.[/*]\n<br />[*]Install [url=https://www.nexusmods.com/scavprototype/mods/341]CUCoreLib 1.1[/url] in BepInEx/plugins.[/*]\n<br />[*]Extract the Guardian Drone ZIP into the game folder. The final plugin path is BepInEx/plugins/GuardianDrone/GuardianDrone.dll.[/*]\n<br />[*]Enter a run and keep the free Guardian drone controller in your carried inventory. If the inventory was full, look at your feet.[/*]\n<br />[/list]\n<br />Only the Guardian DLL and documentation are included. The dependencies are separate downloads.\n<br />\n<br />[b]Controls[/b]\n<br />\n<br />[list]\n<br />[*][b]F6[/b] — deploy / recall. The controller also has a Use action.[/*]\n<br />[*][b]F7[/b] — escort fire / ceasefire. Medical support stays enabled.[/*]\n<br />[*][b]F8[/b] — prioritize a supported external wound.[/*]\n<br />[/list]\n<br />Dropping the controller recalls the drone. A controller still lying in the world prevents another free grant. If it is completely destroyed, one replacement is issued after a short delay; another replacement requires reloading the character or changing layers.\n<br />\n<br />Keys, patrol radius, damage, shot interval, repair rates and drone volume are in BepInEx/config/local.cu.guardiandrone.cfg. Set volume to zero to mute the drone.\n<br />\n<br />[b]Medical and combat limits[/b]\n<br />\n<br />The green beam means external wound treatment. It [b]does not restore lost blood[/b], regrow limbs, treat prosthetics, fractures, internal bleeding, organ injuries, infection, toxins, oxygen loss or brain damage. Embedded fragments still need removal.\n<br />\n<br />Target selection uses a limited list of native creature types, distance, and some sight checks. It can engage a nearby creature before that creature attacks you. This version has no complete hostility/aggro tracking. Press F7 when you want to avoid a fight.\n<br />\n<br />[b]Compatibility and known limits[/b]\n<br />\n<br />[list]\n<br />[*]Tested as a single-player mod. Multiplayer is unverified.[/*]\n<br />[*]Actual damage was checked against wallbiter, including an enabled-AI target. Guards and turret classes exist in the selection code but have not been verified in live tests.[/*]\n<br />[*]Wayfarer Mech is optional. The code contains an integration, but the 0.2.0 preflight did not test that combination.[/*]\n<br />[*]The status panel can overlap the vanilla item label at the top left, particularly in a smaller window.[/*]\n<br />[*]Final preflight was muted. Audio is present in the code, but sound quality and audibility were not audited there.[/*]\n<br />[*]Other game builds, large combat groups and long-session performance remain unverified.[/*]\n<br />[*]Old save schema and item IDs are retained. The final preflight is a 0.2.0 save/reload test, not a separate 0.1.0-to-0.2.0 migration test.[/*]\n<br />[/list]\n<br />[b]Upgrade or uninstall[/b]\n<br />\n<br />Close the game and back up saves before changing versions. For an upgrade, replace the old DLL and keep only one Guardian Drone plugin copy. Before uninstalling, recall the drone, remove the controller, save normally and keep the backup. A save containing custom items may require their mod and CUCoreLib to load.\n<br />\n<br />[b]Source, credits and development disclosure[/b]\n<br />\n<br />[url=https://github.com/dumplingsup/casualties-unknown-guardian-drone]Source repository[/url] · [url=https://github.com/dumplingsup/casualties-unknown-guardian-drone/tree/795c9b7094b18355494dbb7402db550d474cbe5c]0.2.0 source revision[/url] · [url=https://github.com/dumplingsup/casualties-unknown-guardian-drone/blob/main/docs/V0.2.0.md]Test record[/url].\n<br />\n<br />OpenAI Codex produced the mod code, pixel placement script, procedural audio code and documentation under the author's direction. The original drone sprites are rendered from that editable script; no third-party drone sprite is distributed. The English cover and gallery use actual game captures with cropping, integer nearest-neighbour enlargement and typography composed in Pillow. No image-generation model, inpainting or synthetic voice was used for those images. The staged test arena and prepared wound are labelled in the captions.\n<br />\n<br />Visual study references: [url=https://free-game-assets.itch.io/free-drones-pack-pixel-art]CraftPix / Free Game Assets[/url], [url=https://elthen.itch.io/2d-pixel-art-robotic-drone-sprites]Elthen[/url], [url=https://papoycore.itch.io/free-drone]Papoy Core[/url]. Those reference images are not included. Casualties: Unknown, Unity, BepInEx, Harmony and CUCoreLib remain the work of their respective authors.\n<br />",
@@ -1749,18 +1951,18 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/985/985-1794802869-285288322.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/985"
         },
-        "DownloadUrl": "nexus://scavprototype/985/3419",
+        "DownloadUrl": "nexus://scavprototype/985/3453",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 985,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-19T04:48:52.000Z",
-        "ReleaseDate": "2026-11-19T04:48:52.000Z",
-        "SHA256": "f33b12be43d878f32be6fe586bc055c74b06260b55f4ee38180968ee7e97644c",
+        "LastUpdated": "2026-11-20T02:46:05.000Z",
+        "ReleaseDate": "2026-11-20T02:41:51.000Z",
+        "SHA256": "63fb19c145910aa86ad5c55bf401e5b8780394edb0150f7c493b803124c75ba2",
         "dllSHA256s": {
-            "GuardianDrone.dll": "042ff53765ce8ca9f2af8ad797945c707b784800e1d82ba4870d4d1cb2e83b6f"
+            "GuardianDrone.dll": "faccc84eabeb2004ac8a84d02975c6b72069f0ca0d39075f750a947266a31bf2"
         },
-        "downloadsSinceLatestVersion": 8,
+        "downloadsSinceLatestVersion": 16,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1771,14 +1973,14 @@
         "dllNames": [
             "GuardianDrone.dll"
         ],
-        "dllVersion": "0.3.0",
+        "dllVersion": "0.4.0",
         "dllVersions": {
-            "GuardianDrone.dll": "0.3.0"
+            "GuardianDrone.dll": "0.4.0"
         },
         "Statistics": {
-            "Endorsements": 0,
-            "UniqueDownloads": 122,
-            "TotalDownloads": 149,
+            "Endorsements": 2,
+            "UniqueDownloads": 137,
+            "TotalDownloads": 184,
             "TotalViews": null
         },
         "Images": [
@@ -1787,7 +1989,8 @@
         "nexusTags": [
             "AI Media",
             "AI-Generated Content"
-        ]
+        ],
+        "LastNotifiedChangelogVersion": "0.3.0"
     },
     {
         "LastQuickCheck": "2026-11-20T01:30:33.416Z",
@@ -1854,7 +2057,7 @@
         "LastNotifiedChangelogVersion": "5"
     },
     {
-        "LastQuickCheck": "2026-11-19T02:14:38.836Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-983",
         "Name": "Climbs and Boosts",
         "Version": "2",
@@ -1880,7 +2083,7 @@
         "dllSHA256s": {
             "CasualtiesUnknown.LedgeGrab.dll": "0e42bd9b017f8d208c6ec52d8e9da9001587dc2cc795b637955a49b48757a442"
         },
-        "downloadsSinceLatestVersion": 53,
+        "downloadsSinceLatestVersion": 94,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1965,7 +2168,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-981",
         "Name": "Realistic Speech",
         "Version": "1",
@@ -2013,7 +2216,7 @@
             "llama.dll": "17318f48fd6b5ff3e72db0fbf2b5adfab60e8ccb23e634d82c7946c612111c05",
             "mtmd.dll": "46212ff176942b74880625cef789f29ec8c23f34b1812003c0b187bdd9fe8461"
         },
-        "downloadsSinceLatestVersion": 164,
+        "downloadsSinceLatestVersion": 199,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -2160,7 +2363,7 @@
             "AI-Generated Content",
             "Translation"
         ],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-978",
@@ -2188,7 +2391,7 @@
         "dllSHA256s": {
             "CustomObserverMod.dll": "52a178ba9d3bf560629cf707637269d7770673aee7b507c6adef56781d3d559d"
         },
-        "downloadsSinceLatestVersion": 38,
+        "downloadsSinceLatestVersion": 43,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -2211,7 +2414,7 @@
             "AI-Generated Content",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-977",
@@ -2239,7 +2442,7 @@
         "dllSHA256s": {
             "BackroomsLayer.dll": "3c0dd36c1c08506c40590e94d48c43c85c720eb0157980ab6798b0cbde669354"
         },
-        "downloadsSinceLatestVersion": 50,
+        "downloadsSinceLatestVersion": 56,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -2263,10 +2466,10 @@
             "Gameplay",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-976",
         "Name": "Prosthetics RU",
         "Version": "1.1.4",
@@ -2288,7 +2491,7 @@
         "ReleaseDate": "2026-11-15T12:05:35.000Z",
         "SHA256": "a3edf6cddfa55711e33d4ff14415b14586b860a65bae85ab95f9f3d6f867d40b",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 63,
+        "downloadsSinceLatestVersion": 79,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -2707,7 +2910,7 @@
         "LastQuickCheck": "2026-11-19T19:15:05.308Z"
     },
     {
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-955",
         "Name": "Gluttony",
         "Version": "1.0.1",
@@ -2733,7 +2936,7 @@
         "dllSHA256s": {
             "Gluttony.dll": "88a5462e2fcae0804498426cd510fcf291ae1e0d623197e0fbff6e22497a0a4c"
         },
-        "downloadsSinceLatestVersion": 66,
+        "downloadsSinceLatestVersion": 83,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -3956,7 +4159,7 @@
         "LastQuickCheck": "2026-11-19T19:15:05.308Z"
     },
     {
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "LastNotifiedChangelogVersion": "2",
         "Id": "nexus-927",
         "Name": "LEWD CU Extender",
@@ -3983,7 +4186,7 @@
         "dllSHA256s": {
             "LewdExtenderCU.dll": "65aa68a4b37a445c9957ef3a943dfce5f32ac830c76f4c4a06046f6c23f614fe"
         },
-        "downloadsSinceLatestVersion": 21,
+        "downloadsSinceLatestVersion": 392,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5632,7 +5835,7 @@
         "LastQuickCheck": "2026-11-19T19:15:05.308Z"
     },
     {
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "LastNotifiedChangelogVersion": "1",
         "Id": "nexus-890",
         "Name": "CU Mechs",
@@ -5659,7 +5862,7 @@
         "dllSHA256s": {
             "KarmaAdditionItems.dll": "1f6bdb31e9548ca3cae1da2fd1b38db6bada61fe343bb9f24e720a5e00453832"
         },
-        "downloadsSinceLatestVersion": 43,
+        "downloadsSinceLatestVersion": 52,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -7156,7 +7359,7 @@
         "LastQuickCheck": "2026-11-19T19:15:05.308Z"
     },
     {
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-860",
         "Name": "Simpler Firearms",
         "Version": "1.4",
@@ -7182,7 +7385,7 @@
         "dllSHA256s": {
             "CU_Simpler_Firearms.dll": "b0206223a672c7c9dfe077793cf328a29d3ada0e97641b35d8b16b64942fec30"
         },
-        "downloadsSinceLatestVersion": 53,
+        "downloadsSinceLatestVersion": 82,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -7634,7 +7837,7 @@
         "LastQuickCheck": "2026-11-19T19:15:05.308Z"
     },
     {
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-849",
         "Name": "StrimScav",
         "Version": "1.3.1",
@@ -7660,7 +7863,7 @@
         "dllSHA256s": {
             "StrimScav.dll": "b697b649a5be882f67ebbd2e834a9db7acd945523b745564c292b49c9c8241a9"
         },
-        "downloadsSinceLatestVersion": 2,
+        "downloadsSinceLatestVersion": 20,
         "Dependencies": [
             "nexus-341"
         ],
@@ -10540,7 +10743,7 @@
             "Gameplay",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-781",
@@ -10590,7 +10793,7 @@
         "nexusTags": [
             "Humour, Joke or Just for Fun"
         ],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-778",
@@ -10618,7 +10821,7 @@
         "dllSHA256s": {
             "SobrietyTest.dll": "8e335a04172cc0902dc100426cac0a752ededc2b54d221ec088a3c41c8dd3bc8"
         },
-        "downloadsSinceLatestVersion": 87,
+        "downloadsSinceLatestVersion": 91,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -10642,7 +10845,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-776",
@@ -10670,7 +10873,7 @@
         "dllSHA256s": {
             "NoDurabilityEverythingEdition.dll": "a6e5586d0e369d2d2f6b6a65ed36d668d9b70275c7bb7ab478fd4e9c20ace0bc"
         },
-        "downloadsSinceLatestVersion": 314,
+        "downloadsSinceLatestVersion": 323,
         "Dependencies": [
             "nexus-115"
         ],
@@ -10695,7 +10898,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-772",
@@ -13765,7 +13968,7 @@
         "LastQuickCheck": "2026-11-20T09:22:31.629Z"
     },
     {
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-682",
         "Name": "arabic moooooood",
         "Version": "1",
@@ -14548,7 +14751,7 @@
         "dllSHA256s": {
             "CPUOptimization2.dll": "b25139b1995310fade30fd2f72df590fca607ff979be543d7f30122774b845d9"
         },
-        "downloadsSinceLatestVersion": 829,
+        "downloadsSinceLatestVersion": 877,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -14599,7 +14802,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/670/670-1789072249-715837731.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z"
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
     },
     {
         "Id": "nexus-669",
@@ -31127,7 +31330,7 @@
         "LastQuickCheck": "2026-11-20T01:30:33.416Z"
     },
     {
-        "LastQuickCheck": "2026-11-19T10:53:18.558Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-324",
         "Name": "Gunsaw Genetics",
         "Version": "2.1.0",
@@ -31155,7 +31358,7 @@
             "GunsawGenetics.dll": "bb5d779992ae09f5ea8b667d640417072cc0f4437a23572b0de695e044bcfc2a",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 1179,
+        "downloadsSinceLatestVersion": 1974,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -34889,13 +35092,13 @@
         "LastQuickCheck": "2026-11-20T01:30:33.416Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-135",
         "Name": "Cu-Hotbar",
-        "Version": "11",
-        "bepinexVersion": "1.0.9",
+        "Version": "12",
+        "bepinexVersion": "1.1.1",
         "bepinexPlugins": {
-            "com.casualtiesUnknown.hotbar": "1.0.9"
+            "com.casualtiesUnknown.hotbar": "1.1.1"
         },
         "Summary": "可自定义快捷栏。拖物品到槽位绑定，数字键/滚轮切主手，右键使用；位置/缩放/透明度可调，按角色缓存；检测到 SaveManager 自动合并设置分页。 customizable hotbar. Drag to bind, number/scroll to switch, right-click to use; adjustable, per-character cache; merges into SaveManager when present.",
         "Description": "[b]CuHotbar[/b]\n<br />\n<br />[u]A customizable Minecraft-style hotbar for Casualties: Unknown. Bind items from your inventory to slots and switch them to your main hand instantly.[/u]\n<br />\n<br />为《未知伤亡》添加一条可自定义的快捷物品栏：把背包物品绑定到槽位，随时快速切到主手。\n<br />\n<br />[b]Installation instructions[/b]\n<br />\n<br />1. Install BepInEx.\n<br />2. Place the `CuHotbar` folder into `BepInEx/plugins/`.\n<br />3. Launch the game; open settings from the main-menu button, the in-game pause button, or the SaveManager tab.\n<br />\n<br />1. 安装 BepInEx。\n<br />2. 把 `CuHotbar` 文件夹放入 `BepInEx/plugins/`。\n<br />3. 启动游戏，通过主菜单按钮、游戏内暂停按钮或 SaveManager 分页打开设置。\n<br />\n<br />[b]Main features[/b]\n<br />\n<br />- Drag items from the inventory onto slots to bind them.\n<br />- Switch to the main hand with number keys or the scroll wheel; right-click to use the held item.\n<br />- Adjustable position, scale, and background opacity.\n<br />- Bindings cached per character, persisting across sessions.\n<br />- Auto-refill and original-spot return when items are used or dropped.\n<br />\n<br />- 从背包拖动物品到槽位绑定。\n<br />- 数字键 / 滚轮切到主手，右键使用手中物品。\n<br />- 位置、缩放、背景透明度均可调。\n<br />- 绑定按角色缓存，重进游戏不丢失。\n<br />- 物品用尽 / 丢出后自动补充并归还原位。\n<br />\n<br />[b] Requirements[/b]\n<br />\n<br />- BepInEx (required).\n<br />- SaveManager (optional): when present, settings merge into its panel as a tab.\n<br />\n<br />- BepInEx（必需）。\n<br />- SaveManager（可选）：在场时设置合并为其面板的一个分页。\n<br />\n<br />Repository: [[url=https://github.com/huanxin996/Cu-Hotbar][/url][url=https://github.com/HuanXinWork/Cu-Hotbar]HuanXinWork/Cu-Hotbar[/url]]\n<br />SaveManager:[[url=https://github.com/huanxin996/Cu-SaveManager][/url][url=https://github.com/HuanXinWork/Cu-SaveManager]HuanXinWork/Cu-SaveManager[/url]]",
@@ -34904,31 +35107,31 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/135/135-1780249787-1827646159.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/135"
         },
-        "DownloadUrl": "nexus://scavprototype/135/3443",
+        "DownloadUrl": "nexus://scavprototype/135/3492",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 135,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-19T18:24:36.000Z",
-        "ReleaseDate": "2026-11-19T18:24:36.000Z",
-        "SHA256": "5c2b67ef6d6bc134cdac0f34e52b70a69143216d097a9af7176627ae719a07c2",
+        "LastUpdated": "2026-11-20T17:34:25.000Z",
+        "ReleaseDate": "2026-11-20T17:34:25.000Z",
+        "SHA256": "d38ca4a894729b6ed6cc276f253c49b0203bac09d9b442e28de409624f0c0735",
         "dllSHA256s": {
-            "CuHotbar.dll": "d5d991e214680c9024d7eb31be5d052402574bf311b52dbf08cd9471047a384a"
+            "CuHotbar.dll": "bf65220e3f7717b32d78eef04cfaccc58b64fbd10a20f93994d7eb7168ae1b31"
         },
-        "downloadsSinceLatestVersion": 7,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
             "CuHotbar.dll"
         ],
-        "dllVersion": "1.0.9",
+        "dllVersion": "1.1.1",
         "dllVersions": {
-            "CuHotbar.dll": "1.0.9"
+            "CuHotbar.dll": "1.1.1"
         },
         "Statistics": {
-            "Endorsements": 30,
-            "UniqueDownloads": 623,
-            "TotalDownloads": 1065,
+            "Endorsements": 31,
+            "UniqueDownloads": 634,
+            "TotalDownloads": 1096,
             "TotalViews": null
         },
         "Images": [
@@ -40993,33 +41196,33 @@
         "LastQuickCheck": "2026-11-20T01:30:33.416Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z",
+        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
         "Id": "nexus-15",
         "Name": "Player sprite replacer",
-        "Version": "v2.0.1",
-        "bepinexVersion": "2.0.1",
+        "Version": "v2.1.0",
+        "bepinexVersion": "2.1.0",
         "bepinexPlugins": {
-            "com.yourname.spritereplacer": "2.0.1"
+            "com.yourname.spritereplacer": "2.1.0"
         },
         "Summary": "Player sprite/skin changer now with multiplayer support! This mod makes it possible to change the player sprite without changing the assets file using BepInEx.",
-        "Description": "[size=6][b]Casualties Unknown - Player Sprite Replacer[/b][/size]\n<br />\n<br />A BepInEx mod for Casualties Unknown that swaps the body, head, and wound-view sprites of your character at runtime. It has an in-game skin menu, nine slots, numpad shortcuts, and multiplayer skin sync.\n<br />\n<br />[size=5][b]Compatibility[/b][/size]\n<br />\n<br />[list]\n<br />[*]Loader: [b]BepInEx 5.4.23.5[/b][/*]\n<br />[*]Game version: [b]Casualties Unknown v1.0.0[/b] (tested on release 9th of november 2026). Also works on the last version of the demo/beta.[/*]\n<br />[*]Optional: [b]CUCoreLib 1.0.6.1[/b] or newer for the settings tab. Multiplayer needs CUCoreLib and [b]Casualties Together 5.2.0[/b].[/*]\n<br />[/list]\n<br />Single-player works without CUCoreLib. The game is still in development. File layouts can change between versions and may break the mod until I update it.\n<br />\n<br />[size=5][b]Permissions[/b][/size]\n<br />\n<br />If the game creator [b]Orsoniks[/b] does not want this mod public, please contact me and I will take it down.\n<br />\n<br />[size=5][b]Installation[/b][/size]\n<br />\n<br />[size=4][b]1. Prerequisite[/b][/size]\n<br />\n<br />Install BepInEx 5 if you do not have it yet. Official guide: [url=https://docs.bepinex.dev/articles/user_guide/installation/index.html]https://docs.bepinex.dev/articles/user_guide/installation/index.html[/url]\n<br />\n<br />For multiplayer, also install CUCoreLib 1.0.6.1 or newer and Casualties Together 5.2.0.\n<br />\n<br />[size=4][b]2. The mod[/b][/size]\n<br />\n<br />[list=1]\n<br />[*]Open the mod archive and look inside\n<br />[code]body-sprite-replacer/plugins[/code].[/*]\n<br />[*]Copy its contents into the\n<br />[code]BepInEx/plugins[/code]folder in your game. You should end up with\n<br />[code]body_sprite_replacer.dll[/code]and a\n<br />[code]CustomSprites[/code]directory.[/*]\n<br />[*]Start the game.[/*]\n<br />[/list]\n<br />[size=5][b]Usage[/b][/size]\n<br />\n<br />[list]\n<br />[*]Click the [b]top-left button[/b] in the main menu or the Escape menu to open the skin menu.[/*]\n<br />[*]The menu shows nine slots:\n<br />[code]slot1[/code]through\n<br />[code]slot9[/code].\n<br />[code]slot1[/code]to\n<br />[code]slot3[/code]ship with skins.\n<br />[code]slot4[/code]to\n<br />[code]slot9[/code]are empty. [b]Select[/b] uses a slot. [b]Switch[/b] imports a prepared skin folder into a slot.[/*]\n<br />[*]Press [b]Numpad 1 through 9[/b] or click a skin card. The [b]Active slot[/b] dropdown in [b]Settings &gt; Skin Replacer[/b] does the same.[/*]\n<br />[*]The mod remembers the last slot and loads it at the next launch. It looks for sprites in\n<br />[code]CustomSprites/slot1[/code]through\n<br />[code]CustomSprites/slot9[/code]. The mod renames old\n<br />[code]st1[/code]to\n<br />[code]st9[/code]folders on the first launch.[/*]\n<br />[*]A slot can contain a\n<br />[code]WoundView[/code]subfolder. The mod replaces the health-screen art with these sprites.[/*]\n<br />[*]The mod hides the button in the wound view, crafting panel, trade menu, and settings menu.[/*]\n<br />[*]No numpad? Use the skin menu or the [b]Active slot[/b] dropdown in [b]Settings &gt; Skin Replacer[/b]. On the first launch,\n<br />[code]slot1[/code]loads automatically. Or you can just use the custom mod menu :)[/*]\n<br />[/list]\n<br />[size=4][b]Multiplayer[/b][/size]\n<br />\n<br />[list]\n<br />[*]Multiplayer needs [b]CUCoreLib 1.0.6.1[/b] or newer and [b]Casualties Together 5.2.0[/b].[/*]\n<br />[*]Each player keeps their own active slot. The mod shares the chosen skin with the other clients. A client that joins late receives the skins already in the session.[/*]\n<br />[*]The host can lock skins from the skin menu. A locked client cannot change. A client that joins while locked gets one change.[/*]\n<br />[*]The skin menu has [b]Share: ON/OFF[/b], [b]Download: ON/OFF[/b], and [b]Clear cache[/b] controls. These settings are local to each player.[/*]\n<br />[*]The mod caches remote skins in\n<br />[code]BepInEx/plugins/CustomSprites/mp_cache[/code]. The cache keeps 64 MB or 32 skins by default. Set\n<br />[code]MaxSkinCacheMB[/code]in the BepInEx config to change the size.[/*]\n<br />[*]The host limits each client to 8 skin uploads in 10 seconds. A client that hits the limit gets a chat line and a live countdown in the skin menu. The mod still shares the upload that hits the limit, so all clients see the last skin in the burst. Repeated attempts increase the pause: 10 seconds, 1 minute, 5 minutes, then 15 minutes.[/*]\n<br />[*]The WoundView stays local.[/*]\n<br />[*]Casualties Together 5.2.0 does not support host migration. If the host leaves, the session ends.[/*]\n<br />[*]Disable ChangeSkinMP and other skin mods before you use this mod in multiplayer.[/*]\n<br />[/list]\n<br />[size=5][b]Sprite credits[/b][/size]\n<br />\n<br />[list]\n<br />[*][code]slot1[/code]- [b]Motthew[/b] by [b]beebigirl[/b]: [url=https://skin.cat-bot.de/?skinid=163]https://skin.cat-bot.de/?skinid=163[/url][/*]\n<br />[*][code]slot2[/code]- [b]Milky (alt)[/b] by [b]beebigirl[/b]: [url=https://skin.cat-bot.de/?skinid=237]https://skin.cat-bot.de/?skinid=237[/url][/*]\n<br />[*][code]slot3[/code]- [b]Dune (alt)[/b] by [b]beebigirl[/b]: [url=https://skin.cat-bot.de/?skinid=226]https://skin.cat-bot.de/?skinid=226[/url][/*]\n<br />[*][code]slot4[/code]to\n<br />[code]slot9[/code]- empty. Add your own sprites.[/*]\n<br />[/list]\n<br />[size=5][b]Making your own sprites[/b][/size]\n<br />\n<br />The mod writes the game's default body, head, and wound-view sprites to\n<br />[code]CustomSprites/default[/code]when it sees them. Load a save and open the health screen one time to capture the wound-view sprites. Use the folder as a template. The mod does not overwrite a file that is already there.\n<br />\n<br />[list=1]\n<br />[*]Back up the\n<br />[code]Body[/code],\n<br />[code]Head[/code], and\n<br />[code]WoundView[/code]folders inside the slot you will modify. The mod also writes a backup to\n<br />[code]CustomSprites/backups[/code]when you use [b]Switch[/b].[/*]\n<br />[*]Replace the PNGs with your own art.[/*]\n<br />[*][b]Keep the file names exactly the same.[/b] The mod matches sprites by file name, so renaming them breaks replacement.[/*]\n<br />[*]Keep the original image dimensions. The mod allows a different size, but the sprite can look larger or smaller in the game.[/*]\n<br />[*]The nosebleed sprite is optional. Put\n<br />[code]experimentNosebleed.png[/code]in the\n<br />[code]Head[/code]folder of the slot. The game default stays when the file is absent.[/*]\n<br />[*]The\n<br />[code]WoundView[/code]folder holds the health-screen art: the body image, limb outlines, and limb wound layers. Copy the file names from\n<br />[code]CustomSprites/default/WoundView[/code].[/*]\n<br />[*][code]CustomSprites/BaseSprites_woundview/BaseSprites[/code]is a reference folder with 30 PNGs of the game's wound-view art. The mod does not load this folder. Do not copy its file names.[/*]\n<br />[/list]\n<br />The game tints the wound-view layers at runtime. The outline layer gets a white-to-red tint, and the inner layer gets a black-to-red tint. The mod turns off the tint of an inner layer when its PNG has colors, so custom colors show. A white inner mask keeps the game tint.\n<br />\n<br />You can also use [b]Switch[/b] to import a prepared skin folder. The folder must contain a\n<br />[code]Body[/code],\n<br />[code]Head[/code], or\n<br />[code]WoundView[/code]subfolder. The importer checks the PNG names and warns about missing names. It writes a timestamped backup to\n<br />[code]CustomSprites/backups[/code]and keeps the newest 5 backups per slot. The [b]Backups kept per slot[/b] setting changes the count.\n<br />[code]0[/code]keeps all backups.\n<br />\n<br />[size=5][b]Finding sprites[/b][/size]\n<br />\n<br />Places to get community sprites:\n<br />\n<br />[list]\n<br />[*][url=https://skin.cat-bot.de/]https://skin.cat-bot.de/[/url] - this mod expects\n<br />[code]Body[/code]and\n<br />[code]Head[/code]as separate folders. Split the downloaded files until I add single-file support.[/*]\n<br />[*][url=https://github.com/Paili-16/Scav-Prototype-The-Characters-Skins]https://github.com/Paili-16/Scav-Prototype-The-Characters-Skins[/url][/*]\n<br />[/list]\n<br />[size=5][b]Notes[/b][/size]\n<br />\n<br />[list]\n<br />[*]You do [b]not[/b] need to edit\n<br />[code]sharedassets1.assets[/code]for this mod.[/*]\n<br />[*]The mod does not edit game files. It replaces sprites at runtime.[/*]\n<br />[*]Single-player works without CUCoreLib. Multiplayer needs CUCoreLib and Casualties Together.[/*]\n<br />[/list]\n<br />[size=5][b]Bug reports &amp; support[/b][/size]\n<br />\n<br />GitHub: [url=https://github.com/dogederp/CasultiesUnknown_Player-sprite-replacer]https://github.com/dogederp/CasultiesUnknown_Player-sprite-replacer[/url]\n<br />\n<br />[list]\n<br />[*]Report bugs on GitHub: [url=https://github.com/dogederp/CasultiesUnknown_Player-sprite-replacer/issues]https://github.com/dogederp/CasultiesUnknown_Player-sprite-replacer/issues[/url][/*]\n<br />[*]Or use the [b]Nexus bugs tab[/b]: [url=https://www.nexusmods.com/scavprototype/mods/15?tab=bugs]https://www.nexusmods.com/scavprototype/mods/15?tab=bugs[/url][/*]\n<br />[*]The [b]Settings &gt; Skin Replacer[/b] tab has a \"Found a bug? Please report it.\" row with both links.[/*]\n<br />[*]Pull requests are welcome.[/*]\n<br />[*]Open an issue for questions.[/*]\n<br />[*]Do you have screenshots or videos of your skins? Feel free to add them to this page. I would love to see them.[/*]\n<br />[*]GitHub gets updates first, before NexusMods.[/*]\n<br />[*][b]Endorse[/b] the mod on NexusMods: [url=https://www.nexusmods.com/scavprototype/mods/15]https://www.nexusmods.com/scavprototype/mods/15[/url][/*]\n<br />[*][b]Star[/b] the GitHub repo: [url=https://github.com/dogederp/CasultiesUnknown_Player-sprite-replacer]https://github.com/dogederp/CasultiesUnknown_Player-sprite-replacer[/url][/*]\n<br />[*]Buy me a coffee: [url=https://buymeacoffee.com/dogederp]https://buymeacoffee.com/dogederp[/url][/*]\n<br />[/list]\n<br />[size=5][b]Other skin mods[/b][/size]\n<br />\n<br />If this mod does not fit your needs:\n<br />\n<br />[list]\n<br />[*][url=https://www.nexusmods.com/scavprototype/mods/118]ChangeSkin Multiplayer[/url] - another multiplayer skin replacer I worked on, not sure if I'm going to continue work on this.[/*]\n<br />[*][url=https://github.com/05126619z/ChangeSkin]https://github.com/05126619z/ChangeSkin[/url] - single-player ChangeSkin by 05126619z.[/*]\n<br />[*][url=https://www.nexusmods.com/scavprototype/mods/817]Multiplayer fork of my v1.1.0[/url] - By Lenruii. [/*]\n<br />[/list]\n<br />Do not run these mods together with Player Sprite Replacer.\n<br />\n<br />Let me know if there are variants I missed, I will put those on the list!\n<br />",
+        "Description": "[size=6][b]Casualties Unknown - Player Sprite Replacer[/b][/size]\n<br />\n<br />A BepInEx mod for Casualties Unknown that swaps the body, head, and wound-view sprites of your character at runtime. It has a skin menu with one page for each species, nine slots on each page, numpad shortcuts, and multiplayer skin sync.\n<br />\n<br />[size=5][b]Compatibility[/b][/size]\n<br />\n<br />[list]\n<br />[*]Loader: [b]BepInEx 5.4.23.5[/b][/*]\n<br />[*]Game version: [b]Casualties Unknown 1.0.2[/b].[/*]\n<br />[*]Optional: [b]CUCoreLib 1.0.6.1[/b] or newer for the settings tab. Multiplayer needs CUCoreLib and [b]Casualties Together 5.5.4[/b].[/*]\n<br />[/list]\n<br />Single-player works without CUCoreLib.\n<br />\n<br />[size=5][b]Permissions[/b][/size]\n<br />\n<br />If the game creator [b]Orsoniks[/b] does not want this mod public, please contact me and I will take it down.\n<br />\n<br />[size=5][b]Installation[/b][/size]\n<br />\n<br />[size=4][b]1. Prerequisite[/b][/size]\n<br />\n<br />Install BepInEx 5 if you do not have it yet. Official guide: [url=https://docs.bepinex.dev/articles/user_guide/installation/index.html]https://docs.bepinex.dev/articles/user_guide/installation/index.html[/url]\n<br />\n<br />For multiplayer, also install CUCoreLib 1.0.6.1 or newer and Casualties Together 5.5.4.\n<br />\n<br />Casualties Together should now also include this mod by default! You can still use this one as a backup if needed for any reason.\n<br />\n<br />[size=4][b]2. The mod[/b][/size]\n<br />\n<br />[list=1]\n<br />[*]Open the mod archive and look inside\n<br />[code]body-sprite-replacer/plugins[/code].[/*]\n<br />[*]Copy its contents into the\n<br />[code]BepInEx/plugins[/code]folder in your game. You should end up with\n<br />[code]body_sprite_replacer.dll[/code]and a\n<br />[code]CustomSprites[/code]directory.[/*]\n<br />[*]Start the game.[/*]\n<br />[/list]\n<br />[size=5][b]Usage[/b][/size]\n<br />\n<br />[list]\n<br />[*]Click the [b]top-left button[/b] in the main menu or the Escape menu to open the skin menu.[/*]\n<br />[*]The menu has three pages: [b]Expie[/b] (\n<br />[code]Exp[/code]), [b]Milky[/b], and [b]Dune[/b]. Each page shows a 3 by 3 grid of\n<br />[code]slot1[/code]to\n<br />[code]slot9[/code]. The [b]Default (0)[/b] button selects the game's own art for the page.[/*]\n<br />[*][b]Select[/b] uses a slot. [b]Switch[/b] imports a prepared skin folder into a slot.[/*]\n<br />[*]Press [b]Numpad 0[/b] for Default, or [b]Numpad 1 through 9[/b] for a slot. Click a card or use the [b]Active slot[/b] dropdown in [b]Settings &gt; Skin Replacer[/b].[/*]\n<br />[*]Each page remembers its own slot. The mod loads that slot when your body changes species.[/*]\n<br />[*]The mod looks for sprites in\n<br />[code]CustomSprites/Exp[/code],\n<br />[code]CustomSprites/Milky[/code], and\n<br />[code]CustomSprites/Dune[/code]. Each branch has\n<br />[code]default[/code],\n<br />[code]slot1[/code]to\n<br />[code]slot9[/code], and\n<br />[code]backups[/code].[/*]\n<br />[*]A slot can contain a\n<br />[code]WoundView[/code]subfolder. The mod replaces the health-screen art with these sprites.[/*]\n<br />[*]The mod hides the button in the wound view, crafting panel, trade menu, and settings menu.[/*]\n<br />[*]No numpad? Use the skin menu or the [b]Active slot[/b] dropdown in [b]Settings &gt; Skin Replacer[/b]. On a fresh install the game art stays until you select a slot.[/*]\n<br />[*]Updating from 2.0.x? On the first launch,\n<br />[code]CustomSprites/slot1[/code]to\n<br />[code]slot9[/code],\n<br />[code]st1[/code]to\n<br />[code]st9[/code], and\n<br />[code]default[/code]move into\n<br />[code]CustomSprites/Exp[/code]. A folder is not moved when the target already exists.[/*]\n<br />[*]Old\n<br />[code]st1[/code]to\n<br />[code]st9[/code]folder names are renamed to\n<br />[code]slot1[/code]to\n<br />[code]slot9[/code].[/*]\n<br />[/list]\n<br />[size=4][b]Multiplayer[/b][/size]\n<br />\n<br />[list]\n<br />[*]Multiplayer needs [b]CUCoreLib 1.0.6.1[/b] or newer and [b]Casualties Together 5.5.4[/b].[/*]\n<br />[*]Each player keeps their own species page and slot. The mod shares the chosen skin with the other clients. A client that joins late receives the skins already in the session.[/*]\n<br />[*]The skin package includes the species, so other players see your skin on the correct body.[/*]\n<br />[*][code]default[/code]is the game's own art. The mod never uploads it. Selecting [b]Default (0)[/b] removes your shared skin.[/*]\n<br />[*]The host can lock skins from the skin menu. A locked client cannot change. A client that joins while locked gets one change.[/*]\n<br />[*]The skin menu has [b]Share: ON/OFF[/b], [b]Download: ON/OFF[/b], and [b]Clear cache[/b] controls. These settings are local to each player.[/*]\n<br />[*]The mod caches remote skins in\n<br />[code]BepInEx/plugins/CustomSprites/mp_cache[/code]. The cache keeps 64 MB or 32 skins by default. Set\n<br />[code]MaxSkinCacheMB[/code]in the BepInEx config to change the size.[/*]\n<br />[*]The host limits each client to 8 skin uploads in 10 seconds. A client that hits the limit gets a chat line and a live countdown in the skin menu. The mod still shares the upload that hits the limit, so all clients see the last skin in the burst. Repeated attempts increase the pause: 10 seconds, 1 minute, 5 minutes, then 15 minutes.[/*]\n<br />[*]The WoundView stays local.[/*]\n<br />[*]Casualties Together 5.5.4 does not support host migration. If the host leaves, the session ends.[/*]\n<br />[*]Disable ChangeSkinMP and other skin mods before you use this mod in multiplayer.[/*]\n<br />[/list]\n<br />[size=5][b]Sprite credits[/b][/size]\n<br />\n<br />[list]\n<br />[*][code]Exp/slot1[/code]- [b]Motthew[/b] by [b]beebigirl[/b]: [url=https://skin.cat-bot.de/?skinid=163]https://skin.cat-bot.de/?skinid=163[/url][/*]\n<br />[*][code]Exp/slot2[/code]- [b]Milky (alt)[/b] by [b]beebigirl[/b]: [url=https://skin.cat-bot.de/?skinid=237]https://skin.cat-bot.de/?skinid=237[/url][/*]\n<br />[*][code]Exp/slot3[/code]- [b]Dune (alt)[/b] by [b]beebigirl[/b]: [url=https://skin.cat-bot.de/?skinid=226]https://skin.cat-bot.de/?skinid=226[/url][/*]\n<br />[*][code]Exp/slot4[/code]to\n<br />[code]slot9[/code]- empty. Add your own sprites. The rest will also be empty.[/*]\n<br />[/list]\n<br />[size=5][b]Making your own sprites[/b][/size]\n<br />\n<br />The mod writes the game's own body, head, and wound-view sprites to the\n<br />[code]default[/code]folder of each species branch when it sees them. Load a save and open the health screen one time to capture the wound-view sprites. Use the folder as a template. The mod does not overwrite a file that is already there.\n<br />\n<br />A page reads only its own branch. A Milky or Dune page also accepts\n<br />[code]experiment*[/code]file names. The mod maps those names to the live species names.\n<br />\n<br />[list=1]\n<br />[*]Back up the\n<br />[code]Body[/code],\n<br />[code]Head[/code], and\n<br />[code]WoundView[/code]folders inside the slot you will modify. The mod also writes a backup to the\n<br />[code]backups[/code]folder of that species branch when you use [b]Switch[/b].[/*]\n<br />[*]Replace the PNGs with your own art.[/*]\n<br />[*][b]Keep the file names exactly the same.[/b] The mod matches sprites by file name, so renaming them breaks replacement.[/*]\n<br />[*]Keep the original image dimensions. The mod allows a different size, but the sprite can look larger or smaller in the game.[/*]\n<br />[*]The nosebleed sprite is optional. Put\n<br />[code]experimentNosebleed.png[/code]in the\n<br />[code]Head[/code]folder of the slot. The game default stays when the file is absent.[/*]\n<br />[*]The\n<br />[code]WoundView[/code]folder holds the health-screen art: the body image, limb outlines, and limb wound layers. Copy the file names from\n<br />[code]CustomSprites/Exp/default/WoundView[/code].[/*]\n<br />[*][code]CustomSprites/BaseSprites_woundview/BaseSprites[/code]is a reference folder with 30 PNGs of the game's wound-view art. The mod does not load this folder. Do not copy its file names.[/*]\n<br />[/list]\n<br />The game tints the wound-view layers at runtime. The outline layer gets a white-to-red tint, and the inner layer gets a black-to-red tint. The mod turns off the tint of an inner layer when its PNG has colors, so custom colors show. A white inner mask keeps the game tint.\n<br />\n<br />You can also use [b]Switch[/b] to import a prepared skin folder. The folder must contain a\n<br />[code]Body[/code],\n<br />[code]Head[/code], or\n<br />[code]WoundView[/code]subfolder. The importer checks the PNG names and warns about missing names. It writes a timestamped backup to the\n<br />[code]backups[/code]folder of the species branch and keeps the newest 5 backups per slot and species. The [b]Backups kept per slot[/b] setting changes the count.\n<br />[code]0[/code]keeps all backups.\n<br />\n<br />[size=5][b]Finding sprites[/b][/size]\n<br />\n<br />Places to get community sprites:\n<br />\n<br />[list]\n<br />[*][url=https://skin.cat-bot.de/]https://skin.cat-bot.de/[/url] - this mod expects\n<br />[code]Body[/code]and\n<br />[code]Head[/code]as separate folders. Split the downloaded files until I add single-file support.[/*]\n<br />[*][url=https://github.com/Paili-16/Scav-Prototype-The-Characters-Skins]https://github.com/Paili-16/Scav-Prototype-The-Characters-Skins[/url][/*]\n<br />[/list]\n<br />[size=5][b]Notes[/b][/size]\n<br />\n<br />[list]\n<br />[*]You do [b]not[/b] need to edit\n<br />[code]sharedassets1.assets[/code]for this mod.[/*]\n<br />[*]The mod does not edit game files. It replaces sprites at runtime.[/*]\n<br />[*]Single-player works without CUCoreLib. Multiplayer needs CUCoreLib and Casualties Together.[/*]\n<br />[/list]\n<br />[size=5][b]Bug reports &amp; support[/b][/size]\n<br />\n<br />GitHub: [url=https://github.com/dogederp/CasultiesUnknown_Player-sprite-replacer]https://github.com/dogederp/CasultiesUnknown_Player-sprite-replacer[/url]\n<br />\n<br />[list]\n<br />[*]Report bugs on GitHub: [url=https://github.com/dogederp/CasultiesUnknown_Player-sprite-replacer/issues]https://github.com/dogederp/CasultiesUnknown_Player-sprite-replacer/issues[/url][/*]\n<br />[*]Or use the [b]Nexus bugs tab[/b]: [url=https://www.nexusmods.com/scavprototype/mods/15?tab=bugs]https://www.nexusmods.com/scavprototype/mods/15?tab=bugs[/url][/*]\n<br />[*]The [b]Settings &gt; Skin Replacer[/b] tab has a \"Found a bug? Please report it.\" row with both links.[/*]\n<br />[*]Pull requests are welcome.[/*]\n<br />[*]Open an issue for questions.[/*]\n<br />[*]Do you have screenshots or videos of your skins? Feel free to add them to this page. I would love to see them.[/*]\n<br />[*]GitHub gets updates first, before NexusMods.[/*]\n<br />[*][b]Endorse[/b] the mod on NexusMods: [url=https://www.nexusmods.com/scavprototype/mods/15]https://www.nexusmods.com/scavprototype/mods/15[/url][/*]\n<br />[*][b]Star[/b] the GitHub repo: [url=https://github.com/dogederp/CasultiesUnknown_Player-sprite-replacer]https://github.com/dogederp/CasultiesUnknown_Player-sprite-replacer[/url][/*]\n<br />[*]Buy me a coffee: [url=https://buymeacoffee.com/dogederp]https://buymeacoffee.com/dogederp[/url][/*]\n<br />[/list]\n<br />[size=5][b]Other skin mods[/b][/size]\n<br />\n<br />If this mod does not fit your needs:\n<br />\n<br />[list]\n<br />[*][url=https://www.nexusmods.com/scavprototype/mods/118]ChangeSkin Multiplayer[/url] - another multiplayer skin replacer.[/*]\n<br />[*][url=https://github.com/05126619z/ChangeSkin]https://github.com/05126619z/ChangeSkin[/url] - single-player ChangeSkin by 05126619z.[/*]\n<br />[/list]\n<br />Do not run these mods together with Player Sprite Replacer.",
         "Author": "dogederp",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/15/15-1793900332-478601178.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/15"
         },
-        "DownloadUrl": "nexus://scavprototype/15/3367",
+        "DownloadUrl": "nexus://scavprototype/15/3489",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 15,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-17T15:20:08.000Z",
-        "ReleaseDate": "2026-11-17T15:20:08.000Z",
-        "SHA256": "886ae0c9d19800d1532ae324b4c2480068088eea8c07a4f37e2be2b212873892",
+        "LastUpdated": "2026-11-20T16:13:38.000Z",
+        "ReleaseDate": "2026-11-20T16:13:38.000Z",
+        "SHA256": "b615e255be13608a01873816bd5bb9223f04cff0325df0c28e63c8823ad8044f",
         "dllSHA256s": {
-            "body_sprite_replacer.dll": "1b54df83bc7f411f1385af74b6a36a454641e98e8f4c6b353e9182150d18913b"
+            "body_sprite_replacer.dll": "a158e14448ce0b5c2ea430220fd07304c3980f149bc942c43c6e883415becaad"
         },
-        "downloadsSinceLatestVersion": 502,
+        "downloadsSinceLatestVersion": 19,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -41033,19 +41236,23 @@
             {
                 "Version": "v2.0.1",
                 "Changelog": "- ### Fixed\n- Movement, Escape, wound view, and mouse actions keep working after a scene load. The mod fills the keybind cache again when the game skips the input settings.\n- The top-left button stays hidden during the startup screens and the intro story. It shows on the main menu and in the Escape menu after the intro closes.\n- Skin switching works when CUCoreLib is not installed. A CUCoreLib-typed static field caused a `TypeLoadException` before the new sprites loaded."
+            },
+            {
+                "Version": "v2.1.0",
+                "Changelog": "- One menu page for each species. Each page has its own folder branch and its own slot.\n- ### Added\n- Three species pages: **Expie** (`Exp`), **Milky**, and **Dune**. Each page shows a 3 by 3 grid of `slot1` to `slot9`.\n- **Default (0)** button on the tab row. It selects the stock art for the page you browse.\n- `default` is slot 0: the stock art for one species. **Numpad 0** selects it.\n- Each species remembers its own slot. A body of another species loads that species' saved folder.\n- Importing on the live species page applies the slot. Importing on another species page only remembers the slot for that species.\n- Each slot card shows its slot number in the top-left corner and a larger preview.\n- New config entries: `ExpSlot`, `MilkySlot`, `DuneSlot`, and `LayoutVersion`.\n- ### Changed\n- Custom sprites now live in `CustomSprites/Exp`, `CustomSprites/Milky`, and `CustomSprites/Dune`.\n- Each species branch holds `default`, `slot1` to `slot9`, and `backups`.\n- Slot cards show no text under the preview. **Select** and **Switch** stay at the bottom of the card.\n- Skin backups go to `<species>/backups`. The old root `CustomSprites/backups` stays for old backups.\n- `mp_cache` and `BaseSprites_woundview` stay in the root `CustomSprites` folder.\n- Stock sprite export writes to `<species>/default`. Milky and Dune head wound art goes to its own branch.\n- `ActiveSlot` is the last applied folder. The per-species entries win over it.\n- The CUCoreLib **Active slot** dropdown has **Default** and **Slot 1** to **Slot 9**.\n- Multiplayer packages include the species. Peers map experiment-named art to the live species names.\n- The mod never uploads `<species>/default`. Selecting it clears your shared skin.\n- ### Removed\n- The startup warning for an empty `CustomSprites` folder. `default` is always available.\n- ### Fixed\n- The mod starts on `default` when the remembered folder for the first species is missing.\n- ### Migration\n- On the first launch, old root `slot1` to `slot9`, `st1` to `st9`, and `default` move into `CustomSprites/Exp`.\n- A folder is not moved when the target folder already exists.\n- Old root `slot0` and `st0` merge into `Exp/default`.\n- Old `stN` names inside a species branch are renamed to `slotN`."
             }
         ],
         "dllNames": [
             "body_sprite_replacer.dll"
         ],
-        "dllVersion": "2.0.1",
+        "dllVersion": "2.1.0",
         "dllVersions": {
-            "body_sprite_replacer.dll": "2.0.1"
+            "body_sprite_replacer.dll": "2.1.0"
         },
         "Statistics": {
-            "Endorsements": 233,
-            "UniqueDownloads": 6767,
-            "TotalDownloads": 8958,
+            "Endorsements": 240,
+            "UniqueDownloads": 7082,
+            "TotalDownloads": 9517,
             "TotalViews": null
         },
         "Images": [

@@ -1,5 +1,229 @@
 [
     {
+        "Id": "nexus-1058",
+        "Name": "CU Mod Manager",
+        "Version": "1.0.0",
+        "bepinexVersion": null,
+        "bepinexPlugins": {},
+        "Summary": "A mod manager for Casualties: Unknown. Drop in any mod, however it's packaged, and it goes in the right place. Turn mods on and off, save profiles, share mod lists or mod packs with friends, and let it install BepInEx for you.",
+        "Description": "[size=5][b]C:U Mod Manager[/b][/size]\n<br />\n<br />A mod manager made for Casualties: Unknown. Drop in any mod and it goes in the right place, whether its author packaged it for the game folder, for the BepInEx folder, or as just a dll. No more guessing where to extract things.\n<br />\n<br />[i]The mods shown in the screenshots (Better Backpacks, Survival Core, Ragdoll Physics Plus and the rest) are made-up examples to show the manager, not real mods.[/i]\n<br />\n<br />[size=5][b]Features[/b][/size]\n<br />[list]\n<br />[*][b]Install anything:[/b] drop a .zip, .7z, .rar, .dll or mod folder on the window. The manager works out how the mod was packaged, shows where each file will go, and installs it. If a download bundles its own copy of BepInEx, that part is skipped.\n<br />[*][b]Turn mods on and off[/b] with one switch. Off mods are taken out of the game but stay in your list, ready to turn back on. Their settings are kept.\n<br />[*][b]Disable All[/b] turns every mod off at once, for example to check whether a problem comes from a mod.\n<br />[*][b]Profiles:[/b] save which mods are on as a profile (say, one for solo and one per group of friends) and switch between them in one click.\n<br />[*][b]Share with friends:[/b] send a profile as a mod pack zip with the mods in it (friends drop it on their manager and everything installs and switches on), copy its mod list to the clipboard to paste into Discord or any chat, or save it as a small mod list file so friends can see which mods they're missing.\n<br />[*][b]Finds your existing mods:[/b] mods you installed by hand show up straight away, including ones you parked outside the plugins folder to switch them off.\n<br />[*][b]Spots problems:[/b] warns when a mod needs another mod that's missing or off, notices when BepInEx is missing, half-installed or switched off, and stops you changing mods while the game is running.\n<br />[*][b]Installs BepInEx for you[/b] if you don't have it: it downloads the official release and checks it before installing.\n<br />[*][b]Search[/b] the mod list by name, ID or file name.\n<br />[*]Updates are recognised: installing a newer version of a mod you have replaces the old one and keeps your settings.\n<br />[*]Uninstalled mods go to the Recycle Bin, not straight to deletion.\n<br />[/list]\n<br />[size=5][b]Requirements[/b][/size]\n<br />[list]\n<br />[*]Windows 10 or 11. Nothing else to install; the manager is a single exe.\n<br />[*]Casualties: Unknown on Steam.\n<br />[*][url=https://www.nexusmods.com/site/mods/115]BepInEx 5.4.23.5 (x64)[/url]. The manager can install it for you.\n<br />[/list]\n<br />[size=5][b]Installation[/b][/size]\n<br />[list=1]\n<br />[*]Extract the whole zip to a folder you can write to, for example [b]Documents&#92;CU Mod Manager[/b]. Don't run it from inside the zip, and don't put it in Program Files.\n<br />[*]Run [b]CU Mod Manager.exe[/b]. It finds the game through Steam; if it can't, it asks you to pick [b]CasualtiesUnknown.exe[/b].\n<br />[*]If you don't have BepInEx yet, click [b]Install BepInEx[/b] in the manager, or install [url=https://www.nexusmods.com/site/mods/115]BepInEx 5.4.23.5 (x64)[/url] yourself and start the game once.\n<br />[*]Drop your mods on the window.\n<br />[/list]\n<br />[size=5][b]Where things are kept[/b][/size]\n<br />The manager creates two folders next to [b]CU Mod Manager.exe[/b]:\n<br />[list]\n<br />[*][b]Mods[/b]: one file per mod, on or off. You can copy mod zips in here yourself; they appear in the list, turned off.\n<br />[*][b]ManagerData[/b]: the manager's records, profiles, settings and log. Keep it with the exe.\n<br />[/list]Turning a mod on installs it into the game from its file in Mods, and turning it off removes it from the game again. Mods you installed before using the manager get a copy in Mods the first time you turn them off.\n<br />\n<br />[size=5][b]Good to know[/b][/size]\n<br />[list]\n<br />[*]Mod packs contain other people's mods. Share them with your friends, not publicly.\n<br />[*]To stop using the manager, delete its folder. Mods that are on stay in the game.\n<br />[*]Something not working? The [b]Open log[/b] button opens BepInEx's log, and [b]ManagerData&#92;log.txt[/b] shows what the manager did.\n<br />[/list]\n<br />[size=5][b]Credits[/b][/size]\n<br />[list]\n<br />[*]The icon is the game's own icon with the fruit recoloured, used with respect to the developer of Casualties: Unknown.\n<br />[*]Built with Mono.Cecil, SharpCompress and Costura (MIT licence; notices included in the download).\n<br />[*]BepInEx is by the BepInEx team and isn't included; the manager downloads the official release when you ask it to.\n<br />[/list]",
+        "Author": "McShootUrFace",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1058/1058-1795293164-810108700.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1058"
+        },
+        "DownloadUrl": "nexus://scavprototype/1058/3557",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1058,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T20:35:22.000Z",
+        "ReleaseDate": "2026-11-21T20:33:58.000Z",
+        "SHA256": "ae3d13c3cc9e5a7bf1b9a5c807f230bfd82112fdb5fde73adf6c567ebbca067f",
+        "dllSHA256s": {},
+        "downloadsSinceLatestVersion": 8,
+        "Dependencies": [
+            "nexus-115"
+        ],
+        "Changelogs": [],
+        "dllNames": [],
+        "dllVersion": null,
+        "dllVersions": {},
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 7,
+            "TotalDownloads": 7,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1058/1058-1795293164-810108700.png"
+        ],
+        "nexusTags": [
+            "AI Media",
+            "AI-Generated Content",
+            "Quality of Life",
+            "User Interface",
+            "Utilities for Players"
+        ],
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
+    },
+    {
+        "Id": "nexus-1055",
+        "Name": "Casualties Unknown Russifier",
+        "Version": "1",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "com.myname.casualtiesunknown.russifier": "1.0.0"
+        },
+        "Summary": "Русификатор для Casualties: Unknown с переведёнными меню",
+        "Description": "[color=#d4d4d8]Перевел каждую строку вручную БЕЗ использования нейросетей. Также, заменены некоторые менюшки и логотип. Язык можно выбрать в настройках, чтобы выключить переведённые меню удалите папку мода в &#92;Casualties Unknown&#92;BepInEx&#92;plugins[/color]\n<br />\n<br />[color=#d4d4d8]Чтоб скачать мод нада перекинуть файлы из CURussifier в корневую папку игры и всо. С модом сам активно играю и буду играть, такшо если буду замечать баги или неточности буду редачить перевод. [/color]\n<br />\n<br />Последующие обновления CU тоже буду стараться переводить если к тому моменту не полетит кукуха, пушто переводить 6.5к строчек в соло это нихуя себе.\n<br />\n<br />",
+        "Author": "OwOssi",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1055/1055-1795290292-505143787.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1055"
+        },
+        "DownloadUrl": "nexus://scavprototype/1055/3549",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1055,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T20:05:10.000Z",
+        "ReleaseDate": "2026-11-21T19:50:59.000Z",
+        "SHA256": "d183f5ae27dae500e38a42b411f0768f36ca9770b1d7f98464c099d3087a7bbe",
+        "dllSHA256s": {
+            "CURussifier.dll": "088fc7fc082b09c133cbba60bd790383d3cc1b1a5402fb1fd2a7ef804c3ab9ff"
+        },
+        "downloadsSinceLatestVersion": 3,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [
+            "CURussifier.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "CURussifier.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 5,
+            "TotalDownloads": 5,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1055/1055-1795290292-505143787.png"
+        ],
+        "nexusTags": [
+            "Russian",
+            "Translation",
+            "User Interface"
+        ],
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
+    },
+    {
+        "Id": "nexus-1054",
+        "Name": "Confinements Unknown",
+        "Version": "1.0.1",
+        "bepinexVersion": "1.1",
+        "bepinexPlugins": {
+            "com.gouxi.confinementsunknown": "1.0.0",
+            "net.cucorelib": "1.1"
+        },
+        "Summary": "Confinement gears for Casualties Unknown, Which make your expie suffer like it still in the lab, Optional collar support if you run collarsunknown",
+        "Description": "[quote]Made this for myself and figured I'd put it up. It's a set of confinements, makes your games harder to beat, or maybe you can have fun with your friend in mp mod[/quote][b][size=6]what does it do?[/size][/b]\n<br />\n<br />well, this mod adds hand and ankle cuffs, a set of straitjacket with pants, a muzzle, a bell for the tail, and a ball with chain\n<br />(some can actually prevent you from self-harm, which, idk if it's useful or not, cuz you're gonna wear it for a long time)\n<br />\n<br />you can craft those to troll your friend, or buy it from traders\n<br />\n<br />None of it comes off on its own. That's the entire point of it. Someone has to cut it off for you, and the only one willing to do that is a trader(maybe) or your friend who put this on you\n<br />\n<br />[b][size=6]The traders[/size][/b]\n<br />\n<br />they gets a new button in the menu. \"Ask for help\", and maybe they will cut one piece off, Usually. He picks which one, never the one you actually want, and he only humours you so many times before he's finished with it. Keep asking until they got annoyed\n<br />\n<br />If you keep asking them instead they goes the other direction. You will wake up patched up and wearing more than you went down with, you will ended a run wearing nearly everything in this mod. It is not subtle. (vanila trader attack also, they want make you their things instead of killing you)\n<br />\n<br />[b][size=6]collarsunknown[/size][/b]\n<br />\n<br />If you use [url=https://www.nexusmods.com/scavprototype/mods/650]Collars Unknown[/url] they will also fit one of the shock collars on you, and then the leash is in their hand and they stops pretending this is a punishment. He has his own lines for that, different per merchant, and they're my favourite thing in the whole mod\n<br />\n<br />Without it everything else works the same, you just don't get the collar part\n<br />\n<br />[b][size=6]Requirements[/size][/b]\n<br />\n<br />Needs BepInEx and CUCoreLib. collarsunknown or casualties:together is optional\n<br />\n<br />Fair warning, it's restraint themed. Nothing explicit, no nudity, but that's what it is, so skip it if that's not your thing.\n<br />\n<br />[b][size=6]Thanks[/size][/b]\n<br />\n<br />actually no one besides my beloved playtesters, cuz i done all the sprite and coding shit, and hope you guys can have fun out there",
+        "Author": "G0ux1",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1054/1054-1795291270-1264434056.jpg",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1054"
+        },
+        "DownloadUrl": "nexus://scavprototype/1054/3556",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1054,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": true,
+        "LastUpdated": "2026-11-21T20:20:39.000Z",
+        "ReleaseDate": "2026-11-21T20:20:39.000Z",
+        "SHA256": "9935fb8165593ee6d45b1accbb89c5f63f9a43be7f4e7051ccb4f5f68b51f486",
+        "dllSHA256s": {
+            "confinementsunknown.dll": "0b736294ff2b4a7bde56c5ae3cb64ba68c79671e3f0806e9fa47c97e09298ef3",
+            "CUCoreLib.dll": "c0f064260b2671d02bf802c460aa346c6b858ec9269f2ff93439ebabaa940aa3"
+        },
+        "downloadsSinceLatestVersion": 3,
+        "Dependencies": [],
+        "Changelogs": [
+            {
+                "Version": "1.0.0",
+                "Changelog": "- enjoy the confinements"
+            },
+            {
+                "Version": "1.0.1",
+                "Changelog": "- fk, i fked up one of the sprite, quick fixed it"
+            }
+        ],
+        "dllNames": [
+            "confinementsunknown.dll",
+            "CUCoreLib.dll"
+        ],
+        "dllVersion": "1.1",
+        "dllVersions": {
+            "confinementsunknown.dll": "1.0.0",
+            "CUCoreLib.dll": "1.1"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 3,
+            "TotalDownloads": 4,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1054/1054-1795291270-1264434056.jpg"
+        ],
+        "nexusTags": [
+            "Animation - Modified",
+            "Chinese",
+            "English",
+            "Gameplay",
+            "Not Safe For Work",
+            "Overhaul",
+            "Quality of Life",
+            "Sexualised",
+            "Utilities for Players"
+        ],
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
+    },
+    {
+        "Id": "nexus-1053",
+        "Name": "Despairful Drones",
+        "Version": "1",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "com.you.soundswap": "1.0.0"
+        },
+        "Summary": "This mod for Casualties Unknown changes the drones (Pain, Drowning, Etc but for now only pain and drowning.) and makes them more despairful.",
+        "Description": "This mod for Casualties Unknown changes the drones (Pain, Drowning, Etc but for now only pain and drowning.) and makes them more despairful. \n<br />\n<br />INSTALLATION INSTRUCTIONS. When you open up the folder you will see 2 things, a .DLL file, and a folder labeled \"Sounds\". You want to put the .DLL file into your BepInEx plugins folder, and put the Sounds folder INTO YOUR BASE BEPINEX FOLDER. NOT THE PLUGINS FOLDER, THE BASE BEPINEX FOLDER. once that is done the mod will work. (The mod currently only has replaced pain, and drowning drones. I will add more later)\n<br />\n<br />",
+        "Author": "Vezux",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1053/1053-1795288627-1537286100.jpg",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1053"
+        },
+        "DownloadUrl": "nexus://scavprototype/1053/3544",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1053,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T19:18:08.000Z",
+        "ReleaseDate": "2026-11-21T19:16:32.000Z",
+        "SHA256": "b4863060479c09c2c3d6f36fa514cbc5b8fe61699c34798cad693184de998fb2",
+        "dllSHA256s": {
+            "SoundSwap.dll": "cfc9ce191b6432dfa88b3c62fae8f7df158f63befafd1c5139f780cffe4afc24"
+        },
+        "downloadsSinceLatestVersion": 1,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [
+            "SoundSwap.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "SoundSwap.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 2,
+            "TotalDownloads": 2,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1053/1053-1795288627-1537286100.jpg"
+        ],
+        "nexusTags": [
+            "AI Assisted",
+            "Gameplay",
+            "Quality of Life",
+            "Utilities for Players"
+        ],
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
+    },
+    {
         "Id": "nexus-1052",
         "Name": "ETG Armory Mod",
         "Version": "1",
@@ -72,7 +296,7 @@
         "dllSHA256s": {
             "枪械new.dll": "11441537dba9792971f48295e8ba9f76772a835a61d3ff7d7a30f275a9e96122"
         },
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 9,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -95,7 +319,7 @@
             "AI Assisted",
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-21T15:45:09.625Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-1050",
@@ -150,6 +374,58 @@
             "User Interface"
         ],
         "LastQuickCheck": "2026-11-21T15:45:09.625Z"
+    },
+    {
+        "Id": "nexus-1048",
+        "Name": "JDI-DDEN",
+        "Version": "1.4",
+        "bepinexVersion": "1.4.0",
+        "bepinexPlugins": {
+            "com.dden.jdi": "1.4.0"
+        },
+        "Summary": "CN：多人联机可用工具撬石果----------------EN:In multiplayer, tools can be used to pry open stone fruits.",
+        "Description": "[heading]Description / 主要目的[/heading]\n<br />[b]中文[/b]：把任意带 \n<br />[code]tool[/code] 标签的物品拖到封闭石果上就能撬开，替代原版 StonefruitOpener。客机通过 Together 请求主机执行，不再被同步回滚。\n<br />[b]English[/b]: Drag any tool-tagged item onto a closed stonefruit to crack it open — a standalone replacement for StonefruitOpener. Clients ask the host through Together, so actions are no longer rolled back.\n<br />[heading]Installation instructions / 安装步骤[/heading]\n<br />[b]中文[/b]：安装 BepInEx 5，删除 StonefruitOpener，把 \n<br />[code]JDI-DDEN.dll[/code] 放进 \n<br />[code]BepInEx/plugins 或者 BepInEx/plugins/DDEN[/code]主机与客机装同一版本后重启。\n<br />[b]English[/b]: Install BepInEx 5, remove StonefruitOpener, drop \n<br />[code]JDI-DDEN.dll[/code] into \n<br />[code]BepInEx/plugins or BepInEx/plugins/DDEN[/code]and restart with the same version on host and clients.\n<br />[heading]Main features / 核心功能[/heading]\n<br />[b]中文[/b]：\n<br />[list]\n<br />[*]撬开消耗 6 点体力[/*]\n<br />[*]单机、主机、客机都生效；[/*]\n<br />[*]配置 \n<br />[code]Enabled[/code] / \n<br />[code]AllowClients[/code]可接入 DDEN 管理器。[/*]\n<br />[/list][b]English[/b]:\n<br />[list]\n<br />[*]Opening costs 6 stamina[/*]\n<br />[*]Works in single-player, host, and clients;[/*]\n<br />[*][code]Enabled[/code] / \n<br />[code]AllowClients[/code] settings, optional DDEN manager integration.[/*]\n<br />[/list][heading]Requirements / 前置要求[/heading]\n<br />[b]中文[/b]：需要 BepInEx 5；多人需要 Together / CasualtiesMP（软依赖）；DDEN 管理器可选。\n<br />\n<br />[b]English[/b]: Requires BepInEx 5; Together / CasualtiesMP for multiplayer (soft dependency); DDEN manager optional.\n<br />[heading]Shout outs / 致谢[/heading]\n<br />[b]中文[/b]：感谢 [b]unwey[/b]（StonefruitOpener）的思路，以及 Together / CasualtiesMP、CUCoreLib、BepInEx / HarmonyX 与 DDEN（cubstaryow）。\n<br />\n<br />[b]English[/b]: Thanks to [b]unwey[/b] (StonefruitOpener) for the idea, and to Together / CasualtiesMP, CUCoreLib, BepInEx / HarmonyX, and DDEN (cubstaryow).",
+        "Author": "MornJor",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1048/1048-1795275847-2141705688.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1048"
+        },
+        "DownloadUrl": "nexus://scavprototype/1048/3539",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1048,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T15:45:54.000Z",
+        "ReleaseDate": "2026-11-21T15:45:24.000Z",
+        "SHA256": "2324029774377c0615a7402a4af75f218ca63dc066cbbe253719e0a36d6fb1f6",
+        "dllSHA256s": {
+            "JDI-DDEN.dll": "ca74cbd4d6f5f45a491bb86878132e6c3ca24b128abc5e2c038aa1e74d8b9a51"
+        },
+        "downloadsSinceLatestVersion": 1,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [
+            "JDI-DDEN.dll"
+        ],
+        "dllVersion": "1.4.0",
+        "dllVersions": {
+            "JDI-DDEN.dll": "1.4.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 2,
+            "TotalDownloads": 2,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1048/1048-1795275847-2141705688.png"
+        ],
+        "nexusTags": [
+            "AI-Generated Content",
+            "Gameplay",
+            "Quality of Life"
+        ],
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-1047",
@@ -208,6 +484,61 @@
             "Gameplay"
         ],
         "LastQuickCheck": "2026-11-21T15:45:09.625Z"
+    },
+    {
+        "Id": "nexus-1046",
+        "Name": "RshLib Menu Fix",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "mcshooturface.casualtiesunknown.rshlibmenufix": "1.0.0"
+        },
+        "Summary": "Fixes RshLib 3.1.1 freezing the main menu behind a black box. A tiny patch that makes RshLib's beta-label tweak null-safe, so RshLib and the mods that need it work again.",
+        "Description": "[size=5][b]RshLib Menu Fix[/b][/size]\n<br />With [url=https://www.nexusmods.com/scavprototype/mods/32]RshLib[/url] 3.1.1 installed, the main menu can freeze: nothing responds and a black rectangle sits over it. This small patch fixes that, so RshLib and the mods that need it work again.\n<br />\n<br />RshLib is no longer supported by its author and won't get a fix of its own, so this patch fills the gap.\n<br />\n<br />[size=5][b]Requirements[/b][/size]\n<br />[list]\n<br />[*][url=https://www.nexusmods.com/site/mods/115]BepInEx[/url] 5.4.23.5[/*]\n<br />[*][url=https://www.nexusmods.com/scavprototype/mods/32]RshLib[/url] 3.1.1 by RushellXYZ[/*]\n<br />[/list]\n<br />[size=5][b]Installation[/b][/size]\n<br />[list=1]\n<br />[*]Install [url=https://www.nexusmods.com/site/mods/115]BepInEx[/url] 5.4.23.5 into the game folder (the one with CasualtiesUnknown.exe) and run the game once.[/*]\n<br />[*]Install [url=https://www.nexusmods.com/scavprototype/mods/32]RshLib[/url] 3.1.1 if you haven't already.[/*]\n<br />[*]Drag the [b]BepInEx[/b] folder from this mod's zip into the game folder. Merge if asked.[/*]\n<br />[*]Launch the game.[/*]\n<br />[/list]To check it worked, open [b]BepInEx&#92;LogOutput.log[/b] and look for \"Replaced Rsh Lib's GlobalDark.Awake postfix with a null-safe version.\"\n<br />\n<br />[size=5][b]Uninstall[/b][/size]\n<br />[list]\n<br />[*]Delete the [b]Rsh Lib Menu Fix[/b] folder in [b]BepInEx&#92;plugins[/b].[/*]\n<br />[/list]\n<br />[size=5][b]What was wrong[/b][/size]\n<br />[list]\n<br />[*]RshLib changes the game's \"This is a beta build\" label to say \"modded\" when the game's fade screen loads.[/*]\n<br />[*]On the current game version it can't find that label, and the error stops the fade screen from setting up properly.[/*]\n<br />[*]The fade screen then stays over the menu as a black box and blocks every click.[/*]\n<br />[/list]\n<br />[size=5][b]What this patch does[/b][/size]\n<br />[list]\n<br />[*]Removes only that one RshLib patch and puts in a safe copy that does the same thing when the label exists, and nothing when it doesn't.[/*]\n<br />[*]Everything else in RshLib is left alone, including item registration and multiplayer support.[/*]\n<br />[*]RshLib's own files aren't changed.[/*]\n<br />[*]Without RshLib installed, it does nothing.[/*]\n<br />[/list]\n<br />[size=5][b]Compatibility[/b][/size]\n<br />[list]\n<br />[*]Made for RshLib 3.1.1.[/*]\n<br />[*]Doesn't touch saves, so it's safe to add or remove at any time.[/*]\n<br />[*]Works alongside [url=https://www.nexusmods.com/scavprototype/mods/424]CUModFixer[/url], which fixes other bugs (NewClothing, NewFirearms, multiplayer) but not this one.[/*]\n<br />[/list]\n<br />[size=5][b]Credits[/b][/size]\n<br />[list]\n<br />[*][b]RushellXYZ[/b] for [url=https://www.nexusmods.com/scavprototype/mods/32]RshLib[/url]. This patch only exists to keep their library working, and is published with their permission.[/*]\n<br />[*]Released under the GNU GPL v3.0, the same licence as RshLib. The source code is in the Files tab.[/*]\n<br />[/list]",
+        "Author": "McShootUrFace",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1046/1046-1795288499-1565248089.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1046"
+        },
+        "DownloadUrl": "nexus://scavprototype/1046/3532",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1046,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T19:17:04.000Z",
+        "ReleaseDate": "2026-11-21T11:51:15.000Z",
+        "SHA256": "f50d48cd3198836d97f90df097019dcb609a644218093c83801e5c9271e75181",
+        "dllSHA256s": {
+            "RshLibMenuFix.dll": "4ceea365b248710e019f76ca94139148c38c001b813c2f37c4e3885fdfb600f0"
+        },
+        "downloadsSinceLatestVersion": 1,
+        "Dependencies": [
+            "nexus-32",
+            "nexus-115"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "RshLibMenuFix.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "RshLibMenuFix.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 2,
+            "TotalDownloads": 2,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1046/1046-1795288499-1565248089.png"
+        ],
+        "nexusTags": [
+            "AI Media",
+            "AI-Generated Content",
+            "Bug Fixes"
+        ],
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-1045",
@@ -327,33 +658,33 @@
         "LastQuickCheck": "2026-11-21T15:45:09.625Z"
     },
     {
-        "LastQuickCheck": "2026-11-21T15:45:09.625Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-1043",
         "Name": "No Pain. No Gain.",
-        "Version": "1.1.0",
-        "bepinexVersion": "1.1.0",
+        "Version": "1.2.0",
+        "bepinexVersion": "1.2.0",
         "bepinexPlugins": {
-            "mcshooturface.casualtiesunknown.nopainnogain": "1.1.0"
+            "mcshooturface.casualtiesunknown.nopainnogain": "1.2.0"
         },
         "Summary": "Are you a pack mule like me who loves carrying a ton of loot? What if you could level up faster by being overburdened? With pain comes huge gains, but be careful.",
-        "Description": "[size=5][b]No Pain? No Gain![/b][/size]\n<br />Carrying more than you can handle now hurts, but the strain reaps you benefits. Walk or exercise while overweight and the body part holding the load starts to ache, but strength and resilience starts rising faster. The stronger you are, the less you break. Push through it to train faster, but push too far and something's bound to give.\n<br />\n<br />[size=5][b]Requirements[/b][/size]\n<br />[list]\n<br />[*][url=https://www.nexusmods.com/site/mods/115]BepInEx[/url][/*]\n<br />[/list]\n<br />[size=5][b]Installation[/b][/size]\n<br />[list=1]\n<br />[*]Install [url=https://www.nexusmods.com/site/mods/115]BepInEx[/url] into the game folder (the one with CasualtiesUnknown.exe) and run the game once.[/*]\n<br />[*]Download [b]one[/b] version from the Files tab: the main version, or [b]fractureless[/b] if you don't want broken bones.[/*]\n<br />[*]Drag the [b]BepInEx[/b] folder from the zip into the game folder. Merge if asked.[/*]\n<br />[*]Launch the game.[/*]\n<br />[/list]Switching versions? Delete the other version's folder in [b]BepInEx&#92;plugins[/b] first.\n<br />\n<br />[size=5][b]Uninstall[/b][/size]\n<br />[list=1]\n<br />[*]Delete the [b]No Pain No Gain[/b] folder (or [b]No Pain No Gain (fractureless)[/b]) in [b]BepInEx&#92;plugins[/b].[/*]\n<br />[*]Optional: delete its settings file in [b]BepInEx&#92;config[/b] (the one starting with [b]mcshooturface.casualtiesunknown.nopainnogain[/b]).[/*]\n<br />[/list]Your saves aren't affected. Any pain already on your character fades as normal.\n<br />\n<br />[size=5][b]Where it hurts[/b][/size]\n<br />[list]\n<br />[*][b]Back slots[/b] → back pain[/*]\n<br />[*][b]Hands[/b] → pain in that arm only. Swap hands to rest a sore arm.[/*]\n<br />[*][b]Mouth[/b] → neck pain. Heavy items hurt even when you aren't overweight.[/*]\n<br />[/list]\n<br />[size=5][b]How pain builds[/b][/size]\n<br />[list]\n<br />[*]Only while you walk or exercise overweight. Stand still to recover.[/*]\n<br />[*]The more weight a slot holds, the more that part hurts.[/*]\n<br />[*]The further over your limit, the faster it builds.[/*]\n<br />[/list]\n<br />[size=5][b]The gain[/b][/size]\n<br />[list]\n<br />[*]Bonus [b]Strength[/b] and [b]Resilience[/b] XP. The more it hurts, the more you earn.[/*]\n<br />[/list]\n<br />[size=5][b]The risk[/b][/size]\n<br />[list]\n<br />[*]Keep moving in Severe pain and the bone can break: ribs, forearm or neck.[/*]\n<br />[*]A broken forearm drops whatever that hand was holding.[/*]\n<br />[*]Higher Strength means a lower chance to break.[/*]\n<br />[*]Painkillers numb the warning, not the damage. An invisible ticker keeps ticking with numbness.[/*]\n<br />[/list]\n<br />[size=5][b]New moodlets[/b][/size]\n<br />[list]\n<br />[*]Back pain, Arm pain and Neck pain, each with four levels and pixel-art icons that match the game.[/*]\n<br />[*]They warn you before something breaks.[/*]\n<br />[/list]\n<br />Almost everything can be tuned: see [b]Customization[/b] at the bottom of the page.\n<br />\n<br />[size=5][b]Fractureless version[/b][/size]\n<br />[list]\n<br />[*]Want the pain and the gains without broken bones? Get [b]No Pain No Gain (fractureless)[/b] from the Files tab.[/*]\n<br />[*]Same mod, but every break chance starts at 0.[/*]\n<br />[*]You can still turn breaks on later in its config.[/*]\n<br />[*]Install only one of the two versions.[/*]\n<br />[/list]\n<br />[size=5][b]Good to know[/b][/size]\n<br />[list]\n<br />[*]Worn items count toward the part they're worn on. Legs never hurt.[/*]\n<br />[*]The new moodlets only count pain from carrying, so a gunshot wound won't show as back pain.[/*]\n<br />[*]By default the mod adds at most 70 pain to a part, so it can't cause pain shock on its own. A fracture can.[/*]\n<br />[*]Fractures are the game's own: they bleed, take time to heal, and the shock can knock you down.[/*]\n<br />[*]Just like in real life, strength reduces fractures. At Strength 20 bones break half as often as at Strength 10, and at Strength 5 twice as often.[/*]\n<br />[*]On opioids, the pain moodlets go quiet and the bonus XP stops, but a hidden strain keeps counting while you walk overweight. Bones can still break, with no moodlet to warn you.[/*]\n<br />[*]A sore arm is a weaker arm, just like any other pain in the game.[/*]\n<br />[*]The bonus XP stacks on top of the game's own XP for carrying weight and for being in pain.[/*]\n<br />[/list]\n<br />[size=5][b]Compatibility[/b][/size]\n<br />[list]\n<br />[*]Doesn't change saves, items or item weights, so it's safe to add or remove mid-playthrough.[/*]\n<br />[/list]\n<br />[size=5][b]Notes[/b][/size]\n<br />[list]\n<br />[*]This mod is not opted in to Nexus Mods Donation Points. The thumbnail text uses the [b]ByteBounce[/b] font from 1001Fonts, which is free for personal use only, so opting out keeps this page non-commercial and respects its licence.[/*]\n<br />[/list]\n<br />[size=5][b]Customization[/b][/size]\n<br />[list=1]\n<br />[*]Launch the game once with the mod, then close it.[/*]\n<br />[*]Open [b]BepInEx&#92;config&#92;mcshooturface.casualtiesunknown.nopainnogain.cfg[/b] in Notepad (the fractureless version uses [b]...nopainnogain.fractureless.cfg[/b]).[/*]\n<br />[*]Change a value, save, and start the game. Every setting is explained right above it in the file.[/*]\n<br />[/list]\n<br />[b]Quick tweaks[/b]\n<br />[list]\n<br />[*][b]Gentler or harsher:[/b] set [b]PainPerSecond[/b] to 2 or 6.[/*]\n<br />[*][b]Mouth items hurt too easily:[/b] set [b]HeavyItemWeight[/b] to 2.[/*]\n<br />[*][b]Turn off one kind of pain:[/b] set [b]BackPainMultiplier[/b], [b]ArmPainMultiplier[/b] or [b]NeckPainMultiplier[/b] to 0.[/*]\n<br />[*][b]Exercise shouldn't hurt:[/b] set [b]ExerciseMultiplier[/b] to 0.[/*]\n<br />[*][b]Double the bonus XP:[/b] set both XP settings to 0.02.[/*]\n<br />[*][b]Fewer breaks:[/b] halve [b]BreakChanceLevel3[/b] and [b]BreakChanceLevel4[/b].[/*]\n<br />[*][b]No breaks at all:[/b] set [b]Enabled[/b] under Fractures to false.[/*]\n<br />[*][b]Breaks start earlier:[/b] give [b]BreakChanceLevel1[/b] or [b]BreakChanceLevel2[/b] a value above 0.[/*]\n<br />[*][b]Reach the Agony level:[/b] set [b]MaxPain[/b] above 80. Dangerous: pain above 75 can cause pain shock.[/*]\n<br />[/list]\n<br />[b]1. General[/b]\n<br />[list]\n<br />[*][b]Enabled[/b]: turn the whole mod on or off. Default: true.[/*]\n<br />[*][b]ShowMoodlets[/b]: show or hide the new pain moodlets. Default: true.[/*]\n<br />[/list]\n<br />[b]2. Pain[/b]\n<br />[list]\n<br />[*][b]PainPerSecond[/b]: how fast pain builds. Default: 4. The body heals about 1 per second.[/*]\n<br />[*][b]OverweightScaling[/b]: how much worse heavy overloading hurts. Default: 4. At 0, any amount over hurts the same.[/*]\n<br />[*][b]MaxPain[/b]: most pain the mod adds to one part. Default: 70. Severe is above 55, Agony above 80.[/*]\n<br />[*][b]ExerciseMultiplier[/b]: exercise pain compared with walking. Default: 1.[/*]\n<br />[/list]\n<br />[b]3. Body Parts[/b]\n<br />[list]\n<br />[*][b]BackPainMultiplier[/b], [b]ArmPainMultiplier[/b], [b]NeckPainMultiplier[/b]: 1 = normal, 2 = double, 0 = off. Default: 1.[/*]\n<br />[*][b]CountWornItems[/b]: worn gear adds to the strain. Default: true.[/*]\n<br />[/list]\n<br />[b]4. Mouth Items[/b]\n<br />[list]\n<br />[*][b]HeavyItemWeight[/b]: items this heavy hurt your neck even when you aren't overweight. Default: 1.[/*]\n<br />[*][b]HeavyItemPainPerSecond[/b]: how fast they hurt. Default: 3.[/*]\n<br />[/list]\n<br />[b]5. Gains[/b]\n<br />[list]\n<br />[*][b]ResilienceXpPerPain[/b], [b]StrengthXpPerPain[/b]: bonus XP per point of pain. Default: 0.01 (0.5 XP per second at 50 pain).[/*]\n<br />[/list]\n<br />[b]6. Fractures[/b]\n<br />[list]\n<br />[*][b]Enabled[/b]: bones can break. Default: true.[/*]\n<br />[*][b]BreakChanceLevel1[/b] to [b]BreakChanceLevel4[/b]: % chance per second of a break at each moodlet level. Defaults: 0, 0, 0.4, 1.5 (all 0 in the fractureless version).[/*]\n<br />[*][b]StrengthReference[/b]: how much Strength protects you. Default: 10, so Strength 20 halves the chance.[/*]\n<br />[/list]\n<br />[b]7. Troubleshooting[/b]\n<br />[list]\n<br />[*][b]LogPain[/b]: writes pain values to the BepInEx log, for bug reports. Default: false.[/*]\n<br />[/list]",
+        "Description": "[b]Updating from an older version?[/b] Delete your old settings file, [b]BepInEx&#92;config&#92;mcshooturface.casualtiesunknown.nopainnogain.cfg[/b] (or [b]...nopainnogain.fractureless.cfg[/b]), so you get the new default settings. A fresh one is made the next time you start the game.\n<br />\n<br />[size=5][b]No Pain? No Gain![/b][/size]\n<br />Carrying more than you can handle now hurts, but the strain reaps you benefits. Walk or exercise while overweight and the body part holding the load starts to ache, but strength and resilience starts rising faster. The stronger you are, the less you break. Push through it to train faster, but push too far and something's bound to give.\n<br />\n<br />[size=5][b]Requirements[/b][/size]\n<br />[list]\n<br />[*][url=https://www.nexusmods.com/site/mods/115]BepInEx[/url][/*]\n<br />[/list]\n<br />[size=5][b]Installation[/b][/size]\n<br />[list=1]\n<br />[*]Install [url=https://www.nexusmods.com/site/mods/115]BepInEx[/url] into the game folder (the one with CasualtiesUnknown.exe) and run the game once.[/*]\n<br />[*]Download [b]one[/b] version from the Files tab: the main version, or [b]fractureless[/b] if you don't want broken bones.[/*]\n<br />[*]Drag the [b]BepInEx[/b] folder from the zip into the game folder. Merge if asked.[/*]\n<br />[*]Launch the game.[/*]\n<br />[/list]Switching versions? Delete the other version's folder in [b]BepInEx&#92;plugins[/b] first.\n<br />\n<br />[size=5][b]Uninstall[/b][/size]\n<br />[list=1]\n<br />[*]Delete the [b]No Pain No Gain[/b] folder (or [b]No Pain No Gain (fractureless)[/b]) in [b]BepInEx&#92;plugins[/b].[/*]\n<br />[*]Optional: delete its settings file in [b]BepInEx&#92;config[/b] (the one starting with [b]mcshooturface.casualtiesunknown.nopainnogain[/b]).[/*]\n<br />[/list]Your saves aren't affected. Any pain already on your character fades as normal.\n<br />\n<br />[size=5][b]Where it hurts[/b][/size]\n<br />[list]\n<br />[*][b]Back slots[/b] → back pain[/*]\n<br />[*][b]Hands[/b] → pain in that arm only. Swap hands to rest a sore arm.[/*]\n<br />[*][b]Mouth[/b] → neck pain. Heavy items hurt even when you aren't overweight.[/*]\n<br />[/list]\n<br />[size=5][b]How pain builds[/b][/size]\n<br />[list]\n<br />[*]Only while you walk or exercise overweight. Stand still to recover.[/*]\n<br />[*]The more weight a slot holds, the more that part hurts.[/*]\n<br />[*]The further over your limit, the faster it builds.[/*]\n<br />[/list]\n<br />[size=5][b]The gain[/b][/size]\n<br />[list]\n<br />[*]Bonus [b]Strength[/b] and [b]Resilience[/b] XP. The more it hurts, the more you earn.[/*]\n<br />[/list]\n<br />[size=5][b]The risk[/b][/size]\n<br />[list]\n<br />[*]Keep moving in Severe pain and the bone can break: ribs, forearm or neck.[/*]\n<br />[*]A broken forearm drops whatever that hand was holding.[/*]\n<br />[*]Higher Strength means a lower chance to break.[/*]\n<br />[*]Painkillers numb the warning, not the damage. An invisible ticker keeps ticking with numbness.[/*]\n<br />[/list]\n<br />[size=5][b]New moodlets[/b][/size]\n<br />[list]\n<br />[*]Back pain, Arm pain and Neck pain, each with four levels and pixel-art icons that match the game.[/*]\n<br />[*]They warn you before something breaks.[/*]\n<br />[/list]\n<br />Almost everything can be tuned: see [b]Customization[/b] at the bottom of the page.\n<br />\n<br />[size=5][b]Fractureless version[/b][/size]\n<br />[list]\n<br />[*]Want the pain and the gains without broken bones? Get [b]No Pain No Gain (fractureless)[/b] from the Files tab.[/*]\n<br />[*]Same mod, but every break chance starts at 0.[/*]\n<br />[*]You can still turn breaks on later in its config.[/*]\n<br />[*]Install only one of the two versions.[/*]\n<br />[/list]\n<br />[size=5][b]Good to know[/b][/size]\n<br />[list]\n<br />[*]Worn items count toward the part they're worn on. Legs never hurt.[/*]\n<br />[*]The new moodlets only count pain from carrying, so a gunshot wound won't show as back pain.[/*]\n<br />[*]By default the mod adds at most 70 pain to a part, so it can't cause pain shock on its own. A fracture can.[/*]\n<br />[*]Fractures are the game's own: they bleed, take time to heal, and the shock can knock you down.[/*]\n<br />[*]Just like in real life, strength reduces fractures. At Strength 20 bones break half as often as at Strength 10, and at Strength 5 twice as often.[/*]\n<br />[*]On opioids, the pain moodlets go quiet, but a hidden strain keeps counting while you walk overweight. You still earn the bonus XP, and bones can still break, with no moodlet to warn you. Resilience grows about half as fast while numbed, because the game's own XP for being in pain stops and it's closer to real life.[/*]\n<br />[*]A sore arm is a weaker arm, just like any other pain in the game.[/*]\n<br />[*]The bonus XP stacks on top of the game's own XP for carrying weight and for being in pain.[/*]\n<br />[/list]\n<br />[size=5][b]Translations[/b][/size]\n<br />The moodlets and messages follow your game's language, and anyone can translate them:\n<br />[list=1]\n<br />[*]Copy [b]EN.json[/b] from [b]BepInEx&#92;plugins&#92;No Pain No Gain&#92;translations[/b] (or the fractureless folder).[/*]\n<br />[*]Translate the text on the right of each line and keep the keys on the left. Anything you leave out stays in English.[/*]\n<br />[*]Name it after your game language's code, the same name as its file in [b]CasualtiesUnknown_Data&#92;Lang[/b] (for example [b]zh-CN[/b] for Simplified Chinese).[/*]\n<br />[/list][b]Publishing your translation as its own mod?[/b] Name the file [b]NoPainNoGain.zh-CN.json[/b] (with your language's code) and put it in its own folder in [b]BepInEx&#92;plugins[/b], for example [b]BepInEx&#92;plugins&#92;No Pain No Gain Chinese&#92;NoPainNoGain.zh-CN.json[/b]. It works with both versions and keeps working when this mod updates. Feel free to publish it, and let me know so I can link it here.\n<br />[b]Just for yourself?[/b] Save it as [b]zh-CN.json[/b] in the mod's [b]translations[/b] folder.\n<br />\n<br />[size=5][b]Compatibility[/b][/size]\n<br />[list]\n<br />[*]Doesn't change saves, items or item weights, so it's safe to add or remove mid-playthrough.[/*]\n<br />[/list]\n<br />[size=5][b]Notes[/b][/size]\n<br />[list]\n<br />[*]This mod is not opted in to Nexus Mods Donation Points. The thumbnail text uses the [b]ByteBounce[/b] font from 1001Fonts, which is free for personal use only, so opting out keeps this page non-commercial and respects its licence.[/*]\n<br />[/list]\n<br />[size=5][b]Customization[/b][/size]\n<br />[list=1]\n<br />[*]Launch the game once with the mod, then close it.[/*]\n<br />[*]Open [b]BepInEx&#92;config&#92;mcshooturface.casualtiesunknown.nopainnogain.cfg[/b] in Notepad (the fractureless version uses [b]...nopainnogain.fractureless.cfg[/b]).[/*]\n<br />[*]Change a value, save, and start the game. Every setting is explained right above it in the file.[/*]\n<br />[/list]\n<br />[b]Quick tweaks[/b]\n<br />[list]\n<br />[*][b]Gentler or harsher:[/b] set [b]PainPerSecond[/b] to 2 or 6.[/*]\n<br />[*][b]Mouth items hurt too easily:[/b] set [b]HeavyItemWeight[/b] to 2.[/*]\n<br />[*][b]Turn off one kind of pain:[/b] set [b]BackPainMultiplier[/b], [b]ArmPainMultiplier[/b] or [b]NeckPainMultiplier[/b] to 0.[/*]\n<br />[*][b]Exercise shouldn't hurt:[/b] set [b]ExerciseMultiplier[/b] to 0.[/*]\n<br />[*][b]Double the bonus XP:[/b] double both XP settings ([b]StrengthXpPerPain[/b] 0.04, [b]ResilienceXpPerPain[/b] 0.01).[/*]\n<br />[*][b]Fewer breaks:[/b] halve [b]BreakChanceLevel3[/b] and [b]BreakChanceLevel4[/b].[/*]\n<br />[*][b]No breaks at all:[/b] set [b]Enabled[/b] under Fractures to false.[/*]\n<br />[*][b]Breaks start earlier:[/b] give [b]BreakChanceLevel1[/b] or [b]BreakChanceLevel2[/b] a value above 0.[/*]\n<br />[*][b]Reach the Agony level:[/b] set [b]MaxPain[/b] above 80. Dangerous: pain above 75 can cause pain shock.[/*]\n<br />[/list]\n<br />[b]1. General[/b]\n<br />[list]\n<br />[*][b]Enabled[/b]: turn the whole mod on or off. Default: true.[/*]\n<br />[*][b]ShowMoodlets[/b]: show or hide the new pain moodlets. Default: true.[/*]\n<br />[/list]\n<br />[b]2. Pain[/b]\n<br />[list]\n<br />[*][b]PainPerSecond[/b]: how fast pain builds. Default: 4. The body heals about 1 per second.[/*]\n<br />[*][b]OverweightScaling[/b]: how much worse heavy overloading hurts. Default: 4. At 0, any amount over hurts the same.[/*]\n<br />[*][b]MaxPain[/b]: most pain the mod adds to one part. Default: 70. Severe is above 55, Agony above 80.[/*]\n<br />[*][b]ExerciseMultiplier[/b]: exercise pain compared with walking. Default: 1.[/*]\n<br />[/list]\n<br />[b]3. Body Parts[/b]\n<br />[list]\n<br />[*][b]BackPainMultiplier[/b], [b]ArmPainMultiplier[/b], [b]NeckPainMultiplier[/b]: 1 = normal, 2 = double, 0 = off. Default: 1.[/*]\n<br />[*][b]CountWornItems[/b]: worn gear adds to the strain. Default: true.[/*]\n<br />[/list]\n<br />[b]4. Mouth Items[/b]\n<br />[list]\n<br />[*][b]HeavyItemWeight[/b]: items this heavy hurt your neck even when you aren't overweight. Default: 1.[/*]\n<br />[*][b]HeavyItemPainPerSecond[/b]: how fast they hurt. Default: 3.[/*]\n<br />[/list]\n<br />[b]5. Gains[/b]\n<br />[list]\n<br />[*][b]StrengthXpPerPain[/b]: bonus Strength XP per point of pain. Default: 0.02 (1 XP per second at 50 pain).[/*]\n<br />[*][b]ResilienceXpPerPain[/b]: bonus Resilience XP per point of pain. Default: 0.005 (0.25 XP per second at 50 pain). Smaller because the game already gives Resilience its own XP for being in pain.[/*]\n<br />[/list]\n<br />[b]6. Fractures[/b]\n<br />[list]\n<br />[*][b]Enabled[/b]: bones can break. Default: true.[/*]\n<br />[*][b]BreakChanceLevel1[/b] to [b]BreakChanceLevel4[/b]: % chance per second of a break at each moodlet level. Defaults: 0, 0, 0.4, 1.5 (all 0 in the fractureless version).[/*]\n<br />[*][b]StrengthReference[/b]: how much Strength protects you. Default: 10, so Strength 20 halves the chance.[/*]\n<br />[/list]\n<br />[b]7. Troubleshooting[/b]\n<br />[list]\n<br />[*][b]LogPain[/b]: writes pain values to the BepInEx log, for bug reports. Default: false.[/*]\n<br />[/list]",
         "Author": "McShootUrFace",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1043/1043-1795239208-715453458.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1043"
         },
-        "DownloadUrl": "nexus://scavprototype/1043/3522",
+        "DownloadUrl": "nexus://scavprototype/1043/3550",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1043,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-21T09:33:30.000Z",
-        "ReleaseDate": "2026-11-21T09:32:00.000Z",
-        "SHA256": "0e2d8bfb51ebdb4e5cc45623f74d30f2db9cec2055d93b8bdb960fef6f180c44",
+        "LastUpdated": "2026-11-21T19:57:49.000Z",
+        "ReleaseDate": "2026-11-21T19:57:35.000Z",
+        "SHA256": "131ce78657386b2e4c31c104c658ae318008f3bae7d4824b0b7253e8431715fa",
         "dllSHA256s": {
-            "NoPainNoGain.dll": "a4e6e7cc6d63e7ed22cf4287002680985984373e8523bd65ec68028c9cd04226"
+            "NoPainNoGain.dll": "e422b5b44c177f94731fac7f6b497d6f06630f304adbce763e10935876f63e32"
         },
-        "downloadsSinceLatestVersion": 20,
+        "downloadsSinceLatestVersion": 1,
         "Dependencies": [
             "nexus-115"
         ],
@@ -361,19 +692,23 @@
             {
                 "Version": "1.1.0",
                 "Changelog": "- Painkillers no longer make you unbreakable. While you're numbed by opioids, overweight and moving, a hidden strain keeps counting and bones can still break, with no moodlet to warn you.\n- Normal fractures still follow the pain you feel, exactly as before.\n- The fractureless version has the same ticker, but its break chances stay at 0 unless you turn them up."
+            },
+            {
+                "Version": "1.2.0",
+                "Changelog": "- 1.2.0\n- Numbed or not, your body still works just as hard: the bonus Strength and Resilience XP keeps coming on painkillers. Resilience grows about half as fast while numbed, because the game's own XP for being in pain stops.\n- Translations: the moodlets and messages now follow your game's language. Copy translations\\EN.json, rename it to your language's code (e.g. zh-CN.json) and translate it. Missing lines stay in English.\n- 1.2.0\n- Updating? Delete your old settings file (BepInEx\\config\\mcshooturface.casualtiesunknown.nopainnogain.cfg, or ...nopainnogain.fractureless.cfg) to get the new default settings. A fresh one is made the next time you start the game.\n- Fairer gains: hauling now trains Strength more than Resilience (bonus XP 0.02 for Strength, 0.005 for Resilience). Resilience was growing about twice as fast, because the game already gives it its own XP for being in pain. If you never changed these settings, they update automatically.\n- Numbed or not, your body still works just as hard: the bonus Strength and Resilience XP keeps coming on painkillers. Resilience grows about half as fast while numbed, because the game's own XP for being in pain stops.\n- Translations: the moodlets and messages now follow your game's language. Copy translations\\EN.json, translate it and name it after your language's code (e.g. zh-CN.json). Missing lines stay in English.\n- Translations can be published as their own mods: a file named NoPainNoGain.<code>.json (e.g. NoPainNoGain.zh-CN.json) in its own folder anywhere in BepInEx\\plugins is picked up automatically."
             }
         ],
         "dllNames": [
             "NoPainNoGain.dll"
         ],
-        "dllVersion": "1.1.0",
+        "dllVersion": "1.2.0",
         "dllVersions": {
-            "NoPainNoGain.dll": "1.1.0"
+            "NoPainNoGain.dll": "1.2.0"
         },
         "Statistics": {
-            "Endorsements": 0,
-            "UniqueDownloads": 45,
-            "TotalDownloads": 53,
+            "Endorsements": 1,
+            "UniqueDownloads": 59,
+            "TotalDownloads": 77,
             "TotalViews": null
         },
         "Images": [
@@ -665,6 +1000,65 @@
         "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
+        "Id": "nexus-1036",
+        "Name": "Chat Decides (Stream Integration)",
+        "Version": "0.10",
+        "bepinexVersion": "0.10.0",
+        "bepinexPlugins": {
+            "seew.casualtiesunknown.chatdecides": "0.10.0"
+        },
+        "Summary": "Lets the chat decide your fate.",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />Allows your chat decide your fate. Connect your stream chat to the game and let them help you (or hinder)\n<br />\n<br />[line]\n<br />[b][size=5]SUPPORTS YOUTUBE AND TWITCH[/size][/b]\n<br />[b][size=5]DOES NOT SUPPORT MULTIPLAYER[/size] [/b](for now)\n<br />[line]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[list]\n<br />[*]96 random events that the chat votes on[/*]\n<br />[*]The chat selects a layer modifier every layer[/*]\n<br />[*]Type !say in the chat to have your character say it[/*]\n<br />[*]Does not require your account credentials[/*]\n<br />[*]All functions are fully configurable[/*]\n<br />[*]English and Russian language support[/*]\n<br />[/list][b][size=4]How to install[/size][/b]\n<br />[list]\n<br />[*]Install BepInEx[/*]\n<br />[*]Copy mod folder into BepInEx/plugins[/*]\n<br />[*]Launch Casualties: Unknown[/*]\n<br />[*]Connect your chat in settings[/*]\n<br />[*]Start run[/*]\n<br />[/list]",
+        "Author": "Tauookie",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1036/1036-1795209176-1532468380.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1036"
+        },
+        "DownloadUrl": "nexus://scavprototype/1036/3548",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1036,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T19:50:41.000Z",
+        "ReleaseDate": "2026-11-21T19:50:41.000Z",
+        "SHA256": "e27e55ea7021b64cc3d40ce65f0713a7468fdf3f4f601350827d3d88c5802f36",
+        "dllSHA256s": {
+            "ChatDecides.dll": "4b9feb65be6bf71d48bb2a2dfe228b9b34cbd241bb612f57e1cead9e86bab65b"
+        },
+        "downloadsSinceLatestVersion": 1,
+        "Dependencies": [],
+        "Changelogs": [
+            {
+                "Version": "0.10",
+                "Changelog": "- Mouse drift fixed\n- Slippery floor fixed\n- Bulldoze radius increased"
+            }
+        ],
+        "dllNames": [
+            "ChatDecides.dll"
+        ],
+        "dllVersion": "0.10.0",
+        "dllVersions": {
+            "ChatDecides.dll": "0.10.0"
+        },
+        "Statistics": {
+            "Endorsements": 1,
+            "UniqueDownloads": 3,
+            "TotalDownloads": 4,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1036/1036-1795209176-1532468380.png"
+        ],
+        "nexusTags": [
+            "AI Assisted",
+            "Gameplay",
+            "Humour, Joke or Just for Fun",
+            "Unbalanced",
+            "Utilities for Players"
+        ],
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
+    },
+    {
         "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-1035",
         "Name": "No Threat Simulacrum",
@@ -928,7 +1322,7 @@
         "dllSHA256s": {
             "CUWearableResprites.dll": "3e43d8c737ee5af45fe0b2b329dd7effd94bbdf9e306eb5fc2ee5406016d7f97"
         },
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 9,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -951,7 +1345,7 @@
             "AI Assisted",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-1027",
@@ -979,7 +1373,7 @@
         "dllSHA256s": {
             "RecipeHotlinks.dll": "855795ae5809b484140756a00984b4551ea0e26aa2dbef8b189aceee526f679f"
         },
-        "downloadsSinceLatestVersion": 55,
+        "downloadsSinceLatestVersion": 121,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1004,7 +1398,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-1025",
@@ -1032,7 +1426,7 @@
         "dllSHA256s": {
             "Alphabetized Crafting.dll": "bf88a939bdd89c9d2357a2f599cd6bdecd51055829cf922220d51b68e7b3cd26"
         },
-        "downloadsSinceLatestVersion": 8,
+        "downloadsSinceLatestVersion": 23,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1057,10 +1451,10 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-1024",
         "Name": "Plushies Unknown",
         "Version": "1.2.1",
@@ -1082,7 +1476,7 @@
         "ReleaseDate": "2026-11-20T15:25:37.000Z",
         "SHA256": "c34f5614730dc20408f877c17e720b1846b208044fd92be3d9e8090372f61f45",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 7,
+        "downloadsSinceLatestVersion": 34,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1142,7 +1536,7 @@
         "dllSHA256s": {
             "PeacefulEuthanasia.dll": "8b936fdd9182300f456f7b548835bd5516402d7879f091033f22e17d53a55e62"
         },
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 58,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1167,7 +1561,7 @@
             "Gameplay",
             "Suicide"
         ],
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-1022",
@@ -1195,7 +1589,7 @@
         "dllSHA256s": {
             "BonkAtomicPunch.dll": "b6cc4e6ae8dfa6c8012b6265f0c1c5c388d4aa378fc482714bbdf9c4e3f902a1"
         },
-        "downloadsSinceLatestVersion": 6,
+        "downloadsSinceLatestVersion": 15,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -1222,7 +1616,7 @@
             "Gameplay",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-1021",
@@ -1250,7 +1644,7 @@
         "dllSHA256s": {
             "ExperimentIdOverrides.dll": "c223575613511f69de8ccd5a5d242a38643cd896e3666ae98835099b9eb1601c"
         },
-        "downloadsSinceLatestVersion": 6,
+        "downloadsSinceLatestVersion": 64,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1274,41 +1668,37 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
-        "LastQuickCheck": "2026-11-21T00:27:13.046Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-1020",
         "Name": "Casualties Prepared",
-        "Version": "1.0.1",
-        "bepinexVersion": "0.2.0",
+        "Version": "S-1.1",
+        "bepinexVersion": "1.0.2",
         "bepinexPlugins": {
-            "com.casprepared.loadout": "0.2.0"
+            "com.casprepared.loadout": "1.0.2"
         },
         "Summary": "Addon for Casualties: Together mod, allowing players to spawn their own starter loadout",
-        "Description": "[center][b][size=4][img width=445]https://staticdelivery.nexusmods.com/mods/8391/images/1020/1020-1795117115-449238522.png[/img][/size][/b][/center]\n<br />[center][b][color=#00ffff][size=5]PREPARE YOURSELF, LITTLE FRIEND![/size][/color][/b][/center]\n<br />\n<br />[center][b][size=4]Description[/size][/b][/center]\n<br />Addon for [b]CU[/b] multiplayer mod ([b]Casualties: Together[/b]). After spawning, each player gets a loadout menu once per campaign. They pick items within a budget, and game delivers them in a temporary supply crate.\n<br />\n<br />\n<br />[center][b][size=4]How to install?[/size][/b][/center]\n<br />[center]Simply unpack casprepared.zip into /bepinex/plugins [/center]\n<br />\n<br />[b][size=4]Main features[/size][/b]\n<br />[*][b]Loadout menu.[/b] Searchable item catalog with categories, a selection list, the budget and the loadout cost. The Spawn button is blocked when the cost exceeds the budget.[/*]\n<br />[*][b]Prices.[/b] Each item costs its trader price times a host-adjustable multiplier (default 1.0).[/*]\n<br />[*][b]Host-authoritative.[/b] Every purchase is a request to the host over Casualties: Together. The host validates it and spawns the items at the player's position.[/*]\n<br />[*][b]Supply crate.[/b] Items arrive in a temporary crate that cannot be carried or worn. It decays after 5 minutes by default, and its contents drop on the floor.[/*]\n<br />[*][b]Once per campaign.[/b] The host records players by SteamID, and the records are saved with the campaign.[/*]\n<br />[*][b]Spawn window.[/b] The menu closes after a time limit (can be turned off) or when the player moves too far from the spawn point.[/*]\n<br />[*][b]Achievements disabled.[/b] While the mod is active, achievements are disabled the same way Together does it for SV_Cheats , without unlocking cheat commands.[/*]\n<br />[*][b]Server settings toggle.[/b] A checkbox in Together's Server settings turns the mod on or off.\n<br />\n<br />\n<br />[b][size=4]Requirements[/size][/b]\n<br />[url=https://github.com/bepinex/bepinex]BepInEx[/url]\n<br />[url=https://github.com/jimmyking9999999/CUCoreLib]CUCoreLib[/url]\n<br />[url=https://github.com/creaturefeaturelarry/casualties-together]Casualties: Together[/url]\n<br />\n<br />[b][size=4]Special thanks to:[/size][/b]\n<br />[b]Orsoniks [/b]For such awesome game;\n<br />[b]CU:Together and CUCoreLib devs [/b]For letting us playing with friends.\n<br />\n<br />Source code: [url=https://github.com/Turianel/Casualties-Prepared]Github[/url] \n<br />\n<br />[color=#00ffff][size=5]YOUR COMMENTS AND BUG REPORTS ARE VERY IMPORTANT TO ME![/size][/color]\n<br />[/*]\n<br />",
+        "Description": "[center][b][size=4][img width=445]https://staticdelivery.nexusmods.com/mods/8391/images/1020/1020-1795117115-449238522.png[/img][/size][/b][/center]\n<br />[center][b][color=#00ffff][size=5]PREPARE YOURSELF, LITTLE FRIEND![/size][/color][/b][/center]\n<br />\n<br />[center][b][size=4]Description[/size][/b][/center]\n<br />Addon for [b]CU[/b] multiplayer mod ([b]Casualties: Together[/b]). After spawning, each player gets a loadout menu once per campaign. They pick items within a budget, and game delivers them in a temporary supply crate.\n<br />\n<br />\n<br />[center][b][size=4]How to install?[/size][/b][/center]\n<br />[center]Simply unpack casprepared.zip into /bepinex/plugins [/center]\n<br />\n<br />[b][size=4]Main features[/size][/b]\n<br />[*][b]Loadout menu.[/b] Searchable item catalog with categories, a selection list, the budget and the loadout cost. The Spawn button is blocked when the cost exceeds the budget.[/*]\n<br />[*][b]Prices.[/b] Each item costs its trader price times a host-adjustable multiplier (default 1.0).[/*]\n<br />[*][b]Host-authoritative.[/b] Every purchase is a request to the host over Casualties: Together. The host validates it and spawns the items at the player's position.[/*]\n<br />[*][b]Supply crate.[/b] Items arrive in a temporary crate that cannot be carried or worn. It decays after 5 minutes by default, and its contents drop on the floor.[/*]\n<br />[*][b]Once per campaign.[/b] The host records players by SteamID, and the records are saved with the campaign.[/*]\n<br />[*][b]Spawn window.[/b] The menu closes after a time limit (can be turned off) or when the player moves too far from the spawn point.[/*]\n<br />[*][b]Achievements disabled.[/b] While the mod is active, achievements are disabled the same way Together does it for SV_Cheats , without unlocking cheat commands.[/*]\n<br />[*][b]Server settings toggle.[/b] A checkbox in Together's Server settings turns the mod on or off.\n<br />[table][tr][th]Command[/th]\n<br />[th]Description[/th]\n<br />[/tr]\n<br />[tr][td][code]casprep_menu[/code][/td]\n<br />[td]Open or close the loadout menu (default key F6)[/td]\n<br />[/tr]\n<br />[tr][td][code]casprep_enable [on/off][/code][/td]\n<br />[td]Turn the mod on or off for sessions you host[/td]\n<br />[/tr]\n<br />[tr][td][code]casprep_budget [n][/code][/td]\n<br />[td]Loadout budget per player (default 100)[/td]\n<br />[/tr]\n<br />[tr][td][code]casprep_mult [x][/code][/td]\n<br />[td]Price multiplier (default 1.0)[/td]\n<br />[/tr]\n<br />[tr][td][code]casprep_window [sec/off][/code][/td]\n<br />[td]Seconds the menu stays available after spawn;\n<br />[code]0[/code]or\n<br />[code]off[/code]removes the limit (default 300)[/td]\n<br />[/tr]\n<br />[tr][td][code]casprep_radius [tiles][/code][/td]\n<br />[td]Maximum distance from spawn before the menu closes (default 100)[/td]\n<br />[/tr]\n<br />[tr][td][code]casprep_cratetime [sec][/code][/td]\n<br />[td]Supply crate lifetime (default 300)[/td]\n<br />[/tr]\n<br />[tr][td][code]casprep_status[/code][/td]\n<br />[td]List players and their loadout state[/td]\n<br />[/tr]\n<br />[tr][td][code]casprep_reset [player][/code][/td]\n<br />[td]Let a player pick a loadout again[/td]\n<br />[/tr]\n<br />[tr][td][code]casprep_cheats[/code][/td]\n<br />[td]Show whether cheat rules allow\n<br />[code]casprep_giveloadout[/code][/td]\n<br />[/tr]\n<br />[tr][td][code]casprep_giveloadout [player][/code][/td]\n<br />[td]Open the menu again; needs\n<br />[code]sv_cheats[/code](and\n<br />[code]AllowClientCheatCommands[/code]for clients)[/td]\n<br />[/tr]\n<br />[/table]\n<br />\n<br />\n<br />[b][size=4]STANDALONE VERSION[/size][/b]\n<br />CasPreparedStandalone is a separate build for single-player runs. It needs only BepInEx and CUCoreLib, not Casualties: Together.\n<br />\n<br />[list]\n<br />[*]Same menu, catalog, budget, prices and supply crate.[/*]\n<br />[*]One loadout per run, saved with the run.[/*]\n<br />[*]No time limit: the menu closes only when you move too far from the spawn point or die.[/*]\n<br />[*]On/off switch on the character select screen. Achievements are disabled for runs with the menu on (vanilla cheat flag).[/*]\n<br />[*]Settings can be changed only outside a run. [b]casprep_window[/b], [b]casprep_reset[/b], [b]casprep_cheats[/b] and [b]casprep_giveloadout[/b] don't exist in this build.[/*]\n<br />[*]Install either the multiplayer or the standalone build, not both. With both installed, the standalone build doesn't load.[/*]\n<br />[*]If Together is installed too, the standalone build stays idle during multiplayer sessions.[/*]\n<br />[*]Settings are stored in BepInEx/config/com.casprepared.standalone.cfg.[/*]\n<br />[/list]\n<br />[b][size=4]Requirements[/size][/b]\n<br />[url=https://github.com/bepinex/bepinex]BepInEx[/url]\n<br />[url=https://github.com/jimmyking9999999/CUCoreLib]CUCoreLib[/url]\n<br />[url=https://github.com/creaturefeaturelarry/casualties-together]Casualties: Together[/url]\n<br />\n<br />[b][size=4]Special thanks to:[/size][/b]\n<br />[b]Orsoniks [/b]For such awesome game;\n<br />[b]CU:Together and CUCoreLib devs [/b]For letting us playing with friends.\n<br />\n<br />Source code: [url=https://github.com/Turianel/Casualties-Prepared]Github[/url] \n<br />\n<br />[color=#00ffff][size=5]YOUR COMMENTS AND BUG REPORTS ARE VERY IMPORTANT TO ME![/size][/color]\n<br />\n<br />\n<br />[/*]\n<br />",
         "Author": "Turianel",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1020/1020-1795116050-497398678.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1020"
         },
-        "DownloadUrl": "nexus://scavprototype/1020/3445",
+        "DownloadUrl": "nexus://scavprototype/1020/3552",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1020,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-20T16:56:12.000Z",
-        "ReleaseDate": "2026-11-19T19:34:54.000Z",
-        "SHA256": "6942e2014c4af32a1805469f0838f5ba42034f32f180117cd2b8b9ac219004bf",
+        "LastUpdated": "2026-11-21T20:01:39.000Z",
+        "ReleaseDate": "2026-11-21T20:00:22.000Z",
+        "SHA256": "1ec57a054d98e4a82646e6e630e2615e86e74af1f8d7d54aed32fb4c40e2eca7",
         "dllSHA256s": {
-            "CasPrepared.dll": "c39c6ed32daead47190ec45f447e6fd1e71be7219e9f0e3e3a540c4f163910ef"
+            "CasPrepared.dll": "90d03136884e586148cd19933d0a7482293c98347705f08f26e0344654a1dcbd"
         },
-        "downloadsSinceLatestVersion": 36,
-        "Dependencies": [
-            "nexus-67",
-            "nexus-115",
-            "nexus-341"
-        ],
+        "downloadsSinceLatestVersion": 1,
+        "Dependencies": [],
         "Changelogs": [
             {
                 "Version": "1",
@@ -1317,19 +1707,27 @@
             {
                 "Version": "1.0.1",
                 "Changelog": "- Added client-side checks. If the mod is not detected on the server, you will be notified. Theoretically resolves a minor memory leak.\n- Changed the achievement notification; it’s now more precise and smaller in size.\n- Adjusted the mod's checkbox to fit the new Server Settings menu.\n- (Note: May be incompatible with older versions of CU:Together.)"
+            },
+            {
+                "Version": "1.0.2",
+                "Changelog": "- Removed Achievement block. Now mod would not affect any new saves"
+            },
+            {
+                "Version": "S-1.1",
+                "Changelog": "- Removed Achievement block."
             }
         ],
         "dllNames": [
             "CasPrepared.dll"
         ],
-        "dllVersion": "0.2.0",
+        "dllVersion": "1.0.2",
         "dllVersions": {
-            "CasPrepared.dll": "0.2.0"
+            "CasPrepared.dll": "1.0.2"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 46,
-            "TotalDownloads": 49,
+            "UniqueDownloads": 97,
+            "TotalDownloads": 119,
             "TotalViews": null
         },
         "Images": [
@@ -1585,7 +1983,7 @@
         "LastQuickCheck": "2026-11-21T15:45:09.625Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-1011",
         "Name": "QoL-EMI-RecipeRowFix",
         "Version": "1.3",
@@ -1611,7 +2009,7 @@
         "dllSHA256s": {
             "QoL-EMI-RecipeRowFix.dll": "e4f440b3acf2f01d05591e663bc40a9bd31b9e894cb6b028b4e4c86cfe0f9a01"
         },
-        "downloadsSinceLatestVersion": 2,
+        "downloadsSinceLatestVersion": 13,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1840,7 +2238,7 @@
         "dllSHA256s": {
             "AllLight.dll": "f3c666dd5f49c8b9787832c79201b7592840bcf58478f265475bf775512d86f3"
         },
-        "downloadsSinceLatestVersion": 35,
+        "downloadsSinceLatestVersion": 50,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1866,7 +2264,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-1002",
@@ -1894,7 +2292,7 @@
         "dllSHA256s": {
             "CasualtiesSidekick.dll": "122dc827e605667f67c28367aa77faad591383355f13455b8e327d351aa2ae05"
         },
-        "downloadsSinceLatestVersion": 39,
+        "downloadsSinceLatestVersion": 45,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1920,7 +2318,7 @@
             "Gameplay",
             "Performance Optimization"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-1001",
@@ -1950,7 +2348,7 @@
             "GunsawGenetics.dll": "df674a92a3dc706a74077408ea9a80d2294396a5102c2f03d676714df5fa5b5b",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 116,
+        "downloadsSinceLatestVersion": 151,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1977,10 +2375,10 @@
             "Gameplay",
             "Races - New"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-1000",
         "Name": "PT-BR Mod",
         "Version": "1.0.2",
@@ -2002,7 +2400,7 @@
         "ReleaseDate": "2026-11-18T22:09:50.000Z",
         "SHA256": "d5b37144de61fe05b48f53be303b45caca9ac4e9adf61a667b0e0741322a7726",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 36,
+        "downloadsSinceLatestVersion": 42,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -2049,7 +2447,7 @@
         "dllSHA256s": {
             "CustomDeathScreen.dll": "3797531cd8ffeac36fe6dc69ac75f3ac64b7bd9b1fa4db7e6006b93821fe61b6"
         },
-        "downloadsSinceLatestVersion": 28,
+        "downloadsSinceLatestVersion": 30,
         "Dependencies": [
             "nexus-115"
         ],
@@ -2073,7 +2471,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-998",
@@ -2126,7 +2524,7 @@
         "LastQuickCheck": "2026-11-21T15:45:09.625Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-997",
         "Name": "Chipped Better Fog",
         "Version": "3",
@@ -2152,7 +2550,7 @@
         "dllSHA256s": {
             "ChippedBetterFog.dll": "6aebcda8e3527e45900aec0236cb8edda10368538fcc8ebc538a026c0bd838fc"
         },
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 68,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2314,7 +2712,7 @@
         "dllSHA256s": {
             "LaseasMendingKit.dll": "27e31889ce36f55375311f412606916e736e76af549a69e59e6710df4de7d216"
         },
-        "downloadsSinceLatestVersion": 195,
+        "downloadsSinceLatestVersion": 241,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -2337,10 +2735,10 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-993",
         "Name": "Play as a trained military professional",
         "Version": "1",
@@ -2366,7 +2764,7 @@
         "dllSHA256s": {
             "MilitaryGearMod.dll": "af2db5f6675dfaa8d407d8998a2efe9812d5fed8464f94ab1d953bdb7e56b761"
         },
-        "downloadsSinceLatestVersion": 34,
+        "downloadsSinceLatestVersion": 54,
         "Dependencies": [
             "nexus-341",
             "nexus-918"
@@ -2501,7 +2899,7 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-990",
         "Name": "ECGPlus heart monitor",
         "Version": "1.2.0",
@@ -2527,7 +2925,7 @@
         "dllSHA256s": {
             "EcgPlus.dll": "f5965a81eb69d0d4730aa9527edac8b88e97e0aa09be2991a4fecd21b7cb15ba"
         },
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 53,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2710,10 +3108,10 @@
             "Gameplay",
             "Unbalanced"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-985",
         "Name": "Guardian Drone - Combat and Medical Companion",
         "Version": "0.4.0",
@@ -2739,7 +3137,7 @@
         "dllSHA256s": {
             "GuardianDrone.dll": "faccc84eabeb2004ac8a84d02975c6b72069f0ca0d39075f750a947266a31bf2"
         },
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 33,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2834,7 +3232,7 @@
         "LastNotifiedChangelogVersion": "5"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-983",
         "Name": "Climbs and Boosts",
         "Version": "2",
@@ -2860,7 +3258,7 @@
         "dllSHA256s": {
             "CasualtiesUnknown.LedgeGrab.dll": "0e42bd9b017f8d208c6ec52d8e9da9001587dc2cc795b637955a49b48757a442"
         },
-        "downloadsSinceLatestVersion": 94,
+        "downloadsSinceLatestVersion": 112,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -2945,7 +3343,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-981",
         "Name": "Realistic Speech",
         "Version": "1",
@@ -2993,7 +3391,7 @@
             "llama.dll": "17318f48fd6b5ff3e72db0fbf2b5adfab60e8ccb23e634d82c7946c612111c05",
             "mtmd.dll": "46212ff176942b74880625cef789f29ec8c23f34b1812003c0b187bdd9fe8461"
         },
-        "downloadsSinceLatestVersion": 199,
+        "downloadsSinceLatestVersion": 243,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -3042,7 +3440,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-980",
         "Name": "BackSlotTools",
         "Version": "1.1",
@@ -3068,7 +3466,7 @@
         "dllSHA256s": {
             "BackSlotTools v1.1 .dll": "4f10198cd85008f76aa380aa2dbe444b78e1d57955805ca4797c681949f44aa3"
         },
-        "downloadsSinceLatestVersion": 66,
+        "downloadsSinceLatestVersion": 82,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3140,7 +3538,7 @@
             "AI-Generated Content",
             "Translation"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-978",
@@ -3168,7 +3566,7 @@
         "dllSHA256s": {
             "CustomObserverMod.dll": "52a178ba9d3bf560629cf707637269d7770673aee7b507c6adef56781d3d559d"
         },
-        "downloadsSinceLatestVersion": 43,
+        "downloadsSinceLatestVersion": 52,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -3191,7 +3589,7 @@
             "AI-Generated Content",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-977",
@@ -3219,7 +3617,7 @@
         "dllSHA256s": {
             "BackroomsLayer.dll": "3c0dd36c1c08506c40590e94d48c43c85c720eb0157980ab6798b0cbde669354"
         },
-        "downloadsSinceLatestVersion": 56,
+        "downloadsSinceLatestVersion": 64,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -3243,10 +3641,10 @@
             "Gameplay",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-976",
         "Name": "Prosthetics RU",
         "Version": "1.1.4",
@@ -3268,7 +3666,7 @@
         "ReleaseDate": "2026-11-15T12:05:35.000Z",
         "SHA256": "a3edf6cddfa55711e33d4ff14415b14586b860a65bae85ab95f9f3d6f867d40b",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 79,
+        "downloadsSinceLatestVersion": 84,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -3496,7 +3894,7 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-971",
         "Name": "CU Emotes",
         "Version": "1.1.0",
@@ -3522,7 +3920,7 @@
         "dllSHA256s": {
             "CUEmotes.dll": "b3ca5e2bc992cf83b272b54e86bf3cd4e160c0bc1bcdac9820a6c19078699428"
         },
-        "downloadsSinceLatestVersion": 83,
+        "downloadsSinceLatestVersion": 145,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3691,7 +4089,7 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-955",
         "Name": "Gluttony",
         "Version": "1.0.1",
@@ -3717,7 +4115,7 @@
         "dllSHA256s": {
             "Gluttony.dll": "88a5462e2fcae0804498426cd510fcf291ae1e0d623197e0fbff6e22497a0a4c"
         },
-        "downloadsSinceLatestVersion": 83,
+        "downloadsSinceLatestVersion": 94,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -3830,7 +4228,7 @@
         "dllSHA256s": {
             "Victory Lap.dll": "ec95051b014e40d0e3e744ab97e103a816e7d1d41fa8429640405b0cb668fa74"
         },
-        "downloadsSinceLatestVersion": 157,
+        "downloadsSinceLatestVersion": 171,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -3852,7 +4250,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "LastQuickCheck": "2026-11-21T00:27:13.046Z",
@@ -5070,7 +5468,7 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-925",
         "Name": "Comforts Unknown - Performance",
         "Version": "0.1.5",
@@ -5096,7 +5494,7 @@
         "dllSHA256s": {
             "ComfortsUnknown.Performance.dll": "7e7ac705cc2c6ffdcc3b171e34f4c909a591ae887cc9300cd9edbbb3db4ece80"
         },
-        "downloadsSinceLatestVersion": 145,
+        "downloadsSinceLatestVersion": 312,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -5764,7 +6162,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-910",
         "Name": "Dress My Scav",
         "Version": "0.1.81",
@@ -5791,7 +6189,7 @@
             "DressMyScav.Core.dll": "a6a41af046736d856c1611ce8d994337007cffce2b985771956fdcd91a307030",
             "DressMyScav.dll": "e6427211cdf4d947d5ff36f07a32c79bdb22228f56c321a6da55cfc45292c4dc"
         },
-        "downloadsSinceLatestVersion": 200,
+        "downloadsSinceLatestVersion": 363,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -7158,7 +7556,7 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-879",
         "Name": "CUShocker (PiShock and OpenShock mod)",
         "Version": "0.2.2",
@@ -7187,7 +7585,7 @@
             "CUShocker.MultiShock.dll": "71a6786caccc7502d9634bfe80993c716d4599c2195f8395cf78f9458d829abd",
             "CUShocker.dll": "34853feaf29dcee90f8277de6db032d28c1fd6bdbef2ca92a5c4fda408bfdec2"
         },
-        "downloadsSinceLatestVersion": 2,
+        "downloadsSinceLatestVersion": 8,
         "Dependencies": [
             "nexus-115"
         ],
@@ -8169,7 +8567,7 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-860",
         "Name": "Simpler Firearms",
         "Version": "1.4",
@@ -8195,7 +8593,7 @@
         "dllSHA256s": {
             "CU_Simpler_Firearms.dll": "b0206223a672c7c9dfe077793cf328a29d3ada0e97641b35d8b16b64942fec30"
         },
-        "downloadsSinceLatestVersion": 82,
+        "downloadsSinceLatestVersion": 103,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -8365,28 +8763,29 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-855",
-        "Name": "CasualtyPsychology(zh-CN)",
+        "Name": "Casualty Psychology-TTF (zh-CN)",
         "Version": "0.8.2",
         "bepinexVersion": null,
         "bepinexPlugins": {},
-        "Summary": "为伤亡心理提供一个简中JSON文件",
-        "Description": "[b][size=6]安装[/size][/b]\n<br />[size=4]把[/size][size=3]zh-CN.json[/size][size=4]放入Casualties Unknown Demo&#92;BepInEx&#92;plugins&#92;Assets&#92;CasualtyPsychology[/size]\n<br />完整路径 Casualties Unknown Demo&#92;BepInEx&#92;plugins&#92;Assets&#92;CasualtyPsychology&#92;zh-CN.json\n<br />\n<br />[b][size=6]注意[/size][/b]\n<br />[size=4][s]CasualtyPsychology还有很小部分部分无法通过 json读取的内容[/s]，不影响正常游玩[/size]\n<br />[color=#00ff00][size=2]如有汉化内容问题欢迎反馈[/size][/color]\n<br />[size=2][u][i][color=#ffff00]汉化内容由AI+人工制作[/color][/i][/u] [/size]\n<br />\n<br />[center][/center]\n<br />",
+        "Summary": "为伤亡心理提供 -简中JSON文件 -字体效果",
+        "Description": "[center]\n<br />[color=#b388ff][size=6][b]Casualty Psychology-TTF (zh-CN)[/b][/size][/color]\n<br />\n<br />\n<br />[size=5][color=#4FC3F7][b]安装步骤[/b][/color][/size]\n<br />\n<br />[size=4][b]1. [color=#7CFC00]JSON[/color][/b][/size]\n<br />将 [b][color=#7CFC00]zh-CN.json[/color][/b] 放入:\n<br />[code]Casualties Unknown&#92;BepInEx&#92;plugins&#92;Assets&#92;CasualtyPsychology[/code][color=#FFA500]完整路径:[/color]\n<br />[code]Casualties Unknown&#92;BepInEx&#92;plugins&#92;Assets&#92;CasualtyPsychology&#92;zh-CN.json[/code][size=4][b]2. [color=#7CFC00]TTFP[/color] [可选][/b][/size]\n<br />将 [b][color=#7CFC00]TTFP[/color][/b] 放入:\n<br />[code]Casualties Unknown&#92;BepInEx&#92;plugins[/code][color=#FFA500]完整路径:[/color]\n<br />[code]Casualties Unknown&#92;BepInEx&#92;plugins&#92;TTFP&#92;[TTFP.dll, XiangJiaoWenXueLingGanTi-2.ttf][/code][size=4]该文件夹内应包含:[/size]\n<br />[list]\n<br />[*][code]TTFP.dll[/code][/*]\n<br />[*][code]XiangJiaoWenXueLingGanTi-2.ttf[/code][/*]\n<br />[/list][size=4][b][color=#7CFC00]TTFP[/color][/b] 首次启动时会生成 [b][color=#7CFC00]TTFP.cfg[/color][/b] 配置文件.  [/size]\n<br />[color=#FFA500]完整路径:[/color]\n<br />[code]Casualties Unknown&#92;BepInEx&#92;config&#92;TTFP.cfg[/code][size=4][b][color=#7CFC00]TTFP[/color][/b] 是用于给游戏写字板内容提供统一字体.[/size]\n<br />[size=4]你可以在其中配置加载的字体包和文字大小.[/size]\n<br />\n<br />\n<br />[size=5][color=#FF6B6B][b]注意事项[/b][/color][/size]\n<br />[size=4]我不确定 [b][color=#FFA500]Mods Chinese Translation (Multi-Mod Chinese Localization)[/color][/b] 是否会替换本汉化内容. \n<br />如果有覆盖情况, 请前往该 MOD 的配置文件进行修改.[/size]\n<br />\n<br />\n<br />[size=5][color=#d5a6bd][b]结语[/b][/color][/size]\n<br />[size=4][i][s]CasualtyPsychology 还有很小一部分内容无法通过 JSON 读取[/s][/i] 但不影响正常游玩. \n<br />如有汉化内容问题, 欢迎反馈. \n<br />[color=#00ffff]汉化内容由 [b]AI + 人工[/b] 制作.[/color][/size]\n<br />\n<br />[/center]\n<br />",
         "Author": "CapsicumAnnuum",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/855/855-1793869024-1114394025.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/855"
         },
-        "DownloadUrl": "nexus://scavprototype/855/3182",
+        "DownloadUrl": "nexus://scavprototype/855/3483",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 855,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-14T13:05:30.000Z",
-        "ReleaseDate": "2026-11-14T13:05:30.000Z",
-        "SHA256": "b31d267ee82a02ace093de70c0bd9206f8e08b2fc6a252964e4b3eb74319bcdb",
+        "LastUpdated": "2026-11-20T13:20:08.000Z",
+        "ReleaseDate": "2026-11-20T13:20:08.000Z",
+        "SHA256": "c2ea5e1ff83e3d51ce29ff882064aab0d401ffd8bebd50853c984bd365c3a711",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 25,
+        "downloadsSinceLatestVersion": 10,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -8394,8 +8793,8 @@
         "dllVersions": {},
         "Statistics": {
             "Endorsements": 1,
-            "UniqueDownloads": 25,
-            "TotalDownloads": 54,
+            "UniqueDownloads": 43,
+            "TotalDownloads": 97,
             "TotalViews": null
         },
         "Images": [
@@ -8406,8 +8805,7 @@
             "AI Assisted",
             "Translation",
             "User Interface"
-        ],
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z"
+        ]
     },
     {
         "LastNotifiedChangelogVersion": "3.2.0",
@@ -8470,7 +8868,7 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-853",
         "Name": "Pickup Milky",
         "Version": "1",
@@ -8496,7 +8894,7 @@
         "dllSHA256s": {
             "PickupMilky.dll": "0aca841e6ace14f8d1135c0416a66e6fc1106fe17bc66e20552b5a251b48dae5"
         },
-        "downloadsSinceLatestVersion": 87,
+        "downloadsSinceLatestVersion": 119,
         "Dependencies": [
             "nexus-67"
         ],
@@ -8647,7 +9045,7 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-849",
         "Name": "StrimScav",
         "Version": "1.3.1",
@@ -8673,7 +9071,7 @@
         "dllSHA256s": {
             "StrimScav.dll": "b697b649a5be882f67ebbd2e834a9db7acd945523b745564c292b49c9c8241a9"
         },
-        "downloadsSinceLatestVersion": 20,
+        "downloadsSinceLatestVersion": 34,
         "Dependencies": [
             "nexus-341"
         ],
@@ -11557,7 +11955,7 @@
             "Gameplay",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-781",
@@ -11607,7 +12005,7 @@
         "nexusTags": [
             "Humour, Joke or Just for Fun"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-778",
@@ -11635,7 +12033,7 @@
         "dllSHA256s": {
             "SobrietyTest.dll": "8e335a04172cc0902dc100426cac0a752ededc2b54d221ec088a3c41c8dd3bc8"
         },
-        "downloadsSinceLatestVersion": 91,
+        "downloadsSinceLatestVersion": 95,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -11659,7 +12057,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-776",
@@ -11687,7 +12085,7 @@
         "dllSHA256s": {
             "NoDurabilityEverythingEdition.dll": "a6e5586d0e369d2d2f6b6a65ed36d668d9b70275c7bb7ab478fd4e9c20ace0bc"
         },
-        "downloadsSinceLatestVersion": 323,
+        "downloadsSinceLatestVersion": 333,
         "Dependencies": [
             "nexus-115"
         ],
@@ -11712,7 +12110,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-772",
@@ -11740,7 +12138,7 @@
         "dllSHA256s": {
             "OopsConsole.dll": "fc3b7aa06b733d6867aeaec4d1d7df88eb6fa14c97c9b101e183d61ff85ee6d9"
         },
-        "downloadsSinceLatestVersion": 58,
+        "downloadsSinceLatestVersion": 60,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -11765,7 +12163,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-751",
@@ -11817,7 +12215,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "LastQuickCheck": "2026-11-21T15:45:09.625Z",
@@ -14782,7 +15180,7 @@
         "LastQuickCheck": "2026-11-21T15:45:09.625Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-682",
         "Name": "arabic moooooood",
         "Version": "1",
@@ -14804,7 +15202,7 @@
         "ReleaseDate": "2026-11-17T19:51:11.000Z",
         "SHA256": "cff5837776c5039369f7d3482b991ca9b7d1df631ef9dac4e7222f118c3c05bf",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 5,
+        "downloadsSinceLatestVersion": 6,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -15565,7 +15963,7 @@
         "dllSHA256s": {
             "CPUOptimization2.dll": "b25139b1995310fade30fd2f72df590fca607ff979be543d7f30122774b845d9"
         },
-        "downloadsSinceLatestVersion": 877,
+        "downloadsSinceLatestVersion": 929,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -15616,7 +16014,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/670/670-1789072249-715837731.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z"
     },
     {
         "Id": "nexus-669",
@@ -16567,10 +16965,11 @@
         "LastQuickCheck": "2026-11-21T15:45:09.625Z"
     },
     {
-        "LastQuickCheck": "2026-11-21T00:27:13.046Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
+        "LastNotifiedChangelogVersion": "2.0.1",
         "Id": "nexus-650",
         "Name": "Collars Unknown",
-        "Version": "2.0.0",
+        "Version": "2.0.2",
         "bepinexVersion": "1.3.0",
         "bepinexPlugins": {
             "com.gouxi.collarsunknown": "1.3.0",
@@ -16583,19 +16982,19 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/650/650-1788576112-1848480610.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/650"
         },
-        "DownloadUrl": "nexus://scavprototype/650/3440",
+        "DownloadUrl": "nexus://scavprototype/650/3555",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 650,
         "SourceName": "Nexus",
         "ContainsAdultContent": true,
-        "LastUpdated": "2026-11-19T17:02:45.000Z",
-        "ReleaseDate": "2026-11-19T17:02:45.000Z",
-        "SHA256": "c55aeb689f9c989c3a6e1c6a724ab944a841c9ec6a04ebf7e8203f6c0ee351a5",
+        "LastUpdated": "2026-11-21T20:11:55.000Z",
+        "ReleaseDate": "2026-11-21T20:11:55.000Z",
+        "SHA256": "63ebdf9ab95fe0570b770eedc87d9a4e27beee59cda9f39726fa2ca346dcce62",
         "dllSHA256s": {
-            "collarsunknown.dll": "af463fc3354593dd08dd14a0a5ba3625837971e914b590dab4a3bfbdb6548667",
+            "collarsunknown.dll": "c9e480dbcb43d34109513ed5f0f39b717c9a749fc0b32beedcf6c5f52a215698",
             "CUCoreLib.dll": "c0f064260b2671d02bf802c460aa346c6b858ec9269f2ff93439ebabaa940aa3"
         },
-        "downloadsSinceLatestVersion": 70,
+        "downloadsSinceLatestVersion": 5,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16629,6 +17028,10 @@
             {
                 "Version": "2.0.1",
                 "Changelog": "- added clicler\n- fixed mp compat, for button not appears\n- fixed collar cant be put in bags"
+            },
+            {
+                "Version": "2.0.2",
+                "Changelog": "- fixed you can drop collars in mp mod\n- minor bug fixing, should works better now, im tried"
             }
         ],
         "dllNames": [
@@ -16641,9 +17044,9 @@
             "CUCoreLib.dll": "1.1"
         },
         "Statistics": {
-            "Endorsements": 35,
-            "UniqueDownloads": 1274,
-            "TotalDownloads": 2015,
+            "Endorsements": 37,
+            "UniqueDownloads": 1324,
+            "TotalDownloads": 2150,
             "TotalViews": null
         },
         "Images": [
@@ -16661,8 +17064,7 @@
             "Sexualised",
             "Sound FX",
             "Utilities for Players"
-        ],
-        "LastNotifiedChangelogVersion": "2.0.1"
+        ]
     },
     {
         "Id": "nexus-649",
@@ -32149,7 +32551,7 @@
         "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-324",
         "Name": "Gunsaw Genetics",
         "Version": "2.1.0",
@@ -32177,7 +32579,7 @@
             "GunsawGenetics.dll": "bb5d779992ae09f5ea8b667d640417072cc0f4437a23572b0de695e044bcfc2a",
             "GunsawGeneticsMPBridge.dll": "a44294623d99d8dc220757dbf9a4d76c5fb6c41741f933eec31fa3d4d5011f8d"
         },
-        "downloadsSinceLatestVersion": 1974,
+        "downloadsSinceLatestVersion": 2603,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -35911,31 +36313,31 @@
         "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-135",
         "Name": "Cu-Hotbar",
-        "Version": "12",
-        "bepinexVersion": "1.1.1",
+        "Version": "14",
+        "bepinexVersion": "1.1.3",
         "bepinexPlugins": {
-            "com.casualtiesUnknown.hotbar": "1.1.1"
+            "com.casualtiesUnknown.hotbar": "1.1.3"
         },
-        "Summary": "可自定义快捷栏。拖物品到槽位绑定，数字键/滚轮切主手，右键使用；位置/缩放/透明度可调，按角色缓存；检测到 SaveManager 自动合并设置分页。 customizable hotbar. Drag to bind, number/scroll to switch, right-click to use; adjustable, per-character cache; merges into SaveManager when present.",
-        "Description": "[b]CuHotbar[/b]\n<br />\n<br />[u]A customizable Minecraft-style hotbar for Casualties: Unknown. Bind items from your inventory to slots and switch them to your main hand instantly.[/u]\n<br />\n<br />为《未知伤亡》添加一条可自定义的快捷物品栏：把背包物品绑定到槽位，随时快速切到主手。\n<br />\n<br />[b]Installation instructions[/b]\n<br />\n<br />1. Install BepInEx.\n<br />2. Place the `CuHotbar` folder into `BepInEx/plugins/`.\n<br />3. Launch the game; open settings from the main-menu button, the in-game pause button, or the SaveManager tab.\n<br />\n<br />1. 安装 BepInEx。\n<br />2. 把 `CuHotbar` 文件夹放入 `BepInEx/plugins/`。\n<br />3. 启动游戏，通过主菜单按钮、游戏内暂停按钮或 SaveManager 分页打开设置。\n<br />\n<br />[b]Main features[/b]\n<br />\n<br />- Drag items from the inventory onto slots to bind them.\n<br />- Switch to the main hand with number keys or the scroll wheel; right-click to use the held item.\n<br />- Adjustable position, scale, and background opacity.\n<br />- Bindings cached per character, persisting across sessions.\n<br />- Auto-refill and original-spot return when items are used or dropped.\n<br />\n<br />- 从背包拖动物品到槽位绑定。\n<br />- 数字键 / 滚轮切到主手，右键使用手中物品。\n<br />- 位置、缩放、背景透明度均可调。\n<br />- 绑定按角色缓存，重进游戏不丢失。\n<br />- 物品用尽 / 丢出后自动补充并归还原位。\n<br />\n<br />[b] Requirements[/b]\n<br />\n<br />- BepInEx (required).\n<br />- SaveManager (optional): when present, settings merge into its panel as a tab.\n<br />\n<br />- BepInEx（必需）。\n<br />- SaveManager（可选）：在场时设置合并为其面板的一个分页。\n<br />\n<br />Repository: [[url=https://github.com/huanxin996/Cu-Hotbar][/url][url=https://github.com/HuanXinWork/Cu-Hotbar]HuanXinWork/Cu-Hotbar[/url]]\n<br />SaveManager:[[url=https://github.com/huanxin996/Cu-SaveManager][/url][url=https://github.com/HuanXinWork/Cu-SaveManager]HuanXinWork/Cu-SaveManager[/url]]",
+        "Summary": "Customizable hotbar: drag or point-and-press to bind, keys/scroll to equip, press again to holster, Shift+Right-click to use, auto-reload. Per-character cache; merges into CuSaveManager. || 可自定义快捷栏：拖拽或指向按键绑定，按键/滚轮切主手、同键收起，Shift+右键使用，持枪自动装填。按角色缓存，检测",
+        "Description": "[size=5][b]CuHotbar[/b][/size]\n<br />\n<br />A customizable Minecraft-style hotbar for [i]Casualties: Unknown[/i]. Bind items from your inventory to slots, switch them to your main hand instantly, holster with the same key, and reload firearms automatically.\n<br />\n<br />[size=4][b]Installation[/b][/size]\n<br />[list=1]\n<br />[*]Install BepInEx 5.[/*]\n<br />[*]Extract the release archive into your game root folder, or place [font=Courier New]CuHotbar[/font] into [font=Courier New]&lt;GameFolder&gt;/BepInEx/plugins/[/font] ([font=Courier New]BepInEx/plugins/CuHotbar/CuHotbar.dll[/font]).[/*]\n<br />[*]Launch the game. Open settings from the main-menu button, the bottom-right button on the [b]ESC[/b] pause screen, or the [b]CuSaveManager[/b] sidebar tab.[/*]\n<br />[/list][size=4][b]Main features[/b][/size]\n<br />[list]\n<br />[*][b]Drag or point-and-press binding[/b]: drag an item onto a slot, or hover over an inventory/ground item and press a slot key to bind it directly. Right-click any slot to unbind.[/*]\n<br />[*][b]Custom slot keys &amp; scroll switching[/b]: switch slots with the scroll wheel or per-slot custom keys/combos (first 9 slots default to [b]Numpad 1-9[/b], with live key labels in the top-left corner).[/*]\n<br />[*][b]Same-key holster &amp; safe return[/b]: press the active slot's key again to put the held item away (original spot -&gt; empty body slot -&gt; drop), no dedicated empty slot needed.[/*]\n<br />[*][b]Quick use &amp; safe consume[/b]: use the held item with [b]Shift + Right-click[/b] (rebindable). Optional [b]Safe Quick-Consume[/b] lets you eat food, drinks, and oral meds directly without unequipping your main-hand weapon or tool.[/*]\n<br />[*][b]Auto-reload &amp; auto-refill[/b]: holding a gun that needs ammo automatically loads a matching mag or round from your inventory; depleted or dropped items auto-refill from matching stacks, with item counts and a bottom bar for battery, ammo, or durability.[/*]\n<br />[*][b]Flexible layout &amp; per-character cache[/b]: unlimited slots, horizontal or vertical multi-row grids, adjustable position, scale, and opacity, plus [b]90% / 100% / 115% / 130%[/b] panel scaling on the top bar. Bindings save separately per character across sessions.[/*]\n<br />[/list][size=4][b]Requirements &amp; companion mods[/b][/size]\n<br />[list]\n<br />[*][b]BepInEx 5[/b] (required).[/*]\n<br />[*][b]CuSaveManager[/b] (optional): fixed-world multi-save and rollback mod with Save &amp; Exit (keeps your EXP dog alive), layer preview banners, timed backups, and death rollback. When installed, CuHotbar merges into its panel as a sidebar tab and shares its UI scale: [url=https://github.com/HuanXinWork/Cu-SaveManager]HuanXinWork/Cu-SaveManager[/url][/*]\n<br />[*][b]SkinSync[/b] (companion mod): custom character skin and multiplayer sync mod. Replaces limb and expression sprites for Experiment, Milky, and Dune; supports wings, limb accessories, custom wound-view art, blood/light/particle effects, and Verlet physics tail sway; syncs skins and transfers missing packs on demand in [i]Casualties: Together[/i], and also merges into CuSaveManager's panel: [url=https://github.com/Bytechey/SkinSync]Bytechey/SkinSync[/url][/*]\n<br />[*][b]Skin Editor[/b] (desktop editor for building and previewing SkinSync packs): [url=https://github.com/HuanXinWork/CasualtiesUnknown-SkinEditor]HuanXinWork/CasualtiesUnknown-SkinEditor[/url][/*]\n<br />[*][b]CuHotbar GitHub[/b]: [url=https://github.com/HuanXinWork/Cu-Hotbar]HuanXinWork/Cu-Hotbar[/url][/*]\n<br />[/list][line]\n<br />\n<br />[size=5][b]CuHotbar 快捷物品栏[/b][/size]\n<br />\n<br />为《未知伤亡》（[i]Casualties: Unknown[/i]）添加一条仿 Minecraft 的可自定义快捷物品栏：把背包物品绑定到槽位，随时切到主手、同键收起，并支持持枪自动装填与快捷进食。\n<br />\n<br />[size=4][b]安装说明[/b][/size]\n<br />[list=1]\n<br />[*]安装 BepInEx 5。[/*]\n<br />[*]将发布包解压到游戏根目录，或把 [font=Courier New]CuHotbar[/font] 文件夹放入 [font=Courier New]&lt;游戏目录&gt;/BepInEx/plugins/[/font]（即 [font=Courier New]BepInEx/plugins/CuHotbar/CuHotbar.dll[/font]）。[/*]\n<br />[*]启动游戏，通过主菜单按钮、局内 [b]ESC[/b] 暂停页右下角按钮或 [b]CuSaveManager[/b] 侧边栏分页打开设置（顶栏支持 [b]90% / 100% / 115% / 130%[/b] 四档面板缩放）。[/*]\n<br />[/list][size=4][b]主要功能[/b][/size]\n<br />[list]\n<br />[*][b]拖拽或指向绑定，右键解绑[/b]：从背包拖动物品到槽位绑定，或鼠标指向背包/地面物品直接按槽位键绑定；右键点击槽位即可解绑。[/*]\n<br />[*][b]独立改键与滚轮切换[/b]：支持滚轮切槽，每个槽位均可绑定独立按键或组合键（前 9 槽默认小键盘 [b]1-9[/b]，槽位左上角实时显示键位角标）。[/*]\n<br />[*][b]同键收起与安全归还[/b]：再按一次当前槽位键即可收起主手物品，按「原位置 -&gt; 身上空位 -&gt; 掉落」顺序放回，不必预留空槽。[/*]\n<br />[*][b]自定义使用键与快捷安全使用[/b]：默认按 [b]Shift + 鼠标右键[/b]（可改键）使用手中物品；开启 [b]快捷安全使用[/b] 后，吃喝食物、饮品与口服药不切下主手武器或工具。[/*]\n<br />[*][b]自动装填与自动补充[/b]：主手持枪缺弹时自动从背包装填匹配弹药；物品用尽或丢出后自动补充同种物品，槽位显示数量并以底部状态条展示电量、弹药或耐久。[/*]\n<br />[*][b]自由布局与按角色缓存[/b]：槽位数量不限，支持横排/竖排与多排多列网格，位置、缩放、背景透明度均可调；绑定按角色独立缓存，重进游戏不丢失。[/*]\n<br />[/list][size=4][b]前置与配套模组[/b][/size]\n<br />[list]\n<br />[*][b]BepInEx 5[/b]（必需）。[/*]\n<br />[*][b]CuSaveManager[/b]（可选联动）：固定世界多存档与回档模组，支持存档并退出保住 EXP 小狗、存档层级画面预览、定时备份与死亡回档。在场时 CuHotbar 自动合并为其侧边栏分页并共享面板缩放：[url=https://github.com/HuanXinWork/Cu-SaveManager]HuanXinWork/Cu-SaveManager[/url][/*]\n<br />[*][b]SkinSync[/b]（推荐配套）：自定义角色皮肤与联机同步模组。支持 Experiment / Milky / Dune 三角色肢体与表情替换、背部翅膀、肢体配件、健康面板伤势立绘、血液与灯光粒子特效、Verlet 物理尾巴摆动；在 [i]Casualties: Together[/i] 联机中自动同步外观并按需分片传输缺失皮肤包，同样支持合入 CuSaveManager 面板：[url=https://github.com/Bytechey/SkinSync]Bytechey/SkinSync[/url][/*]\n<br />[*][b]CasualtiesUnknown-SkinEditor[/b]（配套桌面端皮肤制作与动画预览工具）：[url=https://github.com/HuanXinWork/CasualtiesUnknown-SkinEditor]HuanXinWork/CasualtiesUnknown-SkinEditor[/url][/*]\n<br />[*][b]CuHotbar 仓库[/b]：[url=https://github.com/HuanXinWork/Cu-Hotbar]HuanXinWork/Cu-Hotbar[/url][/*]\n<br />[/list]",
         "Author": "huanxin996",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/135/135-1780249787-1827646159.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/135"
         },
-        "DownloadUrl": "nexus://scavprototype/135/3492",
+        "DownloadUrl": "nexus://scavprototype/135/3547",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 135,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-20T17:34:25.000Z",
-        "ReleaseDate": "2026-11-20T17:34:25.000Z",
-        "SHA256": "d38ca4a894729b6ed6cc276f253c49b0203bac09d9b442e28de409624f0c0735",
+        "LastUpdated": "2026-11-21T19:42:11.000Z",
+        "ReleaseDate": "2026-11-21T19:42:10.000Z",
+        "SHA256": "b0a7abcfe7baf0b9b1c288eadc6df19ca230a44c070a8de57aeab92aad50e624",
         "dllSHA256s": {
-            "CuHotbar.dll": "bf65220e3f7717b32d78eef04cfaccc58b64fbd10a20f93994d7eb7168ae1b31"
+            "CuHotbar.dll": "d4fdcd1fa05be2de93bcaed24a843c07f4c84e74e9e3210e3b49a0df592b77bf"
         },
         "downloadsSinceLatestVersion": 2,
         "Dependencies": [],
@@ -35943,14 +36345,14 @@
         "dllNames": [
             "CuHotbar.dll"
         ],
-        "dllVersion": "1.1.1",
+        "dllVersion": "1.1.3",
         "dllVersions": {
-            "CuHotbar.dll": "1.1.1"
+            "CuHotbar.dll": "1.1.3"
         },
         "Statistics": {
-            "Endorsements": 31,
-            "UniqueDownloads": 634,
-            "TotalDownloads": 1096,
+            "Endorsements": 32,
+            "UniqueDownloads": 647,
+            "TotalDownloads": 1154,
             "TotalViews": null
         },
         "Images": [
@@ -42015,7 +42417,7 @@
         "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T21:17:17.993Z",
         "Id": "nexus-15",
         "Name": "Player sprite replacer",
         "Version": "v2.1.0",
@@ -42041,7 +42443,7 @@
         "dllSHA256s": {
             "body_sprite_replacer.dll": "a158e14448ce0b5c2ea430220fd07304c3980f149bc942c43c6e883415becaad"
         },
-        "downloadsSinceLatestVersion": 19,
+        "downloadsSinceLatestVersion": 224,
         "Dependencies": [],
         "Changelogs": [
             {

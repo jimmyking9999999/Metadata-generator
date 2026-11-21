@@ -1,5 +1,271 @@
 [
     {
+        "Id": "nexus-1044",
+        "Name": "CasUnknown Twitch Integration",
+        "Version": "0.1.0.0",
+        "bepinexVersion": "0.1.0.0",
+        "bepinexPlugins": {
+            "Nexivyffulf.TwitchIntegration": "0.1.0.0"
+        },
+        "Summary": "This is a beta Casualties Unknown Twitch Integration!!!! Let your audience mess with you in the caves!",
+        "Description": "[size=4][b]This is currently in beta:[/b][/size]\n<br />It is here for testing purposes and will later get more redeems added (and also be easier to use).\n<br />\n<br />To install this mod, add the folder \"TwitchItegration\" to \"...BepInEx/plugins\". This folder name is important.\n<br />\n<br />\n<br />To enable, find the setting in the settings menu under gameplay. Pressing the button will open a webpage.\n<br />\n<br />For this next part you will need to click back into the game occasionally to let the code run.\n<br />\n<br />There authorize \"Grey Planet Live Feed\". You will be asked to log into Twitch if you are not already.\n<br />\n<br />If you are a twitch affiliate it should \"hopefully\" work.\n<br />\n<br />\n<br />Adding redemptions:\n<br />\n<br />For now, this must be done manually, there are two to mention. How you set them up is loose and only requires a few keywords\n<br />in the description to work. Name, cost, and all other things can be whatever you want.\n<br />Keywords can be any case.\n<br />\n<br />Give item:\n<br />\n<br />starts with \"give\"\n<br />ends with the name of the item you want\n<br />\n<br />Give random item:\n<br />\n<br />starts with \"give\"\n<br />has the word \"random\" anywhere in it\n<br />may end with the pool, valid pools are below\n<br />\n<br />\n<br />medical\n<br />food\n<br />water\n<br />tool\n<br />drug\n<br />container\n<br />utility\n<br />custom",
+        "Author": "Nexivyffulf",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1044/1044-1795246787-1147299423.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1044"
+        },
+        "DownloadUrl": "nexus://scavprototype/1044/3520",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1044,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T07:42:32.000Z",
+        "ReleaseDate": "2026-11-21T07:40:43.000Z",
+        "SHA256": "9b734d52c607b5de4ce7c0e9ba35767b653287dbb8208b045ae06d039735eac8",
+        "dllSHA256s": {
+            "TwitchIntegration.dll": "78d1f06f9e80773cd744855eec7f53f9e0cc2fc1f8dfbc65959758837d564a50"
+        },
+        "downloadsSinceLatestVersion": 0,
+        "Dependencies": [
+            "nexus-115"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "TwitchIntegration.dll"
+        ],
+        "dllVersion": "0.1.0.0",
+        "dllVersions": {
+            "TwitchIntegration.dll": "0.1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 0,
+            "TotalDownloads": 0,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1044/1044-1795246787-1147299423.png"
+        ],
+        "nexusTags": [
+            "Gameplay"
+        ],
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
+    },
+    {
+        "Id": "nexus-1043",
+        "Name": "No Pain. No Gain.",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "mcshooturface.casualtiesunknown.nopainnogain": "1.0.0"
+        },
+        "Summary": "Adds realistic, customizable pain levels when carrying heavy weight: overloaded back slots, hands and mouth hurt the body part holding them, with new pain moodlets, bonus STR/RES XP that scales with the pain, and a STR-based fracture chance at Severe pain. In practice: haul heavy loads to train faster, but rest before something breaks.",
+        "Description": "[size=5][b]No Pain? No Gain![/b][/size]\n<br />Carrying more than you can handle now hurts, but the strain reaps you benefits. Walk or exercise while overweight and the body part holding the load starts to ache, but strength and resilience starts rising faster. The stronger you are, the less you break. Push through it to train faster, but push too far and something's bound to give.\n<br />\n<br />[size=5][b]Requirements[/b][/size]\n<br />[list]\n<br />[*][url=https://www.nexusmods.com/site/mods/115]BepInEx[/url][/*]\n<br />[/list]\n<br />[size=5][b]Installation[/b][/size]\n<br />[list=1]\n<br />[*]Install [url=https://www.nexusmods.com/site/mods/115]BepInEx[/url] into the game folder (the one with CasualtiesUnknown.exe) and run the game once.[/*]\n<br />[*]Download [b]one[/b] version from the Files tab: the main version, or [b]fractureless[/b] if you don't want broken bones.[/*]\n<br />[*]Drag the [b]BepInEx[/b] folder from the zip into the game folder. Merge if asked.[/*]\n<br />[*]Launch the game.[/*]\n<br />[/list]Switching versions? Delete the other version's folder in [b]BepInEx&#92;plugins[/b] first.\n<br />\n<br />[size=5][b]Uninstall[/b][/size]\n<br />[list=1]\n<br />[*]Delete the [b]No Pain No Gain[/b] folder (or [b]No Pain No Gain (fractureless)[/b]) in [b]BepInEx&#92;plugins[/b].[/*]\n<br />[*]Optional: delete its settings file in [b]BepInEx&#92;config[/b] (the one starting with [b]mcshooturface.casualtiesunknown.nopainnogain[/b]).[/*]\n<br />[/list]Your saves aren't affected. Any pain already on your character fades as normal.\n<br />\n<br />[size=5][b]Where it hurts[/b][/size]\n<br />[list]\n<br />[*][b]Back slots[/b] → back pain[/*]\n<br />[*][b]Hands[/b] → pain in that arm only. Swap hands to rest a sore arm.[/*]\n<br />[*][b]Mouth[/b] → neck pain. Heavy items hurt even when you aren't overweight.[/*]\n<br />[/list]\n<br />[size=5][b]How pain builds[/b][/size]\n<br />[list]\n<br />[*]Only while you walk or exercise overweight. Stand still to recover.[/*]\n<br />[*]The more weight a slot holds, the more that part hurts.[/*]\n<br />[*]The further over your limit, the faster it builds.[/*]\n<br />[/list]\n<br />[size=5][b]The gain[/b][/size]\n<br />[list]\n<br />[*]Bonus [b]Strength[/b] and [b]Resilience[/b] XP. The more it hurts, the more you earn.[/*]\n<br />[/list]\n<br />[size=5][b]The risk[/b][/size]\n<br />[list]\n<br />[*]Keep moving in Severe pain and the bone can break: ribs, forearm or neck.[/*]\n<br />[*]A broken forearm drops whatever that hand was holding.[/*]\n<br />[*]Higher Strength means a lower chance to break.[/*]\n<br />[/list]\n<br />[size=5][b]New moodlets[/b][/size]\n<br />[list]\n<br />[*]Back pain, Arm pain and Neck pain, each with four levels and pixel-art icons that match the game.[/*]\n<br />[*]They warn you before something breaks.[/*]\n<br />[/list]\n<br />Almost everything can be tuned: see [b]Customization[/b] at the bottom of the page.\n<br />\n<br />[size=5][b]Fractureless version[/b][/size]\n<br />[list]\n<br />[*]Want the pain and the gains without broken bones? Get [b]No Pain No Gain (fractureless)[/b] from the Files tab.[/*]\n<br />[*]Same mod, but every break chance starts at 0.[/*]\n<br />[*]You can still turn breaks on later in its config.[/*]\n<br />[*]Install only one of the two versions.[/*]\n<br />[/list]\n<br />[size=5][b]Good to know[/b][/size]\n<br />[list]\n<br />[*]Worn items count toward the part they're worn on. Legs never hurt.[/*]\n<br />[*]The new moodlets only count pain from carrying, so a gunshot wound won't show as back pain.[/*]\n<br />[*]By default the mod adds at most 70 pain to a part, so it can't cause pain shock on its own. A fracture can.[/*]\n<br />[*]Fractures are the game's own: they bleed, take time to heal, and the shock can knock you down.[/*]\n<br />[*]Just like in real life, strength reduces fractures. At Strength 20 bones break half as often as at Strength 10, and at Strength 5 twice as often.[/*]\n<br />[*]A sore arm is a weaker arm, just like any other pain in the game.[/*]\n<br />[*]The bonus XP stacks on top of the game's own XP for carrying weight and for being in pain.[/*]\n<br />[/list]\n<br />[size=5][b]Compatibility[/b][/size]\n<br />[list]\n<br />[*]Doesn't change saves, items or item weights, so it's safe to add or remove mid-playthrough.[/*]\n<br />[/list]\n<br />[size=5][b]Notes[/b][/size]\n<br />[list]\n<br />[*]This mod is not opted in to Nexus Mods Donation Points. The thumbnail text uses the [b]ByteBounce[/b] font from 1001Fonts, which is free for personal use only, so opting out keeps this page non-commercial and respects its licence.[/*]\n<br />[/list]\n<br />[size=5][b]Customization[/b][/size]\n<br />[list=1]\n<br />[*]Launch the game once with the mod, then close it.[/*]\n<br />[*]Open [b]BepInEx&#92;config&#92;mcshooturface.casualtiesunknown.nopainnogain.cfg[/b] in Notepad (the fractureless version uses [b]...nopainnogain.fractureless.cfg[/b]).[/*]\n<br />[*]Change a value, save, and start the game. Every setting is explained right above it in the file.[/*]\n<br />[/list]\n<br />[b]Quick tweaks[/b]\n<br />[list]\n<br />[*][b]Gentler or harsher:[/b] set [b]PainPerSecond[/b] to 2 or 6.[/*]\n<br />[*][b]Mouth items hurt too easily:[/b] set [b]HeavyItemWeight[/b] to 2.[/*]\n<br />[*][b]Turn off one kind of pain:[/b] set [b]BackPainMultiplier[/b], [b]ArmPainMultiplier[/b] or [b]NeckPainMultiplier[/b] to 0.[/*]\n<br />[*][b]Exercise shouldn't hurt:[/b] set [b]ExerciseMultiplier[/b] to 0.[/*]\n<br />[*][b]Double the bonus XP:[/b] set both XP settings to 0.02.[/*]\n<br />[*][b]Fewer breaks:[/b] halve [b]BreakChanceLevel3[/b] and [b]BreakChanceLevel4[/b].[/*]\n<br />[*][b]No breaks at all:[/b] set [b]Enabled[/b] under Fractures to false.[/*]\n<br />[*][b]Breaks start earlier:[/b] give [b]BreakChanceLevel1[/b] or [b]BreakChanceLevel2[/b] a value above 0.[/*]\n<br />[*][b]Reach the Agony level:[/b] set [b]MaxPain[/b] above 80. Dangerous: pain above 75 can cause pain shock.[/*]\n<br />[/list]\n<br />[b]1. General[/b]\n<br />[list]\n<br />[*][b]Enabled[/b]: turn the whole mod on or off. Default: true.[/*]\n<br />[*][b]ShowMoodlets[/b]: show or hide the new pain moodlets. Default: true.[/*]\n<br />[/list]\n<br />[b]2. Pain[/b]\n<br />[list]\n<br />[*][b]PainPerSecond[/b]: how fast pain builds. Default: 4. The body heals about 1 per second.[/*]\n<br />[*][b]OverweightScaling[/b]: how much worse heavy overloading hurts. Default: 4. At 0, any amount over hurts the same.[/*]\n<br />[*][b]MaxPain[/b]: most pain the mod adds to one part. Default: 70. Severe is above 55, Agony above 80.[/*]\n<br />[*][b]ExerciseMultiplier[/b]: exercise pain compared with walking. Default: 1.[/*]\n<br />[/list]\n<br />[b]3. Body Parts[/b]\n<br />[list]\n<br />[*][b]BackPainMultiplier[/b], [b]ArmPainMultiplier[/b], [b]NeckPainMultiplier[/b]: 1 = normal, 2 = double, 0 = off. Default: 1.[/*]\n<br />[*][b]CountWornItems[/b]: worn gear adds to the strain. Default: true.[/*]\n<br />[/list]\n<br />[b]4. Mouth Items[/b]\n<br />[list]\n<br />[*][b]HeavyItemWeight[/b]: items this heavy hurt your neck even when you aren't overweight. Default: 1.[/*]\n<br />[*][b]HeavyItemPainPerSecond[/b]: how fast they hurt. Default: 3.[/*]\n<br />[/list]\n<br />[b]5. Gains[/b]\n<br />[list]\n<br />[*][b]ResilienceXpPerPain[/b], [b]StrengthXpPerPain[/b]: bonus XP per point of pain. Default: 0.01 (0.5 XP per second at 50 pain).[/*]\n<br />[/list]\n<br />[b]6. Fractures[/b]\n<br />[list]\n<br />[*][b]Enabled[/b]: bones can break. Default: true.[/*]\n<br />[*][b]BreakChanceLevel1[/b] to [b]BreakChanceLevel4[/b]: % chance per second of a break at each moodlet level. Defaults: 0, 0, 0.4, 1.5 (all 0 in the fractureless version).[/*]\n<br />[*][b]StrengthReference[/b]: how much Strength protects you. Default: 10, so Strength 20 halves the chance.[/*]\n<br />[/list]\n<br />[b]7. Troubleshooting[/b]\n<br />[list]\n<br />[*][b]LogPain[/b]: writes pain values to the BepInEx log, for bug reports. Default: false.[/*]\n<br />[/list]",
+        "Author": "McShootUrFace",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1043/1043-1795239208-715453458.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1043"
+        },
+        "DownloadUrl": "nexus://scavprototype/1043/3514",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1043,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T05:36:56.000Z",
+        "ReleaseDate": "2026-11-21T05:34:04.000Z",
+        "SHA256": "07e654b32c0dfed3204d7e4ccab6ca625c50b291f6b0e8a29c75eb6bc0478e53",
+        "dllSHA256s": {
+            "NoPainNoGain.dll": "919d70e7c8ae84f384b875640e659525c5ed79b61454a0ed5e5387320fd5081a"
+        },
+        "downloadsSinceLatestVersion": 7,
+        "Dependencies": [
+            "nexus-115"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "NoPainNoGain.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "NoPainNoGain.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 9,
+            "TotalDownloads": 10,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1043/1043-1795239208-715453458.png"
+        ],
+        "nexusTags": [
+            "AI Media",
+            "AI-Generated Content",
+            "Fair and balanced",
+            "Gameplay",
+            "User Interface"
+        ],
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
+    },
+    {
+        "Id": "nexus-1042",
+        "Name": "Global Container Capacity Carry Weight",
+        "Version": "1",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "lead.casualtiesunknown.carrycapacity": "1.0.0"
+        },
+        "Summary": "Raise every container's capacity and your carry limit, globally and on the fly. Three modes (multiply / add / absolute), live config reload, console commands and hotkeys. Runtime only — turning it off restores vanilla instantly. No save edits.",
+        "Description": "[center][size=6][b]Global Container Capacity &amp; Carry Weight[/b][/size]\n<br />\n<br />[size=4]Configurable · Runtime · Save-safe[/size][/center]\n<br />\n<br />[line]\n<br />\n<br />\n<br />\n<br />[b]Overview[/b]\n<br />\n<br />Tired of juggling backpacks, pouches and crates because every container has its own tiny weight limit? This mod applies one global setting to [b]every[/b] container in the game, plus a separate multiplier for your character's carry weight. No per-item edits, no save surgery, and no restart needed to change values.\n<br />\n<br />\n<br />\n<br />[b]Features[/b]\n<br />\n<br />[list]\n<br />[*][b]Global container capacity[/b] — every Container (backpacks, pouches, belt bags, crates, container buildings) is handled the same way.\n<br />[/*]\n<br />[*][b]Per-item weight limit[/b] — controls whether a single heavy item fits at all.\n<br />[/*]\n<br />[*][b]Carry weight[/b] — multiplies the character's maximum encumbrance.\n<br />[/*]\n<br />[*][b]Three modes[/b] — Multiply, Add, or Absolute.\n<br />[/*]\n<br />[*][b]Change it while playing[/b] — edit the config file (auto-reloads), use console commands, or hotkeys.\n<br />[/*]\n<br />[*][b]Instant off switch[/b] — disable the mod and vanilla values are restored immediately.\n<br />[/*]\n<br />[*][b]Save-safe[/b] — nothing is written to saves or game assets; items already inside containers stay there.\n<br />[/*]\n<br />[/list]\n<br />\n<br />[b]Requirements[/b]\n<br />\n<br />[list]\n<br />[*]Casualties: Unknown (Steam version)\n<br />[/*]\n<br />[*]BepInEx 5.4.x (x64, Mono build) — [url=https://github.com/BepInEx/BepInEx/releases]BepInEx releases[/url]\n<br />[/*]\n<br />[/list]\n<br />\n<br />[b]Installation[/b]\n<br />\n<br />[list=1]\n<br />[*]Install BepInEx 5.4.x into the game folder and run the game once so BepInEx initializes.\n<br />[/*]\n<br />[*]Copy [b]CUCarryCapacity.dll[/b] to [b]BepInEx&#92;plugins&#92;CUCarryCapacity&#92;[/b].\n<br />[/*]\n<br />[*]Start the game. The config file is created at [b]BepInEx&#92;config&#92;lead.casualtiesunknown.carrycapacity.cfg[/b].\n<br />[/*]\n<br />[*]Load a save — the new limits are applied to every container as it is created.\n<br />[/*]\n<br />[/list]\n<br />\n<br />[b]Configuration[/b]\n<br />\n<br />The config is read at startup and watched for changes: save the file and the new values apply within about a second.\n<br />\n<br />\n<br />\n<br />[code]\n<br />\n<br />[2. Container Capacity]\n<br />\n<br />Mode = Multiply\n<br />\n<br />CapacityMultiplier = 3\n<br />\n<br />PerItemMultiplier = 3\n<br />\n<br />CapacityAdd = 0\n<br />\n<br />PerItemAdd = 0\n<br />\n<br />AbsoluteCapacity = 100\n<br />\n<br />AbsolutePerItem = 100\n<br />\n<br />SkipContainersWithoutBaseCapacity = true\n<br />\n<br />\n<br />\n<br />[3. Carry Weight]\n<br />\n<br />Enabled = true\n<br />\n<br />Multiplier = 2\n<br />\n<br />\n<br />\n<br />[4. Hotkeys]\n<br />\n<br />Enabled = true\n<br />\n<br />ToggleMod = F5\n<br />\n<br />CapacityUp = F6\n<br />\n<br />CapacityDown = F7\n<br />\n<br />CarryUp = F8\n<br />\n<br />CarryDown = F9\n<br />\n<br />ReloadConfig = F10[/code]\n<br />\n<br />[b]Modes[/b]\n<br />\n<br />[list]\n<br />[*][b]Multiply[/b] — vanilla value × multiplier. Default: a 5u backpack becomes 15u.\n<br />[/*]\n<br />[*][b]Add[/b] — vanilla value + offset. Example: +20 turns a 5u backpack into 25u.\n<br />[/*]\n<br />[*][b]Absolute[/b] — the same fixed value for every container. Use 1000000000 for effectively unlimited.\n<br />[/*]\n<br />[/list]Containers whose vanilla capacity is zero are left alone by default, so the mod does not give storage to objects that were never meant to hold items. Turn off [b]SkipContainersWithoutBaseCapacity[/b] to include them.\n<br />\n<br />\n<br />\n<br />[b]Console commands[/b]\n<br />\n<br />Open the console with [b]`[/b] (default bind). These commands do [b]not[/b] require cheats to be enabled.\n<br />\n<br />\n<br />\n<br />[code]\n<br />\n<br />cu_status                 show the current settings\n<br />\n<br />cu_capacity &lt;value&gt;       set total container capacity (interpreted by the current mode)\n<br />\n<br />cu_peritem &lt;value&gt;        set the per-item weight limit\n<br />\n<br />cu_carry &lt;multiplier&gt;     set the carry weight multiplier\n<br />\n<br />cu_mode &lt;mode&gt;            multiply | add | absolute\n<br />\n<br />cu_toggle                 turn the mod on/off\n<br />\n<br />cu_reset                  restore all defaults\n<br />\n<br />cu_reload                 re-read the config file from disk[/code]\n<br />\n<br />Example:\n<br />\n<br />\n<br />\n<br />[code]\n<br />\n<br />cu_mode absolute\n<br />\n<br />cu_capacity 1000\n<br />\n<br />cu_peritem 1000\n<br />\n<br />cu_carry 10[/code]\n<br />\n<br />[b]Hotkeys[/b]\n<br />\n<br />All keys are configurable and use Unity KeyCode names. Set a key to [b]None[/b] to disable it.\n<br />\n<br />\n<br />\n<br />[list]\n<br />[*][b]F5[/b] — toggle the mod on/off\n<br />[/*]\n<br />[*][b]F6 / F7[/b] — increase / decrease container capacity (and the per-item limit together)\n<br />[/*]\n<br />[*][b]F8 / F9[/b] — increase / decrease the carry weight multiplier by 0.5\n<br />[/*]\n<br />[*][b]F10[/b] — reload the config file\n<br />[/*]\n<br />[/list]\n<br />\n<br />[b]How it works[/b]\n<br />\n<br />[list]\n<br />[*]A Harmony postfix on [b]Container.Awake[/b] caches each container's vanilla limits and applies the configured values. Changing settings re-applies them to every tracked container.\n<br />[/*]\n<br />[*]Carry weight is applied by multiplying the game's [b]encumbrancecap[/b] run setting, so the game's own 0.5-second recompute picks it up.\n<br />[/*]\n<br />[*]The per-frame work (config watching, hotkeys) is driven by both the plugin component and a Harmony hook on [b]PlayerCamera.Update[/b], so it keeps working across scene changes.\n<br />[/*]\n<br />[*]A startup self-test writes its result to [b]BepInEx&#92;LogOutput.log[/b] — if you see the two \"Self-test\" lines, the patches are active.\n<br />[/*]\n<br />[/list]\n<br />\n<br />[b]Compatibility and notes[/b]\n<br />\n<br />[list]\n<br />[*]Runtime only — no save files, no game assets and no executable are modified.\n<br />[/*]\n<br />[*]Turning the mod off restores vanilla values; items already inside containers are not dropped, they simply may exceed the vanilla limit until you take them out.\n<br />[/*]\n<br />[*]Load order matters with other mods that change container capacity or carry weight; the last applied value wins.\n<br />[/*]\n<br />[*]Single-player. Not tested in multiplayer.\n<br />[/*]\n<br />[/list]\n<br />\n<br />[b]Troubleshooting[/b]\n<br />\n<br />[list]\n<br />[*]Values unchanged? Open [b]BepInEx&#92;LogOutput.log[/b] and look for [b]Harmony patches applied[/b], the two [b]Self-test[/b] lines, and [b]Live containers tracked[/b].\n<br />[/*]\n<br />[*]Make sure the DLL is in [b]BepInEx&#92;plugins&#92;CUCarryCapacity&#92;[/b] and that BepInEx itself loaded (its log starts with \"BepInEx 5.4.x\").\n<br />[/*]\n<br />[*]If another capacity mod is installed, disable it while testing.\n<br />[/*]\n<br />[/list]\n<br />\n<br />[b]Changelog[/b]\n<br />\n<br />[b]1.0.0[/b]\n<br />\n<br />[list]\n<br />[*]Initial release.\n<br />[/*]\n<br />[*]Global container capacity, per-item limit and carry weight multiplier.\n<br />[/*]\n<br />[*]Multiply / Add / Absolute modes.\n<br />[/*]\n<br />[*]Live config reload, console commands and hotkeys.\n<br />[/*]\n<br />[*]Runtime self-test in the BepInEx log.\n<br />[/*]\n<br />[/list]\n<br />\n<br />[b]Credits[/b]\n<br />\n<br />BepInEx and HarmonyX teams for the modding framework. Thanks to everyone who tested early builds.\n<br />\n<br />\n<br />\n<br />[b]Permissions[/b]\n<br />\n<br />[list]\n<br />[*]You may include this mod in mod collections/modpacks with credit and a link back to this page.\n<br />[/*]\n<br />[*]You may modify it for personal use.\n<br />[/*]\n<br />[*]Do not reupload the compiled mod or its source to other sites without permission.\n<br />[/*]\n<br />[*]No game assets are included; the original game is required.\n<br />[/*]\n<br />[/list]\n<br />\n<br />[line]\n<br />\n<br />[center][size=5][b]中文简介[/b][/size][/center]\n<br />\n<br />\n<br />\n<br />[b]全局背包容量与负重调节[/b]\n<br />\n<br />\n<br />\n<br />这个 mod 可以全局调整《Casualties: Unknown》里所有背包、腰包、箱子和容器类建筑的容量，以及单件物品重量上限和角色的负重上限。\n<br />\n<br />\n<br />\n<br />[b]特点[/b]\n<br />\n<br />[list]\n<br />[*]所有容器统一生效，不用一个个改物品\n<br />[/*]\n<br />[*]三种模式：倍率 / 在原值上增加 / 固定值\n<br />[/*]\n<br />[*]游戏内可调：改配置文件自动重载、控制台指令、快捷键\n<br />[/*]\n<br />[*]随时开关，关闭立即恢复原版；不写存档、不改游戏文件\n<br />[/*]\n<br />[*]已经装进容器的物品不会因为关闭 mod 而掉出来\n<br />[/*]\n<br />[/list]\n<br />\n<br />[b]安装[/b]\n<br />\n<br />[list]\n<br />[*]先装好 BepInEx 5.4.x\n<br />[/*]\n<br />[*]把 CUCarryCapacity.dll 放到 BepInEx&#92;plugins&#92;CUCarryCapacity&#92;\n<br />[/*]\n<br />[*]启动游戏，配置文件生成在 BepInEx&#92;config&#92;lead.casualtiesunknown.carrycapacity.cfg\n<br />[/*]\n<br />[/list]\n<br />\n<br />默认值：容器容量 ×3、单件上限 ×3、负重 ×2。控制台指令以 cu_ 开头（cu_status、cu_capacity、cu_peritem、cu_carry、cu_mode、cu_toggle、cu_reset、cu_reload），快捷键 F5~F10，均可在配置文件中修改。\n<br />\n<br />\n<br />\n<br />如果数值没有变化，请查看 BepInEx&#92;LogOutput.log 里的 Self-test 与 Live containers tracked 日志。\n<br />[size=4][b]Description[/b][/size]\n<br />[color=#D4D4D8]Describe the main purpose of your mod[/color]\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[color=#D4D4D8]Lay out any steps users must follow to install your mod[/color]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[color=#D4D4D8]Describe the core features of your mod[/color]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[color=#D4D4D8]Provide info on additional required steps, resources, or mods[/color]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[color=#D4D4D8]Say thanks to anyone who inspired or helped you.[/color]",
+        "Author": "VGjusuhx",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1042/1042-1795235314-2040439498.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1042"
+        },
+        "DownloadUrl": "nexus://scavprototype/1042/3510",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1042,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T04:46:07.000Z",
+        "ReleaseDate": "2026-11-21T04:29:10.000Z",
+        "SHA256": "142a13e0ae09659a977d92f309d43ec34120bf2692b06da114508c5d332385b2",
+        "dllSHA256s": {
+            "CUCarryCapacity.dll": "7ddd50bf1406496791ea2417b926f9ceee76bb90c7033e6196d8290a084fedf2"
+        },
+        "downloadsSinceLatestVersion": 3,
+        "Dependencies": [
+            "nexus-115"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "CUCarryCapacity.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "CUCarryCapacity.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 5,
+            "TotalDownloads": 5,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1042/1042-1795235314-2040439498.png"
+        ],
+        "nexusTags": [
+            "AI-Generated Content",
+            "Cheating",
+            "Quality of Life"
+        ],
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
+    },
+    {
+        "Id": "nexus-1040",
+        "Name": "Character Unlocker",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "sillyhistoria.casualtiesunknown.characterunlocker": "1.0.0"
+        },
+        "Summary": "Idk, it's just a silly little mod that unlocks both Milky and Dune. should work fine with casualties together too! just drop it into your \"BepInEx/plugins\" folder, launch the game once, and you're good to go! you can delete it afterward. wouldn't recommend this unless you're okay with being a naughty naughty little cheater!! shame on you xoxo",
+        "Description": "[font=Comic Sans MS]A simple mod for [b]Casualties Unknown[/b] that unlocks both [b]Milky and Dune[/b] without requiring you to meet their original unlock conditions.\n<br />You only need to run the game once with it installed to unlock both characters. After that, you can just remove the mod, as the unlocks should be saved?? I guess..\n<br />It should also be compatible with [b]Casualties Together[/b], allowing you to use the unlocked characters whenever you want to play multiplayer.[/font]\n<br />[line]\n<br />[size=5][b][font=Comic Sans MS]How do I install this?\n<br />[/font][/b][/size]\n<br />[list=1]\n<br />[*][font=Comic Sans MS]Make sure you have [b]BepInEx[/b] installed.[/font][/*]\n<br />[*][font=Comic Sans MS]Download the mod and extract the archive to wherever.[/font][/*]\n<br />[*][font=Comic Sans MS]Place the CUCharacterUnlocker.dll in the BepInEx/plugins folder[/font][font=Comic Sans MS].[/font][/*]\n<br />[*][font=Comic Sans MS]Launch [b]Casualties Unknown[/b] just this once.[/font][/*]\n<br />[*][font=Comic Sans MS]Both Milky and Dune should now be unlocked![/font][/*]\n<br />[*][font=Comic Sans MS]You can remove the mod afterward if you no longer need it.[/font][/*]\n<br />[/list][line]\n<br />[font=Comic Sans MS][b]A Little Disclaimer[/b]\n<br />This mod bypasses the intended character unlock requirements. If you'd rather unlock everything through normal gameplay, this probably isn't for you.\n<br />Otherwise, enjoy your newly unlocked cuties, you naughty little cheater! :3[/font]",
+        "Author": "sillyhistoria",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1040/1040-1795231297-107384260.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1040"
+        },
+        "DownloadUrl": "nexus://scavprototype/1040/3507",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1040,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T03:26:08.000Z",
+        "ReleaseDate": "2026-11-21T03:14:26.000Z",
+        "SHA256": "f534de6349abdc5253aebc1ba309c6f4563a8b399c5387806b1b512e2233f2dd",
+        "dllSHA256s": {
+            "CUCharacterUnlocker.dll": "7cf994534ec7813f0a4b4a0ade63e12b4b34d93e907d4666b4874e4f72cdd38f"
+        },
+        "downloadsSinceLatestVersion": 23,
+        "Dependencies": [
+            "nexus-115"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "CUCharacterUnlocker.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "CUCharacterUnlocker.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 24,
+            "TotalDownloads": 27,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1040/1040-1795231297-107384260.png"
+        ],
+        "nexusTags": [
+            "Gameplay",
+            "Quality of Life",
+            "Utilities for Players"
+        ],
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
+    },
+    {
+        "Id": "nexus-1039",
+        "Name": "Layer Reminder",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "zsoltzso.layerreminder": "1.0.0"
+        },
+        "Summary": "Forgot what layer modifier you are on? No you didn't. Allows you to see what layer modifier is active by opening the pause menu.",
+        "Description": "Incase you forgot to check what layer modifier you have (if any) you can now see by opening the pause menu.\n<br />Will also track how many layers you have been through in endless mode.\n<br />\n<br />[size=4]Installation  [/size]\n<br />[list]\n<br />[*]Download the file. (LayerReminder.zip)[/*]\n<br />[*]Extract into the BepInEx plugins folder.[/*]\n<br />[/list]The console will show if the mod is installed.\n<br />\n<br />[size=4]Compatibility [/size]\n<br />Probably works[size=1][i]:[size=1]tm:[/size][/i][/size]. If not, complain and I might fix it.\n<br />No official demo support, but might still work.\n<br />Multiplayer compatible (host and/or client side).",
+        "Author": "zsoltzsozso828",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1039/1039-1795219991-539622960.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1039"
+        },
+        "DownloadUrl": "nexus://scavprototype/1039/3505",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1039,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T00:27:01.000Z",
+        "ReleaseDate": "2026-11-21T00:24:09.000Z",
+        "SHA256": "3187e15f7548362e6b111ba4f1a0efd7bb99ffb9a08c1167c32fe98fb5e487c3",
+        "dllSHA256s": {
+            "LayerReminder.dll": "a1b0d3c0372a1cf2415ca5c5be48c3c5d7d0e048dc272672faf44c341794dee2"
+        },
+        "downloadsSinceLatestVersion": 43,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [
+            "LayerReminder.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "LayerReminder.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 13,
+            "TotalDownloads": 13,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1039/1039-1795219991-539622960.png"
+        ],
+        "nexusTags": [
+            "Quality of Life"
+        ],
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
+    },
+    {
         "Id": "nexus-1038",
         "Name": "Pride Moodles",
         "Version": "1",
@@ -25,7 +291,7 @@
         "dllSHA256s": {
             "GayMoodles.dll": "e960c559d60878bd7a49b1077eb7c4805971515886e23b65f18af1284649a411"
         },
-        "downloadsSinceLatestVersion": 3,
+        "downloadsSinceLatestVersion": 31,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -51,7 +317,7 @@
             "Textures",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-21T00:27:13.046Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-1037",
@@ -81,7 +347,7 @@
             "CUCoreLib.dll": "c0f064260b2671d02bf802c460aa346c6b858ec9269f2ff93439ebabaa940aa3",
             "DeathScreenMod.dll": "66d0e2061ca8fcf080f333fa6f0ce500cdb118215decd67cb8bcd0a5146f4871"
         },
-        "downloadsSinceLatestVersion": 6,
+        "downloadsSinceLatestVersion": 9,
         "Dependencies": [
             "nexus-115"
         ],
@@ -111,15 +377,16 @@
             "Replacer",
             "Russian"
         ],
-        "LastQuickCheck": "2026-11-21T00:27:13.046Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-1035",
         "Name": "No Threat Simulacrum",
-        "Version": "1.0",
-        "bepinexVersion": "1.0.0",
+        "Version": "1.0.1",
+        "bepinexVersion": "1.0.1",
         "bepinexPlugins": {
-            "com.mayzmae.nothreatsimulacrum": "1.0.0"
+            "com.mayzmae.nothreatsimulacrum": "1.0.1"
         },
         "Summary": "Removes the Threat Simulacrum theme from the sandbox",
         "Description": "[size=4][b]What is this?[/b][/size]\n<br />[size=3][color=#D4D4D8]This is a mod that disables Threat Simulacrum from playing in the sandbox.[/color][/size]\n<br />[size=3][color=#D4D4D8]This should apply to all enemies (crawlers, elders, striders, manifestations, etc) with one exception (ENDING SPOILERS BELOW)[/color][/size]\n<br />[spoiler][size=3][color=#D4D4D8]Guards do not set a combat theme by default, so they'll just play the last combat theme. This is vanilla behavior[/color][/size][/spoiler]\n<br />\n<br />[size=4][b]Why does this exist?[/b][/size]\n<br />[size=3][color=#D4D4D8]idk lol[/color][/size]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[size=3][color=#D4D4D8]To Orsoniks for making Cas:U and making a theme that I wanted to mod out of the game (sorry)[/color][/size]",
@@ -128,33 +395,38 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1035/1035-1795206549-2076138112.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1035"
         },
-        "DownloadUrl": "nexus://scavprototype/1035/3499",
+        "DownloadUrl": "nexus://scavprototype/1035/3511",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1035,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-20T20:30:05.000Z",
-        "ReleaseDate": "2026-11-20T20:29:39.000Z",
-        "SHA256": "e8ba8f95b7222b1aa749975ef98fa697b7652c306c7da8fa5cc22659893838bc",
+        "LastUpdated": "2026-11-21T04:34:55.000Z",
+        "ReleaseDate": "2026-11-21T04:34:55.000Z",
+        "SHA256": "d5109f7e0af9b1285e07f18604d272d99b0f194ec9489d65e1837de703620461",
         "dllSHA256s": {
-            "NoThreatSimulacrum.dll": "81ff3e5c19f0744dc342dd7eef7c0e7fa04379a735c07835d958786e979541d5"
+            "NoThreatSimulacrum.dll": "6b2bc72db0013399e9d4ed581aa2d885545187434d8d85cd05157d94501a42ad"
         },
-        "downloadsSinceLatestVersion": 5,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [
             "nexus-115"
         ],
-        "Changelogs": [],
+        "Changelogs": [
+            {
+                "Version": "1.0.1",
+                "Changelog": "- Fixed cryo drones playing Threat Simulacrum on close, and made sure all the patches are disabled in normal runs (just in case)"
+            }
+        ],
         "dllNames": [
             "NoThreatSimulacrum.dll"
         ],
-        "dllVersion": "1.0.0",
+        "dllVersion": "1.0.1",
         "dllVersions": {
-            "NoThreatSimulacrum.dll": "1.0.0"
+            "NoThreatSimulacrum.dll": "1.0.1"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 6,
-            "TotalDownloads": 6,
+            "UniqueDownloads": 7,
+            "TotalDownloads": 7,
             "TotalViews": null
         },
         "Images": [
@@ -162,8 +434,7 @@
         ],
         "nexusTags": [
             "Music"
-        ],
-        "LastQuickCheck": "2026-11-21T00:27:13.046Z"
+        ]
     },
     {
         "Id": "nexus-1033",
@@ -221,15 +492,16 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-1032",
         "Name": "DDExcNet-CUmodM",
-        "Version": "1.3",
-        "bepinexVersion": "1.3.0",
+        "Version": "1.5",
+        "bepinexVersion": "1.5.0",
         "bepinexPlugins": {
-            "com.dden.mpfix": "1.3.0",
-            "com.dden.perf": "1.3.0",
-            "com.dden.saveeditor": "1.3.0",
-            "com.dden.cumodm": "1.3.0"
+            "com.dden.mpfix": "1.5.0",
+            "com.dden.perf": "1.5.0",
+            "com.dden.saveeditor": "1.5.0",
+            "com.dden.cumodm": "1.5.0"
         },
         "Summary": "一个统一的管理器，加上一套专治联机不同步的修复 ------------------------A unified manager, along with a set of fixes to address online desynchronization.",
         "Description": "对联机模组的部分问题，如：主客机有无芯片不同步，物品穿墙掉落等等做出了修复， 具体修复请查看GitHub\n<br />我此后的模组也将支持这个管理器\n<br />\n<br />Fixed several issues with the multiplayer mod, such as desynchronization between the host and client regarding whether chips are present, items clipping through walls and falling, and more , Please check GitHub for the specific fixes.\n<br />My future mods will also support this manager.\n<br />\n<br />安装：\n<br />1.游戏先装好 BepInEx 5（游戏目录下会出现 BepInEx/ 文件夹）\n<br />2.把下载的压缩包文件解压，把DDEN文件夹放进 BepInEx/plugins/—— 包内的dll文件必须放在同一个文件夹里。 \n<br />3.想用联机相关的修复，还需要装联机框架 Together 与 CUCoreLib ，没装也能进游戏，只是联机那部分修复不会生效，管理器里会标成「功能受限」\n<br />\n<br />Installation:\n<br />1. Install BepInEx 5 for the game first (a BepInEx/ folder will appear in the game directory). \n<br />2. Extract the downloaded archive and place the DDEN folder into BepInEx/plugins/ — the dll files in the package must be placed in the same folder. \n<br />3. To use the multiplayer-related fixes, you also need to install the multiplayer frameworks Together and CUCoreLib. You can still enter the game without them, but the multiplayer fixes won't take effect, and they will be marked as \"Limited Functionality\" in the manager. ",
@@ -238,27 +510,31 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1032/1032-1795192420-554301859.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1032"
         },
-        "DownloadUrl": "nexus://scavprototype/1032/3485",
+        "DownloadUrl": "nexus://scavprototype/1032/3512",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1032,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-20T15:19:35.000Z",
-        "ReleaseDate": "2026-11-20T15:19:35.000Z",
-        "SHA256": "f89ca601548088541b85b2179be18c25d520713269f8089808a6fcd6d68fb280",
+        "LastUpdated": "2026-11-21T05:13:03.000Z",
+        "ReleaseDate": "2026-11-21T05:13:03.000Z",
+        "SHA256": "08e5d5bc62ff9c7c1693855ef88edd8175b53430be9821e57ee15bda90030351",
         "dllSHA256s": {
-            "DDEN.MPfix.dll": "935848ad9bfb83c0ef9552ac4a4181e290acd34167e187c6360f5ab0e4958d67",
-            "DDEN.NetPerfTracker.dll": "4b7cf63d33a194cf7b3f26c7dcb1736bb41f00aed120771f80f6afffacb48259",
-            "DDEN.SaveEditor.dll": "30f2b5ad9464040ef0e114249290275d74ab3df954326972e53f37d555cff527",
-            "DDEN.Shared.dll": "a0583f62023646e4fccea4c61cc3945072e31d9ba219543ed259512ecb4683f4",
-            "DDExcNet-CUmodM.dll": "0fa83977cf6cec93dbf37f7b7da147e3fcbe1382ae726bcd4b381f30688962b9"
+            "DDEN.MPfix.dll": "24886ba0b3e69073466495b29cb8f089af72e05835ecc0a1960d526eca1f8c80",
+            "DDEN.NetPerfTracker.dll": "93592920bc4469b61dd54ffc7e44fac082e8ff26dee4a0566cfbe40e9ed0944f",
+            "DDEN.SaveEditor.dll": "c5aff99ff20a9877b24f0bbd914cc31eccc2662f213d11fc56e2d91091ae3053",
+            "DDEN.Shared.dll": "42fdaf99ee501d675feccd24c3debc3a7e2e9a6c8fd5eb0c133b390ddc547d93",
+            "DDExcNet-CUmodM.dll": "c6df94b2fba1b7fe5d875ae24771578897be41b084c82d5d59ab0ab90d7d52b5"
         },
-        "downloadsSinceLatestVersion": 11,
+        "downloadsSinceLatestVersion": 4,
         "Dependencies": [],
         "Changelogs": [
             {
                 "Version": "1",
                 "Changelog": "- CN：\n- 新增存档编辑器\n- 性能修复\n- 部分BUG修复\n- EN：\n- Added a save editor\n- Performance fixes\n- Fixed some bugs"
+            },
+            {
+                "Version": "1.5",
+                "Changelog": "- CN：\n- 部分BUG修复\n- 重做了性能监视器和破坏方块的修复逻辑\n- EN:\n- Fixed some bugs\n- Reworked the performance monitor and the block-breaking fix logic."
             }
         ],
         "dllNames": [
@@ -268,17 +544,17 @@
             "DDEN.Shared.dll",
             "DDExcNet-CUmodM.dll"
         ],
-        "dllVersion": "1.3.0",
+        "dllVersion": "1.5.0",
         "dllVersions": {
-            "DDEN.MPfix.dll": "1.3.0",
-            "DDEN.NetPerfTracker.dll": "1.3.0",
-            "DDEN.SaveEditor.dll": "1.3.0",
-            "DDExcNet-CUmodM.dll": "1.3.0"
+            "DDEN.MPfix.dll": "1.5.0",
+            "DDEN.NetPerfTracker.dll": "1.5.0",
+            "DDEN.SaveEditor.dll": "1.5.0",
+            "DDExcNet-CUmodM.dll": "1.5.0"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 10,
-            "TotalDownloads": 12,
+            "UniqueDownloads": 15,
+            "TotalDownloads": 17,
             "TotalViews": null
         },
         "Images": [
@@ -289,8 +565,7 @@
             "Bug Fixes",
             "Performance Optimization",
             "Quality of Life"
-        ],
-        "LastQuickCheck": "2026-11-21T00:27:13.046Z"
+        ]
     },
     {
         "Id": "nexus-1031",
@@ -1086,13 +1361,13 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-21T00:27:13.046Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-1009",
         "Name": "Seamless World",
-        "Version": "1.0.1",
-        "bepinexVersion": "1.0.1",
+        "Version": "1.0.2",
+        "bepinexVersion": "1.0.2",
         "bepinexPlugins": {
-            "com.cixin.seamlessworld": "1.0.1"
+            "com.cixin.seamlessworld": "1.0.2"
         },
         "Summary": "Connects all layers directly.将所有地层直接相连。",
         "Description": "[size=4][b]Description[/b][/size]\n<br />《Casualties: Unknown》的世界是一层一层生成的，每一层都是一个独立的世界。每往下走一层，世界就重新生成一次，且无法返回。\n<br />Casualties: Unknown generates its world one layer at a time, and each layer is its own world. Every descent regenerates the world, and there is no going back.\n<br />\n<br />[b]无缝衔接[/b]把每一层之间的边界去掉，让它们直接相连，将第 1~10 层垂直堆成一个 1024 × 10240 的连续世界，你可以从第一层一直往下，直至取回货物。\n<br />[b]Seamless World[/b] removes the boundaries between layers, connects them directly, and stacks layers 1–10 vertically into one continuous 1024 × 10240 world. You can keep going down from the first layer until you retrieve the cargo.\n<br />\n<br />[b]关于存档 / About saves[/b]\n<br />[list]\n<br />[*]世界数据通过游戏自带的 SaveSystem 写进 save.sv。\n<br />World data is written into save.sv through the game's own SaveSystem.[/*]\n<br />[*]卸载模组后用原版读无缝衔接的存档是安全的：原版会按 biome 重建单层世界。\n<br />After uninstalling the mod, loading a Seamless World save in vanilla is safe: vanilla rebuilds a single-layer world from the biome value.[/*]\n<br />[*]不会破坏原版存档，但那一局按原版单层运行；堆叠世界只对新开局生效。\n<br />Vanilla saves are not damaged, but that session runs as a single-layer vanilla world; the stacked world only applies to new runs.[/*]\n<br />[*]如果存档被意外覆盖，可在游戏存档文件夹把备份save.sv.seamless-backup重命名为save.sv\n<br />If the save file is accidentally overwritten, you can rename the backup save.sv.seamless-backup to save.sv in the game save folder. [/*]\n<br />[/list][size=4][b]Installation instructions[/b][/size]\n<br />[list=1]\n<br />[*]安装 BepInEx 5。\n<br />Install BepInEx 5.[/*]\n<br />[*]把 CUCoreLib.dll 放进 BepInEx/plugins/。\n<br />Put CUCoreLib.dll into BepInEx/plugins/.[/*]\n<br />[*]把 SeamlessWorld.dll 放进 BepInEx/plugins/。\n<br />Put SeamlessWorld.dll into BepInEx/plugins/.[/*]\n<br />[/list][size=4][b]Main features[/b][/size]\n<br />[b]连续的世界 / One continuous world[/b]\n<br />[list]\n<br />[*]第 1~10 层共用一套坐标，1024 × 10240（16 × 160 个 chunk）。\n<br />Layers 1–10 share one coordinate space: 1024 × 10240 (16 × 160 chunks).[/*]\n<br />[*]跨层时雾与调色交叉淡入。\n<br />Fog and colour grading crossfade when you cross a layer.[/*]\n<br />[/list][b]优化 / Performance[/b]\n<br />[list]\n<br />[*]分页：只有玩家附近的 chunk 保持激活。\n<br />Chunk paging: only chunks near the player stay active.[/*]\n<br />[*]水晶灯光裁剪：只加载屏幕附近的灯光。\n<br />Crystal light culling: only lights that can reach the screen are enabled.[/*]\n<br />[*]实体激活与状态恢复分批执行，同时受每帧条数和每帧毫秒预算限制，加载时显示进度。\n<br />Entity activation and state restore are batched, limited by both a per-frame count and a per-frame millisecond budget, with a progress readout while loading.[/*]\n<br />[*]地形并行生成；生成期间实体离线；生成时临时解除帧率上限。\n<br />Terrain generation is parallel; entities are deactivated during generation; the frame rate cap is lifted while generating.[/*]\n<br />[/list][b]存档与读档 / Save and load[/b]\n<br />[list]\n<br />[*]在暂停菜单添加了存档按钮，可随时随地存档。\n<br />A save button in the pause menu lets you save at any time.[/*]\n<br />[*]读档后自动存回，死亡和中途退出不会丢进度。\n<br />Automatic re-save after loading — dying or quitting does not lose progress.[/*]\n<br />[/list][b]兼容 / Compatibility[/b]\n<br />[list]\n<br />[*]通过 CUCoreLib 注册、或挂在原版世界边界生成后置钩子上的第三方结构，会被桥接进堆叠世界，第三方内容照样出现。\n<br />Third-party structures registered through CUCoreLib, or hooked onto vanilla world-border generation, are bridged into the stacked world.[/*]\n<br />[*]不支持联机，不建议和其他优化模组一起使用。\n<br />No multiplayer. Not recommended alongside other performance mods.[/*]\n<br />[*]在 Together、GlassM、CPUOptimization2 环境下会自动关闭自己，按原版单层运行。\n<br />It disables itself and falls back to a vanilla single-layer world under Together, GlassM and CPUOptimization2.[/*]\n<br />[/list][b]已知限制 / Known limitations[/b]\n<br />[list]\n<br />[*]生成十层比原版慢，也更吃内存，生成世界的时间在 50 秒左右。\n<br />Generating ten layers takes about 50 seconds and uses more memory than vanilla.[/*]\n<br />[*]存档大小比原版大得多，大小为 15 MB 左右，存档和读档所需时间在 8 秒左右。\n<br />Saves are much larger than vanilla saves, around 15 MB; saving and loading take about 8 seconds.[/*]\n<br />[/list][size=4][b]Requirements[/b][/size]\n<br />[list]\n<br />[*]游戏本体：Casualties: Unknown（Steam）\n<br />The game itself: Casualties: Unknown (Steam).[/*]\n<br />[*]BepInEx 5，实测 5.4.23.5\n<br />BepInEx 5, tested on 5.4.23.5.[/*]\n<br />[*]CUCoreLib 1.1 或更高，缺失时模组会自动关闭\n<br />CUCoreLib 1.1 or newer; the mod switches itself off without it.[/*]\n<br />[*]建议开新局，堆叠世界只对新开局生效\n<br />A new save is recommended; the stacked world only applies to new runs.[/*]\n<br />[/list][size=4][b]Shout outs[/b][/size]\n<br />[list]\n<br />[*]Orsoniks——没有游戏就没有这个模组。\n<br />Orsoniks — no game, no mod.[/*]\n<br />[*]BepInEx 与 HarmonyX——插件加载与运行时补丁。\n<br />BepInEx and HarmonyX — plugin loading and runtime patching.[/*]\n<br />[*]CUCoreLib——本模组建立在它的注册表 API 之上。\n<br />CUCoreLib — the registry API this mod is built on.[/*]\n<br />[*]GlassM——玩家落点的扫描方式参考了它的做法：改扫 worldBlocks 数组，不依赖碰撞体。\n<br />GlassM — the player landing scan follows its approach: read the worldBlocks array instead of relying on colliders.[/*]\n<br />[/list]",
@@ -1101,33 +1376,38 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1009/1009-1795061169-721411164.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1009"
         },
-        "DownloadUrl": "nexus://scavprototype/1009/3434",
+        "DownloadUrl": "nexus://scavprototype/1009/3513",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1009,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-19T14:46:50.000Z",
-        "ReleaseDate": "2026-11-19T14:46:50.000Z",
-        "SHA256": "5c7f4236043bf3e03969d3fdc578d3d06cdaf82a60712c68c4b6cce4d8e176df",
+        "LastUpdated": "2026-11-21T05:29:32.000Z",
+        "ReleaseDate": "2026-11-21T05:29:31.000Z",
+        "SHA256": "481181e92a374a8bc7e530b0594ceb242826fce1733af2fe3076cefab313f518",
         "dllSHA256s": {
-            "SeamlessWorld.dll": "bd601c7fc5c2d910278f40fa5a9f818a591e0040c30c3b154a81418bc57b0151"
+            "SeamlessWorld.dll": "98823b23737a1f6b548efcce67c0cbac672adcd989841d27abe3fb0259015b30"
         },
-        "downloadsSinceLatestVersion": 65,
+        "downloadsSinceLatestVersion": 1,
         "Dependencies": [
             "nexus-341"
         ],
-        "Changelogs": [],
+        "Changelogs": [
+            {
+                "Version": "1.0.2",
+                "Changelog": "- Fixed high pressure starting in the upper half of layer 9 instead of below its midpoint.\n- Fixed layer 7 fungal rain being sampled from the wrong part of the rain map.\n- Fixed creatures disappearing when they moved out of the chunk they spawned in."
+            }
+        ],
         "dllNames": [
             "SeamlessWorld.dll"
         ],
-        "dllVersion": "1.0.1",
+        "dllVersion": "1.0.2",
         "dllVersions": {
-            "SeamlessWorld.dll": "1.0.1"
+            "SeamlessWorld.dll": "1.0.2"
         },
         "Statistics": {
-            "Endorsements": 0,
-            "UniqueDownloads": 46,
-            "TotalDownloads": 51,
+            "Endorsements": 1,
+            "UniqueDownloads": 101,
+            "TotalDownloads": 118,
             "TotalViews": null
         },
         "Images": [
@@ -1141,9 +1421,10 @@
         ]
     },
     {
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-1007",
         "Name": "Casualties Unknown - Smokeables",
-        "Version": "1.5",
+        "Version": "1",
         "bepinexVersion": "1.5.0",
         "bepinexPlugins": {
             "com.cooldood125.greenleaf": "1.5.0"
@@ -1160,13 +1441,13 @@
         "NexusModId": 1007,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-18T19:09:12.000Z",
+        "LastUpdated": "2026-11-21T06:01:50.000Z",
         "ReleaseDate": "2026-11-18T19:07:18.000Z",
         "SHA256": "d3dbd85375154e542b5222fd9fbe316e7ff4bbd699fd28f27dc4b0eb5b4183a0",
         "dllSHA256s": {
             "Greenleaf.dll": "54f1635f0e83c838802014f4825f57928c1061c2b077b544f46869b680e7580e"
         },
-        "downloadsSinceLatestVersion": 104,
+        "downloadsSinceLatestVersion": 114,
         "Dependencies": [
             "nexus-341"
         ],
@@ -1179,9 +1460,9 @@
             "Greenleaf.dll": "1.5.0"
         },
         "Statistics": {
-            "Endorsements": 0,
-            "UniqueDownloads": 10,
-            "TotalDownloads": 10,
+            "Endorsements": 3,
+            "UniqueDownloads": 122,
+            "TotalDownloads": 129,
             "TotalViews": null
         },
         "Images": [
@@ -1192,8 +1473,7 @@
             "English",
             "Gameplay",
             "Humour, Joke or Just for Fun"
-        ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        ]
     },
     {
         "Id": "nexus-1005",
@@ -1221,7 +1501,7 @@
         "dllSHA256s": {
             "Highlight.dll": "d0a259ec86b2f1bd3a2288f05d91a3eaa3f413ac0b6559310be2ac09cde5b7cc"
         },
-        "downloadsSinceLatestVersion": 139,
+        "downloadsSinceLatestVersion": 154,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -1247,7 +1527,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-1004",
@@ -4051,10 +4331,10 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
-        "LastQuickCheck": "2026-11-21T00:27:13.046Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-934",
-        "Name": "(Character mod) Olivide(cultist)V2.6 -Adapted to the multiplayer mod v5.5.4-",
-        "Version": "2.6",
+        "Name": "(Character mod) Olivide(cultist)V2.7 -Adapted to the multiplayer mod v5.5.4-",
+        "Version": "2.7",
         "bepinexVersion": "1.3.0",
         "bepinexPlugins": {
             "cu.customcharacter": "0.2.0",
@@ -4067,19 +4347,19 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/934/934-1794752755-585284326.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/934"
         },
-        "DownloadUrl": "nexus://scavprototype/934/3477",
+        "DownloadUrl": "nexus://scavprototype/934/3518",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 934,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-20T10:03:31.000Z",
-        "ReleaseDate": "2026-11-20T10:03:30.000Z",
-        "SHA256": "e7cffd3d010150ed8f9499cee850490312ae46cfdaca26ca0c06c6fcbad07d59",
+        "LastUpdated": "2026-11-21T07:01:35.000Z",
+        "ReleaseDate": "2026-11-21T07:01:35.000Z",
+        "SHA256": "f3072d2e1f05e5537e77f6f5c3a423b5f0e486ad3c33a7bc9e0a39a60290c89d",
         "dllSHA256s": {
-            "CU.CustomCharacter.dll": "dc02f18546af620de745a4bd761737e1af2fbcd05f96105bcee499c1f0689118",
-            "OlivideNet.dll": "ccdb753bf55eaa517cd3a6fe303b99bdac7d4ee9d5de3e32e901d18401b9964e"
+            "CU.CustomCharacter.dll": "273d98a44d7da603d0e0d7688efafa028892e1fdfba29c178c6399a6d53c7ca0",
+            "OlivideNet.dll": "70322120cfc532d16e4ec5acf927819b9576fdb7cd2dfa9b325ea448c5e2d239"
         },
-        "downloadsSinceLatestVersion": 30,
+        "downloadsSinceLatestVersion": 5,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4145,6 +4425,10 @@
             {
                 "Version": "2.6",
                 "Changelog": "- Adapted to multiplayer V5.5.4."
+            },
+            {
+                "Version": "2.7",
+                "Changelog": "- Fixed the save bug and adapted to QoL."
             }
         ],
         "dllNames": [
@@ -4158,8 +4442,8 @@
         },
         "Statistics": {
             "Endorsements": 5,
-            "UniqueDownloads": 329,
-            "TotalDownloads": 569,
+            "UniqueDownloads": 332,
+            "TotalDownloads": 575,
             "TotalViews": null
         },
         "Images": [
@@ -4383,7 +4667,7 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T18:07:09.432Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "LastNotifiedChangelogVersion": "2",
         "Id": "nexus-927",
         "Name": "LEWD CU Extender",
@@ -4410,12 +4694,12 @@
         "dllSHA256s": {
             "LewdExtenderCU.dll": "65aa68a4b37a445c9957ef3a943dfce5f32ac830c76f4c4a06046f6c23f614fe"
         },
-        "downloadsSinceLatestVersion": 392,
+        "downloadsSinceLatestVersion": 539,
         "Dependencies": [],
         "Changelogs": [
             {
                 "Version": "1",
-                "Changelog": "- fixed the weird waking pattern of scavs when they are joining a scene.\n- recoded the horny level so it won't arouse too quickly."
+                "Changelog": "- fixed the weird waking pattern of scavs when they are joining a scene.\n- recoded the horny level so it won't arouse too quickly.\n- This is the source code of extender. Player with interests could download this to made extension."
             },
             {
                 "Version": "2",
@@ -8774,7 +9058,7 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "LastNotifiedChangelogVersion": "2",
         "Id": "nexus-837",
         "Name": "Oops All Shade Crawlers (Trap Replacer)",
@@ -8801,7 +9085,7 @@
         "dllSHA256s": {
             "OASC.dll": "8af4816db9aca693d922ce867492a77d91a9366f65569635264f7c744d995aea"
         },
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 1,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -9337,7 +9621,7 @@
     },
     {
         "LastNotifiedChangelogVersion": "2.0.0",
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-817",
         "Name": "Multi Sprite Swapper",
         "Version": "2.0.4",
@@ -9363,7 +9647,7 @@
         "dllSHA256s": {
             "MultiSpriteSwap2.0.4.dll": "b9b4681a116b7cfd0c3867c865a4986fca6e3f847d11204589965c4754dec9b6"
         },
-        "downloadsSinceLatestVersion": 472,
+        "downloadsSinceLatestVersion": 625,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -10198,7 +10482,7 @@
         "LastQuickCheck": "2026-11-21T00:27:13.046Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "LastNotifiedChangelogVersion": "1.5.1",
         "Id": "nexus-798",
         "Name": "Wear and Tear - Clothing Plus",
@@ -10225,7 +10509,7 @@
         "dllSHA256s": {
             "CUClothing.dll": "4bd968e0c82557cdb1d0a0aeb71189d38535f5ca17fe92d0c174f69c13a634f8"
         },
-        "downloadsSinceLatestVersion": 38,
+        "downloadsSinceLatestVersion": 148,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -12191,7 +12475,7 @@
     },
     {
         "LastNotifiedChangelogVersion": "0.2.3",
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-729",
         "Name": "Casualties Afterdark",
         "Version": "0.3.1",
@@ -12217,7 +12501,7 @@
         "dllSHA256s": {
             "ScavPrototypeSexMod.dll": "fafb0721f49a3995842160361bae9adf014e0733d98689767d1f3983bb887359"
         },
-        "downloadsSinceLatestVersion": 169,
+        "downloadsSinceLatestVersion": 170,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -18165,7 +18449,7 @@
         "dllSHA256s": {
             "AutoTranslate.dll": "eee85212d727987dc494062fb52268f12ffc763d277ac0e997c9f1342820426e"
         },
-        "downloadsSinceLatestVersion": 58,
+        "downloadsSinceLatestVersion": 70,
         "Dependencies": [
             "nexus-67",
             "nexus-115",
@@ -18215,7 +18499,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-604",
@@ -18335,7 +18619,7 @@
         "LastQuickCheck": "2026-11-20T09:22:31.629Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-602",
         "Name": "Duke's Everything",
         "Version": "1.2.1",
@@ -18361,7 +18645,7 @@
         "dllSHA256s": {
             "DukesEverythingMod.dll": "92639853a2aa5e91edf1c285e5255304cca705acf7cf90903d9c9fe0a0a91ec4"
         },
-        "downloadsSinceLatestVersion": 113,
+        "downloadsSinceLatestVersion": 136,
         "Dependencies": [
             "nexus-341"
         ],
@@ -23434,12 +23718,13 @@
     },
     {
         "LastNotifiedChangelogVersion": "v1.0.5",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-501",
         "Name": "EMI",
-        "Version": "v1.1",
-        "bepinexVersion": "1.1",
+        "Version": "v1.1.1",
+        "bepinexVersion": "1.1.1",
         "bepinexPlugins": {
-            "exmeow.casualtiesunknown.emi": "1.1"
+            "exmeow.casualtiesunknown.emi": "1.1.1"
         },
         "Summary": "A featureful and accessible crafting assistant and recipe viewer for Casualties: Unknown.（支持中文）",
         "Description": "[size=5][b]EMI for Casualties: Unknown[/b][/size]\n<br />[quote]A featureful and accessible crafting assistant and recipe viewer for Casualties: Unknown.[/quote]This mod adds a crafting-tree assistant similar to the Minecraft [url=https://modrinth.com/mod/emi]EMI[/url] mod to the base game.\n<br />[b][url=https://github.com/Exmeow/EMI_for_CU]GitHub repo[/url][/b] here.\n<br />\n<br />[img]https://pic.imgdd.cc/i/033xe7YZjA3vvjhnxPUrEe.png[/img]\n<br />[size=4][b]\n<br />What Does This Mod Bring to Crafting?[/b][/size]\n<br />EMI turns complex crafting processes into clear, actionable routes.\n<br />[list]\n<br />[*][b]Complete Crafting Tree planning[/b]: Break down recipes step by step, from the final product to the base materials you actually need to collect.[/*]\n<br />[*][b]Smart Remaining Materials list[/b]: Automatically accounts for items in your inventory, containers, and the surrounding area while skipping intermediate products you already have.[/*]\n<br />[*][b]Accurate handling of batch outputs and leftovers[/b]: Different branches can share surplus items produced by the same batch, preventing duplicate calculations.[/*]\n<br />[*][b]Proper tool durability handling[/b]: Needing to cut five times does not mean you need to craft five knives.[/*]\n<br />[*][b]Automatic step highlighting[/b]: Recipes you can currently perform are highlighted and moved to the top, guiding you through the entire crafting route.[/*]\n<br />[*][b]Intelligence risk warnings[/b]: Checks the highest INT requirement among the remaining steps and warns you when your INT may be insufficient.[/*]\n<br />[*][b]Flexible route selection[/b]: Choose between different recipes for the same product, or assign specific items and liquids to abstract quality requirements.[/*]\n<br />[*][b]Persistent defaults[/b]: Favorite commonly used recipes and quality choices to apply them automatically in future plans.[/*]\n<br />[*][b]Complete resource catalog[/b]: Browse and search all items, liquids, and crafting qualities in the game.[/*]\n<br />[*][b]Quick recipe lookup[/b]: Left-click to view how a resource is produced, or right-click and middle-click to see where it is used, with the original in-game tooltips.[/*]\n<br />[*][b]Collapsible Crafting Tree[/b]: Hide downstream steps you do not currently need to see. Nodes using the same recipe are collapsed together without affecting planning calculations.[/*]\n<br />[*][b]Analysis and display only[/b]: EMI does not modify the base game's crafting rules, material consumption, or recipe execution logic.[/*]\n<br />[/list]From “I want to make this item” to “What should I collect, and what should I craft first?”, EMI organizes everything in between.\n<br />\n<br />[size=4][b]Installation[/b][/size]\n<br />Make sure you have installed BepInEx first.\n<br />Place the EMI folder in BepInEx/plugins/. It should contain:\n<br />[list]\n<br />[*]EMI.dll[/*]\n<br />[*]EMI.pdb[/*]\n<br />[/list][size=4][b]For instructions, see: [url=https://github.com/Exmeow/EMI_for_CU/blob/main/guide-en.md]User Guide[/url][/b][/size]\n<br />\n<br />[size=5][b]中文[/b][/size]\n<br />[quote]一款功能丰富、易于使用的《未知伤亡》合成辅助与配方查看工具。[/quote]该模组为原版游戏添加了与 Minecraft [url=https://modrinth.com/mod/emi]EMI[/url] 模组相似的合成树辅助工具。\n<br />[size=3][b][url=https://github.com/Exmeow/EMI_for_CU]GitHub 仓库[/url][/b][/size][size=4][b]\n<br />这个模组能为合成带来什么？[/b][/size]\n<br />EMI 能把复杂的制作过程变成一条清晰、可执行的路线。\n<br />[list]\n<br />[*][b]中文与英文界面支持[/b]：同时兼容游戏的社区中文语言包。[/*]\n<br />[*][b]完整的合成树规划[/b]：从最终产物逐层拆解配方，直至得到实际需要收集的基础材料。[/*]\n<br />[*][b]智能的剩余材料清单[/b]：自动计算背包、容器及附近已有物品，并跳过已经完成的中间产物。[/*]\n<br />[*][b]精确处理批量产出与副产物余量[/b]：不同分支可以共享同一批配方产生的剩余物品，避免重复计算。[/*]\n<br />[*][b]正确处理工具耐久[/b]：需要切割五次，并不意味着你需要制作五把刀。[/*]\n<br />[*][b]自动标记当前步骤[/b]：当前能够执行的配方会高亮并置顶，让你按顺序完成整条制作路线。[/*]\n<br />[*][b]智力风险提示[/b]：汇总剩余步骤的最高智力要求，并自动提示智力不足的风险。[/*]\n<br />[*][b]灵活的路线选择[/b]：为同一产物选择不同配方，或为抽象性质需求指定具体物品和液体。[/*]\n<br />[*][b]可持久化的默认方案[/b]：收藏常用配方与性质选择，之后规划时会自动应用。[/*]\n<br />[*][b]完整的资源图鉴[/b]：浏览和搜索游戏中的所有物品、液体及合成性质。[/*]\n<br />[*][b]快速查询配方关系[/b]：左键查看产出方式，右键或中键查看物品用途，并沿用原版悬浮提示。[/*]\n<br />[*][b]可折叠的合成树[/b]：隐藏暂时不需要关注的下游步骤，同配方节点会同步折叠，而规划结果保持不变。[/*]\n<br />[*][b]只负责分析和展示[/b]：EMI 不会修改游戏原有的合成规则、材料消耗或配方执行逻辑。[/*]\n<br />[/list]从“我想制作这个物品”，到“我现在应该收集什么、先做哪一步”，EMI 会把中间的一切整理清楚。\n<br />\n<br />[size=4][b]安装方法[/b][/size]\n<br />请确保 BepInEx 已经安装。\n<br />把 EMI 文件夹放到 BepInEx/plugins/ 下，内含：\n<br />[list]\n<br />[*]EMI.dll[/*]\n<br />[*]EMI.pdb[/*]\n<br />[/list][size=4][b]使用教程请查看：[url=https://github.com/Exmeow/EMI_for_CU/blob/main/guide.md]使用教程[/url][/b][/size]",
@@ -23448,18 +23733,18 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/501/501-1785294484-1030696714.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/501"
         },
-        "DownloadUrl": "nexus://scavprototype/501/3226",
+        "DownloadUrl": "nexus://scavprototype/501/3516",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 501,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-15T03:03:49.000Z",
-        "ReleaseDate": "2026-11-15T03:03:49.000Z",
-        "SHA256": "d77abb706fc7c33a6d015645e19fb046fd99936bc520272b3014f0cefd01b198",
+        "LastUpdated": "2026-11-21T05:44:36.000Z",
+        "ReleaseDate": "2026-11-21T05:44:36.000Z",
+        "SHA256": "6d08da1d601d8609fe2df6a3b52ef5277389d57876c17b23d7f103a5db1af7ad",
         "dllSHA256s": {
-            "EMI.dll": "e67a6add3c22e883671902925856632e1e95bb8c349af3f72855c75ac8b65408"
+            "EMI.dll": "3b0bfe6a3026c56c7dfc4342d1238d65e162728435efe9e9d44c7946ab801bbc"
         },
-        "downloadsSinceLatestVersion": 140,
+        "downloadsSinceLatestVersion": 7,
         "Dependencies": [
             "nexus-115"
         ],
@@ -23476,14 +23761,14 @@
         "dllNames": [
             "EMI.dll"
         ],
-        "dllVersion": "1.1",
+        "dllVersion": "1.1.1",
         "dllVersions": {
-            "EMI.dll": "1.1"
+            "EMI.dll": "1.1.1"
         },
         "Statistics": {
-            "Endorsements": 28,
-            "UniqueDownloads": 601,
-            "TotalDownloads": 738,
+            "Endorsements": 32,
+            "UniqueDownloads": 711,
+            "TotalDownloads": 913,
             "TotalViews": null
         },
         "Images": [
@@ -23492,8 +23777,7 @@
         "nexusTags": [
             "AI Assisted",
             "Quality of Life"
-        ],
-        "LastQuickCheck": "2026-11-20T09:22:31.629Z"
+        ]
     },
     {
         "Id": "nexus-500",
@@ -24480,7 +24764,7 @@
         "LastQuickCheck": "2026-11-20T09:22:31.629Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-477",
         "Name": "Milky hate everyone",
         "Version": "1",
@@ -25099,7 +25383,7 @@
         "LastQuickCheck": "2026-11-20T09:22:31.629Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-460",
         "Name": "Makeshift Prosthetics",
         "Version": "1.0",
@@ -25127,7 +25411,7 @@
             "CUCoreLib.dll": "c0f064260b2671d02bf802c460aa346c6b858ec9269f2ff93439ebabaa940aa3",
             "MakeshiftProsthetics.dll": "85b807c4f52f622adf9ce016f8ede4098f797c303c47c2553d17a86a838a3214"
         },
-        "downloadsSinceLatestVersion": 169,
+        "downloadsSinceLatestVersion": 200,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -26796,7 +27080,7 @@
         "dllSHA256s": {
             "CasualtiesConsumed.dll": "2b189c3285703f51d31b26942f3656c066cc10603f53bb06e47dbe0a9dd404ea"
         },
-        "downloadsSinceLatestVersion": 5197,
+        "downloadsSinceLatestVersion": 5288,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -26839,7 +27123,7 @@
             "Gameplay",
             "Sexualised"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-427",
@@ -26867,7 +27151,7 @@
         "dllSHA256s": {
             "CUZoomPlus.dll": "aa4f4ce533818b24c854b3e6796e2a71795e4db2c81b8ea339828c3cc47045b0"
         },
-        "downloadsSinceLatestVersion": 1024,
+        "downloadsSinceLatestVersion": 1036,
         "Dependencies": [
             "nexus-341"
         ],
@@ -26897,7 +27181,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-424",
@@ -26925,7 +27209,7 @@
         "dllSHA256s": {
             "CUModFixer.dll": "ac44a02c0aa03689ffaa67fa48ee9ebf46c990e6d1c371bc3bdec7ebf0384f54"
         },
-        "downloadsSinceLatestVersion": 368,
+        "downloadsSinceLatestVersion": 370,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -26966,7 +27250,7 @@
             "Performance Optimization",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-423",
@@ -26990,7 +27274,7 @@
         "ReleaseDate": "2026-07-10T06:04:00.000Z",
         "SHA256": "9df109cfab7f99b7dbf51fef804b0d52424ab225aa60f50cabe0e6a551ac5170",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 56,
+        "downloadsSinceLatestVersion": 57,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -27006,7 +27290,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/423/423-1783662871-354202407.jpg"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-422",
@@ -27034,7 +27318,7 @@
         "dllSHA256s": {
             "CasUnknown.ChainedTogether.dll": "837a6ad6b6b95bbefcfbf1ce9d3d69e3dbde02680e9458eeab40f29b80da4006"
         },
-        "downloadsSinceLatestVersion": 279,
+        "downloadsSinceLatestVersion": 280,
         "Dependencies": [
             "nexus-67"
         ],
@@ -27058,10 +27342,10 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-421",
         "Name": "Mood Reimagined",
         "Version": "2.2-jollyholly",
@@ -27089,7 +27373,7 @@
             "CUCoreLib.dll": "c0f064260b2671d02bf802c460aa346c6b858ec9269f2ff93439ebabaa940aa3",
             "MoodReimagined.dll": "183bca7f14e1398088ef421135a3edb3eb862109022f677322bbb348f70a3d9e"
         },
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 15,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -27162,7 +27446,7 @@
         "dllSHA256s": {
             "CUAdvancedBossBar.dll": "5189a2d7b9ddbe29ed8c7e9ee04448c8ec30e2cb8e99cf508f55ee153218d8e2"
         },
-        "downloadsSinceLatestVersion": 689,
+        "downloadsSinceLatestVersion": 692,
         "Dependencies": [
             "nexus-341"
         ],
@@ -27189,7 +27473,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-418",
@@ -27246,7 +27530,7 @@
             "AI-Generated Content",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastQuickCheck": "2026-11-21T00:27:13.046Z",
@@ -27347,7 +27631,7 @@
         "dllSHA256s": {
             "CUTarkovMedicalMod.dll": "1f5dc1eb0f65206850b8e837edf0ebd1e58280e542669a5c4738e5d61fa0fd04"
         },
-        "downloadsSinceLatestVersion": 594,
+        "downloadsSinceLatestVersion": 598,
         "Dependencies": [
             "nexus-341"
         ],
@@ -27384,7 +27668,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-413",
@@ -27412,7 +27696,7 @@
         "dllSHA256s": {
             "ImmersiveTraps.dll": "de795274d079b0bc18313f7675bf283f669550804caa20e4486961a3de12f35b"
         },
-        "downloadsSinceLatestVersion": 451,
+        "downloadsSinceLatestVersion": 452,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -27444,7 +27728,7 @@
             "Gameplay",
             "Overhaul"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-412",
@@ -27472,7 +27756,7 @@
         "dllSHA256s": {
             "PSCAT1EYDNEOY.dll": "ce7885b7c35a884784569cc50396315f10a0211ebf4702f5f2a40943b66e2a66"
         },
-        "downloadsSinceLatestVersion": 315,
+        "downloadsSinceLatestVersion": 321,
         "Dependencies": [
             "nexus-115"
         ],
@@ -27496,7 +27780,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-411",
@@ -27524,7 +27808,7 @@
         "dllSHA256s": {
             "CUSimpleHealthBar.dll": "bb65da484abe8dcef7d4e983a0f5d0c18883e76d8fec9320c80e54c63b7dfea4"
         },
-        "downloadsSinceLatestVersion": 563,
+        "downloadsSinceLatestVersion": 567,
         "Dependencies": [
             "nexus-341"
         ],
@@ -27559,7 +27843,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-410",
@@ -27599,7 +27883,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/410/410-1783466948-1987583072.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-409",
@@ -27627,7 +27911,7 @@
         "dllSHA256s": {
             "TooManySettings.dll": "bcb57d6a2a5820faf250e808f0909cf74c019c18f30e992c502a9ce5a703f3f4"
         },
-        "downloadsSinceLatestVersion": 843,
+        "downloadsSinceLatestVersion": 852,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -27650,7 +27934,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-407",
@@ -27678,7 +27962,7 @@
         "dllSHA256s": {
             "CUMoreAmputation.dll": "edfd809af5be12c72878a465a3385999e0d5cf2c1b02737aed83452cda61e28d"
         },
-        "downloadsSinceLatestVersion": 2169,
+        "downloadsSinceLatestVersion": 2186,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -27734,7 +28018,7 @@
             "Overhaul",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-406",
@@ -27787,7 +28071,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-405",
@@ -27811,7 +28095,7 @@
         "ReleaseDate": "2026-07-27T09:43:17.000Z",
         "SHA256": "8c04592e8abbac23cf7cb15f7db1653ef24e181d3fd8cdb58c2f75d36d5e8efd",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 631,
+        "downloadsSinceLatestVersion": 640,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -27838,7 +28122,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-404",
@@ -27869,7 +28153,7 @@
             "KefPluginRuntime.dll": "06091482b33aa192a19a6d6c414338175a727af3d8020daa18f794521c0a9c8a",
             "SoundReplacer.dll": "62e679c70bbccff7b8ca2e30c2ede9a4328d9425d7dd10b7c49d50c8ba2f5557"
         },
-        "downloadsSinceLatestVersion": 376,
+        "downloadsSinceLatestVersion": 378,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -27896,7 +28180,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-403",
@@ -27924,7 +28208,7 @@
         "dllSHA256s": {
             "RshLib.dll": "0ae9e29ea7e174d91c1c9183e034ed53da44c385b7b24736fb44a7f98e5b0688"
         },
-        "downloadsSinceLatestVersion": 1347,
+        "downloadsSinceLatestVersion": 1355,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -27959,7 +28243,7 @@
         "nexusTags": [
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-402",
@@ -28014,7 +28298,7 @@
             "Quality of Life",
             "Translation"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-401",
@@ -28042,7 +28326,7 @@
         "dllSHA256s": {
             "knotrecipemod.dll": "540ca2574401953c3fdab3e0cd4f4f4c933eba7e33e276b3ff0b72d5e2774779"
         },
-        "downloadsSinceLatestVersion": 3290,
+        "downloadsSinceLatestVersion": 3343,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -28071,7 +28355,7 @@
             "Pornographic",
             "Sexualised"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-400",
@@ -28138,7 +28422,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-395",
@@ -28184,7 +28468,7 @@
             "Utilities for Players",
             "Visual Effects/Particles"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-394",
@@ -28212,7 +28496,7 @@
         "dllSHA256s": {
             "CUResprite.dll": "18c2fffe710ce43cb197fd3745ecde8a14bfbd9c8a797825e6125989fe4d05f1"
         },
-        "downloadsSinceLatestVersion": 1629,
+        "downloadsSinceLatestVersion": 1652,
         "Dependencies": [
             "nexus-115"
         ],
@@ -28242,7 +28526,7 @@
             "Textures",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-390",
@@ -28294,7 +28578,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-388",
@@ -28322,7 +28606,7 @@
         "dllSHA256s": {
             "CasualtyVitals.dll": "d1f34534486472dbcc0af7527f55163f52d9eaefa657347bf55ab9d5512509b8"
         },
-        "downloadsSinceLatestVersion": 801,
+        "downloadsSinceLatestVersion": 814,
         "Dependencies": [
             "nexus-341"
         ],
@@ -28405,7 +28689,7 @@
             "Gameplay",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-387",
@@ -28456,7 +28740,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-386",
@@ -28484,7 +28768,7 @@
         "dllSHA256s": {
             "AxivornsExpieNPCMod.dll": "ee7694e259fc5f59c748b0bc9e97218bf43773cd44494e54c72b1191e05b914a"
         },
-        "downloadsSinceLatestVersion": 2816,
+        "downloadsSinceLatestVersion": 2829,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -28507,7 +28791,7 @@
             "NPC Behaviours (AI)",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-384",
@@ -28553,7 +28837,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-383",
@@ -28581,7 +28865,7 @@
         "dllSHA256s": {
             "NoOilMod v2.dll": "0c3f9bd5048bdc347ac5ec70bf55de535d58f0dd4cdc7cf8006f4360efb0e434"
         },
-        "downloadsSinceLatestVersion": 181,
+        "downloadsSinceLatestVersion": 182,
         "Dependencies": [
             "nexus-115"
         ],
@@ -28605,7 +28889,7 @@
         "nexusTags": [
             "Performance Optimization"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-382",
@@ -28633,7 +28917,7 @@
         "dllSHA256s": {
             "ChooseQuitType.dll": "944c5d73785f52565982cd44bb956fbb0253402a2bc0c80ce117284f2bf749f7"
         },
-        "downloadsSinceLatestVersion": 1465,
+        "downloadsSinceLatestVersion": 1485,
         "Dependencies": [
             "nexus-115"
         ],
@@ -28660,7 +28944,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-381",
@@ -28710,7 +28994,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-380",
@@ -28760,7 +29044,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastQuickCheck": "2026-11-20T09:22:31.629Z",
@@ -28913,7 +29197,7 @@
         "ReleaseDate": "2026-07-01T01:28:16.000Z",
         "SHA256": "33e2447d2e9b3ab273b437485aefafe231b922ae7043e0bd86777a86b0252a00",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 58,
+        "downloadsSinceLatestVersion": 59,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -28931,7 +29215,7 @@
         "nexusTags": [
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-376",
@@ -28959,7 +29243,7 @@
         "dllSHA256s": {
             "ExpSneeze.dll": "6c4bf9ef1de3c32d84c9029154e48f3e17984afc529b35477b3d31932586ae0f"
         },
-        "downloadsSinceLatestVersion": 684,
+        "downloadsSinceLatestVersion": 691,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -29026,7 +29310,7 @@
             "Gameplay",
             "Humour, Joke or Just for Fun"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-375",
@@ -29054,7 +29338,7 @@
         "dllSHA256s": {
             "UniRuPatch.dll": "319cb12583ab14af90f3d5fe34c6a77473907a9391ae7519d7bee680c2e47a54"
         },
-        "downloadsSinceLatestVersion": 824,
+        "downloadsSinceLatestVersion": 856,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29097,7 +29381,7 @@
             "Translation",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-374",
@@ -29126,10 +29410,10 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/374/374-1782770042-1379788822.png"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-373",
         "Name": "Dont Press Wrong Number",
         "Version": "1",
@@ -29155,7 +29439,7 @@
         "dllSHA256s": {
             "WhatDidiPressWrong.dll": "6f761dff235be2a2763ea2b8d590c87bf6a1d98abe0fa1d943353776e0b874f4"
         },
-        "downloadsSinceLatestVersion": 150,
+        "downloadsSinceLatestVersion": 182,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29209,7 +29493,7 @@
         "ReleaseDate": "2026-06-29T00:30:22.000Z",
         "SHA256": "14117ac17ec1ee11d0064f52ba6c9a268bd5dbd0033523fe1746f023045812d6",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 75,
+        "downloadsSinceLatestVersion": 76,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -29227,7 +29511,7 @@
         "nexusTags": [
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-371",
@@ -29251,7 +29535,7 @@
         "ReleaseDate": "2026-06-29T15:55:54.000Z",
         "SHA256": "e17b6a98de2c449863cfd4fe6016e859784ebb1b6ecbf162468c68c18ee11c47",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 286,
+        "downloadsSinceLatestVersion": 288,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -29267,7 +29551,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/371/371-1782690867-1246273600.jpg"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastNotifiedChangelogVersion": "beta-unstable",
@@ -29299,7 +29583,7 @@
             "CraftingTweaks.dll": "66a557052db508e9a06caa72c7e4b047a5451affd2a1f40c4a7a13ffd1cc1df2",
             "KefPluginRuntime.dll": "02f3791e7db6e464c595f685fdbc63641bb2dd7a1e9f4903b851ef540b3b9e6a"
         },
-        "downloadsSinceLatestVersion": 1390,
+        "downloadsSinceLatestVersion": 1405,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29331,7 +29615,7 @@
             "Performance Optimization",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-369",
@@ -29359,7 +29643,7 @@
         "dllSHA256s": {
             "AllWearableCanBeHeld.dll": "2807520bc5eca3efe8792122703162d0c8bac45368a1d65668d2c6339713e3c7"
         },
-        "downloadsSinceLatestVersion": 1732,
+        "downloadsSinceLatestVersion": 1759,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -29381,7 +29665,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-368",
@@ -29405,7 +29689,7 @@
         "ReleaseDate": "2026-08-05T08:12:28.000Z",
         "SHA256": "e088c7ec1b0fb47f1541b2ab5cbc8dce8f4f51a6984ae8ca4eb0128e2005e133",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 277,
+        "downloadsSinceLatestVersion": 280,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29442,7 +29726,7 @@
             "Quality of Life",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-367",
@@ -29466,7 +29750,7 @@
         "ReleaseDate": "2026-06-28T02:49:29.000Z",
         "SHA256": "f956ec6e95432c5cbaff5f0ce9be0f64921c22616f0be8b583839c04d499f535",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 76,
+        "downloadsSinceLatestVersion": 78,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -29485,7 +29769,7 @@
             "Character Preset",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-366",
@@ -29513,7 +29797,7 @@
         "dllSHA256s": {
             "LeftyExpie.dll": "66781c5e0846cb86aa6a2eaaf53e057e8f54a79e59e23460bb0c29458c486c1e"
         },
-        "downloadsSinceLatestVersion": 250,
+        "downloadsSinceLatestVersion": 251,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -29571,7 +29855,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-365",
@@ -29600,7 +29884,7 @@
             "Quantum.dll": "a209997cc8482b0c49fb350a877df1f4338d971da1106c9e5a9508f75e1dd210",
             "TinyPinyin.dll": "d6c9e0507b7503842e46b3e4f9cea974ced29bcce8b470cc76792e19aee8d1f9"
         },
-        "downloadsSinceLatestVersion": 188,
+        "downloadsSinceLatestVersion": 189,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29635,7 +29919,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-364",
@@ -29696,7 +29980,7 @@
         "nexusTags": [
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-363",
@@ -29727,7 +30011,7 @@
             "CUCoreLib.dll": "d44531cc0c8e11db13c622557da359375bfa7cd7660920726a887dc2c4538690",
             "狗曦的狗屎玩意.dll": "1a78a655b71ea77d177b906eb65f2b7ff16ba4eca6ab15e00b4bb9359a77ccad"
         },
-        "downloadsSinceLatestVersion": 469,
+        "downloadsSinceLatestVersion": 471,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29788,10 +30072,10 @@
             "Swearing/Profanity",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-362",
         "Name": "Bark",
         "Version": "2.4.3",
@@ -29823,7 +30107,7 @@
             "Puerts.V8.dll": "b0051d9288032dedda4cda5001818fd0b3800d5c6e87b60df2d1eecf773a7ad0",
             "PuertsCore.dll": "1eb4a030039c529474e19b0168e4d442c368633e4ed4950c1002a4e55959a27d"
         },
-        "downloadsSinceLatestVersion": 27,
+        "downloadsSinceLatestVersion": 44,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29933,7 +30217,7 @@
         "dllSHA256s": {
             "MistalCrysMap.dll": "d582c7425ae6cd7b160f0d4a93a0fd9f58cd26e53adcdd364b08bb610477decf"
         },
-        "downloadsSinceLatestVersion": 391,
+        "downloadsSinceLatestVersion": 393,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -29961,31 +30245,32 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-358",
         "Name": "Potato's Craft Everything MOD",
         "Version": "v0.1",
         "bepinexVersion": null,
         "bepinexPlugins": {},
         "Summary": "[ ! WIP ! ] • Mod that makes almost every uncraftable item in the game craftable.",
-        "Description": "[size=4][b]Description[/b][/size]\n<br />[left][color=#D4D4D8]I've done some no loot runs, which basically means I couldn't get uncraftable items in the game. The whole point of the run was crafting what you needed, and I was sad to see that there wasn't many craftables, so, using [url=https://www.nexusmods.com/scavprototype/mods/125]CraftingFramework[/url], I was able to add more crafting recipes` to the usually uncraftable items![/color]\n<br />\n<br />Although I've tried my best, I'm not the best at balancing. If you think something is overpriced or underpriced in the game, tell me what you'd like me to change! (I want to keep this as balanced as possible.)\n<br />\n<br />Note: If a \"NO LOOT\" run sounds interesting to you, I'd recommend you install this mod so you can craft everything and alongside that, install the [url=https://www.nexusmods.com/scavprototype/mods/409]Too Many Settings[/url] mod so you can disable mini-barrel spawns.\n<br />\n<br />EVERYONE must have the mod for it to work in multiplayer.\n<br />\n<br />If you want a specific item craftable, even a mod item, just comment. I'm down to do most stuff unless the thing you want me to make craftable is troubling in some way.\n<br />Also, if you think something is WAY to easy/hard to craft, please comment! I want this mod to be fun for everyone! Even if you think maybe your comment might be wrong, I love to consider these things and it gives me more things to do rather than rot away in my bed :3\n<br />\n<br />Also, commenting on this project will get me working on it, otherwise my brain goes \"Haha, no one like mod.\" Then I get all lazy cuz of it. You know, everyday things!\n<br />\n<br />[ ! MOD IS IN A WORK IN PROGRESS ! ]\n<br />\n<br />(As of v0.5) Currently only adds crafting for:\n<br />Arm Warmers, Automated External Defibrillator, Auto-Zoom Goggles,  Balaclava, Bandolier, Belly Armor, Blindfold, Braingrow, Carapace, Cardboard Box, Circuit Board, Dust Mask, Electronic Watch, Fanny Pack, Filter Straw, Grappling Hook, Grav-Bag, Heroin, Holiday Hat, Jetpack, Knee Pads, Latex Gloves, Leg Pouch, Liquid Centrifuge, Manual Defibrillator, Medkit, Mindwipe, Mp3 Player, Pistol, Plastic Bag, Pouch, Pump Action Shotgun, Purse, Rifle, Ripped Bag, Safety Glasses, Sleeping Bag, Small Backpack, Sneakers, Space Drain, Toolbox, Torn Shirt, Trash Bag, Plasma Cutter, Claw Pack, Climbing Claws, Sledgehammer, Big Flesh Chunk, Wooden Trowel, Trowel, Wooden Digging Tool, Metal Digging Tool, and Wooden Pickaxe.\n<br />\n<br />MAY INCLUDE MODDED ITEMS IN THE FUTURE [ Note: You will still be able to run the mod, even if you don't have those modded items. ][/left]\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[color=#d4d4d8]1. Install and setup [url=https://www.nexusmods.com/scavprototype/mods/125]CraftingFramework[/url].\n<br />2. Locate the crafting framework file and click on it.\n<br />3. Drag and drop the contents of this mod into the recipes folder. (If updating the mod, click replace.)\n<br />4. Boot up the game and start a run!\n<br />[/color]\n<br />(Can't download from nexus? Download from [url=https://github.com/skyfire1234567/CraftEverything/releases/tag/idk]github[/url]!)\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[size=3][color=#D4D4D8]Makes almost all uncraftable items craftable.[/color][/size]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[color=#d4d4d8]Install CraftingFramework[/color]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[color=#D4D4D8]XVoltyxX for making the CraftingFramework mod!\n<br />Not sure who made the meme in my thumbnail, but I looked around and it might be potrew11 on reddit, so I'm shouting them out, lmao. (If I'm wrong, correct me please :D)[/color]",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />[left][color=#D4D4D8]I've done some no loot runs, which basically means I couldn't get uncraftable items in the game. The whole point of the run was crafting what you needed, and I was sad to see that there wasn't many craftables, so, using [url=https://www.nexusmods.com/scavprototype/mods/125]CraftingFramework[/url], I was able to add more crafting recipes` to the usually uncraftable items![/color]\n<br />\n<br />Although I've tried my best, I'm not the best at balancing. If you think something is overpriced or underpriced in the game, tell me what you'd like me to change! (I want to keep this as balanced as possible.)\n<br />\n<br />Note: If a \"NO LOOT\" run sounds interesting to you, I'd recommend you install this mod so you can craft everything and alongside that, install the [url=https://www.nexusmods.com/scavprototype/mods/409]Too Many Settings[/url] mod so you can disable mini-barrel spawns.\n<br />\n<br />EVERYONE must have the mod for it to work in multiplayer.\n<br />\n<br />If you want a specific item craftable, even a mod item, just comment. I'm down to do most stuff unless the thing you want me to make craftable is troubling in some way.\n<br />Also, if you think something is WAY to easy/hard to craft, please comment! I want this mod to be fun for everyone! Even if you think maybe your comment might be wrong, I love to consider these things and it gives me more things to do rather than rot away in my bed :3\n<br />\n<br />Also, commenting on this project will get me working on it, otherwise my brain goes \"Haha, no one like mod.\" Then I get all lazy cuz of it. You know, everyday things!\n<br />\n<br />[ ! MOD IS IN A WORK IN PROGRESS ! ]\n<br />\n<br />(As of v0.5) Currently only adds crafting for:\n<br />Arm Warmers, Auto-Zoom Goggles, Automated External Defibrillator, Balaclava, Bandolier, Belly Armor, Big Flesh Chunk, Blindfold, Braingrow, Carapace, Cardboard Box, Circuit Board, Claw Pack, Climbing Claws, Dust Mask, Earmuffs, Electronic Watch, Fanny Pack, Filter Straw, Grappling Hook, Grav-Bag, Heroin, Holiday Hat, Jetpack, Knee Pads, Latex Gloves, Leg Pouch, Lighter, Liquid Centrifuge, Manual Defibrillator, Medkit, Metal Digging Tool, Mindwipe, Mp3 Player, Pistol, Plasma Cutter, Plastic Bag, Pouch, Pump Action Shotgun, Purse, Rifle, Ripped Bag, Safety Glasses, Sledgehammer, Sleeping Bag, Small Backpack, Sneakers, Space Drain, Toolbox, Torn Shirt, Trash Bag, Trowel, Wooden Digging Tool, Wooden Trowel, and Wooden Pickaxe.\n<br />\n<br />MAY INCLUDE MODDED ITEMS IN THE FUTURE [ Note: You will still be able to run the mod, even if you don't have those modded items. ][/left]\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[color=#d4d4d8]1. Install and setup [url=https://www.nexusmods.com/scavprototype/mods/125]CraftingFramework[/url].\n<br />2. Locate the crafting framework file and click on it.\n<br />3. Drag and drop the contents of this mod into the recipes folder. (If updating the mod, click replace.)\n<br />4. Boot up the game and start a run![/color]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[size=3][color=#D4D4D8]Makes almost all uncraftable items craftable.[/color][/size]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[color=#d4d4d8]Install CraftingFramework[/color]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[color=#D4D4D8]XVoltyxX for making the CraftingFramework mod!\n<br />Not sure who made the meme in my thumbnail, but I looked around and it might be potrew11 on reddit, so I'm shouting them out, lmao. (If I'm wrong, correct me please :D)[/color]",
         "Author": "Sp00kzie",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/358/358-1784751637-2107319666.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/358"
         },
-        "DownloadUrl": "nexus://scavprototype/358/1490",
+        "DownloadUrl": "nexus://scavprototype/358/3508",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 358,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-07-28T21:22:22.000Z",
-        "ReleaseDate": "2026-07-28T21:22:22.000Z",
-        "SHA256": "c6519d8fbaf9b34a2679a3175c79aeece0a38f93b34e0ebe3141e03f5561486a",
+        "LastUpdated": "2026-11-21T03:18:24.000Z",
+        "ReleaseDate": "2026-11-21T03:18:24.000Z",
+        "SHA256": "ebccbbd38e2d18ebe7e70aa86ded527e3a3a0c748e5fc5adf56632760492644e",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 642,
+        "downloadsSinceLatestVersion": 8,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -30007,15 +30292,19 @@
             {
                 "Version": "v0.5.2",
                 "Changelog": "- Bugfix"
+            },
+            {
+                "Version": "v0.5.3",
+                "Changelog": "- Added Lighter & Earmuff recipe.\n- Fixed Pistol recipe."
             }
         ],
         "dllNames": [],
         "dllVersion": null,
         "dllVersions": {},
         "Statistics": {
-            "Endorsements": 29,
-            "UniqueDownloads": 630,
-            "TotalDownloads": 989,
+            "Endorsements": 30,
+            "UniqueDownloads": 665,
+            "TotalDownloads": 1050,
             "TotalViews": null
         },
         "Images": [
@@ -30028,7 +30317,7 @@
             "Gameplay",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastNotifiedChangelogVersion": "v0.5.3"
     },
     {
         "Id": "nexus-353",
@@ -30057,7 +30346,7 @@
         "dllSHA256s": {
             "Pipebombs.dll": "bf033f3a7f1bf8006c45512144bf08c2a0adc2972560b3109565cf03d7e577e5"
         },
-        "downloadsSinceLatestVersion": 224,
+        "downloadsSinceLatestVersion": 226,
         "Dependencies": [
             "nexus-341"
         ],
@@ -30086,7 +30375,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-352",
@@ -30110,7 +30399,7 @@
         "ReleaseDate": "2026-07-20T03:19:03.000Z",
         "SHA256": "624841785f5e45f8382fcad238e8a4a8d7278ce98addbf8d4ace8ac96494ee98",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 364,
+        "downloadsSinceLatestVersion": 369,
         "Dependencies": [
             "nexus-32",
             "nexus-122"
@@ -30132,7 +30421,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-351",
@@ -30156,7 +30445,7 @@
         "ReleaseDate": "2026-06-27T16:23:50.000Z",
         "SHA256": "7f35f5dda7eade8024d50cdcc2f03aa9c570544859a4565e60ebd1d6bf80ef7f",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 495,
+        "downloadsSinceLatestVersion": 498,
         "Dependencies": [
             "nexus-43"
         ],
@@ -30178,7 +30467,7 @@
             "Gameplay",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-350",
@@ -30206,7 +30495,7 @@
         "dllSHA256s": {
             "[快速拉栓]GunHotkeys.dll": "fded9a8e94546e8b953fe36f5c61aebd9a2410afdd63e5a7d20a6f6a6d0932b9"
         },
-        "downloadsSinceLatestVersion": 1421,
+        "downloadsSinceLatestVersion": 1427,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -30231,7 +30520,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-347",
@@ -30259,7 +30548,7 @@
         "dllSHA256s": {
             "Refill_Jetpack_with_Oil.dll": "f2597eb52d040453fc86644a3d661f1e060b87dde6a9ccbd1077942f8680fe54"
         },
-        "downloadsSinceLatestVersion": 134,
+        "downloadsSinceLatestVersion": 152,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -30291,7 +30580,7 @@
             "AI Assisted",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-345",
@@ -30315,7 +30604,7 @@
         "ReleaseDate": "2026-07-13T13:20:36.000Z",
         "SHA256": "a321bee6e6e8406c252014c42bbc09ef0cb68e1583c6f32164afced25e7c7e93",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 558,
+        "downloadsSinceLatestVersion": 563,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -30372,7 +30661,7 @@
             "Fair and balanced",
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-344",
@@ -30400,7 +30689,7 @@
         "dllSHA256s": {
             "CraftingLogic.dll": "24b276de3e7a38ce23940996a6e06f3b78fa6f987dcd29efdbe8b9056768f8ea"
         },
-        "downloadsSinceLatestVersion": 968,
+        "downloadsSinceLatestVersion": 981,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -30440,7 +30729,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-343",
@@ -30497,7 +30786,7 @@
             "User Interface",
             "Utilities for Modders"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-342",
@@ -30525,7 +30814,7 @@
         "dllSHA256s": {
             "UnknownPerformance.dll": "bac238d7f9189a92cadac34690b233c22928fed16df01b053ea02c5d0e34ad94"
         },
-        "downloadsSinceLatestVersion": 4772,
+        "downloadsSinceLatestVersion": 4820,
         "Dependencies": [
             "nexus-338"
         ],
@@ -30547,7 +30836,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/342/342-1781953680-834650068.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-341",
@@ -30575,7 +30864,7 @@
         "dllSHA256s": {
             "CUCoreLib.dll": "c0f064260b2671d02bf802c460aa346c6b858ec9269f2ff93439ebabaa940aa3"
         },
-        "downloadsSinceLatestVersion": 8261,
+        "downloadsSinceLatestVersion": 9167,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -30655,7 +30944,7 @@
             "Utilities for Modders",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-340",
@@ -30679,7 +30968,7 @@
         "ReleaseDate": "2026-06-20T08:18:04.000Z",
         "SHA256": "9a1d4a33cc6c2b5c89875291c4bc5800df3563ff352fb507d926d8b00b674fe6",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 552,
+        "downloadsSinceLatestVersion": 561,
         "Dependencies": [
             "nexus-15"
         ],
@@ -30697,7 +30986,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/340/340-1781943419-712108323.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-339",
@@ -30753,7 +31042,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-338",
@@ -30781,7 +31070,7 @@
         "dllSHA256s": {
             "ScavSetLib.dll": "c5822431086b62fc321f1f462b925d33b6b5424df4869c07b76a6bc0da61149f"
         },
-        "downloadsSinceLatestVersion": 3573,
+        "downloadsSinceLatestVersion": 3605,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -30803,7 +31092,7 @@
         "nexusTags": [
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-337",
@@ -30831,7 +31120,7 @@
         "dllSHA256s": {
             "net.cjendantix.SpinHat.dll": "32a81517588460fdec4ce46c7d35b67e4d0c8e7850c20c2ab9412a6f5ed8665b"
         },
-        "downloadsSinceLatestVersion": 547,
+        "downloadsSinceLatestVersion": 550,
         "Dependencies": [
             "nexus-32"
         ],
@@ -30875,7 +31164,7 @@
             "Gameplay",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-336",
@@ -30908,7 +31197,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/336/336-1781840950-917625338.png"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-335",
@@ -30950,7 +31239,7 @@
         "nexusTags": [
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-334",
@@ -30978,7 +31267,7 @@
         "dllSHA256s": {
             "Flimsiestknife.dll": "23ea0854cbbba42beada4b4ffb02b0ed574c20aa899904e10c724cdf9981e9cd"
         },
-        "downloadsSinceLatestVersion": 219,
+        "downloadsSinceLatestVersion": 222,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -31006,7 +31295,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-333",
@@ -31034,7 +31323,7 @@
         "dllSHA256s": {
             "CU_ModSettings.dll": "4da647e7971802d6bca1dc5135e682ec9c80e006a4e9d620d5740c9ba30c6722"
         },
-        "downloadsSinceLatestVersion": 1083,
+        "downloadsSinceLatestVersion": 1097,
         "Dependencies": [
             "nexus-115"
         ],
@@ -31069,7 +31358,7 @@
             "User Interface",
             "Utilities for Modders"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-332",
@@ -31097,7 +31386,7 @@
         "dllSHA256s": {
             "LateJoinFix.dll": "be66cdbccd477f32d87be21d4cb73438fd646883277c39729deeeee454ad5bcc"
         },
-        "downloadsSinceLatestVersion": 429,
+        "downloadsSinceLatestVersion": 432,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -31125,7 +31414,7 @@
             "Bug Fixes",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-331",
@@ -31153,7 +31442,7 @@
         "dllSHA256s": {
             "ExpiePettingMod.dll": "189909b97d3d8668d9e26b50bd69dd23887be0648997ecd7ea93b95ac383d835"
         },
-        "downloadsSinceLatestVersion": 3890,
+        "downloadsSinceLatestVersion": 3931,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -31176,7 +31465,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-330",
@@ -31204,7 +31493,7 @@
         "dllSHA256s": {
             "OverTheTopRealism.dll": "b3fd09079c5afba3c26b0163685c56abb78ca943da6c4556b21d74b7898684cc"
         },
-        "downloadsSinceLatestVersion": 756,
+        "downloadsSinceLatestVersion": 760,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -31226,7 +31515,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-329",
@@ -31254,7 +31543,7 @@
         "dllSHA256s": {
             "Thunder.dll": "c5a3495d5f9c16fbed3149003156d7c768ff635983a1efc31beeec286bdb2283"
         },
-        "downloadsSinceLatestVersion": 181,
+        "downloadsSinceLatestVersion": 182,
         "Dependencies": [
             "nexus-115"
         ],
@@ -31293,7 +31582,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-328",
@@ -31345,7 +31634,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-327",
@@ -31402,7 +31691,7 @@
         "nexusTags": [
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-325",
@@ -31430,7 +31719,7 @@
         "dllSHA256s": {
             "EnhancedTools.dll": "e8f9dbf960d31500346a7800b8cd0f35557c176c27f37fe689a47b0dfa3bd9cb"
         },
-        "downloadsSinceLatestVersion": 828,
+        "downloadsSinceLatestVersion": 853,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -31568,7 +31857,7 @@
             "Russian",
             "Translation"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastQuickCheck": "2026-11-20T18:07:09.432Z",
@@ -31709,7 +31998,7 @@
         "dllSHA256s": {
             "OwOText.dll": "3c30c3d205390e7fd315f17f6253021a73bfa89489dfbbb3af06635b6c4d30ea"
         },
-        "downloadsSinceLatestVersion": 323,
+        "downloadsSinceLatestVersion": 326,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -31756,7 +32045,7 @@
         "nexusTags": [
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-322",
@@ -31784,7 +32073,7 @@
         "dllSHA256s": {
             "VineBoom.dll": "ad933693cd2fd211bd7209eca8e172f33a00e578042f5dd0d838381f7027bd36"
         },
-        "downloadsSinceLatestVersion": 272,
+        "downloadsSinceLatestVersion": 277,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -31806,7 +32095,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-321",
@@ -31836,7 +32125,7 @@
             "AdditionalTraps.dll": "4d765a80dbe18ab9576901c862bcaf5647ea04197897648f69ec47b8e58257a9",
             "TrapLib.dll": "0a71814e1168125cdf2157cfc38df72bf4926c60d75cd88806c05b605ac6798c"
         },
-        "downloadsSinceLatestVersion": 86,
+        "downloadsSinceLatestVersion": 91,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -31882,11 +32171,11 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastNotifiedChangelogVersion": "20",
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-320",
         "Name": "Simple QoL",
         "Version": "6",
@@ -31912,7 +32201,7 @@
         "dllSHA256s": {
             "SimpleQoL.dll": "0c7b4ea2888a3f59aebe0b0c8fa89b2357068c7c165c9d8abe3de80f9d908989"
         },
-        "downloadsSinceLatestVersion": 235,
+        "downloadsSinceLatestVersion": 266,
         "Dependencies": [
             "nexus-115"
         ],
@@ -31995,7 +32284,7 @@
         "dllSHA256s": {
             "PissEnjoyment.dll": "5435c699a40855fa80173f5c282ade2977582f77d3e04f9b2fedeb8ea8803d30"
         },
-        "downloadsSinceLatestVersion": 219,
+        "downloadsSinceLatestVersion": 220,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -32015,7 +32304,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/319/319-1781651073-1401202522.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-318",
@@ -32043,7 +32332,7 @@
         "dllSHA256s": {
             "WearableHider.dll": "e6dcb871e1981aefde82a5c45bf745c7626f2b320bc1924e4aee80d2d2967fd7"
         },
-        "downloadsSinceLatestVersion": 169,
+        "downloadsSinceLatestVersion": 172,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -32065,7 +32354,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-317",
@@ -32107,7 +32396,7 @@
         "nexusTags": [
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-315",
@@ -32135,7 +32424,7 @@
         "dllSHA256s": {
             "AnomalousCoinMod.dll": "bf07035c6d018ab519c19e66e51a84ea7dee3500fc6ed26c095a6ba9b77dd3bd"
         },
-        "downloadsSinceLatestVersion": 132,
+        "downloadsSinceLatestVersion": 133,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -32164,7 +32453,7 @@
             "Utilities for Players",
             "Visual Effects/Particles"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-314",
@@ -32219,7 +32508,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-312",
@@ -32247,7 +32536,7 @@
         "dllSHA256s": {
             "EscapeFromCasualtiesInjectors.dll": "2ee22b0051537e7a19ea19667a56f2cfdbb05b0610a0d8586c82f1713e35609e"
         },
-        "downloadsSinceLatestVersion": 344,
+        "downloadsSinceLatestVersion": 345,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -32269,7 +32558,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-311",
@@ -32297,7 +32586,7 @@
         "dllSHA256s": {
             "TemporalPanicButtonV1.0.4.dll": "ef926b44a794c44b551502dff6c74d64b8ebfa81a43b488772fe9d6fc43b2433"
         },
-        "downloadsSinceLatestVersion": 314,
+        "downloadsSinceLatestVersion": 318,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -32329,7 +32618,7 @@
             "Animation - New",
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-310",
@@ -32357,7 +32646,7 @@
         "dllSHA256s": {
             "CuStats.dll": "0f1a2775d32500c812d14b4add56c48f48d18727f2b72ff26b8f9e5e19550856"
         },
-        "downloadsSinceLatestVersion": 33,
+        "downloadsSinceLatestVersion": 35,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -32380,7 +32669,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-231",
@@ -32410,7 +32699,7 @@
             "QoLChinesePatch.Bootstrap.dll": "3a5006c5b89413f47921a369178f1ef4a473dbf28a36697a97960527e2c80665",
             "QoLChinesePatch.dll": "5475913b33a1cddc9d42582f922dc92c592745bcda03ff253f753f9137e99f6e"
         },
-        "downloadsSinceLatestVersion": 716,
+        "downloadsSinceLatestVersion": 727,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -32434,7 +32723,7 @@
         "nexusTags": [
             "Translation"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-230",
@@ -32482,7 +32771,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/230/230-1781443221-1640260702.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-229",
@@ -32506,7 +32795,7 @@
         "ReleaseDate": "2026-06-28T18:00:03.000Z",
         "SHA256": "cbf453747d9a96761fb58fdc25402b9cf9489c96c80a83b1014c6774a581538b",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 951,
+        "downloadsSinceLatestVersion": 976,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -32538,7 +32827,7 @@
             "Character Preset",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-228",
@@ -32566,7 +32855,7 @@
         "dllSHA256s": {
             "VforWhiningMPAddon.dll": "85e3df1b6b07129f0a0f6d883d0d51910215a4a3b6ac0122202256bd244b8887"
         },
-        "downloadsSinceLatestVersion": 221,
+        "downloadsSinceLatestVersion": 242,
         "Dependencies": [
             "nexus-67",
             "nexus-115",
@@ -32597,7 +32886,7 @@
         "nexusTags": [
             "AI Assisted"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-227",
@@ -32656,7 +32945,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-226",
@@ -32715,11 +33004,11 @@
             "User Interface",
             "Visual Effects/Particles"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastNotifiedChangelogVersion": "1.1",
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-225",
         "Name": "MoreWatchInfo",
         "Version": "1.3",
@@ -32745,7 +33034,7 @@
         "dllSHA256s": {
             "MoreWatchInfo.dll": "0c639648d35e0aa656984c19f5bb5267d9c16cff88498a1d43e46c23e439cb9e"
         },
-        "downloadsSinceLatestVersion": 32,
+        "downloadsSinceLatestVersion": 41,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -32799,7 +33088,7 @@
         "ReleaseDate": "2026-06-12T05:56:01.000Z",
         "SHA256": "e714725b09f14939cf27cc20e566ef30064eab83e148704f76075f74c54c95dc",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 422,
+        "downloadsSinceLatestVersion": 426,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -32815,7 +33104,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/222/222-1781243648-125887009.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-221",
@@ -32843,7 +33132,7 @@
         "dllSHA256s": {
             "UltimateSoundSwap.dll": "865721f181eecb3cec5a291085ed69f5a5e7e1b6e069faeb264f490cc21b62a2"
         },
-        "downloadsSinceLatestVersion": 1014,
+        "downloadsSinceLatestVersion": 1023,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -32874,7 +33163,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-220",
@@ -32902,7 +33191,7 @@
         "dllSHA256s": {
             "BomberStrike.dll": "0a53a2b11db6f16fb84dbf30e4e0a860a7ca4cd890d9fbf1a279db2aa4d10ac7"
         },
-        "downloadsSinceLatestVersion": 137,
+        "downloadsSinceLatestVersion": 138,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -32931,7 +33220,7 @@
             "Terrain",
             "Visual Effects/Particles"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-219",
@@ -32992,7 +33281,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-218",
@@ -33047,7 +33336,7 @@
         "nexusTags": [
             "Cheating"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-217",
@@ -33075,7 +33364,7 @@
         "dllSHA256s": {
             "InventorySortMod.dll": "24b6cc3e0117fe40f0cdb42f55d4404bc6910fe2cbcf17571e1f2cc43b3b5985"
         },
-        "downloadsSinceLatestVersion": 647,
+        "downloadsSinceLatestVersion": 651,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -33095,7 +33384,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/217/217-1781195405-2127154004.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-216",
@@ -33163,7 +33452,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-215",
@@ -33191,7 +33480,7 @@
         "dllSHA256s": {
             "AutoSort.dll": "d53f5cd40fc6a463af7c3564c8bcec601ce91d763639177c2ac0fbe827a47158"
         },
-        "downloadsSinceLatestVersion": 2517,
+        "downloadsSinceLatestVersion": 2556,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -33213,7 +33502,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-214",
@@ -33241,7 +33530,7 @@
         "dllSHA256s": {
             "TitaniumRestored.dll": "2f3ffa71e2c612ad04f6622297098c8720b3bd7a3ef188c507420737806c36b7"
         },
-        "downloadsSinceLatestVersion": 982,
+        "downloadsSinceLatestVersion": 987,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -33273,7 +33562,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-212",
@@ -33301,7 +33590,7 @@
         "dllSHA256s": {
             "InventoryVisibilityFix.dll": "25a20ae70aa0c995bbdbdfbf2965e5da44fc6eba0b4661c3e9f108e0d4dd6adc"
         },
-        "downloadsSinceLatestVersion": 763,
+        "downloadsSinceLatestVersion": 765,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -33329,7 +33618,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-211",
@@ -33360,7 +33649,7 @@
             "KefPluginRuntime.dll": "e03bc4fd2f6aab35e010e36939a525fb5f1e0683c616d5898240bdc300b12266",
             "UnlockedSliders.dll": "f2fefccd2795cee75169d7cd0231a744c1facba84c49a68c64ed34910d9661f1"
         },
-        "downloadsSinceLatestVersion": 143,
+        "downloadsSinceLatestVersion": 145,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -33390,7 +33679,7 @@
             "AI-Generated Content",
             "Character Preset"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-210",
@@ -33418,7 +33707,7 @@
         "dllSHA256s": {
             "NoDecay.dll": "c792354e78d7346e6619bd1d51d9b60f2d4011ab1401cad43c24dd518499191d"
         },
-        "downloadsSinceLatestVersion": 541,
+        "downloadsSinceLatestVersion": 546,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -33440,7 +33729,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-209",
@@ -33497,7 +33786,7 @@
             "Visual Effects/Particles",
             "Weather"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-208",
@@ -33525,7 +33814,7 @@
         "dllSHA256s": {
             "bepinex_soundmod.dll": "d3e2a099cabac465faee24b54f896d32a3f7b7dacc8d712de5866e1eaa194c98"
         },
-        "downloadsSinceLatestVersion": 435,
+        "downloadsSinceLatestVersion": 438,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -33557,10 +33846,10 @@
             "Gameplay",
             "Swearing/Profanity"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-206",
         "Name": "Better Lights",
         "Version": "1.1",
@@ -33586,7 +33875,7 @@
         "dllSHA256s": {
             "GammaRestoreMod.dll": "2521f0a37c2e90d4c2dd0ac246cafc3b82bf59446dbd235405c46d9638af9e72"
         },
-        "downloadsSinceLatestVersion": 543,
+        "downloadsSinceLatestVersion": 546,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -33613,7 +33902,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-205",
         "Name": "Magazine Merge",
         "Version": "1",
@@ -33639,7 +33928,7 @@
         "dllSHA256s": {
             "Magazine Merge.dll": "e492fe48a74dd93fecdf2d8cda7e792d8b15bf1bd331e3d3f7a507487c56570b"
         },
-        "downloadsSinceLatestVersion": 205,
+        "downloadsSinceLatestVersion": 232,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -33699,7 +33988,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/203/203-1781009727-285956501.png"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-202",
@@ -33727,7 +34016,7 @@
         "dllSHA256s": {
             "ReisotronMoodles.dll": "a5913bed3c1ac2db8b0aa4297fee550ce29f18664bbfdfaedf1c5481c8712201"
         },
-        "downloadsSinceLatestVersion": 113,
+        "downloadsSinceLatestVersion": 114,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -33751,7 +34040,7 @@
             "Replacer",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-201",
@@ -33775,7 +34064,7 @@
         "ReleaseDate": "2026-06-10T07:23:22.000Z",
         "SHA256": "7c23a992e518fa9995bd74f726f78e821024e0212b6d1ce7066c6d381fb5235d",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 326,
+        "downloadsSinceLatestVersion": 328,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -33795,7 +34084,7 @@
             "Translation",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-198",
@@ -33823,7 +34112,7 @@
         "dllSHA256s": {
             "SFHealthPanel.dll": "e45033ab353268fdfffa65425001951fad54889cf13c64bc63f4a994069e6b8d"
         },
-        "downloadsSinceLatestVersion": 660,
+        "downloadsSinceLatestVersion": 665,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -33864,7 +34153,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-197",
@@ -33892,7 +34181,7 @@
         "dllSHA256s": {
             "VforWhining.dll": "ad115c465857112756a20204f07883da3087eb4c68f2a977e18cf571b5e7183e"
         },
-        "downloadsSinceLatestVersion": 3489,
+        "downloadsSinceLatestVersion": 3529,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -33921,7 +34210,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/197/197-1780926539-1822683445.jpg"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-196",
@@ -33961,7 +34250,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/196/196-1780907568-577168254.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-195",
@@ -34008,7 +34297,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/195/195-1780903825-1733648992.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/195/195-1780935925-1709438152.png"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-194",
@@ -34036,7 +34325,7 @@
         "dllSHA256s": {
             "WearableArray.dll": "633700d6f35b8ec8c3c4e2a2061c4531a98ef43037436c98e9b8518c26e7a12e"
         },
-        "downloadsSinceLatestVersion": 1172,
+        "downloadsSinceLatestVersion": 1196,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -34064,7 +34353,7 @@
             "Bug Fixes",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-193",
@@ -34088,7 +34377,7 @@
         "ReleaseDate": "2026-06-08T05:28:05.000Z",
         "SHA256": "69d63b067314cf1e394babed1f3c8b611ff274f333e88d5b98b69b91fe4a11fa",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 2008,
+        "downloadsSinceLatestVersion": 2018,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -34106,7 +34395,7 @@
         "nexusTags": [
             "Character Preset"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-192",
@@ -34134,7 +34423,7 @@
         "dllSHA256s": {
             "ConsoleChinese.dll": "358baa4052534ccfecfae5cc383d87f1de165b7003b2863fa824ed4c45b72c12"
         },
-        "downloadsSinceLatestVersion": 544,
+        "downloadsSinceLatestVersion": 559,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -34162,7 +34451,7 @@
             "Translation",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-191",
@@ -34196,7 +34485,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/191/191-1780839725-1700901288.png"
         ],
         "downloadsSinceLatestVersion": 606,
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-190",
@@ -34220,7 +34509,7 @@
         "ReleaseDate": "2026-07-27T15:23:21.000Z",
         "SHA256": "14f39c5ae4ed747c02e697da74f123cd260c158f4ff831f9cc1ca7c2c264e9bf",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 29,
+        "downloadsSinceLatestVersion": 30,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -34251,7 +34540,7 @@
             "Translation",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-189",
@@ -34279,7 +34568,7 @@
         "dllSHA256s": {
             "FullSave.dll": "8ddce97a8b331aec174934e8a92a4f7b686793e0f55fee32adbcae1b9fafc854"
         },
-        "downloadsSinceLatestVersion": 385,
+        "downloadsSinceLatestVersion": 387,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -34303,7 +34592,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-188",
@@ -34370,7 +34659,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-186",
@@ -34399,7 +34688,7 @@
             "DynamiteTimerCN.dll": "44b13d091880e1810ebb23b5d9274b952f470513437154da06cb4e55316cf0e7",
             "DynamiteTimerEN.dll": "f46491beb3dc0b2eb93ace641a1ea7ec807addfbd296bc0c38ae8ef5b24b0017"
         },
-        "downloadsSinceLatestVersion": 714,
+        "downloadsSinceLatestVersion": 718,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -34424,7 +34713,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-183",
@@ -34452,7 +34741,7 @@
         "dllSHA256s": {
             "KrokMPChineseSupplement.dll": "3131852bbfc8ab78e94e4732888244cbdfceb2c23ca5b7748556f1ef55290a50"
         },
-        "downloadsSinceLatestVersion": 350,
+        "downloadsSinceLatestVersion": 366,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -34474,7 +34763,7 @@
         "nexusTags": [
             "Translation"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-182",
@@ -34525,7 +34814,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-181",
@@ -34553,7 +34842,7 @@
         "dllSHA256s": {
             "OffHandQoL.dll": "e9e5824d76a06fd5b15f3676e3ca2bb14ffa7ab4548bc37a3ea2964e6984d3e2"
         },
-        "downloadsSinceLatestVersion": 258,
+        "downloadsSinceLatestVersion": 259,
         "Dependencies": [
             "nexus-115"
         ],
@@ -34582,7 +34871,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-179",
@@ -34610,7 +34899,7 @@
         "dllSHA256s": {
             "ContainerTweaks.dll": "87211a32516c35eb2bfa62efac79c793157635ed050ad368247f678b46760ec6"
         },
-        "downloadsSinceLatestVersion": 1419,
+        "downloadsSinceLatestVersion": 1424,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -34646,11 +34935,11 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastNotifiedChangelogVersion": "11.17.2026",
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-178",
         "Name": "Casualties XL",
         "Version": "02.11.2026",
@@ -34679,7 +34968,7 @@
             "CUCoreLib.dll": "c0f064260b2671d02bf802c460aa346c6b858ec9269f2ff93439ebabaa940aa3",
             "LiteNetLib.dll": "63b2acfd0df3e61d270066034e1dbfaf4f3002da9749eae9b6d0c796dd128e37"
         },
-        "downloadsSinceLatestVersion": 55,
+        "downloadsSinceLatestVersion": 155,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -34762,7 +35051,7 @@
         "dllSHA256s": {
             "GracePickupBypass.dll": "317d4e415047bf8801ce579e02e9cedec5d9d6a2d726740287cc2c2733a7b700"
         },
-        "downloadsSinceLatestVersion": 899,
+        "downloadsSinceLatestVersion": 901,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -34792,7 +35081,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-175",
@@ -34820,7 +35109,7 @@
         "dllSHA256s": {
             "CUQuickPickup.dll": "0dbb13f9bee2c04507420f55bd6a7a03eddc8b2e8b9f51a006f6dd074b67d44b"
         },
-        "downloadsSinceLatestVersion": 732,
+        "downloadsSinceLatestVersion": 735,
         "Dependencies": [
             "nexus-115"
         ],
@@ -34853,7 +35142,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-161",
@@ -34881,7 +35170,7 @@
         "dllSHA256s": {
             "MoreDialogues.dll": "8d2a69b32286155b45aabfa358ff8f5e89431847f00e7a967f88b4294e965ab7"
         },
-        "downloadsSinceLatestVersion": 190,
+        "downloadsSinceLatestVersion": 195,
         "Dependencies": [
             "nexus-432"
         ],
@@ -34905,7 +35194,7 @@
         "nexusTags": [
             "English"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-144",
@@ -34933,7 +35222,7 @@
         "dllSHA256s": {
             "No Self-Destruct on Quit.dll": "7cd4fc48749afee28e1988dddfb2af8262019e8974a4dc6b3657b80f4f6441fe"
         },
-        "downloadsSinceLatestVersion": 2916,
+        "downloadsSinceLatestVersion": 2947,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -34956,7 +35245,7 @@
             "AI-Generated Content",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-142",
@@ -35020,7 +35309,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-141",
@@ -35048,7 +35337,7 @@
         "dllSHA256s": {
             "ModifiersRework.dll": "b797505d3325fc0c4bdec2283f186e3a1ca8d6b5f9c75743713cdb8848b642fd"
         },
-        "downloadsSinceLatestVersion": 324,
+        "downloadsSinceLatestVersion": 325,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -35080,7 +35369,7 @@
             "Gameplay",
             "Overhaul"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-140",
@@ -35108,7 +35397,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "89d104890e05b7e7cb29d42de2e351b04b42180e79ac8a853cae210d716cb1b2"
         },
-        "downloadsSinceLatestVersion": 1000,
+        "downloadsSinceLatestVersion": 1040,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -35200,7 +35489,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/140/140-1780433511-1070542342.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-139",
@@ -35228,7 +35517,7 @@
         "dllSHA256s": {
             "PlayerCustomizer.dll": "302790505a795d9e58b477b5c0b2b1f58d24d68bcdc8a42515a8452dc4012189"
         },
-        "downloadsSinceLatestVersion": 2675,
+        "downloadsSinceLatestVersion": 2701,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -35266,7 +35555,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-136",
@@ -35294,7 +35583,7 @@
         "dllSHA256s": {
             "Weight_Metal.dll": "39fa2d08fbcc05e9f76a2a00676ecd0c96e5ade65e9fc0990cecb14ae35a2b64"
         },
-        "downloadsSinceLatestVersion": 54,
+        "downloadsSinceLatestVersion": 58,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -35330,7 +35619,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastQuickCheck": "2026-11-20T18:07:09.432Z",
@@ -35409,7 +35698,7 @@
         "dllSHA256s": {
             "DogThings.dll": "0641a46590e79d464283e1c2eb9de6b6b512caa97a81dd7269c05f319286ed39"
         },
-        "downloadsSinceLatestVersion": 619,
+        "downloadsSinceLatestVersion": 623,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -35437,7 +35726,7 @@
             "Humour, Joke or Just for Fun",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-133",
@@ -35465,7 +35754,7 @@
         "dllSHA256s": {
             "UnknownItemTextures.dll": "4f43e86e62664f46c245c3eb4f62fd6c892686c956d612f5d8d8fdffcf5d90f1"
         },
-        "downloadsSinceLatestVersion": 381,
+        "downloadsSinceLatestVersion": 383,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -35493,7 +35782,7 @@
             "Gameplay",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-132",
@@ -35517,7 +35806,7 @@
         "ReleaseDate": "2026-05-30T17:29:33.000Z",
         "SHA256": "56fe0d5b3c855d63ea036567a5a6fe6bb8b79589a515205ffa46617fdac662b3",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 556,
+        "downloadsSinceLatestVersion": 557,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -35535,7 +35824,7 @@
         "nexusTags": [
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-131",
@@ -35563,7 +35852,7 @@
         "dllSHA256s": {
             "CustomFungamePack.dll": "abdeda5e05d3dc47c8d774065028a86d189ee0a75480a1bb27adb93ecbb05568"
         },
-        "downloadsSinceLatestVersion": 141,
+        "downloadsSinceLatestVersion": 143,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -35594,7 +35883,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-130",
@@ -35622,7 +35911,7 @@
         "dllSHA256s": {
             "DevMenuV2.dll": "de44652f12a042901db9da219b6dd9c278355ce2ce8be0b4afe306b0a4599ddf"
         },
-        "downloadsSinceLatestVersion": 823,
+        "downloadsSinceLatestVersion": 877,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -35659,7 +35948,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-129",
@@ -35705,7 +35994,7 @@
             "Utilities for Modders",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-127",
@@ -35749,7 +36038,7 @@
         "nexusTags": [
             "Unbalanced"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-126",
@@ -35803,7 +36092,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-125",
@@ -35831,7 +36120,7 @@
         "dllSHA256s": {
             "CraftingFramework.dll": "69382d38ecb35d0014495c8d1d767696f5679dbe5825dcf8a40c6d356eece02a"
         },
-        "downloadsSinceLatestVersion": 153,
+        "downloadsSinceLatestVersion": 176,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -35882,7 +36171,7 @@
             "Gameplay",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-124",
@@ -35935,7 +36224,7 @@
             "Sound FX",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-123",
@@ -35963,7 +36252,7 @@
         "dllSHA256s": {
             "LuckyBlocks.dll": "a1c4caef1ebfb99cfd88bee6abc8d7be3616693d7796ee0600053480d911d33b"
         },
-        "downloadsSinceLatestVersion": 340,
+        "downloadsSinceLatestVersion": 341,
         "Dependencies": [
             "nexus-115"
         ],
@@ -35987,7 +36276,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastQuickCheck": "2026-11-20T09:22:31.629Z",
@@ -36130,7 +36419,7 @@
             "Humour, Joke or Just for Fun",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-119",
@@ -36158,7 +36447,7 @@
         "dllSHA256s": {
             "LastStandTheme.dll": "05cb4b84ebc86ab99123d94db2f014722f18bdf2d71e5065489cd49aa8e142ec"
         },
-        "downloadsSinceLatestVersion": 950,
+        "downloadsSinceLatestVersion": 960,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -36180,7 +36469,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-118",
@@ -36209,7 +36498,7 @@
             "ChangeSkinMP.dll": "b57fb344a3beb1ad084a898f716b2fe097a479beda84aadbb29054df7e9bd705",
             "CommandLine.dll": "2135b40fa819e58cf1942453e4409bfdea2be631077a354b878de8402be7e026"
         },
-        "downloadsSinceLatestVersion": 7459,
+        "downloadsSinceLatestVersion": 7487,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -36242,7 +36531,7 @@
             "Replacer",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-117",
@@ -36270,7 +36559,7 @@
         "dllSHA256s": {
             "WorldMap.dll": "604e534767d814de5924787781eb1beb60119d53fe63ab86c5eef0acd860afab"
         },
-        "downloadsSinceLatestVersion": 988,
+        "downloadsSinceLatestVersion": 995,
         "Dependencies": [
             "nexus-115"
         ],
@@ -36312,7 +36601,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-115",
@@ -36378,7 +36667,7 @@
             "Gameplay",
             "Mandarin"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-114",
@@ -36406,7 +36695,7 @@
         "dllSHA256s": {
             "NoEarthquake.dll": "64145f730e4b8efc97f1788c6e49f3b606a9f24e067ed10d2ca75ed153f6c089"
         },
-        "downloadsSinceLatestVersion": 367,
+        "downloadsSinceLatestVersion": 371,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -36429,7 +36718,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-113",
@@ -36480,7 +36769,7 @@
             "AI-Generated Content",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-112",
@@ -36537,7 +36826,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-111",
@@ -36565,7 +36854,7 @@
         "dllSHA256s": {
             "InfiniteBatteries.dll": "eef30dab28e25caf8ab9b6077f9a7e76b33cc2bbb471d6ec93d3b10c2d792a55"
         },
-        "downloadsSinceLatestVersion": 1002,
+        "downloadsSinceLatestVersion": 1012,
         "Dependencies": [
             "nexus-115"
         ],
@@ -36591,7 +36880,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-110",
@@ -36619,7 +36908,7 @@
         "dllSHA256s": {
             "CraftingBottleRework.dll": "9c9a98e00f8c029b4102a41475b45da0f0ff82f64ff3906af82b8d1ece6ec01f"
         },
-        "downloadsSinceLatestVersion": 174,
+        "downloadsSinceLatestVersion": 175,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -36641,7 +36930,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-109",
@@ -36681,7 +36970,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/109/109-1779828003-892070118.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-108",
@@ -36709,7 +36998,7 @@
         "dllSHA256s": {
             "ReplaceEnemies.dll": "e40155a018e4bf31c8cf102693075467a711bbe32e05edc20cd1af40839ad13c"
         },
-        "downloadsSinceLatestVersion": 292,
+        "downloadsSinceLatestVersion": 294,
         "Dependencies": [
             "nexus-115"
         ],
@@ -36731,7 +37020,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/108/108-1779813428-462591877.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-107",
@@ -36755,7 +37044,7 @@
         "ReleaseDate": "2026-05-29T09:24:11.000Z",
         "SHA256": "ef543b5453ade76c7ac18977dd8a80fd964e792fca5ad32330cf4feae869bb4f",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 165,
+        "downloadsSinceLatestVersion": 166,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -36782,7 +37071,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-106",
@@ -36810,7 +37099,7 @@
         "dllSHA256s": {
             "NoCostCraft.dll": "c71355045b55f315fa21c2e067de0cf7cbcc1a6416b0b3f6503ff2fb175cd009"
         },
-        "downloadsSinceLatestVersion": 753,
+        "downloadsSinceLatestVersion": 756,
         "Dependencies": [
             "nexus-115"
         ],
@@ -36835,7 +37124,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-105",
@@ -36879,7 +37168,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/105/105-1781462136-2089875456.png"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-104",
@@ -36898,7 +37187,7 @@
         "dllNames": [],
         "downloadsSinceLatestVersion": 1,
         "ContainsAdultContent": false,
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-97",
@@ -36930,7 +37219,7 @@
             "QRCoder.dll": "561acfe4b1a14c837b189fb9fc5c6d3e82440184bbde61912de723d62d6368b3",
             "websocket-sharp.dll": "fef71072749a62bdbdd870a60837d8364d0c484ddda040a73089a6adc9199e4b"
         },
-        "downloadsSinceLatestVersion": 97,
+        "downloadsSinceLatestVersion": 98,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -36957,7 +37246,7 @@
             "Gameplay",
             "Sexualised"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastNotifiedChangelogVersion": "1.2.1",
@@ -36986,7 +37275,7 @@
         "dllSHA256s": {
             "QuickRack.dll": "c1ad264c2ac5c4bb9314e31f300d6a030393a208f8915fadf47b042a2bb45fb7"
         },
-        "downloadsSinceLatestVersion": 57,
+        "downloadsSinceLatestVersion": 59,
         "Dependencies": [
             "nexus-115"
         ],
@@ -37025,7 +37314,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-93",
@@ -37053,7 +37342,7 @@
         "dllSHA256s": {
             "MyScavMod.dll": "4ab1b653f6c48c5bd1c4d456acd9659ac485e37830283b0534a1dfb595b63035"
         },
-        "downloadsSinceLatestVersion": 524,
+        "downloadsSinceLatestVersion": 526,
         "Dependencies": [
             "nexus-115"
         ],
@@ -37077,7 +37366,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-92",
@@ -37105,7 +37394,7 @@
         "dllSHA256s": {
             "EdgeSneak.dll": "3b0436c7f8851e83ce5c285c219ef364656f38867aaa5cd5cdb6564d535f6fd6"
         },
-        "downloadsSinceLatestVersion": 424,
+        "downloadsSinceLatestVersion": 427,
         "Dependencies": [
             "nexus-83",
             "nexus-115"
@@ -37132,7 +37421,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-90",
@@ -37160,7 +37449,7 @@
         "dllSHA256s": {
             "ItemSpawnerMenuCN.dll": "b6e2478cdf528e2e6b876746a708c1384db688f9836d6d25b9d297a8c80863d0"
         },
-        "downloadsSinceLatestVersion": 798,
+        "downloadsSinceLatestVersion": 803,
         "Dependencies": [
             "nexus-115"
         ],
@@ -37182,7 +37471,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/90/90-1779609472-1510506523.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-89",
@@ -37210,7 +37499,7 @@
         "dllSHA256s": {
             "DRP4Casualties.dll": "d18bc9ff32f2461dfc5c6ec0999b3784f57266e5d44d6990a9407248d6f4352a"
         },
-        "downloadsSinceLatestVersion": 341,
+        "downloadsSinceLatestVersion": 342,
         "Dependencies": [
             "nexus-115"
         ],
@@ -37235,7 +37524,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-86",
@@ -37275,7 +37564,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/86/86-1779468847-324046331.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-85",
@@ -37303,7 +37592,7 @@
         "dllSHA256s": {
             "UEI.build.dll": "c5642c531f3248234f76a2ca1cb186cde7bd23f63c99437e98ff94114ca33244"
         },
-        "downloadsSinceLatestVersion": 1387,
+        "downloadsSinceLatestVersion": 1400,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -37337,7 +37626,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-84",
@@ -37393,7 +37682,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-83",
@@ -37424,7 +37713,7 @@
             "ScavLib API.Traps.dll": "822aa56e78ac5c42189ca5bb1acf05da3956043e7e69956bb2e6f9b063576465",
             "ScavLib API.UI.dll": "a0186eeb56e7cb7735534fd2f917247d5c549b0e365f342feb4ef6a34bbb0458"
         },
-        "downloadsSinceLatestVersion": 785,
+        "downloadsSinceLatestVersion": 791,
         "Dependencies": [
             "nexus-115"
         ],
@@ -37480,11 +37769,11 @@
             "Utilities for Modders",
             "Video"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastNotifiedChangelogVersion": "4",
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-82",
         "Name": "Cu-SaveManager",
         "Version": "30",
@@ -37510,7 +37799,7 @@
         "dllSHA256s": {
             "CuSaveManager.dll": "60c233d906a69f183accc9e7ee1942ecbe91a98173fdf98e2d7a13319048ca16"
         },
-        "downloadsSinceLatestVersion": 12,
+        "downloadsSinceLatestVersion": 76,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -37564,7 +37853,7 @@
         "ReleaseDate": "2026-09-10T19:07:09.000Z",
         "SHA256": "214626d4f05a2a9c55d945db9aba3c1a8db4056b2889098bce0e165d605a5a8d",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 254,
+        "downloadsSinceLatestVersion": 263,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -37603,7 +37892,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-80",
@@ -37627,7 +37916,7 @@
         "ReleaseDate": "2026-06-16T19:20:20.000Z",
         "SHA256": "a7be4a588783e7dd3cc019b304a503c11c6e117352fa68180333297c31e6f8ff",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 897,
+        "downloadsSinceLatestVersion": 912,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -37654,7 +37943,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-79",
@@ -37682,7 +37971,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownStarterKit.dll": "97c7c3e1a383e67ab064b68ba39fbed1c06650035bf02edacb79346473521c19"
         },
-        "downloadsSinceLatestVersion": 525,
+        "downloadsSinceLatestVersion": 529,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -37705,7 +37994,7 @@
             "Cheating",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-78",
@@ -37733,7 +38022,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownLight.dll": "d757b1115d1ccb48dac3874e8cb88a6bcf7957c751606e1a2c78f0b247bb25cd"
         },
-        "downloadsSinceLatestVersion": 593,
+        "downloadsSinceLatestVersion": 598,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -37755,7 +38044,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-77",
@@ -37783,7 +38072,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownAdditionalDescriptions.dll": "e112dbe3fdd14c446f39c824f884096e2d749758f6f4f7851d97fe424a7d8cc9"
         },
-        "downloadsSinceLatestVersion": 2874,
+        "downloadsSinceLatestVersion": 2905,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -37806,7 +38095,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-76",
@@ -37834,7 +38123,7 @@
         "dllSHA256s": {
             "CasualtiesUnknownAlwaysLastStand.dll": "623daebd6e8db318ca25cfff85aafd29991a97a808caad74a90425022270916f"
         },
-        "downloadsSinceLatestVersion": 731,
+        "downloadsSinceLatestVersion": 739,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -37858,7 +38147,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-75",
@@ -37886,7 +38175,7 @@
         "dllSHA256s": {
             "ShrapnelVariants.dll": "be7895efb36f5b33e6473ffdf821f768e818c0881064fe30f092fa2e4975e4fb"
         },
-        "downloadsSinceLatestVersion": 7496,
+        "downloadsSinceLatestVersion": 7599,
         "Dependencies": [
             "nexus-115"
         ],
@@ -37918,7 +38207,7 @@
             "Textures",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-74",
@@ -37946,7 +38235,7 @@
         "dllSHA256s": {
             "MultiplayerSpriteReplacer.dll": "6dcbd87171f4a802d8f748a97bb5418b3976ac21b77d7f520e2c4aac97daa049"
         },
-        "downloadsSinceLatestVersion": 22557,
+        "downloadsSinceLatestVersion": 22704,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -37982,7 +38271,7 @@
             "Replacer",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-73",
@@ -38010,7 +38299,7 @@
         "dllSHA256s": {
             "SellFromBags.dll": "69293fda8c68ebce9951ae1d276a48f7b8e6a09b73fc8a7e746ab32dda93e146"
         },
-        "downloadsSinceLatestVersion": 5265,
+        "downloadsSinceLatestVersion": 5293,
         "Dependencies": [
             "nexus-115"
         ],
@@ -38043,7 +38332,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-72",
@@ -38071,7 +38360,7 @@
         "dllSHA256s": {
             "ItemSpawner.build.dll": "40d05db299cbbc2f09aee3371b482514383588148997d06742e919848476c09b"
         },
-        "downloadsSinceLatestVersion": 2656,
+        "downloadsSinceLatestVersion": 2680,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -38096,7 +38385,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-71",
@@ -38124,7 +38413,7 @@
         "dllSHA256s": {
             "cu.kinatera.gravbagbeeper.dll": "b0572492e97e399dc9c28c16a9c94f9222b8eefc53482249bb49eedbea82da0d"
         },
-        "downloadsSinceLatestVersion": 1055,
+        "downloadsSinceLatestVersion": 1077,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -38155,7 +38444,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-70",
@@ -38183,7 +38472,7 @@
         "dllSHA256s": {
             "ICEnecoCustomItemAPI.dll": "89d104890e05b7e7cb29d42de2e351b04b42180e79ac8a853cae210d716cb1b2"
         },
-        "downloadsSinceLatestVersion": 640,
+        "downloadsSinceLatestVersion": 664,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
@@ -38290,7 +38579,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastNotifiedChangelogVersion": "1.1.1",
@@ -38435,7 +38724,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastQuickCheck": "2026-11-21T00:27:13.046Z",
@@ -38623,7 +38912,7 @@
         "dllSHA256s": {
             "Razor.dll": "ae80b32a512b1e92c7f8c1267246c90d588a7d8879f212704b195bdf3311b379"
         },
-        "downloadsSinceLatestVersion": 513,
+        "downloadsSinceLatestVersion": 521,
         "Dependencies": [
             "nexus-32",
             "nexus-341"
@@ -38651,7 +38940,7 @@
             "Self-harm",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-65",
@@ -38679,7 +38968,7 @@
         "dllSHA256s": {
             "CustomStartItem.dll": "49234fd22bd7a61abed1a1dc2e3cc4b55cac1eeff66e97df15528170822611cf"
         },
-        "downloadsSinceLatestVersion": 409,
+        "downloadsSinceLatestVersion": 411,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -38701,7 +38990,7 @@
         "nexusTags": [
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastNotifiedChangelogVersion": "1.9.2",
@@ -38811,7 +39100,7 @@
         "dllSHA256s": {
             "Assembly-CSharp.dll": "f51acb462ba53a598ced7ea450ed9eb9a1e89fb738990bc50aa2cd2ed599bf4a"
         },
-        "downloadsSinceLatestVersion": 579,
+        "downloadsSinceLatestVersion": 580,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -38836,7 +39125,7 @@
             "Gameplay",
             "Performance Optimization"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-60",
@@ -38864,7 +39153,7 @@
         "dllSHA256s": {
             "Animalese.dll": "e1a766d35d2f60bb0b6865bf7d1171d70702351da09cdc273ca5f69c4471fad1"
         },
-        "downloadsSinceLatestVersion": 1451,
+        "downloadsSinceLatestVersion": 1479,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -38884,7 +39173,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/60/60-1778681275-472147762.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastQuickCheck": "2026-11-21T00:27:13.046Z",
@@ -39038,7 +39327,7 @@
         "dllSHA256s": {
             "New_Gun_Loader.dll": "db221d6b346cf55d22e783a2e7869db066ccdf2dc36e375cbb4428e10c8ce949"
         },
-        "downloadsSinceLatestVersion": 1119,
+        "downloadsSinceLatestVersion": 1133,
         "Dependencies": [
             "nexus-32"
         ],
@@ -39072,7 +39361,7 @@
             "Gameplay",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-55",
@@ -39100,7 +39389,7 @@
         "dllSHA256s": {
             "body_sprite_replacer.dll": "198ecd109d8b0d28cfd289d52aa0afe81c0234089dc0c317c934a7735396d507"
         },
-        "downloadsSinceLatestVersion": 1275,
+        "downloadsSinceLatestVersion": 1277,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -39128,7 +39417,7 @@
             "Replacer",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-53",
@@ -39178,7 +39467,7 @@
         "nexusTags": [
             "Russian"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-52",
@@ -39206,7 +39495,7 @@
         "dllSHA256s": {
             "Cigs.dll": "f9160991be0177ef571f8421315ab73c5feb216972e943a100720c1123a81de5"
         },
-        "downloadsSinceLatestVersion": 1056,
+        "downloadsSinceLatestVersion": 1059,
         "Dependencies": [
             "nexus-32"
         ],
@@ -39230,7 +39519,7 @@
         "nexusTags": [
             "Harmful substances"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-51",
@@ -39254,7 +39543,7 @@
         "ReleaseDate": "2026-05-08T16:08:59.000Z",
         "SHA256": "5e11fae99aa2a7bac6985c4c74c8d245c51f5a6ce7ff5e3d0e2fbe2fe91c4e49",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 433,
+        "downloadsSinceLatestVersion": 438,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -39272,7 +39561,7 @@
         "nexusTags": [
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastNotifiedChangelogVersion": "7",
@@ -39377,7 +39666,7 @@
         "dllSHA256s": {
             "HPNoFlash.dll": "c10e3dd6aa973be6ad49178ee7a2b8c533ef76a8c7a4e0fa9e3206e1ddc23fca"
         },
-        "downloadsSinceLatestVersion": 227,
+        "downloadsSinceLatestVersion": 228,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -39397,7 +39686,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/48/48-1778247213-30024522.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-47",
@@ -39426,7 +39715,7 @@
         "dllSHA256s": {
             "RemiyamuremodLayerUnlock.dll": "dd66574025d93f6344f42f7b01ca54c45a2937e9cc11d00859dfa8940b77f51c"
         },
-        "downloadsSinceLatestVersion": 2448,
+        "downloadsSinceLatestVersion": 2449,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -39475,7 +39764,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-45",
@@ -39503,7 +39792,7 @@
         "dllSHA256s": {
             "HeadTurret.dll": "dfc8aa40038b5453e8b73623c8ff33bdc9a2d5c00d9f55617c03aa21376751ad"
         },
-        "downloadsSinceLatestVersion": 657,
+        "downloadsSinceLatestVersion": 660,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -39537,7 +39826,7 @@
             "Replacer",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-44",
@@ -39571,7 +39860,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/44/44-1778004512-394325655.png"
         ],
         "downloadsSinceLatestVersion": 395,
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-43",
@@ -39599,7 +39888,7 @@
         "dllSHA256s": {
             "NewClothing.dll": "3fa67e6294601840fdc094ba2ee57ed337a64c5ee1bb416d0bda21d3687acc70"
         },
-        "downloadsSinceLatestVersion": 198,
+        "downloadsSinceLatestVersion": 233,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -39628,7 +39917,7 @@
             "Textures"
         ],
         "LastNotifiedChangelogVersion": "1.6.5",
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-42",
@@ -39656,7 +39945,7 @@
         "dllSHA256s": {
             "VoySoundSwap.dll": "87350304e88337444eb16fdab262addf9f3712f515ef84954960acd6db32f93a"
         },
-        "downloadsSinceLatestVersion": 1629,
+        "downloadsSinceLatestVersion": 1652,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -39678,7 +39967,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-41",
@@ -39706,7 +39995,7 @@
         "dllSHA256s": {
             "LTS.dll": "370773364409e8f280f99c05cbbf838e45191a8b87a2fc73bcd24495e5af67ba"
         },
-        "downloadsSinceLatestVersion": 194,
+        "downloadsSinceLatestVersion": 195,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -39755,11 +40044,11 @@
             "Russian",
             "Voice Acting"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastNotifiedChangelogVersion": "1.1.4",
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-40",
         "Name": "Prosthetics",
         "Version": "2",
@@ -39785,7 +40074,7 @@
         "dllSHA256s": {
             "prosthetics.dll": "36935b53c75f1fd0ce1ffc66268704b150bf339af90a04b8ae7d81060dd704c4"
         },
-        "downloadsSinceLatestVersion": 858,
+        "downloadsSinceLatestVersion": 1060,
         "Dependencies": [
             "nexus-341"
         ],
@@ -40116,7 +40405,7 @@
         "dllSHA256s": {
             "ReGrowthSerums.dll": "af97bbd0388171313fbb991e0b4b5c7f0a3e375035e8be8a3a5cf9e73e09b9a0"
         },
-        "downloadsSinceLatestVersion": 1224,
+        "downloadsSinceLatestVersion": 1238,
         "Dependencies": [
             "nexus-32"
         ],
@@ -40153,7 +40442,7 @@
         "nexusTags": [
             "Gameplay"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-37",
@@ -40220,7 +40509,7 @@
         "nexusTags": [
             "Music"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-35",
@@ -40280,7 +40569,7 @@
         ],
         "downloadsSinceLatestVersion": 110,
         "ContainsAdultContent": false,
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-34",
@@ -40349,7 +40638,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/34/34-1777531761-1128577695.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-33",
@@ -40377,7 +40666,7 @@
         "dllSHA256s": {
             "ThighHighs.dll": "24d9c929c786575ae3ffffa4767064b33c92dd1d6e8c72d5c7b6e6945ece5ec8"
         },
-        "downloadsSinceLatestVersion": 822,
+        "downloadsSinceLatestVersion": 834,
         "Dependencies": [
             "nexus-32",
             "nexus-341"
@@ -40404,7 +40693,7 @@
             "Gameplay",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-32",
@@ -40432,7 +40721,7 @@
         "dllSHA256s": {
             "RshLib.dll": "fb168f3609cb652b4858608947d1f347f44a433b8d4baa65afd297f373f41ddf"
         },
-        "downloadsSinceLatestVersion": 7074,
+        "downloadsSinceLatestVersion": 7123,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -40457,7 +40746,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/32/32-1777285860-206331044.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-31",
@@ -40500,7 +40789,7 @@
             "MonoMod.RuntimeDetour.dll": "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c",
             "MonoMod.Utils.dll": "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9"
         },
-        "downloadsSinceLatestVersion": 2263,
+        "downloadsSinceLatestVersion": 2351,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -40545,7 +40834,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-30",
@@ -40573,7 +40862,7 @@
         "dllSHA256s": {
             "HugAnimation.dll": "267b5dac76a677972209bd13604ae95dc2981c312b3788cc1a487f293402ed27"
         },
-        "downloadsSinceLatestVersion": 2281,
+        "downloadsSinceLatestVersion": 2300,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -40593,7 +40882,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/30/30-1777206636-1608729297.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-29",
@@ -40621,7 +40910,7 @@
         "dllSHA256s": {
             "SlidersUnlocker.dll": "5607c985f6fe7537b3af390e617e98c27f9601333d50d4f939e6595cb6937a3f"
         },
-        "downloadsSinceLatestVersion": 774,
+        "downloadsSinceLatestVersion": 775,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -40644,7 +40933,7 @@
             "ini tweak",
             "Unbalanced"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-28",
@@ -40696,7 +40985,7 @@
             "Gameplay",
             "Overhaul"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-27",
@@ -40744,7 +41033,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/27/27-1777141994-1203928537.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-26",
@@ -40785,7 +41074,7 @@
             "MonoMod.RuntimeDetour.dll": "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c",
             "MonoMod.Utils.dll": "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9"
         },
-        "downloadsSinceLatestVersion": 887,
+        "downloadsSinceLatestVersion": 889,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -40821,7 +41110,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-25",
@@ -40878,7 +41167,7 @@
             "Overhaul",
             "Textures"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-24",
@@ -40966,7 +41255,7 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-23",
@@ -40994,7 +41283,7 @@
         "dllSHA256s": {
             "Brainrot.dll": "919b7e5ebf870dbf1badf74109f42aba41ba6388af62a1b4c3f330079a18a9cf"
         },
-        "downloadsSinceLatestVersion": 657,
+        "downloadsSinceLatestVersion": 664,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -41021,7 +41310,7 @@
             "Video",
             "Visual Effects/Particles"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-22",
@@ -41049,7 +41338,7 @@
         "dllSHA256s": {
             "Elvis.dll": "28d60c2a5ea44b0b0a9b9e93b591b4011e74772ead1f1fecb711353e642f796f"
         },
-        "downloadsSinceLatestVersion": 140,
+        "downloadsSinceLatestVersion": 142,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -41076,7 +41365,7 @@
             "Video",
             "Visual Effects/Particles"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-21",
@@ -41104,7 +41393,7 @@
         "dllSHA256s": {
             "TimeLimitUnknown.dll": "3690382f08425e52d91cde76beaa7c72970a324fdde91ecb51e3ac3d6fbe6787"
         },
-        "downloadsSinceLatestVersion": 488,
+        "downloadsSinceLatestVersion": 492,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -41129,7 +41418,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/21/21-1776048067-1190830739.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-20",
@@ -41197,7 +41486,7 @@
             "User Interface",
             "Visual Effects/Particles"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-19",
@@ -41225,7 +41514,7 @@
         "dllSHA256s": {
             "LobotomyScreenshotMod.dll": "ca563cbdcc7404e5cbf45fbfbd6331fd0ed364a7835864ebf6c4974d260f5946"
         },
-        "downloadsSinceLatestVersion": 398,
+        "downloadsSinceLatestVersion": 404,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -41248,7 +41537,7 @@
             "Gameplay",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-18",
@@ -41290,7 +41579,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/18/18-1774031472-1359870539.png"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-17",
@@ -41355,7 +41644,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-16",
@@ -41383,7 +41672,7 @@
         "dllSHA256s": {
             "ScavShrapnelMod.dll": "1658521993d519e5de0f88247bb9b32facd7621657be4cec1486ff1d5091e4a2"
         },
-        "downloadsSinceLatestVersion": 1181,
+        "downloadsSinceLatestVersion": 1187,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -41434,7 +41723,7 @@
             "Visual Effects/Particles",
             "Water"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastQuickCheck": "2026-11-20T18:07:09.432Z",
@@ -41532,7 +41821,7 @@
         "dllSHA256s": {
             "LazyShooting.dll": "83088720533c686148c22fa45588882567a6b6f3ef639c4f9656f7c37f009d65"
         },
-        "downloadsSinceLatestVersion": 191,
+        "downloadsSinceLatestVersion": 193,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -41565,7 +41854,7 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-13",
@@ -41593,7 +41882,7 @@
         "dllSHA256s": {
             "bepinex_soundmod.dll": "d3e2a099cabac465faee24b54f896d32a3f7b7dacc8d712de5866e1eaa194c98"
         },
-        "downloadsSinceLatestVersion": 160,
+        "downloadsSinceLatestVersion": 161,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -41613,7 +41902,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/13/13-1773384759-304828152.jpg"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-12",
@@ -41637,7 +41926,7 @@
         "ReleaseDate": "2026-03-05T13:25:15.000Z",
         "SHA256": "6c6eab398f51f5cf5b1fbe081f5efe0919442823aba9087c41fd42db4850c8da",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 42,
+        "downloadsSinceLatestVersion": 43,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -41653,7 +41942,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/12/12-1772695174-2098819908.jpg"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-11",
@@ -41681,7 +41970,7 @@
         "dllSHA256s": {
             "MossLib.dll": "16cd594f0f9b7716710cd4e3f8b1fb94f4cbdde9df5659121bd98eba7a8f24ec"
         },
-        "downloadsSinceLatestVersion": 553,
+        "downloadsSinceLatestVersion": 555,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -41710,7 +41999,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/11/11-1772179831-1928073546.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-9",
@@ -41738,7 +42027,7 @@
         "dllSHA256s": {
             "Custom Structures.dll": "3dab127decdd6e4cb8426479a00cbfaec9a244b45e7ab62008e368eb7808cfd9"
         },
-        "downloadsSinceLatestVersion": 1008,
+        "downloadsSinceLatestVersion": 1115,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -41811,7 +42100,7 @@
             "Utilities for Players",
             "Water"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-8",
@@ -41844,11 +42133,11 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/8/8-1771530819-1880083820.png"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "LastNotifiedChangelogVersion": "v1.1",
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z",
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
         "Id": "nexus-7",
         "Name": "QoL Unknown",
         "Version": "v1.1.5",
@@ -41874,7 +42163,7 @@
         "dllSHA256s": {
             "QoL Unknown.dll": "bc0ab35b0824e46fa44570eb0d4e43017eb76d1f43d538f63daf720b6402ab2e"
         },
-        "downloadsSinceLatestVersion": 1393,
+        "downloadsSinceLatestVersion": 2363,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -42018,7 +42307,7 @@
         "Images": [
             "https://staticdelivery.nexusmods.com/mods/8391/images/6/6-1771531122-1725666684.png"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-5",
@@ -42066,7 +42355,7 @@
             "https://staticdelivery.nexusmods.com/mods/8391/images/5/5-1768286119-376404011.png"
         ],
         "nexusTags": [],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-4",
@@ -42094,7 +42383,7 @@
         "dllSHA256s": {
             "Prolo_Texturse.dll": "d43303df4c1551399c4ab5d698ef63f83a6079ef5bbb433b5d66f77a873cf665"
         },
-        "downloadsSinceLatestVersion": 129,
+        "downloadsSinceLatestVersion": 133,
         "Dependencies": [
             "nexus-115"
         ],
@@ -42120,7 +42409,7 @@
             "Textures",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-2",
@@ -42148,7 +42437,7 @@
         "dllSHA256s": {
             "CU_Skip_Lore_Mod.dll": "0cd7a5a198186e8ebe3046fcacf764668690690689103f8b065b620b1657d498"
         },
-        "downloadsSinceLatestVersion": 580,
+        "downloadsSinceLatestVersion": 583,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -42171,7 +42460,7 @@
             "Quality of Life",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     },
     {
         "Id": "nexus-1",
@@ -42199,7 +42488,7 @@
         "dllSHA256s": {
             "CU_ItemSpawner_Mod.dll": "67d21848c6e6a398538a51d465f30901d5b0bc9a16b606a4037e4d60b29c14c3"
         },
-        "downloadsSinceLatestVersion": 3788,
+        "downloadsSinceLatestVersion": 3860,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -42225,6 +42514,6 @@
             "Unbalanced",
             "User Interface"
         ],
-        "LastQuickCheck": "2026-11-20T01:30:33.416Z"
+        "LastQuickCheck": "2026-11-21T07:51:08.786Z"
     }
 ]

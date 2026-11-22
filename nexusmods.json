@@ -1,5 +1,177 @@
 [
     {
+        "Id": "nexus-1062",
+        "Name": "Realistic Liquid Transfer",
+        "Version": "0.1",
+        "bepinexVersion": "0.1.0",
+        "bepinexPlugins": {
+            "com.liquidtransfer.mod": "0.1.0"
+        },
+        "Summary": "Add a minigames for all liquid interactions",
+        "Description": "[size=4]If you think that centrifuge does not waste enough liquid, then this mod is for you \n<br />[b]\n<br />Description\n<br />[/b][/size]Adds a minigame for liquid transfer and draining\n<br />[color=#D4D4D8]Very wip, sill a bit laggy, not tested with other mods\n<br />Let me know if anything broken[/color]\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[color=#D4D4D8]Drop dll into BepInEx[/color]/plugins\n<br />\n<br />[size=4][b]Features[/b][/size]\n<br />LMB to move\n<br />RMB to rotate\n<br />a couple 'gameplay' settings to make it less insufferable\n<br />",
+        "Author": "daitergd",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1062/1062-1795322583-1566559274.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1062"
+        },
+        "DownloadUrl": "nexus://scavprototype/1062/3574",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1062,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-22T05:43:10.000Z",
+        "ReleaseDate": "2026-11-22T05:42:25.000Z",
+        "SHA256": "0f86adf161247287b46d6bcb5dcca7ce8f04cedbf4689861479bf0417ca09846",
+        "dllSHA256s": {
+            "RealisticLiquidTransfer.dll": "5ea5d3ec4c7884874e55405a16e96554065bff1454dd0d0a916a7647232555bc"
+        },
+        "downloadsSinceLatestVersion": 0,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [
+            "RealisticLiquidTransfer.dll"
+        ],
+        "dllVersion": "0.1.0",
+        "dllVersions": {
+            "RealisticLiquidTransfer.dll": "0.1.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 0,
+            "TotalDownloads": 0,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1062/1062-1795322583-1566559274.png"
+        ],
+        "nexusTags": [
+            "AI Assisted",
+            "Gameplay",
+            "User Interface"
+        ],
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z"
+    },
+    {
+        "Id": "nexus-1061",
+        "Name": "CasCrafting",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "com.froszyy.cascrafting": "1.0.0"
+        },
+        "Summary": "Adds various crafting QOL for Casualties: Unknown",
+        "Description": "[b][color=#d4d4d8][size=4]CasCrafting[/size][/color][/b][color=#d4d4d8] improves the vanilla crafting menu to make it faster and friendlier to use. [/color]\n<br />[list]\n<br />[*][color=#d4d4d8]The recipe list opens and refreshes more smoothly (20ms~ avg time -&gt; 4ms avg for all crafting interactions)[/color][/*]\n<br />[*][color=#d4d4d8]Ingredient lists are easier to read[/color][/*]\n<br />[*][color=#d4d4d8]search is more flexible (\"cutting\", etc shows all items with that tag)[/color][/*]\n<br />[*]You can jump straight to recipes for any item using I (ingredients/recipe) and U (uses).[/*]\n<br />[*]The menu syncs with the world (If items roll away, roll to you, etc, the menu updates in real time.)[/*]\n<br />[*]crafted items go in their respective containers (belt, medkit, material pouch, etc)[/*]\n<br />[/list]\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[list=1]\n<br />[*][color=#D4D4D8]Install BepInEx 5 for Casualties: Unknown, and run the game once so it creates its folders.[/color][/*]\n<br />[*][color=#D4D4D8]Install CUCoreLib[/color][/*]\n<br />[*][color=#D4D4D8]Put CasCrafting.dll in BepInEx/plugins/[/color][/*]\n<br />[*][color=#D4D4D8]Launch the game. A config file is created at BepInEx/config/com.froszyy.cascrafting.cfg, where you can turn features off or rebind keys.[/color][/*]\n<br />[/list]\n<br />I haven't tested it in multiplayer.\n<br />\n<br />\n<br />[size=4][b]Thanks[/b][/size]\n<br />[color=#D4D4D8]Jimmyking, the author for the library and template this is built on, and for the recipe and item hooks that made it easy to work with.\n<br />The BepInEx and Harmony teams.\n<br />Orsoniks for making Casualties: Unknown[/color]\n<br />[color=#D4D4D8]You![/color]",
+        "Author": "Froszyy",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1061/1061-1795316877-445528101.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1061"
+        },
+        "DownloadUrl": "nexus://scavprototype/1061/3567",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1061,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-22T03:02:17.000Z",
+        "ReleaseDate": "2026-11-22T02:05:02.000Z",
+        "SHA256": "34a61bdf4a55f6668bcc7ef9c18ef8670dd7702175a33cc79f54239dfea3e705",
+        "dllSHA256s": {
+            "CasCrafting.dll": "1cd219bec49fcc03c84e6a0395cff5a6f9550ac89625af64a23f33901e87f847"
+        },
+        "downloadsSinceLatestVersion": 14,
+        "Dependencies": [
+            "nexus-341"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "CasCrafting.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "CasCrafting.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 16,
+            "TotalDownloads": 16,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1061/1061-1795316877-445528101.png"
+        ],
+        "nexusTags": [
+            "Bug Fixes",
+            "Performance Optimization",
+            "Quality of Life",
+            "User Interface"
+        ],
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z"
+    },
+    {
+        "Id": "nexus-1060",
+        "Name": "DDExcNet-CUmodM and MPfix",
+        "Version": "1",
+        "bepinexVersion": "1.7.2",
+        "bepinexPlugins": {
+            "com.dden.mpfix": "1.7.2",
+            "com.dden.perf": "1.7.2",
+            "com.dden.saveeditor": "1.7.2",
+            "com.dden.cumodm": "1.7.2"
+        },
+        "Summary": "a mod manager , a together mod fix and other",
+        "Description": "\n<br />[center][b][i]DDExcNet — Multiplayer Fixes, Manager &amp; Tools (BepInEx)[/i][/b][/center]\n<br />\n<br />Co-op fixes for Casualties: Unknown — chip-rule sync, damage multiplier restore, craft-spawn retry, dropped-item physics, trader refresh — plus one in-game manager, a save editor and a performance reader. Same build on every machine.\n<br />未知伤亡联机修复合集：无芯片同步、伤害补倍率、合成失败补救、丢弃物穿墙、商人商品表重取，外加统一管理器、存档编辑器与性能读数。各端请用同一版本。\n<br />\n<br />[b]1) Description[/b]\n<br />\n<br />[EN]\n<br />\n<br />DDExcNet is a single BepInEx 5 package for Casualties: Unknown that fixes the co-op problems my group kept hitting, and puts every switch behind one in-game panel instead of scattering config files around.\n<br />\n<br />The package ships five DLLs:\n<br />\n<br />- DDEN.Shared — shared layer used by the other four\n<br />- DDExcNet-CUmodM — the manager window (overview, compatibility check, all settings, per-module pages)\n<br />- DDEN.MPfix — the multiplayer fix set; this is why most people install the pack\n<br />- DDEN.SaveEditor — optional graphic save editor\n<br />- DDEN.NetPerfTracker — optional performance reader\n<br />\n<br />Design rules I hold myself to, because they are what makes a fix trustworthy in co-op:\n<br />\n<br />- The host stays authoritative. Nothing here lets a client spawn items, delete items, or deal damage on its own.\n<br />- Fixes stay minimal. The damage fixes restore a multiplier the host was never applying and then hand the result back to the framework's own validation — the original rules still decide.\n<br />- Missing dependencies disable the affected switches instead of crashing, and the panel says which dependency is missing.\n<br />- When something cannot be fixed properly, the attempt is removed instead of shipped as a half-working guess. Two features were dropped this way and are documented as unsupported.\n<br />\n<br />What this mod does not do: it does not touch the economy, does not add items or recipes, does not remove game assets, and does not claim to fix every desync. Health can still jump in setups where race, strength, tools or body state differ between host and client.\n<br />\n<br />Host and every client must run the same build. Mixed versions make the affected fixes stand down by design, so the first thing to check when something \"stops working\" is the version on each machine.\n<br />\n<br />The in-game UI is currently Chinese. An English switch is planned but not implemented; every row has a one-line description and a hover tooltip listing what it does, what it fixes, and what it costs in performance.\n<br />\n<br />[中文]\n<br />\n<br />这是一个 Casualties: Unknown（未知伤亡）的 BepInEx 5 整合包：修掉我们几个人联机时反复遇到的毛病，并把所有开关收进游戏里同一个面板，而不是散落在配置文件里。\n<br />\n<br />包内是五个 dll：\n<br />\n<br />- DDEN.Shared —— 公共层，另外四个都要用它\n<br />- DDExcNet-CUmodM —— 管理器窗口（总览、兼容性检查、全部设置、各模块单独页）\n<br />- DDEN.MPfix —— 多人修复合集，多数人装这个包就是为了它\n<br />- DDEN.SaveEditor —— 可选，图形化存档编辑器\n<br />- DDEN.NetPerfTracker —— 可选，性能读数工具\n<br />\n<br />几条我自己守的规矩，因为联机场景里「可信」比「功能多」更重要：\n<br />\n<br />- 主机始终是权威。这里没有任何东西让客机自己造物品、删物品或自己决定伤害。\n<br />- 修复尽量小。伤害类修复只是把主机漏乘的世界倍率补回去，之后仍旧交给联机框架原来的判定，原版规则照样说话。\n<br />- 缺前置时只停用相关开关，不会崩，面板会写清缺了什么。\n<br />- 修不好的东西就撤掉，不留一个半可靠的猜测在包里。已经有两个功能按这条撤掉了，文档里明确写成「不再尝试」。\n<br />\n<br />这个 mod 不做什么：不碰经济，不加物品和配方，不动游戏原资源，也不声称修好所有不同步。主机与客机在种族、力量、工具或身体状态上差异较大时，血量仍可能跳。\n<br />\n<br />主机和每一位客机必须用同一个版本。版本不一致时，相关修复会按设计主动停用；所以「忽然不起作用了」第一件要查的是各端的版本号。\n<br />\n<br />游戏内界面目前是中文。英文切换只做了方案、还没实现；每一行设置都有一句说明，鼠标悬停能看到它做什么、修什么、开销多少。\n<br />\n<br />\n<br />[b] 2) Installation instructions[/b]\n<br />\n<br />[EN]\n<br />\n<br />1. Install BepInEx 5 (win_x64) for Casualties: Unknown, then launch the game once and close it, so the BepInEx folder is generated.\n<br />\n<br />2. Open the downloaded archive. It contains five DLLs plus README, LICENSE, LICENSE-ASSETS and NOTICE.\n<br />\n<br />3. Put all five DLLs into:\n<br />   &lt;game folder&gt;&#92;BepInEx&#92;plugins&#92;DDEN&#92;\n<br />\n<br />   Create the DDEN folder if it does not exist. Do not keep an old copy next to a new one — a duplicated plugin will fail to load.\n<br />\n<br />4. Start the game. Open BepInEx&#92;LogOutput.log and look for lines like:\n<br />   Loading [DDExcNet CUmod Manager 1.7.2]\n<br />   Loading [DDEN MP Fix 1.7.2]\n<br />   If you see them, the plugins loaded.\n<br />\n<br />5. In game, press F8 to open the manager, or type \"dden\" in the console. If F8 is already taken by another mod, the panel picks a free key and saves it — use whatever the compatibility page shows.\n<br />\n<br />6. Multiplayer: host and every client install the same version. Together / CasualtiesMP 5.5.4 is required for the multiplayer fixes; CUCoreLib is required for the chip-rule, craft-spawn, trader and host-authority features.\n<br />\n<br />Optional components: the save editor and the performance reader can be left out. Deleting their DLLs removes the corresponding page; nothing else changes.\n<br />\n<br />Uninstalling: delete the five DLLs from BepInEx/plugins/DDEN/. No registry entries, no leftover services, no changes to save files (the save editor keeps its own .cumod.bak copies next to the saves you edited).\n<br />\n<br />[中文]\n<br />\n<br />1. 先给 Casualties: Unknown 装好 BepInEx 5（win_x64），启动一次游戏再关掉，让它生成 BepInEx 文件夹。\n<br />\n<br />2. 打开下载的压缩包：里面有五个 dll，以及 README、LICENSE、LICENSE-ASSETS、NOTICE。\n<br />\n<br />3. 把五个 dll 一起放到：\n<br />   &lt;游戏目录&gt;&#92;BepInEx&#92;plugins&#92;DDEN&#92;\n<br />\n<br />   没有 DDEN 文件夹就自己建一个。不要旧的一份、新的一份同时留着——同一个插件重复存在会加载失败。\n<br />\n<br />4. 启动游戏，打开 BepInEx&#92;LogOutput.log，看到这样的行就算成功：\n<br />   Loading [DDExcNet CUmod Manager 1.7.2]\n<br />   Loading [DDEN MP Fix 1.7.2]\n<br />\n<br />5. 进游戏按 F8 打开管理器，或在控制台输入 dden。如果 F8 被别的模组占用，面板会自动换一个空闲键并记住，以兼容性页面显示的为准。\n<br />\n<br />6. 联机：主机和每一位客机装同一版本。多人修复需要 Together / CasualtiesMP 5.5.4；无芯片同步、合成补救、商人商品表和主机权威配置还需要 CUCoreLib。\n<br />\n<br />可选项：存档编辑器和性能读数可以不装，删掉对应 dll 就没这一页，其它功能不受影响。\n<br />\n<br />卸载：删掉 BepInEx/plugins/DDEN/ 里的五个 dll 即可。不写注册表、不留后台服务；存档文件不会被改（编辑器会在你改过的存档旁边留 .cumod.bak 备份）。\n<br />\n<br />\n<br />[b] 3) Main features[/b]\n<br />\n<br />[EN]\n<br />\n<br />MULTIPLAYER FIXES (DDEN.MPfix)\n<br />\n<br />Chip rule sync\n<br />The host runs with the unchipped rule while clients still behave as chipped — different loot, different combat math, name plates out of sync. This applies the host's actual rule set and local-player state to clients, and syncs back when the host turns it off.\n<br />\n<br />Damage multiplier restore (blocks, units, bodies/limbs)\n<br />When a client mines a block or hits a crate, plant, animal or limb, health drops and then snaps back. The host's copy of that attack never runs the original step that multiplies damage by the world damage setting, so its number is too small and the client's report gets rejected. This restores the missing multiplier and leaves the framework's own validation, caps and rejection path untouched. Three separate switches, because the three attack paths are separate in the game.\n<br />\n<br />Craft-spawn retry\n<br />Crafting modded recipes in co-op can end with \"cannot create item\". Retried only when the host produced no result at all; a successful craft is never given an extra item.\n<br />\n<br />Dropped-item physics\n<br />Items a player manually drops can fall through the floor because their colliders stay disabled from being held. Colliders are re-enabled only on the actual drop action. Nothing is moved, nothing is cloned, no background scanning.\n<br />\n<br />Trader list refresh (toggle)\n<br />Paying a trader without receiving the goods happens when the client's item list drifted from the host's. When enabled, opening the trade UI asks the host to resend its snapshot. The client never fabricates goods locally.\n<br />\n<br />Player name display (toggle)\n<br />Chinese names shown as question marks, digits or blank. Display-only fix: uses the game's own fonts, unknown glyphs render as \"?\", and it never writes player names, Steam IDs or save identities.\n<br />\n<br />Host authority config (toggle)\n<br />Optionally let the host's settings apply to clients for one session, so a group can run one ruleset. Values live in a temporary layer — a client's cfg file is never overwritten, and turning it off restores that client's own settings.\n<br />\n<br />TOOLS\n<br />\n<br />Manager\n<br />Overview with per-feature status, compatibility check (mod stack, patch conflicts, hotkey clashes), all settings in one page with a status bar per row, and separate pages per module. External mods that expose their settings get their own page too.\n<br />\n<br />Save editor\n<br />Graphic editing of values, items and progress, with QoL multi-slot saves understood. Edits are staged in a working copy and written with a backup; the \"disable achievements\" flag is never changed automatically.\n<br />\n<br />Performance reader\n<br />Frame time, honest 2D-simulation timing where the engine exposes it, item awake/asleep counts, and change events. Read-only, installs no patches, exports its buffer to a log file on demand.\n<br />\n<br />DEFAULTS (in 1.7.2 — the changelog for each release is authoritative, defaults do change)\n<br />on: chip rule sync, craft-spawn retry, the three damage switches, dropped-item physics, trader list refresh\n<br />off: player name display, host authority config, the \"one becomes two\" purchase extra\n<br />\n<br />[中文]\n<br />\n<br />多人修复（DDEN.MPfix）\n<br />\n<br />无芯片同步\n<br />主机开着无芯片规则，客机却仍按有芯片跑——掉落不同、战斗计算不同、名牌对不上。这个功能把主机真实的规则与本机玩家状态套到客机上，主机关掉时再同步回去。\n<br />\n<br />伤害补倍率（方块 / 单位 / 角色与肢体）\n<br />客机挖方块、打箱子与植物与动物、打角色或肢体类敌人时，血量先掉一截又弹回去。原因是主机那份攻击从没执行「乘上世界伤害倍率」这一步，数字偏小，客机上报就被拒。这里只把漏掉的倍率补回去，联机框架原有的校验、上限和拒绝退路一行不改。三条攻击路径在游戏里本来就是分开的，所以是三个独立开关。\n<br />\n<br />合成补救\n<br />联机合成模组加的配方时可能提示「无法生成物品」。只有主机完全没生成结果时才重试一次；已经成功合成的情况绝不会多给一件。\n<br />\n<br />丢弃物解除穿墙\n<br />玩家亲手丢出的物品会一路穿过地板掉出地图，因为它在被拿起来时碰撞体被关掉、丢出后没打开。只在「丢出」这一下把它打开；不挪位置、不复制、不后台扫描。\n<br />\n<br />商人商品表重取（可关）\n<br />付了钱却拿不到东西，通常是客机看到的商品和主机不一致。打开后，每次进交易界面都请主机重发一份商品表。客机不会在本地自己造货。\n<br />\n<br />名称显示（可关）\n<br />中文名字被显示成问号、数字或空白。只改显示：用游戏自带字体，缺字显示 ?，从不改写玩家名、Steam ID 或存档身份。\n<br />\n<br />主机权威配置（可关）\n<br />可选：让主机的设置在这一局临时套到客机上，方便一群人跑同一套规则。值只存在临时层，客机的配置文件不会被覆盖；关掉就恢复客机自己的设置。\n<br />\n<br />工具\n<br />\n<br />管理器\n<br />总览页看每个功能的运行状态；兼容性检查会列模组栈、补丁冲突和快捷键冲突；所有设置集中一页，每行左侧有色条表示开/关/实验性；各模块还有单独页。别的模组只要交出自己的设置，也会被收进独立页面。\n<br />\n<br />存档编辑器\n<br />图形化改数值、物品和进度，认得 QoL 的多存档位。修改先暂存，保存时写备份；「禁用成就」的标记不会被自动改动。\n<br />\n<br />性能读数\n<br />帧耗时、引擎真给得出的 2D 模拟耗时、物品清醒/休眠数量、状态变化事件。只读，不装补丁，需要时手动导出日志。\n<br />\n<br />以下默认值以 1.7.2 为准（每次发布以更新记录为准，默认值会调整）\n<br />默认开：无芯片同步、合成补救、三条伤害补倍率、丢弃物解除穿墙、商人商品表重取\n<br />默认关：名称显示、主机权威配置、购买多给一件的娱乐开关\n<br />\n<br />\n<br />[b] 4) Requirements[/b]\n<br />\n<br />[EN]\n<br />\n<br />REQUIRED\n<br />\n<br />- Casualties: Unknown (Windows, Mono build)\n<br />- BepInEx 5 (win_x64) — this pack is a set of BepInEx plugins and does nothing without it.\n<br />\n<br />REQUIRED FOR THE MULTIPLAYER FIXES\n<br />\n<br />- Together / CasualtiesMP 5.5.4 — the fixes target this version; 5.5.3 was checked as well. Newer versions may work but are not verified, and the panel will tell you when the version check fails.\n<br />- CUCoreLib 1.1 — needed by chip-rule sync, craft-spawn retry, trader refresh and host authority config.\n<br />\n<br />OPTIONAL\n<br />\n<br />- QoL Unknown — if installed, the save editor understands its multi-slot layout.\n<br />\n<br />INSTALLATION NOTES\n<br />\n<br />- There is no Vortex installer package. Copy the DLLs manually as described in the installation instructions; Vortex users can still install manually or repack for personal use.\n<br />- Do not install an old and a new copy side by side.\n<br />- No other mods are modified on disk. Nothing is patched globally across your plugin folder.\n<br />\n<br />[中文]\n<br />\n<br />必需\n<br />\n<br />- Casualties: Unknown（Windows / Mono 版）\n<br />- BepInEx 5（win_x64）—— 这是一组 BepInEx 插件，没有它完全不工作。\n<br />\n<br />多人修复必需\n<br />\n<br />- Together / CasualtiesMP 5.5.4 —— 修复就是照这个版本核对的，5.5.3 也核对过。更新的版本可能能用但没验证，版本核对不通过时面板会明确提示。\n<br />- CUCoreLib 1.1 —— 无芯片同步、合成补救、商人商品表重取、主机权威配置要用到它。\n<br />\n<br />可选\n<br />\n<br />- QoL Unknown —— 装了的话，存档编辑器能识别它的多存档位。\n<br />\n<br />安装注意\n<br />\n<br />- 没有 Vortex 安装包。按安装说明手动复制 dll；用 Vortex 的人可以手动装，也可以自己打包自用。\n<br />- 不要旧的和新的同时留着。\n<br />- 不会改动磁盘上其它模组，也不会在你的插件目录里做全局替换。\n<br />\n<br />\n<br />[b] 5) Shout outs[/b]\n<br />\n<br />[EN]\n<br />\n<br />Thanks to the people whose work this pack sits on:\n<br />\n<br />- The BepInEx and HarmonyX authors — none of this exists without a loader and a patching library that survive a Unity Mono game.\n<br />- The CUCoreLib author — the networking helpers made several of these fixes possible without reimplementing transport.\n<br />- The Together / CasualtiesMP team — for a co-op framework readable enough to reason about, and for the patches this pack deliberately works around instead of replacing.\n<br />- The QoL Unknown author — the save editor reads its multi-slot layout rather than inventing a parallel one.\n<br />- Everyone who tested this in real sessions and reported what actually happened instead of what should have happened, especially the people who ran it on both sides and sent logs.\n<br />\n<br />And to the modders of this game in general: the amount of shared knowledge around BepInEx mods for Casualties: Unknown is unusually generous, and it saved a lot of reverse engineering.\n<br />\n<br />[中文]\n<br />\n<br />这个包是站在别人肩膀上做的，谢谢：\n<br />\n<br />- BepInEx 与 HarmonyX 的作者 —— 没有能在 Unity Mono 游戏上稳定工作的加载器和补丁库，这一切都不存在。\n<br />- CUCoreLib 的作者 —— 联机辅助接口让其中好几个修复不必自己重造传输层。\n<br />- Together / CasualtiesMP 团队 —— 联机框架写得足够可读，这些修复是「绕开」而不是「替换」它的逻辑。\n<br />- QoL Unknown 的作者 —— 存档编辑器是去读它的多存档位布局，而不是另造一套。\n<br />- 所有在真实联机里试过、并且如实反馈发生了什么而不是应该发生什么的人，尤其是双端都跑、还愿意贴日志的那几位。\n<br />\n<br />也谢谢这款游戏的整体模组圈子：关于 Casualties: Unknown 的 BepInEx 模组，公开可查的经验比想象中多得多，省掉了大量逆向工作。\n<br />```\n<br />\n<br />---",
+        "Author": "cubstaryow",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1060/1060-1795312319-1304388657.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1060"
+        },
+        "DownloadUrl": "nexus://scavprototype/1060/3565",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1060,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-22T02:02:50.000Z",
+        "ReleaseDate": "2026-11-22T01:58:52.000Z",
+        "SHA256": "d266407b0cbe36f6a2008eb5809f189583e16cf9a9530a9ba5a1def97fc165cb",
+        "dllSHA256s": {
+            "DDEN.MPfix.dll": "6ae8e1cdc87c1c69abb8acccbdd91ae0b4dc9298a47412f6e8a4240be2d784f6",
+            "DDEN.NetPerfTracker.dll": "26d7cfddaca9e4ead357ef54ee2ef4a214a2cb3670137622887f21f06c774521",
+            "DDEN.SaveEditor.dll": "b51b54d7f27c509d66d646b73630f84348257e57791479d16d1cb41c6578aacc",
+            "DDEN.Shared.dll": "06b668e7d7904484baa5b8a46651ecb7faf7411f44d2277adc6b71200ddc568f",
+            "DDExcNet-CUmodM.dll": "df8fc0c318aad803c2af15c8e704e319a7643f0ec5bc107faaddd889a4434986"
+        },
+        "downloadsSinceLatestVersion": 4,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [
+            "DDEN.MPfix.dll",
+            "DDEN.NetPerfTracker.dll",
+            "DDEN.SaveEditor.dll",
+            "DDEN.Shared.dll",
+            "DDExcNet-CUmodM.dll"
+        ],
+        "dllVersion": "1.7.2",
+        "dllVersions": {
+            "DDEN.MPfix.dll": "1.7.2",
+            "DDEN.NetPerfTracker.dll": "1.7.2",
+            "DDEN.SaveEditor.dll": "1.7.2",
+            "DDExcNet-CUmodM.dll": "1.7.2"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 5,
+            "TotalDownloads": 5,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1060/1060-1795312319-1304388657.png"
+        ],
+        "nexusTags": [
+            "AI Media",
+            "AI-Generated Content"
+        ],
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z"
+    },
+    {
         "Id": "nexus-1059",
         "Name": "Always Given A Chance",
         "Version": "1",
@@ -25,7 +197,7 @@
         "dllSHA256s": {
             "AlwaysGivenAChance.dll": "4c001be13687efd8f451927097205026b45037e8415512cc9a46dd430c743572"
         },
-        "downloadsSinceLatestVersion": 3,
+        "downloadsSinceLatestVersion": 14,
         "Dependencies": [
             "nexus-115"
         ],
@@ -50,7 +222,7 @@
             "Gameplay",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-22T01:46:12.167Z"
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z"
     },
     {
         "Id": "nexus-1058",
@@ -74,7 +246,7 @@
         "ReleaseDate": "2026-11-21T20:33:58.000Z",
         "SHA256": "ae3d13c3cc9e5a7bf1b9a5c807f230bfd82112fdb5fde73adf6c567ebbca067f",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 36,
+        "downloadsSinceLatestVersion": 52,
         "Dependencies": [
             "nexus-115"
         ],
@@ -98,10 +270,10 @@
             "User Interface",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-22T01:46:12.167Z"
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z"
     },
     {
-        "LastQuickCheck": "2026-11-22T01:46:12.167Z",
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z",
         "Id": "nexus-1055",
         "Name": "Casualties Unknown Russifier",
         "Version": "1",
@@ -110,24 +282,24 @@
             "com.myname.casualtiesunknown.russifier": "1.0.0"
         },
         "Summary": "Русификатор для Casualties: Unknown",
-        "Description": "[color=#d4d4d8]Перевёл каждую строку вручную. Также, заменены некоторые менюшки и логотип. Язык можно выбрать в настройках, чтобы выключить переведённые меню удалите папку мода в &#92;Casualties Unknown&#92;BepInEx&#92;plugins[/color]\n<br />\n<br />[color=#d4d4d8]Чтоб скачать мод нада перекинуть файлы из CURussifier в корневую папку игры и всо. С модом сам активно играю и буду играть, такшо если буду замечать баги или неточности буду редачить перевод. [/color]\n<br />\n<br />Последующие обновления CU тоже буду стараться переводить если к тому моменту не полетит кукуха, пушто переводить 6.5к строчек в соло это нихуя себе.\n<br />\n<br />",
+        "Description": "[color=#d4d4d8]Перевел каждую строку вручную. Также, заменены некоторые менюшки и логотип. Язык можно выбрать в настройках, чтобы выключить переведённые меню удалите папку мода в &#92;Casualties Unknown&#92;BepInEx&#92;plugins[/color]\n<br />\n<br />[color=#d4d4d8]Чтоб скачать мод нада перекинуть файлы из CURussifier в корневую папку игры и всо. С модом сам активно играю и буду играть, такшо если буду замечать баги или неточности буду редачить перевод. [/color]\n<br />\n<br />Последующие обновления CU тоже буду стараться переводить если к тому моменту не полетит кукуха, пушто переводить 6.5к строчек в соло это нихуя себе.\n<br />\n<br />",
         "Author": "OwOssi",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1055/1055-1795290292-505143787.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1055"
         },
-        "DownloadUrl": "nexus://scavprototype/1055/3560",
+        "DownloadUrl": "nexus://scavprototype/1055/3573",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1055,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-21T23:49:28.000Z",
-        "ReleaseDate": "2026-11-21T23:49:28.000Z",
-        "SHA256": "6537a961c2c7a873960a08b52215bbab2411e57120ffbaca6fe33c8469ed99c2",
+        "LastUpdated": "2026-11-22T05:19:28.000Z",
+        "ReleaseDate": "2026-11-22T05:19:28.000Z",
+        "SHA256": "82d345d3892fb60e43187b0e9fc8223ac13408005c0cdf0bc80513b63a8b6dfa",
         "dllSHA256s": {
             "CURussifier.dll": "088fc7fc082b09c133cbba60bd790383d3cc1b1a5402fb1fd2a7ef804c3ab9ff"
         },
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 0,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -138,9 +310,9 @@
             "CURussifier.dll": "1.0.0"
         },
         "Statistics": {
-            "Endorsements": 0,
-            "UniqueDownloads": 16,
-            "TotalDownloads": 17,
+            "Endorsements": 1,
+            "UniqueDownloads": 21,
+            "TotalDownloads": 24,
             "TotalViews": null
         },
         "Images": [
@@ -156,7 +328,7 @@
         "Id": "nexus-1054",
         "Name": "Confinements Unknown",
         "Version": "1.0.1",
-        "bepinexVersion": "1.1",
+        "bepinexVersion": "1.0.0",
         "bepinexPlugins": {
             "com.gouxi.confinementsunknown": "1.0.0",
             "net.cucorelib": "1.1"
@@ -180,7 +352,7 @@
             "confinementsunknown.dll": "0b736294ff2b4a7bde56c5ae3cb64ba68c79671e3f0806e9fa47c97e09298ef3",
             "CUCoreLib.dll": "c0f064260b2671d02bf802c460aa346c6b858ec9269f2ff93439ebabaa940aa3"
         },
-        "downloadsSinceLatestVersion": 34,
+        "downloadsSinceLatestVersion": 59,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -196,7 +368,7 @@
             "confinementsunknown.dll",
             "CUCoreLib.dll"
         ],
-        "dllVersion": "1.1",
+        "dllVersion": "1.0.0",
         "dllVersions": {
             "confinementsunknown.dll": "1.0.0",
             "CUCoreLib.dll": "1.1"
@@ -221,37 +393,43 @@
             "Sexualised",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-22T01:46:12.167Z"
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z"
     },
     {
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z",
         "Id": "nexus-1053",
         "Name": "Despairful Drones",
-        "Version": "1",
+        "Version": "1.5",
         "bepinexVersion": "1.0.0",
         "bepinexPlugins": {
             "com.you.soundswap": "1.0.0"
         },
-        "Summary": "This mod for Casualties Unknown changes the drones (Pain, Drowning, Etc but for now only pain and drowning.) and makes them more despairful.",
-        "Description": "This mod for Casualties Unknown changes the drones (Pain, Drowning, Etc but for now only pain and drowning.) and makes them more despairful. \n<br />\n<br />INSTALLATION INSTRUCTIONS. When you open up the folder you will see 2 things, a .DLL file, and a folder labeled \"Sounds\". You want to put the .DLL file into your BepInEx plugins folder, and put the Sounds folder INTO YOUR BASE BEPINEX FOLDER. NOT THE PLUGINS FOLDER, THE BASE BEPINEX FOLDER. once that is done the mod will work. (The mod currently only has replaced pain, and drowning drones. I will add more later)\n<br />\n<br />",
+        "Summary": "This mod for Casualties Unknown changes the drones (Pain, Drowning, Etc but for now only pain, drowning, and dying/low blood volume.) and makes them more despairful.",
+        "Description": "This mod for Casualties Unknown changes the drones (Pain, Drowning, Etc but for now only pain, drowning, and dying/low blood volume.) and makes them more despairful. \n<br />\n<br />INSTALLATION INSTRUCTIONS. When you open up the folder you will see 2 things, a .DLL file, and a folder labeled \"Sounds\". You want to put the .DLL file into your BepInEx plugins folder, and put the Sounds folder INTO YOUR BASE BEPINEX FOLDER. NOT THE PLUGINS FOLDER, THE BASE BEPINEX FOLDER. once that is done the mod will work. (The mod currently only has replaced pain, drowning, and dying/low blood volume drones. I will add more later)\n<br />\n<br />",
         "Author": "Vezux",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1053/1053-1795288627-1537286100.jpg",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1053"
         },
-        "DownloadUrl": "nexus://scavprototype/1053/3544",
+        "DownloadUrl": "nexus://scavprototype/1053/3570",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1053,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-21T19:18:08.000Z",
-        "ReleaseDate": "2026-11-21T19:16:32.000Z",
-        "SHA256": "b4863060479c09c2c3d6f36fa514cbc5b8fe61699c34798cad693184de998fb2",
+        "LastUpdated": "2026-11-22T04:00:13.000Z",
+        "ReleaseDate": "2026-11-22T03:57:33.000Z",
+        "SHA256": "1e158714ca14a12a48b82a0bf2f13978dbd2a64a878c30c672b1db998ac6610c",
         "dllSHA256s": {
             "SoundSwap.dll": "cfc9ce191b6432dfa88b3c62fae8f7df158f63befafd1c5139f780cffe4afc24"
         },
-        "downloadsSinceLatestVersion": 5,
+        "downloadsSinceLatestVersion": 1,
         "Dependencies": [],
-        "Changelogs": [],
+        "Changelogs": [
+            {
+                "Version": "1.5",
+                "Changelog": "- Added dying/low blood replacement (isthistheend replacement.)"
+            }
+        ],
         "dllNames": [
             "SoundSwap.dll"
         ],
@@ -261,8 +439,8 @@
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 2,
-            "TotalDownloads": 2,
+            "UniqueDownloads": 8,
+            "TotalDownloads": 9,
             "TotalViews": null
         },
         "Images": [
@@ -276,10 +454,10 @@
             "Quality of Life",
             "Sound FX",
             "Utilities for Players"
-        ],
-        "LastQuickCheck": "2026-11-22T01:46:12.167Z"
+        ]
     },
     {
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z",
         "Id": "nexus-1052",
         "Name": "ETG Armory Mod",
         "Version": "1",
@@ -289,19 +467,19 @@
         "Description": "这是为New Firearms模组制作的扩展包，需要依附于原模组使用。\n<br />\n<br />[b]安装[/b]：\n<br />解压文件并与对应的文件夹合并。\n<br />\n<br />[b]描述[/b]：\n<br />新增加了来自挺进地牢的8把武器\n<br />-外星引擎\n<br />-亚里火箭发射器\n<br />-AKEY-47\n<br />-弩炮\n<br />-蟋蟀轰炸机\n<br />-火神机炮\n<br />-大型霰弹枪\n<br />-矿井切割机\n<br />\n<br />相对于原版枪械而言并不是特别平衡，也因为原模组限制不能完全还原，另外只有中文语言，因为我不知道怎么做双语，原模组没有留相关的接口。\n<br />\n<br />[b]需求[/b]：\n<br />New Firearms\n<br />RshLib\n<br />BepInEx",
         "Author": "MarthaMana MonXi",
         "Links": {
-            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1052/1052-1795272699-1572087635.png",
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1052/1052-1795272713-1626341530.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1052"
         },
-        "DownloadUrl": "nexus://scavprototype/1052/3536",
+        "DownloadUrl": "nexus://scavprototype/1052/3568",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1052,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-21T14:54:41.000Z",
-        "ReleaseDate": "2026-11-21T14:52:44.000Z",
-        "SHA256": "97233e8ecb575c884841fd4a3f70efd8345d5dad9c0ac29b2bee43959e043a38",
+        "LastUpdated": "2026-11-22T02:15:54.000Z",
+        "ReleaseDate": "2026-11-22T02:15:54.000Z",
+        "SHA256": "5fda3a19b7ccc256bd99033ad780f5ee48c565f864bd0eaa539f966da45427bb",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 1,
         "Dependencies": [
             "nexus-122"
         ],
@@ -311,11 +489,12 @@
         "dllVersions": {},
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 0,
-            "TotalDownloads": 0,
+            "UniqueDownloads": 3,
+            "TotalDownloads": 3,
             "TotalViews": null
         },
         "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1052/1052-1795272713-1626341530.png",
             "https://staticdelivery.nexusmods.com/mods/8391/images/1052/1052-1795272699-1572087635.png"
         ],
         "nexusTags": [
@@ -323,8 +502,7 @@
             "Collection Asset",
             "Gameplay",
             "Textures"
-        ],
-        "LastQuickCheck": "2026-11-21T15:45:09.625Z"
+        ]
     },
     {
         "Id": "nexus-1051",
@@ -999,7 +1177,7 @@
         "Id": "nexus-1037",
         "Name": "custom death a last stand screen. RUS and ENG",
         "Version": "1",
-        "bepinexVersion": "1.1",
+        "bepinexVersion": "1.0.0",
         "bepinexPlugins": {
             "net.cucorelib": "1.1",
             "user.casualties.deathscreenmod": "1.0.0"
@@ -1032,7 +1210,7 @@
             "CUCoreLib.dll",
             "DeathScreenMod.dll"
         ],
-        "dllVersion": "1.1",
+        "dllVersion": "1.0.0",
         "dllVersions": {
             "CUCoreLib.dll": "1.1",
             "DeathScreenMod.dll": "1.0.0"
@@ -1227,40 +1405,40 @@
         "LastQuickCheck": "2026-11-22T01:46:12.167Z"
     },
     {
-        "LastQuickCheck": "2026-11-21T07:51:08.786Z",
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z",
         "Id": "nexus-1032",
         "Name": "DDExcNet-CUmodM",
-        "Version": "1.5",
-        "bepinexVersion": "1.5.0",
+        "Version": "1.7.2",
+        "bepinexVersion": "1.7.2",
         "bepinexPlugins": {
-            "com.dden.mpfix": "1.5.0",
-            "com.dden.perf": "1.5.0",
-            "com.dden.saveeditor": "1.5.0",
-            "com.dden.cumodm": "1.5.0"
+            "com.dden.mpfix": "1.7.2",
+            "com.dden.perf": "1.7.2",
+            "com.dden.saveeditor": "1.7.2",
+            "com.dden.cumodm": "1.7.2"
         },
         "Summary": "一个统一的管理器，加上一套专治联机不同步的修复 ------------------------A unified manager, along with a set of fixes to address online desynchronization.",
-        "Description": "对联机模组的部分问题，如：主客机有无芯片不同步，物品穿墙掉落等等做出了修复， 具体修复请查看GitHub\n<br />我此后的模组也将支持这个管理器\n<br />\n<br />Fixed several issues with the multiplayer mod, such as desynchronization between the host and client regarding whether chips are present, items clipping through walls and falling, and more , Please check GitHub for the specific fixes.\n<br />My future mods will also support this manager.\n<br />\n<br />安装：\n<br />1.游戏先装好 BepInEx 5（游戏目录下会出现 BepInEx/ 文件夹）\n<br />2.把下载的压缩包文件解压，把DDEN文件夹放进 BepInEx/plugins/—— 包内的dll文件必须放在同一个文件夹里。 \n<br />3.想用联机相关的修复，还需要装联机框架 Together 与 CUCoreLib ，没装也能进游戏，只是联机那部分修复不会生效，管理器里会标成「功能受限」\n<br />\n<br />Installation:\n<br />1. Install BepInEx 5 for the game first (a BepInEx/ folder will appear in the game directory). \n<br />2. Extract the downloaded archive and place the DDEN folder into BepInEx/plugins/ — the dll files in the package must be placed in the same folder. \n<br />3. To use the multiplayer-related fixes, you also need to install the multiplayer frameworks Together and CUCoreLib. You can still enter the game without them, but the multiplayer fixes won't take effect, and they will be marked as \"Limited Functionality\" in the manager. ",
+        "Description": "本模组代发已结束喵，后续更新将发布在新地址： https://www.nexusmods.com/scavprototype/mods/1060 \n<br />\n<br />The proxy posting of this mod has ended, meow. Future updates will be released at the new address: https://www.nexusmods.com/scavprototype/mods/1060 \n<br />[heading]Description / 主要目的[/heading]\n<br />[b]中文[/b]：DDEN · CUmod 是《Casualties Unknown》的模组合集：一个统一管理器，加上一套专治联机不同步的修复，附带可选的存档编辑器与只读性能跟踪器。\n<br />[b]English[/b]: DDEN · CUmod is a mod collection for [i]Casualties: Unknown[/i]: one unified manager, a set of multiplayer desync fixes, plus an optional save editor and a read-only performance tracker.\n<br />[heading]Installation instructions / 安装步骤[/heading]\n<br />[b]中文[/b]：安装 BepInEx 5，把整个 DDEN 文件夹放进 \n<br />[code]BepInEx/plugins/DDEN/[/code]（不要拆开），装好后重启游戏按 \n<br />[code]F8[/code] 打开管理器。多人修复还需要 CUCoreLib 与 Together / CasualtiesMP。\n<br />[b]English[/b]: Install BepInEx 5, put the whole DDEN folder into \n<br />[code]BepInEx/plugins/DDEN/[/code] (keep it together), restart and press \n<br />[code]F8[/code] to open the manager. Multiplayer fixes also need CUCoreLib and Together / CasualtiesMP.\n<br />[heading]Main features / 核心功能[/heading]\n<br />[b]中文[/b]：\n<br />[list]\n<br />[*]统一管理器：总览、兼容性、全部配置、其它模组的设置、关于页；[/*]\n<br />[*]联机修复：无芯片同步、模组物品合成/穿戴、[b]挖掘方块修复[/b]、商人商品表；[/*]\n<br />[*]可选存档编辑器（只改用户点过的字段）与只读性能跟踪器（曲线/日志）。[/*]\n<br />[/list][b]English[/b]:\n<br />[list]\n<br />[*]Unified manager: overview, compatibility, all settings, other mods' settings, about page;[/*]\n<br />[*]Multiplayer fixes: unchipped sync, mod-item crafting/wearing, [b]block mining fix[/b], trader stock.[/*]\n<br />[*]Optional save editor (only edits fields you touch) and a read-only performance tracker (charts/logs).[/*]\n<br />[/list][heading]Requirements / 前置要求[/heading]\n<br />[b]中文[/b]：需要 BepInEx 5；联机修复需要 CUCoreLib 与 Together / CasualtiesMP 5.5.4；存档编辑器与性能跟踪器可选。\n<br />[b]English[/b]: Requires BepInEx 5; multiplayer fixes require CUCoreLib and Together / CasualtiesMP 5.5.4; the save editor and performance tracker are optional.\n<br />\n<br />",
         "Author": "MornJor",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1032/1032-1795192420-554301859.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1032"
         },
-        "DownloadUrl": "nexus://scavprototype/1032/3512",
+        "DownloadUrl": "nexus://scavprototype/1032/3572",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1032,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-21T05:13:03.000Z",
-        "ReleaseDate": "2026-11-21T05:13:03.000Z",
-        "SHA256": "08e5d5bc62ff9c7c1693855ef88edd8175b53430be9821e57ee15bda90030351",
+        "LastUpdated": "2026-11-22T05:19:14.000Z",
+        "ReleaseDate": "2026-11-22T05:19:14.000Z",
+        "SHA256": "71da460d7b59bff09761ead42666901217cc5b5b6ec6e57e0668baff55ba038d",
         "dllSHA256s": {
-            "DDEN.MPfix.dll": "24886ba0b3e69073466495b29cb8f089af72e05835ecc0a1960d526eca1f8c80",
-            "DDEN.NetPerfTracker.dll": "93592920bc4469b61dd54ffc7e44fac082e8ff26dee4a0566cfbe40e9ed0944f",
-            "DDEN.SaveEditor.dll": "c5aff99ff20a9877b24f0bbd914cc31eccc2662f213d11fc56e2d91091ae3053",
-            "DDEN.Shared.dll": "42fdaf99ee501d675feccd24c3debc3a7e2e9a6c8fd5eb0c133b390ddc547d93",
-            "DDExcNet-CUmodM.dll": "c6df94b2fba1b7fe5d875ae24771578897be41b084c82d5d59ab0ab90d7d52b5"
+            "DDEN.MPfix.dll": "6ae8e1cdc87c1c69abb8acccbdd91ae0b4dc9298a47412f6e8a4240be2d784f6",
+            "DDEN.NetPerfTracker.dll": "26d7cfddaca9e4ead357ef54ee2ef4a214a2cb3670137622887f21f06c774521",
+            "DDEN.SaveEditor.dll": "b51b54d7f27c509d66d646b73630f84348257e57791479d16d1cb41c6578aacc",
+            "DDEN.Shared.dll": "06b668e7d7904484baa5b8a46651ecb7faf7411f44d2277adc6b71200ddc568f",
+            "DDExcNet-CUmodM.dll": "df8fc0c318aad803c2af15c8e704e319a7643f0ec5bc107faaddd889a4434986"
         },
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 1,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1270,6 +1448,14 @@
             {
                 "Version": "1.5",
                 "Changelog": "- CN：\n- 部分BUG修复\n- 重做了性能监视器和破坏方块的修复逻辑\n- EN:\n- Fixed some bugs\n- Reworked the performance monitor and the block-breaking fix logic."
+            },
+            {
+                "Version": "1.7",
+                "Changelog": "- 1.7：\n- 增加实验性多人联机中文名称修复\n- Added an experimental fix for Chinese names in multiplayer.\n- 1.6：\n- 存档编辑器重做并默认部署\n- Save editor reworked and deployed by default\n- 1.5：\n- 性能跟踪器重写（曲线/日志）\n- Performance tracker rewritten (charts/logs)\n- 伤害重算扩展（单位/角色、方块）\n- Damage recalculation extended (units/characters, blocks)\n- 存档编辑器扩展（弹药/电池/液体、图标等比）\n- Save editor extended (ammo/battery/liquid, proportional icons)\n- 主机权威配置（临时同步、主客机一致才锁定）\n- Host-authoritative config (temporary sync; locked only when both sides agree)"
+            },
+            {
+                "Version": "1.7.2",
+                "Changelog": "- 撤回「玩家离场物品剔除广播」清理\n- Withdrew the disconnected-leftover-item broadcast cleanup\n- 名称修复改为跟随原 MP 名称回调，删除轮询与主动刷新\n- Name repair now follows the native MP name callback; polling and forced refresh removed\n- 移除激进伤害上报\n- Removed aggressive damage reporting\n- 移除客机挖块上报与收敛，仅保留主机侧伤害补倍率\n- Removed client block-damage reporting/convergence,kept host-side damage multiplier compensation\n- 移除穿戴兜底\n- Removed the wear fallback\n- 精简单位伤害修复\n- Streamlined unit damage repair"
             }
         ],
         "dllNames": [
@@ -1279,17 +1465,17 @@
             "DDEN.Shared.dll",
             "DDExcNet-CUmodM.dll"
         ],
-        "dllVersion": "1.5.0",
+        "dllVersion": "1.7.2",
         "dllVersions": {
-            "DDEN.MPfix.dll": "1.5.0",
-            "DDEN.NetPerfTracker.dll": "1.5.0",
-            "DDEN.SaveEditor.dll": "1.5.0",
-            "DDExcNet-CUmodM.dll": "1.5.0"
+            "DDEN.MPfix.dll": "1.7.2",
+            "DDEN.NetPerfTracker.dll": "1.7.2",
+            "DDEN.SaveEditor.dll": "1.7.2",
+            "DDExcNet-CUmodM.dll": "1.7.2"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 15,
-            "TotalDownloads": 17,
+            "UniqueDownloads": 23,
+            "TotalDownloads": 32,
             "TotalViews": null
         },
         "Images": [
@@ -1903,29 +2089,29 @@
         "LastQuickCheck": "2026-11-21T15:45:09.625Z"
     },
     {
-        "LastQuickCheck": "2026-11-21T15:45:09.625Z",
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z",
         "Id": "nexus-1016",
         "Name": "Casualties Unknown mod Thai",
         "Version": "1",
         "bepinexVersion": null,
         "bepinexPlugins": {},
-        "Summary": "Casualties : Unknown ม็อดไทย 100% ปัจจุบันมี 3 ตัวละคร หากในอนาคตบทพูดหรืออะไรเพิ่มเติ่ม จะมาอัพเดตใหม่อีกทีครับ",
-        "Description": "[size=4][b]Description[/b][/size]\n<br />[color=#D4D4D8]1. พอโหลดมาจะได้ไฟล์ TH 1016 2 2026-11-20T05-18Z RWml3NX9u  ให้ทำการแตกไฟล์[/color]\n<br />\n<br />[color=#D4D4D8][img]https://staticdelivery.nexusmods.com/mods/8391/images/1016/1016-1795152529-1474903700.jpg[/img][/color]\n<br />\n<br />\n<br />[color=#D4D4D8]2. เมื่อแตกไฟล์เสร็จให้ก็อปปี้ไฟล์ TH ข้างในนั้นแล้วนำไปวางใน [/color]Casualties Unknown/CasualtiesUnknown_Data/Lang\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/1016/1016-1795152591-2043955234.jpg[/img]\n<br />\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/1016/1016-1795152604-827990446.jpg[/img]\n<br />\n<br />\n<br />3.เข้าเกมแล้วจะมีปุ่มแปลภาษาที่ Setting ให้กดเปลี่ยนเป็นภาษาไทยเป็นอันเสร็จสิ้น สามารถเปลี่ยนกลับเป็นอังกฤษได้ตลอดที่ตรงนี้\n<br />\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/1016/1016-1795152640-635250283.jpg[/img]\n<br />\n<br />ขอให้สนุกกับการดำดิ่ง!!\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[size=3][color=#D4D4D8]Lay out any steps users must follow to install your mod[/color][/size]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[size=3][color=#D4D4D8]Describe the core features of your mod[/color][/size]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[size=3][color=#D4D4D8]Provide info on additional required steps, resources, or mods[/color][/size]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[size=3][color=#D4D4D8]Say thanks to anyone who inspired or helped you.[/color][/size]",
+        "Summary": "Casualties : Unknown ม็อดไทย 100% ปัจจุบันมี 3 ตัวละคร หากในอนาคตบทพูดหรืออะไรเพิ่มเติ่ม จะมาอัพเดตใหม่อีกทีครับ อั",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />[color=#D4D4D8]1. พอโหลดมาจะได้ไฟล์ TH 1016 2 2026-11-20T05-18Z RWml3NX9u  ให้ทำการแตกไฟล์[/color]\n<br />\n<br />[color=#D4D4D8][img]https://staticdelivery.nexusmods.com/mods/8391/images/1016/1016-1795152529-1474903700.jpg[/img][/color]\n<br />\n<br />\n<br />[color=#D4D4D8]2. เมื่อแตกไฟล์เสร็จให้ก็อปปี้ไฟล์ TH ข้างในนั้นแล้วนำไปวางใน [/color]Casualties Unknown/CasualtiesUnknown_Data/Lang\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/1016/1016-1795152591-2043955234.jpg[/img]\n<br />\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/1016/1016-1795152604-827990446.jpg[/img]\n<br />\n<br />\n<br />3.เข้าเกมแล้วจะมีปุ่มแปลภาษาที่ Setting ให้กดเปลี่ยนเป็นภาษาไทยเป็นอันเสร็จสิ้น สามารถเปลี่ยนกลับเป็นอังกฤษได้ตลอดที่ตรงนี้\n<br />\n<br />[img]https://staticdelivery.nexusmods.com/mods/8391/images/1016/1016-1795152640-635250283.jpg[/img]\n<br />\n<br />ขอให้สนุกกับการดำดิ่ง!!\n<br />\n<br />พเดตล่าสุปลปนอังกฤษบางส่วนด : แก้ภาษาที่ยังแปลผิดปนอังกฤษบางส่วน\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[size=3][color=#D4D4D8]Lay out any steps users must follow to install your mod[/color][/size]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[size=3][color=#D4D4D8]Describe the core features of your mod[/color][/size]\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[size=3][color=#D4D4D8]Provide info on additional required steps, resources, or mods[/color][/size]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />[size=3][color=#D4D4D8]Say thanks to anyone who inspired or helped you.[/color][/size]",
         "Author": "Skimita",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1016/1016-1795085702-46352304.jpg",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1016"
         },
-        "DownloadUrl": "nexus://scavprototype/1016/3478",
+        "DownloadUrl": "nexus://scavprototype/1016/3571",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1016,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-20T11:00:10.000Z",
-        "ReleaseDate": "2026-11-20T11:00:10.000Z",
-        "SHA256": "0e6936e7a727cf1182d17732c50cee41f538a13b8604ac9a32016d170bce1b26",
+        "LastUpdated": "2026-11-22T04:56:01.000Z",
+        "ReleaseDate": "2026-11-22T04:56:01.000Z",
+        "SHA256": "1d7c40bd26a90a3efc8a80072d3cc2282233c08f4fff7c121b7488bea423125d",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 19,
+        "downloadsSinceLatestVersion": 3,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [],
@@ -1933,8 +2119,8 @@
         "dllVersions": {},
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 23,
-            "TotalDownloads": 33,
+            "UniqueDownloads": 28,
+            "TotalDownloads": 39,
             "TotalViews": null
         },
         "Images": [
@@ -4008,7 +4194,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-22T01:46:12.167Z",
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z",
         "Id": "nexus-970",
         "Name": "Meta-knowledge sawians (Beta)",
         "Version": "1.1.3",
@@ -4021,16 +4207,16 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/970/970-1794709498-379686132.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/970"
         },
-        "DownloadUrl": "nexus://scavprototype/970/3465",
+        "DownloadUrl": "nexus://scavprototype/970/3569",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 970,
         "SourceName": "Nexus",
         "ContainsAdultContent": true,
-        "LastUpdated": "2026-11-20T05:16:04.000Z",
-        "ReleaseDate": "2026-11-20T05:16:04.000Z",
-        "SHA256": "efe63662eccea8051f604199c1d254786e7669694db82f07b91837707f3db852",
+        "LastUpdated": "2026-11-22T03:33:29.000Z",
+        "ReleaseDate": "2026-11-22T03:33:29.000Z",
+        "SHA256": "202dccde034841f196bbdeb03f4e5cfb7bbeed19c7b980b7d524ef2722b52595",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 16,
+        "downloadsSinceLatestVersion": 0,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -4056,6 +4242,10 @@
             {
                 "Version": "1.1.3",
                 "Changelog": "- Fixed red sludge and local anesthesia missing descriptions\n- Milky's lines are ~45% done"
+            },
+            {
+                "Version": "1.1.4",
+                "Changelog": "- >Fixed late-game stuff missing descriptions and names (won't say what cuz spoilers :3c)"
             }
         ],
         "dllNames": [],
@@ -4063,8 +4253,8 @@
         "dllVersions": {},
         "Statistics": {
             "Endorsements": 1,
-            "UniqueDownloads": 70,
-            "TotalDownloads": 94,
+            "UniqueDownloads": 82,
+            "TotalDownloads": 109,
             "TotalViews": null
         },
         "Images": [
@@ -4078,7 +4268,8 @@
             "Swearing/Profanity",
             "Translation",
             "User Interface"
-        ]
+        ],
+        "LastNotifiedChangelogVersion": "1.1.4"
     },
     {
         "Id": "nexus-969",
@@ -4369,7 +4560,7 @@
         "Id": "nexus-950",
         "Name": "Dual Wielding",
         "Version": "1.0.0",
-        "bepinexVersion": "1.1",
+        "bepinexVersion": "1.0.0",
         "bepinexPlugins": {
             "net.cucorelib": "1.1",
             "com.gouxi.gouxidualwield": "1.0.0"
@@ -4400,7 +4591,7 @@
             "CUCoreLib.dll",
             "gouxiDualWield.dll"
         ],
-        "dllVersion": "1.1",
+        "dllVersion": "1.0.0",
         "dllVersions": {
             "CUCoreLib.dll": "1.1",
             "gouxiDualWield.dll": "1.0.0"
@@ -9312,7 +9503,7 @@
         "Id": "nexus-846",
         "Name": "Mine Casualty",
         "Version": "1.0.0",
-        "bepinexVersion": "1.0.7",
+        "bepinexVersion": "1.0.0",
         "bepinexPlugins": {
             "net.cucorelib": "1.0.7",
             "com.gouxi.gouxismcishstuff": "1.0.0"
@@ -9343,7 +9534,7 @@
             "CUCoreLib.dll",
             "Mine Casualty.dll"
         ],
-        "dllVersion": "1.0.7",
+        "dllVersion": "1.0.0",
         "dllVersions": {
             "CUCoreLib.dll": "1.0.7",
             "Mine Casualty.dll": "1.0.0"
@@ -9762,7 +9953,7 @@
         "Id": "nexus-838",
         "Name": "ODM Gear",
         "Version": "1.3.0",
-        "bepinexVersion": "1.0.6",
+        "bepinexVersion": "1.0.0",
         "bepinexPlugins": {
             "net.cucorelib": "1.0.6",
             "test.odm.gear": "1.0.0"
@@ -9793,7 +9984,7 @@
             "CUCoreLib.dll",
             "ODM Gear mod.dll"
         ],
-        "dllVersion": "1.0.6",
+        "dllVersion": "1.0.0",
         "dllVersions": {
             "CUCoreLib.dll": "1.0.6",
             "ODM Gear mod.dll": "1.0.0"
@@ -10040,7 +10231,7 @@
         "Id": "nexus-828",
         "Name": "LEWD Casualties Unknown",
         "Version": "V3.0.2",
-        "bepinexVersion": "1.0.0",
+        "bepinexVersion": "3.0.5",
         "bepinexPlugins": {
             "jens.casualtiesunknown.russian": "1.0.0",
             "jens.casualtiesunknown.armory": "1.5.1",
@@ -10118,7 +10309,7 @@
             "LewdMoodleFixes.dll",
             "LewdStatus.dll"
         ],
-        "dllVersion": "1.0.0",
+        "dllVersion": "3.0.5",
         "dllVersions": {
             "LewdStatus.dll": "1.0.0",
             "LewdMoodleFixes.dll": "1.0.0"
@@ -14000,12 +14191,13 @@
         "LastQuickCheck": "2026-11-21T15:45:09.625Z"
     },
     {
+        "LastQuickCheck": "2026-11-22T05:45:21.013Z",
         "Id": "nexus-710",
         "Name": "Custom Traders",
-        "Version": "4.3.0",
-        "bepinexVersion": "4.3.0",
+        "Version": "4.4.0",
+        "bepinexVersion": "4.4.0",
         "bepinexPlugins": {
-            "com.sylviebb.customtraders": "4.3.0"
+            "com.sylviebb.customtraders": "4.4.0"
         },
         "Summary": "Framework for adding custom traders.",
         "Description": "[b][size=4]Description[/size][/b]\n<br />[color=#D4D4D8]Framework mod that enables other mods to add custom traders to the game. Provides an API for modders to create unique trader characters with custom appearances, dialogue, behaviors, and interactions.[/color]\n<br />\n<br />[b][color=#d4d4d8][size=6]THIS MOD DOES NOT ADD CONTENT[/size][/color][/b]\n<br />\n<br />[b][size=4]Installation instructions[/size][/b]\n<br />[list]\n<br />[*]Install [url=https://github.com/BepInEx/BepInEx]BepInEx[/url] 5.x.[/*]\n<br />[*]Install [url=https://github.com/jimmyking9999999/CUCoreLib]CUCoreLib[/url][/*]\n<br />[*]Place CustomTraders.dll into your BepInEx/plugins/ folder. [/*]\n<br />[/list][b][size=4]For Modders[/size][/b]\n<br />\n<br />[size=6]Check the README.md attached to the 7zip file.[/size]\n<br />\n<br />[b][size=4]Requirements[/size][/b]\n<br />[list]\n<br />[*][url=https://www.nexusmods.com/scavprototype/mods/341][b]CUCoreLib[/b][/url][/*]\n<br />[/list]",
@@ -14014,18 +14206,18 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/710/710-1790468875-2145765087.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/710"
         },
-        "DownloadUrl": "nexus://scavprototype/710/2613",
+        "DownloadUrl": "nexus://scavprototype/710/3566",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 710,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-10-18T01:13:00.000Z",
-        "ReleaseDate": "2026-10-18T01:13:00.000Z",
-        "SHA256": "423f90e723c12958c1e9530d2012114a012cd70ac58a4926e041025dee3cd1ca",
+        "LastUpdated": "2026-11-22T02:01:20.000Z",
+        "ReleaseDate": "2026-11-22T02:01:20.000Z",
+        "SHA256": "54450b1da93c7a24e9965fd896daf68c14ca5f52ab28caf0357979c4b226df57",
         "dllSHA256s": {
-            "CustomTraders.dll": "16537164ea3798624e13795bc9856b185aefc42075030611bab81a5de7025dfb"
+            "CustomTraders.dll": "39fabbb5df4db408c2e7cfc0c8acdeac95873beead6e1c6080baa11c2b9fc223"
         },
-        "downloadsSinceLatestVersion": 738,
+        "downloadsSinceLatestVersion": 4,
         "Dependencies": [
             "nexus-341"
         ],
@@ -14061,19 +14253,23 @@
             {
                 "Version": "4.3.0",
                 "Changelog": "- More changes, read README.md"
+            },
+            {
+                "Version": "4.4.0",
+                "Changelog": "- Should work with the full game :p"
             }
         ],
         "dllNames": [
             "CustomTraders.dll"
         ],
-        "dllVersion": "4.3.0",
+        "dllVersion": "4.4.0",
         "dllVersions": {
-            "CustomTraders.dll": "4.3.0"
+            "CustomTraders.dll": "4.4.0"
         },
         "Statistics": {
-            "Endorsements": 16,
-            "UniqueDownloads": 766,
-            "TotalDownloads": 1144,
+            "Endorsements": 17,
+            "UniqueDownloads": 869,
+            "TotalDownloads": 1282,
             "TotalViews": null
         },
         "Images": [
@@ -14083,8 +14279,7 @@
             "Gameplay",
             "User Interface",
             "Utilities for Modders"
-        ],
-        "LastQuickCheck": "2026-11-21T15:45:09.625Z"
+        ]
     },
     {
         "Id": "nexus-708",
@@ -20618,7 +20813,7 @@
         "Id": "nexus-579",
         "Name": "Chekushka Mod",
         "Version": "1",
-        "bepinexVersion": "3.1.1",
+        "bepinexVersion": "1.0.0",
         "bepinexPlugins": {
             "net.cucorelib": "1.0.1",
             "com.rushellxyz.rshlib": "3.1.1",
@@ -20657,7 +20852,7 @@
             "0_RshLib.dll",
             "ChekushkaMod.dll"
         ],
-        "dllVersion": "3.1.1",
+        "dllVersion": "1.0.0",
         "dllVersions": {
             "0_CUCoreLib.dll": "1.0.1",
             "0_RshLib.dll": "3.1.1",
@@ -20823,7 +21018,7 @@
         "Id": "nexus-575",
         "Name": "EVRO-modpack (for 7.0.1)",
         "Version": "1",
-        "bepinexVersion": "3.2.2",
+        "bepinexVersion": "2.0.0.0",
         "bepinexPlugins": {
             "com.el739.autosort": "1.0.0",
             "com.user.containertweaks": "1.4.0",
@@ -20941,7 +21136,7 @@
             "TitaniumRestored.dll",
             "WearableArray.dll"
         ],
-        "dllVersion": "3.2.2",
+        "dllVersion": "2.0.0.0",
         "dllVersions": {
             "AutoSort.dll": "1.0.0",
             "ContainerTweaks.dll": "1.4.0",
@@ -21990,7 +22185,7 @@
         "Id": "nexus-554",
         "Name": "gouxi's more firearms",
         "Version": "1.0.3",
-        "bepinexVersion": "1.0.5",
+        "bepinexVersion": "1.0.0",
         "bepinexPlugins": {
             "net.cucorelib": "1.0.5",
             "com.gouxi.gouxismorefirearms": "1.0.0"
@@ -22034,7 +22229,7 @@
             "CUCoreLib.dll",
             "gouxismorefirearms.dll"
         ],
-        "dllVersion": "1.0.5",
+        "dllVersion": "1.0.0",
         "dllVersions": {
             "CUCoreLib.dll": "1.0.5",
             "gouxismorefirearms.dll": "1.0.0"
@@ -24199,7 +24394,7 @@
         "Id": "nexus-505",
         "Name": "Cave Diver",
         "Version": "1.03",
-        "bepinexVersion": "1.0.4",
+        "bepinexVersion": "1.0.1",
         "bepinexPlugins": {
             "net.cucorelib": "1.0.4",
             "com.O2xymoron.CaveDiver": "1.0.1"
@@ -24239,7 +24434,7 @@
             "CaveDiver.dll",
             "CUCoreLib.dll"
         ],
-        "dllVersion": "1.0.4",
+        "dllVersion": "1.0.1",
         "dllVersions": {
             "CUCoreLib.dll": "1.0.4",
             "CaveDiver.dll": "1.0.1"
@@ -26165,7 +26360,7 @@
         "Id": "nexus-460",
         "Name": "Makeshift Prosthetics",
         "Version": "1.0",
-        "bepinexVersion": "1.1",
+        "bepinexVersion": "1.0",
         "bepinexPlugins": {
             "net.cucorelib": "1.1",
             "nyaruqwq.makeshiftprosthetics": "1.0"
@@ -26205,7 +26400,7 @@
             "CUCoreLib.dll",
             "MakeshiftProsthetics.dll"
         ],
-        "dllVersion": "1.1",
+        "dllVersion": "1.0",
         "dllVersions": {
             "CUCoreLib.dll": "1.1",
             "MakeshiftProsthetics.dll": "1.0"
@@ -28257,7 +28452,7 @@
         "Id": "nexus-418",
         "Name": "Multi Battery Pack Item",
         "Version": "0.0.0.2",
-        "bepinexVersion": "1.0.2",
+        "bepinexVersion": "1.0.0",
         "bepinexPlugins": {
             "net.cucorelib": "1.0.2",
             "kef.casualtiesunknown.multibatterypack": "1.0.0"
@@ -28290,7 +28485,7 @@
             "CUCoreLib.dll",
             "MultiBatteryPack.dll"
         ],
-        "dllVersion": "1.0.2",
+        "dllVersion": "1.0.0",
         "dllVersions": {
             "CUCoreLib.dll": "1.0.2",
             "MultiBatteryPack.dll": "1.0.0"
@@ -28906,7 +29101,7 @@
         "Id": "nexus-404",
         "Name": "Sound Replacer",
         "Version": "1.2",
-        "bepinexVersion": "0.1.1",
+        "bepinexVersion": "0.1.0",
         "bepinexPlugins": {
             "kef.casualtiesunknown.pluginruntime": "0.1.1",
             "kef.casualtiesunknown.soundreplacer": "0.1.0",
@@ -28938,7 +29133,7 @@
             "KefPluginRuntime.dll",
             "SoundReplacer.dll"
         ],
-        "dllVersion": "0.1.1",
+        "dllVersion": "0.1.0",
         "dllVersions": {
             "KefPluginRuntime.dll": "0.1.1",
             "SoundReplacer.dll": "0.1.0"
@@ -32879,7 +33074,7 @@
         "Id": "nexus-321",
         "Name": "AdditionalTraps",
         "Version": "1.0.5",
-        "bepinexVersion": "1.1.8",
+        "bepinexVersion": "1.0.5",
         "bepinexPlugins": {
             "AdditionalTraps": "1.0.5",
             "com.vertigo.traplib": "1.1.8"
@@ -32931,7 +33126,7 @@
             "AdditionalTraps.dll",
             "TrapLib.dll"
         ],
-        "dllVersion": "1.1.8",
+        "dllVersion": "1.0.5",
         "dllVersions": {
             "AdditionalTraps.dll": "1.0.5",
             "TrapLib.dll": "1.1.8"
@@ -35721,7 +35916,7 @@
         "Id": "nexus-178",
         "Name": "Casualties XL",
         "Version": "02.11.2026",
-        "bepinexVersion": "1.1",
+        "bepinexVersion": "1.0",
         "bepinexPlugins": {
             "thesofteeveeboy.mods.CasualtiesExtra": "1.0",
             "net.cucorelib": "1.1"
@@ -35779,7 +35974,7 @@
             "CUCoreLib.dll",
             "LiteNetLib.dll"
         ],
-        "dllVersion": "1.1",
+        "dllVersion": "1.0",
         "dllVersions": {
             "CasualtiesExtra.dll": "1.0",
             "CUCoreLib.dll": "1.1"

@@ -1,0 +1,498 @@
+[
+    {
+        "Id": "thunderstore-CasPsyDev-CasualtyPsychology",
+        "Name": "CasualtyPsychology",
+        "Version": "0.8.3",
+        "bepinexVersion": "4.0.8.3",
+        "bepinexPlugins": {
+            "com.carlo.casualtiesunknown.psychology": "4.0.8.3"
+        },
+        "Summary": "Reworks mental health in Casualties Unknown with 6 mood pillars, randomized traits, panic attacks, directional head trauma, sleep events, and contextual dialogue.",
+        "Description": "<div align=\"center\">\n\n![Casualty Psychology](https://files.catbox.moe/80k3s1.png)\n\n**v0.8.3**\n\n> **Casualty Psychology** reworks how mental health works in Cas:U. Fear, trauma, bad injuries, pitch darkness, and being alone all feed into how your Sawian holds together down in the caves. It's up to you how good their day is going to be.\n\n![divider](https://files.catbox.moe/5ep62r.png)\n\n</div>\n\n## Requirements & Install\n\n- **Casualties Unknown** (Full release. For Demo, use CASPSY 0.7.4)\n- **[BepInEx 5](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5)** (x64)\n- **[CUCoreLib](https://www.nexusmods.com/scavprototype/mods/341)**\n\nInstall with a Thunderstore mod manager (r2modman / Gale), or manually:\n1. Install **BepInEx 5** in your game folder if you don't have it yet.\n2. Drop `CUCoreLib.dll` and `CasualtyPsychology.dll` into `BepInEx/plugins/`.\n3. Copy `Assets/CasualtyPsychology` into `BepInEx/plugins/Assets/CasualtyPsychology/`.\n4. Boot the game once to generate the config. You can change most settings in-game under **Options** (**Psychology** button).\n\n<div align=\"center\">\n\n![divider](https://files.catbox.moe/5ep62r.png)\n\n</div>\n\n## What It Does\n\n### ![Mood](https://files.catbox.moe/055nq9.png) Mood, Traits & Trauma\nInstead of one happiness bar, mood is split across six stats (**Valence**, **Arousal**, **Agency**, **Predictability**, **Social**, and **Goal Satisfaction**). Each run also rolls up to 3 starting traits out of 16, from resilience and fatalism to transhumanism. Or none.\n\nYou, and your expie will remember the bad. Getting hit by bear traps, mines, or turrets leaves phobias and trauma imprinted in the mind, that can set off auditory flashbacks later during panic attacks. Survive around a hazard without getting hurt and your Sawian slowly gets used to it, and maybe a little confident.\n\n### ![Panic](https://files.catbox.moe/qcacxe.png) Panic, Somatics & Head Trauma\n- **Adrenaline & Pain Storms**: Heavy hits numb the pain for a few seconds so you have time to bandage up before it all hits at once, a grace period if you will.\n- **Panic Attacks**: High stress and bad mood ramp up from simple tremors into food refusal, weapon sway, movement slowdown, blocked actions, vomiting, hallucinations, etcetera.\n- **Head Injuries**: Hits track where the skull took damage (**Brow**, **Temples**, **Crown**, **Occiput**). Depending on the zone, you can end up with slurred speech, garbled dialogue, scrambled labels, lobotomies, or other fun effects apart from the vanilla ones. Healing with **Braingrow** also conditions your Sawian differently if you do it mid-fight versus somewhere safe.\n- **Despair & Crises**: It may be worth keeping a move on to avoid certain impulses your sawian may have. Leave them at rock bottom for long enough and the consequences are dire. It is your responsibility to upkeep your sawian and maintaining them happy, throughout the rocky roads of the caves.\n\n### ![Sleep](https://files.catbox.moe/tq02nt.png) Sleep & Darkness\nWhere you rest actually matters. Pods, lit campfires, and teammates keep sleep calm. Passing out or sleeping in pitch darkness next to corpses or traps risks **nightmares** and **sleep paralysis** (freezing you in place for up to 40 seconds unless something snaps you out of it). Light sources, sleeping pills, or a plushie stop paralysis.\n\n### ![Dossier](https://files.catbox.moe/bmz4m9.png) Dossier & Dialogue\n- **Clinical Intake Dossier**: An e-ink tablet you start with in the pod. Open it to check your rolled traits, conditions, stress tendencies, head notes, and memory log.\n- **Dialogue & Unchipped**: Over a thousand lines split across **Expie**, **Milky**, and **Dune** for wounds, darkness, amputations, haggling, and recovery. With some indicators for those that like the unchipped challenge.\n\n### ![Items](https://files.catbox.moe/qlzm1m.png) Items & Survival Changes\n- **Mindclean**: Clears 30 trauma with some dizziness and nausea, with a 70/30 gamble on wiping bad memories vs good ones. Do YOU wanna take the gamble?\n- **Plushies & Prosthetics**: Plushies ground panic warnings and prevent sleep paralysis. Having steel or PEO prosthetics packed makes cutting a limb off a lot less rough (especially with **Transhumanism**).\n- **Diet, Crystals & Last Stand**: Eating the same food repeatedly gives diminishing returns, Soothing Crystal Shards burn faster when depressed, and Last Stand checks your current agency, resilience, plushies, and teammates instead of an old happiness snapshot, making it more difficult to roll at rock bottom.\n- **Among the many, many changes that the mod brings**\n\nIf you want all the exact numbers, trait tables, and full command list, check `GUIDE.md` inside the zip.\n\n<div align=\"center\">\n\n![divider](https://files.catbox.moe/5ep62r.png)\n\n</div>\n\n## Commands, Config & Compatibility\n\n<details>\n<summary><b>Console Commands</b></summary>\n\nHit `~` to open the console and use `psych` (full syntax and MP selectors like `@a` are in `GUIDE.md`, this is just simple commands):\n- `psych status` - Shows pillars, traits, trauma, panic, and crisis stage.\n- `psych reset` / `heal` - Clears trauma and phobias, stops panic, and resets pillars.\n- `psych pillar add v20 a-10` - Views or edits pillars.\n- `psych trait` - Lists, adds, removes, or rerolls traits.\n- `psych head <brow|temple|crown|occiput> <dmg>` - Tests directional brain damage.\n- `psych panic <1|2|3|stop>` - Starts or stops a panic attack.\n- `psych nightmare now` / `psych paralysis now` - Triggers sleep events.\n- `psych dossier` - Spawns an intake dossier.\n\n</details>\n\n<details>\n<summary><b>Config & Menu</b></summary>\n\nMost options can be changed live from the in-game **Psychology** menu (next to the game logo) or in `BepInEx/config/CasualtyPsychology.cfg`. You can adjust decay rates, trauma multipliers, dialogue frequency, screen effects, or toggle panic, flashbacks, sleep paralysis, mindwipe revamp, and terminal suicide on or off.\n\n</details>\n\n<details>\n<summary><b>Multiplayer & Compatibility</b></summary>\n\n- **Multiplayer**: Works with **Krokosha Casualties MP**. Host trait and condition rules sync for the session without overwriting your own preset, and everyone gets their own dossier, traits, and conditions. Both host and clients need the mod (and on the same version).\n- **Euphoric**: Works well alongside it.\n- **Gunsaw Genetics**: Works, though custom species balance can be a bit hit or miss, still figuring it out.\n- **Overhauls**: No official ports yet. Stacking big health overhauls can cause fast trauma spirals, so lower the trauma multipliers in config if it gets too rough.\n- **Addon dialogue**: Built-in lines/support for *Casualties: Under the Influence* (comradefoxx), *Collars: Unknown* (gouxi), and *Substances Expanded* (Shiri).\n\n</details>\n\n<div align=\"center\">\n\n![divider](https://files.catbox.moe/5ep62r.png)\n\n</div>\n\n## Credits\n\n- Built with **BepInEx 5** and **Harmony**.\n- Powered by **[CUCoreLib](https://www.nexusmods.com/scavprototype/mods/341)** by **JimmyKing**.\n- **Krokosha/Larry** for the Multiplayer framework.\n- **Nullrot**: Writing & Artwork.\n- **Raz0rDisk**: Writing.\n- **JMoldy (Kallin)**: Writing & mod idea.\n- **Toky**: Header/thumbnail art.\n\n<div align=\"center\">\n\n![divider](https://files.catbox.moe/5ep62r.png)\n\n*\"We suffer more often in imagination than in reality.\"*\n- Seneca\n\n</div>",
+        "Author": "CasPsyDev",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/CasPsyDev-CasualtyPsychology-0.8.3.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/CasPsyDev/CasualtyPsychology/",
+            "Website": null
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/CasPsyDev/CasualtyPsychology/0.8.3/",
+        "ThunderstoreFullName": "CasPsyDev-CasualtyPsychology",
+        "Uuid4": "12524fa6-e99c-4816-8eef-ad6ab34820f7",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T01:03:47.427060Z",
+        "ReleaseDate": "2026-11-21T01:03:30.737168Z",
+        "SHA256": "b27f6dd25e7b7753a15c865b80512cf68f2fa45f539985cd72dc587e384726b9",
+        "FileSizeBytes": 1663056,
+        "dllSHA256s": {
+            "CasualtyPsychology.dll": "edb044e941c43251d8d8034b946369c6bd07454b8d03ed04662130858bff31f9"
+        },
+        "downloadsSinceLatestVersion": 21,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2305"
+        ],
+        "Changelogs": [
+            {
+                "Version": "0.8.3",
+                "Changelog": "## 0.8.3\n- 4.0.8.3\n- Added the Transhumanism trait and prosthetic limb reactions (having PEO, steel, or peg limbs packed changes how your Sawian handles amputation and limb loss, with new dialogue for all three characters)\n- Expanded terminal suicide (tossing equipped autopumps away and refusing epinephrine or combat pens during fibrillation/cardiac arrest)\n- Fixed hug spam crashing mood into the dirt (Milky refusals and repeated failed hugs)\n- Fixed the intake dossier respawning every time you load a save, and synced individual dossier traits, conditions, and specimen info in multiplayer\n- Cleaned up the WoundView brain status tooltip (localized, less wordy, and gets harder to follow as brain health drops)\n- Updated GUIDE.md and touched up the Psi icon"
+            }
+        ],
+        "dllNames": [
+            "CasualtyPsychology.dll"
+        ],
+        "dllVersion": "4.0.8.3",
+        "dllVersions": {
+            "CasualtyPsychology.dll": "4.0.8.3"
+        },
+        "Statistics": {
+            "TotalDownloads": 21,
+            "Rating": 0
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/CasPsyDev-CasualtyPsychology-0.8.3.png"
+        ],
+        "tags": [
+            "Mods",
+            "Audio"
+        ]
+    },
+    {
+        "Id": "thunderstore-CasualtiesTogether-CasualtiesTogether",
+        "Name": "CasualtiesTogether",
+        "Version": "5.5.4",
+        "bepinexVersion": "5.5.4",
+        "bepinexPlugins": {
+            "net.cucorelib": "1.1",
+            "CasualtiesMP": "5.5.4"
+        },
+        "Summary": "Multiplayer Co-op mod for Casualties: Unknown",
+        "Description": "<div align=\"center\">\n<a href=\"https://www.nexusmods.com/scavprototype/mods/67\">\n<img alt=\"Casualties: Together\" src=\"https://github.com/creaturefeaturelarry/casualties-together/raw/refs/heads/main/.github/ct6.png\">\n</a>\n</div>\n\n<div align=\"center\">\n\n[![Stars](https://img.shields.io/github/stars/creaturefeaturelarry/casualties-together?style=flat-square&label=Stars&color=orange&logo=github)](https://github.com/creaturefeaturelarry/casualties-together/releases)\n[![Latest Release](https://img.shields.io/github/v/release/creaturefeaturelarry/casualties-together?style=flat-square&include_prereleases&logo=github&label=Version)](https://github.com/creaturefeaturelarry/casualties-together/releases/latest)\n[![Github Downloads](https://img.shields.io/github/downloads/creaturefeaturelarry/casualties-together/total?style=flat-square&color=blue&logo=github&label=Downloads)](https://github.com/creaturefeaturelarry/casualties-together/releases)\n[![Nexus Downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjimmyking9999999%2FMetadata-generator%2Fmain%2Fbadges%2Fcasualties-together.json&style=flat-square)](https://www.nexusmods.com/scavprototype/mods/67?tab=files)\n[![Game Version](https://img.shields.io/badge/Game_Version-v1.0-darkgreen?style=flat-square&logo=steam)](https://store.steampowered.com/app/4576510)\n</div>\n\n\n\n\n### Online Multiplayer Co-op mod for game [\"Casualties: Unknown\"](https://store.steampowered.com/app/4576510)<br/>\n\n\n[![Casualties: Together](https://img.shields.io/badge/Casualties%3A%20Together%20Mod%20Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.gg/SA6H7mA6De)   [![Target Planet](https://img.shields.io/badge/Official%20Casualties%3A%20Unknown%20Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.com/channels/955738554129063947/1470206122844618802)\n\n\n## Support developer:\n\n[![\"Buy Me A Coffee\"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/casualtiestogether)\n\n\n\n# Install Guide:\n\n### Requirements:\nDownload Game: https://store.steampowered.com/app/4576510<br/>\nDownload BepInEx: https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip<br/>\nDownload Co-op Mod: [https://www.nexusmods.com/scavprototype/mods/67](https://www.nexusmods.com/scavprototype/mods/67?tab=files)<br/>\n\n<details><summary>\n\n### Click to show full install guide.\n</summary>\n\n1. Download all the prerequisistes ^^^^^^ \n\n2. Go to the game root directory.\n    - In Steam, Right click on the game.\n    - Click `Manage > Browse local files`\n\n\n3. Unzip `BepInEx*.zip` into the game root directory.\n\n4. Unzip `MPMod*.zip`, open `mod` folder and move the contents into the game root directory.\n\n5. Now it should look like this \n   \n![alt text](https://github.com/creaturefeaturelarry/casualties-together/raw/refs/heads/main/.github/tut_1.png)\n\n7. Go back to steam and click **Play**.\n\n8. In main menu, multiplayer related buttons should appear.\n    - (To go back to singleplayer you need to press the `Deactivate MP Mod` button in `Settings > General`!)\n\n9. (optional) Upvote/Share/Support the mod.\n\n<details>\n<summary>FOR LINUX USERS</summary>\n\n1. Add this to launch options `WINEDLLOVERRIDES=\"winhttp=n,b\" %command%`\n    - It tells proton to load BepInEx.\n\n</details>\n</details>\n<br>\n\n\n\n    \n# Warning:\nIf installation doesn't work, Try again.\n - Or cry at people in \"Casualties: Together\" discord server: [https://discord.gg/FrBX3srzzG](https://discord.gg/FrBX3srzzG)\n\nMake sure to launch the game through Steam Library if Steam Lobbies don't work.\n\nIt's recommended to have good internet connection for optimal experience.\n\n\n!!!<br>\nIF YOU ENCOUNTER ANY GLITCHES, CRASHES, OTHER ISSUES - BLAME THE MOD, NOT THE ORIGINAL DEVELOPER OF THE GAME<br>\n!!!\n\nTo go back to singleplayer you need to press the `Deactivate MP Mod` button in `Settings > General`!\n\n\n# Features:\nSteam Lobbies<br>\nReal voice chat with in-game effects.<br/>\nMiddle Mouse Button to point at a location.<br>\nRight click to interact and heal other players.<br> \nStay close to others to share body temperature.<br>\nSpectator mode when dead.<br>\nSleeping is disabled.<br>\nHunger and thirst is slowed down.<br>\nCarrying incapacitated players.<br>\nAny dead players respawns at next layer.<br>\nUnchipped option is individual.<br>\nMost of these features can be tweaked in the in-game console.<br>\nAlso this mod can run as a dedicated server. (its not real headless)<br>\n\nThere's no client prediction.<br>\nThere's no network ownership.<br>\nThere's no deterministic RNG.<br>\nThere's no anticheat. <br>\nThis mod only adds a simple co-op experience to the game.<br>\n\n\n\n\n\n# Full feaure list:\n\nDisabled sleeping. (tied to the rule \"EnableSleep\" )<br>\nDisabled time scale buttons. (don't try re-enable this actually)<br>\nPlayer friendly fire can be enabled with the \"PVP\" rule.<br>\nMiddle mouse click to highlight a location at your cursor, for the other players to see.<br>\nStand close to other players to share body temperature.<br>\n\nText chat and Voice chat are dependent on your characters ability to speak, same distortions apply to your messages.<br>\nMP3 Player now is a boombox instead of replacing background music.<br>\n\nRight click on a player to open a player interaction context menu.\n - Inspect health panel and perform any actions.\n - Inspect their inventory and take their items. \n - Use any usable item on them (Feeding).\n\nWhen a player dies, they are put into spectator mode.\n - All dead players respawn after living players reach the next level.\n - (if rule \"Permadeath\" is true, respawns are disabled)\n - Player can be revived from traders.\n   \nTo continue to the next layer, half of all players must reach the end. \n - Straggles will get killed if they take too long.\n - Only the Host gets prompted to continue the run.\n - DrillPod works the same, all players must be in the pod to continue.\n - (tweaked by the rule \"LayerFinishConditionPlayerPercent\")\n\nPlayer health regen and decay is tweaked.\n - Death is much faster if there are no comrades nearby. ( tweaked by the \"AdditionalHealthDecay\" rule )\n - Health regeneration is boosted. ( tweaked by the \"AdditionalHealthRegen\" rule)\n\nAll these rules can be changed only by the Host by running the command \"rule [rule name] [new value]\"<br>\n\nYou can eat your friends after they died. \n - The rule \"CanAmputateHealthyPlayers\" allows you to steal limbs of living players.\n\nTraders first impression reputation is calculated from the prettiest of the bunch.<br>\n\n\n\n# How to enable all console commands:\n\nThe Host must enter this console command:<br>\n```rule sv_cheats 1```<br>\n**To let Client into server console mode they need \"admin\" privilege.**<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**(Given by \"adminpriv [player]\" or \"adminpriv-password\")**\n\n\n\n# Building:\n\nRun script `scripts/prepare_workspace.py`\n\nIt copies the game and installs bepinex.\n\n**Visual Studio 2022** is recommended.\n\nOpen the project and compile it.\n\nHit F5\n\nYou have to launch multiple instances of the game manually or using scripts.\n\nUuhh <img src=\"https://media1.tenor.com/m/qPyvaruhJsYAAAAd/drooling-cat-lord-im-one.gif\" width=\"32\" height=\"32\">   \n\n\n# Credits:\n\nCredits are listed in \"About\" menu inside the mod.<br>\n[Creature](https://github.com/creaturefeaturelarry) Current owner.<br>\n[Krokosha666](https://github.com/Krokosha666) Original developer. (Retired)\n\n### Contributors:\n[Dune](https://github.com/Jyan-sei) - Sync, Optimizations<br>\n[VtLoader](https://github.com/vtloader) - Bug fixes, Locale<br>\n[Gary the Cat](https://github.com/Garythecat89), [Dannad](https://github.com/danxnader), [Meow](https://github.com/SprightlyHawk8), [Jimmyking](https://github.com/jimmyking9999999), [Kidihh](https://github.com/Kidihh), [Dawn](https://github.com/hehdawn), [mayzmae](https://github.com/mayzmae), ItsVoidSK<br>\n...And a bunch of playtesters\n\n### Supporters:\n \n```Bleh :P, EthanTheProtogen, RoyMartini, Jazun, Alexx__, vega, Zmechol1337, plasterjello, Doctor Callico, vivikat, Ariyah, killthebudget, _stuck_, ShaoAZ, JameisonAus, Kidi, BluBerryToaster, Katomou, Nemean_Lion732, Locko2265, Trenchburner, TheBoathead, Diesel, Malbyte, KaliVasquez, Mitirich, Shiro, ChrisTheDragon```",
+        "Author": "CasualtiesTogether",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/CasualtiesTogether-CasualtiesTogether-5.5.4.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/CasualtiesTogether/CasualtiesTogether/",
+            "Website": "https://buymeacoffee.com/casualtiestogether"
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/CasualtiesTogether/CasualtiesTogether/5.5.4/",
+        "ThunderstoreFullName": "CasualtiesTogether-CasualtiesTogether",
+        "Uuid4": "254ddfcf-61c1-49f0-a7b7-349687e10d82",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-20T19:40:40.449698Z",
+        "ReleaseDate": "2026-11-16T16:23:00.980715Z",
+        "SHA256": "762078707ce74b3a74e2961e5af5a4504fefd319197c643f35e6e47c2db38952",
+        "FileSizeBytes": 2327125,
+        "dllSHA256s": {
+            "CUCoreLib.dll": "c0f064260b2671d02bf802c460aa346c6b858ec9269f2ff93439ebabaa940aa3",
+            "CasualtiesMP.dll": "606a7a9b3467cfbb916b41b86697edb97c82508ee7ffe15432ccb7b08549cf41",
+            "K4os.Compression.LZ4.dll": "2229999ac58aa7bbfe9f65850810e9433a7305dad6eb11ff1527c75faff9b2d0",
+            "LiteEntitySystem.dll": "122fb2a4cf86b02c0211481b2688b52eec18fa7d71e16ca3230f138dd9622da9",
+            "LiteNetLib.dll": "63b2acfd0df3e61d270066034e1dbfaf4f3002da9749eae9b6d0c796dd128e37",
+            "opus.dll": "9d251c8f00377cc0a5f3532be29874b09d7daa07cf0a1850b212e403f5d768f1",
+            "OpusSharp.Core.dll": "d6261e7675705397402c9447d40adc8d3cb9c3ad9d3f66f650ad32ebc03bc25e",
+            "RefMagic.dll": "de14443a1f40c35be1b738658818c985970f9c1c0e749fc82feade2458af971f",
+            "System.Runtime.CompilerServices.Unsafe.dll": "01748200f2400c742aa689f1f5101bd6298efdfd92c00c18f4fa473847235ba9"
+        },
+        "downloadsSinceLatestVersion": 712,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2305"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "CasualtiesMP.dll",
+            "CUCoreLib.dll",
+            "K4os.Compression.LZ4.dll",
+            "LiteEntitySystem.dll",
+            "LiteNetLib.dll",
+            "opus.dll",
+            "OpusSharp.Core.dll",
+            "RefMagic.dll",
+            "System.Runtime.CompilerServices.Unsafe.dll"
+        ],
+        "dllVersion": "5.5.4",
+        "dllVersions": {
+            "CUCoreLib.dll": "1.1",
+            "CasualtiesMP.dll": "5.5.4"
+        },
+        "Statistics": {
+            "TotalDownloads": 1611,
+            "Rating": 1
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/CasualtiesTogether-CasualtiesTogether-5.5.4.png"
+        ],
+        "tags": [
+            "Mods"
+        ]
+    },
+    {
+        "Id": "thunderstore-MAakber-UEI",
+        "Name": "UEI",
+        "Version": "1.2.5",
+        "bepinexVersion": "1.2.5",
+        "bepinexPlugins": {
+            "casualtiesunknown.uei": "1.2.5"
+        },
+        "Summary": "Item, liquid and recipe browser for Casualties Unknown.",
+        "Description": "# UEI — Unknown Enough Items 1.2.5\n\nCasualties Unknown 的物品、液体与配方查询插件，支持中文和 English。\nAn item, liquid and recipe browser for Casualties Unknown.\n\nUEI adds a JEI-style helper panel beside the game's native inventory. Browse\nruntime items, liquids and recipes without replacing the original crafting UI.\n\nUEI 会在原版物品栏 / 径向背包旁显示辅助面板，用于查询物品、液体与配方关系。\n\n## 功能 / Features\n\n### English\n\n- Browse runtime items and liquids, including supported mod entries.\n- Search, filter by category, and pin favorites.\n- Left-click an entry to view source recipes; right-click to view its uses.\n- Follow recipe chains by clicking ingredients and results.\n- View matching candidates for generic ingredients.\n- Jump to the original crafting panel and select the related recipe.\n- Use Chinese or English, with adjustable panel position and scale.\n- Optional cheat controls for item requests and revival, subject to game and server permissions.\n\n### 中文\n\n- 浏览运行时物品和液体，并读取受支持的第三方模组条目。\n- 支持搜索、分类筛选和收藏置顶。\n- 普通查询模式下，左键查看来源配方，右键查看用途配方。\n- 点击配方材料或结果，可继续查询相关配方；泛材料会显示候选条目。\n- 可跳转到原版制作面板并选中对应配方。\n- 支持中文和 English，可调整面板位置与比例。\n- 提供可选的物品领取与复活操作，遵循游戏和服务器权限。\n\n## 安装 / Install\n\n- 先安装 BepInEx 5；它是必需依赖。\n- Gale 用户可从 Casualties: Unknown 的模组列表安装 UEI，也可直接导入这个 ZIP。\n- 手动安装时，把 ZIP 中的 `BepInEx` 文件夹合并到游戏目录。\n- 如果已有旧版 UEI DLL，请先关闭游戏，并只保留一份 UEI 插件，避免重复加载。\n\nInstall UEI from the Casualties: Unknown mod list in Gale; the required BepInEx\ndependency is installed by the mod manager. Alternatively, import this ZIP into\nGale. For manual installation, install BepInEx 5 first, then merge the ZIP's\n`BepInEx` folder into the game directory. Close the game before replacing an\nolder UEI DLL; keep only one copy of the plugin.\n\n## 使用 / Usage\n\n### English\n\n1. Launch the game with mods enabled and open the native right-click inventory.\n2. Use the search box and category arrows to find an entry; click its star to favorite it.\n3. Left-click for source recipes, or right-click for usage recipes.\n4. Click recipe ingredients/results to follow the recipe chain, or use the jump button to open crafting.\n5. Open the gear button beside search to change language, layout, or optional cheat settings.\n\n### 中文\n\n1. 通过 Gale 启动模组游戏，打开原版右键物品栏后即可看到 UEI。\n2. 使用搜索框与分类箭头查找条目，点击星标收藏。\n3. 左键查看来源配方，右键查看用途配方；点击配方材料 / 结果可继续跳转。\n4. 通过详情页的跳转按钮打开原版制作面板。\n5. 点击搜索框旁的齿轮，调整语言、布局和可选作弊设置。\n\nCheat mode is disabled by default. When enabled and permitted, left-click is\nused for item requests rather than opening source recipes; right-click still\nshows usage recipes.\n\n作弊模式默认关闭。启用且具备权限时，左键用于领取 / 请求物品，右键仍可查看用途。\n\n## 兼容范围 / Compatibility\n\nVersion 1.2.4 includes full-game compatibility changes. Local runtime checks have\nbeen performed; the multiplayer checks listed below remain pending.\n\n1.2.4 包含游戏正式版适配，并已进行本地运行检查；下述联机项目仍待实测。\n\nTogether、CUCoreLib、RshLib 和 SexMod 都是可选适配，并非必需依赖。\nTogether 客户端的原版物品领取通过服务器命令处理；自定义模组物品仍需由房主生成。\n自动 `cuspawn` 尚未启用；双端同步与保存/重连仍需实机验证。\n\nTogether, CUCoreLib, RshLib and SexMod are optional. Vanilla item requests on\nTogether clients go through the server. Custom mod items must currently be\nspawned by the host. Automatic `cuspawn` is not enabled. Two-peer synchronization\nand save/reconnect validation remain pending.\n\n本包只包含 UEI，不包含游戏程序集、BepInEx、联机模组或临时测试插件。\nThis package contains UEI only, not game assemblies, BepInEx, multiplayer mods\nor the disposable in-game test fixture.\n\n## 1.2.5 更新 / What's new\n\n- New square cave-glow UEI icon for Thunderstore and mod managers.\n- Updated installation documentation and automatically packaged changelog.\n- Gameplay behavior and the multiplayer limitations described above remain those of 1.2.4.\n\n- 更新为 1:1 洞穴荧光图标，用于 Thunderstore 与模组管理器。\n- 完善安装说明，自动打包时附带 CHANGELOG.md。\n- 功能沿用 1.2.4，上方联机限制仍适用。\n\n## 1.2.4 适配摘要 / Compatibility changes in 1.2.4\n\n- Full-game and Together compatibility changes, with optional CUCoreLib, RshLib and SexMod integration.\n- Added a revival button to the cheat controls.\n- Fixed cheat permission checks and unintended recipe-panel opening when requesting items.\n- Improved catalog refresh, optional-mod detection caching, localization lookup and UI recovery.\n- See the Changelog tab for the version's full release notes.\n\n- 适配游戏正式版与 Together，补充 CUCoreLib、RshLib、SexMod 的可选兼容。\n- 作弊操作栏新增复活按钮，修复权限判断与左键领取时意外打开配方的问题。\n- 优化目录刷新、模组检测缓存、本地化查询与界面恢复。\n- 完整更新内容见 Changelog 页签。\n\n## 源码与反馈 / Source and support\n\n- [Source code and releases](https://github.com/MAakber/Unknown-Enough-Items)\n- [Report a bug](https://github.com/MAakber/Unknown-Enough-Items/issues)\n\nAuthor: **Aakber (小叶子)**. Thanks to **dfgger433** for the compatibility contributions.\nUEI is licensed under the MIT License included in this package.",
+        "Author": "MAakber",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/MAakber-UEI-1.2.5.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/MAakber/UEI/",
+            "Website": "https://github.com/MAakber/Unknown-Enough-Items"
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/MAakber/UEI/1.2.5/",
+        "ThunderstoreFullName": "MAakber-UEI",
+        "Uuid4": "1eb46ba7-dc6c-4ec1-a510-9eac7565e6e2",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T20:24:25.501780Z",
+        "ReleaseDate": "2026-11-21T18:47:44.681047Z",
+        "SHA256": "aa118f6936a182bf694d15f833d4e6c14fe12f2483c8a67c313b92e854874ac6",
+        "FileSizeBytes": 124154,
+        "dllSHA256s": {
+            "UEI.dll": "ce8ea622de0df87256e66a297cda4fee2bee81e97a04083a5016c2ea2ed533f4"
+        },
+        "downloadsSinceLatestVersion": 20,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2305"
+        ],
+        "Changelogs": [
+            {
+                "Version": "1.2.5",
+                "Changelog": "# 1.2.5\n\n本版更新 UEI 的平台图标、安装说明与打包内容，功能沿用 1.2.4。\n\n## 图标与文档\n\n- 使用 1:1 洞穴荧光款 UEI 图标，提供 256×256 平台图标与 1024×1024 高清图。\n- GitHub README 使用同款图标，完善 Gale 安装入口和手动安装说明。\n- 自动安装包加入 CHANGELOG.md，并核对包内图标与更新说明，减少不同发布渠道的内容差异。\n- 将未使用的旧封面移至本地备份；仓库继续保留源码、构建配置、测试与使用文档。\n\n## 兼容范围\n\n- 沿用 1.2.4 的游戏正式版与 Together、CUCoreLib、RshLib、SexMod 兼容逻辑。\n- Together 客户端的模组物品仍需房主生成；自动 cuspawn 尚未启用。\n- 双端同步、权限边界以及保存/重连仍需进一步实机验证。\n\n## 安装\n\n在 Gale 的 Casualties: Unknown 模组列表搜索 UEI 并更新，或从 GitHub Release 下载 ZIP 后导入。\n手动安装时先安装 BepInEx 5，再将 UEI.dll 放入 BepInEx/plugins/UEI/。\n升级前关闭游戏，并只保留一份 UEI DLL。\n\nVersion 1.2.5 updates the square cave-glow icon, installation documentation and\npackaged changelog. Gameplay behavior and multiplayer limitations remain those\nof 1.2.4. Custom mod items on Together clients still require host spawning;\nautomatic cuspawn is disabled, and two-peer/save/reconnect validation is pending."
+            }
+        ],
+        "dllNames": [
+            "UEI.dll"
+        ],
+        "dllVersion": "1.2.5",
+        "dllVersions": {
+            "UEI.dll": "1.2.5"
+        },
+        "Statistics": {
+            "TotalDownloads": 24,
+            "Rating": 0
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/MAakber-UEI-1.2.5.png"
+        ],
+        "tags": [
+            "Mods",
+            "AI Generated"
+        ]
+    },
+    {
+        "Id": "thunderstore-mayzmae-RemoveTinnitus",
+        "Name": "RemoveTinnitus",
+        "Version": "1.0.1",
+        "bepinexVersion": "1.0.1",
+        "bepinexPlugins": {
+            "com.mayzmae.removetinnitus": "1.0.1"
+        },
+        "Summary": "It removes tinnitus and doesn't use AI. That's it",
+        "Description": "# What does this do?\r\n\r\nRemove Tinnitus does exactly what the name says while additionally reducing the volume of sound cannon hits, gunshots, and explosions.\r\nIt has no config (right now), no other features and has no dependencies. You can use it if you want, but it likely wasn't made with you in mind, and the other mods around should be enough for your use.\r\n\r\n# Why does this exist?\r\n\r\nMost mods made for this game use AI, including most mods that modify sounds for accessibility reasons. AI is also known to be very bad for the environment.\r\nWhile I do see it as a good force on occasion I do not approve of it's use right now due to it's environmental impact on the world, and so this mod was made with that purpose in mind.\r\nYou can see it as being petty, which is fair, but I don't care what you think. Like I said; this mod wasn't made with you in mind.\r\n\r\n# Why not just use QOL?\r\n\r\nQOL Unknown is a good mod and the creator is a great guy! But for my purposes it does a little too much, and it feels a bit too non-vanilla for my liking. I just need a mod that stops the tinnitus effect.\r\nHowever for 99.9% of players (which this mod wasn't made for) I would greatly recommend it. QOL is not available on this website yet; I'll put it here when it is!",
+        "Author": "mayzmae",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/mayzmae-RemoveTinnitus-1.0.1.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/mayzmae/RemoveTinnitus/",
+            "Website": null
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/mayzmae/RemoveTinnitus/1.0.1/",
+        "ThunderstoreFullName": "mayzmae-RemoveTinnitus",
+        "Uuid4": "bb5fdf25-4906-4b56-97b5-37c0fb1ca0eb",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-20T20:39:56.277307Z",
+        "ReleaseDate": "2026-11-20T20:39:53.950943Z",
+        "SHA256": "38af548b757fb9b325bd8808a77585c0cfc1e31737d210d732a904c9c5517b59",
+        "FileSizeBytes": 42987,
+        "dllSHA256s": {
+            "RemoveTinnitus.dll": "030a2364da0fc205f7c6fc1d8c71902893de1e978cc70bbb24c3cbf48837b620"
+        },
+        "downloadsSinceLatestVersion": 20,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2305"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "RemoveTinnitus.dll"
+        ],
+        "dllVersion": "1.0.1",
+        "dllVersions": {
+            "RemoveTinnitus.dll": "1.0.1"
+        },
+        "Statistics": {
+            "TotalDownloads": 20,
+            "Rating": 0
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/mayzmae-RemoveTinnitus-1.0.1.png"
+        ],
+        "tags": [
+            "Mods",
+            "Audio"
+        ]
+    },
+    {
+        "Id": "thunderstore-McAwesome123-MakeBlankKillYou",
+        "Name": "MakeBlankKillYou",
+        "Version": "2.1.0",
+        "bepinexVersion": "2.1.0",
+        "bepinexPlugins": {
+            "McAwesome.CU.MakeBlankKillYou": "2.1.0"
+        },
+        "Summary": "average target planet suggestion",
+        "Description": "# MakeBlankKillYou\r\naverage target planet suggestion\r\n\r\n## Features\r\nMakes taking almost any damage kill you and kill you instantly\r\n\r\nLast stand can still occur if not disabled\r\n\r\n## Requirements\r\n* [BepInEx](https://github.com/BepInEx/BepInEx/releases)\r\n* [MonoDetour and MonoDetour BepInEx 5](https://github.com/MonoDetour/MonoDetour/releases)\r\n* (Optional) [Configuration Manager](https://github.com/BepInEx/BepInEx.ConfigurationManager/releases) or [CUCoreLib](https://github.com/jimmyking9999999/CUCoreLib/releases) (to change config more easily)\r\n\r\n## Shoutouts\r\nOrsoniks/Moffee for having to endure shitty suggestions and creating the mod thumbnail image",
+        "Author": "McAwesome123",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/McAwesome123-MakeBlankKillYou-2.1.0.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/McAwesome123/MakeBlankKillYou/",
+            "Website": "https://codeberg.org/McAwesome/MakeBlankKillYou"
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/McAwesome123/MakeBlankKillYou/2.1.0/",
+        "ThunderstoreFullName": "McAwesome123-MakeBlankKillYou",
+        "Uuid4": "dd49b01b-7d29-483a-850d-267d372d4f65",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-20T17:47:34.621113Z",
+        "ReleaseDate": "2026-11-20T17:47:32.208345Z",
+        "SHA256": "5128689ca8437e6a6b249b756cffe556ad15e559e8b63e53b2b0be55fae77ec9",
+        "FileSizeBytes": 3373112,
+        "dllSHA256s": {
+            "McAwesome.CU.MakeBlankKillYou.dll": "05772d3e9efcea92edf60ac820f942c3408b0c2f9287ca95b7dc611691d6c857"
+        },
+        "downloadsSinceLatestVersion": 12,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2305",
+            "MonoDetour-MonoDetour_BepInEx_5-0.7.1801"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "McAwesome.CU.MakeBlankKillYou.dll"
+        ],
+        "dllVersion": "2.1.0",
+        "dllVersions": {
+            "McAwesome.CU.MakeBlankKillYou.dll": "2.1.0"
+        },
+        "Statistics": {
+            "TotalDownloads": 12,
+            "Rating": 0
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/McAwesome123-MakeBlankKillYou-2.1.0.png"
+        ],
+        "tags": [
+            "Mods"
+        ]
+    },
+    {
+        "Id": "thunderstore-Piggy-BetterBagInventory",
+        "Name": "BetterBagInventory",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "casualtiesunknown.betterbaginventory": "1.0.0"
+        },
+        "Summary": "Improves the backpack inventory to display item weights by icon size",
+        "Description": "# Better Bag Inventory\r\n\r\n![Preview3](https://raw.githubusercontent.com/Piggy3590/ImageArchives/refs/heads/main/CasualtiesUnknown/preview-ammo.png)\r\n\r\nImproves the backpack inventory to display item weights by icon size.\r\n\r\n\r\n## Is this AI Assisted?\r\nGenerative AI was utilized in some code.\r\n- Squarified Treemap algorithm optimization.\r\n- Compatibility with other mods (currently only item stack config for QOL: Unknown).",
+        "Author": "Piggy",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/Piggy-BetterBagInventory-1.0.0.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/Piggy/BetterBagInventory/",
+            "Website": null
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/Piggy/BetterBagInventory/1.0.0/",
+        "ThunderstoreFullName": "Piggy-BetterBagInventory",
+        "Uuid4": "c014ac55-f214-4f2d-86d2-62ca2851c1f4",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-20T08:09:58.367143Z",
+        "ReleaseDate": "2026-11-20T08:09:56.198978Z",
+        "SHA256": "1e5d8860b0d7a857119e9afbdf37e70a52afe1bf1c55953573437bbc2a077869",
+        "FileSizeBytes": 11267,
+        "dllSHA256s": {
+            "BetterBagInventory.dll": "32a4327ea753dad349ac6db70389131b23945b910dccb1ef30db0617811a7a7c"
+        },
+        "downloadsSinceLatestVersion": 83,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2305"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "BetterBagInventory.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "BetterBagInventory.dll": "1.0.0"
+        },
+        "Statistics": {
+            "TotalDownloads": 83,
+            "Rating": 0
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/Piggy-BetterBagInventory-1.0.0.png"
+        ],
+        "tags": [
+            "Mods",
+            "Misc",
+            "AI Generated"
+        ]
+    },
+    {
+        "Id": "thunderstore-Turianel_mod_team-CasualtiesPrepared",
+        "Name": "CasualtiesPrepared",
+        "Version": "1.0.2",
+        "bepinexVersion": "1.0.2",
+        "bepinexPlugins": {
+            "com.casprepared.loadout": "1.0.2"
+        },
+        "Summary": "Addon for Casualties: Together loadout menu once per campaign.",
+        "Description": "#### **PREPARE YOURSELF, LITTLE FRIEND!**\n\n\n\n\n\n##### **What is it?**\n\n**Addon for CU multiplayer mod (Casualties: Together). After spawning, each player gets a loadout menu once per campaign. They pick items within a budget, and game delivers them in a temporary supply crate.**\n\n##### \n\n##### **How to install?**\n\nSimply unpack CasPrepared-1.0.2.zip into /bepinex/plugins \n\n\n\n##### **Main features**\n\n* Loadout menu. Searchable item catalog with categories, a selection list, the budget and the loadout cost. The Spawn button is blocked when the cost exceeds the budget.\n* Prices. Each item costs its trader price times a host-adjustable multiplier (default 1.0).\n* Host-authoritative. Every purchase is a request to the host over Casualties: Together. The host validates it and spawns the items at the player's position.\n* Supply crate. Items arrive in a temporary crate that cannot be carried or worn. It decays after 5 minutes by default, and its contents drop on the floor.\n* Once per campaign. The host records players by SteamID, and the records are saved with the campaign.\n* Spawn window. The menu closes after a time limit (can be turned off) or when the player moves too far from the spawn point.\n* Achievements stay enabled. The mod does not touch achievements. Cheat commands stay locked by SV\\_Cheats as usual.\n* Server settings toggle. A checkbox in Together's Server settings turns the mod on or off\n\n\n\n|Command|Description|\n|-|-|\n|casprep\\_menu|Open or close the loadout menu (default key F6)|\n|casprep\\_enable \\[on/off]|\tTurn the mod on or off for sessions you host|\n|casprep\\_budget \\[n]|\tLoadout budget per player (default 100)|\n|casprep\\_mult \\[x]|Price multiplier (default 1.0)|\n|casprep\\_window \\[sec/off]|Seconds the menu stays available after spawn; ***0*** or ***off*** removes the limit (default 300)|\n|casprep\\_radius \\[tiles]|Maximum distance from spawn before the menu closes (default 100)|\n|casprep\\_cratetime \\[sec]|\tSupply crate lifetime (default 300)|\n|casprep\\_status|\tList players and their loadout state|\n|casprep\\_reset \\[player]|Let a player pick a loadout again|\n|casprep\\_cheats|Show whether cheat rules allow ***casprep\\_giveloadout***|\n|casprep\\_giveloadout \\[player]|Open the menu again; needs ***sv\\_cheats*** (and ***AllowClientCheatCommands for clients)***|\n\n\n\n\n\n\n\n##### **Requirements**\n\nBepInEx\n\nCUCoreLib\n\nCasualties: Together\n\n\n\n##### **Special thanks to:**\n\nOrsoniks For such awesome game;\n\nCU:Together and CUCoreLib devs For letting us playing with friends.",
+        "Author": "Turianel_mod_team",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/Turianel_mod_team-CasualtiesPrepared-1.0.2.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/Turianel_mod_team/CasualtiesPrepared/",
+            "Website": "https://github.com/Turianel/Casualties-Prepared"
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/Turianel_mod_team/CasualtiesPrepared/1.0.2/",
+        "ThunderstoreFullName": "Turianel_mod_team-CasualtiesPrepared",
+        "Uuid4": "e0c99c42-e098-49f5-989e-18ef428a5d9d",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T20:09:33.861142Z",
+        "ReleaseDate": "2026-11-20T20:59:01.155856Z",
+        "SHA256": "db031aaf41cca4aefed2d97f74d0bbc720ea01c4b4d75bdb984f3cb4d5c32834",
+        "FileSizeBytes": 60050,
+        "dllSHA256s": {
+            "CasPrepared.dll": "90d03136884e586148cd19933d0a7482293c98347705f08f26e0344654a1dcbd"
+        },
+        "downloadsSinceLatestVersion": 15,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2305",
+            "CasualtiesTogether-CasualtiesTogether-5.5.4"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "CasPrepared.dll"
+        ],
+        "dllVersion": "1.0.2",
+        "dllVersions": {
+            "CasPrepared.dll": "1.0.2"
+        },
+        "Statistics": {
+            "TotalDownloads": 60,
+            "Rating": 0
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/Turianel_mod_team-CasualtiesPrepared-1.0.2.png"
+        ],
+        "tags": [
+            "Mods",
+            "AI Generated"
+        ]
+    },
+    {
+        "Id": "thunderstore-Turianel_mod_team-CasualtiesPreparedStandalone",
+        "Name": "CasualtiesPreparedStandalone",
+        "Version": "1.0.2",
+        "bepinexVersion": "1.0.2",
+        "bepinexPlugins": {
+            "com.casprepared.standalone": "1.0.2"
+        },
+        "Summary": "Single-player loadout menu on start once per run. No Casualties: Together needed.",
+        "Description": "#### **PREPARE YOURSELF, LITTLE FRIEND!**\n\n##### **What is it?**\n\n**Single-player version of Casualties: Prepared. After spawning in a new run, you get a loadout menu once per run. Pick items within a budget, and the game delivers them in a temporary supply crate.**\n\n##### **How to install?**\n\nSimply unpack CasPreparedStandalone-1.0.2.zip into /bepinex/plugins\n\nDo not install it together with the multiplayer version of CasPrepared: remove /bepinex/plugins/CasPrepared first.\n\n##### **Main features**\n\n* Loadout menu. Searchable item catalog with categories, a selection list, the budget and the loadout cost. The Spawn button is blocked when the cost exceeds the budget.\n* Prices. Each item costs its trader price times an adjustable multiplier (default 1.0).\n* Supply crate. Items arrive in a temporary crate that cannot be carried or worn. It decays after 5 minutes by default, and its contents drop on the floor.\n* Once per run. The record is saved with the run, so reloading does not give a second loadout.\n* Spawn window. No time limit: the menu closes when you move too far from the spawn point or die.\n* On/off switch on the character select screen.\n* Achievements stay enabled.\n* No Casualties: Together needed.\n\n|Command|Description|\n|-|-|\n|casprep\\_menu|Open or close the loadout menu (default key F6)|\n|casprep\\_enable \\[on/off]|Turn the mod on or off (main menu only)|\n|casprep\\_budget \\[n]|Loadout budget (default 100)|\n|casprep\\_mult \\[x]|Price multiplier (default 1.0)|\n|casprep\\_radius \\[tiles]|Maximum distance from spawn before the menu closes (default 100)|\n|casprep\\_cratetime \\[sec]|Supply crate lifetime (default 300)|\n|casprep\\_status|Show settings and the loadout state of this run|\n\nSettings can be changed only outside a run.\n\n##### **Requirements**\n\nBepInEx\n\nCUCoreLib\n\n##### **Special thanks to:**\n\nOrsoniks For such awesome game;\n\nCUCoreLib devs For the modding library.",
+        "Author": "Turianel_mod_team",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/Turianel_mod_team-CasualtiesPreparedStandalone-1.0.2.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/Turianel_mod_team/CasualtiesPreparedStandalone/",
+            "Website": "https://github.com/Turianel/Casualties-Prepared"
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/Turianel_mod_team/CasualtiesPreparedStandalone/1.0.2/",
+        "ThunderstoreFullName": "Turianel_mod_team-CasualtiesPreparedStandalone",
+        "Uuid4": "6630b8dd-cc6c-4944-8f20-c951c602c161",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T20:13:32.926870Z",
+        "ReleaseDate": "2026-11-21T20:13:30.432933Z",
+        "SHA256": "f7f75321672d425de4478fdfe0334b053bea2b8aa2f9537989a03702c2b49fd6",
+        "FileSizeBytes": 52170,
+        "dllSHA256s": {
+            "CasPreparedStandalone.dll": "0dda5f996629155630ed6b0a930d1181d3030b7da7366c057db9cb29dac11037"
+        },
+        "downloadsSinceLatestVersion": 14,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2305"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "CasPreparedStandalone.dll"
+        ],
+        "dllVersion": "1.0.2",
+        "dllVersions": {
+            "CasPreparedStandalone.dll": "1.0.2"
+        },
+        "Statistics": {
+            "TotalDownloads": 14,
+            "Rating": 0
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/Turianel_mod_team-CasualtiesPreparedStandalone-1.0.2.png"
+        ],
+        "tags": [
+            "Mods",
+            "AI Generated"
+        ]
+    },
+    {
+        "Id": "thunderstore-WhiteFaceCOMM-JosyImplantsMod",
+        "Name": "JosyImplantsMod",
+        "Version": "0.0.2",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "com.implantsmod.scavprototype": "1.0.0"
+        },
+        "Summary": "The mod adds new blocks and implants that give abilities",
+        "Description": "this mod request SCAVlib API",
+        "Author": "WhiteFaceCOMM",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/WhiteFaceCOMM-JosyImplantsMod-0.0.2.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/WhiteFaceCOMM/JosyImplantsMod/",
+            "Website": null
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/WhiteFaceCOMM/JosyImplantsMod/0.0.2/",
+        "ThunderstoreFullName": "WhiteFaceCOMM-JosyImplantsMod",
+        "Uuid4": "d05ec75d-1ee2-46ae-941e-48b9eeb73004",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-21T14:19:20.827970Z",
+        "ReleaseDate": "2026-11-21T14:07:43.871694Z",
+        "SHA256": "1df0245e167e666c337c0c61d66dcd1732b686f6811c157bc24f6812954c9cd6",
+        "FileSizeBytes": 5231125,
+        "dllSHA256s": {
+            "JosyImplantsAndMoreA.0.dll": "936ac775b9ef49a091825af4518a523534b57f4b6f2a68e152a8804eb830e988"
+        },
+        "downloadsSinceLatestVersion": 16,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2100"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "JosyImplantsAndMoreA.0.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "JosyImplantsAndMoreA.0.dll": "1.0.0"
+        },
+        "Statistics": {
+            "TotalDownloads": 19,
+            "Rating": 0
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/WhiteFaceCOMM-JosyImplantsMod-0.0.2.png"
+        ],
+        "tags": [
+            "Mods"
+        ]
+    }
+]

@@ -20,11 +20,13 @@ Every hour, this repository checks for any changes to a nexusmod Casualties: Unk
 
 The data is stored in [nexusmods.json](https://github.com/jimmyking9999999/Metadata-generator/blob/main/nexusmods.json). Note a direct download link cannot be provided, as it is against Nexus' own TOS and fair use polices, nor can direct mod files be hosted here due to each independent mod author's licensing differing.
 
+Each sync also scans the [Thunderstore](https://thunderstore.io/c/casualties-unknown/) `casualties-unknown` community into [thunderstore.json](https://github.com/jimmyking9999999/Metadata-generator/blob/main/thunderstore.json), using the same fields as `nexusmods.json` (plus `ThunderstoreFullName`, `Uuid4`, `FileSizeBytes` and `tags`). Yippie!
+
 For an example of how this may be used, see [https://discord.gg/ehCptz9pwU](https://discord.gg/ehCptz9pwU) for an Discord announcement channel with new mod listings and mod updates, or see external projects such as [Casualties Hub](https://github.com/Casualties-Hub/Casualties-Hub-Public-Releases) and [UCU Mod Manager](https://www.nexusmods.com/scavprototype/mods/405).
 
-Each sync also writes `nexusmods-versions.json`, a plain GUID-to-version object such as `{ "author.mod": "1.2.3" }`. This comes from each DLL's `BepInPlugin` attribute, and is used for [CUCoreLib](https://github.com/jimmyking9999999/CUCoreLib)'s version check function.
+Each sync also writes `nexusmods-versions.json`, a plain GUID-to-version object such as `{ "author.mod": "1.2.3" }`. This comes from each DLL's `BepInPlugin` attribute, from both Nexus and Thunderstore (latest higher version wins), and is used for [CUCoreLib](https://github.com/jimmyking9999999/CUCoreLib)'s version check function.
 
-The metadata is also deployed to [GitHub Pages](https://jimmyking9999999.github.io/Metadata-generator/) as raw JSON files, including the `badges/` directory, if you expect many concurrent users
+The metadata is also deployed to [GitHub Pages](https://jimmyking9999999.github.io/Metadata-generator/) as raw JSON files, including the `badges/` directory, if you expect many concurrent users. 
 
 ---
 ### Badges

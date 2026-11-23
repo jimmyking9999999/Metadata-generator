@@ -61,9 +61,10 @@ const DOWNLOADABLE_EXTENSIONS = new Set([".zip", ".7z", ".rar"]);
 const DISCORD_COLORS = {
   created: 0x57f287,
   updated: 0x5865f2,
-  thunderstoreCreated: 0xa6f4c5,
-  thunderstoreUpdated: 0x8fd3ff,
+  thunderstoreCreated: 0x80d8f0,
+  thunderstoreUpdated: 0x80d8f0,
 };
+const THUNDERSTORE_AVATAR_URL = "https://raw.githubusercontent.com/jimmyking9999999/Metadata-generator/main/.github/assets/thunderstore.png";
 const DISCORD_USERNAME = "Nexus Mod Updates";
 const DISCORD_AVATAR_URL = "https://media.discordapp.net/attachments/1360921920530546971/1519722372012310640/favicon.png?ex=6a3e9740&is=6a3d45c0&hm=ced53232a41abfd5ed21c3d32c3df5eac5a76a457399ba19e35f452059195ce3&=&format=webp&quality=lossless";
 const ADULT_MOD_MESSAGE = "Adult Mod! ||[.](https://cdn.discordapp.com/attachments/1519387321231737022/1535621586542133308/image.png?ex=6a786e8c&is=6a771d0c&hm=c8cd455200291b177c5c346d73fd46623b6301dc57bbd45b757b54067f01f5ce&)||";
@@ -568,6 +569,7 @@ async function buildThunderstoreNotification(previousEntry, entry, pkg, version,
   return {
     kind: type,
     username: THUNDERSTORE_DISCORD_USERNAME,
+    avatarUrl: THUNDERSTORE_AVATAR_URL,
     content: pkg.has_nsfw_content === true ? ADULT_MOD_MESSAGE : "",
     embed: {
       title: pkg.name,
@@ -1969,7 +1971,7 @@ async function sendDiscordNotification(notification) {
     try {
       await postDiscordWebhook(webhookUrl, {
         username: notification.username ?? DISCORD_USERNAME,
-        avatar_url: DISCORD_AVATAR_URL,
+        avatar_url: notification.avatarUrl ?? DISCORD_AVATAR_URL,
         content: notification.content,
         embeds: [notification.embed],
       });

@@ -95,4 +95,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add nexusmods.json thunderstore.json nexusmods-versions.json badges
           git commit -m "Update Nexus metadata"
+          git pull --rebase -X theirs
           git push

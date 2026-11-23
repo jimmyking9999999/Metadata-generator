@@ -677,6 +677,64 @@
         ]
     },
     {
+        "Id": "thunderstore-rushellxyz-GunUI_New_Firearms",
+        "Name": "GunUI_New_Firearms",
+        "Version": "2.0.2",
+        "bepinexVersion": "2.0.2",
+        "bepinexPlugins": {
+            "com.rushellxyz.gunminigame": "1.0.2",
+            "com.rushellxyz.newfirearms": "2.0.2",
+            "com.rushellxyz.newfirearmsmanage": "1.0.0"
+        },
+        "Summary": "GunUI' New Firearms is a modification that radically overhauls the firearm system and its interaction interface. The main goal of the mod is to get rid of tiny on-screen buttons and make the reloading and weapon handling process more immersive.",
+        "Description": "Key features\n - Minigame update with all 17 weapons\n - Or a standalone version that only adds minigame without any weapons\n - Fire mode selector, some full-auto guns can be put into semi-auto mode to not waste ammunition\n - Different magazine types, m1911 mag, small magazine, smg magazine, etc.\n - Different ammunition types: 12gauge birdshot, buckshot, slugshot; 9mm round, hollow and venomus\n - Magazine feed guns, tube feed guns, barrel feed guns (with display of all chambers!)\n - Custom UI sprites for guns, custom sounds too\n - Balancing rework: guns significly buffed to make them more useful\n - Shooting right over/under enemy stuns them\n - SLiders for configurabile damage/jaming/casings\n - Multiplayer compatability!\n - Support for custom gun packs by .json editing!\n\nIf you'd like no new weapons, toggle the setting in Gameplay section!\n \n \n\nMP Status: Compatible\nNewFireamrs: Required on both parties\nEven more, gun jamming is no longer dysnching and removing mag now makes you auto pick up\nGunMinigame: Can work as client sided only\n\n\nOther mods that do anything with firearms (including rusiber's new firearms loader and my old new firearms) are Incompatible\nCompatabile with NewDescents (?)Magazine Merge\n\nTimes NewtonsoftJSON was causing crash: 3\n\n\nCan someone test compatability with CPUOptimization2?\nIdk, compatability: unknown\nThe suspicion that magazines/loaded guns far from screen that got unloaded, wont properly load back and be broken\n\n\nDownload and extract CUCoreLib into BepInEx/plugins(if you haven't before)\nDownload `NewFirearms` and extract into BepInEx/plugins\n\nDocumentation for creating new gun pack have moved into NewFirearms/doc.txt\nPlease report any bugs you find\n\nShout outs\nNTD4Q\nfor like, every single minigame sprite +semiauto shotgun +boxes sprites +minigme idea",
+        "Author": "rushellxyz",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/rushellxyz-GunUI_New_Firearms-2.0.2.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/rushellxyz/GunUI_New_Firearms/",
+            "Website": "https://github.com/rushellxyz/NewFirearms"
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/rushellxyz/GunUI_New_Firearms/2.0.2/",
+        "ThunderstoreFullName": "rushellxyz-GunUI_New_Firearms",
+        "Uuid4": "2f641ae6-2368-4f9a-8b14-0f2b38cbd6ff",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-23T06:50:59.018578Z",
+        "ReleaseDate": "2026-11-23T06:46:57.203062Z",
+        "SHA256": "263a4592c027151633d0a61471381e81d6d1fdaec0b3e889a3dea5cb213e691f",
+        "FileSizeBytes": 1546751,
+        "dllSHA256s": {
+            "GunMinigame.dll": "e10bafadf9eecc7b7ba555ded9dfec3fe4050299a0bb6fec54adb57ce516ff09",
+            "NewFirearms.dll": "a9e7cef3204283602a086a366fa0834a8fce2a94cb8e45fef66551e2184d8a2e",
+            "NewFirearmsManage.dll": "6be8d95d6c873ddde51c7d2ebeec97714d7a0aa867861007caf739a6e741eca3"
+        },
+        "downloadsSinceLatestVersion": 10,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2305",
+            "Jimmyking-CUCoreLib-1.1.0"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "GunMinigame.dll",
+            "NewFirearms.dll",
+            "NewFirearmsManage.dll"
+        ],
+        "dllVersion": "2.0.2",
+        "dllVersions": {
+            "GunMinigame.dll": "1.0.2",
+            "NewFirearms.dll": "2.0.2",
+            "NewFirearmsManage.dll": "1.0.0"
+        },
+        "Statistics": {
+            "TotalDownloads": 10,
+            "Rating": 0
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/rushellxyz-GunUI_New_Firearms-2.0.2.png"
+        ],
+        "tags": []
+    },
+    {
         "Id": "thunderstore-SuzuAy-SaveManager",
         "Name": "SaveManager",
         "Version": "0.4.6",

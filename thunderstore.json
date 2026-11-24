@@ -463,6 +463,57 @@
         ]
     },
     {
+        "Id": "thunderstore-mayzmae-ItWasYourFault",
+        "Name": "ItWasYourFault",
+        "Version": "1.0.1",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "com.mayzmae.ragdollfix": "1.0.0"
+        },
+        "Summary": "A patch that removes the 1-frame window that causes ragdolls from traps but no damage",
+        "Description": "![img](https://raw.githubusercontent.com/mayzmae/ThunderstoreModImages/refs/heads/main/small-mod/orsoniks-misinformation.png)\r\n\r\nOkay then. I'll fix it for you :D\r\n\r\n# What is this?\r\nJump pads, barbed wire, and coils have an odd quirk with how they perform their functions; all three of these first require the player to be ragdolled in order to apply damage. However the way this is done gives a 1-frame window to avoid all damage caused by traps normally. \r\n\r\nThis mod skips the middleman by taking notes from sawblades, which skip the initial ragdoll altogether with a method. Now anytime you get ragdolled it will ALWAYS be your fault. (hence the modname)\r\n\r\n# Why does this exist?\r\nSee the initial paragraph and image above ^ (I am a very spiteful creature, Remove Tinnitus was probably the biggest tell)\r\n\r\n# Shout outs\r\nRedTopTom for [spreading misinformation](https://www.youtube.com/watch?v=EOLe1lqN27Q) (stay misinformed)\r\n\r\nOrsoniks for NOT fixing [their game](https://store.steampowered.com/app/4576490/Casualties_Unknown/) (still a cool game tho)",
+        "Author": "mayzmae",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/mayzmae-ItWasYourFault-1.0.1.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/mayzmae/ItWasYourFault/",
+            "Website": null
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/mayzmae/ItWasYourFault/1.0.1/",
+        "ThunderstoreFullName": "mayzmae-ItWasYourFault",
+        "Uuid4": "ac364061-edb7-41c3-8dfd-60bf853f36bc",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-23T19:33:13.108176Z",
+        "ReleaseDate": "2026-11-23T19:04:10.708928Z",
+        "SHA256": "2f227a134b4d5e0ef530df110feee58e4fc2e9ab47b318fea807228ecfe8f629",
+        "FileSizeBytes": 72430,
+        "dllSHA256s": {
+            "RagdollFix.dll": "65afbccc3fd85935b4fe5f6e818c1509192ab216853f83775ddcd21c29b21a37"
+        },
+        "downloadsSinceLatestVersion": 3,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2305"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "RagdollFix.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "RagdollFix.dll": "1.0.0"
+        },
+        "Statistics": {
+            "TotalDownloads": 5,
+            "Rating": 0
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/mayzmae-ItWasYourFault-1.0.1.png"
+        ],
+        "tags": [
+            "Misc"
+        ]
+    },
+    {
         "Id": "thunderstore-mayzmae-RemoveTinnitus",
         "Name": "RemoveTinnitus",
         "Version": "1.0.1",

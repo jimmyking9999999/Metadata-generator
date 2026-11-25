@@ -114,75 +114,6 @@
         ]
     },
     {
-        "Id": "thunderstore-CasualtiesTogether-CasualtiesTogether",
-        "Name": "CasualtiesTogether",
-        "Version": "5.5.4",
-        "bepinexVersion": "5.5.4",
-        "bepinexPlugins": {
-            "net.cucorelib": "1.1",
-            "CasualtiesMP": "5.5.4"
-        },
-        "Summary": "Multiplayer Co-op mod for Casualties: Unknown",
-        "Description": "<div align=\"center\">\n<a href=\"https://www.nexusmods.com/scavprototype/mods/67\">\n<img alt=\"Casualties: Together\" src=\"https://github.com/creaturefeaturelarry/casualties-together/raw/refs/heads/main/.github/ct6.png\">\n</a>\n</div>\n\n<div align=\"center\">\n\n[![Stars](https://img.shields.io/github/stars/creaturefeaturelarry/casualties-together?style=flat-square&label=Stars&color=orange&logo=github)](https://github.com/creaturefeaturelarry/casualties-together/releases)\n[![Latest Release](https://img.shields.io/github/v/release/creaturefeaturelarry/casualties-together?style=flat-square&include_prereleases&logo=github&label=Version)](https://github.com/creaturefeaturelarry/casualties-together/releases/latest)\n[![Github Downloads](https://img.shields.io/github/downloads/creaturefeaturelarry/casualties-together/total?style=flat-square&color=blue&logo=github&label=Downloads)](https://github.com/creaturefeaturelarry/casualties-together/releases)\n[![Nexus Downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjimmyking9999999%2FMetadata-generator%2Fmain%2Fbadges%2Fcasualties-together.json&style=flat-square)](https://www.nexusmods.com/scavprototype/mods/67?tab=files)\n[![Game Version](https://img.shields.io/badge/Game_Version-v1.0-darkgreen?style=flat-square&logo=steam)](https://store.steampowered.com/app/4576510)\n</div>\n\n\n\n\n### Online Multiplayer Co-op mod for game [\"Casualties: Unknown\"](https://store.steampowered.com/app/4576510)<br/>\n\n\n[![Casualties: Together](https://img.shields.io/badge/Casualties%3A%20Together%20Mod%20Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.gg/SA6H7mA6De)   [![Target Planet](https://img.shields.io/badge/Official%20Casualties%3A%20Unknown%20Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.com/channels/955738554129063947/1470206122844618802)\n\n\n## Support developer:\n\n[![\"Buy Me A Coffee\"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/casualtiestogether)\n\n\n\n# Install Guide:\n\n### Requirements:\nDownload Game: https://store.steampowered.com/app/4576510<br/>\nDownload BepInEx: https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip<br/>\nDownload Co-op Mod: [https://www.nexusmods.com/scavprototype/mods/67](https://www.nexusmods.com/scavprototype/mods/67?tab=files)<br/>\n\n<details><summary>\n\n### Click to show full install guide.\n</summary>\n\n1. Download all the prerequisistes ^^^^^^ \n\n2. Go to the game root directory.\n    - In Steam, Right click on the game.\n    - Click `Manage > Browse local files`\n\n\n3. Unzip `BepInEx*.zip` into the game root directory.\n\n4. Unzip `MPMod*.zip`, open `mod` folder and move the contents into the game root directory.\n\n5. Now it should look like this \n   \n![alt text](https://github.com/creaturefeaturelarry/casualties-together/raw/refs/heads/main/.github/tut_1.png)\n\n7. Go back to steam and click **Play**.\n\n8. In main menu, multiplayer related buttons should appear.\n    - (To go back to singleplayer you need to press the `Deactivate MP Mod` button in `Settings > General`!)\n\n9. (optional) Upvote/Share/Support the mod.\n\n<details>\n<summary>FOR LINUX USERS</summary>\n\n1. Add this to launch options `WINEDLLOVERRIDES=\"winhttp=n,b\" %command%`\n    - It tells proton to load BepInEx.\n\n</details>\n</details>\n<br>\n\n\n\n    \n# Warning:\nIf installation doesn't work, Try again.\n - Or cry at people in \"Casualties: Together\" discord server: [https://discord.gg/FrBX3srzzG](https://discord.gg/FrBX3srzzG)\n\nMake sure to launch the game through Steam Library if Steam Lobbies don't work.\n\nIt's recommended to have good internet connection for optimal experience.\n\n\n!!!<br>\nIF YOU ENCOUNTER ANY GLITCHES, CRASHES, OTHER ISSUES - BLAME THE MOD, NOT THE ORIGINAL DEVELOPER OF THE GAME<br>\n!!!\n\nTo go back to singleplayer you need to press the `Deactivate MP Mod` button in `Settings > General`!\n\n\n# Features:\nSteam Lobbies<br>\nReal voice chat with in-game effects.<br/>\nMiddle Mouse Button to point at a location.<br>\nRight click to interact and heal other players.<br> \nStay close to others to share body temperature.<br>\nSpectator mode when dead.<br>\nSleeping is disabled.<br>\nHunger and thirst is slowed down.<br>\nCarrying incapacitated players.<br>\nAny dead players respawns at next layer.<br>\nUnchipped option is individual.<br>\nMost of these features can be tweaked in the in-game console.<br>\nAlso this mod can run as a dedicated server. (its not real headless)<br>\n\nThere's no client prediction.<br>\nThere's no network ownership.<br>\nThere's no deterministic RNG.<br>\nThere's no anticheat. <br>\nThis mod only adds a simple co-op experience to the game.<br>\n\n\n\n\n\n# Full feaure list:\n\nDisabled sleeping. (tied to the rule \"EnableSleep\" )<br>\nDisabled time scale buttons. (don't try re-enable this actually)<br>\nPlayer friendly fire can be enabled with the \"PVP\" rule.<br>\nMiddle mouse click to highlight a location at your cursor, for the other players to see.<br>\nStand close to other players to share body temperature.<br>\n\nText chat and Voice chat are dependent on your characters ability to speak, same distortions apply to your messages.<br>\nMP3 Player now is a boombox instead of replacing background music.<br>\n\nRight click on a player to open a player interaction context menu.\n - Inspect health panel and perform any actions.\n - Inspect their inventory and take their items. \n - Use any usable item on them (Feeding).\n\nWhen a player dies, they are put into spectator mode.\n - All dead players respawn after living players reach the next level.\n - (if rule \"Permadeath\" is true, respawns are disabled)\n - Player can be revived from traders.\n   \nTo continue to the next layer, half of all players must reach the end. \n - Straggles will get killed if they take too long.\n - Only the Host gets prompted to continue the run.\n - DrillPod works the same, all players must be in the pod to continue.\n - (tweaked by the rule \"LayerFinishConditionPlayerPercent\")\n\nPlayer health regen and decay is tweaked.\n - Death is much faster if there are no comrades nearby. ( tweaked by the \"AdditionalHealthDecay\" rule )\n - Health regeneration is boosted. ( tweaked by the \"AdditionalHealthRegen\" rule)\n\nAll these rules can be changed only by the Host by running the command \"rule [rule name] [new value]\"<br>\n\nYou can eat your friends after they died. \n - The rule \"CanAmputateHealthyPlayers\" allows you to steal limbs of living players.\n\nTraders first impression reputation is calculated from the prettiest of the bunch.<br>\n\n\n\n# How to enable all console commands:\n\nThe Host must enter this console command:<br>\n```rule sv_cheats 1```<br>\n**To let Client into server console mode they need \"admin\" privilege.**<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**(Given by \"adminpriv [player]\" or \"adminpriv-password\")**\n\n\n\n# Building:\n\nRun script `scripts/prepare_workspace.py`\n\nIt copies the game and installs bepinex.\n\n**Visual Studio 2022** is recommended.\n\nOpen the project and compile it.\n\nHit F5\n\nYou have to launch multiple instances of the game manually or using scripts.\n\nUuhh <img src=\"https://media1.tenor.com/m/qPyvaruhJsYAAAAd/drooling-cat-lord-im-one.gif\" width=\"32\" height=\"32\">   \n\n\n# Credits:\n\nCredits are listed in \"About\" menu inside the mod.<br>\n[Creature](https://github.com/creaturefeaturelarry) Current owner.<br>\n[Krokosha666](https://github.com/Krokosha666) Original developer. (Retired)\n\n### Contributors:\n[Dune](https://github.com/Jyan-sei) - Sync, Optimizations<br>\n[VtLoader](https://github.com/vtloader) - Bug fixes, Locale<br>\n[Gary the Cat](https://github.com/Garythecat89), [Dannad](https://github.com/danxnader), [Meow](https://github.com/SprightlyHawk8), [Jimmyking](https://github.com/jimmyking9999999), [Kidihh](https://github.com/Kidihh), [Dawn](https://github.com/hehdawn), [mayzmae](https://github.com/mayzmae), ItsVoidSK<br>\n...And a bunch of playtesters\n\n### Supporters:\n \n```Bleh :P, EthanTheProtogen, RoyMartini, Jazun, Alexx__, vega, Zmechol1337, plasterjello, Doctor Callico, vivikat, Ariyah, killthebudget, _stuck_, ShaoAZ, JameisonAus, Kidi, BluBerryToaster, Katomou, Nemean_Lion732, Locko2265, Trenchburner, TheBoathead, Diesel, Malbyte, KaliVasquez, Mitirich, Shiro, ChrisTheDragon```",
-        "Author": "CasualtiesTogether",
-        "Links": {
-            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/CasualtiesTogether-CasualtiesTogether-5.5.4.png",
-            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/CasualtiesTogether/CasualtiesTogether/",
-            "Website": "https://buymeacoffee.com/casualtiestogether"
-        },
-        "DownloadUrl": "https://thunderstore.io/package/download/CasualtiesTogether/CasualtiesTogether/5.5.4/",
-        "ThunderstoreFullName": "CasualtiesTogether-CasualtiesTogether",
-        "Uuid4": "254ddfcf-61c1-49f0-a7b7-349687e10d82",
-        "SourceName": "Thunderstore",
-        "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-20T19:40:40.449698Z",
-        "ReleaseDate": "2026-11-16T16:23:00.980715Z",
-        "SHA256": "762078707ce74b3a74e2961e5af5a4504fefd319197c643f35e6e47c2db38952",
-        "FileSizeBytes": 2327125,
-        "dllSHA256s": {
-            "CUCoreLib.dll": "c0f064260b2671d02bf802c460aa346c6b858ec9269f2ff93439ebabaa940aa3",
-            "CasualtiesMP.dll": "606a7a9b3467cfbb916b41b86697edb97c82508ee7ffe15432ccb7b08549cf41",
-            "K4os.Compression.LZ4.dll": "2229999ac58aa7bbfe9f65850810e9433a7305dad6eb11ff1527c75faff9b2d0",
-            "LiteEntitySystem.dll": "122fb2a4cf86b02c0211481b2688b52eec18fa7d71e16ca3230f138dd9622da9",
-            "LiteNetLib.dll": "63b2acfd0df3e61d270066034e1dbfaf4f3002da9749eae9b6d0c796dd128e37",
-            "opus.dll": "9d251c8f00377cc0a5f3532be29874b09d7daa07cf0a1850b212e403f5d768f1",
-            "OpusSharp.Core.dll": "d6261e7675705397402c9447d40adc8d3cb9c3ad9d3f66f650ad32ebc03bc25e",
-            "RefMagic.dll": "de14443a1f40c35be1b738658818c985970f9c1c0e749fc82feade2458af971f",
-            "System.Runtime.CompilerServices.Unsafe.dll": "01748200f2400c742aa689f1f5101bd6298efdfd92c00c18f4fa473847235ba9"
-        },
-        "downloadsSinceLatestVersion": 712,
-        "Dependencies": [
-            "BepInEx-BepInExPack-5.4.2305"
-        ],
-        "Changelogs": [],
-        "dllNames": [
-            "CasualtiesMP.dll",
-            "CUCoreLib.dll",
-            "K4os.Compression.LZ4.dll",
-            "LiteEntitySystem.dll",
-            "LiteNetLib.dll",
-            "opus.dll",
-            "OpusSharp.Core.dll",
-            "RefMagic.dll",
-            "System.Runtime.CompilerServices.Unsafe.dll"
-        ],
-        "dllVersion": "5.5.4",
-        "dllVersions": {
-            "CUCoreLib.dll": "1.1",
-            "CasualtiesMP.dll": "5.5.4"
-        },
-        "Statistics": {
-            "TotalDownloads": 1611,
-            "Rating": 1
-        },
-        "Images": [
-            "https://ccdn.thunderstore.io/live/repository/icons/CasualtiesTogether-CasualtiesTogether-5.5.4.png"
-        ],
-        "tags": [
-            "Mods"
-        ]
-    },
-    {
         "Id": "thunderstore-Herobrinee-Prosthetics_mod",
         "Name": "Prosthetics_mod",
         "Version": "1.1.7",
@@ -842,32 +773,32 @@
     {
         "Id": "thunderstore-Turianel_mod_team-CasualtiesPrepared",
         "Name": "CasualtiesPrepared",
-        "Version": "1.0.2",
-        "bepinexVersion": "1.0.2",
+        "Version": "1.1.0",
+        "bepinexVersion": "1.1.0",
         "bepinexPlugins": {
-            "com.casprepared.loadout": "1.0.2"
+            "com.casprepared.loadout": "1.1.0"
         },
         "Summary": "Addon for Casualties: Together loadout menu once per campaign.",
-        "Description": "#### **PREPARE YOURSELF, LITTLE FRIEND!**\n\n\n\n\n\n##### **What is it?**\n\n**Addon for CU multiplayer mod (Casualties: Together). After spawning, each player gets a loadout menu once per campaign. They pick items within a budget, and game delivers them in a temporary supply crate.**\n\n##### \n\n##### **How to install?**\n\nSimply unpack CasPrepared-1.0.2.zip into /bepinex/plugins \n\n\n\n##### **Main features**\n\n* Loadout menu. Searchable item catalog with categories, a selection list, the budget and the loadout cost. The Spawn button is blocked when the cost exceeds the budget.\n* Prices. Each item costs its trader price times a host-adjustable multiplier (default 1.0).\n* Host-authoritative. Every purchase is a request to the host over Casualties: Together. The host validates it and spawns the items at the player's position.\n* Supply crate. Items arrive in a temporary crate that cannot be carried or worn. It decays after 5 minutes by default, and its contents drop on the floor.\n* Once per campaign. The host records players by SteamID, and the records are saved with the campaign.\n* Spawn window. The menu closes after a time limit (can be turned off) or when the player moves too far from the spawn point.\n* Achievements stay enabled. The mod does not touch achievements. Cheat commands stay locked by SV\\_Cheats as usual.\n* Server settings toggle. A checkbox in Together's Server settings turns the mod on or off\n\n\n\n|Command|Description|\n|-|-|\n|casprep\\_menu|Open or close the loadout menu (default key F6)|\n|casprep\\_enable \\[on/off]|\tTurn the mod on or off for sessions you host|\n|casprep\\_budget \\[n]|\tLoadout budget per player (default 100)|\n|casprep\\_mult \\[x]|Price multiplier (default 1.0)|\n|casprep\\_window \\[sec/off]|Seconds the menu stays available after spawn; ***0*** or ***off*** removes the limit (default 300)|\n|casprep\\_radius \\[tiles]|Maximum distance from spawn before the menu closes (default 100)|\n|casprep\\_cratetime \\[sec]|\tSupply crate lifetime (default 300)|\n|casprep\\_status|\tList players and their loadout state|\n|casprep\\_reset \\[player]|Let a player pick a loadout again|\n|casprep\\_cheats|Show whether cheat rules allow ***casprep\\_giveloadout***|\n|casprep\\_giveloadout \\[player]|Open the menu again; needs ***sv\\_cheats*** (and ***AllowClientCheatCommands for clients)***|\n\n\n\n\n\n\n\n##### **Requirements**\n\nBepInEx\n\nCUCoreLib\n\nCasualties: Together\n\n\n\n##### **Special thanks to:**\n\nOrsoniks For such awesome game;\n\nCU:Together and CUCoreLib devs For letting us playing with friends.",
+        "Description": "#### **PREPARE YOURSELF, LITTLE FRIEND!**\n\n##### **What is it?**\n\n**Addon for CU multiplayer mod (Casualties: Together). After spawning, each player gets a loadout menu once per campaign. They pick items within a budget, and the game delivers them in a temporary supply crate.**\n\n##### **How to install?**\n\nInstall with a mod manager, or unpack the CasPrepared folder into /bepinex/plugins.\n\nThe host and every player need the same CasPrepared version. A player with another version sees the host as having no mod.\n\n##### **Main features**\n\n* Loadout menu. Searchable item catalog with categories, a selection list, the budget and the loadout cost. The Spawn button is blocked when the cost exceeds the budget.\n* Presets. Save loadouts under your own names and load them in one click. Each preset shows its cost at the current host's prices.\n* Prices. Each item costs its trader price times a host-adjustable multiplier (default 1.0).\n* Item rules. The host can set custom prices, hide items and add items that traders do not sell. Players get the rules automatically.\n* Host-authoritative. Every purchase is a request to the host over Casualties: Together. The host validates it and spawns the items at the player's position.\n* Supply crate. Items arrive in a temporary crate that cannot be carried or worn. It decays after 5 minutes by default, and its contents drop on the floor.\n* Once per campaign. The host records players by SteamID, and the records are saved with the campaign.\n* Spawn window. The menu closes after a time limit (can be turned off) or when the player moves too far from the spawn point.\n* Achievements stay enabled.\n* Server settings toggle. A checkbox in Together's Server settings turns the mod on or off.\n\n##### **Console commands**\n\nAll commands go through one console command: casprep \\[command] \\[value]. Tab completes command names and item ids. casprep help lists everything.\n\n|Command|Description|\n|-|-|\n|casprep menu|Open or close the loadout menu (default key F6)|\n|casprep enable \\[on/off]|Turn the mod on or off for sessions you host|\n|casprep budget \\[n]|Loadout budget per player (default 100)|\n|casprep mult \\[x]|Price multiplier (default 1.0)|\n|casprep window \\[sec/off]|Seconds the menu stays available after spawn; 0 or off removes the limit (default 300)|\n|casprep radius \\[tiles]|Maximum distance from spawn before the menu closes (default 100)|\n|casprep cratetime \\[sec]|Supply crate lifetime (default 300)|\n|casprep status|Show settings and list players with their loadout state|\n|casprep reset \\[player/all]|Let a player pick a loadout again|\n|casprep cheats|Show whether cheat rules allow casprep giveloadout|\n|casprep giveloadout \\[player]|Open the menu again; needs sv\\_cheats (and AllowClientCheatCommands for clients)|\n|casprep setprice \\[item] \\[price]|Custom base price per unit, before the multiplier|\n|casprep resetprice \\[item/all]|Back to the trader price|\n|casprep ban \\[item]|Hide an item from the list|\n|casprep unban \\[item/all]|Show a hidden item again|\n|casprep additem \\[item] \\[price]|Add an item that traders do not sell|\n|casprep removeitem \\[item]|Remove an added item|\n|casprep items|List custom prices, hidden and added items|\n\nSettings are locked during a running campaign unless sv\\_cheats is on.\n\n##### **Requirements**\n\nBepInEx\n\nCUCoreLib\n\nCasualties: Together\n\n##### **Special thanks to:**\n\nOrsoniks For such awesome game;\n\nCU:Together and CUCoreLib devs For letting us playing with friends.",
         "Author": "Turianel_mod_team",
         "Links": {
-            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/Turianel_mod_team-CasualtiesPrepared-1.0.2.png",
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/Turianel_mod_team-CasualtiesPrepared-1.1.0.png",
             "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/Turianel_mod_team/CasualtiesPrepared/",
             "Website": "https://github.com/Turianel/Casualties-Prepared"
         },
-        "DownloadUrl": "https://thunderstore.io/package/download/Turianel_mod_team/CasualtiesPrepared/1.0.2/",
+        "DownloadUrl": "https://thunderstore.io/package/download/Turianel_mod_team/CasualtiesPrepared/1.1.0/",
         "ThunderstoreFullName": "Turianel_mod_team-CasualtiesPrepared",
-        "Uuid4": "e0c99c42-e098-49f5-989e-18ef428a5d9d",
+        "Uuid4": "0bdb162a-145f-45d2-8a2a-faf257544f26",
         "SourceName": "Thunderstore",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-21T20:09:33.861142Z",
+        "LastUpdated": "2026-11-25T03:40:30.688021Z",
         "ReleaseDate": "2026-11-20T20:59:01.155856Z",
-        "SHA256": "db031aaf41cca4aefed2d97f74d0bbc720ea01c4b4d75bdb984f3cb4d5c32834",
-        "FileSizeBytes": 60050,
+        "SHA256": "e2809266540b3bda585e295c9bb9f734b1576b5a96206c7766716b210fb2bdca",
+        "FileSizeBytes": 80284,
         "dllSHA256s": {
-            "CasPrepared.dll": "90d03136884e586148cd19933d0a7482293c98347705f08f26e0344654a1dcbd"
+            "CasPrepared.dll": "834ef25dcce15d6831d9c91b5848d98eae7ea873de7bd53869e8345c9c1dbd74"
         },
-        "downloadsSinceLatestVersion": 15,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [
             "BepInEx-BepInExPack-5.4.2305",
             "CasualtiesTogether-CasualtiesTogether-5.5.4"
@@ -876,16 +807,16 @@
         "dllNames": [
             "CasPrepared.dll"
         ],
-        "dllVersion": "1.0.2",
+        "dllVersion": "1.1.0",
         "dllVersions": {
-            "CasPrepared.dll": "1.0.2"
+            "CasPrepared.dll": "1.1.0"
         },
         "Statistics": {
-            "TotalDownloads": 60,
+            "TotalDownloads": 151,
             "Rating": 0
         },
         "Images": [
-            "https://ccdn.thunderstore.io/live/repository/icons/Turianel_mod_team-CasualtiesPrepared-1.0.2.png"
+            "https://ccdn.thunderstore.io/live/repository/icons/Turianel_mod_team-CasualtiesPrepared-1.1.0.png"
         ],
         "tags": [
             "Mods",
@@ -895,32 +826,32 @@
     {
         "Id": "thunderstore-Turianel_mod_team-CasualtiesPreparedStandalone",
         "Name": "CasualtiesPreparedStandalone",
-        "Version": "1.0.2",
-        "bepinexVersion": "1.0.2",
+        "Version": "1.1.0",
+        "bepinexVersion": "1.1.0",
         "bepinexPlugins": {
-            "com.casprepared.standalone": "1.0.2"
+            "com.casprepared.standalone": "1.1.0"
         },
-        "Summary": "Single-player loadout menu on start once per run. No Casualties: Together needed.",
-        "Description": "#### **PREPARE YOURSELF, LITTLE FRIEND!**\n\n##### **What is it?**\n\n**Single-player version of Casualties: Prepared. After spawning in a new run, you get a loadout menu once per run. Pick items within a budget, and the game delivers them in a temporary supply crate.**\n\n##### **How to install?**\n\nSimply unpack CasPreparedStandalone-1.0.2.zip into /bepinex/plugins\n\nDo not install it together with the multiplayer version of CasPrepared: remove /bepinex/plugins/CasPrepared first.\n\n##### **Main features**\n\n* Loadout menu. Searchable item catalog with categories, a selection list, the budget and the loadout cost. The Spawn button is blocked when the cost exceeds the budget.\n* Prices. Each item costs its trader price times an adjustable multiplier (default 1.0).\n* Supply crate. Items arrive in a temporary crate that cannot be carried or worn. It decays after 5 minutes by default, and its contents drop on the floor.\n* Once per run. The record is saved with the run, so reloading does not give a second loadout.\n* Spawn window. No time limit: the menu closes when you move too far from the spawn point or die.\n* On/off switch on the character select screen.\n* Achievements stay enabled.\n* No Casualties: Together needed.\n\n|Command|Description|\n|-|-|\n|casprep\\_menu|Open or close the loadout menu (default key F6)|\n|casprep\\_enable \\[on/off]|Turn the mod on or off (main menu only)|\n|casprep\\_budget \\[n]|Loadout budget (default 100)|\n|casprep\\_mult \\[x]|Price multiplier (default 1.0)|\n|casprep\\_radius \\[tiles]|Maximum distance from spawn before the menu closes (default 100)|\n|casprep\\_cratetime \\[sec]|Supply crate lifetime (default 300)|\n|casprep\\_status|Show settings and the loadout state of this run|\n\nSettings can be changed only outside a run.\n\n##### **Requirements**\n\nBepInEx\n\nCUCoreLib\n\n##### **Special thanks to:**\n\nOrsoniks For such awesome game;\n\nCUCoreLib devs For the modding library.",
+        "Summary": "Single-player loadout menu once per run. No Casualties: Together needed.",
+        "Description": "#### **PREPARE YOURSELF, LITTLE FRIEND!**\n\n##### **What is it?**\n\n**Single-player version of Casualties: Prepared. After spawning in a new run, you get a loadout menu once per run. Pick items within a budget, and the game delivers them in a temporary supply crate.**\n\n##### **How to install?**\n\nInstall with a mod manager, or unpack the CasPreparedStandalone folder into /bepinex/plugins.\n\nDo not install it together with the multiplayer version of CasPrepared: remove /bepinex/plugins/CasPrepared first.\n\n##### **Main features**\n\n* Loadout menu. Searchable item catalog with categories, a selection list, the budget and the loadout cost. The Spawn button is blocked when the cost exceeds the budget.\n* Presets. Save loadouts under your own names and load them in one click.\n* Prices. Each item costs its trader price times an adjustable multiplier (default 1.0).\n* Item rules. Set custom prices, hide items and add items that traders do not sell.\n* Supply crate. Items arrive in a temporary crate that cannot be carried or worn. It decays after 5 minutes by default, and its contents drop on the floor.\n* Once per run. The record is saved with the run, so reloading does not give a second loadout.\n* Spawn window. No time limit: the menu closes when you move too far from the spawn point or die.\n* On/off switch on the character select screen.\n* Achievements stay enabled.\n* No Casualties: Together needed.\n\n##### **Console commands**\n\nAll commands go through one console command: casprep \\[command] \\[value]. Tab completes command names and item ids. casprep help lists everything.\n\n|Command|Description|\n|-|-|\n|casprep menu|Open or close the loadout menu (default key F6)|\n|casprep enable \\[on/off]|Turn the mod on or off (main menu only)|\n|casprep budget \\[n]|Loadout budget (default 100)|\n|casprep mult \\[x]|Price multiplier (default 1.0)|\n|casprep radius \\[tiles]|Maximum distance from spawn before the menu closes (default 100)|\n|casprep cratetime \\[sec]|Supply crate lifetime (default 300)|\n|casprep status|Show settings and the loadout state of this run|\n|casprep setprice \\[item] \\[price]|Custom base price per unit, before the multiplier|\n|casprep resetprice \\[item/all]|Back to the trader price|\n|casprep ban \\[item]|Hide an item from the list|\n|casprep unban \\[item/all]|Show a hidden item again|\n|casprep additem \\[item] \\[price]|Add an item that traders do not sell|\n|casprep removeitem \\[item]|Remove an added item|\n|casprep items|List custom prices, hidden and added items|\n\nSettings and item rules can be changed only outside a run.\n\n##### **Requirements**\n\nBepInEx\n\nCUCoreLib\n\n##### **Special thanks to:**\n\nOrsoniks For such awesome game;\n\nCUCoreLib devs For the modding library.",
         "Author": "Turianel_mod_team",
         "Links": {
-            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/Turianel_mod_team-CasualtiesPreparedStandalone-1.0.2.png",
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/Turianel_mod_team-CasualtiesPreparedStandalone-1.1.0.png",
             "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/Turianel_mod_team/CasualtiesPreparedStandalone/",
             "Website": "https://github.com/Turianel/Casualties-Prepared"
         },
-        "DownloadUrl": "https://thunderstore.io/package/download/Turianel_mod_team/CasualtiesPreparedStandalone/1.0.2/",
+        "DownloadUrl": "https://thunderstore.io/package/download/Turianel_mod_team/CasualtiesPreparedStandalone/1.1.0/",
         "ThunderstoreFullName": "Turianel_mod_team-CasualtiesPreparedStandalone",
-        "Uuid4": "6630b8dd-cc6c-4944-8f20-c951c602c161",
+        "Uuid4": "4e5f189a-018c-4c9c-8e71-eeafd77767c0",
         "SourceName": "Thunderstore",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-21T20:13:32.926870Z",
+        "LastUpdated": "2026-11-25T03:40:41.258784Z",
         "ReleaseDate": "2026-11-21T20:13:30.432933Z",
-        "SHA256": "f7f75321672d425de4478fdfe0334b053bea2b8aa2f9537989a03702c2b49fd6",
-        "FileSizeBytes": 52170,
+        "SHA256": "f23da19404dd6efdca99c083335fdea00fb752f1b829317ece6f7d5e78ef6436",
+        "FileSizeBytes": 71528,
         "dllSHA256s": {
-            "CasPreparedStandalone.dll": "0dda5f996629155630ed6b0a930d1181d3030b7da7366c057db9cb29dac11037"
+            "CasPreparedStandalone.dll": "01ea4b4461959589f69883300e51cc7043073f629b4eb0633a40b3508d3eb606"
         },
-        "downloadsSinceLatestVersion": 14,
+        "downloadsSinceLatestVersion": 0,
         "Dependencies": [
             "BepInEx-BepInExPack-5.4.2305"
         ],
@@ -928,16 +859,16 @@
         "dllNames": [
             "CasPreparedStandalone.dll"
         ],
-        "dllVersion": "1.0.2",
+        "dllVersion": "1.1.0",
         "dllVersions": {
-            "CasPreparedStandalone.dll": "1.0.2"
+            "CasPreparedStandalone.dll": "1.1.0"
         },
         "Statistics": {
-            "TotalDownloads": 14,
+            "TotalDownloads": 78,
             "Rating": 0
         },
         "Images": [
-            "https://ccdn.thunderstore.io/live/repository/icons/Turianel_mod_team-CasualtiesPreparedStandalone-1.0.2.png"
+            "https://ccdn.thunderstore.io/live/repository/icons/Turianel_mod_team-CasualtiesPreparedStandalone-1.1.0.png"
         ],
         "tags": [
             "Mods",

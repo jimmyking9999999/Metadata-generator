@@ -497,34 +497,34 @@
         ]
     },
     {
-        "Id": "thunderstore-McAwesome123-MakeBlankKillYou",
+        "Id": "thunderstore-McAwesome-MakeBlankKillYou",
         "Name": "MakeBlankKillYou",
-        "Version": "2.1.0",
-        "bepinexVersion": "2.1.0",
+        "Version": "2.2.0",
+        "bepinexVersion": "2.2.0",
         "bepinexPlugins": {
-            "McAwesome.CU.MakeBlankKillYou": "2.1.0"
+            "McAwesome.CU.MakeBlankKillYou": "2.2.0"
         },
         "Summary": "average target planet suggestion",
         "Description": "# MakeBlankKillYou\r\naverage target planet suggestion\r\n\r\n## Features\r\nMakes taking almost any damage kill you and kill you instantly\r\n\r\nLast stand can still occur if not disabled\r\n\r\n## Requirements\r\n* [BepInEx](https://github.com/BepInEx/BepInEx/releases)\r\n* [MonoDetour and MonoDetour BepInEx 5](https://github.com/MonoDetour/MonoDetour/releases)\r\n* (Optional) [Configuration Manager](https://github.com/BepInEx/BepInEx.ConfigurationManager/releases) or [CUCoreLib](https://github.com/jimmyking9999999/CUCoreLib/releases) (to change config more easily)\r\n\r\n## Shoutouts\r\nOrsoniks/Moffee for having to endure shitty suggestions and creating the mod thumbnail image",
-        "Author": "McAwesome123",
+        "Author": "McAwesome",
         "Links": {
-            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/McAwesome123-MakeBlankKillYou-2.1.0.png",
-            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/McAwesome123/MakeBlankKillYou/",
-            "Website": "https://codeberg.org/McAwesome/MakeBlankKillYou"
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/McAwesome-MakeBlankKillYou-2.2.0.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/McAwesome/MakeBlankKillYou/",
+            "Website": "https://discord.com/channels/955738554129063947/1575212877801988106"
         },
-        "DownloadUrl": "https://thunderstore.io/package/download/McAwesome123/MakeBlankKillYou/2.1.0/",
-        "ThunderstoreFullName": "McAwesome123-MakeBlankKillYou",
-        "Uuid4": "dd49b01b-7d29-483a-850d-267d372d4f65",
+        "DownloadUrl": "https://thunderstore.io/package/download/McAwesome/MakeBlankKillYou/2.2.0/",
+        "ThunderstoreFullName": "McAwesome-MakeBlankKillYou",
+        "Uuid4": "acf12a21-9aba-4ba2-9240-4c447a70fe40",
         "SourceName": "Thunderstore",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-20T17:47:34.621113Z",
-        "ReleaseDate": "2026-11-20T17:47:32.208345Z",
-        "SHA256": "5128689ca8437e6a6b249b756cffe556ad15e559e8b63e53b2b0be55fae77ec9",
-        "FileSizeBytes": 3373112,
+        "LastUpdated": "2026-11-25T18:23:56.557266Z",
+        "ReleaseDate": "2026-11-25T18:23:54.309259Z",
+        "SHA256": "4743be5e9dcff84410a0e0a1a89da0634e7b3bf855081c87559efcfc487d8505",
+        "FileSizeBytes": 3373133,
         "dllSHA256s": {
-            "McAwesome.CU.MakeBlankKillYou.dll": "05772d3e9efcea92edf60ac820f942c3408b0c2f9287ca95b7dc611691d6c857"
+            "McAwesome.CU.MakeBlankKillYou.dll": "eb4027c737527b210b0179be38bf30e8b99997938864fd2846287d5c66a95c06"
         },
-        "downloadsSinceLatestVersion": 12,
+        "downloadsSinceLatestVersion": 2,
         "Dependencies": [
             "BepInEx-BepInExPack-5.4.2305",
             "MonoDetour-MonoDetour_BepInEx_5-0.7.1801"
@@ -533,16 +533,66 @@
         "dllNames": [
             "McAwesome.CU.MakeBlankKillYou.dll"
         ],
-        "dllVersion": "2.1.0",
+        "dllVersion": "2.2.0",
         "dllVersions": {
-            "McAwesome.CU.MakeBlankKillYou.dll": "2.1.0"
+            "McAwesome.CU.MakeBlankKillYou.dll": "2.2.0"
         },
         "Statistics": {
-            "TotalDownloads": 12,
+            "TotalDownloads": 2,
             "Rating": 0
         },
         "Images": [
-            "https://ccdn.thunderstore.io/live/repository/icons/McAwesome123-MakeBlankKillYou-2.1.0.png"
+            "https://ccdn.thunderstore.io/live/repository/icons/McAwesome-MakeBlankKillYou-2.2.0.png"
+        ],
+        "tags": []
+    },
+    {
+        "Id": "thunderstore-McAwesome-ModList",
+        "Name": "ModList",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "McAwesome.CU.ModList": "1.0.0"
+        },
+        "Summary": "A very simple mod list",
+        "Description": "# Mod List\nVery simple mod list displayed at the top of the screen\n\n## Features\nShows a list of mods used at the top of the screen, similar to the beta build text of the demo\n\nConfigurable text opacity and can be hidden during runs if desired.\n\nAdditional mods can also be added if they're not already listed.\n\nBy default, also logs all mods used when starting/continuing a run.\n\n## Requirements\n* [BepInEx](https://github.com/BepInEx/BepInEx/releases)\n* [MonoDetour and MonoDetour BepInEx 5](https://github.com/MonoDetour/MonoDetour/releases)\n* (Optional) [Configuration Manager](https://github.com/BepInEx/BepInEx.ConfigurationManager/releases) or [CUCoreLib](https://github.com/jimmyking9999999/CUCoreLib/releases) (to change config more easily, though CUCoreLib doesn't support string options)\n* Set `HideManagerGameObject` to `true` in BepInEx's config (otherwise the mod won't work!)",
+        "Author": "McAwesome",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/McAwesome-ModList-1.0.0.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/McAwesome/ModList/",
+            "Website": "https://discord.com/channels/955738554129063947/1575212877801988106"
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/McAwesome/ModList/1.0.0/",
+        "ThunderstoreFullName": "McAwesome-ModList",
+        "Uuid4": "02d43053-19c5-417e-9ed4-155338f6bc67",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-25T18:26:51.467232Z",
+        "ReleaseDate": "2026-11-25T18:26:48.539924Z",
+        "SHA256": "d4e2712e51b43f3c98f7b54b37362a6fb5edf55d0fb88637b6483fd01ca83d8e",
+        "FileSizeBytes": 37393,
+        "dllSHA256s": {
+            "McAwesome.CU.ModList.dll": "dd6a72dbda7cab6826a80b76365f16d930bf2c7ed020ef484aada3781115e589"
+        },
+        "downloadsSinceLatestVersion": 8,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2305",
+            "MonoDetour-MonoDetour_BepInEx_5-0.7.1801"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "McAwesome.CU.ModList.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "McAwesome.CU.ModList.dll": "1.0.0"
+        },
+        "Statistics": {
+            "TotalDownloads": 8,
+            "Rating": 0
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/McAwesome-ModList-1.0.0.png"
         ],
         "tags": [
             "Mods"

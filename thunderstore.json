@@ -223,6 +223,65 @@
         ]
     },
     {
+        "Id": "thunderstore-Jimmyking-Custom_Structures",
+        "Name": "Custom_Structures",
+        "Version": "1.4.0",
+        "bepinexVersion": "1.4.0",
+        "bepinexPlugins": {
+            "com.Jimmyking.morestructures": "1.4.0"
+        },
+        "Summary": "Adds new unique structures to world generation, with over 1300 community-made structures!",
+        "Description": "# Custom Structures\n\n![Custom Structures](https://github.com/user-attachments/assets/e5339102-374f-4d4d-904d-f3b21a762686)\n\nA mod that adds >1300 user-created custom structures!\n\n  [![Total Downloads](https://img.shields.io/github/downloads/jimmyking9999999/CU-Custom-Structures/total?color=blue&logo=github)](https://github.com/jimmyking9999999/CU-Custom-Structures/releases)\n  [![Nexus Downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjimmyking9999999%2FMetadata-generator%2Fmain%2Fbadges%2Fcustom-structures.json)](https://www.nexusmods.com/scavprototype/mods/9)\n  \n  \n---\n\n## A World Built From Everyone\n\n![](https://staticdelivery.nexusmods.com/mods/8391/images/9/9-1789382528-1655297033.png)\n![](https://staticdelivery.nexusmods.com/mods/8391/images/9/9-1789382718-2034293696.png)\n\nCustom Structures lets you create and use custom structures made from other people!\n\nDesign structures in the browser, export them, and drop them directly into your game.\n\n[**More than 1307 structures**](https://cu-custom-structures.jimmyking.dev/structures.html) are already available to discover and use. Woah.\n\n![](https://staticdelivery.nexusmods.com/mods/8391/images/9/9-1789382791-727552308.png)\n![](https://staticdelivery.nexusmods.com/mods/8391/images/9/9-1789383144-97659329.png)\n\n---\n\n## What's Included?\n\n### Custom Structures In-game\n\nAdd fresh new structures filled with dangers and loot to your runs, made from the community!\nBrowse structures with the online or in-game structure browser.\n\n### Online Structure Editor and Browser\n\nBuild and edit structures visually with the browser-based editor, and share it with the world!\nCreate with custom properties for every tile, liquid, item, and entity.\n\n---\n\n##  Structure Editor\n\n![](https://staticdelivery.nexusmods.com/mods/8391/images/9/9-1789383609-1787627978.png)\n\nCreate, edit, preview, and export your own structures in the online editor!\n\n### [Open The Editor Here! ->](https://cu-structure-editor.web.app)\n\n### Editor Controls\n\nThe editor follows the control scheme of Aseprite, and is heavily inspired by said program ^^\n\n- **Middle mouse:** Pick blocks or pan\n- **Space:** Pan camera\n- **S:** Select tool\n- **B:** Brush tool\n- **Ctrl + C / Ctrl + V:** Copy and paste\n- **Ctrl + Z / Ctrl + Y:** Undo and redo\n\nOtherwise, use the given tools in the application! There's little you can't hover on for help\n\n![](https://staticdelivery.nexusmods.com/mods/8391/images/9/9-1789384076-1921108822.png)\n![](https://staticdelivery.nexusmods.com/mods/8391/images/9/9-1789384046-768233069.png)\n![](https://staticdelivery.nexusmods.com/mods/8391/images/9/9-1789383733-958829607.png)\n\n---\n\n## Downloading Community Structures\n\n1. Visit the [Structures Library](https://cu-structure-editor.web.app/structures.html)\n2. Download any structures you want.\n3. Move them into the `BepInEx/plugins/Structures` folder (with a mod manager, this is inside your profile folder)\n4. Restart the game or run `reloadstructures` via the console\n\nAlternatively, open the in-game structure browser in the main menu background and download directly into the game!\n\n![](https://staticdelivery.nexusmods.com/mods/8391/images/9/9-1789384352-1789266836.png)\n\n---\n\n## Console Commands\n\n| Command | Description |\n|---|---|\n| `structure {id}` | Spawn a custom structure |\n| `locatestructure {id}` | Locate a custom structure |\n| `reloadstructures` | Reload all structure files |\n\n---\n\n## Installation\n\nYou're able to (and recommended to) install this with a mod manager. Thanks, Thunderstore!\n\nFor a manual install, extract the mod into `BepInEx/plugins`, alongside [CUCoreLib](https://thunderstore.io/c/casualties-unknown/p/Jimmyking/CUCoreLib/):\n\n```\nCasualties Unknown/\n└── BepInEx/\n    └── plugins/\n        ├── CUCoreLib.dll\n        ├── CustomStructures.dll\n        └── Structures/\n            └── YourStructure.txt\n```\n\n---\nEnjoy your structures!",
+        "Author": "Jimmyking",
+        "Links": {
+            "Icon": "https://ccdn.thunderstore.io/live/repository/icons/Jimmyking-Custom_Structures-1.4.0.png",
+            "Thunderstore": "https://thunderstore.io/c/casualties-unknown/p/Jimmyking/Custom_Structures/",
+            "Website": "https://github.com/jimmyking9999999/CU-Custom-Structures"
+        },
+        "DownloadUrl": "https://thunderstore.io/package/download/Jimmyking/Custom_Structures/1.4.0/",
+        "ThunderstoreFullName": "Jimmyking-Custom_Structures",
+        "Uuid4": "5e5ea3bb-5279-4dcf-a310-8394380f350d",
+        "SourceName": "Thunderstore",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-26T11:25:05.997136Z",
+        "ReleaseDate": "2026-11-22T11:56:55.505973Z",
+        "SHA256": "563716649538b93cdbfe2d7c4ae61e1ec0a7e555a2073a9e831d71d158bd1d6d",
+        "FileSizeBytes": 983106,
+        "dllSHA256s": {
+            "Custom Structures.dll": "6cb07607c7274b5a0fe602d4b16719273084f8eca2452df8758f7804d7f0490d"
+        },
+        "downloadsSinceLatestVersion": 8,
+        "Dependencies": [
+            "BepInEx-BepInExPack-5.4.2305",
+            "Jimmyking-CUCoreLib-1.1.0"
+        ],
+        "Changelogs": [
+            {
+                "Version": "1.4.0",
+                "Changelog": "## v1.4.0\n\n- Huge optimizations (>10x speeds! Wow!)\n- Added IDs, triggers, logic and command running to structures (Logic gates, activation zones, command triggers, move triggers, spawn triggers, etc...)\n- Added custom lighting objects \n- Updated the structure preview for in-game structures\n- Added decay field\n- Structures can now be downloaded straight from the in-game console using a URL or the structure’s name\n- Fan attachment custom property\n- Lore notes can have the EPDA font\n- Added a slider in the settings menu to tone down vanilla structures\n- Structures now respect CUCoreLib's tagging system\n- Added Backgroundify, to bring foreground entites to the background (cannot be hit) \n- Added lighting to the structure browser. Woah. There's now Dark/Dim/Bright/Fullbright options with the game’s own ambient light settings\n- Added a background dropdown so you can preview structures against any layer’s own background\n- Many nice UI changes\n- Fixed a few items not displaying correctly in-game, or having the wrong values\n- Fixed climbing ropes mixing up the extended and normal variants\n- Mobile support for the browser (limited)\n- Added `wallholes`\n- Loading bar\n- Geysers have a `liquidtype` custom property\n- QoL support, + full world saving qol support\n- Lifepodlights can be in different colors now\n- Magazines spawn with max ammo if in containers by default\n- Scrapeaters and bio terminals have IDs as optional args\n- Fixed lifepod pump spawning issues\n- Fixed multiplayer spawn persistence bug (structures no longer bleed into your own worlds after playing in a lobby)\n- Updated in-game structure browser"
+            }
+        ],
+        "dllNames": [
+            "Custom Structures.dll"
+        ],
+        "dllVersion": "1.4.0",
+        "dllVersions": {
+            "Custom Structures.dll": "1.4.0"
+        },
+        "Statistics": {
+            "TotalDownloads": 12,
+            "Rating": 0
+        },
+        "Images": [
+            "https://ccdn.thunderstore.io/live/repository/icons/Jimmyking-Custom_Structures-1.4.0.png"
+        ],
+        "tags": [
+            "Misc",
+            "Tools",
+            "Mods"
+        ]
+    },
+    {
         "Id": "thunderstore-Jimmyking-New_Descents",
         "Name": "New_Descents",
         "Version": "1.1.0",

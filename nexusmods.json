@@ -1,5 +1,334 @@
 [
     {
+        "Id": "nexus-1158",
+        "Name": "Console Suggestions",
+        "Version": "0.1",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "local.consolesuggestions": "1.0.0"
+        },
+        "Summary": "Adds autocomplete and command suggestions to the in-game console in C: U, making command input faster and more convenient.",
+        "Description": "About this mod\n<br />[b]ConsoleSuggestions[/b] adds autocomplete and command suggestions to the in-game console.\n<br />Suggestions appear while typing, helping you discover available commands and enter them more easily.\n<br />\n<br />Installation\n<br />[list=1]\n<br />[*]Download and extract the archive.[/*]\n<br />[*]Open the game directory:\n<br />[code]Steam&#92;steamapps&#92;common&#92;Casualties Unknown[/code][/*]\n<br />[*]Navigate to \n<br />[code]BepInEx&#92;plugins[/code][/*]\n<br />[*]Move the ConsoleSuggestions folder into the plugins directory.[/*]\n<br />[/list]",
+        "Author": "kherson552",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1158/1158-1795890164-252108722.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1158"
+        },
+        "DownloadUrl": "nexus://scavprototype/1158/3889",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1158,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-28T18:26:19.000Z",
+        "ReleaseDate": "2026-11-28T18:26:10.000Z",
+        "SHA256": "b99e4530487fb0366363bc0c4e33b59fa964274c24beb6c68f76388c6d6ad448",
+        "dllSHA256s": {
+            "ConsoleSuggestions.dll": "e88841449daedb1da0573c29efebd6bc624f38a484792995e644ab80b038b762"
+        },
+        "downloadsSinceLatestVersion": 1,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [
+            "ConsoleSuggestions.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "ConsoleSuggestions.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 2,
+            "TotalDownloads": 2,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1158/1158-1795890164-252108722.png"
+        ],
+        "nexusTags": [
+            "AI-Generated Content",
+            "Quality of Life",
+            "User Interface",
+            "Utilities for Players"
+        ],
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z"
+    },
+    {
+        "Id": "nexus-1157",
+        "Name": "Carlos (layer 8 boss)",
+        "Version": "1",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "com.carlos.cu.boss": "1.0.0"
+        },
+        "Summary": "A new boss made for layer 8: It's time to make layer 8 more challenging! 为第八层制作的新boss",
+        "Description": "This boss is designed for well-prepared Sawians. \n<br />It spawns when you enter the Crystal Layer and moves toward you.\n<br />Once it gets close enough, it will begin circling around you and changing colors over time. \n<br />If you fail to attack it before it changes color, it will attack you. \n<br />When its health drops below a certain threshold, it will change its attack pattern and summon guards frequently. \n<br />Good luck, Saw.\n<br />\n<br />此模组是为准备充分的SAW设计，是否感觉丛林后面的层级再无挑战性？这个模组改变了这一切！\n<br />在水晶层添加了新的boss：卡洛斯\n<br />它将在你进入水晶层时生成在底部，并缓慢向你的位置靠近，你大概有40秒左右的时间寻找一个合适的场地；\n<br />当它抵达你的位置时，将开始环绕你旋转并开始变色，如果在一定时间内没有对其造成伤害，它将向你冲刺并造成随机水晶效果；\n<br />血量降低到一定程度后将会改变攻击模式并频繁召唤护卫；\n<br />当然最终的奖励也很丰厚，值得在这里为它流血！\n<br />当然，如果你不想战斗，也可以像躲避普通的恶念体一样躲开攻击并下层（说实在的如果你不想战斗为什么要装这个模组呢）\n<br />总之，祝你好运，SAW\n<br />\n<br />安装：解压到SteamLibrary&#92;steamapps&#92;common&#92;Casualties Unknown&#92;BepInEx&#92;plugins中。",
+        "Author": "MarthaMana MonXi",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1157/1157-1795890610-664535703.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1157"
+        },
+        "DownloadUrl": "nexus://scavprototype/1157/3890",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1157,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-28T18:33:18.000Z",
+        "ReleaseDate": "2026-11-28T18:31:27.000Z",
+        "SHA256": "5559dce3cedfac9888827431774a9e578abc6493b68adb2fac66c8c707166441",
+        "dllSHA256s": {
+            "CarlosBoss.dll": "96407c892dc9260eba7272ed79b735b52a21c55da93070fa92b1a6a71cbc1364"
+        },
+        "downloadsSinceLatestVersion": 2,
+        "Dependencies": [
+            "nexus-115"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "CarlosBoss.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "CarlosBoss.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 0,
+            "TotalDownloads": 0,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1157/1157-1795890610-664535703.png"
+        ],
+        "nexusTags": [
+            "AI Assisted",
+            "Gameplay"
+        ],
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z"
+    },
+    {
+        "Id": "nexus-1156",
+        "Name": "Mermaid Milky",
+        "Version": "1.0.0",
+        "bepinexVersion": "1.0.0",
+        "bepinexPlugins": {
+            "mermaidmilky": "1.0.0"
+        },
+        "Summary": "Play Milky as a mermaid.",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />Play Milky as a mermaid\n<br />Maybe harder than normal Milky\n<br />\n<br />Pick Milky, then tick \"SAW-03M aquatic variant\" in the run settings.\n<br />Optional settings: gill breathing, harsher traps.\n<br />Also adds some PDA logs and notes.\n<br />\n<br />[size=4][b]Installation[/b][/size]\n<br />Extract the zip into the game root folder.\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />BepInEx 5\n<br />Player Sprite Replacer\n<br />\n<br />Not tested with Casualties Together.",
+        "Author": "adfvfe9",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1156/1156-1795886766-978955974.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1156"
+        },
+        "DownloadUrl": "nexus://scavprototype/1156/3888",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1156,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-28T17:46:26.000Z",
+        "ReleaseDate": "2026-11-28T17:42:10.000Z",
+        "SHA256": "f0e3b5fb75c405188124e2998bdf4cfa4fad7cf2ce1f743c290d2180f3f0baa1",
+        "dllSHA256s": {
+            "MermaidMilky.dll": "a59a3933679529d8951200f51abbc7991edf819df865a26c5bd025b0905049bb"
+        },
+        "downloadsSinceLatestVersion": 5,
+        "Dependencies": [
+            "nexus-15",
+            "nexus-115"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "MermaidMilky.dll"
+        ],
+        "dllVersion": "1.0.0",
+        "dllVersions": {
+            "MermaidMilky.dll": "1.0.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 5,
+            "TotalDownloads": 7,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1156/1156-1795886766-978955974.png"
+        ],
+        "nexusTags": [
+            "AI Media",
+            "AI-Generated Content",
+            "Animation - New",
+            "Body",
+            "English",
+            "Gameplay",
+            "Korean",
+            "Textures",
+            "User Interface"
+        ],
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z"
+    },
+    {
+        "Id": "nexus-1155",
+        "Name": "More Features And Items",
+        "Version": "0.62",
+        "bepinexVersion": "0.1.151",
+        "bepinexPlugins": {
+            "uc.contentpack": "0.1.151"
+        },
+        "Summary": "A content expansion mod for Casualties: Unknown, adding new items, mechanics and quality-of-life features.. 游戏《未知伤亡》的扩展内容模组，新增物品、机制和生活便利功能。",
+        "Description": "这个mod做了什么：\n<br />\n<br />《更多的功能和物品》为《未知伤亡》增加了洗澡、烹饪、武器和实用装备，也给洞穴里添了会巡逻的迷你战争机器人。\n<br />\n<br />【生存与料理】\n<br />· 把液体容器拖到「洗澡」按钮，可以用里面的液体洗澡。不同液体的清洁、消毒和辐射效果各不相同。\n<br />· 面粉加液体可做面团糊糊，用热源烙成饼。动物肉块、胶质肉块和黄色肉块都可以烤熟。用食物保鲜袋或保鲜腰包延缓腐坏。\n<br />· 哑铃可以单独举，也可以配合深蹲。心形吊坠戴在颈部时提供护甲和韧性。不死图腾在符合条件时帮助角色脱离危险。\n<br />\n<br />【武器与洞穴】\n<br />· 木质、铜质、铁质回旋镖和皮卡镖可以近战或投掷。回旋镖能击中生物、破坏方块、带回沿途掉落物。皮卡镖具有限度的回程追踪。\n<br />· 可以拆取、搬运和投掷钟乳石、冰锥、碎颅者及落盖菇。部分下坠物可以插入地形。\n<br />· 迷你战争机器人会巡逻、瞄准和装填。开火前能听见警报，还能看到红色瞄准线。\n<br />· 驱虫剂和灭虫喷雾可对付部分洞穴生物。园丁手套有机会增加植物采集掉落，沙丘角色穿戴同一件手套时使用屠夫手套的效果。\n<br />\n<br />【探索与交易】\n<br />· 专业工具系绳能系住脱手物品，使用滚轮收放，绳索会绕过障碍。电池转存夹可在不同规格的电池之间转移电量。\n<br />· 信号定位器可以寻找尚未遇见的商人，维生舱商人也会发布物资收购需求。\n<br />· 主菜单左上角的轮盘可查看版本和设置。EXP 测试箱默认关闭，可按需手动开启。\n<br />\n<br />【安装与联机】\n<br />适用于《未知伤亡》1.0.2，需要 BepInEx 5.4.23.5 和 CUCoreLib 1.1。退出游戏后，将压缩包中的 BepInEx 文件夹解压到游戏根目录。以前装过开发版的玩家，更新前请先移出旧的 BepInEx/plugins/UCContentPack 文件夹。\n<br />\n<br />支持单人游玩。联机可使用 Together 5.5.5-cu-port，房主和客机需使用同一份内容包和同一构建的联机模组。\n<br />[b]前置依赖 / Requirements[/b]\n<br />[list]\n<br />[*]BepInEx 5.4.23.5 (x64) — Required[/*]\n<br />[*]CUCoreLib 1.1 — Required[/*]\n<br />[*][url=https://www.nexusmods.com/scavprototype/mods/67]Casualties Together[/url] — Optional, only required for multiplayer.[/*]\n<br />[/list]单人游玩无需安装联机模组。联机时，房主和客机必须安装相同版本的联机模组及本内容模组。\n<br />Together is not required for single-player. All players must have matching versions of Together and this content mod when playing multiplayer.",
+        "Author": "CheRiez and Baijie",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1155/1155-1795881688-136956345.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1155"
+        },
+        "DownloadUrl": "nexus://scavprototype/1155/3883",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1155,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-28T16:22:09.000Z",
+        "ReleaseDate": "2026-11-28T16:07:24.000Z",
+        "SHA256": "a31f1d28d35ff626e263c071ba641b1d955bca03bcec795ee1cebeaaeb255cdb",
+        "dllSHA256s": {
+            "UCContentPack.dll": "b2de7eeb8831b099b9ab0ea6ede8cc08aa147c4943aece7af303941413358781"
+        },
+        "downloadsSinceLatestVersion": 3,
+        "Dependencies": [
+            "nexus-115",
+            "nexus-341"
+        ],
+        "Changelogs": [],
+        "dllNames": [
+            "UCContentPack.dll"
+        ],
+        "dllVersion": "0.1.151",
+        "dllVersions": {
+            "UCContentPack.dll": "0.1.151"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 4,
+            "TotalDownloads": 4,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1155/1155-1795881688-136956345.png"
+        ],
+        "nexusTags": [
+            "AI-Generated Content"
+        ],
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z"
+    },
+    {
+        "Id": "nexus-1154",
+        "Name": "Survival Aid",
+        "Version": "2.1",
+        "bepinexVersion": "2.1.2",
+        "bepinexPlugins": {
+            "com.mod.combined.ultimate": "2.1.2"
+        },
+        "Summary": "一个辅助模组,可以帮助你更好的生存,有作弊性质,F8呼出菜单",
+        "Description": "[size=4][b]描述[/b][/size]\n<br />[color=#D4D4D8]一个辅助模组,包括但不限于全局高亮.屏蔽视觉效果.小地图.世界地图,有作弊性质,F8呼出菜单[/color]\n<br />\n<br />[size=4][b]安装说明[/b][/size]\n<br />下载后放到Casualties Unknown&#92;BepInEx&#92;plugins中\n<br />\n<br />[size=4][b]要求[/b][/size]\n<br />装载5.0及以上版本的联机模组\n<br />\n<br />Since the mod author is a Chinese, the mod is only available in Chinese. If the download volume is high, I will add English or other languages.\n<br />\n<br />感谢@Dylan为本模组前期开发提供的帮助\n<br /> ",
+        "Author": "BanXiaMaoMao",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1154/1154-1795877919-270335977.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1154"
+        },
+        "DownloadUrl": "nexus://scavprototype/1154/3881",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1154,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-28T15:05:20.000Z",
+        "ReleaseDate": "2026-11-28T15:03:11.000Z",
+        "SHA256": "fd410bf03ed20303f8980651d602a045728bf4773b835c41b0840565b26d9644",
+        "dllSHA256s": {
+            "本该如此.dll": "b8d67bc6a16788aa17a4e0967986d8b7d894d8eb14bd405b804b73a960a98a87"
+        },
+        "downloadsSinceLatestVersion": 6,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [
+            "本该如此.dll"
+        ],
+        "dllVersion": "2.1.2",
+        "dllVersions": {
+            "本该如此.dll": "2.1.2"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 7,
+            "TotalDownloads": 7,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1154/1154-1795877919-270335977.png"
+        ],
+        "nexusTags": [
+            "AI Assisted",
+            "Cheating",
+            "Quality of Life"
+        ],
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z"
+    },
+    {
+        "Id": "nexus-1153",
+        "Name": "Live Client",
+        "Version": "1.1.0",
+        "bepinexVersion": "1.1.0",
+        "bepinexPlugins": {
+            "com.live.casualties": "1.1.0"
+        },
+        "Summary": "A cheat/assist mod for Casualties: Unknown",
+        "Description": "[center][b]这是一个用于《未知伤亡》的作弊/辅助模组。[/b][/center]\n<br />[center][b]This is a cheat/assist mod for Casualties: Unknown.[/b][/center]\n<br />[center][/center]\n<br />[center][color=#e69138][b][b]模组是开源的，具体可以看这里：[/b][/b][/color][/center]\n<br />\n<br />[center][color=#e69138][b][b]The mod is open source, you can check it out here:[/b][/b][/color][/center]\n<br />[center][b][url=https://github.com/Daoguan-king/Live-Client]Daoguan-king/Live-Client: 一个适用于《Casualties: Unknown》（未知伤亡）正式版的辅助和作弊模组， UI 界面模仿《我的世界》模组 Wurst Client 。[/url][url=https://github.com/Daoguan-king/Live-Client][/url][/b][/center]\n<br />[center][/center]\n<br />[center][b]为什么要叫 Live？因为我只是想让小狗简单地活下去🥲[/b][/center]\n<br />[center][b][b]Why “Live”? Because I just want the little dog to live. 🥲[/b][/b][/center]\n<br />[center][/center]\n<br />[center][color=#ff0000][size=4][font=Arial]这款模组只针对了[b]单机模式[/b]进行设计，所以请[b]不要在联机时使用[/b]，以免遇到未知Bug。[/font][/size][/color][/center]\n<br />[center][color=#ff0000][size=4][font=Arial]This mod was designed just for [b]single-player [/b]mode, so please [b]don’t use it online[/b] to avoid running into any unknown bugs.[/font][/size][/color][/center]\n<br />[b][img]https://staticdelivery.nexusmods.com/mods/8391/images/1153/1153-1795871574-395076089.png[/img][img]https://staticdelivery.nexusmods.com/mods/8391/images/1153/1153-1795871573-1432031594.png[/img][/b]\n<br />",
+        "Author": "DaoGuanKing",
+        "Links": {
+            "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1153/1153-1795871765-893072038.png",
+            "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1153"
+        },
+        "DownloadUrl": "nexus://scavprototype/1153/3878",
+        "NexusGameDomain": "scavprototype",
+        "NexusModId": 1153,
+        "SourceName": "Nexus",
+        "ContainsAdultContent": false,
+        "LastUpdated": "2026-11-28T13:19:30.000Z",
+        "ReleaseDate": "2026-11-28T13:18:23.000Z",
+        "SHA256": "dbdea98604e145cc47c3c409856854bafc92c47cc4373eaf78c811f3cf4986bd",
+        "dllSHA256s": {
+            "Live.dll": "659f2c64ff501a3b42fa88a6579e9ad1f7b7e2de2dee144147a3f0dd806e9500"
+        },
+        "downloadsSinceLatestVersion": 12,
+        "Dependencies": [],
+        "Changelogs": [],
+        "dllNames": [
+            "Live.dll"
+        ],
+        "dllVersion": "1.1.0",
+        "dllVersions": {
+            "Live.dll": "1.1.0"
+        },
+        "Statistics": {
+            "Endorsements": 0,
+            "UniqueDownloads": 12,
+            "TotalDownloads": 13,
+            "TotalViews": null
+        },
+        "Images": [
+            "https://staticdelivery.nexusmods.com/mods/8391/images/1153/1153-1795871765-893072038.png"
+        ],
+        "nexusTags": [
+            "AI-Generated Content",
+            "Cheating",
+            "Chinese",
+            "English",
+            "Gameplay",
+            "Humour, Joke or Just for Fun",
+            "User Interface",
+            "Utilities for Players"
+        ],
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z"
+    },
+    {
         "Id": "nexus-1151",
         "Name": "Ultimate Sound Swap Addon for CoF and CS GO sounds",
         "Version": "1",
@@ -685,15 +1014,16 @@
         "LastQuickCheck": "2026-11-28T02:21:25.134Z"
     },
     {
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
         "Id": "nexus-1122",
         "Name": "Sawian Cuisine",
-        "Version": "1.0.0",
+        "Version": "1.1.0",
         "bepinexVersion": "1.0.0",
         "bepinexPlugins": {
             "com.LunarMcGee.SawianCuisine": "1.0.0"
         },
-        "Summary": "A mod built around being able to cook more recipes of food with the ingredients already available instead of bloating the pool with more.",
-        "Description": "[size=4][b]Description[/b][/size]\n<br />[size=3][color=#D4D4D8]A mod I whipped up in my free time because I always found the cooking rather wanting and other mods I've tried to solve this always add new ingredients and plants making food even less of a problem than it already is. So I took a crack at it myself, using the ingredients already in the game to make recipes and giving your genius level Expies who can craft a laser drill a higher culinary ceiling than soup or nutrient bars.[/color][/size]\n<br />[size=3][color=#D4D4D8]This is my first mod and I have zero coding experience so this is still a work in progress, though I fully intend on continuing to work on this, feedback would be very helpful.[/color][/size]\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />Make sure you have BepInEx  5.4.23.5 installed and CUCoreLib installed as they are dependencies.\n<br />Once you have and you have the Plugin folder in the BepInEx folder just drag and drop the .dll file into it.\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />A handful of new mouth watering dishes and drinks for you to make and enjoy, with bold innovations such as cooking meat. \n<br />New tools with crafting qualities for \"boiling\" and \"cooking\". (Vanilla recipes are unaffected as of now, intend on making all relevant recipes to have such requirements.)\n<br />Fire Sparker to use battery power to be able to light fires, no longer will you be stuck to fire drills like a savage.\n<br />Brewing naptails into a tea so you bring them along with you in compact and long lasting fashion.\n<br />Fermenting peels in water to create yeast to brew alcohol. (More recipes are planned for alcohol and yeast.)\n<br />\n<br />\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[color=#D4D4D8]BepInEx  5.4.23.5 [/color]\n<br />[color=#D4D4D8]CUCoreLib[/color]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />Thanks to Orsoniks for making such a awesome game.\n<br />Thanks to CUCoreLib creator/team for making a helpful guide which without this mod would not be possible.",
+        "Summary": "A mod to be able to cook more recipes with the ingredients already available. Including new tools for cooking, medicinal teas, and upgraded canteens.",
+        "Description": "[size=4][b]Description[/b][/size]\n<br />[size=3][color=#D4D4D8]A mod I whipped up in my free time because I always found the cooking rather wanting and other mods I've tried to solve this always add new ingredients and plants making food even less of a problem than it already is. So I took a crack at it myself, using the ingredients already in the game to make recipes and giving your genius level Expies who can craft a laser drill a higher culinary ceiling than soup or nutrient bars.[/color][/size]\n<br />[size=3][color=#D4D4D8]This is my first mod and I have zero coding experience so this is still a work in progress, though I fully intend on continuing to work on this, feedback would be very helpful.[/color][/size]\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />Make sure you have BepInEx  5.4.23.5 installed and CUCoreLib installed as they are dependencies.\n<br />Once you have and you have the Plugin folder in the BepInEx folder just drag and drop the .dll file into it.\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />A handful of new mouth watering dishes and drinks for you to make and enjoy, with bold innovations such as cooking meat, making sausages, and the pinnacle of making a full blown feast of everything you can find on this planet. \n<br />New tools with crafting qualities for \"boiling\" and \"cooking\". (Vanilla recipes are unaffected as of now, intend on making all relevant recipes to have such requirements.)\n<br />Electric Lighter to use battery power to be able to light fires, no longer will you be stuck to fire drills like a savage.\n<br />Brewing medicinal teas using the various plants in your journey to store them long term.\n<br />Fermenting peels in water to create yeast to brew alcohol and use such in medicinal brews.\n<br />Special \"Dune oriented\" meals so you can create cuisine out of Sawians.\n<br />\n<br />\n<br />\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[color=#D4D4D8]BepInEx  5.4.23.5 [/color]\n<br />[color=#D4D4D8]CUCoreLib[/color]\n<br />\n<br />[size=4][b]Shout outs[/b][/size]\n<br />Thanks to Orsoniks for making such a awesome game.\n<br />Thanks to CUCoreLib creator/team for making a helpful guide which without this mod would not be possible.",
         "Author": "LunarMcGee",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1122/1122-1795731878-1401826998.jpg",
@@ -704,18 +1034,23 @@
         "NexusModId": 1122,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-26T22:36:01.000Z",
+        "LastUpdated": "2026-11-28T18:50:40.000Z",
         "ReleaseDate": "2026-11-26T22:25:31.000Z",
         "SHA256": "b6e0fcc74b3b764d1aed915a363314bb6e76c164fcb7af191e1a7192c34f5604",
         "dllSHA256s": {
             "SawianCuisine.dll": "6dd5dfb8600c48a81f55d3e42f664a3e7475c93065d2dcdec5ecfbae40e3e467"
         },
-        "downloadsSinceLatestVersion": 40,
+        "downloadsSinceLatestVersion": 78,
         "Dependencies": [
             "nexus-115",
             "nexus-341"
         ],
-        "Changelogs": [],
+        "Changelogs": [
+            {
+                "Version": "1.1.0",
+                "Changelog": "- Added titanium canteen, a late game upgrade to the normal canteen holding 500ml for the same weight.\n- Added pouch bandolier, goes into the bandolier slot holding 3.2u with 75% reduction and a 0.6 max weight value. Use it to store canteens or whatever small items you wish. Uncraftable, must find or trade for in the world.\n- Added Yellow Meal and Dune's Meat Feast, allowing you to make cuisine out of Sawian for anyone who felt misled by the mod name.\n- Added Popfruit Flush a homebrewed anti rad drink at the cost of being sickening to ingest.\n- Added Frigiant Tea a frigid tea used to cool you down, slightly sickening.\n- Added Helluce Tea a spicey tea able to warm you up, ease sickness, heal internal bleeding, lessen hearing loss. Tastes terrible and will upset you greatly.\n- Fixed Frying Pan and Mess Kit's ability to be used as a weapon, bash away!\n- Reduced the int cost from 10 to 8 of the Frying Pan to lower the bar of entry for more advanced recipes.\n- Reworked the Fire Sparker, renaming it to Electric Lighter for clarity and updated the sprite and description to match.\n- Added a sparking sound when using the Electric Lighter to add more feedback to use.\n- Reworked the yeast sprites to be able to differentiate from the fermenting and finished version better.\n- Reduced the durability loss on hitting with the Roasting Stick alongside the terrain damage and added piercing to it, skewer your foes.\n- Added all items to their proper loot and trader pools, except for embers which are excluded, happy looting!"
+            }
+        ],
         "dllNames": [
             "SawianCuisine.dll"
         ],
@@ -725,8 +1060,8 @@
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 4,
-            "TotalDownloads": 4,
+            "UniqueDownloads": 73,
+            "TotalDownloads": 80,
             "TotalViews": null
         },
         "Images": [
@@ -735,8 +1070,7 @@
         "nexusTags": [
             "Quality of Life",
             "Utilities for Players"
-        ],
-        "LastQuickCheck": "2026-11-27T19:16:09.337Z"
+        ]
     },
     {
         "Id": "nexus-1121",
@@ -957,7 +1291,7 @@
             "AI-Generated Content",
             "Quality of Life"
         ],
-        "LastQuickCheck": "2026-11-27T09:15:03.156Z"
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z"
     },
     {
         "Id": "nexus-1115",
@@ -1464,45 +1798,51 @@
         "LastQuickCheck": "2026-11-27T19:16:09.337Z"
     },
     {
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
         "Id": "nexus-1105",
         "Name": "Bulk Ammo Loading (AmmoPress)",
         "Version": "1",
-        "bepinexVersion": "2.3.0",
+        "bepinexVersion": "2.5.1",
         "bepinexPlugins": {
-            "com.local.ammopress": "2.3.0"
+            "com.local.ammopress": "2.5.1"
         },
-        "Summary": "A 120-slot shell collector plus automatic loading of loose rounds into favourited magazines.",
-        "Description": "[b]AmmoPress[/b] adds two quality-of-life tools for ammunition handling.\n<br />\n<br />[h2]Shell Collector[/h2]\n<br />An industrial-yellow 12 gauge box with a black lid, storing up to [b]120 empty hulls[/b].\n<br />Craft it from a single plastic chunk. Hulls go in, hulls come out — it never turns them into live rounds.\n<br />\n<br />[h2]Automatic loading[/h2]\n<br />Mark a magazine as favourite (F) and any loose rounds within 6 m will be pressed into it automatically. Only magazines you marked are touched, so your stash stays organised.\n<br />\n<br />[h2]Technical note[/h2]\n<br />Empty hulls are given their own ammo type so a shotgun can never chamber them, and the collector's \"unload\" action is intercepted to spawn hulls instead of live shells.\n<br />\n<br />[h2]Requirements[/h2]\n<br />BepInEx 5.4.x, CUCoreLib. Install the DLL into BepInEx/plugins.\n<br />\n<br />[h2]Source and AI disclosure[/h2]\n<br />[url=https://github.com/lyingsangl/Casualties-Unknown-QoL]Source code and build instructions[/url]. The author made the design decisions and used AI assistance to investigate game APIs and implement code.",
+        "Summary": "A 120-slot shell collector plus automatic loading of loose rounds into magazines you mark with F. Empty hulls stay hulls - the collector uses its own ammo type, so a shotgun can never chamber them.",
+        "Description": "[b]AmmoPress[/b] adds two tools for ammunition handling.\n<br />\n<br />[h2]Shell Collector[/h2]\n<br />An industrial-yellow 12 gauge box with a black lid that stores up to [b]120 empty hulls[/b].\n<br />\n<br />[list]\n<br />[*]Craft: 1 plastic chunk, INT 3, Tools tab[/*]\n<br />[*]Hulls go in, hulls come out - it never converts them into live shells[/*]\n<br />[*]The box uses a dedicated ammo type, so the shotgun cannot chamber a hull by mistake[/*]\n<br />[/list]\n<br />[h2]Automatic loading[/h2]\n<br />Mark a magazine as favourite with [b]F[/b]. Any loose rounds within 6 m are pressed into it automatically, up to its capacity.\n<br />\n<br />Only magazines you marked are touched, so your stash stays exactly as you left it.\n<br />\n<br />[h2]Why a separate ammo type[/h2]\n<br />Empty casings and live 12 gauge shells are different items in the base game. The collector is registered as a magazine container bound to a dedicated ammo type, which keeps the two apart at the engine level instead of filtering them by name.\n<br />\n<br />[h2]Installation[/h2]\n<br />[list=1]\n<br />[*]BepInEx 5.4.x (x64)[/*]\n<br />[*]Install [url=https://www.nexusmods.com/scavprototype/mods/341]CUCoreLib[/url][/*]\n<br />[*]Drop AmmoPress.dll into BepInEx/plugins[/*]\n<br />[/list]\n<br />Config: BepInEx/config/com.local.ammopress.cfg (auto-fill toggle and radius).\n<br />\n<br />[h2]Source and AI disclosure[/h2]\n<br />[url=https://github.com/lyingsangl/Casualties-Unknown-QoL]Source code and build instructions[/url]. The author made the design decisions and used AI assistance to investigate game APIs and implement code.",
         "Author": "lyingsangl",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1105/1105-1795619221-1772692298.jpg",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1105"
         },
-        "DownloadUrl": "nexus://scavprototype/1105/3732",
+        "DownloadUrl": "nexus://scavprototype/1105/3833",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1105,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-25T15:11:12.000Z",
-        "ReleaseDate": "2026-11-25T15:09:27.000Z",
-        "SHA256": "dce07deebcb26f349b0fe1cf5ee7b0787d90627a2cf0d32faf27c9f7cd9adce3",
+        "LastUpdated": "2026-11-27T20:45:12.000Z",
+        "ReleaseDate": "2026-11-27T20:45:12.000Z",
+        "SHA256": "ad8df6590ab5f012ae232a411f6305d677c9a131afb7f94bb4bc9c0768ccd267",
         "dllSHA256s": {
-            "AmmoPress.dll": "0f2e435d88cd1a99a1acca5940f07e1e05d1b2f02c881e91a205cf1f537f36ba"
+            "AmmoPress.dll": "b5527f0e43eb7372f20f53b3bd761bd8ad4c0ecc0166a34d86f64af1dc123325"
         },
-        "downloadsSinceLatestVersion": 9,
+        "downloadsSinceLatestVersion": 7,
         "Dependencies": [],
-        "Changelogs": [],
+        "Changelogs": [
+            {
+                "Version": "2",
+                "Changelog": "- Update — save loading fixed (28 Nov 2026)\n- Symptoms you may have seen\n- Loading a save stopped halfway and you stayed on the previous layer.\n- The console showed: Error occurred during creating item \"...\" followed by\n- a NullReferenceException in SaveSystem.TryLoadGame.\n- Crafting recipes or item icons were missing for some mods.\n- What caused it\n- Our mods register their own items (drug bottles, the shell collector, ilmenite\n- powder). Registration waited for the game's item table, which is not built until\n- a world starts. If a save was restored before that finished, the game tried to\n- rebuild an item that did not exist yet and aborted the load.\n- Fixed in\n- Drug Expansion 22.0.4\n- Bulk Ammo Loading 2.5.1\n- Ilmenite Extraction 1.0.2\n- All three now register their items before SaveSystem.TryLoadGame runs,\n- with a guard so nothing is registered twice.\n- Also fixed\n- AmmoPress 2.5.0: the shell collector recipe used to give up after a 30 second\n- wait. It now waits until the item table exists.\n- GunPack 1.2.0: same timeout removed. Gun packs are now actually registered,\n- so icons, stat lines and loot weight apply.\n- What to do\n- 1. Update all three mods at once.\n- 2. Load the save again. It should continue normally.\n- 3. Back up save.sv before trying."
+            }
+        ],
         "dllNames": [
             "AmmoPress.dll"
         ],
-        "dllVersion": "2.3.0",
+        "dllVersion": "2.5.1",
         "dllVersions": {
-            "AmmoPress.dll": "2.3.0"
+            "AmmoPress.dll": "2.5.1"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 3,
-            "TotalDownloads": 3,
+            "UniqueDownloads": 19,
+            "TotalDownloads": 22,
             "TotalViews": null
         },
         "Images": [
@@ -1517,17 +1857,17 @@
             "Quality of Life",
             "Utilities for Players"
         ],
-        "LastQuickCheck": "2026-11-27T09:15:03.156Z"
+        "LastNotifiedChangelogVersion": "2"
     },
     {
-        "LastQuickCheck": "2026-11-27T09:15:03.156Z",
-        "LastNotifiedChangelogVersion": "3",
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
+        "LastNotifiedChangelogVersion": "4",
         "Id": "nexus-1104",
         "Name": "Drug Expansion (DietDrug)",
         "Version": "1",
-        "bepinexVersion": "22.0.3",
+        "bepinexVersion": "22.0.4",
         "bepinexPlugins": {
-            "com.local.dietdrug": "22.0.3"
+            "com.local.dietdrug": "22.0.4"
         },
         "Summary": "Three craftable drugs: a slow diet drug, a fat flusher that makes you vomit once, and three metabolism agents built on energy drinks, sports drinks and coffee. Boil any of them with a heat source for a concentrated bottle - 10 mL is one full dose. 为《未知伤亡》添加三条药物线：缓释减肥药、只吐一次的排脂剂，以及基于",
         "Description": "[b]Drug Expansion[/b] adds three pharmaceutical lines plus a concentration step. [h2]The drugs[/h2]\n<br />[list]\n<br />[*][b]Diet Drug[/b] - 480 s, about 1 kg on the panel, mild thirst. The safe option. [/*]\n<br />[*][b]Fat Flusher[/b] - one yellow vomit, about 1.2 kg, then a light dry mouth. Cheap and unpleasant. [/*]\n<br />[*][b]Metabolism Agent[/b] - energy drink, sports drink and coffee variants. About 1 kg over 12 minutes plus energy, stamina and adrenaline. The energy variant lasts 25% longer. [/*]\n<br />[/list][h2]Concentration[/h2] Boil 100 mL of any drug with a heat source to get a concentrated bottle: 10 mL is one dose, and one sip is capped at one dose, so a bottle cannot stack its effect. Traders and loot spawn a separate [b]full 100 mL[/b] bottle (ten doses) that has no recipe. Empty bottles destroy themselves. [h2]How the drugs feel[/h2] They burn fat, so they do not make you hungry - the metabolism agents actually recover hunger slightly while active, because the energy released from fat offsets the metabolic cost. The price is water and heat: sweating costs about 124 hydration per dose, partly replaced by metabolic water, and body temperature drops while you sweat. The fat flusher is an emetic: everything settles at the moment you vomit. It will not make you vomit twice. [h2]Installation[/h2]\n<br />[list=1]\n<br />[*]BepInEx 5.4.x (x64) [/*]\n<br />[*]Install [url=https://www.nexusmods.com/scavprototype/mods/341]CUCoreLib[/url] [/*]\n<br />[*]Drop DietDrug.dll into BepInEx/plugins [/*]\n<br />[/list]Config: BepInEx/config/com.local.dietdrug.cfg - every number above is editable. [h2]Source and AI disclosure[/h2] [url=https://github.com/lyingsangl/Casualties-Unknown-QoL]Source code and build instructions[/url]. The author made the design decisions and used AI assistance to investigate game APIs and implement code. ",
@@ -1536,18 +1876,18 @@
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1104/1104-1795617615-1074997983.jpg",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1104"
         },
-        "DownloadUrl": "nexus://scavprototype/1104/3814",
+        "DownloadUrl": "nexus://scavprototype/1104/3834",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1104,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-27T05:30:40.000Z",
-        "ReleaseDate": "2026-11-27T05:30:40.000Z",
-        "SHA256": "eb9ecab1d726c174e07dd01cb54fb78dfb8bf361e75b047214e34fb8fa60bd03",
+        "LastUpdated": "2026-11-27T20:49:47.000Z",
+        "ReleaseDate": "2026-11-27T20:49:47.000Z",
+        "SHA256": "ae0c0e5adc6a5e0a1481320aaf4a4d38290d4ab8093fa5db805dc357a7e7f591",
         "dllSHA256s": {
-            "DietDrug.dll": "095b45b3665605cdf3b0bbeb86570155f9b28acbfbe0371fe2a55b0c2fbf2163"
+            "DietDrug.dll": "93fa028852dfbb2f6dda0ef0578f86d5af0ec453a6cbe6e7d64ab81dbd6810e6"
         },
-        "downloadsSinceLatestVersion": 4,
+        "downloadsSinceLatestVersion": 3,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1557,19 +1897,23 @@
             {
                 "Version": "3",
                 "Changelog": "- 八、更新说明（22.0.2，可直接贴到 changelog）\n- 项\n- 说明\n- 排脂剂只吐一次（黄色）\n- 改用原生 VomitBlood（本作血液为黄色），去掉普通棕色呕吐与额外血雾；两个计时器都清零，每 60 秒最多一次\n- 排脂剂水分结算\n- 改为呕吐瞬间 −12 水合，之后仅 0.02/秒残留，全程 18（原来 139）\n- 减肥药口渴\n- 回到设计值 0.05/秒（旧 cfg 残留 0.5，放大 10 倍）\n- 代谢剂饥饿\n- 改为能量守恒：脂肪供能抵扣代谢消耗，服药期间饥饿小幅回升\n- 代谢剂 α 时长\n- 修正为 1.25 倍（曾经被乘两次，实际 1.5625 倍）\n- 浓缩瓶\n- 拆成配方版（10mL）与商人满瓶版（100mL，无配方）\n- 浓缩瓶音效\n- 改为原版药片声 pills\n- 普通药瓶\n- 配方移除，只保留浓缩路线\n- 迷你桶\n- 不再随机生成浓缩液"
+            },
+            {
+                "Version": "4",
+                "Changelog": "- Update — save loading fixed (28 Nov 2026)\n- Symptoms you may have seen\n- Loading a save stopped halfway and you stayed on the previous layer.\n- The console showed: Error occurred during creating item \"...\" followed by\n- a NullReferenceException in SaveSystem.TryLoadGame.\n- Crafting recipes or item icons were missing for some mods.\n- What caused it\n- Our mods register their own items (drug bottles, the shell collector, ilmenite\n- powder). Registration waited for the game's item table, which is not built until\n- a world starts. If a save was restored before that finished, the game tried to\n- rebuild an item that did not exist yet and aborted the load.\n- Fixed in\n- Drug Expansion 22.0.4\n- Bulk Ammo Loading 2.5.1\n- Ilmenite Extraction 1.0.2\n- All three now register their items before SaveSystem.TryLoadGame runs,\n- with a guard so nothing is registered twice.\n- Also fixed\n- AmmoPress 2.5.0: the shell collector recipe used to give up after a 30 second\n- wait. It now waits until the item table exists.\n- GunPack 1.2.0: same timeout removed. Gun packs are now actually registered,\n- so icons, stat lines and loot weight apply.\n- What to do\n- 1. Update all three mods at once.\n- 2. Load the save again. It should continue normally.\n- 3. Back up save.sv before trying.\n- 更新一一存档加载已修复(2026年11月28日)\n- 您可能遇到的症状\n- 加载存档时中途停止，且停留在上一层。\n- 控制台显示:创建物品“...”时发生错误，随后在SaveSystem.\n- TryLoadGame 中出现 NullReferenceException 常。\n- 部分模组缺少制作配方或物品图标。\n- 导致该问题的原因\n- 我们的模组会注册自己的物品(药水瓶、贝壳收集器、钛铁矿粉末)\n- 注册过程需要等待游戏的物品表，而该表直到世界开始生成时才会构建\n- 如果在构建完成前恢复了存档，游戏会尝试重建一个尚不存在的物品\n- 从而导致加载失败。\n- 修复内容\n-药物扩展22.0.4\n- 批量弹药加载2.5.1\n- llmenite Extraction 1.0.2\n- 现在这三个模组都在 SaveSystem.TryLoadGame执行之前注册其物品，\n- 并设有保护机制以避免重复注册。\n- 同时修复了\n- AmmoPress 2.5.0:弹壳收集器配方在等待30秒后会放弃。现在它将等\n- 待物品表存在为止。\n- GunPack1.2.0:移除了相同的超时问题。枪械包现在实际会被注册，因此图标\n- 、属性条和战利品重量将生效。\n- 应如何操作\n- 1.同时更新所有三个模组。\n- 2.再次加载存档。它应该能正常继续。\n- 3.尝试前请备份save.sv文件。"
             }
         ],
         "dllNames": [
             "DietDrug.dll"
         ],
-        "dllVersion": "22.0.3",
+        "dllVersion": "22.0.4",
         "dllVersions": {
-            "DietDrug.dll": "22.0.3"
+            "DietDrug.dll": "22.0.4"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 9,
-            "TotalDownloads": 12,
+            "UniqueDownloads": 14,
+            "TotalDownloads": 25,
             "TotalViews": null
         },
         "Images": [
@@ -1757,7 +2101,7 @@
         "LastQuickCheck": "2026-11-27T19:16:09.337Z"
     },
     {
-        "LastQuickCheck": "2026-11-27T09:15:03.156Z",
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
         "Id": "nexus-1098",
         "Name": "Not Enough Items",
         "Version": "0.1.37",
@@ -1783,7 +2127,7 @@
         "dllSHA256s": {
             "NotEnoughItems.dll": "f0eba4d267ef38e1f11b659288b3006dd99aaf48d241582d1a5b46a3fbeeeb01"
         },
-        "downloadsSinceLatestVersion": 18,
+        "downloadsSinceLatestVersion": 19,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -1864,33 +2208,33 @@
         "LastQuickCheck": "2026-11-27T19:16:09.337Z"
     },
     {
-        "LastQuickCheck": "2026-11-28T11:04:54.177Z",
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
         "Id": "nexus-1091",
         "Name": "DS Tool Extension",
-        "Version": "1.3.5",
-        "bepinexVersion": "1.3.5",
+        "Version": "1.3.14",
+        "bepinexVersion": "1.3.14",
         "bepinexPlugins": {
-            "com.dstool.extension": "1.3.5"
+            "com.dstool.extension": "1.3.14"
         },
         "Summary": "CN：DS Tool Extension是一个工具/装备扩Mod------------------EN:DS Tool Extension is a tool/equipment expansion Mod.",
-        "Description": "[center][size=5][b]Description / 主要目的[/b][/size][/center]\n<br />\n<br />DS Tool Extension 是《Casualties Unknown》的工具扩展模组：以 CUCoreLib 为前置，加入三件可合成的实验性装备——实验性钛合金钻机、实验性等离子束发射器与实验性特种腿包，并支持与 DDEN 管理器联动（配置页、中英双语）及多人联机。\n<br />\n<br />DS Tool Extension is a tool expansion mod for Casualties: Unknown: built on CUCoreLib, it adds three craftable experimental items — the Experimental Ti-alloy drill, the Experimental plasma emitter and the Experimental special leg pack — with DDEN manager integration (config page, Chinese/English) and multiplayer support.\n<br />\n<br />[center][b][size=5]Installation instructions / 安装步骤[/size][/b][/center]\n<br />\n<br />[size=3]安装 BepInEx 5 与 CUCoreLib，把整个 `DS Tool Extension` 文件夹放进[/size]\n<br />[code]BepInEx/plugins/[/code]装了 DDEN 管理器时按 F11 可打开本模组的配置页。\n<br />\n<br />Install BepInEx 5 and CUCoreLib, put the whole `DS Tool Extension` folder into\n<br />[code]BepInEx/plugins/[/code][center][b][size=5][b][size=2][size=5]Main features / 核心功能[/size][/size][/b][/size][/b][/center]\n<br />\n<br />[list]\n<br />[*][b]三件实验性装备：实验性钛合金钻机（重型钻机升级）、实验性等离子束发射器（等离子切割器升级）、实验性特种腿包（电池减重容器） 、自动装填子弹带（ 可以自动收纳其他容器内子弹和弹夹，并自动装填 ）[/b][/*]\n<br />[*][b]双配方：装了 EnhancedTools 时使用 ET 配方（特种腿包、工程化/可改造品质），否则使用普通配方（腿包、可捶打/可切割品质）； 推荐安装EnhancedTools[/b][/*]\n<br />[*][b]稀有度与获取：默认不世界散落，仅从容器箱/空投仓/胶囊容器与商人处低概率获得；DDEN 配置页可调「尸体刷新」开关与「稀有度（份数）」[/b][/*]\n<br />[*][b]多人：物品与配方主机/客机一致；钻机循环音效只在本端播放，其他玩家 12 米内以较低音量可闻[/b][/*]\n<br />[*][b]中英文本：跟随游戏语言（`zh-CN.json` / `EN.json`）， 如果使用第三方语言文件，则把对应的zh-CN.json/EN.json重命名为***.json\n<br />[/b][/*]\n<br />[*]Three experimental items: the Experimental Ti-alloy drill (heavy drill upgrade), the Experimental plasma emitter (plasma cutter upgrade) , the Experimental special leg pack (battery-powered weight-reducing container) , the Auto-reloading ammo belt（ Automatically collects bullets and magazines from other containers and auto-reloads. ） [/*]\n<br />[*]Dual recipes: with EnhancedTools installed the ET recipe is used (Spec Ops leg pouch, engineering/modification qualities); otherwise the normal recipe (leg pouch, hammering/cutting qualities); EnhancedTools is recommended. [/*]\n<br />[*]Rarity and sources: no world scatter by default; obtained at a low chance from container crates, drop capsules, capsule containers and traders; the DDEN config page exposes the “Corpse spawn” toggle and “Rarity (entries)”;[/*]\n<br />[*]Multiplayer: items and recipes are consistent between host and clients; the drill's loop sound only plays locally, and other players' drills are audible at low volume within 12 m;[/*]\n<br />[*]Chinese/English text follows the game language (`zh-CN.json` / `EN.json`),  If using third-party language files, rename the corresponding zh-CN.json/EN.json to ***.json.[/*]\n<br />[/list][center][size=5][b]Requirements / 前置要求[/b][/size][/center]\n<br />[left][size=3]需要 BepInEx 5 与 CUCoreLib；EnhancedTools 可选（提供 ET 版配方）；DDEN 管理器可选（提供配置页与双语说明）；多人联机需要 Together[/size][/left]\n<br />\n<br />Requires BepInEx 5 and CUCoreLib; EnhancedTools is optional (enables the ET recipes); the DDEN manager is optional (config page and bilingual descriptions); multiplayer requires Together",
+        "Description": "[center][b][size=6]Description / 主要目的[/size][/b]\n<br />[left]\n<br />DS Tool Extension 是《Casualties Unknown》的工具扩展模组：以 CUCoreLib 为前置，加入三件可合成的实验性装备——实验性钛合金钻机、实验性等离子束发射器与实验性特种腿包，并支持与 DDEN 管理器联动（配置页、中英双语）及多人联机。[/left]\n<br />[/center]\n<br />\n<br />DS Tool Extension is a tool expansion mod for Casualties: Unknown: built on CUCoreLib, it adds three craftable experimental items — the Experimental Ti-alloy drill, the Experimental plasma emitter and the Experimental special leg pack — with DDEN manager integration (config page, Chinese/English) and multiplayer support.\n<br />[center][/center]\n<br />[center][b][size=6]Installation instructions / 安装步骤[/size][/b][/center]\n<br />安装 BepInEx 5 与 CUCoreLib，把整个 `DS Tool Extension` 文件夹放进\n<br />[size=2][font=Arial, Inter, \"Inter Fallback\", ui-sans-serif, system-ui, sans-serif]装了 DDEN 管理器时按 F11 可打开本模组的配置页。[/font][/size]\n<br />Install BepInEx 5 and CUCoreLib, put the whole `DS Tool Extension` folder into\n<br />With the DDEN manager installed, press F11 to open this mod's config page.\n<br />[code]BepInEx/plugins/[/code][center][/center]\n<br />[center][b][b][size=6]Main features / 核心功能[/size][/b][/b][/center]\n<br />[list]\n<br />[*][b]三件实验性装备：实验性钛合金钻机（重型钻机升级）、实验性等离子束发射器（等离子切割器升级）、实验性特种腿包（电池减重容器） 、自动装填子弹带（ 可以自动收纳其他容器内子弹和弹夹，并自动装填 ）[/b][/*]\n<br />[*][b]双配方：装了 EnhancedTools 时使用 ET 配方（特种腿包、工程化/可改造品质），否则使用普通配方（腿包、可捶打/可切割品质）； 推荐安装EnhancedTools[/b][/*]\n<br />[*][b]稀有度与获取：默认不世界散落，仅从容器箱/空投仓/胶囊容器与商人处低概率获得；DDEN 配置页可调「尸体刷新」开关与「稀有度（份数）」[/b][/*]\n<br />[*][b]多人：物品与配方主机/客机一致；钻机循环音效只在本端播放，其他玩家 12 米内以较低音量可闻[/b][/*]\n<br />[*][b]中英文本：跟随游戏语言（`zh-CN.json` / `EN.json`）， 如果使用第三方语言文件，则把对应的zh-CN.json/EN.json重命名为***.json\n<br />[/b][/*]\n<br />[*]Three experimental items: the Experimental Ti-alloy drill (heavy drill upgrade), the Experimental plasma emitter (plasma cutter upgrade) , the Experimental special leg pack (battery-powered weight-reducing container) , the Auto-reloading ammo belt（ Automatically collects bullets and magazines from other containers and auto-reloads. ） [/*]\n<br />[*]Dual recipes: with EnhancedTools installed the ET recipe is used (Spec Ops leg pouch, engineering/modification qualities); otherwise the normal recipe (leg pouch, hammering/cutting qualities); EnhancedTools is recommended. [/*]\n<br />[*]Rarity and sources: no world scatter by default; obtained at a low chance from container crates, drop capsules, capsule containers and traders; the DDEN config page exposes the “Corpse spawn” toggle and “Rarity (entries)”;[/*]\n<br />[*]Multiplayer: items and recipes are consistent between host and clients; the drill's loop sound only plays locally, and other players' drills are audible at low volume within 12 m;[/*]\n<br />[*]Chinese/English text follows the game language (`zh-CN.json` / `EN.json`),  If using third-party language files, rename the corresponding zh-CN.json/EN.json to ***.json.[/*]\n<br />[/list][center][b][size=6]Requirements / 前置要求[/size][/b][/center]\n<br />[left][size=3]需要 BepInEx 5 与 CUCoreLib；EnhancedTools 可选（提供 ET 版配方）；DDEN 管理器可选（提供配置页与双语说明）；多人联机需要 Together[/size][/left]\n<br />\n<br />Requires BepInEx 5 and CUCoreLib; EnhancedTools is optional (enables the ET recipes); the DDEN manager is optional (config page and bilingual descriptions); multiplayer requires Together",
         "Author": "MornJor",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/1091/1091-1795694090-1815191940.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/1091"
         },
-        "DownloadUrl": "nexus://scavprototype/1091/3869",
+        "DownloadUrl": "nexus://scavprototype/1091/3884",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 1091,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-28T07:16:07.000Z",
-        "ReleaseDate": "2026-11-28T07:16:07.000Z",
-        "SHA256": "aae9bc1c10a20e5a854fa35121e28c2127dbb8c17cb0796fb1d79d11a0d534bf",
+        "LastUpdated": "2026-11-28T17:25:33.000Z",
+        "ReleaseDate": "2026-11-28T17:25:33.000Z",
+        "SHA256": "4a11fedd0354298019431e081e85e9e585ed3080e23c04196dac7f44d45c66f8",
         "dllSHA256s": {
-            "DS Tool Extension.dll": "771e3d25fcd998abcf8ebd5f5cab05c830f9dabf7e795c670f0e62b6d04459de"
+            "DS Tool Extension.dll": "402814021d43285f4855a4697ecaeb26ecb8ded84469cc9e386685f470b529ca"
         },
-        "downloadsSinceLatestVersion": 3,
+        "downloadsSinceLatestVersion": 1,
         "Dependencies": [
             "nexus-341"
         ],
@@ -1902,19 +2246,23 @@
             {
                 "Version": "1.3.5",
                 "Changelog": "- v1.3.5：\n- 性能：CanHoldItem 弱表缓存、转移列表复用\n- Perf: weak-table cache for CanHoldItem, reused transfer lists\n- v1.3.4：\n- 掉落改为保底池（虚拟占位 + 25% 保底，权重 20/20/15/15）；腿包与子弹带配方 INT 改为 15\n- Loot switched to a pity pool (virtual slot + 25% award, weights 20/20/15/15); leg pack and belt recipes now INT 15\n- v1.3.3：\n- 自动装填子弹带双配方（普通/ET，INT 14）\n- Dual recipe for the ammo belt (normal/ET, INT 14)\n- v1.3.2：\n- 自动收纳也包含手枪/步枪弹夹；替换正式贴图；拆盒覆盖容器内霰弹盒\n- Auto-collect now includes pistol/rifle magazines; final artwork; box opening covers 12-gauge boxes inside containers\n- v1.3.1：\n- 修复自动装填（所有弹夹装满、不再依赖 childCount 变化）；新增弹药转移（槽位/穿戴/其他容器，拆 12 号霰弹盒）；仅穿戴时执行\n- Fixed auto reload (fill all magazines, no childCount dependency); added ammo transfer from slots/worn/other containers, opens 12-gauge boxes; only when worn\n- v1.3.0：\n- 新增第四件装备：自动装填子弹带（容器白名单、电池减重、自动装填；贴图先占位）\n- New fourth item: Auto-reloading ammo belt (whitelist container, battery weight reduction, auto reload; placeholder art)\n- v1.2.13：\n- 稀有度改为概率替换（钻机/等离子 20%、腿包 10%），不再靠池内份数\n- Rarity changed to chance-replacement (drill/plasma 20%, leg pack 10%) instead of pool entries\n- v1.2.12：\n- 稀有度改回默认类别池（同 EnhancedTools），移除尸体刷新配置\n- Rarity back to the default category pool (like EnhancedTools); corpse-spawn option removed"
+            },
+            {
+                "Version": "1.3.14",
+                "Changelog": "- 1.3.5-1.3.14：\n- 现在子弹带的自动收纳功能客机应该也会正常生效\n- Ammo belt auto-collection should now work properly on clients too.\n- 优化了子弹带的各种逻辑，现在卡顿会少很多\n- Optimized ammo belt logic, significantly reducing stuttering.\n- 修复了子弹带明明还有0.05u的空间，但是无法再装子弹的问题\n- Fixed the issue where the ammo belt still had 0.05u of space but couldn't load more bullets.\n- 现在保底机制应该会正常生效\n- The pity system should now work properly."
             }
         ],
         "dllNames": [
             "DS Tool Extension.dll"
         ],
-        "dllVersion": "1.3.5",
+        "dllVersion": "1.3.14",
         "dllVersions": {
-            "DS Tool Extension.dll": "1.3.5"
+            "DS Tool Extension.dll": "1.3.14"
         },
         "Statistics": {
             "Endorsements": 0,
-            "UniqueDownloads": 12,
-            "TotalDownloads": 14,
+            "UniqueDownloads": 15,
+            "TotalDownloads": 21,
             "TotalViews": null
         },
         "Images": [
@@ -2457,7 +2805,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-27T09:15:03.156Z",
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
         "Id": "nexus-1081",
         "Name": "Starter Kits",
         "Version": "1.1.1",
@@ -2483,7 +2831,7 @@
         "dllSHA256s": {
             "StarterKits.dll": "a8d9cbcd87e71b62e3f5a2c67697675e49f57d14bb5b4e6752a7fd2baa269c45"
         },
-        "downloadsSinceLatestVersion": 12,
+        "downloadsSinceLatestVersion": 73,
         "Dependencies": [
             "nexus-115"
         ],
@@ -3543,7 +3891,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-27T09:15:03.156Z",
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
         "LastNotifiedChangelogVersion": "1.7.2",
         "Id": "nexus-1060",
         "Name": "DDExcNet-CUmodM and MPfix",
@@ -3581,7 +3929,7 @@
             "DDEN.UnitListMgr.dll": "2c21df794e84ed3b31495c251e98a352a7222c454d3bda1be2e56e56577080a7",
             "DDExcNet-CUmodM.dll": "cac584cad2f6c04915f7fd95c556c7968ea9d68e16334b64ad077ce22d0f28dd"
         },
-        "downloadsSinceLatestVersion": 0,
+        "downloadsSinceLatestVersion": 10,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -3691,7 +4039,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-27T09:15:03.156Z",
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
         "Id": "nexus-1058",
         "Name": "CU Mod Manager",
         "Version": "1.2.0",
@@ -3713,7 +4061,7 @@
         "ReleaseDate": "2026-11-26T23:26:56.000Z",
         "SHA256": "922913dc8d01ca34e5ce619e58b50e12678d3d252875b49617281d9576d247d2",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 21,
+        "downloadsSinceLatestVersion": 449,
         "Dependencies": [
             "nexus-115"
         ],
@@ -6067,7 +6415,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-27T09:15:03.156Z",
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
         "Id": "nexus-1005",
         "Name": "HightLight",
         "Version": "1",
@@ -6093,7 +6441,7 @@
         "dllSHA256s": {
             "Highlight.dll": "d0a259ec86b2f1bd3a2288f05d91a3eaa3f413ac0b6559310be2ac09cde5b7cc"
         },
-        "downloadsSinceLatestVersion": 310,
+        "downloadsSinceLatestVersion": 326,
         "Dependencies": [],
         "Changelogs": [],
         "dllNames": [
@@ -7084,7 +7432,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-27T09:15:03.156Z",
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
         "LastNotifiedChangelogVersion": "5",
         "Id": "nexus-984",
         "Name": "Rosary mod",
@@ -7111,7 +7459,7 @@
         "dllSHA256s": {
             "RosaryMod.dll": "2f13918ef96bced439f6fe2a3198ce478b2e92053dd41daca36a75111e5a09a0"
         },
-        "downloadsSinceLatestVersion": 6,
+        "downloadsSinceLatestVersion": 11,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -7874,7 +8222,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-27T09:15:03.156Z",
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
         "LastNotifiedChangelogVersion": "1.1.4",
         "Id": "nexus-970",
         "Name": "Meta-knowledge sawians (Beta)",
@@ -8945,7 +9293,7 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-27T09:15:03.156Z",
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
         "Id": "nexus-934",
         "Name": "(Character mod) Olivide(cultist)V2.9 -Adapted to the multiplayer mod v5.5.5-",
         "Version": "2.9",
@@ -8973,7 +9321,7 @@
             "CU.CustomCharacter.dll": "60b4afd5c5c2608f757ff456bd8c191f4adc4f96804983c241dc7b44b97b8e8c",
             "OlivideNet.dll": "c4816890d72a24a358624bf14381fcb91473aeb9b9391d010858c6eed4055a18"
         },
-        "downloadsSinceLatestVersion": 49,
+        "downloadsSinceLatestVersion": 85,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16039,29 +16387,29 @@
         ]
     },
     {
-        "LastQuickCheck": "2026-11-27T19:16:09.337Z",
+        "LastQuickCheck": "2026-11-28T19:16:11.963Z",
         "Id": "nexus-782",
         "Name": "Lavender-tinted Recipes",
-        "Version": "0.8",
+        "Version": "0.8-2",
         "bepinexVersion": null,
         "bepinexPlugins": {},
         "Summary": "Recipes for certain uncraftable materials, tools, medicine, equipment, utilities and food.",
-        "Description": "[center][line]\n<br />[/center]\n<br />[center][b][size=5]Important[/size][/b][/center]\n<br />[center]In progress[/center]\n<br />[center]Likely not compatible with the demo, since you cannot access certain materials\n<br />I love Crafting framework\n<br />Demo specific recipes version? Yes[/center]\n<br />[center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[center][b][size=5]Entry[/size][/b][/center]\n<br />[center]This thing uses Crafting Framework to add multiple crafting recipes to the game.[/center]\n<br />[center]This gives you access to crafting most thingies you usually couldn't, spicing up the overall gameplay, as you have more options to progress your current equipment, make absolutely needed right now tools, or just check what you can make with the materials you have on hand.[/center]\n<br />[center][/center]\n<br />[center][/center]\n<br />[center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[center][b][size=5]Installation[/size][/b][/center]\n<br />1. Have the game installed.\n<br />2. Have [url=https://www.nexusmods.com/scavprototype/mods/918]BepInExpie[/url] installed.\n<br />3. Have [url=https://www.nexusmods.com/scavprototype/mods/125?tab=description]Crafting Framework[/url] installed.\n<br />4. download\n<br />5. Extract and drop the [b]recipes[/b] folder into the [b]Crafting Framework[/b] folder. This should add the .jsons into that specific folder.\n<br />6. The path should be: ... &gt; [Casualties Unknown Demo] &gt; [BepInEx] &gt; [plugins] &gt; [CraftingFramework] &gt; [b][recipes][/b] &gt; ...\n<br />7. For updating / changing recipes, just drop .json files into the same folder and older recipes should get replaced.\n<br />\n<br />[center][/center]\n<br />[center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[left][size=5][b]Materials [/b][/size][/left]\n<br />[center][/center]\n<br />[left][list]\n<br />[*]Wood Scrap (3x, 25%, 0 INT)[/*]\n<br />[*]Metal Scrap (3x, 25%, 0 INT) [/*]\n<br />[*]Circuit Board (10%, 11 INT)[/*]\n<br />[/list][center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[size=5][b]Tools[/b][/size]\n<br />[center][/center]\n<br />[list]\n<br />[*]Wooden Trowel (25%, 5 INT)[/*]\n<br />[*]Metal Trowel (50%, 6 INT)[/*]\n<br />[*]Wooden Shovel, Digging Tool, Pitchfork and Sickle (50%, 10 INT, shared recipe)[/*]\n<br />[*]Metal Shovel &amp; Metal Sickle (11 INT, shared recipe)[/*]\n<br />[*]Metal Pitchfork &amp; Metal Digging Tool (11 INT, shared recipe)[/*]\n<br />[*]Electronic Watch (13 INT)[/*]\n<br />[*]Grappling Hook (13 INT)[/*]\n<br />[*]Rangefinder (13 INT)[/*]\n<br />[*]Sledgehammer (14 INT)[/*]\n<br />[*]Claw Pack (14 INT)[/*]\n<br />[/list][center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[size=5][b]Medicine[/b][/size]\n<br />[center][/center]\n<br />[/left]\n<br />[list]\n<br />[*]Medkit (50%, 12 INT)[/*]\n<br />[*]Off-Brand Stimulant (250ml, 13 INT)[/*]\n<br />[*]Hard Stimulant (250ml, 13 INT)[/*]\n<br />[*]Medical-Grade Stimulant (250ml, 13 INT)[/*]\n<br />[*]Streptokinase (100ml, 14 INT)[/*]\n<br />[/list][center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[left][size=5][b]Equipment / Utility / Containers[/b][/size][size=4] [/size][/left]\n<br />[center][/center]\n<br />[list]\n<br />[*]Latex Gloves (9 INT)[/*]\n<br />[*]Safety Glasses (9 INT)[/*]\n<br />[*]Dust Mask (9 INT)[/*]\n<br />[*]Trash Bag (50%, 9 INT)[/*]\n<br />[*]Earmuffs (10 INT)[/*]\n<br />[*]Liquid Pouch (10 INT)[/*]\n<br />[*]Small Backpack &amp; Leg Pouch (50%, 11 INT, both upgradable from &gt;10% Sling Bag)[/*]\n<br />[*]Sleeping Bag (11 INT)[/*]\n<br />[*]Mp3 Player (11 INT)[/*]\n<br />[*]Toolbox (25%, 12 INT)[/*]\n<br />[*]Filter Straw (50%, 13 INT)[/*]\n<br />[*]Sneakers (50%, 13 INT)[/*]\n<br />[*]Kneepads (13 INT)[/*]\n<br />[*]Belly Armor (13 INT)[/*]\n<br />[*]Fanny Pack &amp; Hoodie (13 INT, both upgradable from &gt;50% Strider Pelt, yes im sending you directly to the chasm)[/*]\n<br />[*]Auto-Zoom Goggles (14 INT)[/*]\n<br />[*]Climbing Claws (14 INT, upgradable from &gt;50% Claw Pack)[/*]\n<br />[*]Carapace (15 INT, uses titanium)[/*]\n<br />[*]Liquid Centrifuge (16 INT)[/*]\n<br />[*]Jetpack (50%, 18 INT, uses titanium, needs 1 full canteen of Oil which is 300ml)[/*]\n<br />[/list][center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[left][size=5][b]Food[/b][/size][/left]\n<br />[center][/center]\n<br />[list]\n<br />[*]Carbonated Water (500ml, 0 INT)[/*]\n<br />[*]Sports Drink (500ml, 0 INT)[/*]\n<br />[*]Water (250ml, 2 INT)[/*]\n<br />[*]Empty Chicken Bucket &amp; Empty Popcorn Bucket (20%, 3 INT, shared recipe)[/*]\n<br />[*]Candy Bar (7 INT)[/*]\n<br />[*]Candy Pack (7 INT)[/*]\n<br />[*]Bucket of Chicken (10 INT, needs bucket)[/*]\n<br />[*]Bucket of Popcorn (10 INT, needs bucket)[/*]\n<br />[*]Cake (12 INT)[/*]\n<br />[*]Big Flesh Chunk (12 INT)[/*]\n<br />[/list][center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[center][b][size=5]Troubleshooting[/size][/b][/center]\n<br />\n<br />[b]Q.[/b] Can I change a recipe to something I think makes more sense / just cause I wanna?\n<br />[b]A.[/b] Yes. Recommended because you are free to do anything in this game.\n<br />\n<br />[b]Q.[/b] Can I contribute to this in any way?\n<br />[b]A.[/b] Yes. Better if you make your own take on what you think should be craftable. That's what mods are for... right?\n<br />\n<br />[b]Q.[/b] Something absolutely horrifying happened when I tried starting a run / entering sandbox!\n<br />[b]A.[/b] There's very likely a broken recipe. It's either a mistake on my end or you screwed something up. Check inside the recipes folder and try investigating. You can also just disable Crafting Framework / delete everything in the recipes folder. (usually caused by wrong formatting, like making a craft have 0.666 result amount and etc)\n<br />\n<br />[b]Q.[/b] What about compatibility?\n<br />[b]A.[/b] Looking at how Crafting Framework works, everything should be fine.\n<br />\n<br />[b]Q.[/b] There are duplicated recipes from another mod, and it doesn't use Crafting Framework! I hate my crafting screen looking bloated!!\n<br />[b]A.[/b] Delete what you don't need. Files are specifically named for easier navigation.\n<br />\n<br />\n<br />[center][line]\n<br />[/center]\n<br />\n<br />[center][b][size=5]Shout outs[/size][/b][/center]\n<br />[center]Kudos to Craft Everything and other mods alike\n<br />Kudos to Crafting Framework[/center]\n<br />[center]Kudos to Casualties: Unknown[/center]\n<br />[center][/center]\n<br />",
-        "Author": "dont touch that dial",
+        "Description": "[center][line]\n<br />[/center]\n<br />[center][b][size=5]Important[/size][/b][/center]\n<br />[center]In progress[/center]\n<br />[center]Likely not compatible with the demo, since you cannot access certain materials\n<br />I love Crafting framework\n<br />Demo specific recipes version? Yes[/center]\n<br />[center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[center][b][size=5]Entry[/size][/b][/center]\n<br />[center]This thing uses Crafting Framework to add multiple crafting recipes to the game.[/center]\n<br />[center]This gives you access to crafting most thingies you usually couldn't, spicing up the overall gameplay, as you have more options to progress your current equipment, make absolutely needed right now tools, or just check what you can make with the materials you have on hand.[/center]\n<br />[center][/center]\n<br />[center][/center]\n<br />[center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[center][b][size=5]Installation[/size][/b][/center]\n<br />1. Have the game installed.\n<br />2. Have [url=https://www.nexusmods.com/scavprototype/mods/918]BepInExpie[/url] installed.\n<br />3. Have [url=https://www.nexusmods.com/scavprototype/mods/125?tab=description]Crafting Framework[/url] installed.\n<br />4. download\n<br />5. Extract and drop the [b]recipes[/b] folder into the [b]Crafting Framework[/b] folder. This should add the .jsons into that specific folder.\n<br />6. The path should be: ... &gt; [Casualties Unknown] &gt; [BepInEx] &gt; [plugins] &gt; [CraftingFramework] &gt; [b][recipes][/b] &gt; ...\n<br />7. For updating / changing recipes, just drop .json files into the same folder and older recipes should get replaced.\n<br />\n<br />[center][/center]\n<br />[center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[left][size=5][b]Materials [/b][/size][/left]\n<br />[center][/center]\n<br />[left][list]\n<br />[*]Wood Scrap (3x, 25%, 0 INT)[/*]\n<br />[*]Metal Scrap (3x, 25%, 0 INT) [/*]\n<br />[*]Circuit Board (10%, 11 INT)[/*]\n<br />[/list][center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[size=5][b]Tools[/b][/size]\n<br />[center][/center]\n<br />[list]\n<br />[*]Wooden Trowel (25%, 5 INT)[/*]\n<br />[*]Metal Trowel (50%, 6 INT)[/*]\n<br />[*]Wooden Shovel, Digging Tool, Pitchfork and Sickle (50%, 10 INT, shared recipe)[/*]\n<br />[*]Metal Shovel &amp; Metal Sickle (11 INT, shared recipe)[/*]\n<br />[*]Metal Pitchfork &amp; Metal Digging Tool (11 INT, shared recipe)[/*]\n<br />[*]Electronic Watch (13 INT)[/*]\n<br />[*]Grappling Hook (13 INT)[/*]\n<br />[*]Rangefinder (13 INT)[/*]\n<br />[*]Sledgehammer (14 INT)[/*]\n<br />[*]Claw Pack (14 INT)[/*]\n<br />[/list][center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[size=5][b]Medicine[/b][/size]\n<br />[center][/center]\n<br />[/left]\n<br />[list]\n<br />[*]Medkit (50%, 12 INT)[/*]\n<br />[*]Off-Brand Stimulant (100ml, 12 INT)[/*]\n<br />[*]Hard Stimulant (100ml, 13 INT)[/*]\n<br />[*]Medical-Grade Stimulant (100ml, 14 INT)[/*]\n<br />[*]Streptokinase (100ml, 14 INT)[/*]\n<br />[*]Medical Suture (50%, 14 INT, uses titanium)[/*]\n<br />[/list][center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[left][size=5][b]Equipment / Utility / Containers[/b][/size][size=4] [/size][/left]\n<br />[center][/center]\n<br />[list]\n<br />[*]Latex Gloves (9 INT)[/*]\n<br />[*]Safety Glasses (9 INT)[/*]\n<br />[*]Dust Mask (9 INT)[/*]\n<br />[*]Trash Bag (50%, 9 INT)[/*]\n<br />[*]Earmuffs (10 INT)[/*]\n<br />[*]Liquid Pouch (10 INT)[/*]\n<br />[*]Small Backpack &amp; Leg Pouch (50%, 11 INT, both upgradable from &gt;10% Sling Bag)[/*]\n<br />[*]Sleeping Bag (11 INT)[/*]\n<br />[*]Mp3 Player (11 INT)[/*]\n<br />[*]Toolbox (25%, 12 INT)[/*]\n<br />[*]Filter Straw (50%, 13 INT)[/*]\n<br />[*]Sneakers (50%, 13 INT)[/*]\n<br />[*]Kneepads (13 INT)[/*]\n<br />[*]Belly Armor (13 INT)[/*]\n<br />[*]Fanny Pack &amp; Hoodie (13 INT, both upgradable from &gt;50% Strider Pelt, yes im sending you directly to the chasm)[/*]\n<br />[*]Auto-Zoom Goggles (14 INT, uses titanium)[/*]\n<br />[*]Climbing Claws (14 INT, upgradable from &gt;50% Claw Pack)[/*]\n<br />[*]Carapace (15 INT, uses titanium)[/*]\n<br />[*]Liquid Centrifuge (16 INT, uses titanium)[/*]\n<br />[*]Jetpack (50%, 18 INT, uses titanium, needs 1 full canteen of Oil which is 300ml)[/*]\n<br />[/list][center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[left][size=5][b]Food[/b][/size][/left]\n<br />[center][/center]\n<br />[list]\n<br />[*]Carbonated Water (300ml, 0 INT)[/*]\n<br />[*]Sports Drink (300ml, 0 INT)[/*]\n<br />[*]Water (250ml, 2 INT)[/*]\n<br />[*]Empty Chicken Bucket &amp; Empty Popcorn Bucket (20%, 3 INT, shared recipe)[/*]\n<br />[*]Candy Bar (7 INT)[/*]\n<br />[*]Candy Pack (7 INT)[/*]\n<br />[*]Bucket of Chicken (10 INT, needs bucket)[/*]\n<br />[*]Bucket of Popcorn (10 INT, needs bucket)[/*]\n<br />[*]Cake (12 INT)[/*]\n<br />[*]Big Flesh Chunk (12 INT)[/*]\n<br />[/list][center][line]\n<br />[/center]\n<br />[center][/center]\n<br />[center][b][size=5]Troubleshooting[/size][/b][/center]\n<br />\n<br />[b]Q.[/b] Can I change a recipe to something I think makes more sense / just cause I wanna?\n<br />[b]A.[/b] Yes. Recommended because you are free to do anything in this game.\n<br />\n<br />[b]Q.[/b] Can I contribute to this in any way?\n<br />[b]A.[/b] Yes. Better if you make your own take on what you think should be craftable. That's what mods are for... right?\n<br />\n<br />[b]Q.[/b] Something absolutely horrifying happened when I tried starting a run / entering sandbox!\n<br />[b]A.[/b] There's very likely a broken recipe. It's either a mistake on my end or you screwed something up. Check inside the recipes folder and try investigating. You can also just disable Crafting Framework / delete everything in the recipes folder. (usually caused by wrong formatting, like making a craft have 0.666 result amount and etc)\n<br />\n<br />[b]Q.[/b] What about compatibility?\n<br />[b]A.[/b] Looking at how Crafting Framework works, everything should be fine.\n<br />\n<br />[b]Q.[/b] There are duplicated recipes from another mod, and it doesn't use Crafting Framework! I hate my crafting screen looking bloated!!\n<br />[b]A.[/b] Delete what you don't need. Files are specifically named for easier navigation.\n<br />\n<br />\n<br />[center][line]\n<br />[/center]\n<br />\n<br />[center][b][size=5]Shout outs[/size][/b][/center]\n<br />[center]Kudos to Craft Everything and other mods alike\n<br />Kudos to Crafting Framework[/center]\n<br />[center]Kudos to Casualties: Unknown[/center]\n<br />[center][/center]\n<br />",
+        "Author": "iloveandcherishkurohebi",
         "Links": {
             "Icon": "https://staticdelivery.nexusmods.com/mods/8391/images/782/782-1791740168-587858448.png",
             "NexusMods": "https://www.nexusmods.com/scavprototype/mods/782"
         },
-        "DownloadUrl": "nexus://scavprototype/782/3718",
+        "DownloadUrl": "nexus://scavprototype/782/3886",
         "NexusGameDomain": "scavprototype",
         "NexusModId": 782,
         "SourceName": "Nexus",
         "ContainsAdultContent": false,
-        "LastUpdated": "2026-11-25T12:02:41.000Z",
-        "ReleaseDate": "2026-11-25T12:02:41.000Z",
-        "SHA256": "43f6bd52e55f1d1edc1aa21ac4e027ddfe2b8cdd6459acca254dd1bfe795c469",
+        "LastUpdated": "2026-11-28T17:33:51.000Z",
+        "ReleaseDate": "2026-11-28T17:33:51.000Z",
+        "SHA256": "28293d6ef35a773748c103407f7eeca239226a07d6b62805e450dbc49a964a4b",
         "dllSHA256s": {},
-        "downloadsSinceLatestVersion": 11,
+        "downloadsSinceLatestVersion": 4,
         "Dependencies": [],
         "Changelogs": [
             {
@@ -16091,6 +16439,10 @@
             {
                 "Version": "0.8",
                 "Changelog": "--- general ---\n- fixed one single recipe\n- slightly changed some recipes\n- cut down bio-chem requirements in some recipes\n--- materials ---\n- crush wood cube into wood scraps\n- crush scrap cube into scrap scraps (?)\n- 25% condition for wood scrap is cosmetic\n- this should let you make a campfire by crushing down a leftover wood cube if you cant cut it into sheets, and allow you to crush leftover scrab cubes into placeable scrap metal\n--- medicine ---\n- 50% condition medkit (next to bloodbag)\n- tier 2 and 3 stimulants require flammable powder now\n--- utility ---\n- see general\n- earmuffs\n- 25% condition toolbox (2 hours lifetime)\n- bandolier is crafted at 100% condition now (INT req moved to 12 to match ammo)\n- removed plastic bag\n- trash bag is crafted at 50% cond from a foliage bag and 3 plastic chunks, INT requirement lowered to 9 so it matches lab items\n- almost same lifetime as a foliage bag with much better encumbrance reduction so i think its balanced\n--- food ---\n- from 0.5 to 1 hammering quality for carbo water and sports drink\n- from 120 to 100 fat for flesh chunk (25 per piece)\n--- skip this ---\n- next should be medicine, including craftable sleep pills which would need a craftable pill bottle to properly dosage\n- crafting framework update yay\n- i don't want to shoot myself in the foot right now\n- v1.0 won't be a big milestone, since ill change/add stuff as game versions go on\n--- general ---\n- fixed one single recipe\n- slightly changed some recipes\n- cut down bio-chem requirements in some recipes\n--- materials ---\n- crush wood cube into wood scraps\n- crush scrap cube into scrap scraps (?)\n- 25% condition for wood scrap is cosmetic\n- this should let you make a campfire by crushing down a leftover wood cube if you cant cut it into sheets, and allow you to crush leftover scrap cubes into placeable scrap metal\n--- medicine ---\n- 50% condition medkit (next to bloodbag)\n- tier 2 and 3 stimulants require flammable powder now\n--- utility ---\n- see general\n- earmuffs\n- 25% condition toolbox (2 hours lifetime)\n- bandolier is crafted at 100% condition now (INT req moved to 12 to match ammo)\n- removed plastic bag\n- trash bag is crafted at 50% cond from a foliage bag and 3 plastic chunks, INT requirement lowered to 9 so it matches lab items\n- almost same lifetime as a foliage bag with much better encumbrance reduction so i think its balanced\n--- food ---\n- from 0.5 to 1 hammering quality for carbo water and sports drink\n- from 120 to 100 fat for flesh chunk\n--- skip this ---\n- changelog somehow perished for idk how long so dont mind it\n- crafting framework update yay\n- v1.0 won't be a big milestone. i'll keep updating this\n\n--- general ---\n- one fix and many changes\n- less bio-chem required from now on\n--- materials ---\n- crush wood cube into wood scraps\n- crush scrap cube into metal scraps\n- 25% condition for wood scrap is cosmetic\n- this should let you make a campfire by crushing down a leftover wood cube if you cant cut it into sheets, and allow you to crush leftover scrap cubes into placeable scrap metal\n--- medicine ---\n- 50% condition medkit\n- hard stimulant needs flammable powder\n- med stimulant needs flammable powder\n--- utility ---\n- see general\n- earmuffs\n- 25% condition toolbox\n- bandolier is crafted at 100% condition now, INT req moved to 12\n- removed plastic bag\n- trash bag is crafted at 50% cond, INT requirement lowered to 9\n--- food ---\n- from 0.5 to 1 hammering quality for carbo water and sports drink\n- from 120 to 100 fat for flesh chunk (25 per piece)\n--- skip this ---\n- something is wrong\n- crafting framework update yay\n- v1.0 won't be a big milestone, since ill change/add stuff as game versions go on"
+            },
+            {
+                "Version": "0.8-2",
+                "Changelog": "--- general ---\n- patch\n- now writing changelogs when actively working on it instead of afterwards\n--- materials ---\n- none\n--- tools ---\n- bumped up tool quality requirements for rangefinder and apple watch\n- reverted claw pack change\n--- medicine ---\n- reworked stimulant recipes\n- craft result: from 250ml to 100ml for each\n- low stim INT req decreased to 12, recipe requires water and blood\n- hard stim INT req is kept at 13, recipe requires water and opiates instead of low stim\n- med stim INT req increased to 14, recipe requires water, blood and opiates instead of hard stim\n- (added) 50% medical suture\n- attempted to add sleeping pills, but its impossible... for some reason\n--- utility ---\n- cheaper leg pouch and small pack\n- cheaper jetpack\n- made toolbox not eat your nails\n- following things require titanium now\n- liquid centrifuge, 1 rod\n- zoom goggles, 1 sheet (in place on scrap panels)\n- carapace, 3 sheets (previously a slab)\n--- food ---\n- carbo water from 500ml to 300ml\n- sports drink from 500ml to 300ml\n--- skip this ---\n- id like to prepackage crafting framework but i dont know if thats allowed\n- my keyboard is noisy at night, so i want to get a membrane for writing"
             }
         ],
         "dllNames": [],
@@ -16098,8 +16450,8 @@
         "dllVersions": {},
         "Statistics": {
             "Endorsements": 2,
-            "UniqueDownloads": 49,
-            "TotalDownloads": 81,
+            "UniqueDownloads": 55,
+            "TotalDownloads": 97,
             "TotalViews": null
         },
         "Images": [

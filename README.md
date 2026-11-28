@@ -22,9 +22,29 @@ The data is stored in [nexusmods.json](https://github.com/jimmyking9999999/Metad
 
 Each sync also scans the [Thunderstore](https://thunderstore.io/c/casualties-unknown/) `casualties-unknown` community into [thunderstore.json](https://github.com/jimmyking9999999/Metadata-generator/blob/main/thunderstore.json), using the same fields as `nexusmods.json` (plus `ThunderstoreFullName`, `Uuid4`, `FileSizeBytes` and `tags`). Yippie!
 
-For an example of how this may be used, see [https://discord.gg/ehCptz9pwU](https://discord.gg/ehCptz9pwU) for an Discord announcement channel with new mod listings and mod updates, or see external projects such as [Casualties Hub](https://github.com/Casualties-Hub/Casualties-Hub-Public-Releases) and [UCU Mod Manager](https://www.nexusmods.com/scavprototype/mods/405).
+For an example of how this may be used, see [https://discord.gg/ehCptz9pwU](https://discord.gg/ehCptz9pwU) for an Discord announcement channel with new mod listings and mod updates, or see (some) external projects:
+<details>
+<summary>Short list of mod managers using this metadata:</summary>
+  
+- Casualties Hub: https://github.com/Casualties-Hub/Casualties-Hub-Public-Releases
+  
+- UCU Mod Manager: https://www.nexusmods.com/scavprototype/mods/405
+  
+- c3ml: https://github.com/CatMan6112/c3ml/
+  
+- cu-mod-updater (CN): https://github.com/Luncot/cu-mod-updater
+  
+- CUprum: https://github.com/Cuprum-Unknown/Cuprum
+  
+- QoL Unknown (in-game): https://github.com/jimmyking9999999/QoL-Unknown
+  
+- Mod Manager (in-game): https://www.nexusmods.com/scavprototype/mods/495
 
-Each sync also writes `nexusmods-versions.json`, a plain GUID-to-version object such as `{ "author.mod": "1.2.3" }`. This comes from each DLL's `BepInPlugin` attribute, from both Nexus and Thunderstore (latest higher version wins), and is used for [CUCoreLib](https://github.com/jimmyking9999999/CUCoreLib)'s version check function.
+
+</details>
+
+
+Each sync also writes `nexusmods-versions.json`, a plain GUID-to-version object such as `{ "author.mod": "1.2.3" }`. This comes from each DLL's `BepInPlugin` attribute, from both Nexus and Thunderstore (latest higher version wins!), and is used for [CUCoreLib](https://github.com/jimmyking9999999/CUCoreLib)'s version check function.
 
 The metadata is also deployed to [GitHub Pages](https://jimmyking9999999.github.io/Metadata-generator/) as raw JSON files, including the `badges/` directory, if you expect many concurrent users. 
 
